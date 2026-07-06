@@ -183,6 +183,10 @@ export default function App() {
     if (starredCount > 0) {
       categories.unshift({ name: 'Starred', count: starredCount, isSpecial: true, subtitle: 'Favorites' });
     }
+
+    // Always show Securitization guide as a permanent entry
+    const secCards = masterDeck.filter(c => c.category === 'Securitization').length;
+    categories.unshift({ name: 'Securitization', count: secCards || 22, isSpecial: true, subtitle: 'Guide & Notes', isGuide: true });
     
     categories.unshift({ name: 'All Cards', count: masterDeck.length, isSpecial: true, subtitle: 'Library' });
 
@@ -499,9 +503,10 @@ export default function App() {
             {categoryStats.map(cat => {
               const isDarkAccent = cat.name === 'Starred';
               const isDeepti = cat.name === "Deepti's Cards";
-              const bgClass = isDeepti ? 'bg-gradient-to-br from-[#0066cc] to-[#5ac8fa]' : isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
-              const textClass = isDeepti ? 'text-white' : isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
-              const subTextClass = isDeepti ? 'text-white/70' : isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
+              const isSecGuide = cat.isGuide;
+              const bgClass = isSecGuide ? 'bg-gradient-to-br from-[#0066cc] to-[#3399ff]' : isDeepti ? 'bg-gradient-to-br from-[#0066cc] to-[#5ac8fa]' : isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
+              const textClass = isSecGuide ? 'text-white' : isDeepti ? 'text-white' : isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
+              const subTextClass = isSecGuide ? 'text-white/70' : isDeepti ? 'text-white/70' : isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
 
               return (
                 <div 
@@ -518,7 +523,7 @@ export default function App() {
                     </h3>
                   </div>
                   <div className={`mt-4 text-[12px] md:text-[13px] font-medium ${subTextClass}`}>
-                    {cat.count} cards
+                    {isSecGuide ? `${cat.count} parts` : `${cat.count} cards`}
                   </div>
                 </div>
               );
