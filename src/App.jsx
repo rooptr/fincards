@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import FlashCard from './components/FlashCard';
 import CramCard from './components/CramCard';
+import ShortcutView from './components/ShortcutView';
 import cardsData from './data/cards.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
@@ -13,6 +14,8 @@ export default function App() {
   // Navigation State
   const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list'
   const [activeCategory, setActiveCategory] = useState(null); // null means dashboard
+  const [activeSubcategory, setActiveSubcategory] = useState(null); // null means subcategory selector (for Aptitude)
+  const [theme, setTheme] = useState('light');
   
   const scrollPositionRef = useRef(0);
   const dashboardRef = useRef(null);
@@ -48,6 +51,24 @@ export default function App() {
     }
   };
 
+  // Sync dark mode class
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+    // Update theme-color meta tag
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', theme === 'dark' ? '#000000' : '#f5f5f7');
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
+
   // Load progress and cards on mount
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec";
@@ -64,7 +85,49 @@ export default function App() {
         const validLiveCards = liveCards.filter(c => c.id && c.question);
         combinedDeck.push(...validLiveCards);
       }
-      setMasterDeck(combinedDeck);
+
+      // Dynamic mapping & scrubbing
+      const scrubbedDeck = combinedDeck.map(card => {
+        let category = card.category;
+        if (category === 'From News App' || category === 'from news app' || category === 'Aptitude Quiz' || category === 'Apti Quiz' || category === 'apti quiz') {
+          category = 'Aptitude';
+        }
+
+        let answer = card.answer || '';
+        if (answer.toLowerCase().includes('indiabix')) {
+          answer = answer
+            .replace(/in\s+indiabix/gi, '')
+            .replace(/from\s+indiabix/gi, '')
+            .replace(/indiabix/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+
+        let explanation = card.explanation || '';
+        if (explanation.toLowerCase().includes('indiabix')) {
+          explanation = explanation
+            .replace(/in\s+indiabix/gi, '')
+            .replace(/from\s+indiabix/gi, '')
+            .replace(/indiabix/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+
+        let source = card.source || '';
+        if (source.toLowerCase().includes('indiabix')) {
+          source = source.replace(/indiabix/gi, 'Aptitude').trim();
+        }
+
+        return {
+          ...card,
+          category,
+          answer,
+          explanation,
+          source
+        };
+      });
+
+      setMasterDeck(scrubbedDeck);
       
       const progressMap = {};
       progressArr.forEach(item => {
@@ -103,10 +166,10 @@ export default function App() {
     })).sort((a, b) => a.name.localeCompare(b.name));
 
     if (starredCount > 0) {
-      categories.unshift({ name: '★ STARRED', count: starredCount, isSpecial: true });
+      categories.unshift({ name: 'Starred', count: starredCount, isSpecial: true, subtitle: 'Favorites' });
     }
     
-    categories.unshift({ name: 'ALL CARDS', count: masterDeck.length, isSpecial: true });
+    categories.unshift({ name: 'All Cards', count: masterDeck.length, isSpecial: true, subtitle: 'Library' });
 
     return categories;
   }, [masterDeck, progressData]);
@@ -116,15 +179,31 @@ export default function App() {
     if (!activeCategory) return [];
     
     let deck = [];
-    if (activeCategory === 'ALL CARDS') {
+    if (activeCategory === 'All Cards') {
       deck = [...masterDeck];
-    } else if (activeCategory === '★ STARRED') {
+    } else if (activeCategory === 'Starred') {
       deck = masterDeck.filter(card => progressData[card.id]?.starred);
     } else {
       deck = masterDeck.filter(card => card.category === activeCategory);
     }
 
-    // If focus mode, shuffle the deck using Fisher-Yates
+    // Filter by subcategory if activeCategory is Aptitude and activeSubcategory is set
+    if (activeCategory === 'Aptitude' && activeSubcategory && activeSubcategory !== 'All') {
+      if (activeSubcategory === 'Shortcuts') {
+        deck = deck.filter(card => 
+          (card.explanation && card.explanation.toLowerCase().includes('shortcut')) || 
+          (card.answer && card.answer.toLowerCase().includes('shortcut')) ||
+          card.card_type === 'shortcut'
+        );
+      } else {
+        deck = deck.filter(card => {
+          let cleanSub = (card.subcategory || '').replace('Aptitude: ', '').trim();
+          if (cleanSub === 'Quant/Formula-Based') cleanSub = 'Quantitative';
+          return cleanSub === activeSubcategory;
+        });
+      }
+    }
+
     if (globalMode === 'focus') {
       const shuffled = [...deck];
       for (let i = shuffled.length - 1; i > 0; i--) {
@@ -135,9 +214,8 @@ export default function App() {
     }
     
     return deck;
-  }, [masterDeck, activeCategory, globalMode, progressData]);
+  }, [masterDeck, activeCategory, activeSubcategory, globalMode, progressData]);
 
-  // Cram Mode filtering
   const filteredDeck = useMemo(() => {
     if (globalMode !== 'list') return [];
     const query = searchQuery.toLowerCase();
@@ -190,6 +268,7 @@ export default function App() {
 
   const openCategory = (category) => {
     setActiveCategory(category);
+    setActiveSubcategory(null);
     setCurrentCardIndex(0);
     setSearchQuery('');
     setVisibleCount(20);
@@ -197,14 +276,18 @@ export default function App() {
   };
 
   const goBack = () => {
-    setActiveCategory(null);
+    if (activeCategory === 'Aptitude' && activeSubcategory) {
+      setActiveSubcategory(null);
+    } else {
+      setActiveCategory(null);
+      setActiveSubcategory(null);
+    }
   };
 
   const handleDashboardScroll = (e) => {
     scrollPositionRef.current = e.target.scrollTop;
   };
 
-  // Swipe gesture handlers
   const minSwipeDistance = 50;
   const onTouchStart = (e) => {
     setTouchEnd(null);
@@ -232,10 +315,10 @@ export default function App() {
 
   if (loading) {
     return (
-      <div className="h-[100dvh] w-full flex items-center justify-center bg-[#e5e5e5] text-black font-bold text-xl uppercase tracking-widest">
+      <div className="h-[100dvh] w-full flex items-center justify-center bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] font-medium text-lg transition-colors duration-300">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-8 h-8 bg-[#ff5000] border-2 border-black rounded-full animate-ping"></div>
-          [ SYNCING SHEETS ]
+          <div className="w-8 h-8 rounded-full border-2 border-t-[#0066cc] border-r-[#0066cc] border-b-transparent border-l-transparent animate-spin"></div>
+          Syncing Cards...
         </div>
       </div>
     );
@@ -243,47 +326,61 @@ export default function App() {
 
   return (
     <div 
-      className="h-[100dvh] w-full flex flex-col bg-[#e5e5e5] text-black overflow-hidden selection:bg-black selection:text-[#e5e5e5]"
+      className="h-[100dvh] w-full flex flex-col bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] overflow-hidden selection:bg-[#0066cc] selection:text-white transition-colors duration-300"
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
       
-      {/* Brutalist Header */}
-      <header className="flex-none flex items-stretch border-b-2 border-black bg-[#e5e5e5]">
-        <div className="p-4 border-r-2 border-black flex-1 flex items-center justify-between">
-          {!activeCategory ? (
-            <h1 className="text-xl md:text-2xl font-bold tracking-tight uppercase flex items-center gap-3">
-              <div className="w-4 h-4 bg-[#ff5000] border-2 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] animate-pulse"></div>
-              <div>
-                <span style={{ fontFamily: 'TheSignature' }} className="lowercase text-3xl leading-none">fin</span>
-                <span className="uppercase">CARDS</span>
-              </div>
-            </h1>
-          ) : (
-            <button 
-              onClick={goBack}
-              className="px-3 py-1 text-sm font-bold border-2 border-black bg-white shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[1px] active:translate-y-[1px]"
-            >
-              [ ← GO BACK ]
-            </button>
-          )}
-          
+      {/* Apple-style Header */}
+      <header className="flex-none flex items-center justify-between px-4 md:px-6 py-3 glass-header border-b border-black/5 dark:border-white/10 z-20 sticky top-0 transition-colors">
+        
+        {/* Title or Back */}
+        {!activeCategory ? (
+          <h1 className="flex items-center gap-1.5">
+            <div className="flex items-baseline text-[#1d1d1f] dark:text-[#f5f5f7]">
+              <span style={{ fontFamily: 'TheSignature' }} className="lowercase text-4xl md:text-5xl leading-[0.4] -mr-0.5">fin</span>
+              <span className="uppercase font-semibold tracking-tight text-lg">CARDS</span>
+            </div>
+          </h1>
+        ) : (
+          <button 
+            onClick={goBack}
+            className="flex items-center gap-0.5 text-[#0066cc] dark:text-[#2997ff] hover:opacity-80 transition-opacity"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7"></path></svg>
+            <span className="text-[14px] font-medium">
+              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : 'Library'}
+            </span>
+          </button>
+        )}
+        
+        {/* Right side controls */}
+        <div className="flex items-center gap-3">
+          {/* Dark Mode Toggle */}
+          <button onClick={toggleTheme} className="text-[#86868b] hover:text-[#1d1d1f] dark:hover:text-[#f5f5f7] transition-colors">
+            {theme === 'light' ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            )}
+          </button>
+
           {!activeCategory && (
             <button 
               onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
-              className="ml-4 px-3 py-1 text-sm font-bold border-2 border-black bg-white shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[1px] active:translate-y-[1px]"
+              className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
             >
-              {globalMode === 'focus' ? '[ CRAM MODE ]' : '[ FOCUS MODE ]'}
+              {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
             </button>
           )}
+
+          {activeCategory && globalMode === 'focus' && (!activeSubcategory && activeCategory === 'Aptitude' ? null : (
+            <div className="text-[#86868b] font-medium text-[14px]">
+              {currentCardIndex + 1} of {activeDeck.length}
+            </div>
+          ))}
         </div>
-        
-        {activeCategory && globalMode === 'focus' && (
-          <div className="p-4 flex items-center justify-center min-w-[80px] md:min-w-[100px] bg-black text-white font-bold text-sm md:text-lg border-l-2 border-black">
-            {String(currentCardIndex + 1).padStart(2, '0')}/{String(activeDeck.length).padStart(2, '0')}
-          </div>
-        )}
       </header>
 
       {/* DASHBOARD MODE */}
@@ -291,130 +388,203 @@ export default function App() {
         <main 
           ref={dashboardRef}
           onScroll={handleDashboardScroll}
-          className="flex-1 overflow-y-auto w-full p-4 md:p-8 max-w-4xl mx-auto space-y-4"
+          className="flex-1 overflow-y-auto w-full px-4 py-6 md:px-12 md:py-10 max-w-4xl mx-auto space-y-6"
         >
-          <div className="text-xl font-bold uppercase tracking-widest mb-6">
-            [ SELECT CATEGORY TO {globalMode === 'focus' ? 'FOCUS' : 'CRAM'} ]
+          <div>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-1 text-[#1d1d1f] dark:text-[#f5f5f7]">
+              Hey deepti, <span className="text-[#86868b]">pick a deck.</span>
+            </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {categoryStats.map(cat => (
-              <div 
-                key={cat.name}
-                onClick={() => openCategory(cat.name)}
-                className={`p-4 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] flex items-center justify-between cursor-pointer active:translate-y-[2px] active:translate-x-[2px] active:shadow-none transition-all ${cat.isSpecial ? 'bg-[#ffdd00]' : 'bg-white hover:bg-gray-100'}`}
-              >
-                <span className="font-bold text-lg uppercase truncate pr-2">{cat.name}</span>
-                <span className="font-bold text-sm bg-black text-white px-2 py-1 shrink-0">{cat.count}</span>
-              </div>
-            ))}
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+            {categoryStats.map(cat => {
+              const isDarkAccent = cat.name === 'Starred';
+              const bgClass = isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
+              const textClass = isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
+              const subTextClass = isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
+
+              return (
+                <div 
+                  key={cat.name}
+                  onClick={() => openCategory(cat.name)}
+                  className={`p-4 md:p-6 rounded-[20px] apple-shadow apple-shadow-hover transition-all cursor-pointer flex flex-col justify-between min-h-[110px] md:min-h-[140px] ${bgClass}`}
+                >
+                  <div>
+                    <div className={`text-[10px] md:text-[11px] font-semibold tracking-wide uppercase mb-0.5 ${subTextClass}`}>
+                      {cat.subtitle || 'Deck'}
+                    </div>
+                    <h3 className={`text-base md:text-xl font-semibold leading-tight ${textClass}`}>
+                      {cat.name}
+                    </h3>
+                  </div>
+                  <div className={`mt-4 text-[12px] md:text-[13px] font-medium ${subTextClass}`}>
+                    {cat.count} cards
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </main>
       )}
 
-      {/* STUDY MODES */}
+      {/* STUDY / SUBCATEGORY MODES */}
       {activeCategory && (
         <>
-          {globalMode === 'focus' && (
-            <>
-              <main className="flex-1 min-h-0 w-full p-4 md:p-8 flex flex-col items-center justify-center">
-                {activeDeck.length === 0 ? (
-                  <div className="font-bold text-gray-500">[ NO CARDS IN THIS CATEGORY ]</div>
-                ) : (
-                  <FlashCard 
-                    key={currentCardIndex} 
-                    card={activeDeck[currentCardIndex]} 
-                    onReview={(rating) => handleReview(activeDeck[currentCardIndex].id, rating)}
-                    stats={progressData[activeDeck[currentCardIndex].id]}
-                    onNoteUpdated={handleNoteUpdated}
-                  />
-                )}
-              </main>
-
-              {activeDeck.length > 0 && (
-                <footer className="flex-none p-4 md:p-8 w-full border-t-2 border-black bg-[#e5e5e5] flex flex-col items-center gap-2">
-                  <div className="hidden md:flex w-full gap-4 max-w-lg mx-auto">
-                    <button
-                      onClick={handlePrev}
-                      disabled={currentCardIndex === 0}
-                      className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
-                        currentCardIndex === 0 
-                          ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]' 
-                          : 'bg-white hover:bg-black hover:text-white'
-                      }`}
-                    >
-                      [ PREV ]
-                    </button>
-                    <button
-                      onClick={handleNext}
-                      disabled={currentCardIndex === activeDeck.length - 1}
-                      className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
-                        currentCardIndex === activeDeck.length - 1
-                          ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]'
-                          : 'bg-[#ff5000] text-white hover:bg-black'
-                      }`}
-                    >
-                      [ NEXT ]
-                    </button>
-                  </div>
-                  <span className="text-xs font-bold text-black/50 uppercase tracking-widest mt-2 md:hidden">
-                    &lt; SWIPE TO NAVIGATE &gt;
-                  </span>
-                </footer>
-              )}
-            </>
-          )}
-
-          {globalMode === 'list' && (
-            <>
-              <div className="flex-none p-4 md:px-8 pt-4 md:pt-8 max-w-3xl mx-auto w-full">
-                <div className="flex gap-2">
-                  <input 
-                    type="text" 
-                    placeholder="SEARCH QUESTIONS, ANSWERS..." 
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full px-4 py-3 border-4 border-black bg-white font-mono font-bold text-xs md:text-sm uppercase tracking-wider placeholder-gray-400 focus:outline-none shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all"
-                  />
-                  {deferredPrompt && (
-                    <button
-                      onClick={handleInstallClick}
-                      className="whitespace-nowrap px-4 py-3 border-4 border-black bg-[#ffdd00] font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all"
-                    >
-                      [ INSTALL ]
-                    </button>
-                  )}
-                </div>
+          {/* Aptitude Subcategory Picker */}
+          {activeCategory === 'Aptitude' && !activeSubcategory ? (
+            <main className="flex-1 overflow-y-auto w-full px-4 py-6 md:px-12 md:py-10 max-w-4xl mx-auto space-y-6">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-1 text-[#1d1d1f] dark:text-[#f5f5f7]">
+                  Aptitude. <span className="text-[#86868b]">Select a topic.</span>
+                </h2>
               </div>
-              <main 
-                className="flex-1 overflow-y-auto w-full p-4 md:p-8 pt-2 md:pt-4 space-y-4 max-w-3xl mx-auto"
-                onScroll={handleCramScroll}
-              >
-                {filteredDeck.length === 0 ? (
-                  <div className="text-center font-bold text-gray-400 py-8 uppercase tracking-widest">[ NO MATCHING CARDS FOUND ]</div>
-                ) : (
-                  filteredDeck.slice(0, visibleCount).map((card) => {
-                    const stat = progressData[card.id];
-                    return (
-                      <CramCard 
-                        key={card.id} 
-                        card={card} 
-                        stat={stat} 
-                        isFlipped={flippedCardId === card.id}
-                        onFlip={() => setFlippedCardId(flippedCardId === card.id ? null : card.id)}
-                        onReview={(rating) => {
-                          handleReview(card.id, rating);
-                        }} 
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
+                {['Quantitative', 'Logical Reasoning', 'Shortcuts'].map(topic => {
+                  let count = 0;
+                  if (topic === 'Shortcuts') {
+                    count = masterDeck.filter(c => c.category === 'Aptitude' && (
+                      (c.explanation && c.explanation.toLowerCase().includes('shortcut')) ||
+                      (c.answer && c.answer.toLowerCase().includes('shortcut')) ||
+                      c.card_type === 'shortcut'
+                    )).length;
+                  } else {
+                    count = masterDeck.filter(c => {
+                      if (c.category !== 'Aptitude') return false;
+                      let cleanSub = (c.subcategory || '').replace('Aptitude: ', '').trim();
+                      if (cleanSub === 'Quant/Formula-Based') cleanSub = 'Quantitative';
+                      return cleanSub === topic;
+                    }).length;
+                  }
+
+                  return (
+                    <div 
+                      key={topic}
+                      onClick={() => setActiveSubcategory(topic)}
+                      className="p-5 md:p-6 rounded-[20px] bg-[#ffffff] dark:bg-[#1c1c1e] apple-shadow apple-shadow-hover transition-all cursor-pointer flex flex-col justify-between min-h-[90px] md:min-h-[110px]"
+                    >
+                      <h3 className="text-lg md:text-xl font-semibold text-[#1d1d1f] dark:text-[#f5f5f7]">
+                        {topic}
+                      </h3>
+                      <div className="text-[12px] md:text-[13px] font-medium text-[#86868b] mt-2">
+                        {count} cards
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </main>
+          ) : activeSubcategory === 'Shortcuts' ? (
+            <ShortcutView deck={activeDeck} />
+          ) : (
+            <>
+              {globalMode === 'focus' && (
+                <main className="flex-1 flex flex-col relative w-full overflow-hidden">
+                  <div className="flex-1 w-full px-4 py-6 md:p-12 flex flex-col items-center justify-center relative perspective-1000">
+                    {activeDeck.length === 0 ? (
+                      <div className="font-medium text-[#86868b]">No cards available.</div>
+                    ) : (
+                      <FlashCard 
+                        key={currentCardIndex} 
+                        card={activeDeck[currentCardIndex]} 
+                        onReview={(rating) => handleReview(activeDeck[currentCardIndex].id, rating)}
+                        stats={progressData[activeDeck[currentCardIndex].id]}
                         onNoteUpdated={handleNoteUpdated}
                       />
-                    );
-                  })
-                )}
-                {visibleCount < filteredDeck.length && (
-                  <div className="text-center py-4 text-xs font-bold text-gray-500 animate-pulse uppercase tracking-widest">
-                    [ SCROLL FOR MORE ]
+                    )}
                   </div>
-                )}
-              </main>
+
+                  {activeDeck.length > 0 && (
+                    <>
+                      {/* Desktop Navigation */}
+                      <div className="hidden md:flex flex-none w-full pb-8 pt-2 justify-center gap-4 bg-transparent">
+                        <button 
+                          onClick={handlePrev}
+                          disabled={currentCardIndex === 0}
+                          className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentCardIndex === 0 ? 'opacity-30 cursor-not-allowed' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
+                        >
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button 
+                          onClick={handleNext}
+                          disabled={currentCardIndex === activeDeck.length - 1}
+                          className={`w-10 h-10 flex items-center justify-center rounded-full transition-all ${currentCardIndex === activeDeck.length - 1 ? 'opacity-30 cursor-not-allowed' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
+                        >
+                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                      </div>
+
+                      {/* Mobile Navigation Hints */}
+                      <div className="md:hidden flex-none w-full pb-8 flex justify-center bg-transparent">
+                        <span className="text-[12px] font-medium text-[#86868b]">
+                          Swipe left or right
+                        </span>
+                      </div>
+                    </>
+                  )}
+                </main>
+              )}
+
+              {globalMode === 'list' && (
+                <>
+                  <div className="flex-none px-4 pt-4 md:px-8 md:pt-6 max-w-3xl mx-auto w-full">
+                    <div className="flex gap-2">
+                      <div className="relative w-full">
+                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                          <svg className="h-4 w-4 text-[#86868b]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                        </div>
+                        <input 
+                          type="text" 
+                          placeholder="Search questions & answers..." 
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          className="w-full pl-10 pr-4 py-3 rounded-[16px] bg-[#ffffff] dark:bg-[#1c1c1e] border border-black/5 dark:border-white/10 text-[14px] placeholder-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0066cc] apple-shadow transition-all text-[#1d1d1f] dark:text-[#f5f5f7]"
+                        />
+                      </div>
+                      {deferredPrompt && (
+                        <button
+                          onClick={handleInstallClick}
+                          className="whitespace-nowrap px-4 py-3 rounded-[16px] bg-[#0066cc] text-white font-medium text-[14px] shadow-sm hover:bg-[#2997ff] transition-all"
+                        >
+                          Install App
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                  <main 
+                    className="flex-1 overflow-y-auto w-full p-4 md:p-8 pt-4 md:pt-6 space-y-4 max-w-3xl mx-auto"
+                    onScroll={handleCramScroll}
+                  >
+                    {filteredDeck.length === 0 ? (
+                      <div className="text-center font-medium text-[#86868b] py-8 text-[14px]">
+                        No matching cards found.
+                      </div>
+                    ) : (
+                      filteredDeck.slice(0, visibleCount).map((card) => {
+                        const stat = progressData[card.id];
+                        return (
+                          <CramCard 
+                            key={card.id} 
+                            card={card} 
+                            stat={stat} 
+                            isFlipped={flippedCardId === card.id}
+                            onFlip={() => setFlippedCardId(flippedCardId === card.id ? null : card.id)}
+                            onReview={(rating) => {
+                              handleReview(card.id, rating);
+                            }} 
+                            onNoteUpdated={handleNoteUpdated}
+                          />
+                        );
+                      })
+                    )}
+                    {visibleCount < filteredDeck.length && (
+                      <div className="text-center py-4 text-[13px] font-medium text-[#86868b] opacity-50">
+                        Scroll for more
+                      </div>
+                    )}
+                  </main>
+                </>
+              )}
             </>
           )}
         </>

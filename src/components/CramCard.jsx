@@ -23,25 +23,23 @@ export default function CramCard({ card, stat, onReview, isFlipped, onFlip, onNo
 
   return (
     <div 
-      className="relative w-full cursor-pointer group [perspective:1200px] min-h-[200px]"
+      className="relative w-full cursor-pointer group perspective-1000 min-h-[220px] card-container"
       onClick={() => {
         if (!isEditingNote) onFlip();
       }}
     >
       <div 
-        className={`w-full transition-transform duration-500 ease-out relative ${
-          isFlipped ? '[transform:rotateX(180deg)]' : ''
-        }`}
-        style={{ transformStyle: 'preserve-3d' }}
+        className="w-full h-full min-h-[220px] transition-transform duration-500 ease-out relative transform-style-3d"
+        style={{ transform: isFlipped ? 'rotateX(180deg)' : 'rotateX(0deg)' }}
       >
         
-        {/* Front Face */}
+        {/* FRONT FACE */}
         <div 
-          className={`w-full p-4 md:p-6 border-4 border-black bg-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] flex flex-col gap-2 ${isFlipped ? 'absolute inset-0' : 'relative'}`}
+          className={`w-full min-h-[220px] p-6 rounded-[24px] bg-[#ffffff] dark:bg-[#1c1c1e] apple-shadow flex flex-col gap-3 ${isFlipped ? 'absolute inset-0' : 'relative'}`}
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <div className="flex justify-between items-center w-full border-b-2 border-gray-200 pb-2 mb-2">
-            <span className="text-xs font-bold tracking-widest text-[#ff5000] uppercase truncate pr-2 flex-1">
+          <div className="flex justify-between items-center w-full pb-2">
+            <span className="text-[11px] font-semibold tracking-wide text-[#86868b] uppercase truncate pr-2 flex-1">
               {card.subcategory || card.category}
             </span>
             <button 
@@ -50,110 +48,103 @@ export default function CramCard({ card, stat, onReview, isFlipped, onFlip, onNo
                 const newStatus = await toggleStarStatus(card.id);
                 if (onNoteUpdated) onNoteUpdated(card.id, noteText, newStatus);
               }}
-              className="text-lg font-bold hover:bg-gray-200 px-2 transition-colors flex items-center justify-center"
+              className={`text-lg p-1 transition-colors ${stat?.starred ? 'text-[#f5a623]' : 'text-[#d2d2d7] dark:text-[#555] hover:text-[#f5a623] dark:hover:text-[#f5a623]'}`}
             >
               {stat?.starred ? '★' : '☆'}
             </button>
           </div>
-          <div className="font-bold text-lg md:text-xl leading-snug pb-8">
-            Q. {card.question}
+          <div className="font-semibold text-lg md:text-xl leading-snug pb-8 text-[#1d1d1f] dark:text-[#f5f5f7]">
+            {card.question}
           </div>
-          <div className="absolute bottom-4 left-4 text-sm font-bold text-gray-400 mt-2 flex items-center gap-2">
-            <span className="w-2 h-2 bg-gray-400 rounded-full group-hover:bg-[#ff5000] transition-colors"></span>
-            TAP TO REVEAL
+          <div className="absolute bottom-5 left-5 text-[12px] font-medium text-[#0066cc] dark:text-[#2997ff] mt-2 flex items-center gap-2 opacity-50 group-hover:opacity-100 transition-opacity">
+            Tap to reveal
           </div>
         </div>
 
-        {/* Back Face */}
+        {/* BACK FACE (Apple Blue) */}
         <div 
-          className={`w-full p-4 md:p-6 border-4 border-black bg-[#111111] text-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] flex flex-col gap-2 ${!isFlipped ? 'absolute inset-0' : 'relative'}`}
+          className={`w-full min-h-[220px] p-6 rounded-[24px] bg-[#0066cc] dark:bg-[#0055aa] text-white apple-shadow flex flex-col gap-3 ${!isFlipped ? 'absolute inset-0' : 'relative'}`}
           style={{ 
             backfaceVisibility: 'hidden', 
             transform: 'rotateX(180deg)' 
           }}
         >
-          <div className="flex justify-between items-center w-full border-b-2 border-white/20 pb-2 mb-2" onClick={(e) => e.stopPropagation()}>
-            <span className="text-xs font-bold tracking-widest text-[#00ff00] uppercase">
-              ANSWER
+          <div className="flex justify-between items-center w-full pb-2" onClick={(e) => e.stopPropagation()}>
+            <span className="text-[11px] font-semibold tracking-wide text-white/70 uppercase flex items-center gap-1.5">
+              Answer
             </span>
             <div className="flex gap-2">
               <button 
                 onClick={(e) => { e.stopPropagation(); e.preventDefault(); setIsEditingNote(true); }}
-                className="text-xs font-bold tracking-widest text-[#ffdd00] px-2 py-1 uppercase hover:bg-white hover:text-black transition-colors"
+                className="text-[11px] font-medium text-white hover:text-white/80 transition-colors px-3 py-1 bg-white/10 hover:bg-white/20 rounded-full"
               >
-                [ EDIT NOTE ]
-              </button>
-              <button 
-                  onClick={(e) => { e.stopPropagation(); onFlip(); }}
-                  className="text-xs font-bold tracking-widest bg-white text-black px-2 py-1 uppercase hover:bg-gray-300 active:translate-y-[1px]"
-              >
-                CLOSE
+                Edit Note
               </button>
             </div>
           </div>
-          <div className="font-bold text-base md:text-lg leading-snug mb-4">
+          <div className="font-medium text-base md:text-lg leading-snug mb-4 text-white">
             {card.answer}
           </div>
           
-          <div className="mt-2" onClick={e => e.stopPropagation()}>
+          <div className="mt-2 text-white/90" onClick={e => e.stopPropagation()}>
             <LearnMore explanation={card.explanation} source={card.source} />
             
             {/* USER NOTE SECTION */}
             {(noteText || isEditingNote) && (
               <div 
-                className="mt-4 p-3 border-2 border-[#ffdd00] bg-[#1a1a1a]"
+                className="mt-4 p-4 rounded-xl bg-white/10 backdrop-blur-sm"
                 onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
               >
-                <div className="text-xs font-bold text-[#ffdd00] tracking-widest mb-2 uppercase">[ MY NOTES ]</div>
+                <div className="text-[11px] font-semibold text-white/70 tracking-wide mb-2 uppercase">My Notes</div>
                 {isEditingNote ? (
                   <div className="flex flex-col gap-2">
                     <textarea 
                       value={noteText}
                       onClick={(e) => e.stopPropagation()}
                       onChange={(e) => setNoteText(e.target.value)}
-                      className="w-full h-20 p-2 bg-black text-white font-mono text-xs border-2 border-[#ffdd00] focus:outline-none focus:bg-[#222]"
+                      className="w-full h-20 p-2 rounded-lg bg-white text-[#1d1d1f] font-mono text-[12px] border border-transparent focus:outline-none focus:ring-2 focus:ring-white transition-all resize-none"
                       placeholder="Type your personal STAR story or mnemonic here..."
                     />
-                    <div className="flex justify-end gap-2">
+                    <div className="flex justify-end gap-2 mt-2">
                       <button 
                         onClick={(e) => { e.stopPropagation(); setIsEditingNote(false); }}
-                        className="px-2 py-1 text-xs font-bold border-2 border-white bg-black text-white hover:bg-white hover:text-black"
+                        className="px-3 py-1 text-[12px] font-medium text-white bg-white/20 hover:bg-white/30 rounded-full transition-colors"
                       >
-                        [ CANCEL ]
+                        Cancel
                       </button>
                       <button 
                         onClick={handleSaveNote}
-                        className="px-2 py-1 text-xs font-bold border-2 border-[#ffdd00] bg-[#ffdd00] text-black hover:bg-white hover:border-white"
+                        className="px-3 py-1 text-[12px] font-medium text-[#0066cc] bg-white hover:bg-gray-100 rounded-full transition-colors"
                       >
-                        [ SAVE ]
+                        Save
                       </button>
                     </div>
                   </div>
                 ) : (
-                  <div className="text-xs font-mono whitespace-pre-wrap">{noteText}</div>
+                  <div className="text-[13px] leading-relaxed whitespace-pre-wrap">{noteText}</div>
                 )}
               </div>
             )}
 
             {onReview && !isEditingNote && (
-              <div className="flex gap-2 mt-4 pt-4 border-t-2 border-white/20">
+              <div className="flex gap-2 mt-5 pt-4 border-t border-white/20">
                 <button 
                   onClick={() => onReview('hard')}
-                  className="flex-1 py-2 text-xs font-bold tracking-widest bg-black text-white border-2 border-white hover:bg-white hover:text-black transition-all"
+                  className="flex-1 py-2 text-[12px] font-medium rounded-xl bg-white/10 text-white hover:bg-white/20 transition-colors"
                 >
-                  HARD
+                  Hard
                 </button>
                 <button 
                   onClick={() => onReview('good')}
-                  className="flex-1 py-2 text-xs font-bold tracking-widest bg-white text-black border-2 border-white hover:bg-gray-200 transition-all"
+                  className="flex-1 py-2 text-[12px] font-medium rounded-xl bg-white/20 text-white hover:bg-white/30 transition-colors"
                 >
-                  GOOD
+                  Good
                 </button>
                 <button 
                   onClick={() => onReview('easy')}
-                  className="flex-1 py-2 text-xs font-bold tracking-widest bg-gray-300 text-black border-2 border-white hover:bg-gray-400 transition-all"
+                  className="flex-1 py-2 text-[12px] font-medium rounded-xl bg-white text-[#0066cc] hover:bg-gray-100 transition-colors shadow-sm"
                 >
-                  EASY
+                  Easy
                 </button>
               </div>
             )}
