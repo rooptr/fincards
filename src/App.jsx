@@ -27,6 +27,27 @@ export default function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [visibleCount, setVisibleCount] = useState(20);
 
+  // PWA Install State
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    if (outcome === 'accepted') {
+      setDeferredPrompt(null);
+    }
+  };
+
   // Load progress and cards on mount
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec";
@@ -234,7 +255,10 @@ export default function App() {
           {!activeCategory ? (
             <h1 className="text-xl md:text-2xl font-bold tracking-tight uppercase flex items-center gap-3">
               <div className="w-4 h-4 bg-[#ff5000] border-2 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] animate-pulse"></div>
-              DEEP CARDS
+              <div>
+                <span style={{ fontFamily: 'TheSignature' }} className="lowercase text-3xl leading-none">fin</span>
+                <span className="uppercase">CARDS</span>
+              </div>
             </h1>
           ) : (
             <button 
@@ -343,13 +367,23 @@ export default function App() {
           {globalMode === 'list' && (
             <>
               <div className="flex-none p-4 md:px-8 pt-4 md:pt-8 max-w-3xl mx-auto w-full">
-                <input 
-                  type="text" 
-                  placeholder="SEARCH QUESTIONS, ANSWERS..." 
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full px-4 py-3 border-4 border-black bg-white font-mono font-bold text-xs md:text-sm uppercase tracking-wider placeholder-gray-400 focus:outline-none shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all"
-                />
+                <div className="flex gap-2">
+                  <input 
+                    type="text" 
+                    placeholder="SEARCH QUESTIONS, ANSWERS..." 
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-4 py-3 border-4 border-black bg-white font-mono font-bold text-xs md:text-sm uppercase tracking-wider placeholder-gray-400 focus:outline-none shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all"
+                  />
+                  {deferredPrompt && (
+                    <button
+                      onClick={handleInstallClick}
+                      className="whitespace-nowrap px-4 py-3 border-4 border-black bg-[#ffdd00] font-bold text-xs md:text-sm uppercase shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all"
+                    >
+                      [ INSTALL ]
+                    </button>
+                  )}
+                </div>
               </div>
               <main 
                 className="flex-1 overflow-y-auto w-full p-4 md:p-8 pt-2 md:pt-4 space-y-4 max-w-3xl mx-auto"

@@ -16,9 +16,9 @@ export default defineConfig({
       },
       includeAssets: ['favicon.svg', 'pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'Finance MBA Flashcards',
-        short_name: 'FinanceCards',
-        description: 'MBA Placement Prep Flashcards for Moody\'s & Oxane Partners',
+        name: 'Fincards',
+        short_name: 'Fincards',
+        description: 'MBA Placement Prep Flashcards',
         theme_color: '#ff5000',
         background_color: '#111111',
         display: 'standalone',
