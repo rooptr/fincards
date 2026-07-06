@@ -8,13 +8,13 @@ export default function ShortcutView({ deck }) {
       {/* Hero Section */}
       <div className="px-6 py-12 md:py-20 max-w-4xl mx-auto text-center">
         <h2 className="text-[12px] md:text-[14px] font-semibold tracking-widest uppercase text-[#86868b] mb-3">
-          Today at Apple-Style Learning
+          Quantitative Aptitude
         </h2>
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#1d1d1f] dark:text-[#f5f5f7] mb-6">
           Master the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0066cc] to-[#3399ff]">Shortcuts.</span>
         </h1>
         <p className="text-lg md:text-xl font-medium text-[#86868b] max-w-2xl mx-auto leading-relaxed">
-          Unlock quantitative speed with these essential tricks. Ditch the long math and solve problems in seconds.
+          Essential tricks to solve quantitative problems quickly and accurately.
         </p>
       </div>
 
