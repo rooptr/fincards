@@ -183,10 +183,6 @@ export default function App() {
     if (starredCount > 0) {
       categories.unshift({ name: 'Starred', count: starredCount, isSpecial: true, subtitle: 'Favorites' });
     }
-
-    // Always show Securitization guide as a permanent entry
-    const secCards = masterDeck.filter(c => c.category === 'Securitization').length;
-    categories.unshift({ name: 'Securitization', count: secCards || 22, isSpecial: true, subtitle: 'Guide & Notes', isGuide: true });
     
     categories.unshift({ name: 'All Cards', count: masterDeck.length, isSpecial: true, subtitle: 'Library' });
 
@@ -285,6 +281,8 @@ export default function App() {
     });
   };
 
+  const isSecuritizationCategory = (cat) => cat && cat.toLowerCase().includes('securitization');
+
   const openCategory = (category) => {
     setActiveCategory(category);
     setActiveSubcategory(null);
@@ -292,11 +290,11 @@ export default function App() {
     setSearchQuery('');
     setVisibleCount(20);
     setFlippedCardId(null);
-    setShowSecuritizationNotes(category === 'Securitization');
+    setShowSecuritizationNotes(isSecuritizationCategory(category));
   };
 
   const goBack = () => {
-    if (activeCategory === 'Securitization' && !showSecuritizationNotes) {
+    if (isSecuritizationCategory(activeCategory) && !showSecuritizationNotes) {
       setShowSecuritizationNotes(true);
     } else if (activeCategory === 'Aptitude' && activeSubcategory) {
       setActiveSubcategory(null);
@@ -372,7 +370,7 @@ export default function App() {
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7"></path></svg>
             <span className="text-[14px] font-medium">
-              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : activeCategory === 'Securitization' && !showSecuritizationNotes ? 'Securitization' : 'Library'}
+              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : isSecuritizationCategory(activeCategory) && !showSecuritizationNotes ? activeCategory : 'Library'}
             </span>
           </button>
         )}
@@ -397,11 +395,33 @@ export default function App() {
             </button>
           )}
 
-          {activeCategory && globalMode === 'focus' && (!activeSubcategory && activeCategory === 'Aptitude' ? null : (
-            <div className="text-[#86868b] font-medium text-[14px]">
-              {currentCardIndex + 1} of {activeDeck.length}
-            </div>
-          ))}
+          {/* Securitization: Notes/Flashcards + Cram/Focus toggle */}
+          {activeCategory && isSecuritizationCategory(activeCategory) && !showSecuritizationNotes && (
+            <>
+              <button
+                onClick={() => setShowSecuritizationNotes(true)}
+                className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+              >
+                ← Notes
+              </button>
+              <button 
+                onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+                className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+              >
+                {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
+              </button>
+            </>
+          )}
+
+          {/* Other categories: Cram/Focus toggle in header when active */}
+          {activeCategory && !isSecuritizationCategory(activeCategory) && !(!activeSubcategory && activeCategory === 'Aptitude') && (
+            <button 
+              onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+              className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+            >
+              {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
+            </button>
+          )}
         </div>
       </header>
 
@@ -503,10 +523,9 @@ export default function App() {
             {categoryStats.map(cat => {
               const isDarkAccent = cat.name === 'Starred';
               const isDeepti = cat.name === "Deepti's Cards";
-              const isSecGuide = cat.isGuide;
-              const bgClass = isSecGuide ? 'bg-gradient-to-br from-[#0066cc] to-[#3399ff]' : isDeepti ? 'bg-gradient-to-br from-[#0066cc] to-[#5ac8fa]' : isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
-              const textClass = isSecGuide ? 'text-white' : isDeepti ? 'text-white' : isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
-              const subTextClass = isSecGuide ? 'text-white/70' : isDeepti ? 'text-white/70' : isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
+              const bgClass = isDeepti ? 'bg-gradient-to-br from-[#0066cc] to-[#5ac8fa]' : isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
+              const textClass = isDeepti ? 'text-white' : isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
+              const subTextClass = isDeepti ? 'text-white/70' : isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
 
               return (
                 <div 
@@ -523,7 +542,7 @@ export default function App() {
                     </h3>
                   </div>
                   <div className={`mt-4 text-[12px] md:text-[13px] font-medium ${subTextClass}`}>
-                    {isSecGuide ? `${cat.count} parts` : `${cat.count} cards`}
+                    {cat.count} cards
                   </div>
                 </div>
               );
@@ -537,7 +556,7 @@ export default function App() {
         <>
           {/* Aptitude Subcategory Picker */}
           {/* Securitization Notes View */}
-          {activeCategory === 'Securitization' && showSecuritizationNotes ? (
+          {isSecuritizationCategory(activeCategory) && showSecuritizationNotes ? (
             <SecuritizationView
               globalMode={globalMode}
               onToggleMode={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
@@ -702,15 +721,7 @@ export default function App() {
         </>
       )}
 
-      {/* Back to Notes button when in flashcards mode for Securitization */}
-      {activeCategory === 'Securitization' && !showSecuritizationNotes && (
-        <button
-          onClick={() => setShowSecuritizationNotes(true)}
-          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 px-5 py-3 rounded-full bg-[#0066cc] text-white font-semibold text-[13px] shadow-lg hover:bg-[#2997ff] transition-all active:scale-95"
-        >
-          ← Back to Notes
-        </button>
-      )}
+
     </div>
   );
 }
