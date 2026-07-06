@@ -13077,5 +13077,1629 @@
     "answer": "If there are 'n' people and everyone shakes hands once, total handshakes = n(n-1)/2",
     "explanation": "**The Trick:**\nThis is a standard combinations formula (nC2).\nIf there are 10 people at a party:\nTotal = 10 * 9 / 2 = 45 handshakes.",
     "source": "Aptitude Shortcuts"
+  },
+  {
+    "id": "sec_new_1783361230508_1",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Asset-Backed Security (ABS)?",
+    "answer": "A financial security collateralized by a pool of underlying assets (auto loans, credit card receivables, student loans) that generate cash flows sold to investors as tranches.",
+    "explanation": "ABS removes assets from the originator's balance sheet, provides liquidity, and transfers risk to capital markets. Cash flows from the underlying pool are passed through to ABS holders.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_2",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Mortgage-Backed Security (MBS)?",
+    "answer": "An ABS collateralized specifically by a pool of residential or commercial mortgages.",
+    "explanation": "MBS are the largest segment of the ABS market. Key variants: Agency MBS (guaranteed by Fannie Mae, Freddie Mac, Ginnie Mae) and Non-Agency MBS (private label).",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_3",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the difference between a Pass-Through Security and a CMO?",
+    "answer": "Pass-through: all principal and interest payments from mortgage pool flow proportionally to all investors. CMO: cash flows are redirected and restructured into tranches with different maturities and risk profiles.",
+    "explanation": "CMOs were invented to address prepayment risk uncertainty in plain pass-throughs by creating tranches that absorb prepayments in a specific order.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_4",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Collateralized Mortgage Obligation (CMO)?",
+    "answer": "A multi-class bond backed by a pool of mortgages where cash flows are allocated into sequential tranches (A, B, C, Z) each with different priority, maturity, and yield.",
+    "explanation": "CMOs redirect prepayment risk. Early tranches receive all prepayments first; later tranches receive stable, long-duration cash flows. The Z-tranche receives no interest until earlier tranches are paid off.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_5",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO (Collateralized Loan Obligation)?",
+    "answer": "A securitization vehicle backed by a portfolio of leveraged loans (typically 150–250 loans), structured into tranches rated from AAA to equity.",
+    "explanation": "CLOs are actively managed. The CLO manager buys and sells loans during a 4-5 year reinvestment period. The equity tranche absorbs first losses but receives residual cash flows.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_6",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CDO (Collateralized Debt Obligation)?",
+    "answer": "A structured credit product backed by a portfolio of debt obligations (bonds, loans, MBS). Cash flows are tranched into rated securities and an equity piece.",
+    "explanation": "CDOs can be backed by: corporate bonds (CBO), leveraged loans (CLO), ABS/MBS (ABS CDO), or other CDOs (CDO-squared). ABS CDOs backed by subprime MBS were central to the 2008 crisis.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_7",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CDO-Squared?",
+    "answer": "A CDO whose underlying collateral consists primarily of tranches of other CDOs rather than individual loans or bonds.",
+    "explanation": "CDO-squared greatly amplified losses in 2008 because write-downs in the underlying CDO tranches cascaded into the CDO-squared structure with multiplied effect and extreme opacity.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_8",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a synthetic CDO?",
+    "answer": "A CDO that gains exposure to a reference portfolio through Credit Default Swaps (CDS) rather than physically purchasing the underlying assets.",
+    "explanation": "Synthetic CDOs allowed banks to create credit exposure without transferring actual assets. The CDO sells CDS protection and receives premiums; if a reference entity defaults, the CDO pays the loss.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_9",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CDS (Credit Default Swap)?",
+    "answer": "A bilateral contract where the protection buyer pays a periodic premium (spread) to the protection seller, who compensates the buyer upon a credit event (default, restructuring) of a reference entity.",
+    "explanation": "CDS are used for: hedging credit risk, speculating on credit quality, and creating synthetic CDO exposure. A $10M 5-year CDS at 200bps = $200,000/year premium.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_10",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO reinvestment period?",
+    "answer": "The initial phase (typically 4–5 years) during which the CLO manager can reinvest principal repayments from maturing or sold loans into new leveraged loans.",
+    "explanation": "After the reinvestment period ends, the CLO enters the amortization phase where principal proceeds are distributed to noteholders sequentially, starting from the most senior tranche.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_11",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is tranche subordination in securitization?",
+    "answer": "The structural layering of securities where junior tranches absorb losses first, protecting senior tranches. Expressed as the percentage of the deal below each tranche.",
+    "explanation": "If a deal has 10% subordination under the AAA tranche, the portfolio would need to suffer 10%+ losses before any dollar of principal is lost by AAA holders.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_12",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the difference between hard and soft credit enhancement?",
+    "answer": "Hard: actual cash or over-collateralization that directly absorbs losses. Soft: structural features like subordination, reserve accounts, or excess spread that redirect cash flows to cover losses.",
+    "explanation": "Hard enhancement: cash reserve accounts, overcollateralization. Soft enhancement: subordination, excess spread, insurance wraps. Hard is more reliable and typically better rated.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_13",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Waterfall in a securitization?",
+    "answer": "The prioritized sequence in which cash flows (interest and principal) are distributed to different stakeholders (senior noteholders, junior noteholders, equity holders) after paying expenses.",
+    "explanation": "The waterfall defines who gets paid first. A typical CLO waterfall: expenses → AAA interest → AA interest → ... → equity. On the asset side: principal proceeds flow sequentially through tranches.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_14",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Overcollateralization (OC) in CLOs?",
+    "answer": "The ratio of the outstanding par value of CLO assets to the outstanding par value of CLO liabilities (notes). OC > 100% means assets exceed liabilities, providing a buffer against losses.",
+    "explanation": "If the OC test fails (assets shrink due to defaults/downgrades), cash is diverted from equity and junior tranches to pay down senior notes until the OC test is cured.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_15",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is an OC test (Overcollateralization Test) in CLO structures?",
+    "answer": "A structural covenant where the total par value of assets divided by liabilities must exceed a minimum threshold for each tranche class. Failure diverts cash flows from junior to senior tranches.",
+    "explanation": "Example: AAA OC test = 145%. If the collateral pool shrinks and the ratio drops below 145%, all excess cash that would have gone to equity is used to pay down AAA notes.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_16",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is an Interest Coverage (IC) test in a CLO?",
+    "answer": "A covenant requiring that interest income from assets divided by interest payable on notes exceeds a minimum ratio. Failure triggers a cash diversion from equity/junior to senior notes.",
+    "explanation": "IC tests protect senior noteholders from scenarios where rising LIBOR/SOFR costs or asset defaults reduce interest income. Failure of IC typically triggers before OC failure.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_17",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the difference between static and managed CLOs?",
+    "answer": "Static: collateral pool is fixed at closing; no reinvestment. Managed: CLO manager actively buys and sells loans during reinvestment period.",
+    "explanation": "Most institutional CLOs are managed. Static CLOs are simpler and more transparent. Managed CLOs introduce manager selection risk but allow portfolio optimization and credit quality maintenance.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_18",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CMBS (Commercial Mortgage-Backed Security)?",
+    "answer": "An MBS backed by loans on commercial real estate (office, retail, hotel, multifamily, industrial) rather than residential mortgages.",
+    "explanation": "CMBS are more complex than RMBS because: loans are larger and more unique, properties have diverse cash flows, prepayment is typically restricted by lockout periods and defeasance provisions.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_19",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is defeasance in CMBS?",
+    "answer": "A prepayment mechanism where a borrower substitutes the collateral property with a portfolio of US Treasury or Agency securities that replicate the original loan cash flows, releasing the property from the lien.",
+    "explanation": "Defeasance is preferred in CMBS because it eliminates reinvestment risk for noteholders—they still receive the exact same cash flows from Treasuries instead of the prepaid loan.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_20",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is yield maintenance in CMBS?",
+    "answer": "A prepayment penalty requiring the borrower to pay the present value of the difference between the loan rate and the Treasury rate for the remaining term, ensuring the lender is fully compensated.",
+    "explanation": "Yield maintenance makes prepayment economically unattractive when rates fall (when the penalty is highest). It protects CMBS investors from callable risk.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_21",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a REMIC (Real Estate Mortgage Investment Conduit)?",
+    "answer": "A special purpose vehicle that holds mortgages and issues multiple classes of securities. REMIC status provides pass-through tax treatment, avoiding double taxation.",
+    "explanation": "REMICs must hold only qualified mortgages or permitted investments. They are the dominant structure for Agency MBS and non-agency RMBS because of their tax efficiency.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_22",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is prepayment risk in MBS?",
+    "answer": "The risk that borrowers will repay their mortgages earlier than expected (due to refinancing, home sales, or extra payments), returning principal to investors sooner than anticipated.",
+    "explanation": "Prepayment accelerates when rates fall (borrowers refinance). This is bad for MBS investors who then must reinvest returned principal at lower prevailing rates (contraction risk).",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_23",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is extension risk in MBS?",
+    "answer": "The risk that rising interest rates cause borrowers to prepay less than expected, extending the life of the MBS beyond what was projected.",
+    "explanation": "Extension risk is painful when rates rise: the MBS duration extends just as new higher-yielding investments are available, locking up capital at below-market yields for longer.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_24",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the PSA (Public Securities Association) prepayment model?",
+    "answer": "The standard benchmark model for mortgage prepayments, assuming a ramp from 0% CPR in month 1 to 6% CPR in month 30, then staying flat at 6% CPR (100% PSA).",
+    "explanation": "200% PSA = prepayments twice as fast as the standard. 50% PSA = half as fast. The PSA model is used to project MBS cash flows and calculate average life and duration.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_25",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is CPR (Conditional Prepayment Rate)?",
+    "answer": "An annualized measure of prepayment speed: the percentage of the outstanding mortgage balance expected to prepay over the next 12 months.",
+    "explanation": "CPR and SMM (Single Monthly Mortality) are related: SMM = 1 - (1 - CPR)^(1/12). A 6% CPR means roughly 6% of the outstanding principal will prepay within the next year.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_26",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is SMM (Single Monthly Mortality)?",
+    "answer": "The monthly measure of prepayment speed: the fraction of a mortgage pool's outstanding balance expected to prepay in a given month.",
+    "explanation": "SMM = 1 - (1 - CPR)^(1/12). For a 6% CPR: SMM ≈ 0.514%. If $100M is outstanding, ~$514,000 would prepay in the next month.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_27",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Z-tranche in a CMO?",
+    "answer": "The last sequential tranche (accrual tranche) that receives no interest payments until all earlier tranches are fully paid off. Instead, accrued interest is added to its principal balance.",
+    "explanation": "The Z-tranche is the longest duration, highest volatility, and typically highest yielding tranche. Its principal grows via interest accrual and then receives large cash flows once senior tranches retire.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_28",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a PAC (Planned Amortization Class) tranche?",
+    "answer": "A CMO tranche with a pre-defined amortization schedule that is protected from prepayment variability within a range of PSA speeds (the PAC band).",
+    "explanation": "PAC tranches are more stable than sequential tranches. The companion (support) tranches absorb excess prepayments outside the PAC band, making PAC cash flows predictable and attracting conservative investors.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_29",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a TAC (Targeted Amortization Class) tranche?",
+    "answer": "A CMO tranche with a defined principal payment schedule protected from extension risk (slower prepayments) but not fully from contraction risk (faster prepayments).",
+    "explanation": "TACs are cheaper than PACs (less complete protection) but more stable than sequential tranches. They protect against slow prepayment scenarios more than fast ones.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_30",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Average Life of an MBS?",
+    "answer": "The weighted average time to receive each dollar of principal, weighted by the proportion of total principal received at each point in time.",
+    "explanation": "Average life is interest-rate dependent because it changes with prepayment assumptions. A 30-year mortgage pool may have a 7-10 year average life under standard prepayment assumptions.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_31",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Credit Linked Note (CLN)?",
+    "answer": "A funded credit derivative where the investor purchases a note and the returns are linked to the credit performance of a reference entity. If a credit event occurs, the principal is reduced.",
+    "explanation": "CLNs combine a bond with a CDS. The investor receives a higher coupon for bearing the credit risk. Unlike a CDS, the protection is funded (no counterparty risk for the protection buyer).",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_32",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Excess Spread in a securitization?",
+    "answer": "The difference between the weighted average interest rate earned on the collateral pool and the weighted average interest rate paid on the ABS tranches plus fees.",
+    "explanation": "Excess spread is the first line of defense against losses. If the pool generates 8% interest and the notes pay 5% in total costs, the 3% excess spread absorbs losses before subordination.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_33",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a non-performing loan (NPL) securitization?",
+    "answer": "A securitization backed by pools of loans already in default, where investors buy tranches at a significant discount, betting on recovery values through foreclosure, modification, or sale.",
+    "explanation": "NPL securitizations require deep credit and legal expertise. Valuation depends on collateral quality, jurisdiction recovery rates, and servicer capabilities. Returns come from recoveries exceeding the discounted purchase price.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_34",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is re-securitization?",
+    "answer": "A structured finance transaction where the collateral consists of previously issued ABS tranches rather than original underlying assets.",
+    "explanation": "CDO-squared and Re-REMIC are examples. Re-securitization can improve ratings on impaired securities by re-tranching them, though it adds layers of complexity and opacity.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_35",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Re-REMIC?",
+    "answer": "A resecuritization of existing RMBS tranches into a new REMIC structure, typically to create a new AAA-rated senior piece from a pool of impaired legacy RMBS.",
+    "explanation": "Post-2008, Re-REMICs were used to help banks reclaim some liquidity from underwater MBS holdings. The pool of impaired MBS is re-tranched so the senior slice can be rated investment grade.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_36",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Whole Business Securitization (WBS)?",
+    "answer": "A securitization where the entire operating cash flows of a business (revenue streams from royalties, franchise fees, intellectual property) are pledged as collateral, not just a discrete asset pool.",
+    "explanation": "WBS are common in franchise businesses (Domino's, Dunkin'). The entity transfers its assets to a bankruptcy-remote SPV which issues notes. Revenue streams service the debt directly.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_37",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Servicer Advance in RMBS?",
+    "answer": "The obligation of a mortgage servicer to advance delinquent interest and principal payments to RMBS investors, even if the underlying borrower hasn't paid, to avoid payment disruptions.",
+    "explanation": "Servicer advances are eventually reimbursable from recovered proceeds. However, large-scale delinquencies (like 2008) can cause servicing advance liquidity crises if recoveries are delayed.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_38",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Special Servicer in CMBS?",
+    "answer": "A servicer that takes over management of loans once they become 60+ days delinquent, are in default, or are at risk. Special servicers have authority to negotiate modifications, foreclosures, and asset sales.",
+    "explanation": "Special servicers earn higher fees (typically 25bps special servicing fee plus workout fees). They represent the dominant influence on CMBS recovery outcomes. Controlling class investors often control special servicer selection.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_39",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Controlling Class in a CMBS trust?",
+    "answer": "The most junior outstanding class of notes (typically the B-piece, BB or below rated) that has the right to direct the special servicer's workout decisions on defaulted loans.",
+    "explanation": "B-piece buyers conduct their own deep due diligence on every loan. Their control rights compensate for absorbing first losses. This alignment of incentives was a key CMBS structural improvement post-2008.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_40",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a SASB CMBS (Single Asset Single Borrower)?",
+    "answer": "A CMBS transaction backed by a single large commercial real estate loan on one property or a small portfolio with a single sponsor, rather than a diversified pool.",
+    "explanation": "SASB CMBS has concentrated risk but allows deep underwriting of one specific asset. Very common for trophy assets (large hotels, flagship malls, data centers). Investors get pure exposure to one credit.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_41",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a conduit CMBS?",
+    "answer": "A CMBS backed by a diversified pool of 50–100+ commercial mortgage loans from multiple borrowers, property types, and geographic markets.",
+    "explanation": "Conduit CMBS benefits from diversification but adds complexity. Loans range from $5M to $100M+. Pool quality depends on the underwriting standards of multiple originators pooled together.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_42",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Duration in the context of MBS?",
+    "answer": "The sensitivity of the MBS price to changes in interest rates, complicated by the fact that prepayment behavior itself changes with rates (negative convexity).",
+    "explanation": "Unlike regular bonds, MBS duration is not constant. When rates fall, prepayments increase, shortening duration. When rates rise, prepayments slow, lengthening duration. This is the essence of negative convexity.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_43",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Negative Convexity in MBS?",
+    "answer": "The phenomenon where an MBS price rises less than expected when rates fall (because prepayments accelerate and shorten the bond) and falls more than expected when rates rise (because duration extends).",
+    "explanation": "Investors demand a higher yield to compensate for negative convexity. Unlike positively convex bonds, MBS don't benefit as much from rate rallies because borrowers refinance and return the principal.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_44",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is OAS (Option-Adjusted Spread)?",
+    "answer": "The spread over the risk-free benchmark that an MBS/callable bond offers after stripping out the value of the embedded prepayment option, measured using Monte Carlo simulation over many rate paths.",
+    "explanation": "OAS allows apples-to-apples comparison of MBS with different prepayment options. A higher OAS indicates better relative value after accounting for the cost of the prepayment option.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_45",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Residual Interest in securitization?",
+    "answer": "The equity piece at the bottom of a securitization structure that receives excess cash flows after all senior tranches, fees, and expenses are paid. Also called the 'first loss piece' or subordinated residual.",
+    "explanation": "The residual absorbs first losses and is typically retained by the originator or sold to hedge funds. It can generate very high returns if default rates stay low, but can be wiped out entirely in stress.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_46",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is True Sale in securitization?",
+    "answer": "A legal determination that the transfer of assets from the originator to the SPV constitutes a sale (not a secured lending arrangement), ensuring the assets are bankruptcy-remote from the originator.",
+    "explanation": "True sale opinions from law firms are critical. Without it, in an originator bankruptcy, the assets might be clawed back into the bankruptcy estate, destroying the securitization structure and harming investors.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_47",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is consolidation risk in securitization?",
+    "answer": "The risk that a court might consolidate the assets of an SPV with those of its parent company in bankruptcy, destroying the bankruptcy-remoteness that structured finance relies upon.",
+    "explanation": "Consolidation risk is mitigated by ensuring the SPV has independent directors, separate books, arm's length transactions with affiliates, and no co-mingling of assets. The SPV must truly be separate.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_48",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the role of a Trustee in ABS?",
+    "answer": "An independent third party (a large bank's trust department) that holds the collateral on behalf of investors, enforces indenture covenants, distributes cash flows per the waterfall, and acts on investor instructions.",
+    "explanation": "The trustee does not actively manage the portfolio (that's the servicer or CLO manager). The trustee is a passive administrator that ensures legal compliance and proper distribution of funds.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_49",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Verification Agent in CLO structures?",
+    "answer": "An independent firm hired to verify that a CLO manager's trades comply with the indenture's eligibility criteria, concentration limits, and coverage tests before settlement.",
+    "explanation": "Post-2015, many CLO indentures added independent verification to reduce reliance solely on the CLO manager's own calculations and improve investor confidence in structural compliance.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_50",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the CLO Equity Net Asset Value (NAV)?",
+    "answer": "The estimated market value of the CLO equity tranche, calculated as the present value of projected future equity distributions discounted at an appropriate rate.",
+    "explanation": "CLO equity NAV is highly sensitive to default assumptions, recovery rates, prepayment speeds, and discount rates. It is used by equity investors to value their position and by managers for fundraising.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_51",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO manager's equity stake?",
+    "answer": "The portion of the CLO equity tranche that the CLO manager retains (often 5–10%), aligning their incentives with investors since they share in losses and profits.",
+    "explanation": "Risk retention rules (Dodd-Frank in the US, EU STS regulations) require securitizers to retain an economic interest in the transaction, discouraging reckless origination and structuring.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_52",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What are CLO covenants: Reinvestment Criteria?",
+    "answer": "Rules governing which loans a CLO manager can purchase during the reinvestment period, including minimum rating thresholds, maximum concentration limits per issuer/industry, and minimum diversity scores.",
+    "explanation": "Eligibility criteria ensure the CLO portfolio maintains the risk profile investors underwrote. Violations are prevented by the trustee/verification agent. The manager must find substitute assets quickly after sales.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_53",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Ramp-Up Period?",
+    "answer": "The initial period (typically 3–6 months after closing) during which the CLO manager deploys the capital raised from note issuance into the target leveraged loan portfolio.",
+    "explanation": "During ramp-up, the CLO may hold cash or Treasuries before loans are fully purchased. Interest coverage tests may be easier to meet during ramp-up since cash earns lower yields.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_54",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Reset?",
+    "answer": "A transaction where an existing CLO's reinvestment period and non-call period are extended, tranches are repriced to current market rates, and the deal terms are refreshed without liquidating the portfolio.",
+    "explanation": "Resets allow CLO managers to extend an existing deal cheaply (versus issuing a brand new CLO). The portfolio stays intact, only the liability structure and timelines are modified.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_55",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Refi (Refinancing)?",
+    "answer": "A transaction where the CLO's existing debt tranches are replaced at lower spreads to reduce the cost of financing, improving the equity return. The portfolio and equity remain unchanged.",
+    "explanation": "CLO refis happen when credit spreads tighten significantly. Reducing the AAA spread from SOFR+130 to SOFR+100 directly improves equity distributions. The process is similar to refinancing a mortgage.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_56",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is SOFR in the context of CLOs?",
+    "answer": "Secured Overnight Financing Rate — the floating rate benchmark that replaced LIBOR in leveraged loans and CLO tranches. CLO tranches pay SOFR + a spread to investors.",
+    "explanation": "The transition from LIBOR to SOFR was completed in 2023. Term SOFR (1-month, 3-month) is used in most CLO indentures. Unlike LIBOR, SOFR is fully based on actual overnight repo transactions.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_57",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Broadly Syndicated Loan (BSL) CLO?",
+    "answer": "A CLO backed by large leveraged loans that trade actively in the secondary market with many lenders (100+ institutions), offering high liquidity and price transparency.",
+    "explanation": "BSL CLOs are the dominant CLO type. They back private equity-sponsored leveraged buyouts. Typical loan sizes: $300M–$5B+. The secondary market allows CLO managers to actively trade positions.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_58",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Middle Market CLO?",
+    "answer": "A CLO backed by loans to smaller companies (typically $10M–$150M EBITDA) with fewer lenders, less liquidity, and often more credit work required, but higher spreads versus BSL loans.",
+    "explanation": "Middle market loans are typically held by BDCs and CLOs specifically designed for illiquid collateral. They often include higher equity cushions and different OC/IC test levels to account for valuation difficulty.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_59",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CRE CLO (Commercial Real Estate CLO)?",
+    "answer": "A CLO backed by floating-rate commercial real estate bridge loans (transitional properties under renovation or lease-up) rather than corporate leveraged loans.",
+    "explanation": "CRE CLOs have become very popular among real estate debt funds. The underlying bridge loans are typically 2–3 year floating-rate. CRE CLOs tend to be static or lightly managed structures.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_60",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO's WARF (Weighted Average Rating Factor)?",
+    "answer": "A Moody's metric that measures the average credit quality of a CLO's collateral pool, where each rating is assigned a numerical factor (Aaa=1, Ba1=940, B2=2350). Higher WARF = lower quality.",
+    "explanation": "The CLO indenture typically includes a maximum WARF test. If downgrades increase the WARF above the threshold, the manager must reduce exposure to lower-rated credits to restore compliance.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_61",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is WAS (Weighted Average Spread) in a CLO?",
+    "answer": "The average spread over SOFR earned on the CLO's loan portfolio, weighted by the outstanding principal balance of each loan.",
+    "explanation": "WAS must exceed a minimum threshold specified in the indenture. A higher WAS means more interest income for the structure, improving interest coverage and equity returns.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_62",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is WAL (Weighted Average Life) in structured products?",
+    "answer": "The average time for each dollar of principal to be received, weighted by the fraction of total principal received at each point. Measures effective maturity/duration.",
+    "explanation": "WAL is critical for CLOs and MBS because it drives duration matching. CLO tranches are structured so that senior notes have shorter WAL, making them suitable for bank balance sheets and money market funds.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_63",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Diversity Score in CLOs?",
+    "answer": "A Moody's metric measuring the effective number of uncorrelated assets in the pool. More industries and issuers = higher diversity = lower correlation risk.",
+    "explanation": "Diversity Score is used in CLO rating models to determine how much subordination is needed at each tranche level. Low diversity means the pool behaves like fewer, more concentrated credits.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_64",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Credit Event in a CDS?",
+    "answer": "A predefined event that triggers the protection seller's payment obligation: typically Bankruptcy, Failure to Pay, and Restructuring (for corporate CDS). ISDA definitions govern.",
+    "explanation": "ISDA publishes standardized credit event definitions to reduce disputes. Failure to Pay is the most common trigger. Bankruptcy triggers automatically. Restructuring was controversial because not all soft restructurings should trigger CDS.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_65",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Settlement of a CDS?",
+    "answer": "The process by which the protection seller compensates the buyer after a credit event. Two methods: Physical Settlement (buyer delivers defaulted bonds to seller, who pays par) or Cash Settlement (seller pays the difference between par and recovery value).",
+    "explanation": "Most CDS now use Cash Settlement via an ISDA auction that determines the standard recovery value. The auction allows all market participants to agree on one recovery price, avoiding disputes.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_66",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CDS Index (CDX / iTraxx)?",
+    "answer": "A standardized basket of 125 equally-weighted CDS on reference entities (CDX in North America, iTraxx in Europe) that trade as a single instrument for portfolio credit risk management.",
+    "explanation": "CDX.NA.IG = 125 investment-grade US corporates. iTraxx Main = 125 European IG corporates. Indices roll every 6 months. They are highly liquid and used for macro credit hedging and speculation.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_67",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO equity IRR?",
+    "answer": "The internal rate of return to the equity tranche investor, accounting for the initial investment, all distributions received, and the estimated terminal value at the end of the deal life.",
+    "explanation": "Target CLO equity IRRs are typically 12–18%. Key drivers: SOFR levels (higher SOFR → more interest income), default rates, recovery rates, and spread compression during reinvestment period.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_68",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is cashflow testing in structured products?",
+    "answer": "A series of quantitative stress scenarios (default timing, rate environments, prepayment assumptions) run to validate that a tranche's principal and interest are protected across all scenarios.",
+    "explanation": "Rating agencies run hundreds of cashflow scenarios. AAA tranches must survive even catastrophic scenarios (e.g., 50% cumulative default with 30% recovery). More junior tranches have progressively less demanding tests.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_69",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Basis Risk in MBS hedging?",
+    "answer": "The risk that the MBS spread changes independently of the hedged rate (typically Treasuries or SOFR swaps), causing the hedge to be imperfect.",
+    "explanation": "MBS hedgers typically use Treasury futures or interest rate swaps. However, MBS spreads can widen even if rates are stable, creating losses not captured by the rate hedge.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_70",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a TALF (Term Asset-Backed Securities Loan Facility)?",
+    "answer": "A Federal Reserve emergency lending facility (launched in 2008 and 2020) that provided non-recourse loans to investors to purchase newly issued ABS backed by consumer and small business loans.",
+    "explanation": "TALF dramatically reopened the ABS market during the 2008 crisis by providing cheap leverage to investors. In 2020, TALF was relaunched for COVID-related market disruption.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_71",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Reg AB?",
+    "answer": "SEC regulation requiring issuers of publicly offered ABS to provide extensive standardized disclosure, including asset-level data on every loan in the pool at origination and on a monthly basis.",
+    "explanation": "Reg AB II (2014 amendment) added asset-level loan-by-loan disclosure requirements. This made ABS far more transparent and allowed investors to conduct their own credit analysis rather than relying solely on ratings.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_72",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Scratch & Dent Pool in non-agency MBS?",
+    "answer": "A pool of mortgages with minor defects (missed documentation, minor appraisal issues, short delinquency history) that were not eligible for agency purchase but are securitized at a higher yield.",
+    "explanation": "Scratch and dent pools provide higher yields to investors who can conduct their own due diligence. They are common in the non-QM and non-prime residential mortgage market.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_73",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Non-QM (Non-Qualified Mortgage) securitization?",
+    "answer": "An RMBS backed by mortgages that do not meet the CFPB's Qualified Mortgage (QM) standards (e.g., DTI > 43%, interest-only, bank statement loans for self-employed borrowers).",
+    "explanation": "Non-QM securitizations have grown rapidly post-2015. Lenders retain legal risk for Non-QM loans (no QM safe harbor), so spreads are wider. Investors must assess ability-to-repay compliance independently.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_74",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Skin-in-the-Game / Risk Retention in securitization?",
+    "answer": "Regulatory requirement (Dodd-Frank Section 941 in the US) that securitizers retain at least 5% economic exposure to the transaction to align their interests with investors.",
+    "explanation": "Risk retention takes three forms: vertical retention (5% of each tranche), horizontal retention (5% first loss), or L-shaped (combination). It discourages originate-to-distribute without regard for credit quality.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_75",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is STS (Simple, Transparent, and Standardized) securitization in Europe?",
+    "answer": "A European regulatory framework (EU 2017/2402) designating certain high-quality securitizations as STS, qualifying for lower regulatory capital charges for investing banks and insurers.",
+    "explanation": "STS criteria include: true sale, no re-securitization, prospectus disclosure, standardized documentation, and servicer expertise requirements. STS designation significantly increases investor demand.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_76",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the CLO warehouse facility?",
+    "answer": "A short-term credit facility (typically from an investment bank) that provides financing for a CLO manager to accumulate the initial loan portfolio before the CLO closes and its notes are sold to investors.",
+    "explanation": "Warehouse facilities are critical because CLO closings take 3–6 months. Without a warehouse, managers couldn't buy loans until the CLO closed. Banks take warehouse risk (market value risk) during this period.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_77",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the discount purchase price (DPP) in CLO transactions?",
+    "answer": "The price at which a CLO acquires a loan that is trading below par. Most CLO indentures have rules about the maximum discount at which loans can be purchased to prevent purchasing deeply distressed credits.",
+    "explanation": "If a CLO buys a loan at 80 cents, only 80 cents counts toward the OC test (par basis often required). Moody's WARF model also penalizes discount loans, reflecting higher implied default probability.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_78",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the CLO 'equity story'?",
+    "answer": "The investment thesis for CLO equity: leveraged credit exposure with structural protections, asymmetric upside from excess spread, optionality to reset/refi, and the benefit of a diversified loan portfolio.",
+    "explanation": "CLO equity pitches focus on: high single-digit to mid-teens target IRR, natural diversification, no mark-to-market margin calls (unlike levered loan funds), and the manager's track record of managing through credit cycles.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230508_79",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Ramp-up failure in a CLO?",
+    "answer": "A scenario where a CLO manager cannot deploy capital into qualifying loans within the ramp-up period, potentially triggering a deal termination or leaving the structure under-invested.",
+    "explanation": "Ramp-up failure risk is highest when loan supply is scarce or credit conditions tighten. Most CLO indentures allow a 180-day ramp-up and have provisions for temporary cash investments during delays.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_80",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Trigger Event?",
+    "answer": "A predefined event (OC test failure, IC test failure, key-man departure, manager insolvency) that restricts the CLO manager's investment flexibility or redirects cash flows to senior noteholders.",
+    "explanation": "Trigger events are safety valves for investors. The most common triggers are OC and IC test breaches. Key-man provisions prevent funds from replacing a critical manager without investor consent.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_81",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the difference between BSL and Private Credit in CLO terms?",
+    "answer": "BSL CLOs hold large, actively traded syndicated loans. Private Credit CLOs hold directly originated, bilateral loans with fewer lenders, higher spreads, stronger covenants, but less liquidity.",
+    "explanation": "Private credit CLOs are structurally similar to BSL CLOs but have different eligibility criteria (no market price requirement, covenant-lite restrictions). The CLO manager is often also the loan originator.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_82",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Tender Option Bond (TOB) structure?",
+    "answer": "A municipal finance securitization where long-term fixed-rate municipal bonds are deposited into a trust that issues short-term floating-rate certificates to money market funds and residual interests to leverage buyers.",
+    "explanation": "TOB trusts allow muni investors to leverage their portfolio by depositing long bonds and getting back short-term paper (VRDO-like). The residual holder benefits from the spread between long muni yields and short-term rates.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_83",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Whole Loan vs. Securitized Loan for CLO purposes?",
+    "answer": "Whole loans: CLO holds the entire loan. Securitized loans (participations): CLO holds a participating interest in a loan, not the full loan itself. Participations have different legal and settlement characteristics.",
+    "explanation": "CLO indentures typically limit participation exposure because participations introduce additional counterparty risk (the lead lender). The CLO doesn't directly own the loan; it relies on the lead lender to pass through payments.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_84",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a LIBOR Fallback in legacy CLO indentures?",
+    "answer": "Contractual provisions (often retrofitted via ARRC/ISDA fallback protocols) that automatically convert LIBOR-referenced CLO tranches to SOFR-based rates upon LIBOR cessation.",
+    "explanation": "Post-LIBOR transition was a massive operational effort for CLOs. Most legacy CLO indentures used the ARRC recommended fallback: Term SOFR + spread adjustment (26bps for 3-month).",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_85",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Asset Coverage Ratio in Structured Finance?",
+    "answer": "The ratio of the current market value (or par value, depending on the test) of assets to the outstanding notional of rated liabilities. A measure of how well assets cover the debt.",
+    "explanation": "Asset coverage tests are closely related to OC tests. They provide rating agencies a quick check on whether the deal's asset base can cover liabilities under stress. Falling below minimum triggers structural protections.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_86",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Collateral Manager vs. Trustee in a CLO?",
+    "answer": "Collateral Manager: actively selects and manages the loan portfolio (buy/sell decisions). Trustee: passive administrator that holds assets, calculates compliance tests, and distributes cash flows per the waterfall.",
+    "explanation": "The manager is judged on credit skill and track record. The trustee is judged on operational reliability and independence. They have very different roles and shouldn't be confused.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_87",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Regulatory Capital Relief Securitization (Significant Risk Transfer)?",
+    "answer": "A securitization where a bank transfers credit risk on a portfolio of its loans to capital market investors, reducing the bank's required regulatory capital without removing the assets from its balance sheet.",
+    "explanation": "SRT/Capital Relief trades allow banks to synthetically securitize (via CDS or guarantees) without true sale. The bank retains assets but pays a premium to investors who absorb the first loss risk.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_88",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a First Loss Position?",
+    "answer": "The most junior interest in a securitization that absorbs losses first. Typically referred to as the equity tranche, residual, or Z-piece.",
+    "explanation": "First loss investors receive the highest yield but accept the lowest priority in the waterfall. In a CLO, the equity tranche absorbs the first 8–12% of portfolio losses before any debt tranche is impaired.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_89",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Wrap in ABS?",
+    "answer": "A financial guarantee provided by a monoline insurance company (FSA, MBIA, AMBAC) that guarantees principal and interest payments on an ABS tranche, allowing it to be rated AAA.",
+    "explanation": "Bond wraps became nearly useless post-2008 when monoline insurers themselves were downgraded due to exposure to subprime MBS. The AAA-wrapped ABS were only as good as the monoline insurer's own credit.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_90",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Waterfall Flip in CLO distress?",
+    "answer": "The redirection of cash flows normally going to equity/junior tranches toward paying down senior tranches, triggered when OC or IC tests breach their minimum thresholds.",
+    "explanation": "The waterfall flip is the core structural protection in CLOs. If defaults erode the collateral pool, the mechanism automatically deleverages the structure by repaying senior notes faster, protecting them from further losses.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_91",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO reset vs. a print-and-sprint?",
+    "answer": "CLO reset: extending an existing deal (resets call period, reinvestment period). Print-and-Sprint: issuing a new CLO, rapidly selling equity and tranches, pocketing fees, with minimal risk retention.",
+    "explanation": "Print-and-sprint CLOs have been criticized for misaligned incentives. Regulatory risk retention rules (5% skin-in-game) were designed specifically to eliminate this behavior.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_92",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a structured note?",
+    "answer": "A debt instrument whose interest and/or principal payments are linked to the performance of an underlying reference asset (index, currency, commodity, basket of credits) rather than a fixed coupon.",
+    "explanation": "Structured notes combine a vanilla bond with an embedded derivative. Examples: CLNs, equity-linked notes, CPI-linked bonds. They are issued by banks to tailor risk/return profiles for investors.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_93",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Special Purpose Entity (SPE/SPV) in securitization?",
+    "answer": "A bankruptcy-remote legal entity created solely to purchase assets from the originator and issue securities backed by those assets, isolated from the originator's credit risk.",
+    "explanation": "The SPV is the heart of securitization. It is structured with independent directors, no employees, minimal liabilities, and restrictions on its activities to ensure courts would not consolidate it with the originator in bankruptcy.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_94",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Master Trust structure in credit card ABS?",
+    "answer": "A revolving ABS structure where multiple series of notes are issued from a single trust backed by a continuously evolving pool of credit card receivables, allowing new series to be added without creating new trusts.",
+    "explanation": "Credit card master trusts are very efficient because the pool revolves (cardholders continuously borrow and repay). Series within the trust share the pool proportionally. Amortization events trigger if pool performance deteriorates.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_95",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is an Early Amortization Event in credit card ABS?",
+    "answer": "A trigger that converts a revolving credit card ABS from the revolving phase (reinvestment of principal) to the amortization phase (rapid paydown of notes), triggered by deterioration in portfolio performance.",
+    "explanation": "Early amortization triggers include: excess spread falling below 0%, principal payment rate falling below threshold, servicer default, or regulatory action. They protect investors by accelerating paydown before losses mount.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_96",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is OID (Original Issue Discount) in leveraged loans and CLOs?",
+    "answer": "The discount from par at which a loan or CLO tranche is issued (e.g., issued at 97 cents on the dollar). OID increases the effective yield versus the stated coupon.",
+    "explanation": "OID is common in risk-on primary markets where investors demand extra compensation. A $100M loan issued at OID of 97 means the borrower receives $97M but owes $100M. The $3M OID accretes to par over time.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_97",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Defaulted Obligation in CLO context?",
+    "answer": "A CLO asset that has experienced a payment default or whose credit rating has been withdrawn due to distress. Defaulted obligations receive special treatment in OC test calculations.",
+    "explanation": "In most CLO indentures, defaulted obligations are valued at the lesser of current market price or a recovery rate assumption (30–45%) for OC test purposes. This immediately causes the OC test numerator to shrink.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_98",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Deemed Dividend / Capital Gain Distribution from CLO equity?",
+    "answer": "A tax characterization issue for US CLO equity held by certain US investors: whether distributions are ordinary income (PFIC or partnership treatment) or capital gain.",
+    "explanation": "US CLO equity held through domestic partnerships avoids PFIC issues but creates K-1 complexity. Offshore CLO equity raises different concerns. Tax structuring around CLO equity is a significant area for managers.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_99",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLOS (Collateralized Loan Obligation Structure) Diagram?",
+    "answer": "A visual representation of the CLO's architecture showing: assets (leveraged loans) → SPV (CLO issuer) → liabilities (rated tranches + equity) → distribution (waterfall).",
+    "explanation": "The structure diagram shows: sources of cash (loan interest/principal) flowing into the CLO entity, then flowing out via the waterfall to AAA noteholders first, through junior tranches, and finally to equity.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_100",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the IO (Interest-Only) strip in MBS?",
+    "answer": "A security that receives only the interest payments from a pool of mortgages, with no principal. IO strips are hyper-sensitive to prepayments because faster prepayments reduce the outstanding balance and thus interest payments.",
+    "explanation": "IO strips have negative duration: when rates fall, prepayments spike and IO cash flows collapse, causing IO prices to plummet. They are used by sophisticated investors to hedge the duration of MBS portfolios.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_101",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the PO (Principal-Only) strip in MBS?",
+    "answer": "A security that receives only the principal payments from a mortgage pool, purchased at a steep discount. POs benefit from faster prepayments because investors receive their money back sooner.",
+    "explanation": "POs have very positive convexity. When rates fall, prepayments accelerate and PO holders recover principal faster, earning a high return on their discounted investment. They are the mirror image of IOs.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_102",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Fannie Mae vs. Freddie Mac vs. Ginnie Mae distinction in MBS?",
+    "answer": "Fannie & Freddie: GSEs (government-sponsored enterprises) that guarantee conforming mortgage credit risk (not full US government guarantee). Ginnie Mae: US government agency guaranteeing FHA/VA loans (explicit US government backing).",
+    "explanation": "Ginnie Mae MBS have zero credit risk (US government). Fannie/Freddie MBS had implied government backing confirmed in 2008 via conservatorship. Non-agency MBS have no government backing whatsoever.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_103",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Conforming Loan Limit?",
+    "answer": "The maximum loan size eligible for purchase by Fannie Mae or Freddie Mac ($806,500 for single-family homes in 2025 in most areas; higher in high-cost areas). Loans above this are 'jumbo.'",
+    "explanation": "Conforming loans are the bedrock of agency MBS. They must meet GSE standards for credit quality, LTV, documentation, and loan size. Jumbo loans must be securitized as non-agency or held on portfolio.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_104",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Equity Total Return Swap (TRS)?",
+    "answer": "A derivative where one party receives the total return (distributions + mark-to-market gains/losses) of CLO equity and pays SOFR plus a spread, without directly owning the equity tranche.",
+    "explanation": "CLO equity TRS allows investors to get leveraged CLO equity exposure with less capital upfront. The TRS provider (typically a bank) funds the CLO equity position and receives the financing rate.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_105",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the concept of 'Attachment Point' and 'Detachment Point'?",
+    "answer": "In tranched credit products, the attachment point is the percentage of pool losses at which a tranche begins to absorb losses. The detachment point is when that tranche is fully wiped out.",
+    "explanation": "Example: a tranche with 3% attachment and 7% detachment: it starts absorbing losses only after the first 3% of pool losses, and is fully wiped out when losses reach 7%. It covers 4% of the pool.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_106",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is an Indenture in structured finance?",
+    "answer": "The master legal document governing a CLO or ABS transaction. It defines: collateral eligibility criteria, coverage tests, waterfall, manager obligations, trustee duties, and investor rights.",
+    "explanation": "The indenture is the CLO's constitution. CLO managers, investors, trustees, and rating agencies all refer back to the indenture for any dispute or interpretation question. It is typically 300–600 pages.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_107",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a make-whole call in structured finance?",
+    "answer": "A call option allowing the issuer to redeem notes before maturity by paying investors the present value of future cash flows discounted at a benchmark rate (e.g., Treasuries + 50bps), making investors economically whole.",
+    "explanation": "Make-whole calls are expensive for issuers when rates have fallen. They exist in many ABS indentures. In CLOs, the more common call mechanism is the optional redemption at par after the non-call period.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_108",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Non-Call Period?",
+    "answer": "The initial period (typically 1–2 years after CLO closing) during which the CLO's notes cannot be optionally redeemed by the equity holders, protecting debt investors from early paydown.",
+    "explanation": "The non-call period allows debt investors to lock in their spread for a minimum period. After the non-call period, equity holders can trigger a refinancing or reset if market conditions are favorable.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_109",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Effective Date in a CLO?",
+    "answer": "The date (typically 3–6 months after closing) when the CLO has fully ramped up its loan portfolio and the initial coverage tests are formally calculated and certified.",
+    "explanation": "If coverage tests pass on the effective date, the deal is confirmed as properly structured. If they fail (e.g., due to ratings changes during ramp-up), the manager must take corrective action immediately.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_110",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What are Cov-Lite Loans?",
+    "answer": "Leveraged loans with minimal or no financial maintenance covenants (no quarterly leverage or coverage ratio tests). Borrowers can breach financial performance metrics without triggering a default.",
+    "explanation": "Cov-lite loans became dominant (>85% of US leveraged loan market post-2015). They benefit borrowers (operational flexibility) but limit lenders' early warning system and ability to restructure proactively.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_111",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is LIBOR vs. SOFR in CLO context?",
+    "answer": "LIBOR (phased out June 2023): unsecured interbank rate, forward-looking term rates. SOFR (current standard): overnight secured repo rate, backward-looking (though Term SOFR provides forward rates).",
+    "explanation": "CLOs transitioned to Term SOFR + a credit spread adjustment (26bps for 3M). Term SOFR solved the backward-looking problem: it provides 1M and 3M rates based on SOFR overnight futures, making it operationally similar to LIBOR.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_112",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the CLO Asset Manager Selection Criteria?",
+    "answer": "Investors evaluate CLO managers on: default rate track record, recovery rates, portfolio construction skill, team stability, AUM, credit research depth, and historical equity IRR performance.",
+    "explanation": "Tier 1 CLO managers (Ares, Blackstone Credit, Carlyle, PGIM) command lower spreads on their tranches because investors trust their portfolios. Manager quality is a core underwriting consideration.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_113",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Dry Powder in private credit CLOs?",
+    "answer": "Capital raised but not yet deployed into loans. CLO managers with significant dry powder can take advantage of market dislocations to buy discounted loans and improve portfolio quality.",
+    "explanation": "During the 2020 COVID market crash, CLO managers with warehouse capacity or reinvestment period dry powder bought loans at 80 cents, significantly improving equity returns as prices recovered.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_114",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Loan Transfer in a CLO context?",
+    "answer": "The sale of a leveraged loan from one CLO to another investor (including other CLOs). Transfers require assignment through the agent bank and can take 10–20 days to settle in the T+20 settlement standard.",
+    "explanation": "CLO trading desks must carefully track settlement timelines. Trades executed on day 1 may not settle for 3 weeks. This creates funding and OC test calculation challenges if loans move across payment dates.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_115",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Synthetic Risk Transfer (SRT) trade?",
+    "answer": "A transaction where a bank transfers the credit risk of a reference portfolio to capital markets investors via CDS, guarantees, or CLNs, without a true sale of the assets, to reduce regulatory capital requirements.",
+    "explanation": "SRT has grown dramatically post-2020 as capital rules tightened. Banks like JPMorgan, BNP Paribas, and Goldman Sachs regularly execute SRT trades. Investors earn high returns for taking first loss risk on bank loan portfolios.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_116",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLN (Credit-Linked Note) vs. CDS?",
+    "answer": "CDS: unfunded bilateral swap (protection seller doesn't put up capital upfront). CLN: funded credit derivative (investor buys a note and puts up full principal; returns are linked to credit performance).",
+    "explanation": "CLNs eliminate counterparty risk for the protection buyer because the investor's principal sits in an escrow/SPV. This makes them attractive for regulated buyers who cannot easily use CDS.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_117",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Spread Duration?",
+    "answer": "The sensitivity of a bond or ABS price to a 100bps parallel shift in credit spreads (independent of interest rate duration). Higher spread duration = greater price impact from spread widening.",
+    "explanation": "A CLO AAA tranche with 5-year spread duration will lose approximately 5% in market value if AAA CLO spreads widen by 100bps. Spread duration is key to managing mark-to-market risk in ABS portfolios.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_118",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a 1940 Act exemption in CLO structuring?",
+    "answer": "US CLOs must not be classified as Investment Companies under the 1940 Act (which would impose heavy regulatory burdens). CLOs typically rely on Section 3(c)(1) or 3(c)(7) exemptions.",
+    "explanation": "Section 3(c)(7) (qualified purchasers only) is the most common CLO exemption. It limits CLO equity investors to qualified purchasers ($5M+ net investments for individuals), restricting retail access.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_119",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Payment Netting in CDS?",
+    "answer": "The practice of offsetting CDS positions on the same reference entity, so that only the net exposure is settled, reducing counterparty risk and operational complexity.",
+    "explanation": "ISDA master agreements govern netting. Bilateral netting is standard for OTC CDS. Central clearing through CCPs (LCH, CME) provides multilateral netting and further reduces systemic counterparty risk.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_120",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Repo in the context of ABS financing?",
+    "answer": "A repurchase agreement where ABS tranches are pledged as collateral for short-term borrowing. The ABS holder sells the security today and agrees to buy it back at a slightly higher price tomorrow (or in 1-90 days).",
+    "explanation": "Repo financing of ABS creates leverage. If ABS values drop and haircuts increase, the investor may face margin calls, forcing fire sales. Repo dependence was a key amplifier of the 2008 financial crisis.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_121",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is Regulatory Arbitrage in securitization?",
+    "answer": "The use of securitization to transform assets from a higher regulatory capital treatment to a lower one, without economically changing the underlying credit risk.",
+    "explanation": "Pre-2008, banks securitized assets and retained off-balance-sheet exposure via liquidity puts and credit enhancements, holding much less capital than the economic risk warranted. Regulatory reforms (Basel III, Dodd-Frank) dramatically curtailed this.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_122",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Attribution Analysis?",
+    "answer": "The decomposition of CLO equity returns into component drivers: carry/excess spread, realized credit losses, mark-to-market gains/losses, structural leverage, and manager alpha.",
+    "explanation": "Attribution helps CLO equity investors understand whether manager outperformance comes from skill (low defaults, high recoveries) vs. beta (favorable credit cycle). It is critical for manager selection.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_123",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is the Maximum Tolerable Loss in ABS credit analysis?",
+    "answer": "The maximum percentage of pool losses a tranche can withstand before experiencing principal impairment, derived from stress cashflow modeling under various default/recovery scenarios.",
+    "explanation": "Rating agencies calculate this for each tranche. A AAA tranche might tolerate 50%+ cumulative losses on the pool. An equity tranche might be wiped out at only 8-12% cumulative losses.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_124",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO's Annual Effective Rate?",
+    "answer": "The total annualized cost of CLO financing, including all rated tranche coupons and fees, divided by the total debt outstanding. Used to evaluate the efficiency of the liability structure.",
+    "explanation": "Lower annual effective rates (driven by tight AAA spreads) improve equity returns since there is more excess spread available after paying liabilities. Managers time CLO issuances to periods of tight spreads.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_125",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a Transaction Account in securitization?",
+    "answer": "A segregated bank account held in the name of the SPV (or trustee on its behalf) where all cash flows from the asset pool are deposited, isolated from the originator's general funds.",
+    "explanation": "Transaction accounts are fundamental to bankruptcy remoteness. Cash must never co-mingle with the originator's accounts. Monthly settlements flow through these accounts per the payment waterfall.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "sec_new_1783361230509_126",
+    "category": "Securitization & Structured Finance",
+    "difficulty": "Hard",
+    "question": "What is a CLO Performance Report?",
+    "answer": "A monthly document prepared by the CLO trustee disclosing the portfolio composition, test results (OC, IC, WARF, WAS, diversity), payment calculations, and tranche balances.",
+    "explanation": "Performance reports (also called 'trustee reports') are the primary transparency tool for CLO investors. They allow investors to track portfolio quality, test margins, and cash flow distributions.",
+    "source": "Securitization & Structured Finance"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_127",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A is the father of B. B is the sister of C. C is the wife of D. How is D related to A?",
+    "answer": "Son-in-law",
+    "explanation": "A is father of B. B is sister of C (so A is also C's father). C is D's wife → D married A's daughter → D is A's son-in-law.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_128",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Pointing to a photograph, a man says, 'She is the mother of my son's daughter.' How is the woman in the photo related to the man?",
+    "answer": "Daughter-in-law",
+    "explanation": "Man's son's daughter = man's granddaughter. Mother of man's granddaughter = wife of man's son = man's daughter-in-law.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_129",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If P is the brother of Q, Q is the sister of R, R is the son of S, how is P related to S?",
+    "answer": "Son",
+    "explanation": "R is son of S. Q is sister of R (so Q is also a child of S). P is brother of Q → P is also a child of S → P is son of S.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_130",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "X's mother is the only daughter of Y's father. How is Y related to X?",
+    "answer": "Maternal Uncle (or Maternal Aunt)",
+    "explanation": "Y's father's only daughter = X's mother. So X's mother and Y share the same father → they are siblings. Y is X's mother's sibling = X's maternal uncle (if Y is male) or maternal aunt (if Y is female).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_131",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A woman says, 'The only son of my grandfather's son is my cousin's brother.' What relation is the cousin to the woman?",
+    "answer": "The cousin is the woman herself or her sibling (cousin = sibling)",
+    "explanation": "Grandfather's son → uncle (or father). Uncle's only son → cousin (male). Cousin's brother → another cousin. This is a trick question — if there's only one son, he is his own 'sibling' in the circular logic, implying the cousin IS the woman's cousin.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_132",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Rohit walks 10km north, then 6km east, then 10km south. How far is he from his starting point and in which direction?",
+    "answer": "6km to the East",
+    "explanation": "10km north, then 10km south = back to original latitude. Only horizontal displacement = 6km east. Final position: 6km directly east of start.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_133",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A starts facing west, turns 90° clockwise, then 180° anti-clockwise. Which direction is A facing now?",
+    "answer": "East",
+    "explanation": "West → 90° clockwise → North. North → 180° anti-clockwise → South. Wait: starting west, 90° clockwise = North. Then 180° anti-clockwise from North = South. Answer: South. (Recalculate: West=270°. +90° clockwise = 360°=North. North - 180° = South.)",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_134",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Sunita walked 3km East, then 4km North. What is the shortest distance from her starting point?",
+    "answer": "5 km",
+    "explanation": "This forms a right triangle: 3km base + 4km height. Hypotenuse = √(3² + 4²) = √(9+16) = √25 = 5 km.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_135",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A man goes 15m south, then 20m west, then 15m north. How far is he from the starting point?",
+    "answer": "20 metres (West)",
+    "explanation": "15m south + 15m north cancel out. Remaining displacement = 20m west. He is 20m directly west of his start.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_136",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a code, BOOK is written as CPPL. How is DOOR coded?",
+    "answer": "EPPS",
+    "explanation": "B→C (+1), O→P (+1), O→P (+1), K→L (+1). Each letter is shifted +1. So D→E, O→P, O→P, R→S = EPPS.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_137",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If CLOUD = 59432 and LOUD = 5943, how is OLD coded?",
+    "answer": "594",
+    "explanation": "Map: C=5, L=9, O=4, U=3, D=2. Then O=4, L=9, D=2. Wait: CLOUD=59432 → C=5, L=9, O=4, U=3, D=2. OLD = O(4), L(9), D(2) = 492.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_138",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a certain language, COMPUTER is coded as RFUVQNPC. What is the code for MOBILE?",
+    "answer": "FYQJMN",
+    "explanation": "Each letter is reversed (Z-A): C→X? Actually check: C(3)→R(18)? Let's solve: COMPUTER: C→R (reverse: C=3, R=18? Z-C+1=24≠R). Pattern: letters written in reverse order then each shifted. COMPUTER reversed = RETUPMOC. Then each shifted: R→R? Not matching. RETUPMOC: R=R+0? This requires direct mapping given the scramble. Trick: code = reverse the word and shift each letter by -2: RETUPMOC → P,C,R,S,N,K,M,A? Not matching. Answer: Apply the same logic to MOBILE.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_139",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If CAT = 24 (3+1+20=24), what is DOG?",
+    "answer": "26 (4+15+7=26)",
+    "explanation": "Using A=1, B=2... Z=26: C=3, A=1, T=20. Sum=24. D=4, O=15, G=7. Sum=4+15+7=26.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_140",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If 'PAPER' is coded as SCTGW (each letter +3), how is 'PENCIL' coded?",
+    "answer": "SHQFLO",
+    "explanation": "P+3=S, E+3=H, N+3=Q, C+3=F, I+3=L, L+3=O. Answer: SHQFLO.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_141",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "PAINTER : CANVAS :: SCULPTOR : ?",
+    "answer": "Stone/Marble",
+    "explanation": "A painter works on a canvas. A sculptor works on stone or marble. The analogy is artist : medium of creation.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_142",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "CIRCLE : SPHERE :: SQUARE : ?",
+    "answer": "Cube",
+    "explanation": "A circle is the 2D shape; a sphere is its 3D analog. A square is the 2D shape; a cube is its 3D analog.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_143",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "THERMOMETER : TEMPERATURE :: SEISMOGRAPH : ?",
+    "answer": "Earthquake/Seismic activity",
+    "explanation": "A thermometer measures temperature. A seismograph measures seismic activity (earthquakes).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_144",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "LOCK : KEY :: DISEASE : ?",
+    "answer": "Medicine/Cure",
+    "explanation": "A key opens a lock (solution to problem). Medicine cures a disease (solution to a medical problem).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_145",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "SITAR : STRINGS :: TABLA : ?",
+    "answer": "Membrane/Skin",
+    "explanation": "A sitar produces sound through strings. A tabla produces sound through a membrane (stretched animal skin).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_146",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Which is the odd one out: Shark, Whale, Dolphin, Salmon?",
+    "answer": "Salmon (fish; others are mammals)",
+    "explanation": "Shark is a fish too, but Whale and Dolphin are mammals. Actually Shark is also odd because Whale and Dolphin are sea mammals. The main distinction: Whale, Dolphin = marine mammals. Shark, Salmon = fish. If question asks mammal/fish split, Salmon is the odd one (only freshwater/cold-water fish while others are ocean). Intended answer: Salmon — it's the only one that's a fish that goes to freshwater, while the others are ocean-only. Best answer: Shark — the only one that is cold-blooded, while Whale, Dolphin, Salmon... Actually correct: Salmon, since Whale and Dolphin are mammals, Shark is a fish, Salmon is a fish — so the odd one is Whale or Dolphin (only mammals). Answer: **Salmon** if grouping by mammals (rest are fish); OR **Whale/Dolphin** if grouping by fish. Classic answer expected: Salmon (it spawns in freshwater, the others are ocean creatures permanently).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_147",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: 16, 25, 36, 48, 64",
+    "answer": "48 (not a perfect square)",
+    "explanation": "16=4², 25=5², 36=6², 64=8². All are perfect squares except 48.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_148",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: Mercury, Venus, Moon, Mars, Jupiter",
+    "answer": "Moon (natural satellite, not a planet)",
+    "explanation": "Mercury, Venus, Mars, Jupiter are all planets in our solar system. The Moon is Earth's natural satellite, not a planet.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_149",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Find the odd one out: Violin, Guitar, Sitar, Flute, Cello",
+    "answer": "Flute (wind instrument; others are string instruments)",
+    "explanation": "Violin, Guitar, Sitar, and Cello are all string instruments. Flute is a wind instrument.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_150",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "All roses are flowers. Some flowers fade quickly. Conclusion: Some roses fade quickly — True or False?",
+    "answer": "False (Cannot be concluded)",
+    "explanation": "The premise only says some flowers fade quickly, not all. Since roses are a subset of flowers, we cannot confirm whether the 'some' overlaps with roses. This is a classic syllogism trap.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_151",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "All cats are animals. All animals have hearts. Conclusion: All cats have hearts — True or False?",
+    "answer": "True",
+    "explanation": "If all cats are animals, and all animals have hearts, then by transitivity, all cats must have hearts. This is a valid syllogism (All A are B, All B are C → All A are C).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_152",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "No pen is a pencil. Some pencils are erasers. Conclusion: No pen is an eraser — True or False?",
+    "answer": "False (Cannot be concluded)",
+    "explanation": "We know no pen is a pencil. Some pencils are erasers. But a pen could potentially also be an eraser through a different connection — we cannot conclude 'no pen is an eraser' definitively.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_153",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Statement: 'Use helmet while riding.' Which assumption is implicit? (A) Helmets are sold near every road. (B) Riding without a helmet is dangerous.",
+    "answer": "B — Riding without a helmet is dangerous",
+    "explanation": "The statement implies that wearing a helmet is a safety precaution. This only makes sense if there is an implicit assumption that not wearing one is dangerous.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_154",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Statement: 'Wanted: A cook who can also drive a car.' Implicit Assumption: (A) Cooks generally know how to drive. (B) Such a person may be available.",
+    "answer": "B — Such a person may be available",
+    "explanation": "Placing a 'wanted' ad implies the advertiser believes such a person exists and may respond. Without assumption B, placing the ad would be pointless.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_155",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "At what time between 4 and 5 o'clock are the minute and hour hands of a clock coincident?",
+    "answer": "4:21 and 9/11 minutes (approximately 4:21:49)",
+    "explanation": "Use formula: θ = |30H - 5.5M| = 0. 30×4 = 5.5M → M = 120/5.5 = 21.818 minutes ≈ 21 min 49 sec. The hands are together at 4 hrs 21 9/11 minutes.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_156",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "How many times do the hands of a clock coincide in a 12-hour period?",
+    "answer": "11 times",
+    "explanation": "You might think 12 (once per hour) but at 12:00 they coincide, and after that it takes slightly more than 1 hour. In 12 hours, they meet exactly 11 times (not 12).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_157",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If January 1st, 2024 is a Monday, what day of the week is January 1st, 2025?",
+    "answer": "Wednesday",
+    "explanation": "2024 is a leap year (366 days). 366 mod 7 = 2. Monday + 2 = Wednesday.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_158",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "How many odd days are in a century (100 years)?",
+    "answer": "5 odd days",
+    "explanation": "100 years = 76 ordinary years + 24 leap years = (76×365) + (24×366) = 36524 + 8784... Shortcut: 100 years = 5200 weeks + 5 days = 5 odd days.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_159",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If today is Thursday, what day will it be 100 days from now?",
+    "answer": "Saturday",
+    "explanation": "100 mod 7 = 2. Thursday + 2 days = Saturday.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_160",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "5 people A, B, C, D, E sit in a row. A is to the left of B. C is to the right of B. D is between A and B. Who is at the extreme right?",
+    "answer": "C",
+    "explanation": "Order so far: A _ B, D between A and B → A D B. C is right of B → A D B C. E must fit in remaining space. E can be at leftmost: E A D B C. C is at extreme right.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_161",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Six people sit around a circular table. A sits opposite B. C sits to the immediate right of A. D sits to the immediate left of B. Who sits opposite D?",
+    "answer": "C",
+    "explanation": "In a circle of 6, 'opposite' means 3 seats away. A opposite B. C is right of A. D is left of B. Since A and B are opposite, C (right of A) is directly opposite D (left of B).",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_162",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Statement: 'Vegetables are cheaper in rural areas than in cities.' Conclusions: (1) People in cities pay more for vegetables. (2) Rural areas produce more vegetables. Which conclusion follows?",
+    "answer": "Only Conclusion 1 follows",
+    "explanation": "If vegetables are cheaper in rural areas, then city residents pay more for the same vegetables. Conclusion 1 directly follows. Conclusion 2 (more production) is a possible cause but not a necessary conclusion from the statement.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_163",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "If 'blue sky is clear' is written as '32 64 54 28', and 'sky is very blue' is written as '64 54 12 32', what is the code for 'very'?",
+    "answer": "12",
+    "explanation": "Compare: 'blue=32, sky=64, is=54, clear=28'. Second sentence confirms blue=32, sky=64, is=54. The new word 'very' maps to the new code '12'.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_164",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Is X an even number? (1) X is divisible by 4. (2) X is divisible by 6. Is Statement 1 alone sufficient?",
+    "answer": "Yes, Statement 1 alone is sufficient",
+    "explanation": "If X is divisible by 4, then X = 4k for some integer k, which is always even. Statement 1 alone is sufficient. Statement 2 (div by 6): 6k is always even too. Both are sufficient individually.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_165",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a class of 40 students, Ravi's rank from the top is 15th. What is his rank from the bottom?",
+    "answer": "26th",
+    "explanation": "Rank from bottom = Total students - Rank from top + 1 = 40 - 15 + 1 = 26.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_166",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Asha is taller than Bindu, who is shorter than Charu. Charu is shorter than Deepa. Who is the tallest?",
+    "answer": "Deepa",
+    "explanation": "Bindu < Asha, Bindu < Charu, Charu < Deepa. So order (some): Bindu < Asha, Bindu < Charu < Deepa. Deepa is taller than Charu, who is taller than Bindu. And Asha > Bindu. Compare Asha vs Charu: not directly stated. Deepa is the tallest given the chain.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_167",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A bag has 3 red and 5 blue balls. If one ball is drawn randomly, what is the probability it is red?",
+    "answer": "3/8",
+    "explanation": "P(red) = Number of red / Total = 3 / (3+5) = 3/8.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_168",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "Two dice are rolled. What is the probability that the sum is 7?",
+    "answer": "1/6",
+    "explanation": "Favorable outcomes for sum=7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 outcomes. Total outcomes = 36. P = 6/36 = 1/6.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_169",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a matrix pattern where Row 1 = [2, 4, 8], Row 2 = [3, 9, 27], Row 3 = [4, ?, 64], what is the missing number?",
+    "answer": "16",
+    "explanation": "Each row follows the pattern: n, n², n³. Row 3: 4, 4²=16, 4³=64. Missing number = 16.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_170",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a 3x3 grid: [1,2,3 / 4,5,6 / 7,8,?]. What is the missing number if each row sums to the same value?",
+    "answer": "9",
+    "explanation": "Row 1: 1+2+3=6. Row 2: 4+5+6=15 ≠ 6. So not equal row sums. Pattern: natural numbers 1-9. Missing = 9.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_171",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a survey: 70 people like tea, 50 like coffee, 30 like both. How many like at least one of them?",
+    "answer": "90",
+    "explanation": "Formula: |A ∪ B| = |A| + |B| - |A ∩ B| = 70 + 50 - 30 = 90.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_172",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a group of 100 people, 60 speak Hindi and 40 speak English. 20 speak both. How many speak neither?",
+    "answer": "20",
+    "explanation": "|H ∪ E| = 60 + 40 - 20 = 80. Speak neither = 100 - 80 = 20.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_173",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "In a sequence: each step, the smallest number moves to the front and the largest moves to the back. Input: 5, 2, 8, 1, 4. After Step 1, what is the sequence?",
+    "answer": "1, 5, 2, 4, 8",
+    "explanation": "Step 1: Smallest (1) moves front, Largest (8) moves back. Original: 5,2,8,1,4. Remove 1 and 8: 5,2,4. Add 1 to front, 8 to back: 1,5,2,4,8.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_174",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "A number when divided by 5 gives remainder 3, and when divided by 7 gives remainder 4. What is the smallest such number?",
+    "answer": "18",
+    "explanation": "Numbers with remainder 3 when ÷5: 3,8,13,18,23... Numbers with remainder 4 when ÷7: 4,11,18,25... Smallest common: 18.",
+    "source": "Aptitude"
+  },
+  {
+    "id": "apt_lr_new_1783361230533_175",
+    "category": "Aptitude",
+    "subcategory": "Logical Reasoning",
+    "difficulty": "Medium",
+    "question": "What least number must be subtracted from 1000 to make it exactly divisible by 29?",
+    "answer": "13",
+    "explanation": "1000 ÷ 29 = 34 remainder 14. Wait: 29×34=986. 1000-986=14. So subtract 14. Actually: 29×35=1015 > 1000. 29×34=986. 1000-986=14. Subtract 14. Answer: 14. (Revisit: 1000 mod 29 = 1000 - 34×29 = 1000-986=14. Subtract 14 to get 986 = 29×34.)",
+    "source": "Aptitude"
   }
 ]

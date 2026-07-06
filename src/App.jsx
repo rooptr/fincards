@@ -10,6 +10,15 @@ export default function App() {
   const [progressData, setProgressData] = useState({});
   const [masterDeck, setMasterDeck] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [customCards, setCustomCards] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
+    catch { return []; }
+  });
+  const [showAddForm, setShowAddForm] = useState(false);
+  const [formQ, setFormQ] = useState('');
+  const [formA, setFormA] = useState('');
+  const [formCat, setFormCat] = useState('');
+  const [formSaved, setFormSaved] = useState(false);
   
   // Navigation State
   const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list'
@@ -127,7 +136,11 @@ export default function App() {
         };
       });
 
-      setMasterDeck(scrubbedDeck);
+      const savedCustom = (() => {
+        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
+        catch { return []; }
+      })();
+      setMasterDeck([...scrubbedDeck, ...savedCustom]);
       
       const progressMap = {};
       progressArr.forEach(item => {
@@ -395,13 +408,95 @@ export default function App() {
               Hey deepti, <span className="text-[#86868b]">pick a deck.</span>
             </h2>
           </div>
+
+          {/* Make Your Own Card Section */}
+          <div className="rounded-[24px] bg-gradient-to-br from-[#0066cc]/10 to-[#5ac8fa]/10 dark:from-[#0066cc]/20 dark:to-[#5ac8fa]/5 border border-[#0066cc]/20 dark:border-[#2997ff]/20 overflow-hidden">
+            <button
+              onClick={() => { setShowAddForm(f => !f); setFormSaved(false); }}
+              className="w-full flex items-center justify-between px-5 py-4 group"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#0066cc] flex items-center justify-center flex-shrink-0">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" /></svg>
+                </div>
+                <div className="text-left">
+                  <div className="text-[13px] font-semibold text-[#1d1d1f] dark:text-[#f5f5f7]">Make your own card</div>
+                  <div className="text-[11px] text-[#86868b]">Saved to Deepti's Cards deck</div>
+                </div>
+              </div>
+              <svg className={`w-4 h-4 text-[#86868b] transition-transform duration-300 ${showAddForm ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </button>
+
+            <div className={`grid transition-all duration-300 ease-in-out ${showAddForm ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+              <div className="overflow-hidden">
+                <div className="px-5 pb-5 space-y-3">
+                  <div className="h-px bg-[#0066cc]/10 dark:bg-[#2997ff]/10 mb-1" />
+                  <textarea
+                    placeholder="Question *"
+                    value={formQ}
+                    onChange={e => setFormQ(e.target.value)}
+                    rows={2}
+                    className="w-full px-4 py-3 rounded-[14px] bg-white dark:bg-[#1c1c1e] border border-black/8 dark:border-white/10 text-[14px] text-[#1d1d1f] dark:text-[#f5f5f7] placeholder-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0066cc] resize-none transition-all"
+                  />
+                  <textarea
+                    placeholder="Answer *"
+                    value={formA}
+                    onChange={e => setFormA(e.target.value)}
+                    rows={2}
+                    className="w-full px-4 py-3 rounded-[14px] bg-white dark:bg-[#1c1c1e] border border-black/8 dark:border-white/10 text-[14px] text-[#1d1d1f] dark:text-[#f5f5f7] placeholder-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0066cc] resize-none transition-all"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Category (optional — defaults to Deepti's Cards)"
+                    value={formCat}
+                    onChange={e => setFormCat(e.target.value)}
+                    className="w-full px-4 py-3 rounded-[14px] bg-white dark:bg-[#1c1c1e] border border-black/8 dark:border-white/10 text-[14px] text-[#1d1d1f] dark:text-[#f5f5f7] placeholder-[#86868b] focus:outline-none focus:ring-2 focus:ring-[#0066cc] transition-all"
+                  />
+                  <div className="flex items-center gap-3">
+                    <button
+                      onClick={() => {
+                        if (!formQ.trim() || !formA.trim()) return;
+                        const newCard = {
+                          id: `deepti_${Date.now()}`,
+                          category: formCat.trim() || "Deepti's Cards",
+                          question: formQ.trim(),
+                          answer: formA.trim(),
+                          difficulty: 'Medium',
+                          source: "Deepti's Cards"
+                        };
+                        const updated = [...customCards, newCard];
+                        setCustomCards(updated);
+                        localStorage.setItem('deepti_custom_cards', JSON.stringify(updated));
+                        setMasterDeck(prev => [...prev, newCard]);
+                        setFormQ(''); setFormA(''); setFormCat('');
+                        setFormSaved(true);
+                        setTimeout(() => setFormSaved(false), 2500);
+                      }}
+                      className="flex-1 py-3 rounded-[14px] bg-[#0066cc] text-white font-semibold text-[14px] hover:bg-[#2997ff] transition-all active:scale-95"
+                    >
+                      {formSaved ? '✓ Saved!' : 'Add Card'}
+                    </button>
+                    {customCards.length > 0 && (
+                      <button
+                        onClick={() => openCategory("Deepti's Cards")}
+                        className="px-4 py-3 rounded-[14px] bg-white dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] font-medium text-[13px] border border-black/8 dark:border-white/10 hover:bg-[#f5f5f7] dark:hover:bg-[#3a3a3c] transition-all"
+                      >
+                        View ({customCards.length})
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
             {categoryStats.map(cat => {
               const isDarkAccent = cat.name === 'Starred';
-              const bgClass = isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
-              const textClass = isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
-              const subTextClass = isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
+              const isDeepti = cat.name === "Deepti's Cards";
+              const bgClass = isDeepti ? 'bg-gradient-to-br from-[#0066cc] to-[#5ac8fa]' : isDarkAccent ? 'bg-[#1d1d1f] dark:bg-[#ffffff]' : 'bg-[#ffffff] dark:bg-[#1c1c1e]';
+              const textClass = isDeepti ? 'text-white' : isDarkAccent ? 'text-white dark:text-[#1d1d1f]' : 'text-[#1d1d1f] dark:text-[#f5f5f7]';
+              const subTextClass = isDeepti ? 'text-white/70' : isDarkAccent ? 'text-[#a1a1a6] dark:text-[#555555]' : 'text-[#86868b]';
 
               return (
                 <div 
