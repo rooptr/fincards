@@ -86,7 +86,7 @@ export default function FlashCard({ card, onReview, stats, onNoteUpdated }) {
             </p>
             
             <div className="text-white/90">
-              <LearnMore explanation={card.explanation} source={card.source} />
+              <LearnMore explanation={card.explanation} />
             </div>
 
             {/* USER NOTE SECTION */}

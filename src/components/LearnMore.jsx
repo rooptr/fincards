@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function LearnMore({ explanation, source }) {
+export default function LearnMore({ explanation }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -27,11 +27,7 @@ export default function LearnMore({ explanation, source }) {
         <div className="overflow-hidden">
           <div className="p-4 rounded-xl bg-white/10 backdrop-blur-sm text-white text-[13px] md:text-[14px] font-medium shadow-sm border border-transparent">
             <p className="leading-relaxed">{explanation}</p>
-            {source && (
-              <div className="mt-3 pt-3 border-t border-white/20 text-[11px] font-medium text-white/70 uppercase tracking-wide flex items-center gap-1.5">
-                <span>Source: {source}</span>
-              </div>
-            )}
+
           </div>
         </div>
       </div>

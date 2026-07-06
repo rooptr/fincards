@@ -87,7 +87,7 @@ export default function CramCard({ card, stat, onReview, isFlipped, onFlip, onNo
           </div>
           
           <div className="mt-2 text-white/90" onClick={e => e.stopPropagation()}>
-            <LearnMore explanation={card.explanation} source={card.source} />
+            <LearnMore explanation={card.explanation} />
             
             {/* USER NOTE SECTION */}
             {(noteText || isEditingNote) && (
