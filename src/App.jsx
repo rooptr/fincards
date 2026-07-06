@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import FlashCard from './components/FlashCard';
 import CramCard from './components/CramCard';
 import ShortcutView from './components/ShortcutView';
+import SecuritizationView from './components/SecuritizationView';
 import cardsData from './data/cards.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
@@ -25,6 +26,7 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState(null); // null means dashboard
   const [activeSubcategory, setActiveSubcategory] = useState(null); // null means subcategory selector (for Aptitude)
   const [theme, setTheme] = useState('light');
+  const [showSecuritizationNotes, setShowSecuritizationNotes] = useState(true);
   
   const scrollPositionRef = useRef(0);
   const dashboardRef = useRef(null);
@@ -286,10 +288,13 @@ export default function App() {
     setSearchQuery('');
     setVisibleCount(20);
     setFlippedCardId(null);
+    setShowSecuritizationNotes(category === 'Securitization');
   };
 
   const goBack = () => {
-    if (activeCategory === 'Aptitude' && activeSubcategory) {
+    if (activeCategory === 'Securitization' && !showSecuritizationNotes) {
+      setShowSecuritizationNotes(true);
+    } else if (activeCategory === 'Aptitude' && activeSubcategory) {
       setActiveSubcategory(null);
     } else {
       setActiveCategory(null);
@@ -363,7 +368,7 @@ export default function App() {
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7"></path></svg>
             <span className="text-[14px] font-medium">
-              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : 'Library'}
+              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : activeCategory === 'Securitization' && !showSecuritizationNotes ? 'Securitization' : 'Library'}
             </span>
           </button>
         )}
@@ -526,7 +531,14 @@ export default function App() {
       {activeCategory && (
         <>
           {/* Aptitude Subcategory Picker */}
-          {activeCategory === 'Aptitude' && !activeSubcategory ? (
+          {/* Securitization Notes View */}
+          {activeCategory === 'Securitization' && showSecuritizationNotes ? (
+            <SecuritizationView
+              globalMode={globalMode}
+              onToggleMode={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+              onOpenFlashcards={() => setShowSecuritizationNotes(false)}
+            />
+          ) : activeCategory === 'Aptitude' && !activeSubcategory ? (
             <main className="flex-1 overflow-y-auto w-full px-4 py-6 md:px-12 md:py-10 max-w-4xl mx-auto space-y-6">
               <div>
                 <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-1 text-[#1d1d1f] dark:text-[#f5f5f7]">
@@ -683,6 +695,16 @@ export default function App() {
             </>
           )}
         </>
+      )}
+
+      {/* Back to Notes button when in flashcards mode for Securitization */}
+      {activeCategory === 'Securitization' && !showSecuritizationNotes && (
+        <button
+          onClick={() => setShowSecuritizationNotes(true)}
+          className="fixed bottom-6 left-1/2 -translate-x-1/2 z-30 px-5 py-3 rounded-full bg-[#0066cc] text-white font-semibold text-[13px] shadow-lg hover:bg-[#2997ff] transition-all active:scale-95"
+        >
+          ← Back to Notes
+        </button>
       )}
     </div>
   );
