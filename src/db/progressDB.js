@@ -81,3 +81,15 @@ export async function saveUserNote(cardId, note) {
   const existingStats = await getCardProgress(cardId) || {};
   return saveCardProgress(cardId, { ...existingStats, note });
 }
+
+/**
+ * Toggles the starred status of a card
+ * @param {string} cardId
+ * @returns {Promise<boolean>} the new starred status
+ */
+export async function toggleStarStatus(cardId) {
+  const existingStats = await getCardProgress(cardId) || {};
+  const isStarred = !existingStats.starred;
+  await saveCardProgress(cardId, { ...existingStats, starred: isStarred });
+  return isStarred;
+}

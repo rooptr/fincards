@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import FlashCard from './components/FlashCard';
 import CramCard from './components/CramCard';
 import cardsData from './data/cards.json';
@@ -6,37 +6,44 @@ import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
 
 export default function App() {
+  const [progressData, setProgressData] = useState({});
+  const [masterDeck, setMasterDeck] = useState([]);
+  const [loading, setLoading] = useState(true);
+  
+  // Navigation State
+  const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list'
+  const [activeCategory, setActiveCategory] = useState(null); // null means dashboard
+  
+  const scrollPositionRef = useRef(0);
+  const dashboardRef = useRef(null);
+  
+  // Focus Mode State
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
-  const [progressData, setProgressData] = useState({}); // { cardId: stats }
-  
-  const [activeDeck, setActiveDeck] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [viewMode, setViewMode] = useState('focus'); // 'focus' | 'list'
-  const [returnToList, setReturnToList] = useState(false);
-  const [flippedCardId, setFlippedCardId] = useState(null); // track flipped card in Cram Mode
-  const [searchQuery, setSearchQuery] = useState(''); // search query
+
+  // List (Cram) Mode State
+  const [flippedCardId, setFlippedCardId] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [visibleCount, setVisibleCount] = useState(20);
 
   // Load progress and cards on mount
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec";
     
-    // Fetch live cards from Google Sheets, fallback to local JSON if it fails
     const fetchCards = fetch(WEBHOOK_URL)
       .then(res => res.json())
-      .catch(() => cardsData);
+      .catch(() => []);
 
     const fetchProgress = getAllProgress();
 
     Promise.all([fetchCards, fetchProgress]).then(([liveCards, progressArr]) => {
-      // Merge local master deck with any live additions from Google Sheets
       const combinedDeck = [...cardsData];
       if (liveCards && Array.isArray(liveCards)) {
         const validLiveCards = liveCards.filter(c => c.id && c.question);
         combinedDeck.push(...validLiveCards);
       }
-      setActiveDeck(combinedDeck);
+      setMasterDeck(combinedDeck);
       
       const progressMap = {};
       progressArr.forEach(item => {
@@ -47,25 +54,87 @@ export default function App() {
     });
   }, []);
 
-  // Filter deck based on search query
-  const filteredDeck = activeDeck.filter(card => {
+  // Restore dashboard scroll position
+  useEffect(() => {
+    if (!activeCategory && dashboardRef.current) {
+      dashboardRef.current.scrollTop = scrollPositionRef.current;
+    }
+  }, [activeCategory, globalMode]);
+
+  // Compute Categories for Dashboard
+  const categoryStats = useMemo(() => {
+    const stats = {};
+    let starredCount = 0;
+    
+    masterDeck.forEach(card => {
+      const cat = card.category;
+      if (!stats[cat]) stats[cat] = 0;
+      stats[cat]++;
+      
+      if (progressData[card.id]?.starred) {
+        starredCount++;
+      }
+    });
+
+    const categories = Object.keys(stats).map(name => ({
+      name,
+      count: stats[name]
+    })).sort((a, b) => a.name.localeCompare(b.name));
+
+    if (starredCount > 0) {
+      categories.unshift({ name: '★ STARRED', count: starredCount, isSpecial: true });
+    }
+    
+    categories.unshift({ name: 'ALL CARDS', count: masterDeck.length, isSpecial: true });
+
+    return categories;
+  }, [masterDeck, progressData]);
+
+  // Compute Active Deck based on activeCategory
+  const activeDeck = useMemo(() => {
+    if (!activeCategory) return [];
+    
+    let deck = [];
+    if (activeCategory === 'ALL CARDS') {
+      deck = [...masterDeck];
+    } else if (activeCategory === '★ STARRED') {
+      deck = masterDeck.filter(card => progressData[card.id]?.starred);
+    } else {
+      deck = masterDeck.filter(card => card.category === activeCategory);
+    }
+
+    // If focus mode, shuffle the deck using Fisher-Yates
+    if (globalMode === 'focus') {
+      const shuffled = [...deck];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+    
+    return deck;
+  }, [masterDeck, activeCategory, globalMode, progressData]);
+
+  // Cram Mode filtering
+  const filteredDeck = useMemo(() => {
+    if (globalMode !== 'list') return [];
     const query = searchQuery.toLowerCase();
-    return (
+    return activeDeck.filter(card => (
       card.question.toLowerCase().includes(query) ||
       (card.answer && card.answer.toLowerCase().includes(query)) ||
-      (card.category && card.category.toLowerCase().includes(query))
-    );
-  });
+      (card.category && card.category.toLowerCase().includes(query)) ||
+      (card.subcategory && card.subcategory.toLowerCase().includes(query))
+    ));
+  }, [activeDeck, searchQuery, globalMode]);
 
   const handleNext = () => {
-    setReturnToList(false);
     if (currentCardIndex < activeDeck.length - 1) {
       setCurrentCardIndex(prev => prev + 1);
     }
   };
 
   const handlePrev = () => {
-    setReturnToList(false);
     if (currentCardIndex > 0) {
       setCurrentCardIndex(prev => prev - 1);
     }
@@ -75,32 +144,43 @@ export default function App() {
     const previousStats = progressData[cardId] || null;
     const newStats = calculateNextReview(rating, previousStats);
     
-    // Save to IndexedDB
     await saveCardProgress(cardId, newStats);
     
-    // Update local state
     setProgressData(prev => ({
       ...prev,
       [cardId]: newStats
     }));
 
-    // Auto-advance or return to list
-    if (returnToList) {
-      setViewMode('list');
-      setReturnToList(false);
-    } else {
+    if (globalMode === 'focus') {
       handleNext();
     }
   };
 
-  const handleNoteUpdated = (cardId, noteText) => {
-    setProgressData(prev => ({
-      ...prev,
-      [cardId]: {
-        ...(prev[cardId] || {}),
-        note: noteText
+  const handleNoteUpdated = (cardId, noteText, starredStatus = undefined) => {
+    setProgressData(prev => {
+      const existing = prev[cardId] || {};
+      const updated = { ...existing, note: noteText };
+      if (starredStatus !== undefined) {
+        updated.starred = starredStatus;
       }
-    }));
+      return { ...prev, [cardId]: updated };
+    });
+  };
+
+  const openCategory = (category) => {
+    setActiveCategory(category);
+    setCurrentCardIndex(0);
+    setSearchQuery('');
+    setVisibleCount(20);
+    setFlippedCardId(null);
+  };
+
+  const goBack = () => {
+    setActiveCategory(null);
+  };
+
+  const handleDashboardScroll = (e) => {
+    scrollPositionRef.current = e.target.scrollTop;
   };
 
   // Swipe gesture handlers
@@ -113,13 +193,20 @@ export default function App() {
     setTouchEnd(e.targetTouches[0].clientX);
   };
   const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
+    if (!touchStart || !touchEnd || !activeCategory || globalMode !== 'focus') return;
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
     const isRightSwipe = distance < -minSwipeDistance;
 
     if (isLeftSwipe) handleNext();
     if (isRightSwipe) handlePrev();
+  };
+
+  const handleCramScroll = (e) => {
+    const bottom = e.target.scrollHeight - e.target.scrollTop <= e.target.clientHeight + 400;
+    if (bottom && visibleCount < filteredDeck.length) {
+      setVisibleCount(prev => prev + 20);
+    }
   };
 
   if (loading) {
@@ -129,14 +216,6 @@ export default function App() {
           <div className="w-8 h-8 bg-[#ff5000] border-2 border-black rounded-full animate-ping"></div>
           [ SYNCING SHEETS ]
         </div>
-      </div>
-    );
-  }
-
-  if (activeDeck.length === 0) {
-    return (
-      <div className="h-[100dvh] w-full flex items-center justify-center bg-[#e5e5e5] text-black font-bold text-xl uppercase tracking-widest text-center p-8">
-        [ NO CARDS FOUND IN DATABASE. GO ADD SOME FROM THE NEWSPAPER APP! ]
       </div>
     );
   }
@@ -152,105 +231,160 @@ export default function App() {
       {/* Brutalist Header */}
       <header className="flex-none flex items-stretch border-b-2 border-black bg-[#e5e5e5]">
         <div className="p-4 border-r-2 border-black flex-1 flex items-center justify-between">
-          <h1 className="text-xl md:text-2xl font-bold tracking-tight uppercase flex items-center gap-3">
-            <div className="w-4 h-4 bg-[#ff5000] border-2 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] animate-pulse"></div>
-            FINANCE_CARD.OP
-          </h1>
-          <button 
-            onClick={() => setViewMode(prev => prev === 'focus' ? 'list' : 'focus')}
-            className="ml-4 px-3 py-1 text-sm font-bold border-2 border-black bg-white shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[1px] active:translate-y-[1px]"
-          >
-            {viewMode === 'focus' ? '[ CRAM MODE ]' : '[ FOCUS MODE ]'}
-          </button>
+          {!activeCategory ? (
+            <h1 className="text-xl md:text-2xl font-bold tracking-tight uppercase flex items-center gap-3">
+              <div className="w-4 h-4 bg-[#ff5000] border-2 border-black rounded-full shadow-[2px_2px_0_0_rgba(0,0,0,1)] animate-pulse"></div>
+              DEEP CARDS
+            </h1>
+          ) : (
+            <button 
+              onClick={goBack}
+              className="px-3 py-1 text-sm font-bold border-2 border-black bg-white shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[1px] active:translate-y-[1px]"
+            >
+              [ ← GO BACK ]
+            </button>
+          )}
+          
+          {!activeCategory && (
+            <button 
+              onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+              className="ml-4 px-3 py-1 text-sm font-bold border-2 border-black bg-white shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[1px] active:translate-y-[1px]"
+            >
+              {globalMode === 'focus' ? '[ CRAM MODE ]' : '[ FOCUS MODE ]'}
+            </button>
+          )}
         </div>
-        <div className="p-4 flex items-center justify-center min-w-[80px] md:min-w-[100px] bg-black text-white font-bold text-sm md:text-lg border-l-2 border-black">
-          {viewMode === 'focus' ? `${String(currentCardIndex + 1).padStart(2, '0')}/${String(activeDeck.length).padStart(2, '0')}` : 'ALL'}
-        </div>
+        
+        {activeCategory && globalMode === 'focus' && (
+          <div className="p-4 flex items-center justify-center min-w-[80px] md:min-w-[100px] bg-black text-white font-bold text-sm md:text-lg border-l-2 border-black">
+            {String(currentCardIndex + 1).padStart(2, '0')}/{String(activeDeck.length).padStart(2, '0')}
+          </div>
+        )}
       </header>
 
-      {/* Main Content Area */}
-      {viewMode === 'focus' ? (
-        <>
-          <main className="flex-1 min-h-0 w-full p-4 md:p-8 flex flex-col items-center justify-center">
-            <FlashCard 
-              key={currentCardIndex} 
-              card={activeDeck[currentCardIndex]} 
-              onReview={(rating) => handleReview(activeDeck[currentCardIndex].id, rating)}
-              stats={progressData[activeDeck[currentCardIndex].id]}
-              onNoteUpdated={handleNoteUpdated}
-            />
-          </main>
-
-          {/* Footer Controls (Hidden on mobile where swipe is natural, visible on desktop) */}
-          <footer className="flex-none p-4 md:p-8 w-full border-t-2 border-black bg-[#e5e5e5] flex flex-col items-center gap-2">
-            <div className="w-full flex gap-4 max-w-lg mx-auto">
-              <button
-                onClick={handlePrev}
-                disabled={currentCardIndex === 0}
-                className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
-                  currentCardIndex === 0 
-                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]' 
-                    : 'bg-white hover:bg-black hover:text-white'
-                }`}
-              >
-                [ PREV ]
-              </button>
-              <button
-                onClick={handleNext}
-                disabled={currentCardIndex === activeDeck.length - 1}
-                className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
-                  currentCardIndex === activeDeck.length - 1
-                    ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]'
-                    : 'bg-[#ff5000] text-white hover:bg-black'
-                }`}
-              >
-                [ NEXT ]
-              </button>
-            </div>
-            <span className="text-xs font-bold text-black/50 uppercase tracking-widest mt-2 hidden sm:block md:hidden">
-              &lt; SWIPE TO NAVIGATE &gt;
-            </span>
-          </footer>
-        </>
-      ) : (
-        <>
-          <div className="flex-none p-4 md:px-8 pt-4 md:pt-8 max-w-3xl mx-auto w-full">
-            <input 
-              type="text" 
-              placeholder="SEARCH QUESTIONS, ANSWERS, CATEGORIES..." 
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-4 py-3 border-4 border-black bg-white font-mono font-bold text-xs md:text-sm uppercase tracking-wider placeholder-gray-400 focus:outline-none shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all"
-            />
+      {/* DASHBOARD MODE */}
+      {!activeCategory && (
+        <main 
+          ref={dashboardRef}
+          onScroll={handleDashboardScroll}
+          className="flex-1 overflow-y-auto w-full p-4 md:p-8 max-w-4xl mx-auto space-y-4"
+        >
+          <div className="text-xl font-bold uppercase tracking-widest mb-6">
+            [ SELECT CATEGORY TO {globalMode === 'focus' ? 'FOCUS' : 'CRAM'} ]
           </div>
-          <main className="flex-1 overflow-y-auto w-full p-4 md:p-8 pt-2 md:pt-4 space-y-4 max-w-3xl mx-auto">
-            {filteredDeck.length === 0 ? (
-              <div className="text-center font-bold text-gray-400 py-8 uppercase tracking-widest">[ NO MATCHING CARDS FOUND ]</div>
-            ) : (
-              filteredDeck.map((card, index) => {
-                const stat = progressData[card.id];
-                // find actual index in activeDeck for card state tracking
-                const activeIndex = activeDeck.findIndex(c => c.id === card.id);
-                return (
-                  <CramCard 
-                    key={card.id} 
-                    card={card} 
-                    stat={stat} 
-                    isFlipped={flippedCardId === card.id}
-                    onFlip={() => setFlippedCardId(flippedCardId === card.id ? null : card.id)}
-                    onReview={(rating) => {
-                       setCurrentCardIndex(activeIndex);
-                       handleReview(card.id, rating);
-                    }} 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {categoryStats.map(cat => (
+              <div 
+                key={cat.name}
+                onClick={() => openCategory(cat.name)}
+                className={`p-4 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] flex items-center justify-between cursor-pointer active:translate-y-[2px] active:translate-x-[2px] active:shadow-none transition-all ${cat.isSpecial ? 'bg-[#ffdd00]' : 'bg-white hover:bg-gray-100'}`}
+              >
+                <span className="font-bold text-lg uppercase truncate pr-2">{cat.name}</span>
+                <span className="font-bold text-sm bg-black text-white px-2 py-1 shrink-0">{cat.count}</span>
+              </div>
+            ))}
+          </div>
+        </main>
+      )}
+
+      {/* STUDY MODES */}
+      {activeCategory && (
+        <>
+          {globalMode === 'focus' && (
+            <>
+              <main className="flex-1 min-h-0 w-full p-4 md:p-8 flex flex-col items-center justify-center">
+                {activeDeck.length === 0 ? (
+                  <div className="font-bold text-gray-500">[ NO CARDS IN THIS CATEGORY ]</div>
+                ) : (
+                  <FlashCard 
+                    key={currentCardIndex} 
+                    card={activeDeck[currentCardIndex]} 
+                    onReview={(rating) => handleReview(activeDeck[currentCardIndex].id, rating)}
+                    stats={progressData[activeDeck[currentCardIndex].id]}
                     onNoteUpdated={handleNoteUpdated}
                   />
-                );
-              })
-            )}
-          </main>
+                )}
+              </main>
+
+              {activeDeck.length > 0 && (
+                <footer className="flex-none p-4 md:p-8 w-full border-t-2 border-black bg-[#e5e5e5] flex flex-col items-center gap-2">
+                  <div className="hidden md:flex w-full gap-4 max-w-lg mx-auto">
+                    <button
+                      onClick={handlePrev}
+                      disabled={currentCardIndex === 0}
+                      className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
+                        currentCardIndex === 0 
+                          ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]' 
+                          : 'bg-white hover:bg-black hover:text-white'
+                      }`}
+                    >
+                      [ PREV ]
+                    </button>
+                    <button
+                      onClick={handleNext}
+                      disabled={currentCardIndex === activeDeck.length - 1}
+                      className={`flex-1 py-4 uppercase font-bold text-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px] transition-all ${
+                        currentCardIndex === activeDeck.length - 1
+                          ? 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none translate-x-[2px] translate-y-[2px]'
+                          : 'bg-[#ff5000] text-white hover:bg-black'
+                      }`}
+                    >
+                      [ NEXT ]
+                    </button>
+                  </div>
+                  <span className="text-xs font-bold text-black/50 uppercase tracking-widest mt-2 md:hidden">
+                    &lt; SWIPE TO NAVIGATE &gt;
+                  </span>
+                </footer>
+              )}
+            </>
+          )}
+
+          {globalMode === 'list' && (
+            <>
+              <div className="flex-none p-4 md:px-8 pt-4 md:pt-8 max-w-3xl mx-auto w-full">
+                <input 
+                  type="text" 
+                  placeholder="SEARCH QUESTIONS, ANSWERS..." 
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-4 py-3 border-4 border-black bg-white font-mono font-bold text-xs md:text-sm uppercase tracking-wider placeholder-gray-400 focus:outline-none shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:shadow-[2px_2px_0_0_rgba(0,0,0,1)] focus:translate-x-[2px] focus:translate-y-[2px] transition-all"
+                />
+              </div>
+              <main 
+                className="flex-1 overflow-y-auto w-full p-4 md:p-8 pt-2 md:pt-4 space-y-4 max-w-3xl mx-auto"
+                onScroll={handleCramScroll}
+              >
+                {filteredDeck.length === 0 ? (
+                  <div className="text-center font-bold text-gray-400 py-8 uppercase tracking-widest">[ NO MATCHING CARDS FOUND ]</div>
+                ) : (
+                  filteredDeck.slice(0, visibleCount).map((card) => {
+                    const stat = progressData[card.id];
+                    return (
+                      <CramCard 
+                        key={card.id} 
+                        card={card} 
+                        stat={stat} 
+                        isFlipped={flippedCardId === card.id}
+                        onFlip={() => setFlippedCardId(flippedCardId === card.id ? null : card.id)}
+                        onReview={(rating) => {
+                          handleReview(card.id, rating);
+                        }} 
+                        onNoteUpdated={handleNoteUpdated}
+                      />
+                    );
+                  })
+                )}
+                {visibleCount < filteredDeck.length && (
+                  <div className="text-center py-4 text-xs font-bold text-gray-500 animate-pulse uppercase tracking-widest">
+                    [ SCROLL FOR MORE ]
+                  </div>
+                )}
+              </main>
+            </>
+          )}
         </>
       )}
-      
     </div>
   );
 }

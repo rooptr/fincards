@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import LearnMore from './LearnMore';
-import { saveUserNote } from '../db/progressDB';
+import { saveUserNote, toggleStarStatus } from '../db/progressDB';
 
 export default function FlashCard({ card, onReview, stats, onNoteUpdated }) {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -45,13 +45,19 @@ export default function FlashCard({ card, onReview, stats, onNoteUpdated }) {
           style={{ backfaceVisibility: 'hidden' }}
         >
           <div className="absolute top-0 left-0 w-full flex justify-between items-stretch border-b-2 border-black bg-[#f4f4f4] z-20">
-            <div className="px-4 py-2 border-r-2 border-black font-bold text-sm tracking-widest uppercase flex items-center gap-2">
-              <span className="w-2 h-2 bg-black rounded-full animate-pulse"></span>
-              {stats?.streak > 0 ? `STRK:${stats.streak}` : 'NEW'}
+            <div className="px-4 py-2 font-bold text-sm tracking-widest text-[#ff5000] uppercase truncate border-r-2 border-black flex-1">
+              {card.subcategory || card.category}
             </div>
-            <div className="px-4 py-2 font-bold text-sm tracking-widest text-[#ff5000] uppercase truncate">
-              {card.category}
-            </div>
+            <button 
+              onClick={async (e) => { 
+                e.stopPropagation(); 
+                const newStatus = await toggleStarStatus(card.id);
+                if (onNoteUpdated) onNoteUpdated(card.id, noteText, newStatus);
+              }}
+              className="px-4 py-2 font-bold text-lg hover:bg-gray-200 transition-colors flex items-center justify-center"
+            >
+              {stats?.starred ? '★' : '☆'}
+            </button>
           </div>
 
           
@@ -79,10 +85,10 @@ export default function FlashCard({ card, onReview, stats, onNoteUpdated }) {
           <div className="absolute top-0 left-0 w-full flex justify-between items-stretch border-b-2 border-white bg-black z-20">
             <div className="px-4 py-2 border-r-2 border-white font-bold text-sm tracking-widest text-white uppercase flex items-center gap-2">
               <span className="w-2 h-2 bg-[#00ff00] rounded-full"></span>
-              A.01
+              ANSWER
             </div>
             <button 
-              onClick={(e) => { e.stopPropagation(); setIsEditingNote(true); }}
+              onClick={(e) => { e.stopPropagation(); e.preventDefault(); setIsEditingNote(true); }}
               className="px-4 py-2 font-bold text-sm tracking-widest text-[#ffdd00] uppercase hover:bg-white hover:text-black transition-colors"
             >
               [ EDIT NOTE ]
@@ -100,20 +106,21 @@ export default function FlashCard({ card, onReview, stats, onNoteUpdated }) {
             {(noteText || isEditingNote) && (
               <div 
                 className="mt-6 p-4 border-2 border-[#ffdd00] bg-[#1a1a1a]"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e) => { e.stopPropagation(); e.preventDefault(); }}
               >
                 <div className="text-xs font-bold text-[#ffdd00] tracking-widest mb-2 uppercase">[ MY NOTES ]</div>
                 {isEditingNote ? (
                   <div className="flex flex-col gap-2">
                     <textarea 
                       value={noteText}
+                      onClick={(e) => e.stopPropagation()}
                       onChange={(e) => setNoteText(e.target.value)}
                       className="w-full h-24 p-2 bg-black text-white font-mono text-sm border-2 border-[#ffdd00] focus:outline-none focus:bg-[#222]"
                       placeholder="Type your personal STAR story or mnemonic here..."
                     />
                     <div className="flex justify-end gap-2">
                       <button 
-                        onClick={() => setIsEditingNote(false)}
+                        onClick={(e) => { e.stopPropagation(); setIsEditingNote(false); }}
                         className="px-3 py-1 text-xs font-bold border-2 border-white bg-black text-white hover:bg-white hover:text-black"
                       >
                         [ CANCEL ]
