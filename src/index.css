@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'TheSignature';
-  src: url('/Thesignature.ttf') format('truetype');
+  src: url('/fincards/Thesignature.ttf') format('truetype');
 }
 
 body {
