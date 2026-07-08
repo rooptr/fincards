@@ -17700,5 +17700,109 @@
     "answer": "A high-growth Indian Small Cap Mutual Fund might generate massive returns but have a Beta > 1.2 and a lower Sharpe ratio than a Nifty 50 Index fund, indicating the extra return was entirely due to taking on excessive volatility risk.",
     "explanation": "Returns must always be context-adjusted for risk.",
     "source": "Gap Fill"
+  },
+  {
+    "id": "int_gap_001",
+    "category": "Valuation",
+    "question": "Walk me through the flow of a Discounted Cash Flow (DCF) analysis.",
+    "answer": "1) Project Free Cash Flows (typically 5-10 years). 2) Calculate WACC (discount rate). 3) Discount the projected FCFs to present value. 4) Calculate Terminal Value (GGM or Exit Multiple) and discount it. 5) Sum the discounted FCFs and Terminal Value to get Enterprise Value.",
+    "explanation": "This is the most common valuation interview question.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_002",
+    "category": "Finance GK",
+    "question": "What is Net Asset Value (NAV) in mutual funds?",
+    "answer": "NAV is the market value of a fund's assets minus its liabilities, divided by the total number of outstanding shares.",
+    "explanation": "It represents the per-share price at which investors buy or sell shares of the fund at the end of the trading day.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_003",
+    "category": "Finance GK",
+    "question": "What is the Internal Rate of Return (IRR) and how is it calculated?",
+    "answer": "IRR is the discount rate that makes the Net Present Value (NPV) of all cash flows from a project equal to zero. It is calculated by setting NPV = 0 and solving for r: 0 = CF0 + CF1/(1+r)^1 + CF2/(1+r)^2 + ...",
+    "explanation": "Since it cannot be solved analytically for multiple periods, it is solved using iterative numerical trials (usually via Excel).",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_004",
+    "category": "Finance GK",
+    "question": "Compare IRR vs WACC. How are they used together in corporate decision-making?",
+    "answer": "WACC is the cost of capital (hurdle rate). IRR is the expected annualized return of the project. A project should be accepted if IRR > WACC.",
+    "explanation": "If IRR > WACC, the project's return exceeds its funding cost, thereby creating value for shareholders.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_005",
+    "category": "Valuation",
+    "question": "Explain the underlying logic behind the Capital Asset Pricing Model (CAPM).",
+    "answer": "CAPM calculates Cost of Equity (Ke) = Rf + Beta * (Rm - Rf). The logic is that investors demand a risk-free rate of return (Rf) plus an additional risk premium (Rm - Rf) scaled by the stock's relative market volatility (Beta).",
+    "explanation": "It assumes that investors are only compensated for systematic (market) risk, as unsystematic risk can be diversified away.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_006",
+    "category": "Valuation",
+    "question": "When should you use a DCF valuation versus a Relative Valuation (Comps/Precedents)?",
+    "answer": "Use DCF when a company has steady, predictable cash flows and no good market comps exist (intrinsic valuation). Use Relative Valuation when the company operates in a mature industry with many direct peers and you want to align with current market pricing.",
+    "explanation": "In practice, investment bankers always run both to triangulate a valuation range.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_007",
+    "category": "Valuation",
+    "question": "Two companies have identical EBIT but different Free Cash Flow to Firm (FCFF). What are the potential reasons?",
+    "answer": "Differences in: 1) Capital Expenditure (one is more capital-intensive). 2) Depreciation & Amortization (non-cash adjustments). 3) Net Working Capital changes (one collects cash faster or manages inventory better). 4) Tax rates.",
+    "explanation": "EBIT is an accounting metric; FCFF represents actual cash generated.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_008",
+    "category": "Valuation",
+    "question": "What is the difference between Free Cash Flow (FCF) and Cash from Operations (CFO)?",
+    "answer": "CFO is the cash generated from core business operations (found on the CFS). FCF (specifically FCFF) takes CFO, adds back tax-adjusted interest, and subtracts Capital Expenditures.",
+    "explanation": "FCF represents the actual cash left over for discretionary debt repayment or distribution to all investors after reinvesting to maintain the business.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_009",
+    "category": "Financial Statements",
+    "question": "Walk me through the effect of a $10 increase in Depreciation on all three financial statements (assume 40% tax rate).",
+    "answer": "1) IS: EBIT drops by $10. Net Income drops by $6 (due to $4 tax shield). 2) CFS: Net Income is down $6; add back $10 Depreciation (non-cash). CFO is up $4. 3) BS: Cash is up $4, PP&E is down $10. Total Assets down $6. Retained Earnings down $6. BS balances.",
+    "explanation": "This is a classic investment banking interview question testing the flow of financial statements.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_010",
+    "category": "Financial Statements",
+    "question": "Explain the flow of a standard Cash Flow Statement (CFS).",
+    "answer": "It breaks down cash movements into three sections: 1) Cash from Operations (CFO - net income adjusted for non-cash items and NWC changes). 2) Cash from Investing (CFI - capex and asset sales). 3) Cash from Financing (CFF - debt/equity issuance, repayments, dividends).",
+    "explanation": "The sum of these three sections equals the net change in cash on the Balance Sheet.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_011",
+    "category": "Financial Statements",
+    "question": "A company's Revenue grew by 50% year-on-year, but its EBITDA remained flat. What could explain this?",
+    "answer": "1) Gross margin contraction (raw material inflation or price cuts). 2) Disproportionate rise in SG&A (aggressive hiring or marketing). 3) Lack of operating leverage (fixed costs scaling up linearly with sales).",
+    "explanation": "It indicates that the company prioritised market share growth over cost efficiency.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_012",
+    "category": "Valuation",
+    "question": "How do you calculate the Cost of Debt (Kd) when a company has multiple outstanding loans with different interest rates?",
+    "answer": "Calculate the Weighted Average Cost of Debt. Formula: Sum of (Interest Rate of Loan * Outstanding Principal of Loan) / Total Outstanding Debt.",
+    "explanation": "This rate is then tax-shielded: Kd * (1 - t) for use in the WACC formula.",
+    "source": "Interview Gap Fill"
+  },
+  {
+    "id": "int_gap_013",
+    "category": "Valuation",
+    "question": "What is Cost of Equity (Ke), and are there other ways to calculate it besides the CAPM?",
+    "answer": "Ke is the return equity investors expect. Alternatives to CAPM include: 1) Dividend Discount Model (Gordon Growth): Ke = (D1 / P0) + g. 2) Bond Yield Plus Risk Premium: Ke = Yield on Company's Debt + Equity Risk Premium.",
+    "explanation": "While CAPM is the industry standard, GGM is useful for stable dividend-paying firms.",
+    "source": "Interview Gap Fill"
   }
 ]
