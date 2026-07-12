@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "content_version": "v4",
+  "generation_reasoning": {
+    "step_a": "Students think equity is 'free' because there is no fixed interest schedule like a bank loan.",
+    "step_b": "A cafe in Indiranagar funded 50/50 by HDFC bank (10% interest) and an uncle (equity). Student assumes blended cost is 5% because uncle's money is 'free'.",
+    "step_c": "1. Cost of Debt (fixed, tax-shielded) -> 2. Cost of Equity (invisible, higher risk) -> 3. Weighting them -> 4. WACC as the final blended hurdle rate.",
+    "step_d": "Scene 1: note_stack (debt payments). Scene 2: scale (risk vs return). Scene 3: stacked_bars (capital structure). Scene 4: stacked_bars (blended WACC).",
+    "step_e": "Using book values instead of market values for the weights."
+  },
+  "canonical_concept_model": {
+    "domain": "Corporate Finance",
+    "topic": "Weighted Average Cost of Capital (WACC)",
+    "definition": "The average rate a company pays to finance its assets, calculated by blending the cost of debt and equity based on their proportion in the capital structure.",
+    "purpose": "To determine the minimum acceptable return for new investments.",
+    "hero": {
+      "hook_scenario": "You open a trendy cafe in Indiranagar, Bengaluru. You get a ₹50,00,000 loan from HDFC Bank at 10% interest. You also take ₹50,00,000 from your uncle, who says 'just give me a fair share of profits.' Because there's no EMI for the uncle, you might think his money is free, making your total cost of capital just 5%. But your uncle took the highest risk—if the cafe fails, HDFC gets paid first, and he gets nothing. His expected return is actually much higher than the bank's. This blended cost is what WACC measures.",
+      "one_line_definition": "The blended cost of all the money a company has raised.",
+      "why_it_exists": "Companies need a single 'hurdle rate' to decide if a new project will generate enough cash to satisfy both banks and shareholders.",
+      "hero_visual_concept": "stacked_bars"
+    },
+    "coverage_check": {
+      "tier1_concepts_linked": ["cost_of_debt", "cost_of_equity", "tax_shield", "capital_structure", "capm"],
+      "concepts_covered_as_scenes": ["cost_of_debt", "cost_of_equity", "capital_structure", "wacc"],
+      "concepts_folded": [
+        { "concept_id": "tax_shield", "folded_into_scene_id": "cost_of_debt", "folding_justification": "Tax shield is an adjustment to the cost of debt, better taught alongside it rather than as a standalone scene." },
+        { "concept_id": "capm", "folded_into_scene_id": "cost_of_equity", "folding_justification": "CAPM is the primary mechanism to calculate cost of equity, folded into the equity scene." }
+      ],
+      "coverage_gaps": []
+    }
+  },
+  "curriculum": {
+    "prerequisites": ["Interest Rates", "Equity vs Debt", "Corporate Taxes"],
+    "learning_goals": ["Calculate after-tax cost of debt", "Estimate cost of equity using CAPM", "Determine market value weights", "Compute WACC"]
+  },
+  "teaching_blueprint": {
+    "purpose": "Mastering the calculation of a company's overall hurdle rate.",
+    "common_stumbling_blocks": ["Thinking equity is free", "Using book values for weights", "Forgetting the tax shield on debt"]
+  },
+  "dependency_package": {},
+  "review_package": {},
+  "visualization_hints": {},
+  "story_engine": {
+    "narrative": {
+      "hook": "Two people fund the same cafe, but neither accepts the same price for carrying its risk.",
+      "reveal": "Weighted Average Cost of Capital (WACC)",
+      "definition": "One hurdle rate blends the prices demanded by every source of capital.",
+      "misconception": "No monthly EMI does not mean equity capital is free.",
+      "payoff": "The finished hurdle shows the return a new investment must clear before both lenders and owners are compensated."
+    },
+    "visual": {
+      "metaphor": "balance",
+      "actors": ["debt", "equity", "hurdle rate"],
+      "states": ["separate claims", "weighted pressure", "one hurdle"],
+      "hand_drawn_style": "low-frame ink with imperfect weighted pencil lines"
+    },
+    "interactions": [
+      {
+        "input": "beta",
+        "drives": ["equity-side weight", "balance angle", "hurdle height"],
+        "learning_effect": "More equity risk makes the equity claim visibly heavier and raises the blended return the business must earn."
+      },
+      {
+        "input": "weight_eq",
+        "drives": ["capital split", "balance contribution", "hurdle height"],
+        "learning_effect": "Changing the capital mix changes how strongly each source pulls on the final hurdle instead of averaging their rates equally."
+      },
+      {
+        "input": "tax",
+        "drives": ["debt-side weight", "debt flow opacity", "hurdle height"],
+        "learning_effect": "The tax shield reduces debt's effective pull, making the lower after-tax debt cost visible in the final blend."
+      }
+    ],
+    "beats": ["two claims arrive", "risk tilts the balance", "weights combine into a hurdle"]
+  },
+  "scenes": [
+    {
+      "scene_type": "concept_building",
+      "learning_objective": "Understand the true cost of debt and how the government subsidizes it.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": false,
+      "transition_package": {
+        "title": "The Bank's Price Tag",
+        "story": "Let's look at the HDFC Bank loan from the Bengaluru cafe scenario. HDFC charges 10% interest on the ₹50,00,000. But there is a catch that works in your favor: interest payments are tax-deductible. If your corporate tax rate is 30%, the government is effectively absorbing a portion of your interest expense. The true cost of the bank's money is the interest rate after this tax shield."
+      },
+      "formula_package": {
+        "latex": "Cost\\ of\\ Debt = r_d \\times (1 - T)",
+        "variables": [
+          { "symbol": "r_d", "definition": "Interest rate on debt" },
+          { "symbol": "T", "definition": "Corporate tax rate" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "note_stack",
+        "bound_variables": [
+          { "variable_id": "tax_rate", "drives": "Height of the tax shield overlay on the notes" }
+        ],
+        "bound_to_widget_input": ["tax_rate", "interest_rate"],
+        "pedagogical_justification": "The note_stack's tax shield overlay visually shrinks as the tax_rate input increases, demonstrating that higher taxes make debt financing cheaper."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "After-Tax Cost of Debt Calculator",
+        "inputs": [
+          { "name": "interest_rate", "default": 10, "min": 1, "max": 20, "step": 1 },
+          { "name": "tax_rate", "default": 30, "min": 0, "max": 50, "step": 1 }
+        ],
+        "expression": "interest_rate * (1 - (tax_rate/100))",
+        "insight": "Notice how increasing the tax rate lowers the effective cost of debt."
+      },
+      "misconception_package": {},
+      "interview_package": {},
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    },
+    {
+      "scene_type": "concept_building",
+      "learning_objective": "Understand that equity has a higher required return due to risk.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": false,
+      "transition_package": {
+        "title": "The Uncle's Hidden Price",
+        "story": "Now consider your uncle's ₹50,00,000 equity in the cafe. Unlike HDFC Bank, he has no guaranteed return and stands last in line if the cafe goes bankrupt. Because he takes on more risk, his expected return must be higher than the bank's 10%. In corporate finance, we estimate this expectation using the Capital Asset Pricing Model (CAPM), which adds a risk premium on top of a safe government bond rate. Equity is never free; it is the most expensive money a company can raise."
+      },
+      "formula_package": {
+        "latex": "Cost\\ of\\ Equity = r_f + \\beta \\times (r_m - r_f)",
+        "variables": [
+          { "symbol": "r_f", "definition": "Risk-free rate" },
+          { "symbol": "\\beta", "definition": "Beta (Volatility/Risk)" },
+          { "symbol": "r_m", "definition": "Expected market return" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "scale",
+        "bound_variables": [
+          { "variable_id": "beta", "drives": "The weight in the risk pan of the scale, tipping it to demand higher returns" }
+        ],
+        "bound_to_widget_input": ["beta", "risk_free", "market_premium"],
+        "pedagogical_justification": "The scale tips further toward higher required returns as the beta input increases, visually connecting higher risk with a higher cost of equity."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "Cost of Equity Calculator",
+        "inputs": [
+          { "name": "risk_free", "default": 6, "min": 1, "max": 10, "step": 1 },
+          { "name": "beta", "default": 1.2, "min": 0.5, "max": 3.0, "step": 0.1 },
+          { "name": "market_premium", "default": 5, "min": 2, "max": 10, "step": 0.5 }
+        ],
+        "expression": "risk_free + (beta * market_premium)",
+        "insight": "A higher Beta (riskier company) drastically increases the cost of equity."
+      },
+      "misconception_package": {},
+      "interview_package": {},
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    },
+    {
+      "scene_type": "mechanism",
+      "learning_objective": "Determine the proportion of debt and equity using market values.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": false,
+      "transition_package": {
+        "title": "Mixing the Ingredients",
+        "story": "To find the true blended cost of capital for our cafe, we can't just average the HDFC bank rate and the uncle's expected return. We must weight them by how much each contributed to the total capital. If the business grows, we always use the current market value of these contributions, not what was initially recorded on the balance sheet."
+      },
+      "formula_package": {
+        "latex": "Weight_{equity} = \\frac{E}{V} \\quad Weight_{debt} = \\frac{D}{V}",
+        "variables": [
+          { "symbol": "E", "definition": "Market value of Equity" },
+          { "symbol": "D", "definition": "Market value of Debt" },
+          { "symbol": "V", "definition": "Total Value (E + D)" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "stacked_bars",
+        "bound_variables": [
+          { "variable_id": "equity_val", "drives": "Width of the equity segment" },
+          { "variable_id": "debt_val", "drives": "Width of the debt segment" }
+        ],
+        "bound_to_widget_input": ["equity_val", "debt_val"],
+        "pedagogical_justification": "The stacked_bars dynamically resize as equity_val and debt_val inputs change, reinforcing that capital structure is a proportional slice of the total pie."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "Capital Structure Weighting",
+        "inputs": [
+          { "name": "equity_val", "default": 60, "min": 10, "max": 100, "step": 5 },
+          { "name": "debt_val", "default": 40, "min": 0, "max": 100, "step": 5 }
+        ],
+        "expression": "(equity_val / (equity_val + debt_val)) * 100",
+        "insight": "This calculates the percentage weight of Equity. Notice how it changes proportionally."
+      },
+      "misconception_package": {
+        "common_mistakes": ["Using book value instead of market value for equity."],
+        "key_takeaways": ["Always use market values for weighting capital structure."]
+      },
+      "interview_package": {},
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    },
+    {
+      "scene_type": "payoff",
+      "learning_objective": "Calculate the final WACC by blending the costs and weights.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": true,
+      "transition_package": {
+        "title": "Weighted Average Cost of Capital (WACC)",
+        "story": "Now we combine everything to calculate the final hurdle rate for the business. The Weighted Average Cost of Capital (WACC) multiplies the cost of equity by the equity weight, and adds it to the after-tax cost of debt multiplied by the debt weight. This final WACC percentage is the absolute minimum return the cafe must generate on any new investment just to keep both HDFC Bank and your uncle satisfied."
+      },
+      "formula_package": {
+        "latex": "WACC = (\\frac{E}{V} \\times r_e) + (\\frac{D}{V} \\times r_d \\times (1 - T))",
+        "variables": [
+          { "symbol": "r_e", "definition": "Cost of Equity" },
+          { "symbol": "r_d", "definition": "Cost of Debt" },
+          { "symbol": "T", "definition": "Corporate Tax Rate" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "stacked_bars",
+        "bound_variables": [
+          { "variable_id": "wacc_result", "drives": "The total blended height of the hurdle rate bar" }
+        ],
+        "bound_to_widget_input": ["cost_eq", "cost_debt", "weight_eq", "tax"],
+        "pedagogical_justification": "The stacked_bars visually represent the final hurdle rate, showing how a high cost_eq pulls the total WACC bar upward."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "Master WACC Calculator",
+        "inputs": [
+          { "name": "cost_eq", "default": 12, "min": 5, "max": 20, "step": 1 },
+          { "name": "cost_debt", "default": 10, "min": 2, "max": 15, "step": 1 },
+          { "name": "weight_eq", "default": 60, "min": 0, "max": 100, "step": 5 },
+          { "name": "tax", "default": 30, "min": 0, "max": 50, "step": 1 }
+        ],
+        "expression": "((weight_eq/100) * cost_eq) + (((100-weight_eq)/100) * cost_debt * (1 - (tax/100)))",
+        "insight": "Play with the capital structure (weight of equity vs debt) to see how taking on cheaper debt lowers the WACC—up to a point."
+      },
+      "misconception_package": {},
+      "interview_package": {
+        "question": "If a company increases its debt proportion, does WACC always go down?",
+        "answer": "Initially yes, because debt is cheaper and tax-shielded. But at high debt levels, bankruptcy risk increases, causing both debt investors and equity investors to demand much higher returns, ultimately driving WACC back up."
+      },
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    }
+  ]
+}

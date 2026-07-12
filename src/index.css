@@ -15,6 +15,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  /* Surfaces */
+  --surface-1: #f5f5f7;
+  --surface-2: #ffffff;
+  
+  /* Borders */
+  --border: #e5e5ea;
+  --border-strong: #c7c7cc;
+  
+  /* Typography Hierarchy */
+  --text-primary: #1d1d1f;
+  --text-secondary: #515154;
+  --text-muted: #8e8e93;
+
+  /* 9-Ramp Palette (Categorical) */
+  --c-purple: #af52de;
+  --c-teal: #5ac8fa;
+  --c-coral: #ff7f50;
+  --c-pink: #ff2d55;
+  --c-gray: #8e8e93;
+  
+  /* Semantic States */
+  --c-blue: #0066cc;  /* Info */
+  --c-green: #34c759; /* Success */
+  --c-amber: #ff9500; /* Warning */
+  --c-red: #ff3b30;   /* Danger */
+}
+
 /* Hide scrollbars but allow scrolling */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -68,4 +96,179 @@ body {
 
 .animate-pulse {
   animation: pulse 2s infinite;
+}
+
+/* Grid background for Metro Map */
+.bg-engineering-grid {
+  background-color: #f5f5f7;
+  background-image: 
+    linear-gradient(#e5e5ea 1px, transparent 1px),
+    linear-gradient(90deg, #e5e5ea 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.dark .bg-engineering-grid {
+  background-color: #1c1c1e;
+  background-image: 
+    linear-gradient(#2c2c2e 1px, transparent 1px),
+    linear-gradient(90deg, #2c2c2e 1px, transparent 1px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content-aware lesson canvas: polished enough to recede behind the idea. */
+.metaphor-scene {
+  position: relative;
+  isolation: isolate;
+  min-height: 240px;
+  overflow: hidden;
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 22% 15%, rgba(255, 255, 255, 0.98), transparent 38%),
+    radial-gradient(circle at 83% 76%, rgba(0, 113, 227, 0.055), transparent 34%),
+    #fbfbfd;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.95), 0 18px 45px rgba(29, 29, 31, 0.045);
+}
+
+.formula-display {
+  min-height: 3rem;
+  color: #1d1d1f;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.formula-display .katex-display { margin: 0; text-align: left; }
+
+.hand-drawn-control label {
+  color: #343438;
+  font-weight: 600;
+}
+
+.hand-drawn-control output { color: #1d1d1f; }
+
+.metaphor-scene::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  opacity: 0.38;
+  background-image:
+    repeating-radial-gradient(circle at 15% 25%, rgba(29, 29, 31, 0.11) 0 0.45px, transparent 0.75px 4px),
+    linear-gradient(100deg, transparent, rgba(29, 29, 31, 0.025) 47%, transparent 53%);
+  mix-blend-mode: multiply;
+}
+
+.metaphor-scene__svg {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  overflow: visible;
+}
+
+/* The native range remains accessible. The ink line above it carries the visual weight. */
+.hand-drawn-control {
+  position: relative;
+  padding: 0.2rem 0 0.5rem;
+  color: var(--text-primary);
+}
+
+.hand-drawn-control label {
+  font-family: "TheSignature", "Segoe Print", cursive;
+  font-size: 1.06rem;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+
+.hand-drawn-control output {
+  min-width: 2.8rem;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.hand-drawn-control__track-wrap {
+  position: relative;
+  height: 1.65rem;
+  margin-top: 0.45rem;
+  pointer-events: none;
+}
+
+.hand-drawn-control__ink-track {
+  position: absolute;
+  top: 50%;
+  right: 0.15rem;
+  left: 0.15rem;
+  height: 4px;
+  transform: translateY(-50%) rotate(-0.35deg);
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1d1d1f 0 var(--control-progress), rgba(29, 29, 31, 0.16) var(--control-progress) 100%);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9), 0 2px 3px rgba(29, 29, 31, 0.08);
+}
+
+.hand-drawn-control__ink-track::after {
+  position: absolute;
+  inset: -2px 0;
+  content: '';
+  opacity: 0.38;
+  border-top: 1px dashed rgba(29, 29, 31, 0.28);
+  border-radius: inherit;
+}
+
+.hand-drawn-control__marker {
+  position: absolute;
+  top: 50%;
+  width: 1.16rem;
+  height: 1.16rem;
+  transform: translate(-50%, -50%) rotate(8deg);
+  border: 2px solid #1d1d1f;
+  border-radius: 44% 52% 47% 56%;
+  background: #fffdf8;
+  box-shadow: 2px 2px 0 rgba(29, 29, 31, 0.14), inset 0 0 0 3px rgba(0, 113, 227, 0.14);
+}
+
+.hand-drawn-control--balance .hand-drawn-control__marker { transform: translate(-50%, -50%) rotate(-11deg); border-radius: 52% 45% 56% 43%; }
+.hand-drawn-control--flow .hand-drawn-control__ink-track { background: linear-gradient(90deg, #0071e3 0 var(--control-progress), rgba(0, 113, 227, 0.15) var(--control-progress) 100%); }
+.hand-drawn-control--layers .hand-drawn-control__ink-track { background: linear-gradient(90deg, #34c759 0 var(--control-progress), rgba(52, 199, 89, 0.18) var(--control-progress) 100%); }
+
+.hand-drawn-control__range {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0.5rem;
+  left: 0;
+  width: 100%;
+  height: 1.65rem;
+  margin: 0;
+  cursor: ew-resize;
+  opacity: 0;
+}
+
+.hand-drawn-control:focus-within .hand-drawn-control__marker {
+  outline: 3px solid rgba(0, 113, 227, 0.34);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  .hand-drawn-control:hover .hand-drawn-control__marker {
+    transform: translate(-50%, -54%) rotate(4deg) scale(1.08);
+    box-shadow: 3px 4px 0 rgba(29, 29, 31, 0.16), inset 0 0 0 3px rgba(0, 113, 227, 0.18);
+  }
+}
+
+@media (max-width: 640px) {
+  .metaphor-scene { min-height: 205px; border-radius: 21px; }
+  .metaphor-scene__svg { min-height: 205px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .metaphor-scene::before { opacity: 0.2; }
 }

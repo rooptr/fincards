@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "content_version": "v4",
+  "generation_reasoning": {
+    "step_a": "Students think money is money regardless of when you get it — they don't intuitively feel that ₹1,00,000 later is worth less than ₹1,00,000 now.",
+    "step_b": "A friend in Bengaluru asks for ₹1,00,000 today and promises to return exactly ₹1,00,000 in one year. If you give it, you lose out on 7% from an HDFC FD, and inflation erodes purchasing power.",
+    "step_c": "1. Time Value of Money (Opportunity Cost) -> 2. How to adjust (Discounting) -> 3. DCF (the formal valuation method for a stream of cash flows).",
+    "step_d": "Scene 1: note_stack. Scene 2: scale. Scene 3: timeline.",
+    "step_e": "Confusing the discount rate with pure inflation, rather than the opportunity cost of capital."
+  },
+  "canonical_concept_model": {
+    "domain": "Corporate Finance",
+    "topic": "Discounted Cash Flow (DCF)",
+    "definition": "A valuation method used to estimate the value of an investment based on its expected future cash flows, adjusted back to their present value.",
+    "purpose": "To determine what an asset is intrinsically worth today.",
+    "hero": {
+      "hook_scenario": "Your friend in Bengaluru asks for a ₹1,00,000 loan today, promising to pay you back exactly ₹1,00,000 in one year. At first glance, you get your money back. But if you didn't lend it to him, you could have put that ₹1,00,000 into an HDFC Bank Fixed Deposit earning 7% guaranteed. Plus, inflation means things will cost more next year. Because you lose the opportunity to earn interest, ₹1,00,000 next year is actually worth less to you right now than ₹1,00,000 in your pocket today. Adjusting for this lost time and opportunity is where Discounted Cash Flow comes in.",
+      "one_line_definition": "Finding out exactly how much future cash is worth in today's money.",
+      "why_it_exists": "You cannot add cash flows from different years together without first converting them all into 'today dollars'.",
+      "hero_visual_concept": "note_stack"
+    },
+    "coverage_check": {
+      "tier1_concepts_linked": ["time_value_of_money", "present_value", "discount_rate", "terminal_value"],
+      "concepts_covered_as_scenes": ["time_value_of_money", "present_value", "discount_rate"],
+      "concepts_folded": [
+        { "concept_id": "terminal_value", "folded_into_scene_id": "discount_rate", "folding_justification": "Terminal value is just a perpetuity formula applied at the end of the explicit forecast period. Better folded into the final DCF scene." }
+      ],
+      "coverage_gaps": []
+    }
+  },
+  "curriculum": {
+    "prerequisites": ["Time Value of Money", "Interest Rates"],
+    "learning_goals": ["Understand opportunity cost", "Calculate Present Value", "Apply DCF to multiple years"]
+  },
+  "teaching_blueprint": {
+    "purpose": "Mastering the valuation of future cash streams.",
+    "common_stumbling_blocks": ["Thinking ₹100 next year equals ₹100 today", "Using the wrong discount rate"]
+  },
+  "dependency_package": {},
+  "review_package": {},
+  "visualization_hints": {},
+  "story_engine": {
+    "narrative": {
+      "hook": "A rupee promised farther away must travel back through time before it can be compared with a rupee held now.",
+      "reveal": "Discounted Cash Flow (DCF)",
+      "definition": "Future cash flows are translated into their worth in today's money before they are added together.",
+      "misconception": "Equal cash amounts are not equal when they arrive at different times.",
+      "payoff": "Once every future payment is pulled back to today, their total becomes an intrinsic value you can compare with a price."
+    },
+    "visual": {
+      "metaphor": "time_decay",
+      "actors": ["present cash", "future cash", "discount rate"],
+      "states": ["cash appears ahead", "time stretches", "value arrives today"],
+      "hand_drawn_style": "low-frame ink with receding paper-note silhouettes"
+    },
+    "interactions": [
+      {
+        "input": "years",
+        "drives": ["cash distance", "cash scale", "cash opacity"],
+        "learning_effect": "Moving a payment farther into the future makes its present-value note physically recede and shrink."
+      },
+      {
+        "input": "rate",
+        "drives": ["cash scale", "cash opacity", "time-path tension"],
+        "learning_effect": "A higher alternative return compresses the value of the same future payment even when its cash amount never changes."
+      },
+      {
+        "input": "discount_rate",
+        "drives": ["cash-flow scale", "cash-flow opacity", "present-value stack height"],
+        "learning_effect": "A higher discount rate shrinks every future cash flow before the stack becomes today's valuation."
+      }
+    ],
+    "beats": ["a payment waits ahead", "time and rate pull value away", "discounted payments gather today"]
+  },
+  "scenes": [
+    {
+      "scene_type": "concept_building",
+      "learning_objective": "Understand the core concept of opportunity cost regarding time.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": false,
+      "transition_package": {
+        "title": "The Cost of Waiting",
+        "story": "If you lock up your ₹1,00,000 with your friend for a year, the 7% you could have earned at HDFC Bank is your 'opportunity cost'. Because of this cost, if someone promises you money in the future, you must penalize that future money to compare it fairly to money you have right now. The higher your alternative return, the heavier the penalty."
+      },
+      "formula_package": {
+        "latex": "Opportunity\\ Cost = r",
+        "variables": [
+          { "symbol": "r", "definition": "The rate of return you could earn elsewhere" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "note_stack",
+        "bound_variables": [
+          { "variable_id": "opportunity_rate", "drives": "The visible shrinking of the future note stack" }
+        ],
+        "bound_to_widget_input": ["opportunity_rate"],
+        "pedagogical_justification": "The note_stack visually shrinks as the opportunity_rate increases, immediately showing that higher alternative returns make future cash worth less today."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "The Penalty of Time",
+        "inputs": [
+          { "name": "opportunity_rate", "default": 7, "min": 0, "max": 20, "step": 1 }
+        ],
+        "expression": "100000 / (1 + (opportunity_rate/100))",
+        "insight": "Increase the rate you could earn elsewhere, and watch how much less the future ₹1,00,000 is worth to you today."
+      },
+      "misconception_package": {},
+      "interview_package": {},
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    },
+    {
+      "scene_type": "mechanism",
+      "learning_objective": "Learn the math to convert future value to present value.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": false,
+      "transition_package": {
+        "title": "Discounting the Future",
+        "story": "To figure out exactly how much that ₹1,00,000 next year is worth today, we use a math process called 'discounting'. We take the future amount and divide it by (1 + your opportunity rate). If the money is coming in two years, we divide it twice (squared), because you are losing out on two years of compounding HDFC Bank interest. The further out the money is, the more heavily it gets penalized."
+      },
+      "formula_package": {
+        "latex": "PV = \\frac{FV}{(1 + r)^n}",
+        "variables": [
+          { "symbol": "PV", "definition": "Present Value" },
+          { "symbol": "FV", "definition": "Future Value (e.g. ₹1,00,000)" },
+          { "symbol": "r", "definition": "Discount rate" },
+          { "symbol": "n", "definition": "Number of years" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "timeline",
+        "bound_variables": [
+          { "variable_id": "years", "drives": "The position of the cash flow on the horizontal axis" }
+        ],
+        "bound_to_widget_input": ["years", "future_cash", "rate"],
+        "pedagogical_justification": "The timeline moves the cashflow further to the right as 'years' increases, visually linking distance in time to the shrinking present value result."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "Present Value Calculator",
+        "inputs": [
+          { "name": "future_cash", "default": 100000, "min": 10000, "max": 200000, "step": 10000 },
+          { "name": "rate", "default": 7, "min": 1, "max": 20, "step": 1 },
+          { "name": "years", "default": 1, "min": 1, "max": 10, "step": 1 }
+        ],
+        "expression": "future_cash / ((1 + (rate/100)) ** years)",
+        "insight": "Push the years slider up. Notice how drastically a cash flow 10 years away shrinks compared to 1 year away."
+      },
+      "misconception_package": {},
+      "interview_package": {},
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    },
+    {
+      "scene_type": "payoff",
+      "learning_objective": "Apply the PV formula to a stream of multiple cash flows.",
+      "refers_back_to_hook": true,
+      "introduces_formal_term": true,
+      "transition_package": {
+        "title": "Discounted Cash Flow (DCF)",
+        "story": "Now imagine your friend isn't just paying you back once. He's starting a business and promises you ₹20,000 next year, ₹30,000 the year after, and ₹50,000 in year three. You can't just add them up to ₹1,00,000. You must calculate the Present Value of each separate payment based on how far away it is, and then add those discounted chunks together. This method of valuing an asset based on its future stream of payments is Discounted Cash Flow (DCF)."
+      },
+      "formula_package": {
+        "latex": "DCF = \\frac{CF_1}{(1+r)^1} + \\frac{CF_2}{(1+r)^2} + ... + \\frac{CF_n}{(1+r)^n}",
+        "variables": [
+          { "symbol": "CF_n", "definition": "Cash flow in year n" },
+          { "symbol": "r", "definition": "Discount rate" }
+        ]
+      },
+      "illustration_package": {
+        "primitive_type": "stacked_bars",
+        "bound_variables": [
+          { "variable_id": "discount_rate", "drives": "The height of all stacked PV bars shrinking simultaneously" }
+        ],
+        "bound_to_widget_input": ["discount_rate", "cf_1", "cf_2", "cf_3"],
+        "pedagogical_justification": "The stacked_bars represent the sum of the DCF. As discount_rate increases, every stacked segment visibly compresses, proving that higher rates destroy asset valuations."
+      },
+      "diagram_package": {},
+      "animation_package": {},
+      "widget_package": {
+        "type": "slider_interactive",
+        "label": "3-Year DCF Engine",
+        "inputs": [
+          { "name": "cf_1", "default": 20000, "min": 0, "max": 100000, "step": 5000 },
+          { "name": "cf_2", "default": 30000, "min": 0, "max": 100000, "step": 5000 },
+          { "name": "cf_3", "default": 50000, "min": 0, "max": 100000, "step": 5000 },
+          { "name": "discount_rate", "default": 10, "min": 1, "max": 20, "step": 1 }
+        ],
+        "expression": "(cf_1 / (1 + (discount_rate/100))) + (cf_2 / ((1 + (discount_rate/100))**2)) + (cf_3 / ((1 + (discount_rate/100))**3))",
+        "insight": "The total sum will always be lower than the raw cash flows, representing the 'today' value of that future business."
+      },
+      "misconception_package": {
+        "common_mistakes": ["Using a risk-free rate instead of a risk-adjusted rate for volatile cash flows."],
+        "key_takeaways": ["The discount rate must reflect the risk of the specific cash flows, not just inflation."]
+      },
+      "interview_package": {
+        "question": "What happens to a company's DCF valuation if interest rates in the economy rise?",
+        "answer": "The valuation drops. Higher interest rates increase the opportunity cost (the discount rate 'r' in the denominator), which aggressively shrinks the present value of all future cash flows."
+      },
+      "eli5_package": {},
+      "mba_package": {},
+      "qa_package": {}
+    }
+  ]
+}

@@ -3,6 +3,10 @@ import FlashCard from './components/FlashCard';
 import CramCard from './components/CramCard';
 import ShortcutView from './components/ShortcutView';
 import SecuritizationView from './components/SecuritizationView';
+import KnowledgeGraphView from './components/KnowledgeGraphView';
+import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
+import LearningMapView from './components/LearningMapView';
+import LessonView from './components/LessonView';
 import cardsData from './data/cards.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
@@ -22,11 +26,15 @@ export default function App() {
   const [formSaved, setFormSaved] = useState(false);
   
   // Navigation State
-  const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list'
+  const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list' | 'graph'
   const [activeCategory, setActiveCategory] = useState(null); // null means dashboard
-  const [activeSubcategory, setActiveSubcategory] = useState(null); // null means subcategory selector (for Aptitude)
+  const [activeSubcategory, setActiveSubcategory] = useState(null);
   const [theme, setTheme] = useState('light');
   const [showSecuritizationNotes, setShowSecuritizationNotes] = useState(true);
+  const [graphDeck, setGraphDeck] = useState(null); // null = not in graph study mode
+  const [graphDeckTitle, setGraphDeckTitle] = useState('');
+  const [graphDeckFallback, setGraphDeckFallback] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   
   const scrollPositionRef = useRef(0);
   const dashboardRef = useRef(null);
@@ -44,6 +52,12 @@ export default function App() {
   // PWA Install State
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   const [fetchError, setFetchError] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
@@ -211,6 +225,9 @@ export default function App() {
   const activeDeck = useMemo(() => {
     if (!activeCategory) return [];
     
+    // Graph Study mode: use pre-assembled custom deck
+    if (graphDeck) return graphDeck;
+
     let deck = [];
     if (activeCategory === 'All Cards') {
       deck = [...masterDeck];
@@ -312,7 +329,15 @@ export default function App() {
   };
 
   const goBack = () => {
-    if (isSecuritizationCategory(activeCategory) && !showSecuritizationNotes) {
+    if (activeCategory === '__graph__') {
+      // Return to knowledge graph
+      setActiveCategory(null);
+      setActiveSubcategory(null);
+      setGraphDeck(null);
+      setGraphDeckTitle('');
+      setGraphDeckFallback(false);
+      setGlobalMode('graph');
+    } else if (isSecuritizationCategory(activeCategory) && !showSecuritizationNotes) {
       setShowSecuritizationNotes(true);
     } else if (activeCategory === 'Aptitude' && activeSubcategory) {
       setActiveSubcategory(null);
@@ -362,6 +387,39 @@ export default function App() {
     );
   }
 
+  const handleStudyNow = (node) => {
+    if (!node) return;
+    const title = node.label || node.title;
+
+    let matched = masterDeck.filter(card => {
+      const haystack = `${card.question} ${card.answer} ${card.category} ${card.subcategory || ''}`.toLowerCase();
+      return haystack.includes(title.toLowerCase());
+    });
+
+    const isFallback = matched.length < 3;
+    if (isFallback) {
+      // If still not enough, just match Securitization cards
+      matched = masterDeck.filter(card => card.category?.toLowerCase().includes('securitization'));
+    }
+    if (isFallback && node.flashcardTopicId) {
+      matched = masterDeck.filter(card => card.category === node.flashcardTopicId);
+    }
+
+    if (matched.length === 0) return;
+
+    const shuffled = [...matched];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    setGraphDeck(shuffled);
+    setGraphDeckTitle(title);
+    setGraphDeckFallback(isFallback);
+    setActiveCategory('__graph__');
+    setGlobalMode('focus');
+  };
+
   return (
     <div 
       className="h-[100dvh] w-full flex flex-col bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] overflow-hidden selection:bg-[#0066cc] selection:text-white transition-colors duration-300"
@@ -388,7 +446,13 @@ export default function App() {
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M15 19l-7-7 7-7"></path></svg>
             <span className="text-[14px] font-medium">
-              {activeCategory === 'Aptitude' && activeSubcategory ? 'Aptitude' : isSecuritizationCategory(activeCategory) && !showSecuritizationNotes ? activeCategory : 'Library'}
+              {activeCategory === '__graph__'
+                ? 'Learning Map'
+                : activeCategory === 'Aptitude' && activeSubcategory
+                  ? 'Aptitude'
+                  : isSecuritizationCategory(activeCategory) && !showSecuritizationNotes
+                    ? activeCategory
+                    : 'Library'}
             </span>
           </button>
         )}
@@ -405,12 +469,28 @@ export default function App() {
           </button>
 
           {!activeCategory && (
-            <button 
-              onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
-              className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
-            >
-              {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
-            </button>
+            <div className="flex gap-2">
+              <button 
+                onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
+                className={`px-3 py-1.5 text-[12px] font-medium rounded-full transition-all ${globalMode === 'lesson' ? 'bg-[#0066cc] text-white hover:bg-[#2997ff]' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
+              >
+                Deep Dive
+              </button>
+              <button 
+                onClick={() => setGlobalMode(prev => prev === 'graph' ? 'focus' : 'graph')}
+                className={`px-3 py-1.5 text-[12px] font-medium rounded-full transition-all ${globalMode === 'graph' ? 'bg-[#0066cc] text-white hover:bg-[#2997ff]' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
+              >
+                Learning Map
+              </button>
+              {globalMode !== 'graph' && globalMode !== 'lesson' && (
+                <button 
+                  onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+                  className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+                >
+                  {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
+                </button>
+              )}
+            </div>
           )}
 
           {/* Securitization: Notes/Flashcards + Cram/Focus toggle */}
@@ -445,11 +525,19 @@ export default function App() {
 
       {/* DASHBOARD MODE */}
       {!activeCategory && (
-        <main 
-          ref={dashboardRef}
-          onScroll={handleDashboardScroll}
-          className="flex-1 overflow-y-auto w-full px-4 py-6 md:px-12 md:py-10 max-w-4xl mx-auto space-y-6"
-        >
+        globalMode === 'lesson' ? (
+          <LessonView onClose={() => setGlobalMode('focus')} />
+        ) : globalMode === 'graph' ? (
+          <LearningMapView 
+            onClose={() => setGlobalMode('focus')}
+            onStudyNow={handleStudyNow}
+          />
+        ) : (
+          <main 
+            ref={dashboardRef}
+            onScroll={handleDashboardScroll}
+            className="flex-1 overflow-y-auto w-full px-4 py-6 md:px-12 md:py-10 max-w-4xl mx-auto space-y-6"
+          >
           <div>
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-1 text-[#1d1d1f] dark:text-[#f5f5f7]">
               Hey deepti, <span className="text-[#86868b]">pick a deck.</span>
@@ -573,6 +661,7 @@ export default function App() {
             })}
           </div>
         </main>
+        )
       )}
 
       {/* STUDY / SUBCATEGORY MODES */}
@@ -635,6 +724,21 @@ export default function App() {
             <>
               {globalMode === 'focus' && (
                 <main className="flex-1 flex flex-col relative w-full overflow-hidden">
+                  {/* Graph Study Mode Banner */}
+                  {activeCategory === '__graph__' && (
+                    <div className="flex-none px-4 pt-3 pb-0">
+                      <div className={`rounded-2xl px-4 py-2.5 flex items-center gap-3 ${graphDeckFallback ? 'bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/40' : 'bg-[#0066cc]/8 dark:bg-[#2997ff]/8 border border-[#0066cc]/15 dark:border-[#2997ff]/15'}`}>
+                        <div className="flex-1">
+                          <p className={`text-[12px] font-semibold ${graphDeckFallback ? 'text-amber-700 dark:text-amber-400' : 'text-[#0066cc] dark:text-[#2997ff]'}`}>
+                            {graphDeckFallback
+                              ? `Showing closest available deck for "${graphDeckTitle}". Topic-specific cards will be added soon.`
+                              : `Studying: ${graphDeckTitle} — ${activeDeck.length} cards`
+                            }
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                   <div className="flex-1 w-full px-4 py-6 md:p-12 flex flex-col items-center justify-center relative perspective-1000">
                     {activeDeck.length === 0 ? (
                       <div className="font-medium text-[#86868b]">No cards available.</div>

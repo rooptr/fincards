@@ -1,0 +1,292 @@
+[
+  {
+    "topic": "Valuation",
+    "count": 213,
+    "sampleQs": [
+      "Walk me through the difference in calculating Terminal Value using the Gordon Growth Method vs. the Exit Multiple Method. When would you use one over the other?",
+      "If you are valuing a company using Precedent Transactions, why do the multiples typically come out higher than Comparable Company Analysis?",
+      "What happens to the Enterprise Value if you issue $100 in Debt to buy $100 in Equipment?",
+      "Why is WACC used to discount Free Cash Flow to Firm (FCFF), while Cost of Equity is used for Free Cash Flow to Equity (FCFE)?",
+      "How do you calculate the Perpetuity Growth Rate (g) for the Gordon Growth Method? What is the logical constraint on this number?"
+    ]
+  },
+  {
+    "topic": "Fixed Income & Credit",
+    "count": 219,
+    "sampleQs": [
+      "Why do credit rating agencies look closely at FFO/Debt (Funds From Operations to Debt) instead of just Net Income to Debt?",
+      "Define the Interest Coverage Ratio (ICR). What does a ratio of 1.5x imply for a highly leveraged firm?",
+      "What is the relationship between Bond Prices and Interest Rates?",
+      "Explain Macaulay Duration vs. Modified Duration.",
+      "What is Convexity in bond pricing?"
+    ]
+  },
+  {
+    "topic": "Guesstimates",
+    "count": 20,
+    "sampleQs": [
+      "Guesstimate: What is the total daily revenue of the Starbucks in Terminal 3 of Delhi Airport? (Structure your approach)",
+      "Contrast the Top-Down vs. Bottom-Up approaches in guesstimate interview questions.",
+      "How do you handle ambiguous or vague guesstimate prompts (e.g., 'How many tennis balls fit in a plane?')? Walk through the first 3 steps.",
+      "Guesstimate: Number of iPhones sold in India per day",
+      "Guesstimate: Daily revenue of a busy Starbucks in Mumbai"
+    ]
+  },
+  {
+    "topic": "Economics",
+    "count": 29,
+    "sampleQs": [
+      "Explain the difference between CPI (Consumer Price Index) and WPI (Wholesale Price Index). Which one is targeted by central banks?",
+      "What is the difference between Quantitative Easing (QE) and Quantitative Tightening (QT)? How do they impact interest rates?",
+      "Explain the Balance of Payments (BOP). What causes a Current Account Deficit (CAD)?",
+      "What is Inflation, and what causes it fundamentally?",
+      "How do Central Banks use Interest Rates to fight Inflation?"
+    ]
+  },
+  {
+    "topic": "Industry Structure",
+    "count": 1,
+    "sampleQs": [
+      "Why has Private Credit (direct lending) grown exponentially post-2008? Explain the banking regulatory constraint."
+    ]
+  },
+  {
+    "topic": "Values Tracker",
+    "count": 2,
+    "sampleQs": [
+      "What is the current RBI Repo Rate?",
+      "What is the current target range for the US Federal Reserve Funds Rate?"
+    ]
+  },
+  {
+    "topic": "Company Awareness",
+    "count": 5,
+    "sampleQs": [
+      "Name the Big Four accounting and professional services firms.",
+      "Name the domestic credit rating agencies operating in India, and identify the largest one.",
+      "What does Reliance Industries do? Name its three main business segments.",
+      "Who is the parent promoter of Tata Consultancy Services (TCS)? What is their position in the Indian IT sector?",
+      "What is Hindustan Unilever (HUL)? What sector does it lead in India?"
+    ]
+  },
+  {
+    "topic": "Derivatives 101",
+    "count": 117,
+    "sampleQs": [
+      "What is the main difference between a Forward contract and a Futures contract?",
+      "Explain the difference between Initial Margin and Maintenance Margin in futures trading.",
+      "What is a Call Option? When would a trader buy one?",
+      "Define the \"Intrinsic Value\" vs. \"Time Value\" of an option.",
+      "Briefly define the Option Greeks: Delta, Gamma, Theta, and Vega."
+    ]
+  },
+  {
+    "topic": "Macroeconomics",
+    "count": 19,
+    "sampleQs": [
+      "What is the difference between Core Inflation and Headline Inflation?",
+      "Contrast Demand-Pull Inflation with Cost-Push Inflation.",
+      "Define Stagflation.",
+      "What are Open Market Operations (OMO) used by Central Banks?",
+      "Explain the difference between Quantitative Easing (QE) and Quantitative Tightening (QT)."
+    ]
+  },
+  {
+    "topic": "Finance GK",
+    "count": 105,
+    "sampleQs": [
+      "Define Repo Rate and Reverse Repo Rate.",
+      "What is the difference between CRR (Cash Reserve Ratio) and SLR (Statutory Liquidity Ratio)?",
+      "What is a Non-Performing Asset (NPA) and what is the 90-day rule?",
+      "What is the CASA Ratio?",
+      "Match the Indian Regulators to their domain: RBI, SEBI, IRDAI, PFRDA."
+    ]
+  },
+  {
+    "topic": "Microeconomics",
+    "count": 6,
+    "sampleQs": [
+      "State the Law of Demand.",
+      "What is the difference between a \"shift in the demand curve\" and a \"movement along the demand curve\"?",
+      "Define Price Elasticity of Demand.",
+      "What is Opportunity Cost?",
+      "Explain the Profit Maximization Rule (MR = MC)."
+    ]
+  },
+  {
+    "topic": "Excel & Financial Modeling",
+    "count": 60,
+    "sampleQs": [
+      "What does the F4 key do in Excel?",
+      "Explain the difference between VLOOKUP and INDEX-MATCH.",
+      "What are the standard color-coding conventions in financial modeling?",
+      "What is a Circular Reference in a financial model and when is it intentional?",
+      "What is a Data Table used for in a financial model?"
+    ]
+  },
+  {
+    "topic": "Moody's / Rating Agencies",
+    "count": 40,
+    "sampleQs": [
+      "What is the primary revenue model of Moody's Investors Service (MIS)?",
+      "What is the inherent conflict of interest in the \"Issuer-Pays\" model used by rating agencies?",
+      "How does Moody's separate its rating business from its data/analytics business?",
+      "Who are the \"Big 3\" global credit rating agencies?",
+      "What is the core revenue model for Credit Rating Agencies like Moody's, S&P, and Fitch?"
+    ]
+  },
+  {
+    "topic": "Oxane Partners",
+    "count": 12,
+    "sampleQs": [
+      "What is the core value proposition of Oxane Partners in the private credit market?",
+      "Who is the typical target client base for Oxane Partners?",
+      "What does \"Financial Statement Spreading\" mean in the context of Oxane's operational capabilities?",
+      "What is \"Private Credit\" (Alternative Lending)?",
+      "What is \"Valuation-as-a-Service\" (VaaS) in the context of Private Credit?"
+    ]
+  },
+  {
+    "topic": "Corporate Finance",
+    "count": 110,
+    "sampleQs": [
+      "Explain the Modigliani-Miller (M&M) Theorem (without taxes).",
+      "What is the Trade-off Theory of Capital Structure?",
+      "Explain the Pecking Order Theory.",
+      "Why do we use Unlevered Beta vs. Levered Beta?",
+      "When is a merger considered \"Accretive\" vs. \"Dilutive\"?"
+    ]
+  },
+  {
+    "topic": "Financial Statements",
+    "count": 105,
+    "sampleQs": [
+      "How do you calculate the Cash Conversion Cycle (CCC)?",
+      "If a company buys $100 of equipment using debt, walk me through the 3 statements in Year 1. (Assume 10% interest, 10-year useful life, straight-line depreciation, 20% tax rate).",
+      "Why is EBITDA often criticized as a proxy for cash flow?",
+      "Break down the 3-step DuPont Analysis for Return on Equity (ROE).",
+      "Walk me through the 3 financial statements if Depreciation increases by $10. (Assume 20% tax rate)."
+    ]
+  },
+  {
+    "topic": "Securitization & Structured Finance",
+    "count": 226,
+    "sampleQs": [
+      "What is Securitization?",
+      "What is the purpose of a Special Purpose Vehicle (SPV) in securitization?",
+      "Explain Tranching and the Waterfall Structure in a CDO/ABS.",
+      "What is Securitization?",
+      "What is a Special Purpose Vehicle (SPV) / Special Purpose Entity (SPE)?"
+    ]
+  },
+  {
+    "topic": "Company & Industry-Specific",
+    "count": 81,
+    "sampleQs": [
+      "What is ARR (Annual Recurring Revenue)?",
+      "What is Net Dollar Retention (NDR) in SaaS?",
+      "What is the LTV / CAC Ratio, and what is the \"golden rule\" benchmark?",
+      "Why do high-growth SaaS companies almost always report massive GAAP Net Losses?",
+      "What is NIM (Net Interest Margin) for a commercial bank?"
+    ]
+  },
+  {
+    "topic": "Market Awareness & Current Affairs",
+    "count": 180,
+    "sampleQs": [
+      "What is the current RBI Repo Rate in India? [Updated: July 2026]",
+      "What is the current US Federal Funds Rate? [Updated: July 2026]",
+      "What is the difference between the Repo Rate and the Reverse Repo Rate?",
+      "What is the approximate current level of the Nifty 50 index? [Updated: July 2026]",
+      "What is the current USD to INR exchange rate, and why does it matter? [Updated: July 2026]"
+    ]
+  },
+  {
+    "topic": "India-Specific Context",
+    "count": 40,
+    "sampleQs": [
+      "Who is the current Governor of the Reserve Bank of India (RBI)?",
+      "Who is the current Finance Minister of India?",
+      "What is the Insolvency and Bankruptcy Code (IBC) of 2016?",
+      "What was the 2018 NBFC Crisis (IL&FS and DHFL)?",
+      "What are the key components to track in the Union Budget?"
+    ]
+  },
+  {
+    "topic": "Behavioral & Fit",
+    "count": 20,
+    "sampleQs": [
+      "Walk me through your resume.",
+      "Why do you want to work at this specific firm?",
+      "Tell me about a time you failed.",
+      "Tell me about a time you worked in a team and faced a conflict.",
+      "What is your greatest weakness?"
+    ]
+  },
+  {
+    "topic": "Aptitude|Quantitative",
+    "count": 95,
+    "sampleQs": [
+      "A train 199m long is running at a speed of 36 km/hr. How much time will it take to pass a standing pole?",
+      "A train 123m long is running at a speed of 54 km/hr. How much time will it take to pass a standing pole?",
+      "A train 125m long is running at a speed of 54 km/hr. How much time will it take to pass a standing pole?",
+      "A train 282m long is running at a speed of 36 km/hr. How much time will it take to pass a standing pole?",
+      "A train 255m long is running at a speed of 72 km/hr. How much time will it take to pass a standing pole?"
+    ]
+  },
+  {
+    "topic": "Aptitude|Logical Reasoning",
+    "count": 84,
+    "sampleQs": [
+      "Find the next number in the series: 49, 64, 81, 100, ?",
+      "Find the next number in the series: 64, 125, 216, 343, ?",
+      "Find the next number in the series: 7, 9, 16, 25, 41, ?",
+      "Find the next number in the series: 8, 17, 35, 71, ?",
+      "Find the next number in the series: 36, 49, 64, 81, ?"
+    ]
+  },
+  {
+    "topic": "Aptitude|Shortcuts",
+    "count": 20,
+    "sampleQs": [
+      "The (100 ± r)% Trick for Successive Discounts",
+      "Multiplying any 2-digit number by 11 instantly",
+      "Finding the Square of a number ending in 5",
+      "The (xy / x+y) Trick for Time and Work",
+      "The Alligation Trick for Mixtures"
+    ]
+  },
+  {
+    "topic": "Personal Finance",
+    "count": 5,
+    "sampleQs": [
+      "What is the 'Safe Withdrawal Rate' (often called the 4% Rule) and what macro assumption is it highly sensitive to?",
+      "Explain the difference between a Defined Benefit (DB) pension and a Defined Contribution (DC) plan.",
+      "What is 'Longevity Risk' in retirement planning, and how is it specifically mitigated?",
+      "How does the 'Glide Path' in a Target Date Fund structurally reduce risk?",
+      "What is the 'Tax Drag' in retirement accounts, and how do Roth IRAs (US) or PPF (India) avoid it?"
+    ]
+  },
+  {
+    "topic": "Portfolio Management",
+    "count": 15,
+    "sampleQs": [
+      "What is 'Tracking Error' in active investment analysis?",
+      "How does the 'Information Ratio' (IR) evaluate a portfolio manager's skill?",
+      "Explain the concept of 'Smart Beta' (Factor Investing).",
+      "What is 'Survivorship Bias' in mutual fund performance data?",
+      "What is the 'Treynor Ratio' and when is it preferred over the Sharpe Ratio?"
+    ]
+  },
+  {
+    "topic": "Current Affairs",
+    "count": 26,
+    "sampleQs": [
+      "What was the RBI's repo rate decision in the June 2026 Monetary Policy Committee (MPC) meeting, and what was the primary rationale?",
+      "Why did the RBI lower India's FY27 GDP growth projection to 6.6% in mid-2026 despite strong domestic bank balance sheets?",
+      "Which major Japanese financial institution acquired a 20% stake in Shriram Finance in early 2026, and why?",
+      "What was the strategic rationale behind the mega-consolidation of Air India and Vistara under Tata Motors?",
+      "Which major Middle Eastern bank acquired a controlling 60% stake in RBL Bank in 2025/2026?"
+    ]
+  }
+]

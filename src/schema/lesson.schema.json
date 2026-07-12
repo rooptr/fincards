@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "schema_version": { "type": "string" },
+    "content_version": { "type": "string" },
+    "canonical_concept_model": { 
+      "type": "object",
+      "properties": {
+        "domain": { "type": "string" },
+        "topic": { "type": "string" },
+        "definition": { "type": "string" },
+        "purpose": { "type": "string" },
+        "hero": {
+          "type": "object",
+          "properties": {
+            "hook_scenario": { "type": "string" },
+            "one_line_definition": { "type": "string" },
+            "why_it_exists": { "type": "string" },
+            "hero_visual_concept": { "type": "string", "enum": ["note_stack", "timeline", "scale", "flow_path", "stacked_bars", "container_transfer"] }
+          },
+          "required": ["hook_scenario", "one_line_definition", "why_it_exists", "hero_visual_concept"],
+          "additionalProperties": false
+        },
+        "coverage_check": {
+          "type": "object",
+          "properties": {
+            "tier1_concepts_linked": { "type": "array", "items": { "type": "string" } },
+            "concepts_covered_as_scenes": { "type": "array", "items": { "type": "string" } },
+            "concepts_folded": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "concept_id": { "type": "string" },
+                  "folded_into_scene_id": { "type": "string" },
+                  "folding_justification": { "type": "string" }
+                }
+              }
+            },
+            "coverage_gaps": { "type": "array", "items": { "type": "string" }, "maxItems": 0 }
+          }
+        }
+      },
+      "required": ["domain", "topic", "definition", "purpose", "hero", "coverage_check"]
+    },
+    "curriculum": { "type": "object" },
+    "teaching_blueprint": { "type": "object" },
+    "dependency_package": { "type": "object" },
+    "review_package": { "type": "object" },
+    "visualization_hints": { "type": "object" },
+    "story_engine": {
+      "type": "object",
+      "properties": {
+        "narrative": {
+          "type": "object",
+          "properties": {
+            "hook": { "type": "string" },
+            "reveal": { "type": "string" },
+            "definition": { "type": "string" },
+            "misconception": { "type": "string" },
+            "payoff": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "visual": {
+          "type": "object",
+          "properties": {
+            "metaphor": {
+              "type": "string",
+              "enum": ["time_decay", "balance", "flow", "branching", "layers", "feedback_loop"]
+            },
+            "actors": { "type": "array", "items": { "type": "string" } },
+            "states": { "type": "array", "items": { "type": "string" } },
+            "hand_drawn_style": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "interactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "input": { "type": "string" },
+              "drives": { "type": "array", "items": { "type": "string" } },
+              "learning_effect": { "type": "string" }
+            },
+            "required": ["input", "drives", "learning_effect"],
+            "additionalProperties": true
+          }
+        },
+        "beats": { "type": "array" }
+      },
+      "additionalProperties": false
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scene_type": { "type": "string" },
+          "learning_objective": { "type": "string" },
+          "refers_back_to_hook": { "type": "boolean" },
+          "introduces_formal_term": { "type": "boolean" },
+          "transition_package": { "type": "object" },
+          "formula_package": { "$ref": "formula.schema.json" },
+          "illustration_package": { "$ref": "illustration.schema.json" },
+          "diagram_package": { "$ref": "diagram.schema.json" },
+          "animation_package": { "type": "object" },
+          "widget_package": { "$ref": "widget.schema.json" },
+          "misconception_package": { "type": "object" },
+          "interview_package": { "type": "object" },
+          "eli5_package": { "type": "object" },
+          "mba_package": { "type": "object" },
+          "qa_package": { "type": "object" }
+        },
+        "required": [
+          "scene_type",
+          "learning_objective",
+          "refers_back_to_hook",
+          "introduces_formal_term",
+          "transition_package",
+          "formula_package",
+          "illustration_package",
+          "diagram_package",
+          "animation_package",
+          "widget_package",
+          "misconception_package",
+          "interview_package",
+          "eli5_package",
+          "mba_package",
+          "qa_package"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "content_version",
+    "canonical_concept_model",
+    "curriculum",
+    "teaching_blueprint",
+    "dependency_package",
+    "review_package",
+    "visualization_hints",
+    "scenes"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,129 @@
+{
+  "title": "Securitization",
+  "domain": "Fixed Income",
+  "narrative": [
+    {
+      "id": "sec_concept",
+      "stage": "concept",
+      "label": "Securitization",
+      "desc": "The process of pooling illiquid financial assets — mortgages, auto loans, credit card receivables — and repackaging them into tradeable securities sold to investors. Originated in the 1970s by Fannie Mae and Freddie Mac for home mortgages.",
+      "eli5": "Think of it like taking a bunch of individual loans (like mortgages), putting them all in a giant blender, and selling slices of that blended loan smoothie to investors. It turns hard-to-sell individual loans into easy-to-sell bonds.",
+      "questions": ["What is the primary purpose of securitization for a bank?", "How does securitization transform an illiquid asset into a liquid one?"],
+      "prereqs": ["Credit Risk", "Bond Mechanics", "Interest Rates"],
+      "leadsTo": ["Structured Finance", "Shadow Banking"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_source",
+      "stage": "source",
+      "label": "Loan Origination",
+      "desc": "Banks and mortgage lenders originate individual loans — home mortgages, auto loans, student debt, credit card balances. Each loan is an asset on the bank's balance sheet generating interest income. The originator wants to recycle capital: sell the loans and lend again.",
+      "eli5": "A bank lends money to a person to buy a house. The bank now has a 'mortgage' asset that pays interest every month. But the bank's money is tied up for 30 years, so they want to sell this loan to get cash back immediately to make more loans.",
+      "questions": ["Why do originators want to sell their loans?", "What is the difference between an originate-to-hold and originate-to-distribute model?"],
+      "prereqs": ["Interest Rates", "Lending Mechanics"],
+      "leadsTo": ["Credit Underwriting Standards", "Origination Fees"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_prep",
+      "stage": "preparation",
+      "label": "Asset Pooling",
+      "desc": "Originated loans are aggregated into a single pool — typically $500M to $5B+ in face value. Pooling achieves diversification: no single borrower default can sink the structure. The pool's cash flow profile (weighted average coupon, maturity, prepayment speed) determines the securities issued.",
+      "eli5": "Instead of selling one mortgage, the bank gathers 5,000 mortgages together. This is much safer for investors because if one person defaults, the other 4,999 are still paying. It spreads the risk out.",
+      "questions": ["How does pooling achieve diversification?", "What is a Weighted Average Coupon (WAC)?"],
+      "prereqs": ["Loan Origination"],
+      "leadsTo": ["Portfolio Theory", "Law of Large Numbers"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_mech_spv",
+      "stage": "mechanism",
+      "label": "SPV / Trust",
+      "desc": "Special Purpose Vehicle — a bankruptcy-remote legal entity that purchases the asset pool from the originator. The SPV is legally independent: if the originator goes bankrupt, the pool is not part of the bankruptcy estate. This 'true sale' is the legal bedrock of securitization.",
+      "eli5": "A dummy corporation created solely to hold the pooled loans. It's a legal firewall. If the original bank goes bankrupt, the loans in the SPV are perfectly safe and keep paying the investors. It protects the investors from the bank's own corporate risks.",
+      "questions": ["What does 'bankruptcy-remote' mean?", "What constitutes a 'true sale' in securitization?"],
+      "prereqs": ["Asset Pooling"],
+      "leadsTo": ["Off-Balance Sheet Accounting", "Corporate Governance"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_mech_ce",
+      "stage": "mechanism",
+      "label": "Credit Enhancement",
+      "desc": "Techniques that absorb losses before senior investors are affected. Types: (1) Subordination — junior tranches take losses first. (2) Overcollateralization — pool face value > securities issued. (3) Excess spread — WAC of pool > coupon paid to investors. (4) Reserve accounts — cash set aside for shortfalls.",
+      "eli5": "Financial airbags. Since investors want guaranteed safety, the structure includes cushions. For example, if the pool has $100M in loans, they might only sell $90M in bonds. That $10M buffer absorbs any defaults before the bondholders lose a penny.",
+      "questions": ["Explain the difference between internal and external credit enhancement.", "How does overcollateralization protect senior tranches?"],
+      "prereqs": ["SPV / Trust"],
+      "leadsTo": ["Credit Default Swaps", "Surety Bonds"],
+      "hasWidget": true
+    },
+    {
+      "id": "sec_mech_tr",
+      "stage": "mechanism",
+      "label": "Tranche Structuring",
+      "desc": "The pool is sliced into tranches — classes with different seniority. Senior (AAA) tranches paid first, absorb least risk. Mezzanine (BBB–BB) tranches take next losses. Equity/first-loss tranche held by originator or sold to hedge funds. Each tranche has its own CUSIP, rating, and coupon.",
+      "eli5": "Slicing the cash flow into layers like a wedding cake. The top layer (AAA) gets paid first and is super safe, but earns low interest. The bottom layer gets paid last and takes the first losses, but earns high interest. You choose your risk level.",
+      "questions": ["What is a sequential-pay structure?", "Why does the equity tranche have the highest expected return?"],
+      "prereqs": ["Credit Enhancement"],
+      "leadsTo": ["CLO Structuring", "Waterfall Modeling"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_validation",
+      "stage": "validation",
+      "label": "Rating Agency Review",
+      "desc": "Moody's / S&P / Fitch model the pool's default probability and loss severity under stress scenarios (e.g. 2008-level home price declines). They determine the required credit enhancement for each rating level. Without AAA on the senior tranche, the deal cannot be sold to insurance companies, pension funds, or money market funds.",
+      "eli5": "Independent referees grade the tranches. They run heavy math to say 'Yes, this top layer is truly AAA safe.' Large institutional investors are legally required to only buy highly-rated bonds, so these ratings are the golden ticket to selling the deal.",
+      "questions": ["How do rating agencies determine the required credit enhancement?", "What was the role of rating agencies in the 2008 financial crisis?"],
+      "prereqs": ["Tranche Structuring"],
+      "leadsTo": ["Regulatory Capital Arbitrage", "Basel III Norms"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_cdo",
+      "stage": "advanced",
+      "label": "CDO",
+      "desc": "Collateralized Debt Obligation — a second-order structure backed by a pool of other ABS/MBS tranches (often the Mezzanine tranches nobody wanted). CDOs re-tranche risk that has already been tranched once, compounding complexity and opacity. The AAA-rated CDO tranches backed by subprime MBS were central to the 2008 crisis.",
+      "eli5": "Taking the leftover, risky middle slices from a bunch of different securitizations, putting them into a NEW pool, and slicing that new pool again to magically create 'safe' AAA bonds. It's securitization squared, and it can hide a lot of toxic risk.",
+      "questions": ["What is the difference between an ABS and a CDO?", "Explain the concept of correlation risk within a CDO pool."],
+      "prereqs": ["RMBS", "ABS"],
+      "leadsTo": ["Synthetic CDOs", "CDO-Squared"],
+      "hasWidget": false
+    }
+  ],
+  "applications": [
+    {
+      "id": "sec_rmbs",
+      "stage": "application",
+      "label": "RMBS",
+      "desc": "Residential Mortgage-Backed Security. Collateral: home mortgages. Key risk: prepayment — when rates fall, borrowers refinance, returning principal early to investors who must reinvest at lower rates. Agency RMBS (Fannie/Freddie) carry implicit government guarantee. Non-agency RMBS do not.",
+      "eli5": "Bonds backed by regular people's home mortgages. The biggest risk isn't just people defaulting; it's people paying off their mortgages EARLY when interest rates drop, forcing investors to take their money back when it's hard to find good returns.",
+      "questions": ["What is prepayment risk and how is it measured (e.g., CPR, PSA)?", "What distinguishes Agency RMBS from Non-Agency RMBS?"],
+      "prereqs": ["Rating Agency Review"],
+      "leadsTo": ["TBA Market", "CMOs"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_cmbs",
+      "stage": "application",
+      "label": "CMBS",
+      "desc": "Commercial Mortgage-Backed Security. Collateral: office, retail, hotel, multifamily loans. Key risks: extension risk (balloon payment not refinanced at maturity), property-specific concentration. CMBS loans have prepayment protections: defeasance or yield maintenance penalties.",
+      "eli5": "Bonds backed by loans on skyscrapers, malls, and hotels. Unlike home loans, commercial loans usually charge a massive penalty if you try to pay them off early. The big risk is that the borrower can't secure a new loan to pay off the massive final 'balloon' payment.",
+      "questions": ["What is extension risk in the context of CMBS?", "How do defeasance and yield maintenance differ?"],
+      "prereqs": ["Rating Agency Review"],
+      "leadsTo": ["Commercial Real Estate Valuation", "DSCR Modeling"],
+      "hasWidget": false
+    },
+    {
+      "id": "sec_abs",
+      "stage": "application",
+      "label": "ABS",
+      "desc": "Asset-Backed Security. Collateral: auto loans, credit cards, student loans, equipment leases. Shorter duration than RMBS. Auto ABS is the most vanilla ABS market. Credit card ABS has revolving collateral — the pool replenishes as cardholders pay down and re-borrow.",
+      "eli5": "Bonds backed by everyday consumer debt (like car loans or credit cards) instead of houses. Since cars depreciate and credit cards are unsecured, the structures are shorter-term and require different risk models than mortgages.",
+      "questions": ["How does the revolving period work in a credit card ABS?", "Why do auto loan ABS typically have shorter tenors than RMBS?"],
+      "prereqs": ["Rating Agency Review"],
+      "leadsTo": ["Consumer Credit Modeling", "Esoteric ABS"],
+      "hasWidget": false
+    }
+  ]
+}

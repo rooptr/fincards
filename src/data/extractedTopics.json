@@ -1,0 +1,5733 @@
+[
+  {
+    "id": "capital_structure_optimal_leve",
+    "title": "Capital Structure & Optimal Leverage",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A firm balances the tax shield benefits of debt against the rising costs of financial distress (bankruptcy risk).",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance",
+      "Valuation"
+    ]
+  },
+  {
+    "id": "modigliani_miller_theorem_with",
+    "title": "Modigliani-Miller Theorem (with and without taxes)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The cost of equity rises to exactly offset the cheaper cost of debt, leaving WACC and total firm value unchanged. It proves that capital structure onl...",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "trade_off_theory_of_capital_st",
+    "title": "Trade-off theory of capital structure",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A firm balances the tax shield benefits of debt against the rising costs of financial distress (bankruptcy risk).",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "pecking_order_theory",
+    "title": "Pecking order theory",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Managers prefer to finance projects internally first (retained earnings), then with debt, and finally with equity as a last resort.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "agency_costs_of_debt_and_equit",
+    "title": "Agency costs of debt and equity",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Issuing debt forces discipline on management because they MUST generate cash to pay interest, reducing the \"free\" cash they can squander....",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cost_of_capital_wacc",
+    "title": "Cost of Capital (WACC)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Discounting FCFF at WACC yields Enterprise Value. Discounting FCFE at Cost of Equity (Ke) yields Equity Value directly. Mixing these up (e.g., discoun...",
+    "formula": "WACC =",
+    "source_categories": [
+      "Valuation",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "wacc_formula_components",
+    "title": "WACC formula components",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of WACC formula components in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cost_of_equity_capm",
+    "title": "Cost of Equity (CAPM)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Cost of Equity = Risk-Free Rate + Beta * (Equity Risk Premium).",
+    "formula": "Cost of Equity = Risk-Free Rate + Beta *",
+    "source_categories": [
+      "Valuation",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "risk_free_rate_selection_tenor",
+    "title": "Risk-free rate selection (tenor matching)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Risk-free rate selection (tenor matching) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "beta_levered_vs_unlevered",
+    "title": "Beta (levered vs. unlevered)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Beta (levered vs. unlevered) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "equity_risk_premium_erp_estima",
+    "title": "Equity Risk Premium (ERP) estimation",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Equity Risk Premium (ERP) estimation in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cost_of_debt",
+    "title": "Cost of Debt",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "The cost of equity rises to exactly offset the cheaper cost of debt, leaving WACC and total firm value unchanged. It proves that capital structure onl...",
+    "formula": "WACC =",
+    "source_categories": [
+      "Corporate Finance",
+      "Financial Statements",
+      "Valuation",
+      "Market Awareness & Current Affairs",
+      "Securitization & Structured Finance",
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "pre_tax_cost_of_debt_estimatio",
+    "title": "Pre-tax cost of debt estimation (yield to maturity vs. coupon)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pre-tax cost of debt estimation (yield to maturity vs. coupon) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "tax_shield_mechanics_post_tax_",
+    "title": "Tax shield mechanics (post-tax cost of debt)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Tax shield mechanics (post-tax cost of debt) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "capital_weighting_target_vs_cu",
+    "title": "Capital weighting (target vs. current structure)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Capital weighting (target vs. current structure) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "capital_budgeting",
+    "title": "Capital Budgeting",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Capital Budgeting in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "net_present_value_npv",
+    "title": "Net Present Value (NPV)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Accept the project if NPV > 0. Reject the project if NPV < 0.",
+    "formula": "It is calculated by setting NPV = 0 and solving for r",
+    "source_categories": [
+      "Corporate Finance",
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "internal_rate_of_return_irr",
+    "title": "Internal Rate of Return (IRR)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "The total annualized return anticipated on a bond if it is held until its maturity date.",
+    "formula": "It is calculated by setting NPV = 0 and solving for r",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "npv_vs_irr_conflicts_reinvestm",
+    "title": "NPV vs. IRR conflicts (reinvestment rate assumption)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of NPV vs. IRR conflicts (reinvestment rate assumption) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "payback_period_and_discounted_",
+    "title": "Payback period and discounted payback",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Discounted Payback fixes the time value of money issue, but still ignores long-term cash flows, penalizing projects that generate massive value in the...",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "profitability_index",
+    "title": "Profitability Index",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Profitability Index in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "mutually_exclusive_vs_independ",
+    "title": "Mutually exclusive vs. independent projects",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mutually exclusive vs. independent projects in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "working_capital_management",
+    "title": "Working Capital Management",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Working Capital Management in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cash_conversion_cycle_ccc",
+    "title": "Cash Conversion Cycle (CCC)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "CCC = Days Inventory Outstanding (DIO) + Days Sales Outstanding (DSO) - Days Payable Outstanding (DPO).",
+    "formula": "CCC = Days Inventory Outstanding",
+    "source_categories": [
+      "Financial Statements",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "days_sales_outstanding_dso_rec",
+    "title": "Days Sales Outstanding (DSO) / Receivables management",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Days Sales Outstanding (DSO) / Receivables management in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "days_inventory_outstanding_dio",
+    "title": "Days Inventory Outstanding (DIO) / Inventory management",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Days Inventory Outstanding (DIO) / Inventory management in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "days_payable_outstanding_dpo_p",
+    "title": "Days Payable Outstanding (DPO) / Payables management",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Days Payable Outstanding (DPO) / Payables management in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "dividend_policy",
+    "title": "Dividend Policy",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "In a perfect capital market (no taxes, no transaction costs), a firm's dividend policy has no effect on either its value or its cost of capital.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "dividend_types_stable_residual",
+    "title": "Dividend types (stable, residual, hybrid, special)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Dividend types (stable, residual, hybrid, special) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "dividend_signaling_theory",
+    "title": "Dividend signaling theory",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The idea that management uses dividend payments to signal information about the firm's future prospects to the market.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "dividends_vs_share_buybacks_ep",
+    "title": "Dividends vs. Share Buybacks (EPS accretion impact)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Dividends vs. Share Buybacks (EPS accretion impact) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "stock_market_issuance_corporat",
+    "title": "Stock Market Issuance & Corporate Actions [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Stock Market Issuance & Corporate Actions [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "primary_vs_secondary_market_di",
+    "title": "Primary vs. Secondary market distinctions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Primary vs. Secondary market distinctions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "initial_public_offering_ipo_vs",
+    "title": "Initial Public Offering (IPO) vs. Follow-on Public Offer (FPO)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Initial Public Offering (IPO) vs. Follow-on Public Offer (FPO) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "offer_for_sale_ofs_mechanics",
+    "title": "Offer for Sale (OFS) mechanics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Offer for Sale (OFS) mechanics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "bonus_shares_vs_stock_splits",
+    "title": "Bonus shares vs. Stock splits",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bonus shares vs. Stock splits in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "rights_issue_mechanics",
+    "title": "Rights issue mechanics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rights issue mechanics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "ma_and_business_restructuring",
+    "title": "M&A and Business Restructuring",
+    "domain": "Corporate Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Buyers closely scrutinize EBITDA 'add-backs' during Quality of Earnings (QoE) due diligence, as aggressive add-backs artificially inflate the valuatio...",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "synergy_types_revenue_synergie",
+    "title": "Synergy types (Revenue synergies vs. Cost synergies)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Synergy types (Revenue synergies vs. Cost synergies) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "accretion_dilution_analysis_ep",
+    "title": "Accretion / Dilution analysis (EPS impact)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Accretion / Dilution analysis (EPS impact) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "why_accretive_deals_are_not_in",
+    "title": "Why accretive deals are not inherently good (P/E arbitrage)",
+    "domain": "Corporate Finance",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "Core principles of Why accretive deals are not inherently good (P/E arbitrage) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "deal_structuring_stock_vs_cash",
+    "title": "Deal structuring (Stock vs. Cash vs. Mixed consideration)",
+    "domain": "Corporate Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Deal structuring (Stock vs. Cash vs. Mixed consideration) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "takeover_dynamics_hostile_vs_f",
+    "title": "Takeover dynamics (Hostile vs. Friendly)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Takeover dynamics (Hostile vs. Friendly) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "defense_mechanisms_poison_pill",
+    "title": "Defense mechanisms (Poison pill, staggered boards, white knight)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Defense mechanisms (Poison pill, staggered boards, white knight) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "corporate_structures_joint_ven",
+    "title": "Corporate structures: Joint Venture (JV), Mergers, Acquisitions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Corporate structures: Joint Venture (JV), Mergers, Acquisitions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "venture_capital_startup_termin",
+    "title": "Venture Capital & Startup Terminology [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Venture Capital & Startup Terminology [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "private_equity_pe_vs_venture_c",
+    "title": "Private Equity (PE) vs. Venture Capital (VC) vs. Angel Investors",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private Equity (PE) vs. Venture Capital (VC) vs. Angel Investors in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "esop_employee_stock_ownership_",
+    "title": "ESOP (Employee Stock Ownership Plan) mechanics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of ESOP (Employee Stock Ownership Plan) mechanics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "financial_health_burn_rate_vs_",
+    "title": "Financial Health: Burn rate vs. Runway",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Financial Health: Burn rate vs. Runway in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "valuation_stages_pre_seed_seed",
+    "title": "Valuation stages (Pre-seed, Seed, Series A/B/C)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Valuation stages (Pre-seed, Seed, Series A/B/C) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "unicorn_vs_decacorn_status_def",
+    "title": "Unicorn vs. Decacorn status definitions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Unicorn vs. Decacorn status definitions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "banking_pe_am_basics",
+    "title": "Banking / PE / AM Basics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Banking / PE / AM Basics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "investment_banking_analyst_wor",
+    "title": "Investment Banking: Analyst workflow, revenue model (advisory fees)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Investment Banking: Analyst workflow, revenue model (advisory fees) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "private_equity_associate_workf",
+    "title": "Private Equity: Associate workflow, revenue model (2/20 fee structure)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private Equity: Associate workflow, revenue model (2/20 fee structure) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "asset_management_analyst_workf",
+    "title": "Asset Management: Analyst workflow, revenue model (AUM fees)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Asset Management: Analyst workflow, revenue model (AUM fees) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "buy_side_vs_sell_side_distinct",
+    "title": "Buy-side vs. Sell-side distinctions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Buy-side vs. Sell-side distinctions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "income_statement_is_profit_los",
+    "title": "Income Statement (IS) / Profit & Loss (P&L)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Income Statement (IS) / Profit & Loss (P&L) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "structure_revenuetop_line_down",
+    "title": "Structure (Revenue/Top-line down to Net Income/PAT/Bottom-line)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Structure (Revenue/Top-line down to Net Income/PAT/Bottom-line) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "above_the_line_vs_below_the_li",
+    "title": "Above-the-line vs. Below-the-line items",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Above-the-line vs. Below-the-line items in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "balance_sheet_bs",
+    "title": "Balance Sheet (BS)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Balance Sheet (BS) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "structure_assets_liabilities_e",
+    "title": "Structure (Assets = Liabilities + Equity)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Structure (Assets = Liabilities + Equity) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "current_vs_non_current_classif",
+    "title": "Current vs. Non-current classifications",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Current vs. Non-current classifications in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "cash_flow_statement_cfs",
+    "title": "Cash Flow Statement (CFS)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The sum of these three sections equals the net change in cash on the Balance Sheet....",
+    "formula": "",
+    "source_categories": [
+      "Financial Statements"
+    ]
+  },
+  {
+    "id": "operating_cash_flow_cfo___dire",
+    "title": "Operating Cash Flow (CFO) - Direct vs. Indirect method",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Operating Cash Flow (CFO) - Direct vs. Indirect method in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "investing_cash_flow_cfi",
+    "title": "Investing Cash Flow (CFI)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Investing Cash Flow (CFI) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "financing_cash_flow_cff",
+    "title": "Financing Cash Flow (CFF)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Financing Cash Flow (CFF) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "common_traps_non_cash_expenses",
+    "title": "Common traps: Non-cash expenses, Working capital adjustments",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Common traps: Non-cash expenses, Working capital adjustments in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "3_statement_interlinkages",
+    "title": "3-Statement Interlinkages",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of 3-Statement Interlinkages in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "depreciation_cascade_is_cf_bs",
+    "title": "Depreciation cascade (IS → CF → BS)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Depreciation cascade (IS → CF → BS) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "working_capital_change_cascade",
+    "title": "Working capital change cascade",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "It fundamentally shifts the risk-reward profile and alters the baseline assumptions of the financial model.",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "debt_issuancerepayment_cascade",
+    "title": "Debt issuance/repayment cascade",
+    "domain": "Accounting",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Debt issuance/repayment cascade in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "ebitda_vs_ebit_vs_fcf",
+    "title": "EBITDA vs. EBIT vs. FCF",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Use Gordon Growth for mature companies with stable, predictable growth (like utilities). Use Exit Multiple for cyclical companies, PE buyouts, or when...",
+    "formula": "TV = FCF_n *",
+    "source_categories": [
+      "Valuation",
+      "Fixed Income & Credit",
+      "Financial Statements",
+      "Corporate Finance",
+      "Company & Industry-Specific",
+      "Behavioral & Fit",
+      "Securitization & Structured Finance",
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "da_add_back_logic",
+    "title": "D&A add-back logic",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of D&A add-back logic in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "the_capex_exclusion_problem_in",
+    "title": "The CapEx exclusion problem in EBITDA",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of The CapEx exclusion problem in EBITDA in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "why_ebitda_is_a_flawed_cash_pr",
+    "title": "Why EBITDA is a flawed cash proxy (interest, taxes, WC omitted)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Why EBITDA is a flawed cash proxy (interest, taxes, WC omitted) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "ratio_categories_formulas_logi",
+    "title": "Ratio Categories (Formulas & Logic)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Ratio Categories (Formulas & Logic) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "liquidity_current_ratio_quick_",
+    "title": "Liquidity: Current ratio, Quick ratio, Cash ratio",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Liquidity: Current ratio, Quick ratio, Cash ratio in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "leveragesolvency_debt_to_equit",
+    "title": "Leverage/Solvency: Debt-to-Equity, Debt-to-Capital, Interest Coverage",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Leverage/Solvency: Debt-to-Equity, Debt-to-Capital, Interest Coverage in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "profitability_gross_margin_ope",
+    "title": "Profitability: Gross margin, Operating margin, Net margin, ROE, ROA, ROIC, ROCE",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Profitability: Gross margin, Operating margin, Net margin, ROE, ROA, ROIC, ROCE in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "dupont_decomposition_3_step_an",
+    "title": "DuPont Decomposition (3-step and 5-step)",
+    "domain": "Accounting",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of DuPont Decomposition (3-step and 5-step) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "efficiency_inventory_turnover_",
+    "title": "Efficiency: Inventory turnover, Receivables turnover, Payables turnover, Asset turnover",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Efficiency: Inventory turnover, Receivables turnover, Payables turnover, Asset turnover in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "valuation_pe_evebitda_pb_ps_di",
+    "title": "Valuation: P/E, EV/EBITDA, P/B, P/S, Dividend yield, PEG ratio, EPS (Earnings Per Share)",
+    "domain": "Accounting",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Valuation: P/E, EV/EBITDA, P/B, P/S, Dividend yield, PEG ratio, EPS (Earnings Per Share) in Accounting.",
+    "formula": "",
+    "source_categories": [
+      "Accounting"
+    ]
+  },
+  {
+    "id": "discounted_cash_flow_dcf",
+    "title": "Discounted Cash Flow (DCF)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The core philosophy: \"A company is worth the sum of all the cash it will ever produce, discounted to today's dollars.\"...",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "free_cash_flow_definitions",
+    "title": "Free Cash Flow definitions",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Free Cash Flow definitions in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "free_cash_flow_to_firm_fcff_ca",
+    "title": "Free Cash Flow to Firm (FCFF) calculation",
+    "domain": "Investment Banking",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Free Cash Flow to Firm (FCFF) calculation in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "free_cash_flow_to_equity_fcfe_",
+    "title": "Free Cash Flow to Equity (FCFE) calculation",
+    "domain": "Investment Banking",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Free Cash Flow to Equity (FCFE) calculation in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "beta_manipulation",
+    "title": "Beta manipulation",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Beta manipulation in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "unlevering_beta_removing_capit",
+    "title": "Unlevering beta (removing capital structure noise)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Unlevering beta (removing capital structure noise) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "relevering_beta_applying_targe",
+    "title": "Relevering beta (applying target capital structure)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Relevering beta (applying target capital structure) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "terminal_value_estimation",
+    "title": "Terminal Value estimation",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Terminal Value estimation in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "gordon_growth_method_perpetuit",
+    "title": "Gordon Growth Method (Perpetuity growth rate assumptions)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Gordon Growth Method (Perpetuity growth rate assumptions) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "exit_multiple_method_ebitdaebi",
+    "title": "Exit Multiple Method (EBITDA/EBIT multiples)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Exit Multiple Method (EBITDA/EBIT multiples) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "dcf_sensitivities",
+    "title": "DCF Sensitivities",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Market makers managing a book must balance the localized explosive risk of ATM strikes versus the sudden tail-risk of deep OTM strikes....",
+    "formula": "",
+    "source_categories": [
+      "Derivatives 101"
+    ]
+  },
+  {
+    "id": "impact_of_wacc_variations",
+    "title": "Impact of WACC variations",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Impact of WACC variations in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "impact_of_terminal_growth_rate",
+    "title": "Impact of Terminal Growth Rate variations",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Impact of Terminal Growth Rate variations in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "interview_defense_tactics",
+    "title": "Interview defense tactics",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Interview defense tactics in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "defending_aggressive_vs_conser",
+    "title": "Defending aggressive vs. conservative growth rates",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Defending aggressive vs. conservative growth rates in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "common_dcf_pitfalls_double_cou",
+    "title": "Common DCF pitfalls (double counting, mid-year convention errors)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Common DCF pitfalls (double counting, mid-year convention errors) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "comparable_company_analysis_tr",
+    "title": "Comparable Company Analysis (Trading Comps)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A high-quality peer set should share similar risk profiles, capital intensity, and growth drivers. If you mix high-growth software firms with slow-gro...",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "peer_set_construction_logic_si",
+    "title": "Peer set construction logic (Size, Geography, Margin profile, Growth)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Peer set construction logic (Size, Geography, Margin profile, Growth) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "multiple_selection_rationale",
+    "title": "Multiple selection rationale",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Multiple selection rationale in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "when_to_use_evebitda_vs_pe",
+    "title": "When to use EV/EBITDA vs. P/E",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Use Gordon Growth for mature companies with stable, predictable growth (like utilities). Use Exit Multiple for cyclical companies, PE buyouts, or when...",
+    "formula": "TV = FCF_n *",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "industry_specific_multiples_ev",
+    "title": "Industry-specific multiples (EV/EBITDAR, P/B for banks)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Industry-specific multiples (EV/EBITDAR, P/B for banks) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "calendarization_matching_fisca",
+    "title": "Calendarization (matching fiscal year-ends)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Calendarization (matching fiscal year-ends) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "ltm_last_twelve_months_vs_ntm_",
+    "title": "LTM (Last Twelve Months) vs. NTM (Next Twelve Months) multiples",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of LTM (Last Twelve Months) vs. NTM (Next Twelve Months) multiples in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "outlier_normalization_non_recu",
+    "title": "Outlier normalization (non-recurring items)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Outlier normalization (non-recurring items) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "precedent_transaction_analysis",
+    "title": "Precedent Transaction Analysis",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Precedent transactions include a 'Control Premium'.",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "control_premium_mechanics_and_",
+    "title": "Control Premium mechanics and justification",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Control Premium mechanics and justification in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "why_precedent_multiples_exceed",
+    "title": "Why precedent multiples exceed trading comps",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Why precedent multiples exceed trading comps in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "synergy_value_inclusion_in_pre",
+    "title": "Synergy value inclusion in precedents",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Synergy value inclusion in precedents in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "deal_filters_deal_size_timingc",
+    "title": "Deal filters (Deal size, timing/cycle, strategic vs. financial buyers)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Deal filters (Deal size, timing/cycle, strategic vs. financial buyers) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "why_precedents_true_intrinsic_",
+    "title": "Why precedents ≠ true intrinsic value",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Why precedents ≠ true intrinsic value in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "head_to_head_synthesis",
+    "title": "Head-to-Head & Synthesis",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Head-to-Head & Synthesis in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "when_to_favor_dcf_vs_comps_vs_",
+    "title": "When to favor DCF vs. Comps vs. Precedents",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of When to favor DCF vs. Comps vs. Precedents in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "reconciling_conflicting_ranges",
+    "title": "Reconciling conflicting ranges (Football Field chart logic)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Reconciling conflicting ranges (Football Field chart logic) in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "alternative_valuation_methods",
+    "title": "Alternative Valuation Methods",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Alternative Valuation Methods in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "asset_based_valuation_net_asse",
+    "title": "Asset-based valuation (Net Asset Value)",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Asset-Based Valuation (Net Asset Value).",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "liquidation_value",
+    "title": "Liquidation value",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Bondholders accept this terrible deal because the alternative is a messy Chapter 11 bankruptcy where they might lose even more money in legal fees and...",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Valuation"
+    ]
+  },
+  {
+    "id": "sum_of_the_parts_sotp_conglome",
+    "title": "Sum-of-the-parts (SOTP) / Conglomerate discount logic",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Sum-of-the-parts (SOTP) / Conglomerate discount logic in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "rebasing_share_price_performan",
+    "title": "Rebasing Share Price Performance",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "If Company A trades at $200 and Company B trades at $10, plotting their absolute share prices on one chart is useless. By rebasing both to 100 on Day ...",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "indexing_charts_to_100",
+    "title": "Indexing charts to 100",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Indexing charts to 100 in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "rationale_for_peer_comparison_",
+    "title": "Rationale for peer comparison rebasing",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rationale for peer comparison rebasing in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "misreading_un_rebased_price_ch",
+    "title": "Misreading un-rebased price charts",
+    "domain": "Investment Banking",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Misreading un-rebased price charts in Investment Banking.",
+    "formula": "",
+    "source_categories": [
+      "Investment Banking"
+    ]
+  },
+  {
+    "id": "bond_mechanics_foundational",
+    "title": "Bond Mechanics [FOUNDATIONAL]",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bond Mechanics [FOUNDATIONAL] in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "face_value_par_vs_coupon_vs_ma",
+    "title": "Face value (Par) vs. Coupon vs. Maturity",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Face value (Par) vs. Coupon vs. Maturity in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "price_quoting_clean_price_vs_d",
+    "title": "Price quoting (Clean price vs. Dirty price)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Price quoting (Clean price vs. Dirty price) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "accrued_interest_calculation",
+    "title": "Accrued interest calculation",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Accrued interest calculation in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "government_bonds_vs_corporate_",
+    "title": "Government Bonds vs. Corporate Bonds vs. Treasury Bills (T-Bills)",
+    "domain": "Fixed Income",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of Government Bonds vs. Corporate Bonds vs. Treasury Bills (T-Bills) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "sovereign_bond_characteristics",
+    "title": "Sovereign Bond characteristics",
+    "domain": "Fixed Income",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of Sovereign Bond characteristics in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "bond_valuation_yields",
+    "title": "Bond Valuation & Yields",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bond Valuation & Yields in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "pricing_formula_discounting_fu",
+    "title": "Pricing formula (Discounting future cash flows)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pricing formula (Discounting future cash flows) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "yield_to_maturity_ytm_assumpti",
+    "title": "Yield to Maturity (YTM) assumptions",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "1. The bond is held to maturity. 2. ALL coupon payments are perfectly reinvested at the exact same YTM rate.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "yield_to_call_ytc",
+    "title": "Yield to Call (YTC)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The yield of a bond assuming it is called (redeemed early by the issuer) on the earliest possible call date, rather than held to maturity.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "current_yield_vs_ytm",
+    "title": "Current Yield vs. YTM",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Annual Dividends Per Share / Current Share Price.",
+    "formula": "Current Yield = Annual Coupon Payment / Current Market Price of the Bond",
+    "source_categories": [
+      "Corporate Finance",
+      "Valuation",
+      "Fixed Income & Credit",
+      "Company & Industry-Specific",
+      "Oxane Partners",
+      "Market Awareness & Current Affairs"
+    ]
+  },
+  {
+    "id": "duration_convexity",
+    "title": "Duration & Convexity",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Convexity measures the curvature in the relationship between bond prices and yields, capturing what Duration misses.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "macaulay_duration",
+    "title": "Macaulay Duration",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Modified Duration = Macaulay Duration / (1 + YTM). If a bond has a Modified Duration of 5, a 1% increase in interest rates will cause the bond's price...",
+    "formula": "Modified Duration = Macaulay Duration /",
+    "source_categories": [
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "modified_duration",
+    "title": "Modified Duration",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Modified Duration = Macaulay Duration / (1 + YTM). If a bond has a Modified Duration of 5, a 1% increase in interest rates will cause the bond's price...",
+    "formula": "Modified Duration = Macaulay Duration /",
+    "source_categories": [
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "duration_as_an_interest_rate_r",
+    "title": "Duration as an interest rate risk proxy (Price sensitivity)",
+    "domain": "Fixed Income",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "Core principles of Duration as an interest rate risk proxy (Price sensitivity) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "convexity_why_duration_alone_u",
+    "title": "Convexity (Why duration alone underestimates price increases and overestimates drops)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Convexity (Why duration alone underestimates price increases and overestimates drops) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "loan_vs_bond_differences",
+    "title": "Loan vs. Bond Differences",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Loan vs. Bond Differences in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "covenants_maintenance_covenant",
+    "title": "Covenants: Maintenance covenants (Loans) vs. Incurrence covenants (Bonds)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Covenants: Maintenance covenants (Loans) vs. Incurrence covenants (Bonds) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "security_and_collateral_struct",
+    "title": "Security and Collateral structures",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Security and Collateral structures in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "tradability_and_liquidity_diff",
+    "title": "Tradability and Liquidity differences",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Tradability and Liquidity differences in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "pricing_basis_floating_spread_",
+    "title": "Pricing basis (Floating spread over SOFR/LIBOR vs. Fixed coupon)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pricing basis (Floating spread over SOFR/LIBOR vs. Fixed coupon) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "syndication_process_lead_arran",
+    "title": "Syndication process (Lead arranger, bookrunner)",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Syndication process (Lead arranger, bookrunner) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "interest_rate_structure",
+    "title": "Interest Rate Structure",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The 20% performance fee (carry) is where the massive wealth in Private Equity is made, aligning the firm's incentives with delivering high returns for...",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance",
+      "Valuation",
+      "Fixed Income & Credit",
+      "Economics",
+      "Company & Industry-Specific",
+      "Behavioral & Fit",
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "term_structure_theories_expect",
+    "title": "Term structure theories (Expectations, Liquidity Premium, Market Segmentation)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Term structure theories (Expectations, Liquidity Premium, Market Segmentation) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "yield_curve_shapes_and_signals",
+    "title": "Yield curve shapes and signals",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Yield curve shapes and signals in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "normal_curve_expansion",
+    "title": "Normal curve (Expansion)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Normal curve (Expansion) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "inverted_curve_recession_signa",
+    "title": "Inverted curve (Recession signal)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Inverted curve (Recession signal) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "flat_humped_curve_transition",
+    "title": "Flat / Humped curve (Transition)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Flat / Humped curve (Transition) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "fisher_equation_real_vs_nomina",
+    "title": "Fisher Equation (Real vs. Nominal rates)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Fisher Equation (Real vs. Nominal rates) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "central_bank_policy_rate_trans",
+    "title": "Central Bank policy rate transmission mechanism",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Central Bank policy rate transmission mechanism in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "credit_ratings_agencies",
+    "title": "Credit Ratings & Agencies",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "CRISIL, ICRA, and CARE Ratings. CRISIL is the largest credit rating agency in India.",
+    "formula": "",
+    "source_categories": [
+      "Company Awareness",
+      "Moody's / Rating Agencies",
+      "Current Affairs"
+    ]
+  },
+  {
+    "id": "the_full_letter_scale_aaaaaa_t",
+    "title": "The full letter scale (Aaa/AAA to C/D)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of The full letter scale (Aaa/AAA to C/D) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "investment_grade_ig_vs_high_yi",
+    "title": "Investment Grade (IG) vs. High Yield (HY/Junk) threshold",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Investment Grade (IG) vs. High Yield (HY/Junk) threshold in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "the_fallen_angel_effect",
+    "title": "The \"Fallen Angel\" effect",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of The \"Fallen Angel\" effect in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "drivers_of_upgrades_and_downgr",
+    "title": "Drivers of upgrades and downgrades",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Drivers of upgrades and downgrades in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "issue_vs_issuer_ratings_struct",
+    "title": "Issue vs. Issuer ratings (Structural subordination notching)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Issue vs. Issuer ratings (Structural subordination notching) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "rating_outlooks_positivenegati",
+    "title": "Rating Outlooks (Positive/Negative/Stable) vs. Watchlists vs. Formal Rating Actions",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rating Outlooks (Positive/Negative/Stable) vs. Watchlists vs. Formal Rating Actions in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "local_indian_rating_agencies_c",
+    "title": "Local Indian Rating Agencies: CRISIL, ICRA, CARE Ratings",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Local Indian Rating Agencies: CRISIL, ICRA, CARE Ratings in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "credit_specific_ratio_analysis",
+    "title": "Credit-Specific Ratio Analysis [DEEP PRIORITY]",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Credit-Specific Ratio Analysis [DEEP PRIORITY] in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "leverage_metrics_debtebitda_ne",
+    "title": "Leverage metrics: Debt/EBITDA, Net Debt/EBITDA",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Leverage metrics: Debt/EBITDA, Net Debt/EBITDA in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "coverage_metrics_interest_cove",
+    "title": "Coverage metrics: Interest Coverage Ratio, FFO/Debt, FFO/Interest",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Coverage metrics: Interest Coverage Ratio, FFO/Debt, FFO/Interest in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "margin_trends_ebitda_margin_st",
+    "title": "Margin trends (EBITDA margin stability)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Margin trends (EBITDA margin stability) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "rating_agency_methodology_weig",
+    "title": "Rating agency methodology weighting (How agencies score these ratios)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rating agency methodology weighting (How agencies score these ratios) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "qualitative_vs_quantitative_ra",
+    "title": "Qualitative vs. Quantitative rating factors (Management quality, industry risk)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Qualitative vs. Quantitative rating factors (Management quality, industry risk) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "industry_specific_ratio_benchm",
+    "title": "Industry-specific ratio benchmarks",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Industry-specific ratio benchmarks in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "end_to_end_securitization_proc",
+    "title": "End-to-End Securitization Process",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of End-to-End Securitization Process in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "originator_function",
+    "title": "Originator function",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Originator function in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "asset_pooling",
+    "title": "Asset pooling",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "The process of pooling illiquid financial assets (like mortgages or auto loans) and transforming them into tradable securities sold to investors.",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance",
+      "Personal Finance"
+    ]
+  },
+  {
+    "id": "special_purpose_vehicle_spv_ba",
+    "title": "Special Purpose Vehicle (SPV) / Bankruptcy remote trust setup",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Special Purpose Vehicle (SPV) / Bankruptcy remote trust setup in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "tranching_and_structuring",
+    "title": "Tranching and structuring",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Tranching and structuring in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "issuance_to_investors",
+    "title": "Issuance to investors",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "If the government guarantees a 5% risk-free return on its massive new bond issuances, investors won't lend money to risky private startups, choking of...",
+    "formula": "",
+    "source_categories": [
+      "Economics",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "servicer_and_master_servicer_r",
+    "title": "Servicer and Master Servicer roles",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Servicer and Master Servicer roles in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "securitization_types",
+    "title": "Securitization Types",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Securitization Types in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "true_sale_vs_synthetic_securit",
+    "title": "True Sale vs. Synthetic Securitization",
+    "domain": "Fixed Income",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "SRT/Capital Relief trades allow banks to synthetically securitize (via CDS or guarantees) without true sale. The bank retains assets but pays a premiu...",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "asset_backed_securities_abs",
+    "title": "Asset-Backed Securities (ABS)",
+    "domain": "Fixed Income",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Asset-Backed Securities (ABS) vs MBS is a core concept in structured finance. It determines how cash flows and risks are distributed among investors.",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "auto_loans_collateral_characte",
+    "title": "Auto loans collateral characteristics",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Auto loans collateral characteristics in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "credit_card_receivables_charac",
+    "title": "Credit card receivables characteristics",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Credit card receivables characteristics in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "student_loan_collateral_charac",
+    "title": "Student loan collateral characteristics",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Student loan collateral characteristics in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "mortgage_backed_securities_mbs",
+    "title": "Mortgage-Backed Securities (MBS) General",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mortgage-Backed Securities (MBS) General in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "agency_vs_non_agency_mbs",
+    "title": "Agency vs. Non-Agency MBS",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Agency vs Non-Agency MBS is a core concept in structured finance. It determines how cash flows and risks are distributed among investors.",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "residential_mbs_rmbs",
+    "title": "Residential MBS (RMBS)",
+    "domain": "Fixed Income",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of Residential MBS (RMBS) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "collateral_pool_composition",
+    "title": "Collateral pool composition",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Collateral pool composition in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "prepayment_risk_drivers_refina",
+    "title": "Prepayment risk drivers (Refinancing incentives, interest rate sensitivity, burnout)",
+    "domain": "Fixed Income",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "Core principles of Prepayment risk drivers (Refinancing incentives, interest rate sensitivity, burnout) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "pass_through_structures_vs_col",
+    "title": "Pass-through structures vs. Collateralized Mortgage Obligations (CMOs)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pass-through structures vs. Collateralized Mortgage Obligations (CMOs) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "commercial_mbs_cmbs",
+    "title": "Commercial MBS (CMBS)",
+    "domain": "Fixed Income",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of Commercial MBS (CMBS) in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "extension_risk",
+    "title": "Extension risk",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The risk that homeowners will hold onto their mortgages longer than expected, usually because interest rates have risen.",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "prepayment_protections_defeasa",
+    "title": "Prepayment protections: Defeasance, Yield Maintenance",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Prepayment protections: Defeasance, Yield Maintenance in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "balloon_payment_refinance_risk",
+    "title": "Balloon payment / Refinance risk",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Balloon payment / Refinance risk in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "tranching_waterfall_structures",
+    "title": "Tranching & Waterfall Structures",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Tranching & Waterfall Structures in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "senior_mezzanine_equity_first_",
+    "title": "Senior / Mezzanine / Equity (First-loss) tranches",
+    "domain": "Fixed Income",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Senior / Mezzanine / Equity (First-loss) tranches in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "sequential_pay_structure_vs_pr",
+    "title": "Sequential pay structure vs. Pro-rata structure",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Sequential pay structure vs. Pro-rata structure in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "credit_enhancement_types",
+    "title": "Credit Enhancement Types",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Credit Enhancement Types in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "subordination",
+    "title": "Subordination",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "When debt issued by a parent company (Holding Company) is effectively subordinated to the debt issued by its operating subsidiaries.",
+    "formula": "More industries and issuers = higher diversity",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Securitization & Structured Finance",
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "overcollateralization_oc",
+    "title": "Overcollateralization (OC)",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "If a bank issues $100M worth of ABS bonds, they might put $110M worth of auto loans into the SPV. That extra $10M acts as a buffer—the first $10M of l...",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "excess_spread",
+    "title": "Excess Spread",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Since the 2008 crisis (when external bond insurers like MBIA and AMBAC nearly went bankrupt), the market heavily prefers robust internal enhancements....",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "reserve_accounts_cash_flow_tra",
+    "title": "Reserve Accounts / Cash flow trapping",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Reserve Accounts / Cash flow trapping in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "key_structural_risks",
+    "title": "Key Structural Risks",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Key Structural Risks in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "prepayment_risk",
+    "title": "Prepayment risk",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "CMBS are usually less sensitive to prepayment risk than RMBS because commercial mortgages often have strict \"lockout\" periods or massive penalties if ...",
+    "formula": "RMBS = Residential Mortgage-Backed Securities",
+    "source_categories": [
+      "Securitization & Structured Finance",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "credit_default_risk",
+    "title": "Credit / Default risk",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "If you own $10M of a company's bonds and fear they might go bankrupt, you buy a CDS. You pay a spread (e.g., 200 bps). If the company defaults, the CD...",
+    "formula": "10M 5-year CDS at 200bps =",
+    "source_categories": [
+      "Derivatives 101",
+      "Fixed Income & Credit",
+      "Securitization & Structured Finance",
+      "Moody's / Rating Agencies",
+      "India-Specific Context",
+      "Market Awareness & Current Affairs"
+    ]
+  },
+  {
+    "id": "liquidity_risk",
+    "title": "Liquidity risk",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Investing equally across a perfectly staggered range of maturities (e.g., bonds maturing in 1, 2, 3, 4, and 5 years).",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Company & Industry-Specific",
+      "Valuation",
+      "Finance GK",
+      "Market Awareness & Current Affairs",
+      "India-Specific Context",
+      "Securitization & Structured Finance",
+      "Derivatives 101",
+      "Macroeconomics",
+      "Current Affairs"
+    ]
+  },
+  {
+    "id": "role_of_rating_agencies_in_str",
+    "title": "Role of Rating Agencies in Structured Finance",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Role of Rating Agencies in Structured Finance in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "evaluating_asset_pool_default_",
+    "title": "Evaluating asset pool default probability",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Evaluating asset pool default probability in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "stress_testing_waterfall_struc",
+    "title": "Stress testing waterfall structures",
+    "domain": "Fixed Income",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Stress testing waterfall structures in Fixed Income.",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income"
+    ]
+  },
+  {
+    "id": "forwards_vs_futures",
+    "title": "Forwards vs. Futures",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Futures are standardized and traded on an exchange, while Forwards are customized, private contracts traded over-the-counter (OTC).",
+    "formula": "",
+    "source_categories": [
+      "Derivatives 101"
+    ]
+  },
+  {
+    "id": "mechanics_and_settlement",
+    "title": "Mechanics and settlement",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mechanics and settlement in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "margining_initial_and_maintena",
+    "title": "Margining (Initial and Maintenance)",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Margining (Initial and Maintenance) in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "standardization_and_exchange_t",
+    "title": "Standardization and exchange trading differences",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Standardization and exchange trading differences in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "options",
+    "title": "Options",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "It toggles absolute and relative cell references (e.g., changing A1 to $A$1).",
+    "formula": "Basic EPS =",
+    "source_categories": [
+      "Excel & Financial Modeling",
+      "Financial Statements",
+      "Valuation",
+      "Fixed Income & Credit",
+      "Derivatives 101",
+      "Market Awareness & Current Affairs",
+      "Securitization & Structured Finance",
+      "Current Affairs",
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "call_options_vs_put_options",
+    "title": "Call options vs. Put options",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Effective duration measures price sensitivity while factoring in embedded options (like callable or puttable bonds).",
+    "formula": "",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Derivatives 101",
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "payoff_diagrams",
+    "title": "Payoff diagrams",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Payoff diagrams in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "intrinsic_value_vs_time_value",
+    "title": "Intrinsic value vs. Time value",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Option Premium = Intrinsic Value + Time Value. For an out-of-the-money option, Intrinsic Value is zero, so its entire price is purely Time Value (whic...",
+    "formula": "Option Premium = Intrinsic Value + Time Value",
+    "source_categories": [
+      "Derivatives 101",
+      "Valuation"
+    ]
+  },
+  {
+    "id": "the_greeks_conceptual_delta_ga",
+    "title": "The Greeks (Conceptual: Delta, Gamma, Theta, Vega)",
+    "domain": "Derivatives",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "Core principles of The Greeks (Conceptual: Delta, Gamma, Theta, Vega) in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "swaps",
+    "title": "Swaps",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "This is a pure balance sheet recapitalization. It doesn't create cash; it just swaps out lenders for shareholders....",
+    "formula": "",
+    "source_categories": [
+      "Financial Statements",
+      "Securitization & Structured Finance",
+      "Derivatives 101",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "interest_rate_swaps_fixed_for_",
+    "title": "Interest rate swaps (Fixed for floating)",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Interest rate swaps (Fixed for floating) in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "currency_swaps",
+    "title": "Currency swaps",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Derivatives questions require visual and mathematical clarity. Always start with the simplest definition....",
+    "formula": "",
+    "source_categories": [
+      "Derivatives 101"
+    ]
+  },
+  {
+    "id": "credit_default_swaps_cds",
+    "title": "Credit Default Swaps (CDS)",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A CDO that does not actually own any physical loans or mortgages. Instead, it gains exposure to them purely through Credit Default Swaps (CDS).",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance",
+      "Derivatives 101",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "mechanics_protection_buyer_vs_",
+    "title": "Mechanics (Protection buyer vs. seller)",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mechanics (Protection buyer vs. seller) in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "cds_spreads_as_a_proxy_for_cre",
+    "title": "CDS spreads as a proxy for credit risk",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of CDS spreads as a proxy for credit risk in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "market_implied_default_probabi",
+    "title": "Market-implied default probability derivation",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Market-implied default probability derivation in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "hedging_vs_speculation_use_cas",
+    "title": "Hedging vs. Speculation Use Cases",
+    "domain": "Derivatives",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Hedging vs. Speculation Use Cases in Derivatives.",
+    "formula": "",
+    "source_categories": [
+      "Derivatives"
+    ]
+  },
+  {
+    "id": "inflation_dynamics",
+    "title": "Inflation Dynamics",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Inflation Dynamics in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "core_vs_headline_inflation_def",
+    "title": "Core vs. Headline inflation definitions",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Core vs. Headline inflation definitions in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "demand_pull_vs_cost_push_infla",
+    "title": "Demand-pull vs. Cost-push inflation causes",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "It usually stems from either Demand-Pull (strong consumer demand outpacing supply) or Cost-Push (raw material or labor costs rising and being passed o...",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "inflation_targeting_frameworks",
+    "title": "Inflation targeting frameworks",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Inflation targeting frameworks in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "stagflation_deflation_hyperinf",
+    "title": "Stagflation, Deflation, Hyperinflation definitions",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Stagflation, Deflation, Hyperinflation definitions in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "cpi_consumer_price_index_vs_wp",
+    "title": "CPI (Consumer Price Index) vs. WPI (Wholesale Price Index) construction differences",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of CPI (Consumer Price Index) vs. WPI (Wholesale Price Index) construction differences in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "central_bank_monetary_policy",
+    "title": "Central Bank Monetary Policy",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A central bank fights inflation by raising rates. A government fights a recession by cutting taxes or building infrastructure (deficit spending)....",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "reserve_bank_of_india_rbi_func",
+    "title": "Reserve Bank of India (RBI) functions vs. US Federal Reserve functions",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Reserve Bank of India (RBI) functions vs. US Federal Reserve functions in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "open_market_operations_omo_mec",
+    "title": "Open Market Operations (OMO) mechanics",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Open Market Operations (OMO) mechanics in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "quantitative_easing_qe_vs_quan",
+    "title": "Quantitative Easing (QE) vs. Quantitative Tightening (QT)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "QE is used when policy interest rates are at or near zero. By buying long-term bonds, the central bank reduces the yield on those bonds, forcing inves...",
+    "formula": "",
+    "source_categories": [
+      "Economics",
+      "Macroeconomics"
+    ]
+  },
+  {
+    "id": "money_supply_indices_m1_m2_m3_",
+    "title": "Money Supply indices (M1, M2, M3 liquidity metrics)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Money Supply indices (M1, M2, M3 liquidity metrics) in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "macroeconomic_metrics",
+    "title": "Macroeconomic Metrics",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Macroeconomic Metrics in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "gross_domestic_product_gdp_exp",
+    "title": "Gross Domestic Product (GDP): Expenditure components (C + I + G + NX)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Gross Domestic Product (GDP): Expenditure components (C + I + G + NX) in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "nominal_vs_real_gdp_gdp_deflat",
+    "title": "Nominal vs. Real GDP (GDP Deflator)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Nominal vs. Real GDP (GDP Deflator) in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "gross_national_product_gnp_vs_",
+    "title": "Gross National Product (GNP) vs. GDP",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Gross National Product (GNP) vs. GDP in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "balance_of_payments_bop_and_cu",
+    "title": "Balance of Payments (BOP) and Current Account Deficit (CAD)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "BOP consists of the Current Account (trade in goods/services) and the Capital Account (financial investments). A Current Account Deficit must be offse...",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "fiscal_deficit_vs_revenue_defi",
+    "title": "Fiscal Deficit vs. Revenue Deficit",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Fiscal Deficit vs. Revenue Deficit in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "foreign_direct_investment_fdi_",
+    "title": "Foreign Direct Investment (FDI) vs. Foreign Portfolio Investment (FPI)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "FDI is \"sticky\" capital that creates jobs and technology transfer. FPI is \"hot money\" that can leave the country instantly at the click of a button if...",
+    "formula": "",
+    "source_categories": [
+      "Macroeconomics"
+    ]
+  },
+  {
+    "id": "subsidies_and_economic_impact",
+    "title": "Subsidies and economic impact",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Subsidies and economic impact in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "business_cycle_phases",
+    "title": "Business Cycle Phases",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Business Cycle Phases in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "expansion_peak_contraction_tro",
+    "title": "Expansion, Peak, Contraction, Trough",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Expansion, Peak, Contraction, Trough in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "demand_supply",
+    "title": "Demand & Supply",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Post-COVID stimulus checks caused Demand-Pull inflation. The 1970s oil shocks (and 2022 Ukraine crisis) caused Cost-Push inflation....",
+    "formula": "",
+    "source_categories": [
+      "Macroeconomics",
+      "Economics"
+    ]
+  },
+  {
+    "id": "law_of_demand_law_of_supply",
+    "title": "Law of Demand / Law of Supply",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Post-COVID stimulus checks caused Demand-Pull inflation. The 1970s oil shocks (and 2022 Ukraine crisis) caused Cost-Push inflation....",
+    "formula": "",
+    "source_categories": [
+      "Macroeconomics",
+      "Economics"
+    ]
+  },
+  {
+    "id": "shifts_in_the_curve_vs_movemen",
+    "title": "Shifts in the curve vs. Movements along the curve",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Shifts in the curve vs. Movements along the curve in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "elasticity",
+    "title": "Elasticity",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A measure of how sensitive the quantity demanded is to a change in price. Calculated as (% Change in Quantity Demanded) / (% Change in Price).",
+    "formula": "",
+    "source_categories": [
+      "Microeconomics",
+      "Economics"
+    ]
+  },
+  {
+    "id": "price_elasticity_of_demand_sup",
+    "title": "Price elasticity of demand / supply",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Price elasticity of demand / supply in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "factors_affecting_elasticity_s",
+    "title": "Factors affecting elasticity (Substitutes, time horizon, necessity)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Factors affecting elasticity (Substitutes, time horizon, necessity) in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "opportunity_cost",
+    "title": "Opportunity Cost",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The value of the next best alternative that is forgone when making a decision.",
+    "formula": "",
+    "source_categories": [
+      "Microeconomics",
+      "Corporate Finance",
+      "Economics"
+    ]
+  },
+  {
+    "id": "marginal_analysis",
+    "title": "Marginal Analysis",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Marginal Analysis in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "marginal_cost_mc_vs_marginal_r",
+    "title": "Marginal Cost (MC) vs. Marginal Revenue (MR)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Marginal Cost (MC) vs. Marginal Revenue (MR) in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "profit_maximization_rule_mr_mc",
+    "title": "Profit maximization rule (MR = MC)",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "If MR > MC, producing one more unit adds to total profit. If MC > MR, producing that unit reduces total profit. Therefore, you stop exactly where they...",
+    "formula": "",
+    "source_categories": [
+      "Microeconomics"
+    ]
+  },
+  {
+    "id": "market_equilibrium",
+    "title": "Market Equilibrium",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Market Equilibrium in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "market_structures",
+    "title": "Market Structures",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Market Structures in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "perfect_competition",
+    "title": "Perfect Competition",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "In perfect competition, economic profit in the long run is zero because new firms enter to compete away margins. A monopoly sustains long-term profits...",
+    "formula": "",
+    "source_categories": [
+      "Microeconomics"
+    ]
+  },
+  {
+    "id": "monopoly",
+    "title": "Monopoly",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "In perfect competition, economic profit in the long run is zero because new firms enter to compete away margins. A monopoly sustains long-term profits...",
+    "formula": "",
+    "source_categories": [
+      "Microeconomics",
+      "Economics",
+      "Market Awareness & Current Affairs",
+      "Current Affairs"
+    ]
+  },
+  {
+    "id": "oligopoly",
+    "title": "Oligopoly",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "CRISIL, ICRA, and CARE Ratings. CRISIL is the largest credit rating agency in India.",
+    "formula": "",
+    "source_categories": [
+      "Company Awareness",
+      "Moody's / Rating Agencies",
+      "Economics"
+    ]
+  },
+  {
+    "id": "monopolistic_competition",
+    "title": "Monopolistic Competition",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Monopolistic Competition in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "welfare_economics",
+    "title": "Welfare Economics",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Welfare Economics in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "consumer_surplus",
+    "title": "Consumer Surplus",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Consumer Surplus in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "producer_surplus",
+    "title": "Producer Surplus",
+    "domain": "Economics",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Producer Surplus in Economics.",
+    "formula": "",
+    "source_categories": [
+      "Economics"
+    ]
+  },
+  {
+    "id": "navigation_shortcuts",
+    "title": "Navigation & Shortcuts",
+    "domain": "Financial Modeling",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Navigation & Shortcuts in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "ctrlarrow_ctrlshiftl_f4_altesv",
+    "title": "Ctrl+Arrow, Ctrl+Shift+L, F4, Alt+E+S+V, Ctrl+`",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Ctrl+Arrow, Ctrl+Shift+L, F4, Alt+E+S+V, Ctrl+` in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "core_functions",
+    "title": "Core Functions",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Core Functions in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "vlookup_xlookup_index_match",
+    "title": "VLOOKUP / XLOOKUP / INDEX-MATCH",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "INDEX-MATCH is superior because it doesn't break if you insert or delete columns in the dataset. XLOOKUP (newer) provides the same flexibility as INDE...",
+    "formula": "",
+    "source_categories": [
+      "Excel & Financial Modeling"
+    ]
+  },
+  {
+    "id": "sumifs_countifs",
+    "title": "SUMIFS / COUNTIFS",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of SUMIFS / COUNTIFS in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "iferror_offset",
+    "title": "IFERROR, OFFSET",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of IFERROR, OFFSET in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "modeling_conventions",
+    "title": "Modeling Conventions",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Blue for hardcoded inputs, Black for formulas (calculations), and Green for links to other sheets.",
+    "formula": "",
+    "source_categories": [
+      "Excel & Financial Modeling"
+    ]
+  },
+  {
+    "id": "blue_hardcode_black_formula_gr",
+    "title": "Blue (hardcode), Black (formula), Green (cross-sheet link)",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Blue (hardcode), Black (formula), Green (cross-sheet link) in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "circular_references",
+    "title": "Circular References",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Interviewers often ask technical Excel questions to ensure you can survive the daily grind of building and debugging models. Master Handling....",
+    "formula": "",
+    "source_categories": [
+      "Excel & Financial Modeling"
+    ]
+  },
+  {
+    "id": "identifying_circular_logic_int",
+    "title": "Identifying circular logic (Interest expense / Cash sweep models)",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Identifying circular logic (Interest expense / Cash sweep models) in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "iterative_calculation_settings",
+    "title": "Iterative calculation settings",
+    "domain": "Financial Modeling",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Interviewers often ask technical Excel questions to ensure you can survive the daily grind of building and debugging models. Master Iterative....",
+    "formula": "",
+    "source_categories": [
+      "Excel & Financial Modeling"
+    ]
+  },
+  {
+    "id": "data_tables_sensitivity",
+    "title": "Data Tables & Sensitivity",
+    "domain": "Financial Modeling",
+    "node_type": "advanced",
+    "has_formula": false,
+    "short_summary": "Core principles of Data Tables & Sensitivity in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "1_way_and_2_way_data_table_con",
+    "title": "1-way and 2-way data table construction",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of 1-way and 2-way data table construction in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "model_auditing",
+    "title": "Model Auditing",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "**The Strategy:**\nPick a real, professional failure (not a fake \"I work too hard\" weakness). Spend 20% of the time on the failure, and 80% on the syst...",
+    "formula": "",
+    "source_categories": [
+      "Behavioral & Fit"
+    ]
+  },
+  {
+    "id": "tracing_precedents_and_depende",
+    "title": "Tracing precedents and dependents",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Tracing precedents and dependents in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "detecting_buried_hardcodes",
+    "title": "Detecting buried hardcodes",
+    "domain": "Financial Modeling",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Detecting buried hardcodes in Financial Modeling.",
+    "formula": "",
+    "source_categories": [
+      "Financial Modeling"
+    ]
+  },
+  {
+    "id": "compound_annual_growth_rate_ca",
+    "title": "Compound Annual Growth Rate (CAGR)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Compound Annual Growth Rate (CAGR) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "formula_mechanics",
+    "title": "Formula mechanics",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Don't just memorize the formula; explain *why* it works intuitively....",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "period_counting_traps",
+    "title": "Period-counting traps",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Period-counting traps in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "cagr_vs_average_annual_growth_",
+    "title": "CAGR vs. Average annual growth rate",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of CAGR vs. Average annual growth rate in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "guesstimates_structured_thinki",
+    "title": "Guesstimates / Structured Thinking [DEEP PRIORITY]",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Guesstimates / Structured Thinking [DEEP PRIORITY] in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "top_down_vs_bottom_up_market_s",
+    "title": "Top-down vs. Bottom-up market sizing",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Top-down is best for market sizing (e.g., how many smartphones are sold in India). Bottom-up is best for local revenue capacity constraints (e.g., Del...",
+    "formula": "",
+    "source_categories": [
+      "Guesstimates",
+      "Behavioral & Fit"
+    ]
+  },
+  {
+    "id": "structuring_verbal_answers_und",
+    "title": "Structuring verbal answers under time pressure",
+    "domain": "Portfolio Management",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Structuring verbal answers under time pressure in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "sanity_checking_final_outputs_",
+    "title": "Sanity-checking final outputs against benchmarks",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Sanity-checking final outputs against benchmarks in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "handling_vague_or_ambiguous_pr",
+    "title": "Handling vague or ambiguous prompts",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Handling vague or ambiguous prompts in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "common_categories_market_sizin",
+    "title": "Common categories (Market sizing, revenue estimation, capacity estimation)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Common categories (Market sizing, revenue estimation, capacity estimation) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "business_model",
+    "title": "Business Model",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Agencies are paid by the very companies they are supposed to objectively rate.",
+    "formula": "NIM =",
+    "source_categories": [
+      "Moody's / Rating Agencies",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "issuer_pays_revenue_model",
+    "title": "Issuer-pays revenue model",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The \"Issuer-Pays\" model.",
+    "formula": "",
+    "source_categories": [
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "subscriber_pays_alternative_mo",
+    "title": "Subscriber-pays alternative model",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Subscriber-pays alternative model in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "conflict_of_interest_debates_s",
+    "title": "Conflict-of-interest debates surrounding issuer-pays",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Conflict-of-interest debates surrounding issuer-pays in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "rating_scale_mechanics",
+    "title": "Rating Scale Mechanics",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rating Scale Mechanics in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "long_term_scales_vs_short_term",
+    "title": "Long-term scales vs. Short-term scales",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Long-term scales vs. Short-term scales in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "global_scale_vs_national_scale",
+    "title": "Global scale vs. National scale ratings",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Moody's effectively controls ICRA by holding a majority ownership stake (over 50%) in the Indian agency.",
+    "formula": "",
+    "source_categories": [
+      "Company & Industry-Specific",
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "notching_adjustments_adjusted_",
+    "title": "Notching adjustments (Adjusted scorecard ratings vs. base financial assessment)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Notching adjustments (Adjusted scorecard ratings vs. base financial assessment) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "regulatory_framework",
+    "title": "Regulatory Framework",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Real interviews will test if you follow Indian financial news. Be prepared to quote recent numbers (like current repo rate or IBC recovery rates)....",
+    "formula": "",
+    "source_categories": [
+      "India-Specific Context",
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "nationally_recognized_statisti",
+    "title": "Nationally Recognized Statistical Rating Organization (NRSRO) status",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Nationally Recognized Statistical Rating Organization (NRSRO) status in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "dodd_frank_implications_and_po",
+    "title": "Dodd-Frank implications and post-2008 reforms",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Dodd-Frank implications and post-2008 reforms in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "historical_context",
+    "title": "Historical Context",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "An extra premium added to the CAPM calculation for smaller companies.",
+    "formula": "",
+    "source_categories": [
+      "Valuation"
+    ]
+  },
+  {
+    "id": "role_in_the_2008_financial_cri",
+    "title": "Role in the 2008 financial crisis (Rating structured products/CDOs)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Role in the 2008 financial crisis (Rating structured products/CDOs) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "criticisms_and_methodology_cha",
+    "title": "Criticisms and methodology changes post-crisis",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Criticisms and methodology changes post-crisis in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "corporate_structure",
+    "title": "Corporate Structure",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "A corporate governance structure where only a fraction (usually 1/3) of the board of directors is up for election each year.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance",
+      "Valuation",
+      "Fixed Income & Credit",
+      "Securitization & Structured Finance",
+      "Oxane Partners",
+      "Moody's / Rating Agencies",
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "moodys_investors_service_mis_v",
+    "title": "Moody's Investors Service (MIS) vs. Moody's Analytics (MA)",
+    "domain": "Risk Management",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "By dividing the company into two distinct entities: Moody's Investors Service (MIS) and Moody's Analytics (MA).",
+    "formula": "",
+    "source_categories": [
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "core_business_offerings",
+    "title": "Core Business & Offerings",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Core Business & Offerings in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "private_credit_and_alternative",
+    "title": "Private credit and alternative lending services",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private credit and alternative lending services in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "tech_enabled_valuation_service",
+    "title": "Tech-enabled valuation services",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Tech-enabled valuation services in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "portfolio_monitoring_as_a_serv",
+    "title": "Portfolio monitoring-as-a-service (Oxane Panorama)",
+    "domain": "Risk Management",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of Portfolio monitoring-as-a-service (Oxane Panorama) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "operational_capabilities",
+    "title": "Operational Capabilities",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Extracting data from a borrower's raw financial statements and organizing it into a standardized template for credit analysis.",
+    "formula": "",
+    "source_categories": [
+      "Oxane Partners"
+    ]
+  },
+  {
+    "id": "automated_data_ingestion_valid",
+    "title": "Automated data ingestion & validation",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Automated data ingestion & validation in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "covenant_risk_monitoring_autom",
+    "title": "Covenant & risk monitoring automation",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Covenant & risk monitoring automation in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "borrowing_base_management",
+    "title": "Borrowing base management",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Borrowing base management in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "financial_statement_spreading",
+    "title": "Financial statement spreading",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Extracting data from a borrower's raw financial statements and organizing it into a standardized template for credit analysis.",
+    "formula": "",
+    "source_categories": [
+      "Oxane Partners",
+      "Behavioral & Fit"
+    ]
+  },
+  {
+    "id": "target_client_base",
+    "title": "Target Client Base",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Private equity funds, private debt/credit funds, investment banks, and alternative lenders.",
+    "formula": "",
+    "source_categories": [
+      "Oxane Partners"
+    ]
+  },
+  {
+    "id": "private_equity_funds_private_d",
+    "title": "Private equity funds, private debt funds, institutional lenders, investment banks",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private equity funds, private debt funds, institutional lenders, investment banks in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "market_value_proposition",
+    "title": "Market Value Proposition",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Providing tech-enabled solutions (software + domain expertise) to manage and monitor complex private market portfolios.",
+    "formula": "",
+    "source_categories": [
+      "Oxane Partners"
+    ]
+  },
+  {
+    "id": "solving_data_fragmentation_in_",
+    "title": "Solving data fragmentation in private markets",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Solving data fragmentation in private markets in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "scalability_vs_manual_spreadsh",
+    "title": "Scalability vs. manual spreadsheet-driven workflows",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Scalability vs. manual spreadsheet-driven workflows in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "tech_enabled_expertise_softwar",
+    "title": "Tech-enabled expertise (software + domain professional services)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Tech-enabled expertise (software + domain professional services) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "credit_rating_industry",
+    "title": "Credit Rating Industry",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Quantitative: Leverage (Debt/EBITDA), Interest Coverage. Qualitative: Management quality, regulatory environment, competitive moat.",
+    "formula": "",
+    "source_categories": [
+      "Moody's / Rating Agencies"
+    ]
+  },
+  {
+    "id": "the_big_3_oligopoly_moodys_sp_",
+    "title": "The Big 3 Oligopoly (Moody's, S&P, Fitch)",
+    "domain": "Risk Management",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of The Big 3 Oligopoly (Moody's, S&P, Fitch) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "barriers_to_entry_reputation_r",
+    "title": "Barriers to entry (Reputation, regulatory thresholds)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Barriers to entry (Reputation, regulatory thresholds) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "regulatory_capture_and_relianc",
+    "title": "Regulatory capture and reliance",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Regulatory capture and reliance in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "private_credit_industry",
+    "title": "Private Credit Industry",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private Credit Industry in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "post_2008_growth_drivers",
+    "title": "Post-2008 growth drivers",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Post-2008 growth drivers in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "bank_retreat_from_leveraged_le",
+    "title": "Bank retreat from leveraged lending (Basel III & regulatory capital constraints)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bank retreat from leveraged lending (Basel III & regulatory capital constraints) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "direct_lending_vs_syndicated_b",
+    "title": "Direct lending vs. Syndicated bank lending",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Because Private Credit is illiquid and unrated, the yields are much higher (the \"Illiquidity Premium\"), but it requires massive specialized infrastruc...",
+    "formula": "",
+    "source_categories": [
+      "Oxane Partners"
+    ]
+  },
+  {
+    "id": "private_credit_fund_structures",
+    "title": "Private credit fund structures (Drawdown mechanisms, closed-end funds)",
+    "domain": "Risk Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Private credit fund structures (Drawdown mechanisms, closed-end funds) in Risk Management.",
+    "formula": "",
+    "source_categories": [
+      "Risk Management"
+    ]
+  },
+  {
+    "id": "rbi_monetary_policy_rates_foun",
+    "title": "RBI Monetary Policy Rates [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of RBI Monetary Policy Rates [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "repo_rate_reverse_repo_rate_ba",
+    "title": "Repo rate, Reverse repo rate, Bank rate",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Repo Rate is the rate at which RBI lends money to commercial banks. Reverse Repo Rate is the rate at which RBI borrows money from commercial banks.",
+    "formula": "",
+    "source_categories": [
+      "Finance GK",
+      "Market Awareness & Current Affairs"
+    ]
+  },
+  {
+    "id": "msf_marginal_standing_facility",
+    "title": "MSF (Marginal Standing Facility) vs. SDF (Standing Deposit Facility)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of MSF (Marginal Standing Facility) vs. SDF (Standing Deposit Facility) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "crr_cash_reserve_ratio_vs_slr_",
+    "title": "CRR (Cash Reserve Ratio) vs. SLR (Statutory Liquidity Ratio)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Both are reserve requirements to ensure bank solvency. Increasing CRR/SLR drains liquidity from the market, reducing banks' capacity to lend....",
+    "formula": "",
+    "source_categories": [
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "indian_banking_system_foundati",
+    "title": "Indian Banking System [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Indian Banking System [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "public_sector_banks_vs_private",
+    "title": "Public Sector Banks vs. Private Sector Banks (structural differences, examples)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Public Sector Banks vs. Private Sector Banks (structural differences, examples) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "account_types_savings_account_",
+    "title": "Account types: Savings Account, Current Account, Fixed Deposit (FD), Recurring Deposit (RD)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Account types: Savings Account, Current Account, Fixed Deposit (FD), Recurring Deposit (RD) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "non_performing_assets_npas_gro",
+    "title": "Non-Performing Assets (NPAs): Gross vs. Net NPA, provisioning norms",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Non-Performing Assets (NPAs): Gross vs. Net NPA, provisioning norms in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "key_banking_ratios_casa_ratio_",
+    "title": "Key banking ratios: CASA Ratio (Current Account Savings Account)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Key banking ratios: CASA Ratio (Current Account Savings Account) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "retail_credit_credit_score_emi",
+    "title": "Retail credit: Credit Score, EMI calculation, Mortgage definitions, Overdraft (OD) facility",
+    "domain": "Corporate Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Retail credit: Credit Score, EMI calculation, Mortgage definitions, Overdraft (OD) facility in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "trade_finance_letter_of_credit",
+    "title": "Trade Finance: Letter of Credit (L/C), Bank Guarantees",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Trade Finance: Letter of Credit (L/C), Bank Guarantees in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "payment_gateways_neft_rtgs_imp",
+    "title": "Payment Gateways: NEFT, RTGS, IMPS, UPI",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Payment Gateways: NEFT, RTGS, IMPS, UPI in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "financial_regulators_foundatio",
+    "title": "Financial Regulators [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Financial Regulators [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "reserve_bank_of_india_rbi",
+    "title": "Reserve Bank of India (RBI)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Shaktikanta Das (as of July 2026).",
+    "formula": "",
+    "source_categories": [
+      "India-Specific Context",
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "securities_and_exchange_board_",
+    "title": "Securities and Exchange Board of India (SEBI)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Securities and Exchange Board of India (SEBI) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "insurance_regulatory_and_devel",
+    "title": "Insurance Regulatory and Development Authority of India (IRDAI)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Insurance Regulatory and Development Authority of India (IRDAI) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "pension_fund_regulatory_and_de",
+    "title": "Pension Fund Regulatory and Development Authority (PFRDA)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pension Fund Regulatory and Development Authority (PFRDA) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "competition_commission_of_indi",
+    "title": "Competition Commission of India (CCI)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Competition Commission of India (CCI) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "nabard_national_bank_for_agric",
+    "title": "NABARD (National Bank for Agriculture and Rural Development)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of NABARD (National Bank for Agriculture and Rural Development) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "sidbi_small_industries_develop",
+    "title": "SIDBI (Small Industries Development Bank of India)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of SIDBI (Small Industries Development Bank of India) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "stock_indices_definitions",
+    "title": "Stock Indices Definitions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Stock Indices Definitions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "what_they_represent_and_high_l",
+    "title": "What they represent and high-level calculation logic (Price-weighted vs. Market-cap weighted)",
+    "domain": "Corporate Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of What they represent and high-level calculation logic (Price-weighted vs. Market-cap weighted) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "india_sensex_nifty_50",
+    "title": "India: Sensex, Nifty 50",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of India: Sensex, Nifty 50 in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "us_dow_jones_sp_500_nasdaq",
+    "title": "US: Dow Jones, S&P 500, NASDAQ",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of US: Dow Jones, S&P 500, NASDAQ in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "global_ftse_100_nikkei_225",
+    "title": "Global: FTSE 100, Nikkei 225",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Global: FTSE 100, Nikkei 225 in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "investment_wealth_management_f",
+    "title": "Investment & Wealth Management [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Investment & Wealth Management [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "mutual_funds_structure_and_net",
+    "title": "Mutual Funds structure and Net Asset Value (NAV)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mutual Funds structure and Net Asset Value (NAV) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "systematic_investment_plan_sip",
+    "title": "Systematic Investment Plan (SIP) mechanics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Systematic Investment Plan (SIP) mechanics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "exchange_traded_funds_etfs_vs_",
+    "title": "Exchange Traded Funds (ETFs) vs. Index Funds",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Exchange Traded Funds (ETFs) vs. Index Funds in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "debt_funds_vs_equity_funds_vs_",
+    "title": "Debt Funds vs. Equity Funds vs. Hybrid Funds",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Debt Funds vs. Equity Funds vs. Hybrid Funds in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cagr_vs_xirr_metrics_in_portfo",
+    "title": "CAGR vs. XIRR metrics in portfolio returns",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of CAGR vs. XIRR metrics in portfolio returns in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "core_concepts_compounding_dive",
+    "title": "Core concepts: Compounding, diversification, asset allocation",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Core concepts: Compounding, diversification, asset allocation in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "forex_basics",
+    "title": "Forex Basics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Forex Basics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "forex_reserves_definition_and_",
+    "title": "Forex reserves definition and sovereign rationale",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Forex reserves definition and sovereign rationale in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "drivers_of_currency_appreciati",
+    "title": "Drivers of currency appreciation/depreciation",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Drivers of currency appreciation/depreciation in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "taxation_basics",
+    "title": "Taxation Basics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Taxation Basics in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "gst_structure_slabs_igstcgstsg",
+    "title": "GST structure ( slabs, IGST/CGST/SGST breakdown)",
+    "domain": "Corporate Finance",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "Core principles of GST structure ( slabs, IGST/CGST/SGST breakdown) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "corporate_tax_rate_basics",
+    "title": "Corporate tax rate basics",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Don't just memorize the formula; explain *why* it works intuitively....",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "income_tax_slabs",
+    "title": "Income tax slabs",
+    "domain": "Corporate Finance",
+    "node_type": "instance",
+    "has_formula": false,
+    "short_summary": "If you're interviewing for structured finance or fixed income (like Moody's/Oxane), you must know this mechanistically....",
+    "formula": "",
+    "source_categories": [
+      "Securitization & Structured Finance"
+    ]
+  },
+  {
+    "id": "international_bodies_foundatio",
+    "title": "International Bodies [FOUNDATIONAL]",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of International Bodies [FOUNDATIONAL] in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "international_monetary_fund_im",
+    "title": "International Monetary Fund (IMF)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The IMF provides emergency bailouts in exchange for strict structural economic reforms (austerity)....",
+    "formula": "",
+    "source_categories": [
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "world_bank",
+    "title": "World Bank",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "They officially ended the world's last negative interest rate policy (-0.1%), hiking rates for the first time in 17 years.",
+    "formula": "",
+    "source_categories": [
+      "Market Awareness & Current Affairs",
+      "Derivatives 101",
+      "Current Affairs",
+      "Finance GK"
+    ]
+  },
+  {
+    "id": "world_trade_organization_wto",
+    "title": "World Trade Organization (WTO)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of World Trade Organization (WTO) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "asian_development_bank_adb",
+    "title": "Asian Development Bank (ADB)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Asian Development Bank (ADB) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "g20_brics_forums",
+    "title": "G20 & BRICS forums",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of G20 & BRICS forums in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "corporate_giants",
+    "title": "Corporate Giants",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Indian IT giants like TCS and Infosys aggressively use Forward Contracts to hedge their massive USD revenue streams against INR appreciation.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "largest_companies_by_market_ca",
+    "title": "Largest companies by market cap (Global top tier)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Largest companies by market cap (Global top tier) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "financial_institutions",
+    "title": "Financial Institutions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "P/E is primarily used for Banks, Financial Institutions, and companies where interest income/expense is a core part of operations.",
+    "formula": "",
+    "source_categories": [
+      "Valuation",
+      "Market Awareness & Current Affairs"
+    ]
+  },
+  {
+    "id": "major_commercial_and_investmen",
+    "title": "Major commercial and investment banks (India: SBI, HDFC, ICICI, Axis vs. Global: JP Morgan, Goldman Sachs)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major commercial and investment banks (India: SBI, HDFC, ICICI, Axis vs. Global: JP Morgan, Goldman Sachs) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "the_big_four_accounting_firms_",
+    "title": "The Big Four accounting firms (Deloitte, PwC, EY, KPMG)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of The Big Four accounting firms (Deloitte, PwC, EY, KPMG) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "rating_agencies_exchanges",
+    "title": "Rating Agencies & Exchanges",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Rating Agencies & Exchanges in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "global_rating_agencies_big_3",
+    "title": "Global Rating Agencies (Big 3)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Global Rating Agencies (Big 3) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "indian_domestic_rating_agencie",
+    "title": "Indian Domestic Rating Agencies (ICRA, CRISIL, CARE)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Indian Domestic Rating Agencies (ICRA, CRISIL, CARE) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_stock_exchanges_nyse_nas",
+    "title": "Major stock exchanges (NYSE, NASDAQ, LSE, NSE, BSE, HKEX)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major stock exchanges (NYSE, NASDAQ, LSE, NSE, BSE, HKEX) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "sector_awareness_name_recognit",
+    "title": "Sector Awareness (Name recognition & core brands)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Sector Awareness (Name recognition & core brands) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_it_companies_tcs_infosys",
+    "title": "Major IT Companies (TCS, Infosys, Wipro)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major IT Companies (TCS, Infosys, Wipro) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_manufacturing_companies_",
+    "title": "Major Manufacturing Companies (Reliance Industries, Tata Motors, L&T)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major Manufacturing Companies (Reliance Industries, Tata Motors, L&T) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_fmcg_companies_hul_itc_n",
+    "title": "Major FMCG Companies (HUL, ITC, Nestlé India)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major FMCG Companies (HUL, ITC, Nestlé India) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_pharma_auto_e_commerce_f",
+    "title": "Major Pharma / Auto / E-commerce / Fintech giants",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major Pharma / Auto / E-commerce / Fintech giants in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "macro_leaders_tracker",
+    "title": "Macro Leaders Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Macro Leaders Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "current_rbi_governor_sebi_chai",
+    "title": "Current RBI Governor, SEBI Chairman, Finance Minister",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Current RBI Governor, SEBI Chairman, Finance Minister in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "interest_rates_tracker",
+    "title": "Interest Rates Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Interest Rates Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "rbi_repo_rate_reverse_repo_rat",
+    "title": "RBI Repo Rate, Reverse Repo Rate, CRR, SLR",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of RBI Repo Rate, Reverse Repo Rate, CRR, SLR in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "us_fed_funds_rate",
+    "title": "US Fed Funds Rate",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "FFO is a better proxy for recurring operating cash flow because it excludes non-cash items (Depreciation) and one-time gains/losses.",
+    "formula": "Calmar Ratio = Annualized Rate of Return / Maximum Drawdown over the last 36 months",
+    "source_categories": [
+      "Fixed Income & Credit",
+      "Values Tracker",
+      "Corporate Finance",
+      "Securitization & Structured Finance",
+      "Moody's / Rating Agencies",
+      "Oxane Partners",
+      "Market Awareness & Current Affairs",
+      "India-Specific Context",
+      "Derivatives 101",
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "ecb_deposit_rate",
+    "title": "ECB Deposit Rate",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": true,
+    "short_summary": "Fintechs don't take deposits or hold massive loan portfolios on their balance sheets, so traditional banking metrics (like CET1 ratio or LDR) are comp...",
+    "formula": "NIM =",
+    "source_categories": [
+      "Company & Industry-Specific",
+      "Market Awareness & Current Affairs",
+      "Finance GK",
+      "India-Specific Context",
+      "Securitization & Structured Finance",
+      "Fixed Income & Credit"
+    ]
+  },
+  {
+    "id": "bank_of_england_rate",
+    "title": "Bank of England Rate",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "The BoE had to step in as the buyer of last resort to break the margin-call death spiral....",
+    "formula": "",
+    "source_categories": [
+      "Market Awareness & Current Affairs"
+    ]
+  },
+  {
+    "id": "market_indicators_tracker",
+    "title": "Market Indicators Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Market Indicators Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "current_levels_sensex_nifty_50",
+    "title": "Current levels: Sensex, Nifty 50, Bank Nifty",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Current levels: Sensex, Nifty 50, Bank Nifty in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "current_levels_dow_jones_nasda",
+    "title": "Current levels: Dow Jones, NASDAQ, S&P 500, FTSE 100, Nikkei 225, Hang Seng",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Current levels: Dow Jones, NASDAQ, S&P 500, FTSE 100, Nikkei 225, Hang Seng in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "currencies_commodities_tracker",
+    "title": "Currencies & Commodities Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Currencies & Commodities Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "forex_rates_usdinr_eurinr_gbpi",
+    "title": "Forex rates: USD/INR, EUR/INR, GBP/INR, JPY/INR, DXY",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Forex rates: USD/INR, EUR/INR, GBP/INR, JPY/INR, DXY in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "commodities_gold_price_silver_",
+    "title": "Commodities: Gold Price, Silver Price, Brent Crude, WTI Crude, Natural Gas",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Commodities: Gold Price, Silver Price, Brent Crude, WTI Crude, Natural Gas in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "macroeconomy_govt_tracker",
+    "title": "Macroeconomy & Govt Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Macroeconomy & Govt Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "gdp_growth_rate_india_us",
+    "title": "GDP Growth Rate (India & US)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of GDP Growth Rate (India & US) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "cpi_wpi_inflation_rates",
+    "title": "CPI / WPI Inflation Rates",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "If a company's terminal growth rate (g) exceeded the GDP growth rate of the country, the company would mathematically grow larger than the entire econ...",
+    "formula": "",
+    "source_categories": [
+      "Valuation",
+      "Economics",
+      "Macroeconomics",
+      "Fixed Income & Credit",
+      "Market Awareness & Current Affairs",
+      "Current Affairs"
+    ]
+  },
+  {
+    "id": "unemployment_rate_fiscal_defic",
+    "title": "Unemployment Rate, Fiscal Deficit (% of GDP), Current Account Deficit, Forex Reserves",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Unemployment Rate, Fiscal Deficit (% of GDP), Current Account Deficit, Forex Reserves in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "current_corporate_tax_rate_gst",
+    "title": "Current Corporate Tax Rate, GST Rate Slabs, Income Tax Slabs",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Current Corporate Tax Rate, GST Rate Slabs, Income Tax Slabs in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "credit_deals_tracker",
+    "title": "Credit & Deals Tracker",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Credit & Deals Tracker in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "high_yield_vs_investment_grade",
+    "title": "High Yield vs. Investment Grade spreads",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of High Yield vs. Investment Grade spreads in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "major_sovereign_cds_spreads",
+    "title": "Major sovereign CDS spreads",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Major sovereign CDS spreads in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "recent_major_ma_deals_with_syn",
+    "title": "Recent major M&A deals (with synergy rationale)",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Recent major M&A deals (with synergy rationale) in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "recent_major_ipos",
+    "title": "Recent major IPOs",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Recent major IPOs in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "recent_high_profile_defaults_o",
+    "title": "Recent high-profile defaults or sovereign rating actions",
+    "domain": "Corporate Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Recent high-profile defaults or sovereign rating actions in Corporate Finance.",
+    "formula": "",
+    "source_categories": [
+      "Corporate Finance"
+    ]
+  },
+  {
+    "id": "numbers_algebra_foundations",
+    "title": "Numbers & Algebra Foundations",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Numbers & Algebra Foundations in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "number_systems_divisibility_ru",
+    "title": "Number Systems (Divisibility rules, Remainder theorem, Unit digit calculation)",
+    "domain": "Portfolio Management",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Number Systems (Divisibility rules, Remainder theorem, Unit digit calculation) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "hcf_and_lcm_direct_calculation",
+    "title": "HCF and LCM (Direct calculations, Word problems, Bell-ringing & track-running problems)",
+    "domain": "Portfolio Management",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of HCF and LCM (Direct calculations, Word problems, Bell-ringing & track-running problems) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "simplification_decimals_fracti",
+    "title": "Simplification, Decimals, Fractions, Surds and Indices",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Simplification, Decimals, Fractions, Surds and Indices in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "square_roots_and_cube_roots_es",
+    "title": "Square Roots and Cube Roots estimation & properties",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Square Roots and Cube Roots estimation & properties in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "core_business_arithmetic",
+    "title": "Core Business Arithmetic",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Core Business Arithmetic in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "percentages_basic_conversions_",
+    "title": "Percentages (Basic conversions, Successive percentage changes, Population/depreciation formulas)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Percentages (Basic conversions, Successive percentage changes, Population/depreciation formulas) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "profit_and_loss_cost_pricesell",
+    "title": "Profit and Loss (Cost Price/Selling Price/Marked Price relations, Discount matrices, False-weight/dishonest dealer problems)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Profit and Loss (Cost Price/Selling Price/Marked Price relations, Discount matrices, False-weight/dishonest dealer problems) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "ratio_proportion_partnership_i",
+    "title": "Ratio & Proportion, Partnership (Investment-time weightings, Active vs. Sleeping partners)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Ratio & Proportion, Partnership (Investment-time weightings, Active vs. Sleeping partners) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "averages_age_problems",
+    "title": "Averages & Age Problems",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Averages & Age Problems in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "time_speed_distance_work_dynam",
+    "title": "Time, Speed, Distance & Work Dynamics",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Time, Speed, Distance & Work Dynamics in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "time_and_work",
+    "title": "Time and Work:",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Time and Work: in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "pipes_and_cisterns",
+    "title": "Pipes and Cisterns:",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pipes and Cisterns: in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "time_speed_and_distance",
+    "title": "Time, Speed and Distance:",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Time, Speed and Distance: in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "problems_on_trains",
+    "title": "Problems on Trains:",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Problems on Trains: in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "boats_and_streams",
+    "title": "Boats and Streams:",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Boats and Streams: in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "commercial_modern_mathematics",
+    "title": "Commercial & Modern Mathematics",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Commercial & Modern Mathematics in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "simple_interest_compound_inter",
+    "title": "Simple Interest & Compound Interest (Half-yearly/Quarterly compounding, Difference between CI & SI, Installments)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Simple Interest & Compound Interest (Half-yearly/Quarterly compounding, Difference between CI & SI, Installments) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "alligations_or_mixtures_weight",
+    "title": "Alligations or Mixtures (Weighted average price calculations, Successive dilution/replacement cycles)",
+    "domain": "Portfolio Management",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Alligations or Mixtures (Weighted average price calculations, Successive dilution/replacement cycles) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "mensuration_area_of_2d_planes_",
+    "title": "Mensuration (Area of 2D planes, Volumes & Surface Areas of 3D solids)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Mensuration (Area of 2D planes, Volumes & Surface Areas of 3D solids) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "permutations_combinations_arra",
+    "title": "Permutations & Combinations (Arrangements, Selections, Circular permutations)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Permutations & Combinations (Arrangements, Selections, Circular permutations) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "probability_coins_dice_playing",
+    "title": "Probability (Coins, Dice, Playing Cards, Ball selection distributions)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Probability (Coins, Dice, Playing Cards, Ball selection distributions) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "advanced_quantitative_miscella",
+    "title": "Advanced Quantitative Miscellany",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Advanced Quantitative Miscellany in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "clocks_angle_between_hands_gai",
+    "title": "Clocks (Angle between hands, Gain/Loss of time)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Clocks (Angle between hands, Gain/Loss of time) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "calendars_odd_days_method_year",
+    "title": "Calendars (Odd days method, Year repetition cycles)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Calendars (Odd days method, Year repetition cycles) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "races_and_games_head_starts_li",
+    "title": "Races and Games (Head-starts, linear vs circular track races)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Races and Games (Head-starts, linear vs circular track races) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "bankers_discount_true_discount",
+    "title": "Bankers Discount & True Discount concepts",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bankers Discount & True Discount concepts in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "data_interpretation_di",
+    "title": "Data Interpretation (DI)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Data Interpretation (DI) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "table_charts_ratio_percentage_",
+    "title": "Table Charts (Ratio, Percentage share, Growth rate calculations from arrays)",
+    "domain": "Portfolio Management",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Table Charts (Ratio, Percentage share, Growth rate calculations from arrays) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "bar_charts_comparative_visual_",
+    "title": "Bar Charts (Comparative visual evaluations)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Bar Charts (Comparative visual evaluations) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "line_charts_trending_moving_av",
+    "title": "Line Charts (Trending, moving average projections)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Line Charts (Trending, moving average projections) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "pie_charts_degree_to_percentag",
+    "title": "Pie Charts (Degree-to-Percentage conversions)",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Pie Charts (Degree-to-Percentage conversions) in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "caselets_venn_diagram_di_sets",
+    "title": "Caselets & Venn Diagram DI sets",
+    "domain": "Portfolio Management",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Caselets & Venn Diagram DI sets in Portfolio Management.",
+    "formula": "",
+    "source_categories": [
+      "Portfolio Management"
+    ]
+  },
+  {
+    "id": "series_analogy_classification",
+    "title": "Series, Analogy & Classification",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Series, Analogy & Classification in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "number_series_letter_series_sy",
+    "title": "Number Series, Letter Series, Symbol Series completion",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Number Series, Letter Series, Symbol Series completion in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "verbal_analogies_classificatio",
+    "title": "Verbal Analogies & Classification (Odd Man Out)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Verbal Analogies & Classification (Odd Man Out) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "analytical_relationship_reason",
+    "title": "Analytical & Relationship Reasoning",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Analytical & Relationship Reasoning in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "blood_relations_coded_family_t",
+    "title": "Blood Relations (Coded family trees, pointing statements)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Blood Relations (Coded family trees, pointing statements) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "direction_sense_test_compass_m",
+    "title": "Direction Sense Test (Compass movements, shortest displacement vectors)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Direction Sense Test (Compass movements, shortest displacement vectors) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "coding_decoding_letter_shiftin",
+    "title": "Coding-Decoding (Letter shifting, symbol coding, sentence substitution)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Coding-Decoding (Letter shifting, symbol coding, sentence substitution) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "seating_arrangements_linear_si",
+    "title": "Seating Arrangements (Linear single/double row, Circular facing in/out, Complex matrix-puzzles)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Seating Arrangements (Linear single/double row, Circular facing in/out, Complex matrix-puzzles) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "logical_deductions_syllogisms",
+    "title": "Logical Deductions & Syllogisms",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Logical Deductions & Syllogisms in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "syllogisms_standard_2_premise_",
+    "title": "Syllogisms (standard 2-premise, 3-premise, Possibility cases)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Syllogisms (standard 2-premise, 3-premise, Possibility cases) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "logical_deduction_testing_vali",
+    "title": "Logical Deduction (Testing validity of arguments)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Logical Deduction (Testing validity of arguments) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "verbal_critical_reasoning_gd_p",
+    "title": "Verbal & Critical Reasoning (GD-PI Prep)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Verbal & Critical Reasoning (GD-PI Prep) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "statement_and_assumption_ident",
+    "title": "Statement and Assumption (Identifying implicit elements)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Statement and Assumption (Identifying implicit elements) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "statement_and_course_of_action",
+    "title": "Statement and Course of Action (Feasibility, logic)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Statement and Course of Action (Feasibility, logic) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "statement_and_conclusion_direc",
+    "title": "Statement and Conclusion (Direct inferences only)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Statement and Conclusion (Direct inferences only) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "statement_and_argument_strong_",
+    "title": "Statement and Argument (Strong vs. Weak arguments)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Statement and Argument (Strong vs. Weak arguments) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "cause_and_effect_common_cause_",
+    "title": "Cause and Effect (Common cause, independent causes)",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Cause and Effect (Common cause, independent causes) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "theme_detection_logical_proble",
+    "title": "Theme Detection & Logical Problems",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Theme Detection & Logical Problems in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "fast_calculation_tricks_percen",
+    "title": "Fast calculation tricks (percentage-to-fraction conversion tables, rapid squaring)",
+    "domain": "Behavioral Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Fast calculation tricks (percentage-to-fraction conversion tables, rapid squaring) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "digital_sum_and_divisibility_s",
+    "title": "Digital sum and divisibility shortcuts",
+    "domain": "Behavioral Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Digital sum and divisibility shortcuts in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "topic_specific_shortcuts_eg_al",
+    "title": "Topic-specific shortcuts (e.g., alligation method for mixtures, ratio shortcuts for partnerships)",
+    "domain": "Behavioral Finance",
+    "node_type": "mechanism",
+    "has_formula": false,
+    "short_summary": "Core principles of Topic-specific shortcuts (e.g., alligation method for mixtures, ratio shortcuts for partnerships) in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "elimination_techniques_and_tra",
+    "title": "Elimination techniques and trap-answer patterns in MCQs",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Elimination techniques and trap-answer patterns in MCQs in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  },
+  {
+    "id": "time_allocation_strategy_for_t",
+    "title": "Time allocation strategy for timed test sections",
+    "domain": "Behavioral Finance",
+    "node_type": "concept",
+    "has_formula": false,
+    "short_summary": "Core principles of Time allocation strategy for timed test sections in Behavioral Finance.",
+    "formula": "",
+    "source_categories": [
+      "Behavioral Finance"
+    ]
+  }
+]

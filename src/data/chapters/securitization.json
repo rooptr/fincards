@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "1.0.0",
+  "canonical_concept_model": {
+    "topic": "Securitization",
+    "domain": "Fixed Income",
+    "definition": "The process of pooling illiquid financial assets (loans, mortgages) and packaging them into interest-bearing securities sold to investors.",
+    "purpose": "To recycle capital back to originators and convert illiquid loans into highly liquid debt securities."
+  },
+  "curriculum": {
+    "prerequisites": [
+      "Credit Risk",
+      "Bond Mechanics",
+      "Interest Rates"
+    ],
+    "learning_goals": [
+      "Understand how illiquid debt becomes a tradeable bond.",
+      "Identify how a legal shell shields investors.",
+      "Calculate subordination ratios.",
+      "Contrast cash flow priority versus risk exposure.",
+      "Understand how pooling mezzanine tranches creates new AAA ratings."
+    ]
+  },
+  "teaching_blueprint": {
+    "primary_metaphor": "A blender that turns solid, individual loans into a liquid, tradeable smoothie.",
+    "core_narrative": "A bank wants to lend more money to borrowers but has its cash tied up in 30-year loans. Through securitization, it bundles these loans and sells them to investors, getting cash back instantly to continue lending."
+  },
+  "dependency_package": {},
+  "review_package": {},
+  "visualization_hints": {
+    "theme": "financial_flow",
+    "primary_color": "#0047AB"
+  },
+  "scenes": [
+    {
+      "scene_type": "concept",
+      "learning_objective": "Understand how illiquid debt becomes a tradeable bond.",
+      "transition_package": {
+        "story": "Every time a bank gives a home loan, it gets a reliable interest payment every month. But the bank has locked up its capital for 30 years. It cannot use that cash to lend to the next borrower. Securitization solves this by allowing the bank to bundle thousands of these home loans together and sell them to investors today, instantly getting its cash back."
+      },
+      "formula_package": {},
+      "illustration_package": {
+        "goal": "Show loans flowing from bank into a pool and emerging as securities.",
+        "objects": [
+          "Bank",
+          "Loan papers",
+          "Blended Pool",
+          "Security certificates"
+        ],
+        "composition": "Flow from left (originator bank) to center (asset pool) to right (investor bonds).",
+        "focus": "The pooling transition."
+      },
+      "diagram_package": {},
+      "animation_package": {
+        "primitive": "flow",
+        "timing": "Duration: 1.5s, Ease: easeInOut",
+        "trigger": "scroll",
+        "end_state": "Loans lock into the pool and emit bonds."
+      },
+      "widget_package": {
+        "type": "Slider",
+        "config": {
+          "label": "Capital velocity multiplier",
+          "inputs": [
+            {
+              "name": "Pool Size ($M)",
+              "min": 100,
+              "max": 1000,
+              "default": 500
+            },
+            {
+              "name": "Origination Cycle (Months)",
+              "min": 1,
+              "max": 12,
+              "default": 6
+            }
+          ],
+          "outputs": [
+            "Annual Lending Capacity Boost"
+          ],
+          "insight": "Shorter cycle times allow the bank to recycle the same pool repeatedly, multiplying aggregate lending capacity."
+        }
+      },
+      "misconception_package": {
+        "mistakes": [
+          "Thinking securitization reduces defaults. It only pools and redistributes the risk; it does not change the creditworthiness of individual borrowers.",
+          "Confusing the originator bank with the owner of the loan after the sale."
+        ]
+      },
+      "interview_package": {
+        "question": "What is securitization and why do banks do it?",
+        "answer": "Securitization is the process of pooling illiquid assets, such as mortgages or auto loans, and repackaging them as interest-bearing securities. It provides liquidity to originators by allowing them to sell assets off their balance sheets, freeing up capital to issue new loans."
+      },
+      "eli5_package": {
+        "analogy": "Think of it like taking a bunch of individual loans, putting them all in a giant blender, and selling slices of that blended loan smoothie to investors. It turns hard-to-sell individual loans into easy-to-sell bonds."
+      },
+      "mba_package": {
+        "description": "Securitization is a financial technology that pools cash-generating financial assets, isolates them from the originator's bankruptcy risk, and structures them into securities. This creates liquidity and transfers credit risk from the banking system to the broader capital markets.",
+        "takeaways": [
+          {
+            "title": "Liquidity Transformation",
+            "body": "Converts long-term illiquid assets into short-term tradeable securities."
+          },
+          {
+            "title": "Off-Balance Sheet",
+            "body": "Allows banks to remove loans from their assets, improving capital leverage ratios."
+          },
+          {
+            "title": "Capital Velocity",
+            "body": "Increases the rate at which banks can recycle funds to new borrowers."
+          }
+        ]
+      },
+      "qa_package": {}
+    },
+    {
+      "scene_type": "mechanism",
+      "learning_objective": "Identify how a legal shell shields investors.",
+      "transition_package": {
+        "story": "If you buy a bond backed by mortgages, you don't want to worry about whether the bank itself goes bankrupt. You only care if the borrowers pay their mortgages. To achieve this, the bank does a 'True Sale' \u2014 it transfers the loans to a Special Purpose Vehicle (SPV), an independent legal entity. Even if the bank collapses, the loans inside the SPV are perfectly safe."
+      },
+      "formula_package": {},
+      "illustration_package": {
+        "goal": "Show a legal shield separating the bank from the asset trust.",
+        "objects": [
+          "Originator Bank",
+          "Legal Shield (Firewall)",
+          "SPV Trust Box"
+        ],
+        "composition": "Originator on the left, a thick dashed firewall down the center, and the SPV container on the right.",
+        "focus": "The legal firewall dividing the entities."
+      },
+      "diagram_package": {},
+      "animation_package": {
+        "primitive": "fade",
+        "timing": "Duration: 1.0s",
+        "trigger": "scroll",
+        "end_state": "The firewall glows to show absolute isolation during bank collapse simulation."
+      },
+      "widget_package": {
+        "type": "Compare",
+        "config": {
+          "label": "Bankruptcy Stress Tester",
+          "inputs": [
+            {
+              "name": "Bank Default Risk (%)",
+              "min": 0,
+              "max": 100,
+              "default": 20
+            },
+            {
+              "name": "Underlying Pool Default (%)",
+              "min": 0,
+              "max": 20,
+              "default": 3
+            }
+          ],
+          "outputs": [
+            "Expected SPV Bond Loss"
+          ],
+          "insight": "Even if Bank default risk spikes to 100%, the SPV Bond Loss remains pegged only to the underlying pool defaults."
+        }
+      },
+      "misconception_package": {
+        "mistakes": [
+          "Believing the SPV is actively managed like a hedge fund. It is a passive trust with strict, pre-programmed rules.",
+          "Assuming investors can sue the bank if borrowers default. There is no recourse."
+        ]
+      },
+      "interview_package": {
+        "question": "What is the purpose of an SPV in securitization?",
+        "answer": "An SPV is a Special Purpose Vehicle. It is the legal firewall in a securitization. By selling assets to the SPV in a true sale, the assets become bankruptcy-remote. This means if the originating bank fails, the asset cash flows remain dedicated strictly to paying the securitized bondholders."
+      },
+      "eli5_package": {
+        "analogy": "Imagine a housing society where the society treasury holds all the funds. If the construction builder who built the society goes bankrupt, the bank cannot touch the society funds because they belong to the independent society trust, not the builder. The SPV is that society trust."
+      },
+      "mba_package": {
+        "description": "The SPV is a bankruptcy-remote entity designed to isolate assets and protect investors. For the transfer to qualify as a 'true sale' under insolvency law, the originator must relinquish control, and creditors must have no recourse to the originator's balance sheet.",
+        "takeaways": [
+          {
+            "title": "True Sale",
+            "body": "The legal transfer of assets that strips the originator of rights and liabilities."
+          },
+          {
+            "title": "Bankruptcy Remoteness",
+            "body": "Ensures assets are isolated from the sponsor's credit risk."
+          },
+          {
+            "title": "Trust Structure",
+            "body": "The SPV acts as a passive container that distributes cash flows programmatically."
+          }
+        ]
+      },
+      "qa_package": {}
+    },
+    {
+      "scene_type": "mechanism",
+      "learning_objective": "Calculate subordination ratios.",
+      "transition_package": {
+        "story": "To get rating agencies to label a bond 'AAA', the structure needs cushions. Lenders use Credit Enhancement to absorb losses. The most common form is subordination: junior tranches agree to take the first hits. If the pool has 10% equity, the senior investors are protected up to a 10% default rate."
+      },
+      "formula_package": {},
+      "illustration_package": {
+        "goal": "Show a stacked bar showing cushions absorbing losses from the bottom.",
+        "objects": [
+          "Loss arrow",
+          "Senior Block",
+          "Mezzanine Block",
+          "Equity Cushion"
+        ],
+        "composition": "Vertical stack with Equity at the bottom taking the brunt of incoming default blocks.",
+        "focus": "The compression of the equity block."
+      },
+      "diagram_package": {},
+      "animation_package": {
+        "primitive": "stack",
+        "timing": "Duration: 1.2s",
+        "trigger": "scroll",
+        "end_state": "Losses hit the bottom block, shrinking it while leaving the top senior block intact."
+      },
+      "widget_package": {
+        "type": "Allocation",
+        "config": {
+          "label": "Subordination Allocator",
+          "inputs": [
+            {
+              "name": "Senior AAA Tranche (%)",
+              "min": 60,
+              "max": 95,
+              "default": 80
+            },
+            {
+              "name": "Mezzanine Tranche (%)",
+              "min": 2,
+              "max": 25,
+              "default": 12
+            }
+          ],
+          "outputs": [
+            "First-Loss Equity Cushion (%)"
+          ],
+          "insight": "Increasing the senior tranche reduces the safety cushion, exposing it to lower default thresholds."
+        }
+      },
+      "misconception_package": {
+        "mistakes": [
+          "Assuming credit enhancement guarantees zero loss. Extremely high default correlations can easily wipe out the cushions.",
+          "Overlooking excess spread, which is often the first line of defense before subordination is hit."
+        ]
+      },
+      "interview_package": {
+        "question": "How does credit enhancement protect senior bondholders?",
+        "answer": "Credit enhancement protects senior bondholders by placing junior cushions below them. Subordination ensures that losses are absorbed by equity and mezzanine tranches first. Senior tranches only take losses once the junior tranches are completely wiped out."
+      },
+      "eli5_package": {
+        "analogy": "Think of it like buying a car with a safety airbag. The airbag (junior/equity tranche) takes the impact of a crash first so the passenger (senior tranche) stays untouched. You only get hurt if the crash is severe enough to rip through the airbag completely."
+      },
+      "mba_package": {
+        "description": "Credit enhancement represents structural mechanisms that mitigate credit risk for senior tranches. Internal methods include subordination (loss-absorption priority), overcollateralization (pool value exceeds debt issued), and excess spread (interest income exceeds coupon liabilities).",
+        "takeaways": [
+          {
+            "title": "Structural Cushions",
+            "body": "Junior tranches act as financial buffers absorbing first-dollar losses."
+          },
+          {
+            "title": "Overcollateralization",
+            "body": "Issuing less debt than the face value of the collateral pool."
+          },
+          {
+            "title": "AAA Protection",
+            "body": "Cushions must be thick enough to withstand extreme historical stress tests."
+          }
+        ]
+      },
+      "qa_package": {}
+    },
+    {
+      "scene_type": "mechanism",
+      "learning_objective": "Contrast cash flow priority versus risk exposure.",
+      "transition_package": {
+        "story": "The cash flows coming into the SPV from borrowers are distributed using a strict hierarchy, called a payment waterfall. Senior tranches are paid first, followed by mezzanine, and finally equity. In exchange for taking the highest risk, equity investors get any leftover cash, earning the highest potential returns."
+      },
+      "formula_package": {},
+      "illustration_package": {
+        "goal": "Show cash flowing down a series of steps into distinct buckets.",
+        "objects": [
+          "Cash flow stream",
+          "AAA Bucket",
+          "Mezz Bucket",
+          "Equity Plate"
+        ],
+        "composition": "A vertical waterfall showing cash filling the top bucket before overflowing to the next steps.",
+        "focus": "The spillover point."
+      },
+      "diagram_package": {},
+      "animation_package": {
+        "primitive": "waterfall",
+        "timing": "Duration: 1.8s, Ease: easeInOut",
+        "trigger": "scroll",
+        "end_state": "All buckets are filled sequentially depending on total cash flow volume."
+      },
+      "widget_package": {
+        "type": "Waterfall",
+        "config": {
+          "label": "Tranche Waterfall Simulator",
+          "inputs": [
+            {
+              "name": "Monthly Cash Flow ($K)",
+              "min": 10,
+              "max": 200,
+              "default": 100
+            },
+            {
+              "name": "Senior Debt Requirement ($K)",
+              "min": 40,
+              "max": 80,
+              "default": 60
+            },
+            {
+              "name": "Mezz Debt Requirement ($K)",
+              "min": 10,
+              "max": 30,
+              "default": 20
+            }
+          ],
+          "outputs": [
+            "Equity Payout ($K)"
+          ],
+          "insight": "If monthly cash flow drops below the senior and mezzanine requirements, the equity tranche is instantly wiped out."
+        }
+      },
+      "misconception_package": {
+        "mistakes": [
+          "Assuming all tranches have the same maturity. Senior tranches typically pay down much faster than junior tranches.",
+          "Thinking equity investors receive a fixed interest rate. They receive residual cash flow, which is highly volatile."
+        ]
+      },
+      "interview_package": {
+        "question": "What is the purpose of tranching and how does it work?",
+        "answer": "Tranching is the structural slicing of a securitization pool. Cash flows are paid from the top down (sequential waterfall), while default losses are applied from the bottom up. This allows the SPV to issue AAA-rated securities even when backed by subprime collateral."
+      },
+      "eli5_package": {
+        "analogy": "Imagine a wedding cake with three tiers. The caterer pours juice from the top. The top tier (AAA) fills first and gets saturated. Only when it is full does juice spill to the middle tier (Mezz), and finally to the bottom plate (Equity). If there is only a little juice, the bottom plate gets nothing."
+      },
+      "mba_package": {
+        "description": "Tranching divides the pool's cash flows into classes with distinct risk, return, and maturity profiles. The sequential-pay waterfall dictates that principal payments are directed to senior tranches until retired, while losses are allocated from the bottom up (Equity to Senior).",
+        "takeaways": [
+          {
+            "title": "Sequential Waterfall",
+            "body": "Cash is distributed from top (Senior) to bottom (Equity)."
+          },
+          {
+            "title": "Reverse Loss Flow",
+            "body": "Default impairments are applied from bottom (Equity) to top (Senior)."
+          },
+          {
+            "title": "Risk-Pricing",
+            "body": "Coupons increase as priority level decreases to compensate for risk."
+          }
+        ]
+      },
+      "qa_package": {}
+    },
+    {
+      "scene_type": "advanced",
+      "learning_objective": "Understand how pooling mezzanine tranches creates new AAA ratings.",
+      "transition_package": {
+        "story": "What happens to the mezzanine tranches that banks struggle to sell? They pool them together into a new entity and tranche them AGAIN. This is a Collateralized Debt Obligation (CDO). By re-tranching BBB assets, they magically create new AAA tranches. This compounding of leverage and complexity was the catalyst for the 2008 crisis."
+      },
+      "formula_package": {},
+      "illustration_package": {
+        "goal": "Show multiple mezzanine boxes flowing into a new stack.",
+        "objects": [
+          "Mezzanine boxes",
+          "CDO SPV Box",
+          "New CDO tranches"
+        ],
+        "composition": "Multiple BBB inputs entering a central CDO processor, emerging as a new stacked column with a new AAA top.",
+        "focus": "The re-tranching processor."
+      },
+      "diagram_package": {},
+      "animation_package": {
+        "primitive": "merge",
+        "timing": "Duration: 1.5s",
+        "trigger": "scroll",
+        "end_state": "The BBB blocks fuse together to form a new capital structure."
+      },
+      "widget_package": {
+        "type": "Capital Structure Builder",
+        "config": {
+          "label": "CDO Re-Tranching Engine",
+          "inputs": [
+            {
+              "name": "Underlying Correlation (%)",
+              "min": 0,
+              "max": 100,
+              "default": 30
+            },
+            {
+              "name": "Default Stress Rate (%)",
+              "min": 0,
+              "max": 30,
+              "default": 10
+            }
+          ],
+          "outputs": [
+            "Implied AAA Tranche Impairment (%)"
+          ],
+          "insight": "When defaults correlate (approach 100%), the diversification benefit vanishes, completely wiping out the senior CDO tranche."
+        }
+      },
+      "misconception_package": {
+        "mistakes": [
+          "Assuming CDO diversification works under systemic crisis conditions, when default correlations converge to 1.0.",
+          "Treating a CDO as identical to a simple MBS, ignoring the multi-layered leverage."
+        ]
+      },
+      "interview_package": {
+        "question": "What is a CDO and how did it contribute to the 2008 financial crisis?",
+        "answer": "A CDO pools multiple debt tranches and re-slices them into new tranches. In the lead-up to 2008, CDOs bought BBB-rated subprime MBS tranches and re-tranched them to create new AAA bonds. When correlation assumptions failed, these AAA CDO tranches suffered near-total write-downs."
+      },
+      "eli5_package": {
+        "analogy": "Imagine taking the leftover, slightly bruised apples from 10 different boxes, putting them into a new crate, and saying 'If we arrange them nicely, the top layer is fresh AAA grade.' It looks nice on top, but the whole pile is still made of bruised apples."
+      },
+      "mba_package": {
+        "description": "A CDO is a structured asset-backed security backed by a collateral pool of other debt obligations (often ABS or MBS mezzanine tranches). Through diversification assumptions and mathematical modeling, CDO issuers structure a senior tranche rated AAA, even when the underlying collateral is entirely BBB or BB rated.",
+        "takeaways": [
+          {
+            "title": "Structured Leverage",
+            "body": "Slicing already-tranched risk, compounding structural complexity."
+          },
+          {
+            "title": "Correlation Risk",
+            "body": "CDO ratings rely on the assumption that underlying defaults are independent."
+          },
+          {
+            "title": "Systemic Transmission",
+            "body": "Opacity and false rating security created the systemic failure points of 2008."
+          }
+        ]
+      },
+      "qa_package": {}
+    }
+  ]
+}

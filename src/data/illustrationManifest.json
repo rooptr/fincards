@@ -1,0 +1,3761 @@
+{
+  "styleLock": {
+    "renderer": "svg-ink",
+    "lineWeight": 4,
+    "palette": [
+      "#1d1d1f",
+      "#0071e3",
+      "#ff9f0a"
+    ],
+    "composition": "single protagonist or mechanism, minimal background, one prop at display size",
+    "frameRate": "low-frame",
+    "resolution": "display-size",
+    "generation": "pregenerated-static-content"
+  },
+  "topics": [
+    {
+      "id": "capital_structure_optimal_leve",
+      "hero": {
+        "asset": "topic-capital_structure_optimal_leve-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "modigliani_miller_theorem_with",
+      "hero": {
+        "asset": "topic-modigliani_miller_theorem_with-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "trade_off_theory_of_capital_st",
+      "hero": {
+        "asset": "topic-trade_off_theory_of_capital_st-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pecking_order_theory",
+      "hero": {
+        "asset": "topic-pecking_order_theory-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "agency_costs_of_debt_and_equit",
+      "hero": {
+        "asset": "topic-agency_costs_of_debt_and_equit-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cost_of_capital_wacc",
+      "hero": {
+        "asset": "topic-cost_of_capital_wacc-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "wacc_formula_components",
+      "hero": {
+        "asset": "topic-wacc_formula_components-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cost_of_equity_capm",
+      "hero": {
+        "asset": "topic-cost_of_equity_capm-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "risk_free_rate_selection_tenor",
+      "hero": {
+        "asset": "topic-risk_free_rate_selection_tenor-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "beta_levered_vs_unlevered",
+      "hero": {
+        "asset": "topic-beta_levered_vs_unlevered-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "equity_risk_premium_erp_estima",
+      "hero": {
+        "asset": "topic-equity_risk_premium_erp_estima-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cost_of_debt",
+      "hero": {
+        "asset": "topic-cost_of_debt-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pre_tax_cost_of_debt_estimatio",
+      "hero": {
+        "asset": "topic-pre_tax_cost_of_debt_estimatio-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tax_shield_mechanics_post_tax_",
+      "hero": {
+        "asset": "topic-tax_shield_mechanics_post_tax_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "capital_weighting_target_vs_cu",
+      "hero": {
+        "asset": "topic-capital_weighting_target_vs_cu-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "capital_budgeting",
+      "hero": {
+        "asset": "topic-capital_budgeting-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "net_present_value_npv",
+      "hero": {
+        "asset": "topic-net_present_value_npv-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "internal_rate_of_return_irr",
+      "hero": {
+        "asset": "topic-internal_rate_of_return_irr-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "npv_vs_irr_conflicts_reinvestm",
+      "hero": {
+        "asset": "topic-npv_vs_irr_conflicts_reinvestm-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "payback_period_and_discounted_",
+      "hero": {
+        "asset": "topic-payback_period_and_discounted_-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "profitability_index",
+      "hero": {
+        "asset": "topic-profitability_index-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mutually_exclusive_vs_independ",
+      "hero": {
+        "asset": "topic-mutually_exclusive_vs_independ-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "working_capital_management",
+      "hero": {
+        "asset": "topic-working_capital_management-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cash_conversion_cycle_ccc",
+      "hero": {
+        "asset": "topic-cash_conversion_cycle_ccc-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "days_sales_outstanding_dso_rec",
+      "hero": {
+        "asset": "topic-days_sales_outstanding_dso_rec-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "days_inventory_outstanding_dio",
+      "hero": {
+        "asset": "topic-days_inventory_outstanding_dio-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "days_payable_outstanding_dpo_p",
+      "hero": {
+        "asset": "topic-days_payable_outstanding_dpo_p-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dividend_policy",
+      "hero": {
+        "asset": "topic-dividend_policy-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dividend_types_stable_residual",
+      "hero": {
+        "asset": "topic-dividend_types_stable_residual-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dividend_signaling_theory",
+      "hero": {
+        "asset": "topic-dividend_signaling_theory-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dividends_vs_share_buybacks_ep",
+      "hero": {
+        "asset": "topic-dividends_vs_share_buybacks_ep-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "stock_market_issuance_corporat",
+      "hero": {
+        "asset": "topic-stock_market_issuance_corporat-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "primary_vs_secondary_market_di",
+      "hero": {
+        "asset": "topic-primary_vs_secondary_market_di-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "initial_public_offering_ipo_vs",
+      "hero": {
+        "asset": "topic-initial_public_offering_ipo_vs-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "offer_for_sale_ofs_mechanics",
+      "hero": {
+        "asset": "topic-offer_for_sale_ofs_mechanics-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bonus_shares_vs_stock_splits",
+      "hero": {
+        "asset": "topic-bonus_shares_vs_stock_splits-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rights_issue_mechanics",
+      "hero": {
+        "asset": "topic-rights_issue_mechanics-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ma_and_business_restructuring",
+      "hero": {
+        "asset": "topic-ma_and_business_restructuring-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "synergy_types_revenue_synergie",
+      "hero": {
+        "asset": "topic-synergy_types_revenue_synergie-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "accretion_dilution_analysis_ep",
+      "hero": {
+        "asset": "topic-accretion_dilution_analysis_ep-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "why_accretive_deals_are_not_in",
+      "hero": {
+        "asset": "topic-why_accretive_deals_are_not_in-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "deal_structuring_stock_vs_cash",
+      "hero": {
+        "asset": "topic-deal_structuring_stock_vs_cash-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "takeover_dynamics_hostile_vs_f",
+      "hero": {
+        "asset": "topic-takeover_dynamics_hostile_vs_f-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "defense_mechanisms_poison_pill",
+      "hero": {
+        "asset": "topic-defense_mechanisms_poison_pill-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "corporate_structures_joint_ven",
+      "hero": {
+        "asset": "topic-corporate_structures_joint_ven-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "venture_capital_startup_termin",
+      "hero": {
+        "asset": "topic-venture_capital_startup_termin-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_equity_pe_vs_venture_c",
+      "hero": {
+        "asset": "topic-private_equity_pe_vs_venture_c-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "esop_employee_stock_ownership_",
+      "hero": {
+        "asset": "topic-esop_employee_stock_ownership_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "financial_health_burn_rate_vs_",
+      "hero": {
+        "asset": "topic-financial_health_burn_rate_vs_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "valuation_stages_pre_seed_seed",
+      "hero": {
+        "asset": "topic-valuation_stages_pre_seed_seed-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "unicorn_vs_decacorn_status_def",
+      "hero": {
+        "asset": "topic-unicorn_vs_decacorn_status_def-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "banking_pe_am_basics",
+      "hero": {
+        "asset": "topic-banking_pe_am_basics-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "investment_banking_analyst_wor",
+      "hero": {
+        "asset": "topic-investment_banking_analyst_wor-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_equity_associate_workf",
+      "hero": {
+        "asset": "topic-private_equity_associate_workf-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "asset_management_analyst_workf",
+      "hero": {
+        "asset": "topic-asset_management_analyst_workf-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "buy_side_vs_sell_side_distinct",
+      "hero": {
+        "asset": "topic-buy_side_vs_sell_side_distinct-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "income_statement_is_profit_los",
+      "hero": {
+        "asset": "topic-income_statement_is_profit_los-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "structure_revenuetop_line_down",
+      "hero": {
+        "asset": "topic-structure_revenuetop_line_down-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "above_the_line_vs_below_the_li",
+      "hero": {
+        "asset": "topic-above_the_line_vs_below_the_li-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "balance_sheet_bs",
+      "hero": {
+        "asset": "topic-balance_sheet_bs-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "structure_assets_liabilities_e",
+      "hero": {
+        "asset": "topic-structure_assets_liabilities_e-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_vs_non_current_classif",
+      "hero": {
+        "asset": "topic-current_vs_non_current_classif-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cash_flow_statement_cfs",
+      "hero": {
+        "asset": "topic-cash_flow_statement_cfs-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "operating_cash_flow_cfo___dire",
+      "hero": {
+        "asset": "topic-operating_cash_flow_cfo___dire-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "investing_cash_flow_cfi",
+      "hero": {
+        "asset": "topic-investing_cash_flow_cfi-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "financing_cash_flow_cff",
+      "hero": {
+        "asset": "topic-financing_cash_flow_cff-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "common_traps_non_cash_expenses",
+      "hero": {
+        "asset": "topic-common_traps_non_cash_expenses-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "3_statement_interlinkages",
+      "hero": {
+        "asset": "topic-3_statement_interlinkages-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "depreciation_cascade_is_cf_bs",
+      "hero": {
+        "asset": "topic-depreciation_cascade_is_cf_bs-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "working_capital_change_cascade",
+      "hero": {
+        "asset": "topic-working_capital_change_cascade-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "debt_issuancerepayment_cascade",
+      "hero": {
+        "asset": "topic-debt_issuancerepayment_cascade-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ebitda_vs_ebit_vs_fcf",
+      "hero": {
+        "asset": "topic-ebitda_vs_ebit_vs_fcf-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "da_add_back_logic",
+      "hero": {
+        "asset": "topic-da_add_back_logic-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_capex_exclusion_problem_in",
+      "hero": {
+        "asset": "topic-the_capex_exclusion_problem_in-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "why_ebitda_is_a_flawed_cash_pr",
+      "hero": {
+        "asset": "topic-why_ebitda_is_a_flawed_cash_pr-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ratio_categories_formulas_logi",
+      "hero": {
+        "asset": "topic-ratio_categories_formulas_logi-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "liquidity_current_ratio_quick_",
+      "hero": {
+        "asset": "topic-liquidity_current_ratio_quick_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "leveragesolvency_debt_to_equit",
+      "hero": {
+        "asset": "topic-leveragesolvency_debt_to_equit-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "profitability_gross_margin_ope",
+      "hero": {
+        "asset": "topic-profitability_gross_margin_ope-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dupont_decomposition_3_step_an",
+      "hero": {
+        "asset": "topic-dupont_decomposition_3_step_an-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "efficiency_inventory_turnover_",
+      "hero": {
+        "asset": "topic-efficiency_inventory_turnover_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "valuation_pe_evebitda_pb_ps_di",
+      "hero": {
+        "asset": "topic-valuation_pe_evebitda_pb_ps_di-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "discounted_cash_flow_dcf",
+      "hero": {
+        "asset": "topic-discounted_cash_flow_dcf-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "free_cash_flow_definitions",
+      "hero": {
+        "asset": "topic-free_cash_flow_definitions-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "free_cash_flow_to_firm_fcff_ca",
+      "hero": {
+        "asset": "topic-free_cash_flow_to_firm_fcff_ca-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "free_cash_flow_to_equity_fcfe_",
+      "hero": {
+        "asset": "topic-free_cash_flow_to_equity_fcfe_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "beta_manipulation",
+      "hero": {
+        "asset": "topic-beta_manipulation-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "unlevering_beta_removing_capit",
+      "hero": {
+        "asset": "topic-unlevering_beta_removing_capit-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "relevering_beta_applying_targe",
+      "hero": {
+        "asset": "topic-relevering_beta_applying_targe-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "terminal_value_estimation",
+      "hero": {
+        "asset": "topic-terminal_value_estimation-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "gordon_growth_method_perpetuit",
+      "hero": {
+        "asset": "topic-gordon_growth_method_perpetuit-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "exit_multiple_method_ebitdaebi",
+      "hero": {
+        "asset": "topic-exit_multiple_method_ebitdaebi-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dcf_sensitivities",
+      "hero": {
+        "asset": "topic-dcf_sensitivities-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "impact_of_wacc_variations",
+      "hero": {
+        "asset": "topic-impact_of_wacc_variations-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "impact_of_terminal_growth_rate",
+      "hero": {
+        "asset": "topic-impact_of_terminal_growth_rate-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "interview_defense_tactics",
+      "hero": {
+        "asset": "topic-interview_defense_tactics-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "defending_aggressive_vs_conser",
+      "hero": {
+        "asset": "topic-defending_aggressive_vs_conser-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "common_dcf_pitfalls_double_cou",
+      "hero": {
+        "asset": "topic-common_dcf_pitfalls_double_cou-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "comparable_company_analysis_tr",
+      "hero": {
+        "asset": "topic-comparable_company_analysis_tr-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "peer_set_construction_logic_si",
+      "hero": {
+        "asset": "topic-peer_set_construction_logic_si-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "multiple_selection_rationale",
+      "hero": {
+        "asset": "topic-multiple_selection_rationale-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "when_to_use_evebitda_vs_pe",
+      "hero": {
+        "asset": "topic-when_to_use_evebitda_vs_pe-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "industry_specific_multiples_ev",
+      "hero": {
+        "asset": "topic-industry_specific_multiples_ev-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "calendarization_matching_fisca",
+      "hero": {
+        "asset": "topic-calendarization_matching_fisca-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ltm_last_twelve_months_vs_ntm_",
+      "hero": {
+        "asset": "topic-ltm_last_twelve_months_vs_ntm_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "outlier_normalization_non_recu",
+      "hero": {
+        "asset": "topic-outlier_normalization_non_recu-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "precedent_transaction_analysis",
+      "hero": {
+        "asset": "topic-precedent_transaction_analysis-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "control_premium_mechanics_and_",
+      "hero": {
+        "asset": "topic-control_premium_mechanics_and_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "why_precedent_multiples_exceed",
+      "hero": {
+        "asset": "topic-why_precedent_multiples_exceed-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "synergy_value_inclusion_in_pre",
+      "hero": {
+        "asset": "topic-synergy_value_inclusion_in_pre-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "deal_filters_deal_size_timingc",
+      "hero": {
+        "asset": "topic-deal_filters_deal_size_timingc-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "why_precedents_true_intrinsic_",
+      "hero": {
+        "asset": "topic-why_precedents_true_intrinsic_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "head_to_head_synthesis",
+      "hero": {
+        "asset": "topic-head_to_head_synthesis-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "when_to_favor_dcf_vs_comps_vs_",
+      "hero": {
+        "asset": "topic-when_to_favor_dcf_vs_comps_vs_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "reconciling_conflicting_ranges",
+      "hero": {
+        "asset": "topic-reconciling_conflicting_ranges-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "alternative_valuation_methods",
+      "hero": {
+        "asset": "topic-alternative_valuation_methods-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "asset_based_valuation_net_asse",
+      "hero": {
+        "asset": "topic-asset_based_valuation_net_asse-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "liquidation_value",
+      "hero": {
+        "asset": "topic-liquidation_value-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sum_of_the_parts_sotp_conglome",
+      "hero": {
+        "asset": "topic-sum_of_the_parts_sotp_conglome-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rebasing_share_price_performan",
+      "hero": {
+        "asset": "topic-rebasing_share_price_performan-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "indexing_charts_to_100",
+      "hero": {
+        "asset": "topic-indexing_charts_to_100-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rationale_for_peer_comparison_",
+      "hero": {
+        "asset": "topic-rationale_for_peer_comparison_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "misreading_un_rebased_price_ch",
+      "hero": {
+        "asset": "topic-misreading_un_rebased_price_ch-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bond_mechanics_foundational",
+      "hero": {
+        "asset": "topic-bond_mechanics_foundational-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "face_value_par_vs_coupon_vs_ma",
+      "hero": {
+        "asset": "topic-face_value_par_vs_coupon_vs_ma-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "price_quoting_clean_price_vs_d",
+      "hero": {
+        "asset": "topic-price_quoting_clean_price_vs_d-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "accrued_interest_calculation",
+      "hero": {
+        "asset": "topic-accrued_interest_calculation-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "government_bonds_vs_corporate_",
+      "hero": {
+        "asset": "topic-government_bonds_vs_corporate_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sovereign_bond_characteristics",
+      "hero": {
+        "asset": "topic-sovereign_bond_characteristics-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bond_valuation_yields",
+      "hero": {
+        "asset": "topic-bond_valuation_yields-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pricing_formula_discounting_fu",
+      "hero": {
+        "asset": "topic-pricing_formula_discounting_fu-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "yield_to_maturity_ytm_assumpti",
+      "hero": {
+        "asset": "topic-yield_to_maturity_ytm_assumpti-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "yield_to_call_ytc",
+      "hero": {
+        "asset": "topic-yield_to_call_ytc-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_yield_vs_ytm",
+      "hero": {
+        "asset": "topic-current_yield_vs_ytm-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "duration_convexity",
+      "hero": {
+        "asset": "topic-duration_convexity-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "macaulay_duration",
+      "hero": {
+        "asset": "topic-macaulay_duration-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "modified_duration",
+      "hero": {
+        "asset": "topic-modified_duration-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "duration_as_an_interest_rate_r",
+      "hero": {
+        "asset": "topic-duration_as_an_interest_rate_r-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "convexity_why_duration_alone_u",
+      "hero": {
+        "asset": "topic-convexity_why_duration_alone_u-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "loan_vs_bond_differences",
+      "hero": {
+        "asset": "topic-loan_vs_bond_differences-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "covenants_maintenance_covenant",
+      "hero": {
+        "asset": "topic-covenants_maintenance_covenant-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "security_and_collateral_struct",
+      "hero": {
+        "asset": "topic-security_and_collateral_struct-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tradability_and_liquidity_diff",
+      "hero": {
+        "asset": "topic-tradability_and_liquidity_diff-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pricing_basis_floating_spread_",
+      "hero": {
+        "asset": "topic-pricing_basis_floating_spread_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "syndication_process_lead_arran",
+      "hero": {
+        "asset": "topic-syndication_process_lead_arran-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "interest_rate_structure",
+      "hero": {
+        "asset": "topic-interest_rate_structure-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "term_structure_theories_expect",
+      "hero": {
+        "asset": "topic-term_structure_theories_expect-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "yield_curve_shapes_and_signals",
+      "hero": {
+        "asset": "topic-yield_curve_shapes_and_signals-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "normal_curve_expansion",
+      "hero": {
+        "asset": "topic-normal_curve_expansion-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "inverted_curve_recession_signa",
+      "hero": {
+        "asset": "topic-inverted_curve_recession_signa-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "flat_humped_curve_transition",
+      "hero": {
+        "asset": "topic-flat_humped_curve_transition-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "fisher_equation_real_vs_nomina",
+      "hero": {
+        "asset": "topic-fisher_equation_real_vs_nomina-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "central_bank_policy_rate_trans",
+      "hero": {
+        "asset": "topic-central_bank_policy_rate_trans-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_ratings_agencies",
+      "hero": {
+        "asset": "topic-credit_ratings_agencies-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_full_letter_scale_aaaaaa_t",
+      "hero": {
+        "asset": "topic-the_full_letter_scale_aaaaaa_t-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "investment_grade_ig_vs_high_yi",
+      "hero": {
+        "asset": "topic-investment_grade_ig_vs_high_yi-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_fallen_angel_effect",
+      "hero": {
+        "asset": "topic-the_fallen_angel_effect-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "drivers_of_upgrades_and_downgr",
+      "hero": {
+        "asset": "topic-drivers_of_upgrades_and_downgr-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "issue_vs_issuer_ratings_struct",
+      "hero": {
+        "asset": "topic-issue_vs_issuer_ratings_struct-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rating_outlooks_positivenegati",
+      "hero": {
+        "asset": "topic-rating_outlooks_positivenegati-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "local_indian_rating_agencies_c",
+      "hero": {
+        "asset": "topic-local_indian_rating_agencies_c-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_specific_ratio_analysis",
+      "hero": {
+        "asset": "topic-credit_specific_ratio_analysis-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "leverage_metrics_debtebitda_ne",
+      "hero": {
+        "asset": "topic-leverage_metrics_debtebitda_ne-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "coverage_metrics_interest_cove",
+      "hero": {
+        "asset": "topic-coverage_metrics_interest_cove-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "margin_trends_ebitda_margin_st",
+      "hero": {
+        "asset": "topic-margin_trends_ebitda_margin_st-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rating_agency_methodology_weig",
+      "hero": {
+        "asset": "topic-rating_agency_methodology_weig-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "qualitative_vs_quantitative_ra",
+      "hero": {
+        "asset": "topic-qualitative_vs_quantitative_ra-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "industry_specific_ratio_benchm",
+      "hero": {
+        "asset": "topic-industry_specific_ratio_benchm-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "end_to_end_securitization_proc",
+      "hero": {
+        "asset": "topic-end_to_end_securitization_proc-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "originator_function",
+      "hero": {
+        "asset": "topic-originator_function-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "asset_pooling",
+      "hero": {
+        "asset": "topic-asset_pooling-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "special_purpose_vehicle_spv_ba",
+      "hero": {
+        "asset": "topic-special_purpose_vehicle_spv_ba-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tranching_and_structuring",
+      "hero": {
+        "asset": "topic-tranching_and_structuring-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "issuance_to_investors",
+      "hero": {
+        "asset": "topic-issuance_to_investors-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "servicer_and_master_servicer_r",
+      "hero": {
+        "asset": "topic-servicer_and_master_servicer_r-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "securitization_types",
+      "hero": {
+        "asset": "topic-securitization_types-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "true_sale_vs_synthetic_securit",
+      "hero": {
+        "asset": "topic-true_sale_vs_synthetic_securit-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "asset_backed_securities_abs",
+      "hero": {
+        "asset": "topic-asset_backed_securities_abs-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "auto_loans_collateral_characte",
+      "hero": {
+        "asset": "topic-auto_loans_collateral_characte-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_card_receivables_charac",
+      "hero": {
+        "asset": "topic-credit_card_receivables_charac-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "student_loan_collateral_charac",
+      "hero": {
+        "asset": "topic-student_loan_collateral_charac-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mortgage_backed_securities_mbs",
+      "hero": {
+        "asset": "topic-mortgage_backed_securities_mbs-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "agency_vs_non_agency_mbs",
+      "hero": {
+        "asset": "topic-agency_vs_non_agency_mbs-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "residential_mbs_rmbs",
+      "hero": {
+        "asset": "topic-residential_mbs_rmbs-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "collateral_pool_composition",
+      "hero": {
+        "asset": "topic-collateral_pool_composition-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "prepayment_risk_drivers_refina",
+      "hero": {
+        "asset": "topic-prepayment_risk_drivers_refina-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pass_through_structures_vs_col",
+      "hero": {
+        "asset": "topic-pass_through_structures_vs_col-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "commercial_mbs_cmbs",
+      "hero": {
+        "asset": "topic-commercial_mbs_cmbs-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "extension_risk",
+      "hero": {
+        "asset": "topic-extension_risk-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "prepayment_protections_defeasa",
+      "hero": {
+        "asset": "topic-prepayment_protections_defeasa-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "balloon_payment_refinance_risk",
+      "hero": {
+        "asset": "topic-balloon_payment_refinance_risk-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tranching_waterfall_structures",
+      "hero": {
+        "asset": "topic-tranching_waterfall_structures-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "senior_mezzanine_equity_first_",
+      "hero": {
+        "asset": "topic-senior_mezzanine_equity_first_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sequential_pay_structure_vs_pr",
+      "hero": {
+        "asset": "topic-sequential_pay_structure_vs_pr-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_enhancement_types",
+      "hero": {
+        "asset": "topic-credit_enhancement_types-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "subordination",
+      "hero": {
+        "asset": "topic-subordination-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "overcollateralization_oc",
+      "hero": {
+        "asset": "topic-overcollateralization_oc-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "excess_spread",
+      "hero": {
+        "asset": "topic-excess_spread-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "reserve_accounts_cash_flow_tra",
+      "hero": {
+        "asset": "topic-reserve_accounts_cash_flow_tra-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "key_structural_risks",
+      "hero": {
+        "asset": "topic-key_structural_risks-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "prepayment_risk",
+      "hero": {
+        "asset": "topic-prepayment_risk-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_default_risk",
+      "hero": {
+        "asset": "topic-credit_default_risk-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "liquidity_risk",
+      "hero": {
+        "asset": "topic-liquidity_risk-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "role_of_rating_agencies_in_str",
+      "hero": {
+        "asset": "topic-role_of_rating_agencies_in_str-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "evaluating_asset_pool_default_",
+      "hero": {
+        "asset": "topic-evaluating_asset_pool_default_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "stress_testing_waterfall_struc",
+      "hero": {
+        "asset": "topic-stress_testing_waterfall_struc-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "forwards_vs_futures",
+      "hero": {
+        "asset": "topic-forwards_vs_futures-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mechanics_and_settlement",
+      "hero": {
+        "asset": "topic-mechanics_and_settlement-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "margining_initial_and_maintena",
+      "hero": {
+        "asset": "topic-margining_initial_and_maintena-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "standardization_and_exchange_t",
+      "hero": {
+        "asset": "topic-standardization_and_exchange_t-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "options",
+      "hero": {
+        "asset": "topic-options-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "call_options_vs_put_options",
+      "hero": {
+        "asset": "topic-call_options_vs_put_options-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "payoff_diagrams",
+      "hero": {
+        "asset": "topic-payoff_diagrams-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "intrinsic_value_vs_time_value",
+      "hero": {
+        "asset": "topic-intrinsic_value_vs_time_value-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_greeks_conceptual_delta_ga",
+      "hero": {
+        "asset": "topic-the_greeks_conceptual_delta_ga-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "swaps",
+      "hero": {
+        "asset": "topic-swaps-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "interest_rate_swaps_fixed_for_",
+      "hero": {
+        "asset": "topic-interest_rate_swaps_fixed_for_-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "currency_swaps",
+      "hero": {
+        "asset": "topic-currency_swaps-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_default_swaps_cds",
+      "hero": {
+        "asset": "topic-credit_default_swaps_cds-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mechanics_protection_buyer_vs_",
+      "hero": {
+        "asset": "topic-mechanics_protection_buyer_vs_-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cds_spreads_as_a_proxy_for_cre",
+      "hero": {
+        "asset": "topic-cds_spreads_as_a_proxy_for_cre-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "market_implied_default_probabi",
+      "hero": {
+        "asset": "topic-market_implied_default_probabi-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "hedging_vs_speculation_use_cas",
+      "hero": {
+        "asset": "topic-hedging_vs_speculation_use_cas-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "inflation_dynamics",
+      "hero": {
+        "asset": "topic-inflation_dynamics-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "core_vs_headline_inflation_def",
+      "hero": {
+        "asset": "topic-core_vs_headline_inflation_def-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "demand_pull_vs_cost_push_infla",
+      "hero": {
+        "asset": "topic-demand_pull_vs_cost_push_infla-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "inflation_targeting_frameworks",
+      "hero": {
+        "asset": "topic-inflation_targeting_frameworks-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "stagflation_deflation_hyperinf",
+      "hero": {
+        "asset": "topic-stagflation_deflation_hyperinf-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cpi_consumer_price_index_vs_wp",
+      "hero": {
+        "asset": "topic-cpi_consumer_price_index_vs_wp-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "central_bank_monetary_policy",
+      "hero": {
+        "asset": "topic-central_bank_monetary_policy-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "reserve_bank_of_india_rbi_func",
+      "hero": {
+        "asset": "topic-reserve_bank_of_india_rbi_func-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "open_market_operations_omo_mec",
+      "hero": {
+        "asset": "topic-open_market_operations_omo_mec-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "quantitative_easing_qe_vs_quan",
+      "hero": {
+        "asset": "topic-quantitative_easing_qe_vs_quan-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "money_supply_indices_m1_m2_m3_",
+      "hero": {
+        "asset": "topic-money_supply_indices_m1_m2_m3_-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "macroeconomic_metrics",
+      "hero": {
+        "asset": "topic-macroeconomic_metrics-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "gross_domestic_product_gdp_exp",
+      "hero": {
+        "asset": "topic-gross_domestic_product_gdp_exp-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "nominal_vs_real_gdp_gdp_deflat",
+      "hero": {
+        "asset": "topic-nominal_vs_real_gdp_gdp_deflat-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "gross_national_product_gnp_vs_",
+      "hero": {
+        "asset": "topic-gross_national_product_gnp_vs_-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "balance_of_payments_bop_and_cu",
+      "hero": {
+        "asset": "topic-balance_of_payments_bop_and_cu-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "fiscal_deficit_vs_revenue_defi",
+      "hero": {
+        "asset": "topic-fiscal_deficit_vs_revenue_defi-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "foreign_direct_investment_fdi_",
+      "hero": {
+        "asset": "topic-foreign_direct_investment_fdi_-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "subsidies_and_economic_impact",
+      "hero": {
+        "asset": "topic-subsidies_and_economic_impact-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "business_cycle_phases",
+      "hero": {
+        "asset": "topic-business_cycle_phases-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "expansion_peak_contraction_tro",
+      "hero": {
+        "asset": "topic-expansion_peak_contraction_tro-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "demand_supply",
+      "hero": {
+        "asset": "topic-demand_supply-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "law_of_demand_law_of_supply",
+      "hero": {
+        "asset": "topic-law_of_demand_law_of_supply-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "shifts_in_the_curve_vs_movemen",
+      "hero": {
+        "asset": "topic-shifts_in_the_curve_vs_movemen-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "elasticity",
+      "hero": {
+        "asset": "topic-elasticity-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "price_elasticity_of_demand_sup",
+      "hero": {
+        "asset": "topic-price_elasticity_of_demand_sup-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "factors_affecting_elasticity_s",
+      "hero": {
+        "asset": "topic-factors_affecting_elasticity_s-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "opportunity_cost",
+      "hero": {
+        "asset": "topic-opportunity_cost-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "marginal_analysis",
+      "hero": {
+        "asset": "topic-marginal_analysis-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "marginal_cost_mc_vs_marginal_r",
+      "hero": {
+        "asset": "topic-marginal_cost_mc_vs_marginal_r-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "profit_maximization_rule_mr_mc",
+      "hero": {
+        "asset": "topic-profit_maximization_rule_mr_mc-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "market_equilibrium",
+      "hero": {
+        "asset": "topic-market_equilibrium-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "market_structures",
+      "hero": {
+        "asset": "topic-market_structures-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "perfect_competition",
+      "hero": {
+        "asset": "topic-perfect_competition-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "monopoly",
+      "hero": {
+        "asset": "topic-monopoly-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "oligopoly",
+      "hero": {
+        "asset": "topic-oligopoly-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "monopolistic_competition",
+      "hero": {
+        "asset": "topic-monopolistic_competition-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "welfare_economics",
+      "hero": {
+        "asset": "topic-welfare_economics-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "consumer_surplus",
+      "hero": {
+        "asset": "topic-consumer_surplus-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "producer_surplus",
+      "hero": {
+        "asset": "topic-producer_surplus-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "navigation_shortcuts",
+      "hero": {
+        "asset": "topic-navigation_shortcuts-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ctrlarrow_ctrlshiftl_f4_altesv",
+      "hero": {
+        "asset": "topic-ctrlarrow_ctrlshiftl_f4_altesv-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "core_functions",
+      "hero": {
+        "asset": "topic-core_functions-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "vlookup_xlookup_index_match",
+      "hero": {
+        "asset": "topic-vlookup_xlookup_index_match-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sumifs_countifs",
+      "hero": {
+        "asset": "topic-sumifs_countifs-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "iferror_offset",
+      "hero": {
+        "asset": "topic-iferror_offset-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "modeling_conventions",
+      "hero": {
+        "asset": "topic-modeling_conventions-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "blue_hardcode_black_formula_gr",
+      "hero": {
+        "asset": "topic-blue_hardcode_black_formula_gr-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "circular_references",
+      "hero": {
+        "asset": "topic-circular_references-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "identifying_circular_logic_int",
+      "hero": {
+        "asset": "topic-identifying_circular_logic_int-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "iterative_calculation_settings",
+      "hero": {
+        "asset": "topic-iterative_calculation_settings-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "data_tables_sensitivity",
+      "hero": {
+        "asset": "topic-data_tables_sensitivity-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "1_way_and_2_way_data_table_con",
+      "hero": {
+        "asset": "topic-1_way_and_2_way_data_table_con-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "model_auditing",
+      "hero": {
+        "asset": "topic-model_auditing-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tracing_precedents_and_depende",
+      "hero": {
+        "asset": "topic-tracing_precedents_and_depende-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "detecting_buried_hardcodes",
+      "hero": {
+        "asset": "topic-detecting_buried_hardcodes-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "compound_annual_growth_rate_ca",
+      "hero": {
+        "asset": "topic-compound_annual_growth_rate_ca-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "formula_mechanics",
+      "hero": {
+        "asset": "topic-formula_mechanics-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "period_counting_traps",
+      "hero": {
+        "asset": "topic-period_counting_traps-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cagr_vs_average_annual_growth_",
+      "hero": {
+        "asset": "topic-cagr_vs_average_annual_growth_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "guesstimates_structured_thinki",
+      "hero": {
+        "asset": "topic-guesstimates_structured_thinki-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "top_down_vs_bottom_up_market_s",
+      "hero": {
+        "asset": "topic-top_down_vs_bottom_up_market_s-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "structuring_verbal_answers_und",
+      "hero": {
+        "asset": "topic-structuring_verbal_answers_und-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sanity_checking_final_outputs_",
+      "hero": {
+        "asset": "topic-sanity_checking_final_outputs_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "handling_vague_or_ambiguous_pr",
+      "hero": {
+        "asset": "topic-handling_vague_or_ambiguous_pr-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "common_categories_market_sizin",
+      "hero": {
+        "asset": "topic-common_categories_market_sizin-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "business_model",
+      "hero": {
+        "asset": "topic-business_model-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "issuer_pays_revenue_model",
+      "hero": {
+        "asset": "topic-issuer_pays_revenue_model-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "subscriber_pays_alternative_mo",
+      "hero": {
+        "asset": "topic-subscriber_pays_alternative_mo-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "conflict_of_interest_debates_s",
+      "hero": {
+        "asset": "topic-conflict_of_interest_debates_s-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rating_scale_mechanics",
+      "hero": {
+        "asset": "topic-rating_scale_mechanics-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "long_term_scales_vs_short_term",
+      "hero": {
+        "asset": "topic-long_term_scales_vs_short_term-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "global_scale_vs_national_scale",
+      "hero": {
+        "asset": "topic-global_scale_vs_national_scale-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "notching_adjustments_adjusted_",
+      "hero": {
+        "asset": "topic-notching_adjustments_adjusted_-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "regulatory_framework",
+      "hero": {
+        "asset": "topic-regulatory_framework-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "nationally_recognized_statisti",
+      "hero": {
+        "asset": "topic-nationally_recognized_statisti-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "dodd_frank_implications_and_po",
+      "hero": {
+        "asset": "topic-dodd_frank_implications_and_po-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "historical_context",
+      "hero": {
+        "asset": "topic-historical_context-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "role_in_the_2008_financial_cri",
+      "hero": {
+        "asset": "topic-role_in_the_2008_financial_cri-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "criticisms_and_methodology_cha",
+      "hero": {
+        "asset": "topic-criticisms_and_methodology_cha-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "corporate_structure",
+      "hero": {
+        "asset": "topic-corporate_structure-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "moodys_investors_service_mis_v",
+      "hero": {
+        "asset": "topic-moodys_investors_service_mis_v-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "core_business_offerings",
+      "hero": {
+        "asset": "topic-core_business_offerings-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_credit_and_alternative",
+      "hero": {
+        "asset": "topic-private_credit_and_alternative-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tech_enabled_valuation_service",
+      "hero": {
+        "asset": "topic-tech_enabled_valuation_service-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "portfolio_monitoring_as_a_serv",
+      "hero": {
+        "asset": "topic-portfolio_monitoring_as_a_serv-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "operational_capabilities",
+      "hero": {
+        "asset": "topic-operational_capabilities-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "automated_data_ingestion_valid",
+      "hero": {
+        "asset": "topic-automated_data_ingestion_valid-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "covenant_risk_monitoring_autom",
+      "hero": {
+        "asset": "topic-covenant_risk_monitoring_autom-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "borrowing_base_management",
+      "hero": {
+        "asset": "topic-borrowing_base_management-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "financial_statement_spreading",
+      "hero": {
+        "asset": "topic-financial_statement_spreading-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "target_client_base",
+      "hero": {
+        "asset": "topic-target_client_base-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_equity_funds_private_d",
+      "hero": {
+        "asset": "topic-private_equity_funds_private_d-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "market_value_proposition",
+      "hero": {
+        "asset": "topic-market_value_proposition-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "solving_data_fragmentation_in_",
+      "hero": {
+        "asset": "topic-solving_data_fragmentation_in_-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "scalability_vs_manual_spreadsh",
+      "hero": {
+        "asset": "topic-scalability_vs_manual_spreadsh-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "tech_enabled_expertise_softwar",
+      "hero": {
+        "asset": "topic-tech_enabled_expertise_softwar-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_rating_industry",
+      "hero": {
+        "asset": "topic-credit_rating_industry-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_big_3_oligopoly_moodys_sp_",
+      "hero": {
+        "asset": "topic-the_big_3_oligopoly_moodys_sp_-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "barriers_to_entry_reputation_r",
+      "hero": {
+        "asset": "topic-barriers_to_entry_reputation_r-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "regulatory_capture_and_relianc",
+      "hero": {
+        "asset": "topic-regulatory_capture_and_relianc-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_credit_industry",
+      "hero": {
+        "asset": "topic-private_credit_industry-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "post_2008_growth_drivers",
+      "hero": {
+        "asset": "topic-post_2008_growth_drivers-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bank_retreat_from_leveraged_le",
+      "hero": {
+        "asset": "topic-bank_retreat_from_leveraged_le-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "direct_lending_vs_syndicated_b",
+      "hero": {
+        "asset": "topic-direct_lending_vs_syndicated_b-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "private_credit_fund_structures",
+      "hero": {
+        "asset": "topic-private_credit_fund_structures-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rbi_monetary_policy_rates_foun",
+      "hero": {
+        "asset": "topic-rbi_monetary_policy_rates_foun-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "repo_rate_reverse_repo_rate_ba",
+      "hero": {
+        "asset": "topic-repo_rate_reverse_repo_rate_ba-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "msf_marginal_standing_facility",
+      "hero": {
+        "asset": "topic-msf_marginal_standing_facility-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "crr_cash_reserve_ratio_vs_slr_",
+      "hero": {
+        "asset": "topic-crr_cash_reserve_ratio_vs_slr_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "indian_banking_system_foundati",
+      "hero": {
+        "asset": "topic-indian_banking_system_foundati-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "public_sector_banks_vs_private",
+      "hero": {
+        "asset": "topic-public_sector_banks_vs_private-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "account_types_savings_account_",
+      "hero": {
+        "asset": "topic-account_types_savings_account_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "non_performing_assets_npas_gro",
+      "hero": {
+        "asset": "topic-non_performing_assets_npas_gro-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "key_banking_ratios_casa_ratio_",
+      "hero": {
+        "asset": "topic-key_banking_ratios_casa_ratio_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "retail_credit_credit_score_emi",
+      "hero": {
+        "asset": "topic-retail_credit_credit_score_emi-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "trade_finance_letter_of_credit",
+      "hero": {
+        "asset": "topic-trade_finance_letter_of_credit-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "payment_gateways_neft_rtgs_imp",
+      "hero": {
+        "asset": "topic-payment_gateways_neft_rtgs_imp-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "financial_regulators_foundatio",
+      "hero": {
+        "asset": "topic-financial_regulators_foundatio-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "reserve_bank_of_india_rbi",
+      "hero": {
+        "asset": "topic-reserve_bank_of_india_rbi-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "securities_and_exchange_board_",
+      "hero": {
+        "asset": "topic-securities_and_exchange_board_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "insurance_regulatory_and_devel",
+      "hero": {
+        "asset": "topic-insurance_regulatory_and_devel-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pension_fund_regulatory_and_de",
+      "hero": {
+        "asset": "topic-pension_fund_regulatory_and_de-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "competition_commission_of_indi",
+      "hero": {
+        "asset": "topic-competition_commission_of_indi-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "nabard_national_bank_for_agric",
+      "hero": {
+        "asset": "topic-nabard_national_bank_for_agric-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sidbi_small_industries_develop",
+      "hero": {
+        "asset": "topic-sidbi_small_industries_develop-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "stock_indices_definitions",
+      "hero": {
+        "asset": "topic-stock_indices_definitions-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "what_they_represent_and_high_l",
+      "hero": {
+        "asset": "topic-what_they_represent_and_high_l-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "india_sensex_nifty_50",
+      "hero": {
+        "asset": "topic-india_sensex_nifty_50-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "us_dow_jones_sp_500_nasdaq",
+      "hero": {
+        "asset": "topic-us_dow_jones_sp_500_nasdaq-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "global_ftse_100_nikkei_225",
+      "hero": {
+        "asset": "topic-global_ftse_100_nikkei_225-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "investment_wealth_management_f",
+      "hero": {
+        "asset": "topic-investment_wealth_management_f-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mutual_funds_structure_and_net",
+      "hero": {
+        "asset": "topic-mutual_funds_structure_and_net-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "systematic_investment_plan_sip",
+      "hero": {
+        "asset": "topic-systematic_investment_plan_sip-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "exchange_traded_funds_etfs_vs_",
+      "hero": {
+        "asset": "topic-exchange_traded_funds_etfs_vs_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "debt_funds_vs_equity_funds_vs_",
+      "hero": {
+        "asset": "topic-debt_funds_vs_equity_funds_vs_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cagr_vs_xirr_metrics_in_portfo",
+      "hero": {
+        "asset": "topic-cagr_vs_xirr_metrics_in_portfo-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "core_concepts_compounding_dive",
+      "hero": {
+        "asset": "topic-core_concepts_compounding_dive-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "forex_basics",
+      "hero": {
+        "asset": "topic-forex_basics-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "forex_reserves_definition_and_",
+      "hero": {
+        "asset": "topic-forex_reserves_definition_and_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "drivers_of_currency_appreciati",
+      "hero": {
+        "asset": "topic-drivers_of_currency_appreciati-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "taxation_basics",
+      "hero": {
+        "asset": "topic-taxation_basics-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "gst_structure_slabs_igstcgstsg",
+      "hero": {
+        "asset": "topic-gst_structure_slabs_igstcgstsg-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "corporate_tax_rate_basics",
+      "hero": {
+        "asset": "topic-corporate_tax_rate_basics-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "income_tax_slabs",
+      "hero": {
+        "asset": "topic-income_tax_slabs-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "international_bodies_foundatio",
+      "hero": {
+        "asset": "topic-international_bodies_foundatio-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "international_monetary_fund_im",
+      "hero": {
+        "asset": "topic-international_monetary_fund_im-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "world_bank",
+      "hero": {
+        "asset": "topic-world_bank-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "world_trade_organization_wto",
+      "hero": {
+        "asset": "topic-world_trade_organization_wto-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "asian_development_bank_adb",
+      "hero": {
+        "asset": "topic-asian_development_bank_adb-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "g20_brics_forums",
+      "hero": {
+        "asset": "topic-g20_brics_forums-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "corporate_giants",
+      "hero": {
+        "asset": "topic-corporate_giants-hero.svg",
+        "metaphor": "feedback_loop"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "largest_companies_by_market_ca",
+      "hero": {
+        "asset": "topic-largest_companies_by_market_ca-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "financial_institutions",
+      "hero": {
+        "asset": "topic-financial_institutions-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_commercial_and_investmen",
+      "hero": {
+        "asset": "topic-major_commercial_and_investmen-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "the_big_four_accounting_firms_",
+      "hero": {
+        "asset": "topic-the_big_four_accounting_firms_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rating_agencies_exchanges",
+      "hero": {
+        "asset": "topic-rating_agencies_exchanges-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "global_rating_agencies_big_3",
+      "hero": {
+        "asset": "topic-global_rating_agencies_big_3-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "indian_domestic_rating_agencie",
+      "hero": {
+        "asset": "topic-indian_domestic_rating_agencie-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_stock_exchanges_nyse_nas",
+      "hero": {
+        "asset": "topic-major_stock_exchanges_nyse_nas-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "sector_awareness_name_recognit",
+      "hero": {
+        "asset": "topic-sector_awareness_name_recognit-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_it_companies_tcs_infosys",
+      "hero": {
+        "asset": "topic-major_it_companies_tcs_infosys-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_manufacturing_companies_",
+      "hero": {
+        "asset": "topic-major_manufacturing_companies_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_fmcg_companies_hul_itc_n",
+      "hero": {
+        "asset": "topic-major_fmcg_companies_hul_itc_n-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_pharma_auto_e_commerce_f",
+      "hero": {
+        "asset": "topic-major_pharma_auto_e_commerce_f-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "macro_leaders_tracker",
+      "hero": {
+        "asset": "topic-macro_leaders_tracker-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_rbi_governor_sebi_chai",
+      "hero": {
+        "asset": "topic-current_rbi_governor_sebi_chai-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "interest_rates_tracker",
+      "hero": {
+        "asset": "topic-interest_rates_tracker-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "rbi_repo_rate_reverse_repo_rat",
+      "hero": {
+        "asset": "topic-rbi_repo_rate_reverse_repo_rat-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "us_fed_funds_rate",
+      "hero": {
+        "asset": "topic-us_fed_funds_rate-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ecb_deposit_rate",
+      "hero": {
+        "asset": "topic-ecb_deposit_rate-hero.svg",
+        "metaphor": "risk_ticker"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bank_of_england_rate",
+      "hero": {
+        "asset": "topic-bank_of_england_rate-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "market_indicators_tracker",
+      "hero": {
+        "asset": "topic-market_indicators_tracker-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_levels_sensex_nifty_50",
+      "hero": {
+        "asset": "topic-current_levels_sensex_nifty_50-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_levels_dow_jones_nasda",
+      "hero": {
+        "asset": "topic-current_levels_dow_jones_nasda-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "currencies_commodities_tracker",
+      "hero": {
+        "asset": "topic-currencies_commodities_tracker-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "forex_rates_usdinr_eurinr_gbpi",
+      "hero": {
+        "asset": "topic-forex_rates_usdinr_eurinr_gbpi-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "commodities_gold_price_silver_",
+      "hero": {
+        "asset": "topic-commodities_gold_price_silver_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "macroeconomy_govt_tracker",
+      "hero": {
+        "asset": "topic-macroeconomy_govt_tracker-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "gdp_growth_rate_india_us",
+      "hero": {
+        "asset": "topic-gdp_growth_rate_india_us-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cpi_wpi_inflation_rates",
+      "hero": {
+        "asset": "topic-cpi_wpi_inflation_rates-hero.svg",
+        "metaphor": "branching"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "unemployment_rate_fiscal_defic",
+      "hero": {
+        "asset": "topic-unemployment_rate_fiscal_defic-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "current_corporate_tax_rate_gst",
+      "hero": {
+        "asset": "topic-current_corporate_tax_rate_gst-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "credit_deals_tracker",
+      "hero": {
+        "asset": "topic-credit_deals_tracker-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "high_yield_vs_investment_grade",
+      "hero": {
+        "asset": "topic-high_yield_vs_investment_grade-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "major_sovereign_cds_spreads",
+      "hero": {
+        "asset": "topic-major_sovereign_cds_spreads-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "recent_major_ma_deals_with_syn",
+      "hero": {
+        "asset": "topic-recent_major_ma_deals_with_syn-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "recent_major_ipos",
+      "hero": {
+        "asset": "topic-recent_major_ipos-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "recent_high_profile_defaults_o",
+      "hero": {
+        "asset": "topic-recent_high_profile_defaults_o-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "numbers_algebra_foundations",
+      "hero": {
+        "asset": "topic-numbers_algebra_foundations-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "number_systems_divisibility_ru",
+      "hero": {
+        "asset": "topic-number_systems_divisibility_ru-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "hcf_and_lcm_direct_calculation",
+      "hero": {
+        "asset": "topic-hcf_and_lcm_direct_calculation-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "simplification_decimals_fracti",
+      "hero": {
+        "asset": "topic-simplification_decimals_fracti-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "square_roots_and_cube_roots_es",
+      "hero": {
+        "asset": "topic-square_roots_and_cube_roots_es-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "core_business_arithmetic",
+      "hero": {
+        "asset": "topic-core_business_arithmetic-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "percentages_basic_conversions_",
+      "hero": {
+        "asset": "topic-percentages_basic_conversions_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "profit_and_loss_cost_pricesell",
+      "hero": {
+        "asset": "topic-profit_and_loss_cost_pricesell-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "ratio_proportion_partnership_i",
+      "hero": {
+        "asset": "topic-ratio_proportion_partnership_i-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "averages_age_problems",
+      "hero": {
+        "asset": "topic-averages_age_problems-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "time_speed_distance_work_dynam",
+      "hero": {
+        "asset": "topic-time_speed_distance_work_dynam-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "time_and_work",
+      "hero": {
+        "asset": "topic-time_and_work-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pipes_and_cisterns",
+      "hero": {
+        "asset": "topic-pipes_and_cisterns-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "time_speed_and_distance",
+      "hero": {
+        "asset": "topic-time_speed_and_distance-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "problems_on_trains",
+      "hero": {
+        "asset": "topic-problems_on_trains-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "boats_and_streams",
+      "hero": {
+        "asset": "topic-boats_and_streams-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "commercial_modern_mathematics",
+      "hero": {
+        "asset": "topic-commercial_modern_mathematics-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "simple_interest_compound_inter",
+      "hero": {
+        "asset": "topic-simple_interest_compound_inter-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "alligations_or_mixtures_weight",
+      "hero": {
+        "asset": "topic-alligations_or_mixtures_weight-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "mensuration_area_of_2d_planes_",
+      "hero": {
+        "asset": "topic-mensuration_area_of_2d_planes_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "permutations_combinations_arra",
+      "hero": {
+        "asset": "topic-permutations_combinations_arra-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "probability_coins_dice_playing",
+      "hero": {
+        "asset": "topic-probability_coins_dice_playing-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "advanced_quantitative_miscella",
+      "hero": {
+        "asset": "topic-advanced_quantitative_miscella-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "clocks_angle_between_hands_gai",
+      "hero": {
+        "asset": "topic-clocks_angle_between_hands_gai-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "calendars_odd_days_method_year",
+      "hero": {
+        "asset": "topic-calendars_odd_days_method_year-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "races_and_games_head_starts_li",
+      "hero": {
+        "asset": "topic-races_and_games_head_starts_li-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bankers_discount_true_discount",
+      "hero": {
+        "asset": "topic-bankers_discount_true_discount-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "data_interpretation_di",
+      "hero": {
+        "asset": "topic-data_interpretation_di-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "table_charts_ratio_percentage_",
+      "hero": {
+        "asset": "topic-table_charts_ratio_percentage_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "bar_charts_comparative_visual_",
+      "hero": {
+        "asset": "topic-bar_charts_comparative_visual_-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "line_charts_trending_moving_av",
+      "hero": {
+        "asset": "topic-line_charts_trending_moving_av-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "pie_charts_degree_to_percentag",
+      "hero": {
+        "asset": "topic-pie_charts_degree_to_percentag-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "caselets_venn_diagram_di_sets",
+      "hero": {
+        "asset": "topic-caselets_venn_diagram_di_sets-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "series_analogy_classification",
+      "hero": {
+        "asset": "topic-series_analogy_classification-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "number_series_letter_series_sy",
+      "hero": {
+        "asset": "topic-number_series_letter_series_sy-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "verbal_analogies_classificatio",
+      "hero": {
+        "asset": "topic-verbal_analogies_classificatio-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "analytical_relationship_reason",
+      "hero": {
+        "asset": "topic-analytical_relationship_reason-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "blood_relations_coded_family_t",
+      "hero": {
+        "asset": "topic-blood_relations_coded_family_t-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "direction_sense_test_compass_m",
+      "hero": {
+        "asset": "topic-direction_sense_test_compass_m-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "coding_decoding_letter_shiftin",
+      "hero": {
+        "asset": "topic-coding_decoding_letter_shiftin-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "seating_arrangements_linear_si",
+      "hero": {
+        "asset": "topic-seating_arrangements_linear_si-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "logical_deductions_syllogisms",
+      "hero": {
+        "asset": "topic-logical_deductions_syllogisms-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "syllogisms_standard_2_premise_",
+      "hero": {
+        "asset": "topic-syllogisms_standard_2_premise_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "logical_deduction_testing_vali",
+      "hero": {
+        "asset": "topic-logical_deduction_testing_vali-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "verbal_critical_reasoning_gd_p",
+      "hero": {
+        "asset": "topic-verbal_critical_reasoning_gd_p-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "statement_and_assumption_ident",
+      "hero": {
+        "asset": "topic-statement_and_assumption_ident-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "statement_and_course_of_action",
+      "hero": {
+        "asset": "topic-statement_and_course_of_action-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "statement_and_conclusion_direc",
+      "hero": {
+        "asset": "topic-statement_and_conclusion_direc-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "statement_and_argument_strong_",
+      "hero": {
+        "asset": "topic-statement_and_argument_strong_-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "cause_and_effect_common_cause_",
+      "hero": {
+        "asset": "topic-cause_and_effect_common_cause_-hero.svg",
+        "metaphor": "layers"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "theme_detection_logical_proble",
+      "hero": {
+        "asset": "topic-theme_detection_logical_proble-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "fast_calculation_tricks_percen",
+      "hero": {
+        "asset": "topic-fast_calculation_tricks_percen-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "digital_sum_and_divisibility_s",
+      "hero": {
+        "asset": "topic-digital_sum_and_divisibility_s-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "topic_specific_shortcuts_eg_al",
+      "hero": {
+        "asset": "topic-topic_specific_shortcuts_eg_al-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "elimination_techniques_and_tra",
+      "hero": {
+        "asset": "topic-elimination_techniques_and_tra-hero.svg",
+        "metaphor": "flow"
+      },
+      "subtopics": []
+    },
+    {
+      "id": "time_allocation_strategy_for_t",
+      "hero": {
+        "asset": "topic-time_allocation_strategy_for_t-hero.svg",
+        "metaphor": "time_decay"
+      },
+      "subtopics": []
+    }
+  ]
+}
