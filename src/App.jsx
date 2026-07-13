@@ -102,9 +102,11 @@ export default function App() {
 
       // Dynamic mapping & scrubbing
       const scrubbedDeck = combinedDeck.map(card => {
-        let category = card.category;
-        if (category === 'From News App' || category === 'from news app' || category === 'Aptitude Quiz' || category === 'Apti Quiz' || category === 'apti quiz') {
-          category = 'Aptitude';
+        let category = card.category || '';
+        const catLower = category.toLowerCase();
+        
+        if (catLower === 'from news app' || catLower === 'aptitude quiz' || catLower === 'apti quiz') {
+          category = 'From News App';
         }
 
         let answer = card.answer || '';
@@ -119,10 +121,15 @@ export default function App() {
 
         let source = card.source || '';
         if (source.toLowerCase().includes('indiabix')) {
-          source = source.replace(/indiabix/gi, 'Aptitude').trim();
+          source = source.replace(/indiabix/gi, 'From News App').trim();
         }
 
-        return { ...card, category, answer, explanation, source };
+        let subcategory = card.subcategory;
+        if (category === 'Aptitude' && !subcategory) {
+          subcategory = 'Quantitative'; // Fallback so they don't disappear in the UI menu
+        }
+
+        return { ...card, category, subcategory, answer, explanation, source };
       });
 
       const savedCustom = (() => {
