@@ -109,22 +109,12 @@ export default function App() {
 
         let answer = card.answer || '';
         if (answer.toLowerCase().includes('indiabix')) {
-          answer = answer
-            .replace(/in\s+indiabix/gi, '')
-            .replace(/from\s+indiabix/gi, '')
-            .replace(/indiabix/gi, '')
-            .replace(/\s+/g, ' ')
-            .trim();
+          answer = answer.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
         }
 
         let explanation = card.explanation || '';
         if (explanation.toLowerCase().includes('indiabix')) {
-          explanation = explanation
-            .replace(/in\s+indiabix/gi, '')
-            .replace(/from\s+indiabix/gi, '')
-            .replace(/indiabix/gi, '')
-            .replace(/\s+/g, ' ')
-            .trim();
+          explanation = explanation.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
         }
 
         let source = card.source || '';
@@ -143,11 +133,18 @@ export default function App() {
       
       const progressMap = {};
       if (progressArr && Array.isArray(progressArr)) {
-        progressArr.forEach(item => {
-          progressMap[item.cardId] = item;
-        });
+        progressArr.forEach(item => { progressMap[item.cardId] = item; });
       }
       setProgressData(progressMap);
+      setLoading(false);
+    }).catch(err => {
+      console.error("Initialization error:", err);
+      const savedCustom = (() => {
+        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
+        catch { return []; }
+      })();
+      setMasterDeck([...cardsData, ...savedCustom]);
+      setProgressData({});
       setLoading(false);
     });
   }, []);
