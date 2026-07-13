@@ -116,24 +116,24 @@ export default function App() {
 
       // Dynamic mapping & scrubbing
       const scrubbedDeck = combinedDeck.map(card => {
-        let category = card.category || '';
+        let category = String(card.category || '');
         const catLower = category.toLowerCase();
         
         if (catLower === 'from news app' || catLower === 'aptitude quiz' || catLower === 'apti quiz') {
           category = 'From News App';
         }
 
-        let answer = card.answer || '';
+        let answer = String(card.answer || '');
         if (answer.toLowerCase().includes('indiabix')) {
           answer = answer.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
         }
 
-        let explanation = card.explanation || '';
+        let explanation = String(card.explanation || '');
         if (explanation.toLowerCase().includes('indiabix')) {
           explanation = explanation.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
         }
 
-        let source = card.source || '';
+        let source = String(card.source || '');
         if (source.toLowerCase().includes('indiabix')) {
           source = source.replace(/indiabix/gi, 'From News App').trim();
         }
