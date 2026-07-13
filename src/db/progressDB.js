@@ -8,16 +8,36 @@ const DB_VERSION = 1;
 function getDB() {
   return new Promise((resolve, reject) => {
     const request = indexedDB.open(DB_NAME, DB_VERSION);
+    let resolved = false;
 
-    request.onerror = () => reject(request.error);
+    // Timeout fallback just in case IDB is totally unresponsive
+    const timeoutId = setTimeout(() => {
+      if (!resolved) reject(new Error('IndexedDB open timeout'));
+    }, 3000);
 
-    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => {
+      resolved = true;
+      clearTimeout(timeoutId);
+      reject(request.error);
+    };
+
+    request.onsuccess = () => {
+      resolved = true;
+      clearTimeout(timeoutId);
+      resolve(request.result);
+    };
 
     request.onupgradeneeded = (event) => {
       const db = event.target.result;
       if (!db.objectStoreNames.contains(STORE_NAME)) {
         db.createObjectStore(STORE_NAME, { keyPath: 'cardId' });
       }
+    };
+
+    request.onblocked = () => {
+      resolved = true;
+      clearTimeout(timeoutId);
+      reject(new Error('IndexedDB is blocked by another tab or process'));
     };
   });
 }

@@ -88,7 +88,10 @@ export default function App() {
       .then(res => res.json())
       .catch(() => []);
 
-    const fetchProgress = getAllProgress();
+    const fetchProgress = getAllProgress().catch(err => {
+      console.error("IndexedDB progress fetch failed:", err);
+      return [];
+    });
 
     Promise.all([fetchCards, fetchProgress]).then(([liveCards, progressArr]) => {
       const combinedDeck = [...cardsData];
@@ -145,9 +148,11 @@ export default function App() {
       setMasterDeck([...scrubbedDeck, ...savedCustom]);
       
       const progressMap = {};
-      progressArr.forEach(item => {
-        progressMap[item.cardId] = item;
-      });
+      if (progressArr && Array.isArray(progressArr)) {
+        progressArr.forEach(item => {
+          progressMap[item.cardId] = item;
+        });
+      }
       setProgressData(progressMap);
       setLoading(false);
     });
