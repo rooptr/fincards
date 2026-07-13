@@ -84,83 +84,72 @@ export default function App() {
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec";
     
-    // 1. Unblock UI immediately with local data
-    getAllProgress().then(progressArr => {
-      const progressMap = {};
-      if (progressArr && Array.isArray(progressArr)) {
-        progressArr.forEach(item => progressMap[item.cardId] = item);
-      }
-      setProgressData(progressMap);
+    const fetchCards = fetch(WEBHOOK_URL)
+      .then(res => res.json())
+      .catch(() => []);
 
-      const savedCustom = (() => {
-        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
-        catch { return []; }
-      })();
-      
-      // Initial scrub for local cards
-      const scrubbedLocal = [...cardsData].map(card => {
-        let category = card.category;
-        if (category === 'From News App' || category === 'from news app' || category === 'Aptitude Quiz' || category === 'Apti Quiz' || category === 'apti quiz') category = 'Aptitude';
-        return { ...card, category };
-      });
-
-      setMasterDeck([...scrubbedLocal, ...savedCustom]);
-      setLoading(false); // BOOM. UI is unblocked in <100ms.
-    }).catch(err => {
-      console.error("IndexedDB failed:", err);
-      const savedCustom = (() => {
-        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
-        catch { return []; }
-      })();
-      setMasterDeck([...cardsData, ...savedCustom]);
-      setProgressData({});
-      setLoading(false);
+    const fetchProgress = getAllProgress().catch(err => {
+      console.error("IndexedDB progress fetch failed:", err);
+      return [];
     });
 
-    // 2. Fetch live cards in background
-    fetch(WEBHOOK_URL)
-      .then(res => res.json())
-      .then(liveCards => {
-        if (liveCards && Array.isArray(liveCards)) {
-          const validLiveCards = liveCards.filter(c => c.id && c.question);
-          
-          setMasterDeck(prevDeck => {
-            const combinedDeck = [...prevDeck, ...validLiveCards];
-            
-            const scrubbedDeck = combinedDeck.map(card => {
-              let category = card.category;
-              if (category === 'From News App' || category === 'from news app' || category === 'Aptitude Quiz' || category === 'Apti Quiz' || category === 'apti quiz') {
-                category = 'Aptitude';
-              }
+    Promise.all([fetchCards, fetchProgress]).then(([liveCards, progressArr]) => {
+      const combinedDeck = [...cardsData];
+      if (liveCards && Array.isArray(liveCards)) {
+        const validLiveCards = liveCards.filter(c => c.id && c.question);
+        combinedDeck.push(...validLiveCards);
+      }
 
-              let answer = card.answer || '';
-              if (answer.toLowerCase().includes('indiabix')) {
-                answer = answer.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
-              }
-
-              let explanation = card.explanation || '';
-              if (explanation.toLowerCase().includes('indiabix')) {
-                explanation = explanation.replace(/in\s+indiabix/gi, '').replace(/from\s+indiabix/gi, '').replace(/indiabix/gi, '').replace(/\s+/g, ' ').trim();
-              }
-
-              let source = card.source || '';
-              if (source.toLowerCase().includes('indiabix')) {
-                source = source.replace(/indiabix/gi, 'Aptitude').trim();
-              }
-
-              return { ...card, category, answer, explanation, source };
-            });
-
-            // Deduplicate by ID just in case
-            const uniqueCardsMap = new Map();
-            scrubbedDeck.forEach(c => uniqueCardsMap.set(c.id, c));
-            return Array.from(uniqueCardsMap.values());
-          });
+      // Dynamic mapping & scrubbing
+      const scrubbedDeck = combinedDeck.map(card => {
+        let category = card.category;
+        if (category === 'From News App' || category === 'from news app' || category === 'Aptitude Quiz' || category === 'Apti Quiz' || category === 'apti quiz') {
+          category = 'Aptitude';
         }
-      })
-      .catch(err => {
-        console.error("Background sheets fetch failed:", err);
+
+        let answer = card.answer || '';
+        if (answer.toLowerCase().includes('indiabix')) {
+          answer = answer
+            .replace(/in\s+indiabix/gi, '')
+            .replace(/from\s+indiabix/gi, '')
+            .replace(/indiabix/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+
+        let explanation = card.explanation || '';
+        if (explanation.toLowerCase().includes('indiabix')) {
+          explanation = explanation
+            .replace(/in\s+indiabix/gi, '')
+            .replace(/from\s+indiabix/gi, '')
+            .replace(/indiabix/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+
+        let source = card.source || '';
+        if (source.toLowerCase().includes('indiabix')) {
+          source = source.replace(/indiabix/gi, 'Aptitude').trim();
+        }
+
+        return { ...card, category, answer, explanation, source };
       });
+
+      const savedCustom = (() => {
+        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
+        catch { return []; }
+      })();
+      setMasterDeck([...scrubbedDeck, ...savedCustom]);
+      
+      const progressMap = {};
+      if (progressArr && Array.isArray(progressArr)) {
+        progressArr.forEach(item => {
+          progressMap[item.cardId] = item;
+        });
+      }
+      setProgressData(progressMap);
+      setLoading(false);
+    });
   }, []);
 
   // Restore dashboard scroll position
