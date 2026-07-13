@@ -43,6 +43,7 @@ export default function App() {
 
   // PWA Install State
   const [deferredPrompt, setDeferredPrompt] = useState(null);
+  const [fetchError, setFetchError] = useState(null);
 
   useEffect(() => {
     const handleBeforeInstallPrompt = (e) => {
@@ -82,11 +83,24 @@ export default function App() {
 
   // Load progress and cards on mount
   useEffect(() => {
-    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec";
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec?t=" + Date.now();
     
     const fetchCards = fetch(WEBHOOK_URL)
-      .then(res => res.json())
-      .catch(() => []);
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.text(); // Text first to catch HTML login pages
+      })
+      .then(text => {
+        try {
+          return JSON.parse(text);
+        } catch (e) {
+          throw new Error("Invalid JSON from Sheets. Are you logged in or is it deployed to 'Anyone'?");
+        }
+      })
+      .catch(err => {
+        setFetchError(err.message || 'Fetch failed');
+        return [];
+      });
 
     const fetchProgress = getAllProgress().catch(err => {
       console.error("IndexedDB progress fetch failed:", err);
@@ -146,6 +160,7 @@ export default function App() {
       setLoading(false);
     }).catch(err => {
       console.error("Initialization error:", err);
+      setFetchError(err.message || 'Initialization failed');
       const savedCustom = (() => {
         try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
         catch { return []; }
@@ -440,6 +455,12 @@ export default function App() {
               Hey deepti, <span className="text-[#86868b]">pick a deck.</span>
             </h2>
           </div>
+
+          {fetchError && (
+            <div className="p-4 rounded-xl bg-red-100 text-red-800 border border-red-200 text-[13px] font-medium">
+              ⚠️ Google Sheets Sync Failed: {fetchError}
+            </div>
+          )}
 
           {/* Make Your Own Card Section */}
           <div className="rounded-[24px] bg-gradient-to-br from-[#0066cc]/10 to-[#5ac8fa]/10 dark:from-[#0066cc]/20 dark:to-[#5ac8fa]/5 border border-[#0066cc]/20 dark:border-[#2997ff]/20 overflow-hidden">
