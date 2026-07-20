@@ -52,7 +52,11 @@ Autoplay begins only after an explicit user action. Completing a track advances 
 
 ## Now Playing and synchronized transcript
 
-Desktop uses an asymmetric two-column layout: artwork and transport controls on the left, transcript on the right. Mobile uses a full-height Now Playing sheet with artwork first and a `Transcript` control that reveals the transcript view.
+Now Playing opens with the artwork, track metadata, progress, and transport controls. The synchronized transcript is hidden by default on desktop and mobile. A persistent `Lyrics` control in the lower action rail is the only way to reveal it. Its accessible label is `Show synchronized transcript` or `Hide synchronized transcript` according to state.
+
+When Lyrics is activated on desktop, the composition shifts into an asymmetric two-column layout: compact artwork and transport controls on the left, transcript on the right. When Lyrics is activated on mobile, the artwork yields to a transcript-focused full-height view while compact track metadata, progress, transport controls, and the active Lyrics control remain reachable. Tapping Lyrics again returns to the artwork-focused Now Playing view without changing playback position.
+
+The action rail is a restrained web approximation of the current floating media controls: translucent when the browser supports it, solid under reduced-transparency preferences, and visually separated from the transcript. The active Lyrics control changes fill, weight, and accessible state. It does not rely on color alone.
 
 The current manifests include complete scripts but no word offsets. The first version therefore synchronizes paragraph or speaker-turn blocks against the actual audio duration. Cue duration is weighted by spoken word count with a small minimum duration. This creates stable, lightweight lyric-style following without adding a transcription model or materially increasing bundle size.
 
@@ -63,6 +67,8 @@ Each cue:
 - seeks playback when tapped;
 - pauses automatic following while the listener manually scrolls;
 - offers a `Return to current line` action after manual scrolling.
+
+Opening Lyrics scrolls directly to the current cue. The active cue uses the largest and strongest type. Immediately adjacent cues remain readable but subdued, while distant cues recede further. No transcript preview appears on the artwork-focused screen before the listener taps Lyrics.
 
 The timing interface accepts explicit start and end times when future audio manifests provide them. Explicit timings take precedence over estimated timings without requiring a UI rewrite.
 
@@ -143,6 +149,9 @@ Integration checks must prove:
 - selecting an available track starts playback after user action;
 - closing Podcast leaves playback running and reveals the mini-player;
 - clicking a cue seeks to that cue;
+- Now Playing opens with Lyrics hidden;
+- the Lyrics control reveals and hides the transcript without interrupting playback;
+- opening Lyrics focuses the current cue rather than the beginning of the script;
 - clicking a term opens the three-field definition sheet;
 - Media Session handlers call the same player actions as the visible controls;
 - missing audio renders the unavailable state;
@@ -156,3 +165,10 @@ Integration checks must prove:
 - Offline download management or precaching the full album.
 - Additional albums beyond Securitisation.
 - User accounts, cloud playback history, comments, ratings, or social sharing.
+
+## Current Apple interaction references
+
+- [Apple's iPhone Music controls guide](https://support.apple.com/en-am/guide/iphone/iph676daac9b/26/ios/26) uses a MiniPlayer to open Now Playing and exposes Lyrics as a lower-screen control rather than displaying lyrics by default.
+- The same Lyrics control shows and hides synchronized lyrics.
+- A listener can tap a synchronized line to seek to that point.
+- [Apple's iOS 26 design announcement](https://www.apple.com/newsroom/2025/06/apple-elevates-the-iphone-experience-with-ios-26/) describes floating, translucent controls that recede to keep content central. Fincards uses a restrained web approximation, not Apple's proprietary material or branding.
