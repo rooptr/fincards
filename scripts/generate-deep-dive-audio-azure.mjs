@@ -204,7 +204,9 @@ if (process.exitCode) process.exit();
 
 const outputDir = join(process.cwd(), 'public', 'audio', 'deep-dive', LESSON_ID);
 const audioPath = join(outputDir, `${CHAPTER_ID}.mp3`);
-const manifestPath = join(outputDir, 'manifest.json');
+const manifestFileName = String(process.env.DEEP_DIVE_MANIFEST_NAME || 'manifest.json')
+  .replace(/[^a-zA-Z0-9._-]/g, '') || 'manifest.json';
+const manifestPath = join(outputDir, manifestFileName);
 const endpoint = `https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`;
 
 const sourceParagraphs = script
@@ -243,7 +245,7 @@ for (let i = 0; i < chunks.length; i++) {
   const calmBody = `<prosody rate="-1%">${body}</prosody>`;
   const spokenBody = isHdVoice ? `<mstts:express-as style="calm" styledegree="0.4">${calmBody}</mstts:express-as>` : calmBody;
   const chunkSsml = `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-IN"><voice name="${xmlEscape(voice)}"${voiceParameters}>${isFirstChunk ? '<break time="700ms"/>' : ''}${spokenBody}</voice></speak>`;
-  
+
   allSsml.push(chunkSsml);
   if (!ssmlOnly) allAudioBytes.push(await synthesizeChunk(chunkSsml, i + 1));
 }

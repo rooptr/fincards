@@ -8,6 +8,7 @@ const lessonId = 'ssml_layout_test';
 const chapterId = 'layout';
 const outputDirectory = path.join(root, 'public', 'audio', 'deep-dive', lessonId);
 const output = path.join(outputDirectory, `${chapterId}.ssml`);
+const manifest = path.join(outputDirectory, 'layout-test.json');
 const oversizedSource = path.join(root, 'scratch', 'ssml-layout-oversized-test.txt');
 
 fs.writeFileSync(source, [[
@@ -25,11 +26,13 @@ const result = spawnSync('node', ['scripts/generate-deep-dive-audio-azure.mjs'],
     DEEP_DIVE_CHAPTER_ID: chapterId,
     DEEP_DIVE_TEXT_FILE: source,
     DEEP_DIVE_CHUNK_SIZE: '500',
+    DEEP_DIVE_MANIFEST_NAME: 'layout-test.json',
   },
 });
 
 if (result.status !== 0) throw new Error(`SSML-only render failed: ${result.stderr || result.stdout}`);
 if (!fs.existsSync(output)) throw new Error('Expected SSML-only render to write an SSML file.');
+if (!fs.existsSync(manifest)) throw new Error('Expected the renderer to honor an isolated manifest name.');
 const ssml = fs.readFileSync(output, 'utf8');
 if (!ssml.includes('<p>First sentence sets up a realistic borrower payment and gives the listener enough context to hear a full natural thought before the next sentence arrives. The next sentence continues the same explanation without forcing a new paragraph, a new breath, or an abrupt restart in the middle of the idea. A third sentence carries the thought beyond the chunk boundary so the fixture exercises the chunking path as well.</p>')) {
   throw new Error(`Sentences from one source paragraph must remain in a single continuous SSML paragraph: ${ssml}`);
