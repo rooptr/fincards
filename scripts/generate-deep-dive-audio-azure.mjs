@@ -8,6 +8,14 @@ const CHAPTER_ID = process.env.DEEP_DIVE_CHAPTER_ID || 'lesson';
 const key = process.env.AZURE_SPEECH_KEY;
 const region = process.env.AZURE_SPEECH_REGION;
 const voice = process.env.AZURE_SPEECH_VOICE || 'en-IN-Diya:DragonHDLatestNeural';
+const outputFormat = process.env.AZURE_SPEECH_OUTPUT_FORMAT || 'audio-48khz-96kbitrate-mono-mp3';
+const supportedOutputFormats = new Set([
+  'audio-48khz-96kbitrate-mono-mp3',
+  'audio-48khz-192kbitrate-mono-mp3',
+]);
+if (!supportedOutputFormats.has(outputFormat)) {
+  throw new Error(`Unsupported Azure Speech output format: ${outputFormat}`);
+}
 // A REST synthesis request can produce up to ten minutes of audio.  Prefer
 // larger requests so a narrator keeps the same performance across an idea;
 // the fallback chunker below only cuts at sentence boundaries.
@@ -165,7 +173,7 @@ async function synthesizeChunk(chunkSsml, chunkNumber) {
         headers: {
           'Ocp-Apim-Subscription-Key': key,
           'Content-Type': 'application/ssml+xml',
-          'X-Microsoft-OutputFormat': 'audio-48khz-192kbitrate-mono-mp3',
+          'X-Microsoft-OutputFormat': outputFormat,
           'User-Agent': 'finance-flashcards-deep-dive-audio',
         },
         body: chunkSsml,
@@ -262,7 +270,8 @@ await writeFile(manifestPath, `${JSON.stringify({
   voice,
   region,
   modelId: 'DragonHDLatestNeural',
-  audioQuality: 'Azure native 48kHz 192kbps MP3 with preserved paragraph boundaries and native punctuation flow',
+  outputFormat,
+  audioQuality: `Azure native ${outputFormat === 'audio-48khz-96kbitrate-mono-mp3' ? '48kHz 96kbps' : '48kHz 192kbps'} MP3 with preserved paragraph boundaries and native punctuation flow`,
   generatedAt: new Date().toISOString(),
   scriptHash,
   chapters: [{

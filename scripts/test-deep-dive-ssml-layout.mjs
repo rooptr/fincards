@@ -33,6 +33,10 @@ const result = spawnSync('node', ['scripts/generate-deep-dive-audio-azure.mjs'],
 if (result.status !== 0) throw new Error(`SSML-only render failed: ${result.stderr || result.stdout}`);
 if (!fs.existsSync(output)) throw new Error('Expected SSML-only render to write an SSML file.');
 if (!fs.existsSync(manifest)) throw new Error('Expected the renderer to honor an isolated manifest name.');
+const manifestData = JSON.parse(fs.readFileSync(manifest, 'utf8'));
+if (manifestData.outputFormat !== 'audio-48khz-96kbitrate-mono-mp3') {
+  throw new Error(`Expected the 96 kbps production default in the manifest, received: ${manifestData.outputFormat}`);
+}
 const ssml = fs.readFileSync(output, 'utf8');
 if (!ssml.includes('<p>First sentence sets up a realistic borrower payment and gives the listener enough context to hear a full natural thought before the next sentence arrives. The next sentence continues the same explanation without forcing a new paragraph, a new breath, or an abrupt restart in the middle of the idea. A third sentence carries the thought beyond the chunk boundary so the fixture exercises the chunking path as well.</p>')) {
   throw new Error(`Sentences from one source paragraph must remain in a single continuous SSML paragraph: ${ssml}`);

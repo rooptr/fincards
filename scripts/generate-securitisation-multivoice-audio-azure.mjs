@@ -16,6 +16,14 @@ const key = process.env.AZURE_SPEECH_KEY;
 const region = process.env.AZURE_SPEECH_REGION;
 const diyaVoice = 'en-IN-Diya:DragonHDLatestNeural';
 const meeraVoice = 'en-IN-Meera:DragonHDLatestNeural';
+const outputFormat = process.env.AZURE_SPEECH_OUTPUT_FORMAT || 'audio-48khz-96kbitrate-mono-mp3';
+const supportedOutputFormats = new Set([
+  'audio-48khz-96kbitrate-mono-mp3',
+  'audio-48khz-192kbitrate-mono-mp3',
+]);
+if (!supportedOutputFormats.has(outputFormat)) {
+  throw new Error(`Unsupported Azure Speech output format: ${outputFormat}`);
+}
 
 if (!ssmlOnly && (!key || !region)) throw new Error('AZURE_SPEECH_KEY and AZURE_SPEECH_REGION are required.');
 const pack = JSON.parse(await (await import('node:fs/promises')).readFile(inputFile, 'utf8'));
@@ -82,7 +90,7 @@ async function synthesize(ssml, chunkNumber) {
     headers: {
       'Ocp-Apim-Subscription-Key': key,
       'Content-Type': 'application/ssml+xml',
-      'X-Microsoft-OutputFormat': 'audio-48khz-192kbitrate-mono-mp3',
+      'X-Microsoft-OutputFormat': outputFormat,
       'User-Agent': 'finance-flashcards-securitisation-multivoice',
     },
     body: ssml,
@@ -119,7 +127,7 @@ await writeFile(manifestPath, `${JSON.stringify({
   title: episode.title,
   provider: 'azure-speech',
       voices: { diya: diyaVoice, meera: meeraVoice },
-  outputFormat: 'audio-48khz-192kbitrate-mono-mp3',
+  outputFormat,
   chunks: chunks.length,
   scriptHash: createHash('sha256').update(episode.script).digest('hex'),
   speakerTurns: turns.length,

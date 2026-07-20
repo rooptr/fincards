@@ -35,6 +35,10 @@ const result = spawnSync('node', ['scripts/generate-securitisation-multivoice-au
 });
 
 if (result.status !== 0) throw new Error(`Multi-voice SSML render failed: ${result.stderr || result.stdout}`);
+const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+if (manifest.outputFormat !== 'audio-48khz-96kbitrate-mono-mp3') {
+  throw new Error(`Expected the 96 kbps production default in the episode manifest, received: ${manifest.outputFormat}`);
+}
 const ssml = fs.readFileSync(ssmlPath, 'utf8');
 if (ssml.includes('[DIYA]') || ssml.includes('[MEERA]')) throw new Error('Speaker labels leaked into SSML.');
 if (ssml.includes('<break time="450ms"/>')) throw new Error('Later multi-voice requests must not add a transport-boundary pause.');
