@@ -1,0 +1,41 @@
+A bank owns a portfolio of business loans and wants protection against default, but it does not want to sell the loans or disturb customer relationships. It keeps the assets, keeps collecting instalments, and buys a contract that pays when defined credit losses occur.
+
+Synthetic securitisation transfers credit risk without transferring the underlying loans. A guarantee, credit derivative, or credit-linked note references a defined portfolio and allocates losses to protection providers or investors under documented credit-event and settlement rules.
+
+Follow one borrower payment. It still reaches the bank because the bank still owns and services the loan. No sale proceeds funded the bank through asset transfer. The synthetic transaction becomes active when credit deterioration meets the contract's definition and a protected loss is calculated.
+
+This is the first essential distinction: synthetic securitisation can transfer risk and potentially provide capital relief, but it does not inherently provide the same cash funding as selling a pool to investors. A funded credit-linked note may supply collateral to secure protection, yet the underlying borrower loans remain on the bank's balance sheet.
+
+The reference portfolio defines which exposures are protected. Names, eligibility, additions, removals, replenishment, concentration, and data determine the risk investors actually assume. A broad corporate-loan label cannot substitute for the reference schedule.
+
+Attachment and detachment points define the protected loss band. An investor might absorb losses after the bank retains the first three percent and until cumulative loss reaches ten percent. Losses below attachment stay with the bank; losses beyond detachment return to another retained layer.
+
+A credit event activates protection under the contract. Bankruptcy, failure to pay, restructuring, or another defined event may qualify depending on the instrument. The legal definition can differ from the bank's accounting default or economic impairment.
+
+That difference creates basis risk. A borrower can cause economic pain without triggering protection, or the settlement amount can differ from the bank's realised loss. Definitions, grace periods, materiality, documentation, and dispute resolution determine whether the hedge matches the exposure.
+
+Settlement can be cash-based or linked to delivery under applicable terms. In cash settlement, a calculated loss amount is paid. Valuation agents, recovery assumptions, timing, and challenge rights become critical because no physical loan sale necessarily resolves the amount.
+
+Funded protection commonly uses credit-linked notes. Investors pay principal into the arrangement, collateral is held in permitted assets, and losses on the reference portfolio reduce the amount ultimately returned. Investors face reference-credit risk plus collateral, account, legal, and operational risk.
+
+Unfunded protection relies on a guarantor or derivative counterparty promising to pay after credit events. The bank exchanges borrower risk for exposure to the protection provider. If both weaken in the same recession, the protection can fail when it is most valuable.
+
+Collateralisation and margining can reduce counterparty exposure. Eligible collateral, valuation haircuts, custody, substitution, interest, and liquidation rights matter. Cash collateral can protect payment capacity while introducing account-bank and reinvestment questions.
+
+The bank usually continues servicing and managing the loans. It may have authority to amend, waive, restructure, or sell exposures. Those actions can affect investors, so portfolio-management standards and consent rules control moral hazard after protection is purchased.
+
+Suppose the bank can remove deteriorating loans from the reference pool before they trigger. Protection becomes weaker than the headline portfolio. Suppose it can add risky loans after pricing. Investors receive adverse selection. Replenishment rules and substitution tests protect the bargain.
+
+Synthetic excess spread or other retained amounts may absorb early loss under some arrangements. The mechanism must be traced carefully because unfunded promises, funded collateral, and retained earnings do not provide identical protection.
+
+Basel frameworks discuss synthetic securitisation and prudential recognition. National rules, including the applicable Reserve Bank of India framework, determine whether and how a transaction is recognised locally. Legal and regulatory conclusions must use the current jurisdiction-specific text.
+
+The investor file needs the reference portfolio, origination standards, loss definition, attachment and detachment, maturity, portfolio-management rights, protection provider, collateral, settlement calculation, dispute process, retained risk, and applicable capital treatment.
+
+Stress a recession in which several borrowers default together. The protected tranche absorbs its band and becomes exhausted. Further losses return to the bank's retained senior position. Risk transfer was real but finite.
+
+Stress the protection provider at the same time. If it cannot pay, the bank experiences loan loss and counterparty loss together. Wrong-way risk describes that harmful dependence between the exposure and the protection meant to cover it.
+
+Crop insurance makes that distinction tangible. A farmer keeps the field and harvest. An insurer pays after a defined event under measured terms. The field did not move, and every bad season does not necessarily satisfy the policy definition. Protection depends on the match between economic harm and contractual trigger.
+
+Synthetic securitisation separates ownership from loss-bearing. It succeeds only when the referenced risk, trigger, settlement, and protection provider remain aligned through the stress that makes the contract necessary.

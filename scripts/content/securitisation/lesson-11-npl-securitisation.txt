@@ -1,0 +1,39 @@
+A bank holds a defaulted factory loan secured by land and machinery. The contractual schedule still says principal and interest are due, but nobody expects the old instalments to resume next month. Value now depends on settlement, enforcement, collateral sale, legal cost, and time.
+
+Non-performing-loan securitisation pools distressed exposures and finances claims against their uncertain recoveries. It is not primarily a schedule-of-instalments transaction. It is a recovery process translated into purchase price, servicing strategy, timing assumptions, and a waterfall.
+
+Suppose the factory owes ten crore rupees. That face amount is a legal claim, not a cash forecast. A bidder may expect to recover four crore after legal expense over four years. The economic value today is lower than four crore because time, uncertainty, and costs must be reflected.
+
+The purchase price is therefore crucial. Buying a weak claim cheaply can produce an acceptable return. Buying the same claim near face value can destroy value even if recovery performance is identical. Asset quality and investment quality are related through price, timing, and financing.
+
+Follow one recovery rupee. It may begin as a negotiated settlement, court-ordered payment, collateral sale, guarantee proceeds, or business cash captured during restructuring. Before it reaches investors, servicing and enforcement costs may be paid and the remaining amount enters the priority of payments.
+
+Recovery rate measures recovered value relative to an exposure base under a stated convention. Gross recovery before cost is different from net recovery after legal and servicing expenses. Nominal recovery is different from present value after discounting delayed cash.
+
+Timing can dominate the result. Forty percent recovered in one year and forty percent recovered in seven years have the same undiscounted percentage but radically different economics. Notes accrue interest, expenses continue, and investors wait while legal processes unfold.
+
+Collateral valuation is not sale proceeds. A factory appraisal may assume an orderly transaction and continued use. Distress can require a hurried auction, environmental remediation, title correction, tenant resolution, or equipment removal. The realisable value depends on the path to sale.
+
+Legal position also varies across accounts. Security may be perfected or defective. Claims may rank differently. Guarantors may have assets or only signatures. Proceedings may be advanced or newly filed. Pool averages can conceal a small number of cases driving most expected value.
+
+The special servicer or resolution manager becomes central. It chooses between restructuring, settlement, enforcement, asset sale, and continued operation where permitted. Those choices require local expertise and create conflicts between faster cash and higher but slower recovery.
+
+Suppose senior investors prefer an early settlement that repays their notes. A junior investor may prefer to wait for a larger recovery because it participates only after senior claims are satisfied. The servicing standard, consent rights, valuation rules, and waterfall decide whose preference can influence action.
+
+Business plans can be more important than historical payment data. Each large exposure may require a strategy, milestones, expected costs, legal status, collateral route, and downside case. Granular consumer NPLs can be modelled statistically; concentrated corporate NPLs often demand account-by-account judgment.
+
+Reperforming loans add another layer. A borrower who resumed payment after restructuring may supply scheduled cash again, but the history of default and modified terms remains relevant. Treating reperforming as never-defaulted would erase the reason the loan entered the pool.
+
+Reserves and liquidity can cover expenses or timing gaps. Subordination can absorb lower recoveries. Neither protection accelerates a court or creates a buyer for specialised machinery. Enhancement reallocates recovery risk; servicing and legal execution determine much of the recovery itself.
+
+The Reserve Bank of India's committee report on Asset Reconstruction Companies provides authoritative context on India's distressed-asset resolution ecosystem. It can establish sector mechanisms, constraints, and the importance of recovery performance. It cannot determine a specific pool's value without loan files, security details, legal status, costs, and timing assumptions.
+
+An investor should reconcile original exposure, acquisition price, additional funding, cash recovered, cost incurred, remaining claim, collateral value, and updated resolution stage. A headline recovery percentage without that bridge can mix incomparable vintages and conventions.
+
+Stress the factory loan by delaying collateral sale two years and reducing net proceeds twenty percent. The impact does not stop at one asset. Interest accrues on notes, expenses consume cash, reserves may decline, and junior claims may lose the recovery window they relied upon.
+
+Now imagine a pool of ten thousand small unsecured defaults. Individual legal work may be uneconomic, so call-centre collections, settlements, digital outreach, and statistical recovery curves drive value. The phrase NPL securitisation covers both pools, but their operating machinery is entirely different.
+
+Overdue hospital bills pose a similar valuation trap. Some claims are insured, some disputed, some payable by patients, and some reduced by contractual adjustments. Before financing them, the buyer must separate enforceable amount, expected recovery, cost, and timing. Face value is only the beginning of the file.
+
+An NPL transaction does not turn defaulted loans back into performing loans. It turns uncertain recoveries into an investable claim by pricing the delay, controlling the workout, and deciding who bears the shortfall when recovery arrives late or small.

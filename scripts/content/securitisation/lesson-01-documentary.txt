@@ -106,7 +106,7 @@ Return to the twelve-thousand-rupee instalment. It begins as one borrower's obli
 
 Nothing about that chain requires memorising a list once the payment is visible.
 
-Now move the mechanism somewhere else. A solar-panel installer sells systems to households on three-year payment plans. The installer wants cash to fund new installations. The contracts appear predictable, but the analysis still has to identify customer obligations, transferability, cancellation rights, servicing, concentration, collection control, timing, and the investor claim.
+A solar-panel installer faces the same financing problem in another setting. It sells systems to households on three-year payment plans and wants cash to fund new installations. The contracts appear predictable, but the analysis still has to identify customer obligations, transferability, cancellation rights, servicing, concentration, collection control, timing, and the investor claim.
 
 The asset has changed. The reasoning has not.
 

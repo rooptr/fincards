@@ -1,0 +1,39 @@
+Two packaged foods carry the same certification mark. The mark tells a buyer that each producer followed specified process and disclosure standards. It does not tell the buyer which flavour she prefers, whether the price is attractive, or whether every ingredient is risk-free.
+
+In the European Union, STS identifies securitisations meeting applicable criteria for simplicity, transparency, and standardisation. The designation is a regulatory framework for eligible transactions. It is not a credit rating, government guarantee, or declaration that investors cannot lose money.
+
+Simple does not mean economically trivial. The criteria aim to reduce unnecessary complexity and make transaction features more understandable. Collateral can still default, prepay, recover slowly, or perform differently from expectations.
+
+Transparency requires meaningful information about assets, structure, parties, and performance under the applicable rules. Disclosure improves the investor's ability to analyse risk. It cannot force an investor to read carefully or make incomplete data predict the future.
+
+Standardisation addresses features such as responsibilities, payment mechanics, risk retention, and other prescribed elements. Common standards make comparison easier. They do not make every compliant pool economically identical.
+
+Watch one mortgage payment travel through an S T S transaction. The borrower pays, the servicer collects, accounts control cash, and the waterfall distributes it. The designation does not create the payment. It sets conditions around how the transaction is built and disclosed.
+
+Eligibility depends on the relevant legal criteria and transaction type. Traditional and synthetic securitisations can face different provisions. Jurisdiction, closing date, amendments, and regulatory updates matter, so a current legal check is required before using the designation.
+
+Responsibility for notification and compliance does not remove investor due diligence. Parties may notify that criteria are met, and authorities can supervise or challenge compliance. Investors still need to assess collateral, cash flow, structure, counterparties, and price.
+
+Suppose two STS transactions both satisfy the framework. One contains seasoned prime mortgages with low leverage. The other contains a different eligible asset class with higher expected loss and stronger enhancement. The shared designation improves process comparability without equalising credit risk.
+
+Suppose an STS note is priced at an unattractive yield. Strong disclosure and standardisation do not make it a good investment at every price. Credit quality, duration, liquidity, and valuation remain separate decisions.
+
+The designation can support prudential treatment when conditions are met under applicable rules. Regulatory capital benefits should be distinguished from an investor's loss forecast. A lower capital charge does not turn a security into cash.
+
+Risk retention can align originators or sponsors with investors, subject to the governing requirements. Retention does not prove underwriting quality or eliminate agency conflict. Its size, form, holder, and duration determine the economic alignment.
+
+Homogeneity criteria seek pools whose assets can be assessed through coherent underwriting and servicing characteristics. Homogeneous does not mean every borrower or asset is identical. Concentrations, vintages, geography, and layered risk still require analysis.
+
+Clear payment priority helps the investor understand cash allocation. Triggers, reserves, hedges, liquidity, and servicer replacement remain important. Standardisation is valuable because those mechanics become more visible, not because they stop mattering.
+
+Third-party verification can assist with criteria assessment where permitted. It does not transfer responsibility for the investment conclusion. A verification report and a credit analysis answer different questions.
+
+The authoritative source is the applicable European legal framework and its current amendments and guidance. Market summaries can explain the concept but should not be used for a legal conclusion. Regulatory statements require date and jurisdiction because rules evolve.
+
+An investor should review the STS notification, underlying data, liability structure, transaction documents, retention, servicing, cash-flow model, stress results, and ongoing reporting. If the designation is lost or challenged, contractual and prudential consequences also need examination.
+
+Now stress borrower defaults above the enhancement protecting a senior note. The STS label remains a statement about qualifying features; it does not replenish exhausted subordination. Loss follows the collateral and waterfall.
+
+Transfer the model to building codes. A compliant building has met specified design and process requirements. Buyers should still inspect location, maintenance, price, tenant quality, and insurance. Compliance improves the baseline without deciding the investment.
+
+STS is useful because disciplined simplicity, transparency, and standardisation reduce avoidable opacity. Its boundary is equally important: better visibility helps investors see risk; it does not make risk disappear.

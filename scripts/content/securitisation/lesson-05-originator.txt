@@ -1,0 +1,43 @@
+A neighbourhood appliance dealer lets customers buy refrigerators on monthly instalments. The dealer chooses who receives credit, checks income, sets the down payment, verifies documents, and decides whether a doubtful application is approved. Months later, those receivables may support securities held by distant investors. The first decisive act still happened at the sales desk.
+
+The institution that creates or acquires the financial assets is the originator. It brings the loans or receivables into existence through underwriting and documentation. A later sale can move payment rights, but it cannot travel backwards and improve the decisions that created them.
+
+Imagine one customer requests a sixty-thousand-rupee loan. The originator decides whether the stated income is believable, whether existing debt is manageable, whether the appliance price is genuine, and whether the repayment schedule fits the borrower. Every later cash-flow projection inherits those choices.
+
+If approval standards weaken, the pool may look healthy at closing because new borrowers have not yet missed payments. The weakness appears only after seasoning. That delay creates one of securitisation's most important incentive problems: the party making the loan can receive funding before the full quality of the loan becomes visible.
+
+Would underwriting remain equally careful if the dealer knew it would sell every receivable immediately? The honest answer depends on incentives, controls, representations, retained exposure, reputation, and the ability of buyers to inspect the assets. Origination and distribution can broaden funding, but separation between the decision-maker and the eventual risk holder creates agency risk.
+
+Representations and warranties are factual promises about the assets and the origination process. The originator may state that loans were validly created, documents are complete, eligibility criteria were satisfied, and information supplied to the transaction is accurate. A breach can trigger a cure, substitution, or repurchase obligation under the documents.
+
+A repurchase obligation is not blanket insurance against poor performance. If a properly underwritten borrower later loses employment, that may be an ordinary credit loss borne according to the waterfall. Repurchase generally responds to a specified breach, not every default. Treating it as unlimited support overstates investor protection and understates the originator's contingent exposure.
+
+Risk retention keeps the originator or sponsor exposed to a defined portion of the transaction. The economic purpose is alignment: careless origination becomes costly to the party making the loans. Retention helps, but its strength depends on the size, form, duration, financing, and loss position of the retained interest.
+
+An originator holding only a thin residual claim may behave differently from one holding a meaningful vertical share across tranches. A retained piece can also be hedged, financed, or economically offset where rules permit. The label skin in the game matters less than the actual sensitivity of the retained position to the same losses investors fear.
+
+Adverse selection appears when the originator knows more about its loans than the buyer and chooses which assets to sell. It may retain stronger loans and transfer weaker ones while every selected account still meets broad eligibility rules. Random selection, concentration limits, stratification disclosure, sampling, and independent review can reduce the information gap; none makes private information disappear.
+
+The originator may remain connected after sale. It often services the assets, provides data, makes representations, holds residual exposure, funds reserves, or supports limited breaches. These continuing duties do not automatically mean the asset transfer failed. They do mean investors must separate legitimate continuing obligations from hidden recourse that leaves risk economically with the seller.
+
+Suppose the appliance dealer also collects customer instalments. Ownership has moved, but cash still passes through the originator's systems. If the dealer uses collections for operating expenses before remittance, investors face commingling and operational risk. Controlled accounts, daily sweeps, reconciliation, and replacement servicing address the cash route, not the original underwriting quality.
+
+Data quality is another form of origination risk. A loan tape can contain clean columns and still misdescribe income verification, collateral value, loan purpose, or prior delinquency. Investors need definitions, data lineage, exception reports, and reconciliations between the tape, servicing system, and legal documents.
+
+Now let economic conditions deteriorate. A pool with conservative payment-to-income ratios may absorb the shock better than one approved near the edge of affordability. Enhancement can postpone losses reaching senior investors, but it cannot manufacture the borrower capacity that underwriting failed to establish.
+
+The originate-to-distribute model in the United States mortgage market before the global financial crisis provides a documented warning. The Financial Crisis Inquiry Commission described weakened underwriting and incentive failures across parts of the chain. That record establishes a mechanism worth testing; it does not justify treating every originator, market, or securitisation as identical.
+
+In India, Reserve Bank of India directions govern matters including minimum holding periods, retention, transfer conditions, and originator responsibilities for applicable transactions. Compliance establishes necessary boundaries. A credit analyst still needs the originator's underwriting policy, exception history, vintage performance, repurchase record, servicing controls, and financial capacity.
+
+Consider two lenders offering apparently similar vehicle-loan pools. Lender A verifies income, limits dealer overrides, tracks first-payment defaults, and repurchases only documented breaches. Lender B grows rapidly through loosely supervised agents and repeatedly changes delinquency reporting. Equal current delinquency does not make their origination processes equally reliable.
+
+Vintage analysis helps reveal the difference. Loans originated in the same period are followed as they age. If recent vintages default faster than older ones at the same age, growth may be hiding weakened standards. Aggregate performance can look stable while the newest production deteriorates underneath it.
+
+First-payment default is especially revealing. A borrower missing the first instalment may indicate fraud, faulty verification, dealer misconduct, or severe affordability problems. It does not identify the cause by itself, but it tells the analyst where to investigate the origination process rather than blaming a distant economic shock.
+
+The originator's financial health matters even after a valid sale. A weak institution may struggle to honour breach remedies, maintain systems, retain staff, or support an orderly servicing transfer. Bankruptcy remoteness can isolate assets from the originator's creditors; it cannot make a failing company operationally competent.
+
+Education loans make the same responsibility easier to see. A platform approves students using future-income assumptions and then sells the receivables. The investor should trace the approval decision: how employment prospects were assessed, which documents were verified, who could override the model, what exposure the platform retained, and how recent cohorts actually perform.
+
+The originator leaves fingerprints on every payment long after the asset has moved. Securitisation can transfer funding and allocate risk, but the quality of the cash still begins with the judgment that created the loan.

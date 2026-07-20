@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "securitisation-documentary-catalog.v1",
+  "lessons": [
+    { "number": 1, "id": "generated_securitisation_securitization", "canonicalName": "Securitization", "briefId": "lesson-01", "sourceFile": "scripts/content/securitisation/lesson-01-documentary.txt" },
+    { "number": 2, "id": "generated_securitisation_cash_securitization", "canonicalName": "Cash Securitization", "briefId": "lesson-02", "sourceFile": "scripts/content/securitisation/lesson-02-cash-securitisation.txt" },
+    { "number": 3, "id": "generated_securitisation_term_securitization", "canonicalName": "Term Securitization", "briefId": "lesson-03", "sourceFile": "scripts/content/securitisation/lesson-03-term-securitisation.txt" },
+    { "number": 4, "id": "generated_securitisation_conduit_securitization", "canonicalName": "Conduit Securitization", "briefId": "lesson-04", "sourceFile": "scripts/content/securitisation/lesson-04-conduit-securitisation.txt" },
+    { "number": 5, "id": "generated_securitisation_securitization_originator", "canonicalName": "Originator", "briefId": "lesson-05", "sourceFile": "scripts/content/securitisation/lesson-05-originator.txt" },
+    { "number": 6, "id": "generated_securitisation_special_purpose_vehicle", "canonicalName": "Special Purpose Vehicle", "briefId": "lesson-06", "sourceFile": "scripts/content/securitisation/lesson-06-special-purpose-vehicle.txt" },
+    { "number": 7, "id": "generated_securitisation_bankruptcy_remoteness", "canonicalName": "Bankruptcy Remoteness", "briefId": "lesson-07", "sourceFile": "scripts/content/securitisation/lesson-07-bankruptcy-remoteness.txt" },
+    { "number": 8, "id": "generated_securitisation_securitization_servicer", "canonicalName": "Servicer", "briefId": "lesson-08", "sourceFile": "scripts/content/securitisation/lesson-08-servicer.txt" },
+    { "number": 9, "id": "generated_securitisation_auto_loan_securitization", "canonicalName": "Auto Loan Securitization", "briefId": "lesson-09", "sourceFile": "scripts/content/securitisation/lesson-09-auto-loan-securitisation.txt" },
+    { "number": 10, "id": "generated_securitisation_credit_card_securitization", "canonicalName": "Credit Card Securitization", "briefId": "lesson-10", "sourceFile": "scripts/content/securitisation/lesson-10-credit-card-securitisation.txt" },
+    { "number": 11, "id": "generated_securitisation_non_performing_loan_securitization", "canonicalName": "Non-Performing Loan Securitization", "briefId": "lesson-11", "sourceFile": "scripts/content/securitisation/lesson-11-npl-securitisation.txt" },
+    { "number": 12, "id": "generated_securitisation_non_qualified_mortgage_securitization", "canonicalName": "Non-Qualified Mortgage Securitization", "briefId": "lesson-12", "sourceFile": "scripts/content/securitisation/lesson-12-non-qualified-mortgage-securitisation.txt" },
+    { "number": 13, "id": "generated_securitisation_whole_business_securitization", "canonicalName": "Whole Business Securitization", "briefId": "lesson-13", "sourceFile": "scripts/content/securitisation/lesson-13-whole-business-securitisation.txt" },
+    { "number": 14, "id": "generated_securitisation_pass_through_structure", "canonicalName": "Pass-Through Structure", "briefId": "lesson-14", "sourceFile": "scripts/content/securitisation/lesson-14-pass-through-structure.txt" },
+    { "number": 15, "id": "generated_securitisation_pay_through_structure", "canonicalName": "Pay-Through Structure", "briefId": "lesson-15", "sourceFile": "scripts/content/securitisation/lesson-15-pay-through-structure.txt" },
+    { "number": 16, "id": "generated_securitisation_payment_waterfall", "canonicalName": "Payment Waterfall", "briefId": "lesson-16", "sourceFile": "scripts/content/securitisation/lesson-16-payment-waterfall.txt" },
+    { "number": 17, "id": "generated_securitisation_securitization_waterfall", "canonicalName": "Securitization Waterfall", "briefId": "lesson-17", "sourceFile": "scripts/content/securitisation/lesson-17-securitisation-waterfall.txt" },
+    { "number": 18, "id": "generated_securitisation_tranching", "canonicalName": "Tranching", "briefId": "lesson-18", "sourceFile": "scripts/content/securitisation/lesson-18-tranching.txt" },
+    { "number": 19, "id": "generated_securitisation_pro_rata_pay", "canonicalName": "Pro-rata Pay", "briefId": "lesson-19", "sourceFile": "scripts/content/securitisation/lesson-19-pro-rata-pay.txt" },
+    { "number": 20, "id": "generated_securitisation_re_securitization", "canonicalName": "Re-Securitization", "briefId": "lesson-20", "sourceFile": "scripts/content/securitisation/lesson-20-re-securitisation.txt" },
+    { "number": 21, "id": "generated_securitisation_regulatory_capital_relief_securitization", "canonicalName": "Regulatory Capital Relief Securitization", "briefId": "lesson-21", "sourceFile": "scripts/content/securitisation/lesson-21-regulatory-capital-relief.txt" },
+    { "number": 22, "id": "generated_securitisation_synthetic_securitization", "canonicalName": "Synthetic Securitization", "briefId": "lesson-22", "sourceFile": "scripts/content/securitisation/lesson-22-synthetic-securitisation.txt" },
+    { "number": 23, "id": "generated_securitisation_sts_securitization", "canonicalName": "STS Securitization", "briefId": "lesson-23", "sourceFile": "scripts/content/securitisation/lesson-23-sts-securitisation.txt" },
+    { "number": 24, "id": "generated_securitisation_psa_prepayment_model", "canonicalName": "PSA Prepayment Model", "briefId": "lesson-24", "sourceFile": "scripts/content/securitisation/lesson-24-psa-prepayment-model.txt" },
+    { "number": 25, "id": "generated_securitisation_term_asset_backed_securities_loan_facility", "canonicalName": "Term Asset-Backed Securities Loan Facility", "briefId": "lesson-25", "sourceFile": "scripts/content/securitisation/lesson-25-talf.txt" }
+  ],
+  "episodes": [
+    { "number": 1, "id": "financing-architecture", "briefId": "episode-01", "sourceFile": "scripts/content/securitisation/episode-01-documentary.txt" },
+    { "number": 2, "id": "legal-isolation-and-control", "briefId": "episode-02", "sourceFile": "scripts/content/securitisation/episode-02-documentary.txt" },
+    { "number": 3, "id": "collateral-is-the-business", "briefId": "episode-03", "sourceFile": "scripts/content/securitisation/episode-03-documentary.txt" },
+    { "number": 4, "id": "collateral-cash-to-security-cash", "briefId": "episode-04", "sourceFile": "scripts/content/securitisation/episode-04-documentary.txt" },
+    { "number": 5, "id": "priority-tranching-loss-allocation", "briefId": "episode-05", "sourceFile": "scripts/content/securitisation/episode-05-documentary.txt" },
+    { "number": 6, "id": "structure-and-risk-transfer", "briefId": "episode-06", "sourceFile": "scripts/content/securitisation/episode-06-documentary.txt" },
+    { "number": 7, "id": "prepayment-duration-market-liquidity", "briefId": "episode-07", "sourceFile": "scripts/content/securitisation/episode-07-documentary.txt" }
+  ]
+}

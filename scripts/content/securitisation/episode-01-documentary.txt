@@ -78,7 +78,7 @@
 
 [MEERA] Remove any link and a different failure appears. Remove enforceable transfer and ownership becomes uncertain. Remove servicing and collection machinery disappears. Remove information and the investor cannot distinguish temporary noise from permanent deterioration.
 
-[DIYA] Now move the same reasoning to a vehicle-loan pool across Mumbai and Pune. The borrowers, collateral, recovery process, prepayment behaviour, and servicing details change. The architecture of inquiry remains intact.
+[DIYA] Now move the same reasoning to an Indian vehicle-loan pool across Mumbai and Pune. The borrowers, collateral, recovery process, prepayment behaviour, and servicing details change. The architecture of inquiry remains intact.
 
 [MEERA] One borrower pays an instalment. The investor needs to know which right captures it, which account receives it, which party reconciles it, which deductions occur, which trigger can redirect it, and which claim bears the shortage if it never arrives.
 

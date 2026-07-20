@@ -1,0 +1,43 @@
+A chef can read a recipe and still fail to produce the dish if quantities, timing, and temperature are wrong. A payment waterfall written in legal prose is the recipe. A securitisation cash-flow model executes it period by period using actual balances, collections, losses, reserves, and trigger states.
+
+Begin at period zero. Record the collateral balance, every note balance, reserve accounts, overcollateralisation, accrued interest, fees, trigger thresholds, and payment dates. If the opening state is wrong, every later distribution can be internally consistent and still wrong.
+
+Move into the first collection period. Scheduled interest, scheduled principal, prepayments, defaults, recoveries, fees, and other permitted receipts must be calculated separately. Each component can follow different rules and respond differently under stress.
+
+Collateral interest begins with performing balances and asset rates, adjusted for day count, servicing, delinquencies, and other terms. Collateral principal comes from scheduled amortisation and prepayment. Default removes or reclassifies balances. Recovery returns only part of a prior loss and usually arrives later.
+
+The model then applies the contractual priority. Expenses are paid, reserves move, note interest is calculated, principal is allocated, losses are absorbed, and residual cash is released or trapped. Closing balances become next period's opening balances.
+
+That roll-forward is the engine. Opening balance plus additions minus cash reduction minus loss equals closing balance under the relevant definitions. If balances do not reconcile, the model has created or destroyed value without explanation.
+
+Interest shortfalls require their own ledgers. Unpaid senior interest may accrue and rank ahead next period. Junior interest may defer under different terms. A model that simply deletes unpaid interest understates future claims; one that always compounds it may overstate obligations.
+
+Reserve movement also needs a ledger. Opening reserve plus deposits and investment income minus draws equals closing reserve, subject to required targets. A reserve cannot be counted both as available cash and as remaining enhancement after it has been used.
+
+Loss allocation needs explicit order. Overcollateralisation may absorb the first loss, followed by residual or junior balances, then mezzanine and senior claims. Some transactions use principal-deficiency ledgers or write-down and write-up mechanics. Loss should reach a tranche only through the documented route.
+
+Attachment point is the amount of collateral loss or subordination consumed before a tranche begins to suffer loss. Detachment point marks where that tranche is exhausted. Both can change as notes amortise, enhancement builds or releases, and collateral balances move.
+
+Trigger calculations sit between collateral performance and distribution state. Delinquency ratio, cumulative loss, coverage, reserve floor, or servicer events may change the waterfall. The model must calculate the test using the contract's numerator, denominator, date, and cure rule rather than a convenient approximation.
+
+Suppose a pro rata deal fails its delinquency trigger. The model should switch principal to sequential payment in the correct period, trap residual cash if required, and preserve the switched state for as long as the documents demand. Changing a label without changing cash accomplishes nothing.
+
+Now stress prepayment upward. More principal arrives early. Senior notes may amortise faster, interest income falls, excess spread changes, and weighted average life shortens. One assumption moves several ledgers simultaneously.
+
+Stress prepayment downward. Principal arrives slowly, asset balances persist, note life extends, and investors remain exposed longer. If asset rates and note rates differ, the interest consequences can change as well.
+
+Stress default frequency without changing recovery. Defaults remove performing balances, reduce interest, create principal loss, and consume enhancement. Stress recovery timing separately and cash returns later even if the eventual percentage is unchanged. Combining frequency, severity, and timing into one loss number hides the path.
+
+Interest-rate scenarios matter when assets and liabilities reset differently. Fixed assets funding floating notes can suffer rising liability cost. Hedges may offset the mismatch until a cap, maturity, collateral threshold, or counterparty failure becomes relevant.
+
+The expected case is not the decision. A credible model shows base, downside, and severe but plausible paths, then identifies the assumption that causes each tranche to miss interest, extend, or lose principal. Sensitivity without causal explanation becomes a wall of numbers.
+
+Model governance protects against silent errors. Inputs need sources and dates. Formulas need review. Document terms need traceability. Changes need version control. Independent replication or targeted checks should rebuild key periods and trigger transitions.
+
+Public frameworks from the Reserve Bank of India and securities regulators establish disclosure and prudential expectations. They cannot provide a transaction's missing priority, trigger, hedge, or pool data. When a term is unavailable, the model must record a gap rather than substitute a market convention and present it as fact.
+
+Return to the chef. Two models can use the same ingredients and produce different outcomes because one applies principal before interest, tests a trigger on the wrong date, or counts a reserve twice. The error is not cosmetic; it decides which investor appears protected.
+
+A solar-loan pool keeps the arithmetic honest. Sunlight does not enter the waterfall. Borrower payments do. The model must translate loan balances, defaults, recoveries, prepayments, servicing, reserves, and contractual priority into period cash without letting the environmental story replace the arithmetic.
+
+A securitisation waterfall model is a controlled history of every unit of value. It earns trust when each period explains where cash came from, where it went, what state changed, and which claim now stands closer to loss.

@@ -1,0 +1,41 @@
+A taxi driver buys a car with a five-year loan. Every month, one payment reduces principal and pays interest. The loan looks simple until the driver misses instalments, the vehicle loses value, repossession takes time, and recovery expenses arrive before sale proceeds.
+
+Auto-loan securitisation pools amortising vehicle receivables and uses their cash flows to support securities. Scheduled instalments, voluntary prepayments, delinquencies, defaults, repossession proceeds, recovery timing, fees, and expenses all influence the money available to investors.
+
+Follow the taxi driver's loan from an opening balance of eight lakh rupees. A scheduled instalment arrives and principal falls. If he prepays, principal returns faster. If he defaults, scheduled cash stops and the transaction must wait for enforcement and vehicle sale. One contract can travel through three completely different cash paths.
+
+The vehicle is collateral, but the borrower is normally the first source of repayment. Repossessing and selling a car is a recovery process, not the intended monthly payment mechanism. An analyst who begins with vehicle value and ignores borrower affordability has started at the emergency exit.
+
+Loan-to-value compares the loan balance with the financed vehicle's value. A lower ratio can provide more collateral cushion. The measure remains sensitive to invoice inflation, down-payment verification, vehicle condition, depreciation, valuation method, and the time between default and sale.
+
+Cars depreciate while enforcement consumes time. A vehicle worth eight lakh rupees at origination may be worth far less after two years, an accident, heavy commercial use, storage, legal delay, and auction discount. Recovery is sale proceeds minus repossession, repair, storage, legal, and disposal costs.
+
+Seasoning reveals how loans have behaved after origination. A pool containing accounts with twelve clean payments provides more observed behaviour than a pool of brand-new loans. Seasoning does not prevent future default, but it reduces uncertainty about early fraud, documentation defects, and first-payment failure.
+
+First-payment defaults deserve special attention. Missing the first instalment can signal identity fraud, dealer manipulation, inadequate verification, or a borrower who was never able to afford the loan. The statistic points toward the origination channel even when later defaults may reflect the economy.
+
+Dealer concentration can hide inside a granular borrower pool. Thousands of loans may still share one dealer group that inflated invoices, recycled down payments, or supplied poor documents. Geographic concentration can expose the pool to one local employment shock, flood, regulation, or transport-market change.
+
+Vehicle type changes behaviour. New private cars, used commercial vehicles, two-wheelers, and heavy trucks differ in borrower profiles, depreciation, repossession, resale liquidity, and payment use. Calling all of them auto loans removes the features that generate cash and recovery.
+
+Prepayment returns principal early when borrowers refinance, sell vehicles, or use surplus cash. Faster prepayment can reduce future credit exposure but shorten note life and reduce interest. Slower prepayment can extend duration. Neither direction is automatically favourable to every tranche.
+
+Delinquency roll rates show movement between current, thirty-day, sixty-day, ninety-day, and default states. A static delinquency percentage can conceal whether accounts are curing or deteriorating. The direction and speed of migration help forecast future cash interruption.
+
+Recovery timing matters separately from recovery amount. Receiving forty percent after three months is not economically equal to receiving forty percent after three years. During the delay, investors lose use of the money, servicing costs continue, and note balances may remain outstanding.
+
+Suppose a one-hundred-crore-rupee pool suffers five crore of defaults. Gross default is not the final loss. Repossessed vehicles produce sale proceeds, expenses reduce those proceeds, and recoveries arrive over time. Net loss reaches enhancement according to the transaction's recognition and allocation rules.
+
+Excess spread may absorb some loss before funded protection is used. A reserve can supply cash. Overcollateralisation and subordination can protect senior notes. Every layer is finite, and rapid losses can arrive before excess spread has time to accumulate.
+
+Servicing is unusually tangible in vehicle finance. Collection agents, digital mandates, repossession vendors, yards, valuers, auctions, and legal teams all affect realised cash. A servicer replacement plan must transfer not only data but a physical recovery network.
+
+Reserve Bank of India securitisation directions establish relevant requirements for eligible standard-asset pools and transaction conduct. Public rating materials may reveal pool balances, enhancement, seasoning, or performance snapshots. They cannot replace the complete loan tape, servicing history, recovery records, and waterfall needed for a tranche conclusion.
+
+Compare two pools with the same average credit score and loan-to-value. One contains seasoned salaried borrowers across many cities and dealers. The other contains new commercial-vehicle loans sourced through three aggressive dealers in one freight corridor. The averages rhyme; the cash engines do not.
+
+Now stress fuel prices. Commercial drivers earn less, delinquencies rise, used vehicles reach auction together, and resale discounts deepen. Default frequency, recovery amount, and recovery timing worsen at once. Correlation appears through the borrowers' shared business model.
+
+Agricultural equipment loans reveal which parts of the reasoning travel. Tractors amortise like vehicles, but crop cycles, monsoons, resale markets, and seasonal payment schedules alter the cash pattern. The analyst still follows scheduled payments, prepayments, defaults, collateral sale, expenses, and timing; the assumptions must fit the asset.
+
+An auto-loan pool is not made safe by having keys and registration papers. Its value comes from borrower cash first, recoverable collateral second, and a payment system capable of turning both into controlled, timely collections.

@@ -63,3 +63,35 @@ export function auditDocumentaryEpisode({ episodeNumber, script, chunkLimit = 80
   }
   return errors;
 }
+
+function boundaryText(script, edge) {
+  const paragraphs = paragraphsOf(script);
+  const paragraph = edge === 'opening' ? paragraphs[0] : paragraphs.at(-1);
+  return String(paragraph ?? '')
+    .replace(/^\[(?:DIYA|MEERA)\]\s+/i, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+export function auditDocumentaryCollection({ lessons = [], episodes = [] }) {
+  const errors = [];
+  const records = [
+    ...lessons.map((lesson) => ({ label: lesson.id, script: lesson.script })),
+    ...episodes.map((episode) => ({ label: `episode-${episode.number}`, script: episode.script })),
+  ];
+  for (const edge of ['opening', 'closing']) {
+    const labelsByBoundary = new Map();
+    for (const record of records) {
+      const boundary = boundaryText(record.script, edge);
+      if (!boundary) continue;
+      const labels = labelsByBoundary.get(boundary) ?? [];
+      labels.push(record.label);
+      labelsByBoundary.set(boundary, labels);
+    }
+    for (const labels of labelsByBoundary.values()) {
+      if (labels.length > 1) errors.push(`duplicate ${edge} shared by ${labels.join(', ')}`);
+    }
+  }
+  return errors;
+}

@@ -1,0 +1,39 @@
+Two families each borrow to buy a home. One has a conventional salary and standard tax documents. The other runs a growing restaurant, draws irregular income, and qualifies through bank statements and business cash flow. Both may repay reliably, but their underwriting evidence is not the same.
+
+Non-qualified-mortgage securitisation finances pools of United States residential mortgages that fall outside the applicable qualified-mortgage category. The label does not automatically mean fraudulent, delinquent, or subprime. It means the loans require careful attention to the underwriting approach and legal criteria that produced them.
+
+Follow the restaurant owner's mortgage payment. Once the loan closes, cash behaves like other mortgage cash: scheduled interest, principal, possible prepayment, delinquency, default, modification, and recovery. The distinctive risk lies upstream in how repayment capacity was established and how heterogeneous the pool may be.
+
+Documentation can include bank statements, asset-depletion methods, rental-property cash flow, or other permitted evidence rather than a standard salary file. Each method needs its own definitions, verification, exceptions, and performance history. Combining them under one non-qualified-mortgage label conceals the actual underwriting decisions.
+
+Ability to repay remains fundamental. The lender must assess whether the borrower can meet the obligation under applicable requirements and loan terms. A large down payment can reduce loss severity, but it does not create monthly income. Equity and affordability answer different questions.
+
+Loan-to-value measures the mortgage balance relative to property value. Valuation error, local market decline, second liens, property type, occupancy, and sale cost can weaken the apparent cushion. A low ratio supports recovery; it does not guarantee timely payment.
+
+Debt-service-coverage loans for investment properties may rely primarily on rental cash flow. The analyst needs rent assumptions, vacancy, operating expenses, interest rate, property value, sponsor behaviour, and reserve capacity. A ratio slightly above one can disappear after one vacant month or a repair bill.
+
+Bank-statement underwriting can better reflect a self-employed borrower's cash flow than a salary slip. It can also misread business turnover as personal income if expenses, seasonality, taxes, and one-off deposits are not handled carefully. The method is neither inherently weak nor self-validating.
+
+Borrower concentration is usually granular, but underwriting-channel concentration may remain. A pool sourced through a few brokers, lenders, or loan programs can share verification practices and exceptions. Geographic concentration can expose property values and employment to the same regional shock.
+
+Layered risk matters. A self-employed borrower with a strong equity contribution is different from a borrower combining weak documentation, high leverage, investor occupancy, and recent credit problems. Pool stratifications should show how risk attributes overlap rather than presenting each average separately.
+
+Prepayment strongly affects mortgage securities. Borrowers may refinance when rates fall, sell homes, or pay down principal. Faster prepayment shortens expected life and can hurt investors who paid a premium. Slower prepayment can extend duration when market rates rise.
+
+Rate structure also matters. Fixed-rate, adjustable-rate, and interest-only periods create different payment paths. A borrower current during an initial low-payment period may face a later increase. Underwriting must consider the relevant payment obligation rather than only the first monthly amount.
+
+Servicing practices can change outcomes after stress. Early contact, loss-mitigation options, modification authority, foreclosure timelines, advances, and document custody influence both timing and recovery. Similar borrowers can produce different realised losses under different servicing systems.
+
+The United States mortgage market before the financial crisis demonstrated the danger of treating broad labels and ratings as substitutes for underwriting each loan. The Financial Crisis Inquiry Commission documented weakened practices and incentive failures in parts of the origination and distribution chain. That history is a warning about mechanism, not a verdict on every later non-qualified mortgage.
+
+Securities disclosure can reveal pool attributes, underwriting programs, originator concentrations, servicing, and transaction protections. A public prospectus still cannot answer every question about exception quality, fraud controls, or future borrower behaviour. Loan data and definitions must be read together.
+
+Suppose two pools have the same average loan-to-value and credit score. Pool A consists mainly of seasoned self-employed borrowers with verified deposits and substantial equity. Pool B combines new investor-property loans, thin coverage, high broker concentration, and interest-only payments. Averages have hidden the layering.
+
+Enhancement can absorb a defined amount of collateral loss. Senior notes may benefit from subordination, reserves, excess spread, and overcollateralisation. Protection must be compared with stressed default, severity, timing, and correlation; it should never be mistaken for improved borrower capacity.
+
+Now stress a regional downturn. Restaurant revenue falls, rental vacancies rise, refinancing becomes expensive, and property sales take longer. Default frequency, prepayment, and recovery severity change together. The pool's underwriting diversity can become common exposure to the same economy.
+
+Now consider small-business equipment loans documented through bank turnover rather than audited statements. The product is different, but the reasoning survives: understand how capacity was measured, identify exceptions, examine layered risks, and follow how those choices alter later cash.
+
+Non-qualified mortgage is a category boundary, not a credit conclusion. The investor earns understanding only by opening the label and examining the borrower evidence, property cushion, payment design, servicing path, and price paid for the resulting risk.

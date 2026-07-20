@@ -1,0 +1,47 @@
+A furniture seller can report a strong month and still stare at an almost empty bank account. Eighty families have bought dining tables on twelve-month instalments. The invoices are real, the customers are paying, and the profit has been earned. But timber suppliers want cash next week.
+
+There are two different things sitting inside that business. One is the company itself, with its showroom, employees, reputation, rent, and every other risk it carries. The other is a defined set of contractual payments owed by identifiable customers. Cash securitisation begins by separating those two ideas.
+
+Suppose one customer owes ten thousand rupees each month. The seller can wait for the twelve payments. It can borrow against the entire company. Or it can transfer the payment right into a financing arrangement and receive money today. Which choice allows an investor to study the customer payments without taking a general claim on everything the seller does?
+
+The third choice exposes the mechanism. Cash securitisation is a transaction in which financial assets, or enforceable rights to their cash flows, are transferred and used to support securities issued to investors. The word cash matters because actual assets or receivables enter the transaction. This is different from transferring only credit risk through a guarantee or derivative while the loans remain where they began.
+
+Follow the customer's ten thousand rupees. Before any financing, the payment belongs to the seller under the instalment contract. After a valid transfer, the relevant right belongs to the purchasing vehicle under the transaction documents. The customer may continue using the same payment channel, but the economic destination of the collection has changed.
+
+That change cannot be achieved by placing loan numbers in a spreadsheet. The assets must be identifiable. The transferor must own the rights it claims to transfer. The contracts must permit the relevant transfer. Required notices, registrations, consideration, and legal formalities must be satisfied. If those elements fail, investors may discover that they funded a promise about assets rather than an enforceable claim on them.
+
+Cash reaches the seller at closing because investors purchase securities issued against the transferred pool. The seller exchanges a stream of future collections for immediate funding, subject to the purchase price, retained interest, fees, reserves, and other deal terms. It has not created money. It has changed the timing and source of its funding.
+
+The asset pool is the defined group of receivables supporting the securities. For the furniture seller, the pool might include only instalment contracts that are current, properly documented, and below a stated customer concentration. A pool is not merely a total balance. Its composition determines when cash arrives, how often customers default, how much is recovered, and whether a few obligors dominate the result.
+
+Eligibility criteria decide which receivables may enter. An account that is already disputed, overdue, legally defective, or owed by a connected party may be excluded. Eligibility protects the pool from obvious contamination, but it is not a guarantee of future performance. A customer who is current today can still lose income next month.
+
+Receivables can also shrink for reasons other than default. A customer may return defective goods, claim a discount, offset another amount, or successfully dispute the invoice. In trade-receivable financing, that reduction is called dilution. Ten thousand rupees shown as due can become eight thousand without the customer suffering a credit failure. The investor therefore needs to understand both inability to pay and reasons the amount itself may change.
+
+Collection control decides whether transferred cash actually reaches the transaction. If customers continue paying into the seller's ordinary operating account, the money can become mixed with rent, salaries, and supplier payments. That is commingling risk. A controlled collection account, frequent remittance, reconciliation, and replacement rights reduce the exposure; none of them repairs a transfer that was invalid from the beginning.
+
+The servicer keeps the payment machinery working. It sends statements, receives money, records arrears, follows up with customers, manages disputes, and reports performance. The original seller often remains servicer because it already knows the customers and systems. That convenience creates dependence: asset ownership may move while operational control remains with the same institution.
+
+If the seller fails, two separate questions appear. Do the receivables remain legally outside the seller's insolvency estate? Can another operator identify customers, access records, collect payments, and remit cash without a long interruption? Legal isolation answers the first question. Servicing continuity answers the second. Investors need both.
+
+Cash securitisation is also different from an ordinary secured loan. In a secured borrowing, the company remains the borrower and grants a lender security over assets. A true sale is intended to transfer the defined assets to the vehicle so investors rely primarily on their cash flows under limited-recourse terms. Labels do not decide the outcome. Courts, legal opinions, documents, conduct, and applicable law determine whether the transfer works as claimed.
+
+Now let one customer pay early. The transaction receives principal sooner than expected. Credit exposure may fall, which sounds entirely positive. Yet the investor also loses future interest and must reinvest earlier, perhaps at a lower rate. The same event can improve credit protection and worsen investment return.
+
+Let another customer pay late. The receivable still exists, but cash misses the distribution date. A reserve or liquidity facility may bridge the timing gap. That support handles a temporary shortage only within its documented amount and conditions. It cannot transform a permanently unpaid invoice into cash.
+
+Then allow defaults to accumulate. Excess spread may absorb some losses. A reserve may be drawn. A subordinated interest may take impairment before a senior note. These protections change who is hit first; they do not change the fact that the pool has lost value. Enhancement is finite by design.
+
+The Reserve Bank of India's securitisation directions require attention to asset eligibility, transfer conditions, retention, servicing, and the relationship between the originator and the securitisation vehicle. The United States securities framework similarly emphasizes disclosure about the asset pool, transaction parties, servicing, and distribution rules. Those frameworks explain what investors must be able to examine. They do not supply the missing pool tape or prove that a particular tranche is safe.
+
+A real credit decision therefore starts below the headline balance. It counts the obligors, measures contract seasoning, identifies accounts that have been late, and studies return and dilution patterns. It also locates the collection accounts, tests reconciliation speed, and maps what happens when the servicer cannot operate.
+
+Imagine the furniture seller offers one hundred crore rupees of receivables. That number alone cannot support a conclusion. If half the balance comes from two weak commercial customers, concentration can dominate the result. If thousands of households each owe a small amount under standard contracts, the loss pattern may be more granular. The same total can finance very different risk.
+
+Price matters as much as eligibility. Investors may pay less than the receivables' face amount, require overcollateralisation, or insist that the seller retain a junior interest. Those choices create protection and align incentives, but they also determine how much immediate funding the seller actually receives. Turning one hundred into funding does not necessarily produce one hundred in cash.
+
+A diagnostic-equipment company can face an almost identical cash problem. Hospitals owe monthly lease rentals on installed scanners, while the company wants cash to build the next batch. The analysis follows the same path: identify the contracts, verify the payment rights, test transferability, examine customer concentration, control collections, protect servicing continuity, and map losses through the payment priority.
+
+The scanners make the story tangible, but the receivable remains the controlling object. Investors are not buying the company's ambition or the accounting value of future revenue. They are funding a legally defined stream whose amount, timing, ownership, and route to the payment account must survive scrutiny.
+
+Cash securitisation works only when the cash is more than expected. It must be identifiable before transfer, enforceable after transfer, controlled after collection, and sufficient after losses and expenses to meet the claims built upon it.

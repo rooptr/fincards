@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {
+  auditDocumentaryCollection,
   auditDocumentaryEpisode,
   auditDocumentaryLesson,
 } from './lib/documentary-discovery-audit.js';
@@ -58,5 +59,17 @@ assert.ok(auditDocumentaryEpisode({
   episodeNumber: 1,
   script: '[ARJUN] The label cannot replace the cash-flow analysis.',
 }).some((error) => error.includes('unsupported speaker')));
+
+const duplicateOpening = 'A lender receives cash today while borrower payments arrive over several years.';
+const duplicateClosing = 'The payment route decides who receives the consequence.';
+const collectionErrors = auditDocumentaryCollection({
+  lessons: [
+    { id: 'lesson-a', script: `${duplicateOpening}\n\nA distinct middle.\n\n${duplicateClosing}` },
+    { id: 'lesson-b', script: `${duplicateOpening}\n\nAnother distinct middle.\n\n${duplicateClosing}` },
+  ],
+  episodes: [],
+});
+assert.ok(collectionErrors.some((error) => error.includes('duplicate opening')));
+assert.ok(collectionErrors.some((error) => error.includes('duplicate closing')));
 
 console.log('Documentary discovery audit test passed.');

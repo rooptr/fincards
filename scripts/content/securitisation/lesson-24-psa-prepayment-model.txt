@@ -1,0 +1,41 @@
+A homeowner takes a thirty-year mortgage and repays it after four years because she moves to another city. She has not defaulted. The lender receives principal early. For the investor, a long stream of expected interest has suddenly become cash that must be reinvested.
+
+Mortgage cash-flow models need a common way to describe how quickly borrowers prepay. The Public Securities Association standard prepayment model, usually called P S A, is a market convention that expresses an assumed prepayment path. It is not a forecast that borrowers have agreed to follow.
+
+Prepayment is unscheduled principal returned before the contractual amortisation schedule requires it. Borrowers refinance, sell property, use savings, or otherwise repay early. Scheduled principal and unscheduled principal must be separated because they respond to different assumptions.
+
+Conditional prepayment rate, or C P R, expresses an annualised proportion of the remaining pool assumed to prepay, conditional on surviving to that period. A six-percent C P R does not mean six percent of original balances prepays every year forever. The base declines as loans amortise, prepay, and default.
+
+Single monthly mortality, or S M M, converts the annual assumption into a monthly rate. Conceptually, the monthly rate is one minus the twelfth root of one minus the annual C P R. At a six-percent annual C P R, the corresponding monthly rate is a little above one-half of one percent.
+
+One hundred P S A begins with a low C P R for a new mortgage pool. The benchmark increases by zero-point-two percentage points each month until it reaches six percent in month thirty, then remains at six percent. The ramp reflects the idea that brand-new borrowers usually need time before refinancing, moving, or otherwise prepaying.
+
+Fifty P S A applies half the benchmark speed. Two hundred P S A applies twice the benchmark speed. At month thirty and beyond, fifty P S A corresponds to three percent C P R, while two hundred P S A corresponds to twelve percent, subject to the convention's calculation.
+
+The number is a comparison language. Saying one pool is modelled at two hundred P S A lets investors compare an assumed speed with the standard curve. It does not establish that the pool's actual borrowers will behave at that speed.
+
+Seasoning affects where the pool sits on the ramp. A pool with average loan age of twenty months is not treated like brand-new production under a seasoning-aware application. Loan age, rate incentive, geography, borrower characteristics, housing turnover, and underwriting all influence observed prepayment.
+
+Refinancing incentive is powerful. When market mortgage rates fall below borrowers' existing rates by enough to overcome costs and friction, prepayment can accelerate. When rates rise, refinancing slows and mortgages can remain outstanding longer.
+
+That creates contraction risk. Principal returns faster than expected, the security's average life shortens, and premium investors may lose expected interest. Reinvestment happens when comparable yields may be lower.
+
+Slow prepayment creates extension risk. Principal remains outstanding longer, duration increases, and investors stay exposed when they may prefer cash back. A security expected to behave like a short asset can become a long one without a borrower default.
+
+Weighted average life measures the average time each unit of principal remains outstanding. It differs from final legal maturity. P S A assumptions affect projected principal dates and therefore expected life, price sensitivity, and yield.
+
+Premium and discount change investor preference. An investor paying above par generally dislikes unexpected fast principal because premium is recovered sooner with less interest. An investor buying below par may benefit from principal returning at par sooner, though other risks remain.
+
+Burnout describes how a pool can become less responsive after repeated refinancing opportunities. Borrowers able and willing to refinance may already have left. The remaining borrowers can be constrained by credit, loan size, documentation, inertia, or economics. A constant relationship between rate incentive and prepayment may then overstate future speed.
+
+Defaults and prepayments both remove performing balance but have opposite credit meanings. Prepayment returns principal. Default interrupts payment and may recover only part later. A model that combines all balance reduction as principal received invents cash.
+
+Servicing and product terms also matter. Prepayment penalties where lawful, refinancing friction, borrower outreach, assumability, loan size, and documentation can change behaviour. Historical P S A speeds from another market or product are not automatically transferable.
+
+SIFMA's uniform practices provide the authoritative convention for P S A. Securities disclosures can show prepayment assumptions and sensitivity. Neither source can supply an Indian home-loan pool's future speed without its data and a reasoned behavioural model.
+
+Suppose a mortgage security is valued at one hundred P S A. Run fifty, one hundred, two hundred, and stress paths. Observe interest, principal, weighted average life, tranche amortisation, extension, and reinvestment. The point is not to crown one curve correct; it is to see what the investment depends upon.
+
+Indian housing loans in Chennai and Mumbai require their own evidence. Do not invent a P S A number. Collect loan age, coupon, remaining term, prior prepayment, refinancing rates, property turnover, borrower type, channel, and seasonality before selecting or calibrating a speed.
+
+P S A is a ruler for timing, not a prophecy about people. It helps investors measure how a mortgage security changes when borrowers exercise the right to leave early.

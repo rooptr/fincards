@@ -1,0 +1,87 @@
+[DIYA] A borrower repays perfectly and still disappoints the investor. She sells her home, closes the mortgage years early, and returns every rupee owed. Credit performed. The investment changed because time changed.
+
+[MEERA] Another borrower also performs perfectly but never prepays. Market rates rise, the mortgage remains outstanding, and the investor waits much longer than expected. Again, no default. This time the disappointment comes from extension rather than contraction.
+
+[DIYA] Securitisation carries several clocks. Borrowers choose when unscheduled principal returns. Legal maturity sets the final boundary. Note rules allocate principal. Markets decide whether the security can be financed or sold meanwhile.
+
+[MEERA] Begin with scheduled principal. The mortgage contract gradually reduces balance under its amortisation schedule. Unscheduled principal arrives when borrowers refinance, move, or otherwise repay early.
+
+[DIYA] Models need a language for that unscheduled behaviour. The Public Securities Association convention, spoken as P S A, supplies a standard mortgage prepayment curve for comparison.
+
+[MEERA] At one hundred P S A, the annualised conditional prepayment rate begins low, rises by zero-point-two percentage points each month, reaches six percent in month thirty, and remains there. The ramp represents a convention about seasoning, not a promise from homeowners.
+
+[DIYA] Fifty P S A applies half that benchmark. Two hundred P S A applies twice it. The number tells analysts how an assumption relates to the standard curve.
+
+[MEERA] Conditional prepayment rate is annualised. Single monthly mortality, spoken as S M M, converts the assumption to a monthly rate. At six percent annual C P R, the monthly rate is slightly above one-half of one percent.
+
+[DIYA] The calculation applies to the remaining pool. Original balance is not prepaid repeatedly. Scheduled amortisation, earlier prepayment, and default continually change the base.
+
+[MEERA] Seasoning determines where loans sit in their lives. New borrowers rarely refinance on the first morning. After time passes, changing rates, moves, cash windfalls, and life events create more opportunities to prepay.
+
+[DIYA] Rate incentive is powerful but incomplete. Falling market rates encourage refinancing. Closing cost, credit quality, loan size, documentation, borrower inertia, and property value create friction.
+
+[MEERA] Burnout appears after repeated opportunities. Borrowers most able and willing to refinance may already have left. The remaining pool can respond less strongly to the next rate decline.
+
+[DIYA] Faster prepayment creates contraction risk. Principal returns early, weighted average life shortens, and future interest disappears. Investors reinvest when replacement yields may be lower.
+
+[MEERA] Slower prepayment creates extension risk. Principal remains outstanding, duration lengthens, and the investor stays exposed when market yields may be higher elsewhere.
+
+[DIYA] A premium investor generally dislikes unexpectedly fast principal because less time remains to earn enough interest above par. A discount investor may welcome principal returning at par sooner, subject to the rest of the risk.
+
+[MEERA] The same prepayment curve affects different tranches differently. Sequential rules can use early principal to reduce senior notes. Planned-amortisation classes, support classes, and other designs can redistribute timing, but none controls the borrower.
+
+[DIYA] Default must remain separate. Prepayment returns principal. Default removes performing balance and may return only a recovery later. Combining them would make a credit loss sound like early success.
+
+[MEERA] Now place these mortgages in Chennai and Mumbai. We do not assign a borrowed American P S A speed and call the work finished. We collect local loan age, rates, refinancing behaviour, turnover, borrower type, channel, and historical prepayment.
+
+[DIYA] P S A can remain a comparison ruler. Calibration must come from the pool and market being analysed. Convention organises assumptions; evidence chooses them.
+
+[MEERA] The investor now faces another clock. The security is paying, but financing markets freeze. Dealers quote wide spreads, lenders demand larger haircuts, and buyers hoard cash.
+
+[DIYA] During the financial crisis, this kind of funding stress damaged asset-backed issuance and trading. Consumer-credit collateral and market liquidity could weaken together, but they were not the same problem.
+
+[MEERA] The Federal Reserve announced the Term Asset-Backed Securities Loan Facility, or T A L F, in November two thousand eight to support issuance of eligible asset-backed securities tied to consumer and small-business credit.
+
+[DIYA] An eligible investor could pledge qualifying securities for term funding under program rules. The financing helped investors carry assets and supported demand for new issuance.
+
+[MEERA] The borrower payments still came from auto loans, card receivables, student loans, small-business loans, or other eligible collateral under the relevant terms. T A L F did not substitute Federal Reserve cash for every missed instalment.
+
+[DIYA] Haircuts required the investor to fund part of the collateral value. A larger haircut meant less public lending against the same security and more investor equity at risk.
+
+[MEERA] The loan was non-recourse subject to program conditions. That limited the lender's claim rather than turning the collateral into a guaranteed asset. Eligibility, valuation, haircut, and collateral performance remained essential.
+
+[DIYA] Imagine an eligible auto-loan security worth one hundred. A facility lends ninety and the investor supplies ten. If security value falls modestly, investor equity absorbs it first. If collateral loss becomes severe, the protection can be exceeded.
+
+[MEERA] The security already contains its own enhancement, such as subordination or reserves. The facility haircut sits outside that capital structure. Adding the two casually would mix protection for different claims.
+
+[DIYA] Now accelerate auto-loan prepayment. The pledged security shortens and principal returns. Funding may repay earlier, and the investor must redeploy cash. Timing changed without credit loss.
+
+[MEERA] Slow prepayment instead. The security extends toward or beyond the investor's funding horizon. A mismatch can reappear even when every borrower remains current.
+
+[DIYA] Facility maturity, security expected life, and legal final maturity therefore belong in the same timeline. Funding stability is strongest when the asset cannot unexpectedly outlive the financing without a plan.
+
+[MEERA] Add actual borrower defaults. Enhancement absorbs some loss, note cash weakens, market value falls, and the haircut cushion is tested. Liquidity support can reduce forced selling; it cannot manufacture recovery.
+
+[DIYA] Add market panic without collateral deterioration. Prices may fall because buyers cannot finance positions and sellers need cash. A facility can address that market-function problem more directly.
+
+[MEERA] Add both at once and attribution becomes difficult. Price reflects expected loss, uncertainty, liquidity premium, financing scarcity, duration, and forced sales. One market quote contains several stories.
+
+[DIYA] Securities disclosure helps separate them by showing collateral, performance, servicing, structure, maturity, and risks. P S A helps organise timing assumptions. T A L F illustrates a funding response. None is a complete investment conclusion alone.
+
+[MEERA] The Federal Reserve source establishes the historical United States facility and its purpose. SIFMA establishes the prepayment convention. Neither should be presented as an Indian rule or imported without context.
+
+[DIYA] Return to our first homeowner. Her early repayment reduces credit exposure and returns principal safely. The investor's reinvestment problem is real even though the borrower deserves praise.
+
+[MEERA] Return to the second homeowner. His slow but perfect payment extends the security. Duration risk is real even though credit remains strong.
+
+[DIYA] Return to the frozen market. A perfectly current security can become difficult to sell or finance. Liquidity risk is real even when contractual cash has not failed.
+
+[MEERA] Return to the defaulted pool. A liquid market can price and trade the security efficiently while expected loss remains high. Liquidity cannot be used as a synonym for quality.
+
+[DIYA] A complete judgement therefore maps borrower timing into collateral principal, collateral principal into tranche life, tranche life into investor duration, and duration into funding needs. It then maps default and recovery separately.
+
+[MEERA] Move the reasoning to education loans. Graduates may prepay after salary increases, extend through permitted terms, or default after unemployment. Investors may also face a market that refuses to finance the securities. Four clocks, four different consequences.
+
+[DIYA] The album began with one future payment becoming funding today. It ends with the recognition that every future payment also carries a date, and dates can change value even when the amount is ultimately paid.
+
+[MEERA] Credit asks whether cash arrives. Duration asks when. Liquidity asks whether the claim can be financed or sold while we wait. Good securitisation analysis never lets one answer impersonate the other two.
