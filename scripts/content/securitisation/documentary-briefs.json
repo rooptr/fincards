@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "documentary-discovery-briefs.v1",
+  "lesson1": {
+    "humanSituation": "A scooter dealer sells vehicles on instalments and needs cash to restock before the instalments arrive.",
+    "openingPuzzle": "A lender can have thousands of paying borrowers and still lack enough cash to make new loans today.",
+    "prediction": "Choose between waiting for the instalments, borrowing against the business, or selling a defined right to future payments.",
+    "controllingObject": "One twelve-thousand-rupee borrower instalment.",
+    "misconception": "Securitisation makes loans safer or removes every risk from the originator.",
+    "definition": "A financing transaction in which identified financial assets or their cash flows are pooled and used to support securities issued to investors.",
+    "causalChain": ["borrower obligation", "originator receivable", "legal transfer", "SPV claim", "servicing and collection account", "waterfall", "investor payment"],
+    "namedEvidence": "Kogta Financial and the vehicle-loan receivables transferred into the transaction reported by ICRA, including the ninety-crore-rupee pool principal, one-hundred-and-fifteen-crore-rupee receivables, and eighty-one-crore-rupee senior notes.",
+    "evidenceLimit": "Public rating material supports the reported structure and later collateral support but does not replace the full pool tape, transfer documents, servicing agreement, account controls, or executable waterfall.",
+    "complications": ["borrower default", "prepayment", "servicer failure", "commingling", "invalid transfer", "waterfall shortfall", "common dependence in a conduit"],
+    "technicalResponses": ["legal isolation", "controlled accounts", "servicing continuity", "trustee oversight", "subordination", "reserves", "payment priority", "triggers"],
+    "transferSituation": "A solar-panel installer sells systems on instalments and considers financing the contracted customer payments.",
+    "closingPrinciple": "Securitisation does not make weak loans strong. It changes who funds them, who receives their cash, and who suffers when that cash fails.",
+    "pronunciationRisks": ["Deepti", "SPV", "ICRA", "Kogta", "securitisation", "receivables", "crore", "MIAMI 10 2022"],
+    "requiredCoverage": ["cash securitisation", "secured borrowing distinction", "term securitisation", "conduit securitisation", "originator", "SPV", "servicer", "trustee", "cash path", "credit risk", "prepayment risk", "operational risk", "legal risk", "agency risk", "evidence discipline"]
+  },
+  "episode1": {
+    "humanSituation": "A family makes one mortgage payment that ultimately supports an investor claim.",
+    "openingPuzzle": "The payment is real, yet each handoff can weaken the right, information, control, or timing on which the investor relies.",
+    "prediction": "Distinguish ordinary lender borrowing from financing a defined pool of mortgage cash flows.",
+    "controllingObject": "One mortgage payment moving through the financing architecture.",
+    "misconception": "Pooling, transfer, a rating, or a senior label automatically improves borrower quality.",
+    "definition": "Securitisation converts identified asset cash flows into investable claims through transfer, issuance, servicing, control, and payment priority.",
+    "causalChain": ["borrower", "originator", "aggregator or sponsor", "SPV", "servicer", "trustee and controlled accounts", "waterfall", "investor"],
+    "namedEvidence": "The U.S. mortgage market before the 2008 crisis and the originate-to-distribute incentive problem described by the Financial Crisis Inquiry Commission.",
+    "evidenceLimit": "The historical case demonstrates mechanisms and incentive failures but cannot determine the quality of another transaction without its pool and contractual evidence.",
+    "complications": ["weak underwriting", "information loss", "originator incentives", "prepayment", "default and recovery", "common servicer dependence", "funding-market closure"],
+    "technicalResponses": ["representations", "retention", "servicing controls", "legal transfer", "account control", "waterfall priority", "independent monitoring"],
+    "transferSituation": "An Indian vehicle-loan pool across Mumbai and Pune.",
+    "closingPrinciple": "A structured claim becomes understandable when the right, cash path, control, timing, and first bearer of loss can all be traced.",
+    "pronunciationRisks": ["SPV", "FCIC", "mortgage-backed", "originate-to-distribute", "securitisation"],
+    "requiredCoverage": ["securitisation", "cash securitisation", "term securitisation", "conduit securitisation", "secured borrowing distinction", "originator incentives", "transfer", "servicing", "timing", "concentration", "Indian application"]
+  }
+}
