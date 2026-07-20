@@ -7,6 +7,7 @@ import KnowledgeGraphView from './components/KnowledgeGraphView';
 import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
 import LearningMapView from './components/LearningMapView';
 import LessonView from './components/LessonView';
+import PodcastLauncher from './components/podcast/PodcastLauncher.jsx';
 import cardsData from './data/cards.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
@@ -496,6 +497,7 @@ export default function App() {
           {/* Securitization: Notes/Flashcards + Cram/Focus toggle */}
           {activeCategory && isSecuritizationCategory(activeCategory) && !showSecuritizationNotes && (
             <>
+              <PodcastLauncher />
               <button
                 onClick={() => setShowSecuritizationNotes(true)}
                 className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PodcastLauncher from './podcast/PodcastLauncher.jsx';
 
 const sections = [
   {
@@ -392,6 +393,7 @@ export default function SecuritizationView({ onOpenFlashcards, globalMode, onTog
 
         {/* Mode Toggle + Flashcards Button */}
         <div className="flex items-center justify-center gap-3 flex-wrap">
+          <PodcastLauncher />
           <button
             onClick={onToggleMode}
             className="px-4 py-2 text-[13px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
