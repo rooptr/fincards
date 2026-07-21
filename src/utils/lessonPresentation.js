@@ -2,13 +2,18 @@ import katex from 'katex';
 
 export const HERO_STAGES = ['prologue', 'reveal', 'expand', 'content'];
 
-export function formulaMarkup(latex) {
+function normalizeFormulaLatex(latex) {
+  return String(latex).replace(/\s*\+\s*/g, String.raw` \;+\; `);
+}
+
+export function formulaMarkup(latex, { trustedCommands = [], output = 'htmlAndMathml', displayMode = true } = {}) {
   if (!latex) return '';
-  return katex.renderToString(latex, {
-    displayMode: true,
+  return katex.renderToString(normalizeFormulaLatex(latex), {
+    displayMode,
     throwOnError: false,
     strict: false,
-    trust: false,
+    output,
+    trust: (context) => trustedCommands.includes(context.command),
   });
 }
 

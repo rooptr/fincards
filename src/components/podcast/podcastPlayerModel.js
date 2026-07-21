@@ -3,6 +3,12 @@ function isAvailable(availability, trackId) {
   return availability?.[trackId] === 'available';
 }
 
+export function recordRecentlyPlayed(recentTracks, track, limit = 8) {
+  if (!track?.id) return Array.isArray(recentTracks) ? recentTracks : [];
+  return [track, ...(Array.isArray(recentTracks) ? recentTracks : []).filter((item) => item?.id !== track.id)]
+    .slice(0, Math.max(1, limit));
+}
+
 export function findAdjacentAvailableTrack(
   queue,
   currentId,

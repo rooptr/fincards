@@ -1,0 +1,24 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">
+  <voice name="en-US-Ava:DragonHDOmniLatestNeural" parameters="temperature=0.8;top_p=0.8;top_k=22;cfg_scale=1.2">
+    <break time="800ms"/>
+    <mstts:express-as style="calm" styledegree="0.85">This is the calm control.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="whispering" styledegree="1.4">This is the whispering control. Listen closely.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="laughing" styledegree="1.25">This is the laughing control. That is a surprisingly fragile assumption.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="amused" styledegree="1.1">This is the amused control. The formula is not the explanation.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="curious" styledegree="1.15">What changes when the assumption moves?</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="reflective" styledegree="1.05">Pause and consider what the number leaves out.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="serious" styledegree="1.1">A rating is not a substitute for evidence.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="excited" styledegree="1.15">Now the transaction begins to make sense.</mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="joking" styledegree="1.0">Do not let the spreadsheet bully you.</mstts:express-as>
+    <break time="650ms"/>
+    <prosody rate="-12%" pitch="-2st" volume="soft">This final segment tests a low, soothing prosody.</prosody>
+  </voice>
+</speak>

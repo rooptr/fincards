@@ -11,10 +11,11 @@ import {
   getPodcastQueue,
   PODCAST_ALBUM_ARTWORK,
   PODCAST_COLLECTIONS,
-} from '../../data/securitisationPodcastCatalog.js';
-import { findAdjacentAvailableTrack } from './podcastPlayerModel.js';
+} from '../../data/podcastCatalog.js';
+import { findAdjacentAvailableTrack, recordRecentlyPlayed } from './podcastPlayerModel.js';
 
 const STORAGE_KEY = 'fincards_securitisation_podcast_player';
+const RECENT_TRACKS_STORAGE_KEY = 'fincards_securitisation_podcast_recent';
 const PodcastPlayerContext = createContext(null);
 
 function publicUrl(path) {
@@ -26,6 +27,15 @@ function readSavedPlayer() {
     return JSON.parse(window.localStorage.getItem(STORAGE_KEY) || 'null');
   } catch {
     return null;
+  }
+}
+
+function readRecentTracks() {
+  try {
+    const saved = JSON.parse(window.localStorage.getItem(RECENT_TRACKS_STORAGE_KEY) || '[]');
+    return Array.isArray(saved) ? saved : [];
+  } catch {
+    return [];
   }
 }
 
@@ -47,6 +57,8 @@ export function PodcastPlayerProvider({ children }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [recentTracks, setRecentTracks] = useState(readRecentTracks);
+  const [speed, setSpeedState] = useState(1);
   const [nowPlayingOpen, setNowPlayingOpen] = useState(false);
   const [albumOpen, setAlbumOpen] = useState(() => (
     new URLSearchParams(window.location.search).get('podcast') === 'open'
@@ -113,6 +125,8 @@ export function PodcastPlayerProvider({ children }) {
       return false;
     }
 
+    setRecentTracks((current) => recordRecentlyPlayed(current, candidate));
+
     const resolved = manifestCacheRef.current.get(candidate.id);
     if (!resolved) {
       setStatus('error');
@@ -175,6 +189,16 @@ export function PodcastPlayerProvider({ children }) {
     }
   }, [chapter]);
 
+  const setSpeed = useCallback((nextSpeed) => {
+    const options = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+    const requested = Number(nextSpeed);
+    const speedValue = options.reduce((closest, option) => (
+      Math.abs(option - requested) < Math.abs(closest - requested) ? option : closest
+    ), 1);
+    if (audioRef.current) audioRef.current.playbackRate = speedValue;
+    setSpeedState(speedValue);
+  }, []);
+
   const playAdjacent = useCallback(async (direction) => {
     const queue = getPodcastQueue(queueKind);
     const unknownTracks = queue.filter((candidate) => !availability[candidate.id]);
@@ -228,6 +252,10 @@ export function PodcastPlayerProvider({ children }) {
       position: roundedSecond,
     }));
   }, [currentTime, queueKind, track]);
+
+  useEffect(() => {
+    window.localStorage.setItem(RECENT_TRACKS_STORAGE_KEY, JSON.stringify(recentTracks));
+  }, [recentTracks]);
 
   useEffect(() => {
     if (!track || !('mediaSession' in navigator) || typeof window.MediaMetadata !== 'function') return;
@@ -299,11 +327,14 @@ export function PodcastPlayerProvider({ children }) {
     currentTime,
     duration,
     isPlaying,
+    recentTracks,
+    speed,
     nowPlayingOpen,
     albumOpen,
     probeTrack,
     loadTrack,
     togglePlayback,
+    setSpeed,
     seek,
     playPrevious,
     playNext,
@@ -320,6 +351,7 @@ export function PodcastPlayerProvider({ children }) {
     duration,
     error,
     isPlaying,
+    recentTracks,
     loadTrack,
     manifest,
     nowPlayingOpen,
@@ -330,6 +362,8 @@ export function PodcastPlayerProvider({ children }) {
     retry,
     seek,
     status,
+    speed,
+    setSpeed,
     togglePlayback,
     track,
   ]);

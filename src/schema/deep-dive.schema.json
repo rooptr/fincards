@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Deep Dive v10 readiness record",
+  "type": "object",
+  "required": [
+    "topic_id",
+    "canonical_name",
+    "format",
+    "anchor_description",
+    "sources",
+    "governing_question_draft",
+    "formula_or_mechanics_stub",
+    "applicability_check",
+    "eligibility"
+  ],
+  "properties": {
+    "topic_id": { "type": "string" },
+    "canonical_name": { "type": "string" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "format": {
+      "type": ["string", "null"],
+      "enum": ["Narrative", "Structural", "Reference", "Modeling Lab", "Flashcards only", null]
+    },
+    "classification_status": { "type": "string", "enum": ["reviewed", "rule_based_pending_review", "unreviewed"] },
+    "classification_rationale": { "type": ["string", "null"] },
+    "lab_family": { "type": ["string", "null"] },
+    "experience_type": {
+      "type": ["string", "null"],
+      "enum": ["standard", "modeling_studio", "securitisation_desk", "decision_case", null]
+    },
+    "decision_case_eligible": { "type": "boolean" },
+    "applied_learning_requirements": {
+      "type": ["object", "null"],
+      "properties": {
+        "requires_real_inputs": { "type": "boolean" },
+        "requires_source_field": { "type": "boolean" },
+        "requires_as_of_date": { "type": "boolean" },
+        "requires_decision_output": { "type": "boolean" },
+        "requires_stress_trace": { "type": "boolean" }
+      }
+    },
+    "anchor_preference": {
+      "type": "object",
+      "required": ["preferred_geography", "fallback", "rule"],
+      "properties": {
+        "preferred_geography": { "type": "string" },
+        "fallback": { "type": "string" },
+        "rule": { "type": "string" }
+      }
+    },
+    "anchor_description": { "type": ["string", "null"] },
+    "anchor_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["candidate_id", "description", "sources", "applicability_status"],
+        "properties": {
+          "candidate_id": { "type": "string" },
+          "description": { "type": "string" },
+          "sources": { "type": "array" },
+          "applicability_status": { "type": "string", "enum": ["pass", "fail", "pending"] },
+          "applicability_reason": { "type": "string" },
+          "geography": { "type": "string" },
+          "recognition_score": { "type": "number" },
+          "applicability_score": { "type": "number" },
+          "source_quality_score": { "type": "number" },
+          "teaching_value_score": { "type": "number" },
+          "data_completeness_score": { "type": "number" },
+          "selection_rationale": { "type": "string" }
+        }
+      }
+    },
+    "anchor_selection": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "type": "string", "enum": ["pending", "locked"] },
+        "candidate_id": { "type": ["string", "null"] },
+        "rationale": { "type": ["string", "null"] }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "tier", "title", "url"],
+        "properties": {
+          "id": { "type": "string" },
+          "tier": { "type": "integer", "minimum": 1, "maximum": 4 },
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" }
+        }
+      }
+    },
+    "governing_question_draft": { "type": ["string", "null"] },
+    "formula_or_mechanics_stub": { "type": ["string", "null"] },
+    "applicability_check": {
+      "type": "object",
+      "required": ["status", "reason"],
+      "properties": {
+        "status": { "type": "string", "enum": ["pass", "fail", "pending"] },
+        "reason": { "type": "string" }
+      }
+    },
+    "eligibility": {
+      "type": "string",
+      "pattern": "^(ready|needs_research|flashcards_only|duplicate_of:.+)$"
+    },
+    "research_status": { "type": "string", "enum": ["unstarted", "draft", "reviewed"] }
+  },
+  "additionalProperties": true
+}

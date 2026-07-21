@@ -1,0 +1,16 @@
+{
+  "episode": 2,
+  "title": "Legal isolation and control",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "62fa45967e5d1dfa4a0ee8b85ab6393f4288795906a35f597696229173b89493",
+  "speakerTurns": 43,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-20T22:03:28.319Z"
+}

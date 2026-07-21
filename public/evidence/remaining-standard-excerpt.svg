@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">RIL, Zomato, IBBI, and SEC filed transaction evidence</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="186" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">RIL FY2024-25 operating evidence</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Consolidated revenue</text>
+  <text x="650" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Rs 1,071,174 crore</text>
+  <text x="78" y="263" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Consolidated EBITDA</text>
+  <text x="650" y="263" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Rs 183,422 crore</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Segment result before interest and taxes</text>
+  <text x="650" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">Rs 91,038 crore</text>
+  <text x="78" y="337" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Finance cost</text>
+  <text x="650" y="337" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">Rs 24,269 crore</text>
+  <line x1="78" y1="370" x2="1122" y2="370" stroke="#d8dbe2"/>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Evidence discipline</text>
+  <text x="78" y="454" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">Product-level marginal values, paid CAC, and complete LTV schedules remain explicit fields.</text>
+  <text x="78" y="491" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">A missing disclosure is recorded as a limitation, never replaced with a convenient estimate.</text>
+  <line x1="78" y1="528" x2="1122" y2="528" stroke="#d8dbe2"/>
+  <text x="78" y="572" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Transaction valuation evidence</text>
+  <text x="78" y="612" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">SEC-filed fairness opinion ranges: public comparables, acquisition comparables, precedent premiums, DCF</text>
+  <text x="78" y="649" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">The chart is an evidence display of ranges, not a decorative summary.</text>
+</svg>

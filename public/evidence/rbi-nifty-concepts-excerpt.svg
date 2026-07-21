@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">RBI Balance of Payments release and NSE Indices Nifty 50 Whitepaper 2024</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="184" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">India’s external account</text>
+  <text x="78" y="224" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Q4 2023-24 current account balance</text>
+  <text x="700" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">US$5.7 billion surplus</text>
+  <text x="78" y="262" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">FY2023-24 current account balance</text>
+  <text x="700" y="262" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">US$23.2 billion deficit</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">FY2023-24 portfolio investment</text>
+  <text x="700" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">US$44.1 billion inflow</text>
+  <line x1="78" y1="334" x2="1122" y2="334" stroke="#d8dbe2"/>
+  <text x="78" y="374" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Nifty 50 portfolio artifact</text>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Constituents</text>
+  <text x="700" y="414" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">50</text>
+  <text x="78" y="452" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Average free-float market-cap representation</text>
+  <text x="700" y="452" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">57.35%</text>
+  <text x="78" y="490" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Financial Services sector weight</text>
+  <text x="700" y="490" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">33.53%</text>
+  <text x="78" y="528" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Information Technology sector weight</text>
+  <text x="700" y="528" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">13.04%</text>
+  <text x="78" y="588" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#5f6368">The two artifacts teach different mechanisms: external-account reconciliation and portfolio diversification.</text>
+</svg>

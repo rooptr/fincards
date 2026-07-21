@@ -1,0 +1,20 @@
+{
+  "lessonId": "azure_pronunciation_tests",
+  "provider": "azure-speech",
+  "voice": "en-IN-Diya:DragonHDLatestNeural",
+  "region": "centralindia",
+  "modelId": "DragonHDLatestNeural",
+  "audioQuality": "Azure native 48kHz 192kbps MP3 with sentence-level chunking and controlled transitions",
+  "generatedAt": "2026-07-19T13:37:29.281Z",
+  "scriptHash": "2ae7808d1c5ee97028cc76c0f3c1d0cba2f4fb42e927d64b6e863ae4d0db889f",
+  "chapters": [
+    {
+      "id": "deepti-opening-v1",
+      "label": "Full lesson narration",
+      "audio": "/audio/deep-dive/azure_pronunciation_tests/deepti-opening-v1.mp3",
+      "characters": 121,
+      "openingPauseSeconds": 1,
+      "script": "[pause] Hi, [[DEEPI_ALIAS]]. We are going to follow the cash, the contracts, and the risks that make securitisation work."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'PodcastFigma';
+  src: url('/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PodcastFigma';
+  src: url('/fonts/SF-Pro-Text-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PodcastFigma';
+  src: url('/fonts/SF-Pro-Text-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PodcastFigma';
+  src: url('/fonts/SF-Pro-Display-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Walmart leverage evidence extract</title>
+  <desc id="desc">A field extract rebuilt from Walmart’s 2024 annual report showing debt, cash, operating earnings, equity, cash flow and payment fields used in corporate credit ratios.</desc>
+  <rect width="1200" height="900" fill="#fbfbfd"/>
+  <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111827">Walmart FY2024 credit-support fields</text>
+  <text x="72" y="106" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#6b7280">Amounts in millions. Derived outputs preserve the stated debt and coverage conventions.</text>
+  <rect x="72" y="140" width="1056" height="660" rx="18" fill="#ffffff" stroke="#d9dde5"/>
+  <rect x="72" y="140" width="1056" height="58" rx="18" fill="#f0f5ff"/>
+  <rect x="72" y="180" width="1056" height="18" fill="#f0f5ff"/>
+  <text x="98" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Field</text>
+  <text x="470" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">FY2024 value</text>
+  <text x="840" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Credit use</text>
+  <line x1="72" y1="198" x2="1128" y2="198" stroke="#e5e7eb"/>
+  <text x="98" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Debt, excluding leases</text><text x="470" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$40,457m</text><text x="840" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Leverage numerator</text>
+  <line x1="98" y1="256" x2="1102" y2="256" stroke="#eef0f4"/>
+  <text x="98" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Cash</text><text x="470" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$9,867m</text><text x="840" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Net leverage</text>
+  <line x1="98" y1="312" x2="1102" y2="312" stroke="#eef0f4"/>
+  <text x="98" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Operating income / EBITDA</text><text x="470" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$27,012m / $38,865m</text><text x="840" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Coverage and leverage</text>
+  <line x1="98" y1="368" x2="1102" y2="368" stroke="#eef0f4"/>
+  <text x="98" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Cash flow from operations</text><text x="470" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$35,726m</text><text x="840" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Debt service coverage</text>
+  <line x1="98" y1="424" x2="1102" y2="424" stroke="#eef0f4"/>
+  <text x="98" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Cash interest / principal repayments</text><text x="470" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$2,519m / $4,217m</text><text x="840" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Required cash payments</text>
+  <line x1="98" y1="480" x2="1102" y2="480" stroke="#eef0f4"/>
+  <text x="98" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Total assets / goodwill</text><text x="470" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$252,399m / $28,113m</text><text x="840" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Asset coverage</text>
+  <line x1="98" y1="536" x2="1102" y2="536" stroke="#eef0f4"/>
+  <text x="98" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827">Debt service coverage</text><text x="470" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">5.3x</text><text x="840" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">CFO / cash debt service</text>
+  <line x1="98" y1="592" x2="1102" y2="592" stroke="#eef0f4"/>
+  <text x="98" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#111827">Net leverage / total leverage</text><text x="470" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">0.79x / 1.04x</text><text x="840" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Debt relative to EBITDA</text>
+  <text x="72" y="850" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9ca3af">Source: Walmart Inc. Annual Report 2024, pages 39, 54, 56, and 58. Derived values use stated conventions.</text>
+</svg>

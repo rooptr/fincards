@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660">
+  <rect width="1200" height="660" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="584" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">NSE Indices Nifty 50 Whitepaper 2024 • Exhibit 9 • as of 31 March 2024</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="184" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Nifty 50 Total Return observations</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Since June 30, 1999</text>
+  <text x="570" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">14.10% annualised return</text>
+  <text x="78" y="264" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">15 years</text>
+  <text x="570" y="264" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">15.63% annualised return</text>
+  <text x="78" y="302" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">5 years</text>
+  <text x="570" y="302" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">15.28% annualised return</text>
+  <text x="78" y="340" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">1 year</text>
+  <text x="570" y="340" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">30.08% annualised return</text>
+  <line x1="78" y1="374" x2="1122" y2="374" stroke="#d8dbe2"/>
+  <text x="78" y="418" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Annualised volatility since inception</text>
+  <text x="570" y="418" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">22.25%</text>
+  <text x="78" y="458" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Three-year return to risk ratio</text>
+  <text x="570" y="458" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">1.19</text>
+  <text x="78" y="512" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#202124">Total Return index treatment: dividends are reinvested.</text>
+  <text x="78" y="560" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">Source: NSE Indices official Nifty 50 Whitepaper 2024, Exhibit 9</text>
+</svg>

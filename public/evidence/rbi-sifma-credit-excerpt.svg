@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">RBI banking and housing guidance • SIFMA Uniform Practices</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="184" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Credit protection measures</text>
+  <text x="78" y="224" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">RBI Provision Coverage Ratio, September 2024</text>
+  <text x="740" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">76.4% provisional</text>
+  <text x="78" y="262" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">RBI gross NPA ratio, September 2024</text>
+  <text x="740" y="262" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">2.5%</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">RBI net NPA ratio, September 2024</text>
+  <text x="740" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">0.6%</text>
+  <line x1="78" y1="334" x2="1122" y2="334" stroke="#d8dbe2"/>
+  <text x="78" y="374" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Loan to Value</text>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Numerator</text>
+  <text x="740" y="414" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#202124">Total outstanding exposure</text>
+  <text x="78" y="452" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Denominator</text>
+  <text x="740" y="452" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#2563eb">Realizable property value</text>
+  <text x="78" y="490" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Cited small-value housing boundary</text>
+  <text x="740" y="490" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#202124">Up to ₹20 lakh, 90% LTV</text>
+  <line x1="78" y1="524" x2="1122" y2="524" stroke="#d8dbe2"/>
+  <text x="78" y="566" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">PSA benchmark</text>
+  <text x="740" y="566" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#2563eb">100 PSA reaches 6% CPR after month 30</text>
+  <text x="78" y="622" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#5f6368">Sources: RBI Bulletin and housing guidance; SIFMA Uniform Practices, Standard Prepayment Model</text>
+</svg>

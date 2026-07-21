@@ -6,16 +6,43 @@ import SecuritizationView from './components/SecuritizationView';
 import KnowledgeGraphView from './components/KnowledgeGraphView';
 import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
 import LearningMapView from './components/LearningMapView';
-import LessonView from './components/LessonView';
+import DeepDiveReader from './components/DeepDiveReader.jsx';
 import PodcastLauncher from './components/podcast/PodcastLauncher.jsx';
 import cardsData from './data/cards.json';
+import { accountingCoreCards } from './data/accountingCoreCards';
+import { accountingAptitudeCards } from './data/accountingAptitudeCards';
+import { accountingAdvancedCards } from './data/accountingAdvancedCards';
+import conceptsData from './data/concepts.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
 
+const conceptsById = new Map(conceptsData.map((concept) => [concept.id, concept]));
+const normalizeTopicText = (value = '') => value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
+function resolveTopicCards(deck, topic) {
+  if (!topic) return { cards: [], usedFallback: false };
+
+  const linkedCardIds = new Set([
+    ...(topic.primaryFlashcards || []),
+    ...(topic.supportingFlashcards || []),
+  ]);
+  const linkedCards = deck.filter((card) => linkedCardIds.has(card.id));
+  if (linkedCards.length > 0) return { cards: linkedCards, usedFallback: false };
+
+  const searchTerms = [topic.canonicalName, topic.normalizedName, ...(topic.aliases || [])]
+    .map(normalizeTopicText)
+    .filter((term) => term.length >= 3);
+  const cards = deck.filter((card) => {
+    const text = normalizeTopicText(`${card.question} ${card.answer} ${card.explanation || ''}`);
+    return searchTerms.some((term) => text.includes(term));
+  });
+  return { cards, usedFallback: true };
+}
+
 export default function App() {
   const [progressData, setProgressData] = useState({});
-  const [masterDeck, setMasterDeck] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [masterDeck, setMasterDeck] = useState(cardsData);
+  const [loading, setLoading] = useState(false);
   const [customCards, setCustomCards] = useState(() => {
     try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
     catch { return []; }
@@ -27,8 +54,13 @@ export default function App() {
   const [formSaved, setFormSaved] = useState(false);
   
   // Navigation State
-  const [globalMode, setGlobalMode] = useState('focus'); // 'focus' | 'list' | 'graph'
-  const [activeCategory, setActiveCategory] = useState(null); // null means dashboard
+  const initialRouteParams = new URLSearchParams(window.location.search);
+  const initialCategory = initialRouteParams.get('category');
+  const initialTopicId = initialRouteParams.get('topic');
+  const initialTopic = conceptsById.get(initialTopicId);
+  const [globalMode, setGlobalMode] = useState(window.location.pathname.includes('/deep-dive') ? 'lesson' : 'focus'); // 'focus' | 'list' | 'graph'
+  const [activeCategory, setActiveCategory] = useState(initialTopic ? 'All Cards' : initialCategory || null); // null means dashboard
+  const [selectedTopicId, setSelectedTopicId] = useState(initialTopic?.id || null);
   const [activeSubcategory, setActiveSubcategory] = useState(null);
   const [theme, setTheme] = useState('light');
   const [showSecuritizationNotes, setShowSecuritizationNotes] = useState(true);
@@ -99,18 +131,16 @@ export default function App() {
   // Load progress and cards on mount
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec?t=" + Date.now();
-    
+    const localDeck = [...cardsData, ...accountingCoreCards, ...accountingAptitudeCards, ...accountingAdvancedCards];
+
     const fetchCards = fetch(WEBHOOK_URL)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        return res.text(); // Text first to catch HTML login pages
+        return res.text();
       })
       .then(text => {
-        try {
-          return JSON.parse(text);
-        } catch (e) {
-          throw new Error("Invalid JSON from Sheets. Are you logged in or is it deployed to 'Anyone'?");
-        }
+        try { return JSON.parse(text); }
+        catch { throw new Error("Invalid JSON from Sheets. Are you logged in or is it deployed to 'Anyone'?"); }
       })
       .catch(err => {
         setFetchError(err.message || 'Fetch failed');
@@ -123,10 +153,9 @@ export default function App() {
     });
 
     Promise.all([fetchCards, fetchProgress]).then(([liveCards, progressArr]) => {
-      const combinedDeck = [...cardsData];
-      if (liveCards && Array.isArray(liveCards)) {
-        const validLiveCards = liveCards.filter(c => c.id && c.question);
-        combinedDeck.push(...validLiveCards);
+      const combinedDeck = [...localDeck];
+      if (Array.isArray(liveCards)) {
+        combinedDeck.push(...liveCards.filter(c => c.id && c.question));
       }
 
       // Dynamic mapping & scrubbing
@@ -166,21 +195,16 @@ export default function App() {
         catch { return []; }
       })();
       setMasterDeck([...scrubbedDeck, ...savedCustom]);
-      
+      setLoading(false);
       const progressMap = {};
-      if (progressArr && Array.isArray(progressArr)) {
+      if (Array.isArray(progressArr)) {
         progressArr.forEach(item => { progressMap[item.cardId] = item; });
       }
       setProgressData(progressMap);
-      setLoading(false);
     }).catch(err => {
       console.error("Initialization error:", err);
       setFetchError(err.message || 'Initialization failed');
-      const savedCustom = (() => {
-        try { return JSON.parse(localStorage.getItem('deepti_custom_cards') || '[]'); }
-        catch { return []; }
-      })();
-      setMasterDeck([...cardsData, ...savedCustom]);
+      setMasterDeck([...localDeck, ...customCards]);
       setProgressData({});
       setLoading(false);
     });
@@ -222,6 +246,12 @@ export default function App() {
     return categories;
   }, [masterDeck, progressData]);
 
+  const selectedTopic = selectedTopicId ? conceptsById.get(selectedTopicId) : null;
+  const topicDeck = useMemo(
+    () => resolveTopicCards(masterDeck, selectedTopic),
+    [masterDeck, selectedTopic],
+  );
+
   // Compute Active Deck based on activeCategory
   const activeDeck = useMemo(() => {
     if (!activeCategory) return [];
@@ -230,7 +260,9 @@ export default function App() {
     if (graphDeck) return graphDeck;
 
     let deck = [];
-    if (activeCategory === 'All Cards') {
+    if (selectedTopic) {
+      deck = topicDeck.cards;
+    } else if (activeCategory === 'All Cards') {
       deck = [...masterDeck];
     } else if (activeCategory === 'Starred') {
       deck = masterDeck.filter(card => progressData[card.id]?.starred);
@@ -265,7 +297,7 @@ export default function App() {
     }
     
     return deck;
-  }, [masterDeck, activeCategory, activeSubcategory, globalMode, progressData]);
+  }, [masterDeck, activeCategory, activeSubcategory, globalMode, progressData, selectedTopic, topicDeck]);
 
   const filteredDeck = useMemo(() => {
     if (globalMode !== 'list') return [];
@@ -320,6 +352,7 @@ export default function App() {
   const isSecuritizationCategory = (cat) => cat && cat.toLowerCase().includes('securitization');
 
   const openCategory = (category) => {
+    setSelectedTopicId(null);
     setActiveCategory(category);
     setActiveSubcategory(null);
     setCurrentCardIndex(0);
@@ -330,7 +363,11 @@ export default function App() {
   };
 
   const goBack = () => {
-    if (activeCategory === '__graph__') {
+    if (selectedTopic) {
+      setSelectedTopicId(null);
+      setActiveCategory(null);
+      setActiveSubcategory(null);
+    } else if (activeCategory === '__graph__') {
       // Return to knowledge graph
       setActiveCategory(null);
       setActiveSubcategory(null);
@@ -423,18 +460,29 @@ export default function App() {
 
   return (
     <div 
-      className="h-[100dvh] w-full flex flex-col bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] overflow-hidden selection:bg-[#0066cc] selection:text-white transition-colors duration-300"
-      onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
+      className={`${globalMode === 'lesson' ? 'min-h-[100dvh]' : 'h-[100dvh] overflow-hidden'} w-full flex flex-col bg-[#f5f5f7] dark:bg-black text-[#1d1d1f] dark:text-[#f5f5f7] selection:bg-[#0066cc] selection:text-white transition-colors duration-300`}
+      onTouchStart={globalMode === 'lesson' ? undefined : onTouchStart}
+      onTouchMove={globalMode === 'lesson' ? undefined : onTouchMove}
+      onTouchEnd={globalMode === 'lesson' ? undefined : onTouchEnd}
     >
       
       {/* Apple-style Header */}
-      <header className="flex-none flex items-center justify-between px-4 md:px-6 py-3 glass-header border-b border-black/5 dark:border-white/10 z-20 sticky top-0 transition-colors">
+      <header className={`flex-none flex items-center justify-between px-4 md:px-6 py-3 glass-header border-b border-black/5 dark:border-white/10 z-20 sticky top-0 transition-colors ${globalMode === 'lesson' ? 'deep-dive-header' : ''}`}>
         
         {/* Title or Back */}
         {!activeCategory ? (
-          <h1 className="flex items-center gap-1.5">
+          <h1
+            className={`flex items-center gap-1.5 ${globalMode !== 'dashboard' ? 'cursor-pointer hover:opacity-80 transition-opacity' : ''}`}
+            onClick={() => {
+              if (globalMode !== 'dashboard') {
+                setGlobalMode('dashboard');
+                setActiveCategory(null);
+                setSelectedTopicId(null);
+                setActiveSubcategory(null);
+                setGraphDeck(null);
+              }
+            }}
+          >
             <div className="flex items-baseline text-[#1d1d1f] dark:text-[#f5f5f7]">
               <span style={{ fontFamily: 'TheSignature' }} className="lowercase text-4xl md:text-5xl leading-[0.4] -mr-0.5">fin</span>
               <span className="uppercase font-semibold tracking-tight text-lg">CARDS</span>
@@ -449,6 +497,8 @@ export default function App() {
             <span className="text-[14px] font-medium">
               {activeCategory === '__graph__'
                 ? 'Learning Map'
+                : selectedTopic
+                  ? selectedTopic.canonicalName
                 : activeCategory === 'Aptitude' && activeSubcategory
                   ? 'Aptitude'
                   : isSecuritizationCategory(activeCategory) && !showSecuritizationNotes
@@ -471,22 +521,11 @@ export default function App() {
 
           {!activeCategory && (
             <div className="flex gap-2">
-              <button 
-                onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
-                className={`px-3 py-1.5 text-[12px] font-medium rounded-full transition-all ${globalMode === 'lesson' ? 'bg-[#0066cc] text-white hover:bg-[#2997ff]' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
-              >
-                Deep Dive
-              </button>
-              <button 
-                onClick={() => setGlobalMode(prev => prev === 'graph' ? 'focus' : 'graph')}
-                className={`px-3 py-1.5 text-[12px] font-medium rounded-full transition-all ${globalMode === 'graph' ? 'bg-[#0066cc] text-white hover:bg-[#2997ff]' : 'bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c]'}`}
-              >
-                Learning Map
-              </button>
+              <PodcastLauncher />
               {globalMode !== 'graph' && globalMode !== 'lesson' && (
                 <button 
                   onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
-                  className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+                  className="whitespace-nowrap px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
                 >
                   {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
                 </button>
@@ -500,13 +539,13 @@ export default function App() {
               <PodcastLauncher />
               <button
                 onClick={() => setShowSecuritizationNotes(true)}
-                className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+                className="whitespace-nowrap px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
               >
                 ← Notes
               </button>
               <button 
                 onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
-                className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+                className="whitespace-nowrap px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
               >
                 {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
               </button>
@@ -517,7 +556,7 @@ export default function App() {
           {activeCategory && !isSecuritizationCategory(activeCategory) && !(!activeSubcategory && activeCategory === 'Aptitude') && (
             <button 
               onClick={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
-              className="px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
+              className="whitespace-nowrap px-3 py-1.5 text-[12px] font-medium rounded-full bg-[#e8e8ed] dark:bg-[#2c2c2e] text-[#1d1d1f] dark:text-[#f5f5f7] hover:bg-[#d2d2d7] dark:hover:bg-[#3a3a3c] transition-colors"
             >
               {globalMode === 'focus' ? 'Cram Mode' : 'Focus Mode'}
             </button>
@@ -528,7 +567,9 @@ export default function App() {
       {/* DASHBOARD MODE */}
       {!activeCategory && (
         globalMode === 'lesson' ? (
-          <LessonView onClose={() => setGlobalMode('focus')} />
+          <div className="deep-dive-shell">
+            <DeepDiveReader />
+          </div>
         ) : globalMode === 'graph' ? (
           <LearningMapView 
             onClose={() => setGlobalMode('focus')}
@@ -633,6 +674,23 @@ export default function App() {
             </div>
           </div>
           
+          <div className="flex gap-3 md:gap-4 mt-2">
+            <button
+              onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
+              className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
+            >
+              <svg className="w-5 h-5 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              Deep Dive
+            </button>
+            <button
+              onClick={() => window.location.assign(`${import.meta.env.BASE_URL}explorer`)}
+              className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
+            >
+              <svg className="w-5 h-5 text-[#34c759]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              Explore Topics
+            </button>
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
             {categoryStats.map(cat => {
               const isDarkAccent = cat.name === 'Starred';
@@ -726,6 +784,18 @@ export default function App() {
             <>
               {globalMode === 'focus' && (
                 <main className="flex-1 flex flex-col relative w-full overflow-hidden">
+                  {selectedTopic && (
+                    <div className="flex-none px-4 pt-3 pb-0">
+                      <div className={`rounded-2xl px-4 py-2.5 flex items-center gap-3 ${topicDeck.usedFallback ? 'bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/40' : 'bg-[#0066cc]/8 dark:bg-[#2997ff]/8 border border-[#0066cc]/15 dark:border-[#2997ff]/15'}`}>
+                        <p className={`text-[12px] font-semibold ${topicDeck.usedFallback ? 'text-amber-700 dark:text-amber-400' : 'text-[#0066cc] dark:text-[#2997ff]'}`}>
+                          {topicDeck.usedFallback
+                            ? `Matching cards for ${selectedTopic.canonicalName} — exact card links are not available for this topic yet.`
+                            : `${selectedTopic.canonicalName} — ${activeDeck.length} linked flashcards`
+                          }
+                        </p>
+                      </div>
+                    </div>
+                  )}
                   {/* Graph Study Mode Banner */}
                   {activeCategory === '__graph__' && (
                     <div className="flex-none px-4 pt-3 pb-0">

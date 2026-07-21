@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">ICICI Lombard FY2024 results release • 17 April 2024 • pages 1 to 3</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="186" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Reported underwriting result</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Combined Ratio, FY2024</text>
+  <text x="600" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">103.3%</text>
+  <text x="78" y="263" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Combined Ratio, FY2023</text>
+  <text x="600" y="263" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">104.5%</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">FY2024 excluding CAT losses</text>
+  <text x="600" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">102.5%</text>
+  <text x="78" y="337" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">CAT losses excluded</text>
+  <text x="600" y="337" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">₹1.37 billion</text>
+  <line x1="78" y1="370" x2="1122" y2="370" stroke="#d8dbe2"/>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Formula stated in the release</text>
+  <text x="78" y="456" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Combined Ratio =</text>
+  <text x="310" y="456" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Net Incurred Claims / Net Earned Premium</text>
+  <text x="310" y="492" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">+ (Management Expenses less Commission on Reinsurance) / Net Written Premium</text>
+  <line x1="78" y1="530" x2="1122" y2="530" stroke="#d8dbe2"/>
+  <text x="78" y="574" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Gross Direct Premium Income, FY2024</text>
+  <text x="600" y="574" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">₹247.76 billion</text>
+  <text x="78" y="614" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Solvency ratio at March 31, 2024</text>
+  <text x="600" y="614" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">2.62x</text>
+  <text x="78" y="654" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Minimum regulatory solvency requirement</text>
+  <text x="600" y="654" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">1.50x</text>
+</svg>

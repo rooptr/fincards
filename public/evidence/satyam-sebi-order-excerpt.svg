@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">SEBI order evidence excerpt for Satyam Computer Services</title>
+  <desc id="desc">A source-backed evidence table summarising figures recorded in the SEBI order.</desc>
+  <rect width="1280" height="720" fill="#fbfbfd"/>
+  <rect x="48" y="44" width="1184" height="632" rx="24" fill="#ffffff" stroke="#d9dce3"/>
+  <text x="88" y="104" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#16181d">Satyam Computer Services</text>
+  <text x="88" y="138" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#68707d">SEBI order dated 2015 • record concerning the September 30, 2008 balance sheet</text>
+  <line x1="88" y1="174" x2="1192" y2="174" stroke="#e5e7eb"/>
+  <text x="88" y="216" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#68707d">REPORTED FIGURE</text>
+  <text x="512" y="216" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#68707d">SEBI RECORD</text>
+  <text x="912" y="216" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#68707d">FORENSIC SIGNAL</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#252932">
+    <text x="88" y="270">Cash and bank balances</text><text x="512" y="270">₹50.40bn non-existent</text><text x="912" y="270">Liquidity representation failed</text>
+    <text x="88" y="342">Accrued interest</text><text x="512" y="342">₹3.76bn non-existent</text><text x="912" y="342">Reported asset support was fictitious</text>
+    <text x="88" y="414">Debtors</text><text x="512" y="414">₹4.90bn reported vs ₹26.51bn actual</text><text x="912" y="414">Receivable quality required reconstruction</text>
+    <text x="88" y="486">Q2 artificial cash increase</text><text x="512" y="486">₹5.88bn</text><text x="912" y="486">A pattern, not a standalone verdict</text>
+  </g>
+  <line x1="88" y1="548" x2="1192" y2="548" stroke="#e5e7eb"/>
+  <text x="88" y="592" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4b5563">Source: SEBI, “Order in the matter of Satyam Computer Services Ltd.”, pp. 2–4.</text>
+  <text x="88" y="624" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#2563eb">https://www.sebi.gov.in/cms/sebi_data/attachdocs/1441894262377.pdf</text>
+</svg>

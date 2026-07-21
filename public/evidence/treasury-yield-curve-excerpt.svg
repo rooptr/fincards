@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Treasury yield curve evidence extract</title>
+  <desc id="desc">A field extract rebuilt from official U.S. Treasury par-yield tables comparing the 2-year and 10-year yields on January 3, 2022 and December 1, 2023.</desc>
+  <rect width="1200" height="700" fill="#fbfbfd"/>
+  <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111827">U.S. Treasury curve observations</text>
+  <text x="72" y="106" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#6b7280">Official par yields. The slope is 10-year yield minus 2-year yield.</text>
+  <rect x="72" y="140" width="1056" height="410" rx="18" fill="#ffffff" stroke="#d9dde5"/>
+  <rect x="72" y="140" width="1056" height="60" rx="18" fill="#f0f5ff"/>
+  <rect x="72" y="182" width="1056" height="18" fill="#f0f5ff"/>
+  <text x="98" y="178" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Observation date</text>
+  <text x="470" y="178" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">2-year</text>
+  <text x="650" y="178" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">10-year</text>
+  <text x="840" y="178" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">10Y minus 2Y</text>
+  <line x1="72" y1="200" x2="1128" y2="200" stroke="#e5e7eb"/>
+  <text x="98" y="252" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">January 3, 2022</text><text x="470" y="252" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">0.78%</text><text x="650" y="252" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">1.63%</text><text x="840" y="252" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb">+0.85 pp</text>
+  <line x1="98" y1="274" x2="1102" y2="274" stroke="#eef0f4"/>
+  <text x="98" y="330" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">December 1, 2023</text><text x="470" y="330" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">4.73%</text><text x="650" y="330" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">4.22%</text><text x="840" y="330" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb">−0.51 pp</text>
+  <line x1="98" y1="352" x2="1102" y2="352" stroke="#eef0f4"/>
+  <text x="98" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827">Interpretation</text><text x="470" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Upward slope</text><text x="650" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Inverted slope</text><text x="840" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Shape changed</text>
+  <text x="72" y="610" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9ca3af">Source: U.S. Department of the Treasury, Daily Treasury Par Yield Curve Rates, January 2022 and December 2023.</text>
+</svg>

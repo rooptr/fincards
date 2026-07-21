@@ -1,0 +1,17 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-IN">
+  <voice name="en-IN-Diya:DragonHDLatestNeural">
+    [calm] This is the calm marker test.
+    <break time="700ms"/>
+    [whispering] This is the whispering marker test.
+    <break time="700ms"/>
+    [curious] What changes when the assumption moves?
+    <break time="700ms"/>
+    [reflective] Pause and consider what the number leaves out.
+    <break time="700ms"/>
+    [serious] A rating is not a substitute for evidence.
+    <break time="700ms"/>
+    [laughter] This is the laughter marker test.
+    <break time="700ms"/>
+    [sighing] This is the sighing marker test.
+  </voice>
+</speak>

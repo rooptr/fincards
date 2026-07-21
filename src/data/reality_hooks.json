@@ -1,0 +1,3012 @@
+[
+  {
+    "id": "terminal_value",
+    "name": "Terminal Value",
+    "format": "Reality Narrative",
+    "anchor": "Dell Inc. Go-Private Appraisal Lawsuit (2013)",
+    "description": "In the Delaware court dispute over Dell's buyout, the valuation turned heavily on the DCF's terminal value assumptions (perpetual growth vs. exit multiple), illustrating how terminal value often accounts for over 75% of a firm's total enterprise value."
+  },
+  {
+    "id": "control_premium",
+    "name": "Control Premium",
+    "format": "Reality Narrative",
+    "anchor": "Elon Musk's acquisition of Twitter (2022)",
+    "description": "Elon Musk paid a 38% control premium over Twitter's unaffected stock price to acquire 100% voting control and take the company private, showcasing the premium required to buy out public shareholders."
+  },
+  {
+    "id": "enterprise_value",
+    "name": "Enterprise Value",
+    "format": "Reality Narrative",
+    "anchor": "Hertz Global Holdings bankruptcy trading (June 2020)",
+    "description": "Retail traders drove Hertz's equity value to over $1B during its bankruptcy, even though the company's enterprise value showed it was deeply insolvent because its outstanding debt far exceeded the value of its assets."
+  },
+  {
+    "id": "interest_coverage_ratio",
+    "name": "Interest Coverage Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Toys \"R\" Us bankruptcy liquidation (2017)",
+    "description": "Toys \"R\" Us was forced to liquidate in 2017 because its operating income could not cover the massive interest expense on the $5B debt loaded onto the company during its 2005 leveraged buyout, driving its interest coverage ratio below 1x."
+  },
+  {
+    "id": "free_cash_flow",
+    "name": "Free Cash Flow",
+    "format": "Reality Narrative",
+    "anchor": "Netflix cash burn and content capitalization (2015-2020)",
+    "description": "For years, Netflix reported positive net income while burning billions in free cash flow, because cash spent upfront to produce content was capitalized and amortized over time rather than expensed immediately."
+  },
+  {
+    "id": "comparable_company_analysis",
+    "name": "Comparable Company Analysis",
+    "format": "Reality Narrative",
+    "anchor": "Saudi Aramco IPO valuation (2019)",
+    "description": "Underwriters struggled to perform comparable company analysis for Saudi Aramco's IPO due to the lack of peer state-owned oil giants of similar scale, forcing them to rely heavily on comparing peer dividend yields instead."
+  },
+  {
+    "id": "precedent_transaction_analysis",
+    "name": "Precedent Transaction Analysis",
+    "format": "Reality Narrative",
+    "anchor": "Chevron and Occidental bidding war for Anadarko Petroleum (2019)",
+    "description": "Occidental outbid Chevron by paying a massive premium for Anadarko, relying on precedent transaction multiples of Permian Basin acreage acquisitions to justify the premium, which drew intense activist shareholder criticism."
+  },
+  {
+    "id": "football_field_chart",
+    "name": "Football Field Chart",
+    "format": "Reality Narrative",
+    "anchor": "Tesla acquisition of SolarCity (2016)",
+    "description": "Lazard's fairness opinion filed with the SEC included a football field chart displaying the overlapping valuation ranges of SolarCity, which became a key exhibit in shareholder lawsuits alleging Elon Musk bailed out the company."
+  },
+  {
+    "id": "sum_of_the_parts",
+    "name": "Sum-of-the-Parts Valuation",
+    "format": "Reality Narrative",
+    "anchor": "eBay spin-off of PayPal (2015)",
+    "description": "Activist investor Carl Icahn pressured eBay to spin off PayPal, arguing that the market was discounting PayPal's growth potential and that a sum-of-the-parts valuation showed PayPal was worth significantly more as a standalone entity."
+  },
+  {
+    "id": "conglomerate_discount",
+    "name": "Conglomerate Discount",
+    "format": "Reality Narrative",
+    "anchor": "General Electric three-way breakup (November 2021)",
+    "description": "GE announced it would split into three public companies (Aerospace, Vernova, and HealthCare) to eliminate the persistent conglomerate discount that depressed its stock price relative to its pure-play competitors."
+  },
+  {
+    "id": "consumer_price_index",
+    "name": "Consumer Price Index",
+    "format": "Reality Narrative",
+    "anchor": "U.S. inflation surge (2021-2022)",
+    "description": "US CPI inflation surged to a 40-year high of 9.1% in June 2022, driven by supply chain bottlenecks and pandemic stimulus, forcing the Federal Reserve to embark on its most aggressive interest rate hiking cycle in decades."
+  },
+  {
+    "id": "wholesale_price_index",
+    "name": "Wholesale Price Index",
+    "format": "Reality Narrative",
+    "anchor": "India's monetary policy shift to CPI inflation (2014)",
+    "description": "Under Governor Raghuram Rajan, the Reserve Bank of India officially shifted its primary inflation anchor from WPI to CPI, recognizing that WPI did not accurately reflect the cost of living for consumers."
+  },
+  {
+    "id": "quantitative_easing",
+    "name": "Quantitative Easing",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve's response to the 2008 Financial Crisis",
+    "description": "Led by Ben Bernanke, the Fed launched its first quantitative easing program (QE1), buying over $1.7 trillion in debt and mortgage-backed securities to inject liquidity directly into the collapsing financial system."
+  },
+  {
+    "id": "quantitative_tightening",
+    "name": "Quantitative Tightening",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve's balance sheet runoff (2022-2023)",
+    "description": "The Fed embarked on quantitative tightening, shrinking its balance sheet by up to $95 billion per month to drain liquidity and curb post-pandemic inflation, contributing to deposit pressure in regional banks."
+  },
+  {
+    "id": "balance_of_payments",
+    "name": "Balance of Payments",
+    "format": "Reality Narrative",
+    "anchor": "India's balance of payments crisis (1991)",
+    "description": "India faced a severe balance of payments crisis with foreign exchange reserves falling to just two weeks of imports, forcing the government to airlift 47 tons of gold to London as collateral for an emergency IMF loan."
+  },
+  {
+    "id": "private_credit",
+    "name": "Private Credit",
+    "format": "Reality Narrative",
+    "anchor": "Zendesk acquisition debt financing (2022)",
+    "description": "A consortium of private credit lenders, rather than traditional Wall Street banks, provided a record $4.5 billion debt package to fund the buyout of Zendesk, highlighting private credit's rise to compete directly with syndicated loan markets."
+  },
+  {
+    "id": "futures_contract",
+    "name": "Futures Contract",
+    "format": "Reality Narrative",
+    "anchor": "Collapse of Barings Bank by Nick Leeson (1995)",
+    "description": "Rogue trader Nick Leeson accumulated unauthorized long positions in Nikkei 225 futures contracts on the SIMEX exchange, hiding over $1.3B in losses that ultimately bankrupted the UK's oldest merchant bank."
+  },
+  {
+    "id": "call_option",
+    "name": "Call Option",
+    "format": "Reality Narrative",
+    "anchor": "GameStop short squeeze (January 2021)",
+    "description": "Retail investors bought massive volumes of out-of-the-money call options on GameStop, forcing market makers to buy the underlying stock to hedge their positions, sparking an unprecedented \"gamma squeeze.\""
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma (Options)",
+    "format": "Reality Narrative",
+    "anchor": "GameStop gamma squeeze (January 2021)",
+    "description": "The GameStop short squeeze was accelerated by a \"gamma squeeze,\" where rapid price increases forced option market makers to aggressively buy underlying stock as the option delta surged toward 1.0."
+  },
+  {
+    "id": "interest_rate_swap",
+    "name": "Interest Rate Swap",
+    "format": "Reality Narrative",
+    "anchor": "Jefferson County, Alabama bankruptcy (2011)",
+    "description": "Jefferson County entered into complex interest rate swaps with JPMorgan to finance a sewer project; when interest rates collapsed during the 2008 crisis, the county faced massive termination fees that forced a $4 billion bankruptcy filing."
+  },
+  {
+    "id": "credit_default_swap",
+    "name": "Credit Default Swap",
+    "format": "Reality Narrative",
+    "anchor": "American International Group (AIG) bailout (September 2008)",
+    "description": "AIG's financial products division wrote over $400B in CDS protecting collateralized debt obligations; when housing markets crashed, AIG was unable to post required collateral, triggering a $180B federal bailout."
+  },
+  {
+    "id": "headline_inflation",
+    "name": "Headline Inflation",
+    "format": "Reality Narrative",
+    "anchor": "European Central Bank rate hike (July 2008)",
+    "description": "The ECB raised interest rates to 4.25% due to a spike in headline inflation driven by record high oil prices ($147/barrel), despite stable core inflation, a policy move widely criticized as a mistake just months before the financial crisis."
+  },
+  {
+    "id": "stagflation",
+    "name": "Stagflation",
+    "format": "Reality Narrative",
+    "anchor": "U.S. stagflation crisis (1973-1979)",
+    "description": "Following the OPEC oil embargo, the US experienced a combination of high inflation and stagnant economic growth, defying Keynesian economic theories and rendering traditional monetary policy tools ineffective."
+  },
+  {
+    "id": "open_market_operations",
+    "name": "Open Market Operations",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve's \"Operation Twist\" (September 2011)",
+    "description": "The Fed utilized open market operations to buy $400 billion of long-term Treasury bonds while selling an equivalent amount of short-term bills to lower long-term interest rates without expanding its balance sheet."
+  },
+  {
+    "id": "foreign_direct_investment",
+    "name": "Foreign Direct Investment",
+    "format": "Reality Narrative",
+    "anchor": "Tesla Gigafactory Shanghai construction (2018)",
+    "description": "Tesla invested billions to build Gigafactory Shanghai, representing the first wholly foreign-owned automotive plant in China after the country eased joint-venture requirements for foreign automakers."
+  },
+  {
+    "id": "foreign_portfolio_investment",
+    "name": "Foreign Portfolio Investment",
+    "format": "Reality Narrative",
+    "anchor": "East Asian Financial Crisis hot money outflow (1997)",
+    "description": "Speculative foreign portfolio investment (\"hot money\") rapidly exited Thailand and other Southeast Asian markets, triggering currency collapses, stock market crashes, and severe economic recessions."
+  },
+  {
+    "id": "repo_rate",
+    "name": "Repo Rate",
+    "format": "Reality Narrative",
+    "anchor": "U.S. overnight repo rate spike (September 2019)",
+    "description": "The overnight repo rate surged to nearly 10% from its target of ~2% due to a sudden cash shortage in bank reserves, forcing the Federal Reserve to inject liquidity into the repo market for the first time since the financial crisis."
+  },
+  {
+    "id": "non_performing_asset",
+    "name": "Non-Performing Asset",
+    "format": "Reality Narrative",
+    "anchor": "Reserve Bank of India Asset Quality Review (2015)",
+    "description": "The RBI launched an Asset Quality Review that forced Indian banks to recognize disguised corporate loans as non-performing assets, exposing trillions of rupees in bad loans and triggering major banking reforms."
+  },
+  {
+    "id": "etf",
+    "name": "Exchange Traded Fund",
+    "format": "Reality Narrative",
+    "anchor": "Flash Crash of May 6, 2010",
+    "description": "During the 2010 Flash Crash, ETF pricing mechanisms broke down, causing index ETFs to trade at massive discounts to their Net Asset Value (NAV) and execute trades at fractions of a penny."
+  },
+  {
+    "id": "mutual_fund",
+    "name": "Mutual Fund",
+    "format": "Reality Narrative",
+    "anchor": "Reserve Primary Fund breaking the buck (September 2008)",
+    "description": "The Reserve Primary Fund, a prominent money market mutual fund, saw its NAV fall to $0.97 (\"breaking the buck\") due to write-downs on Lehman Brothers commercial paper, triggering a nationwide run on money market funds."
+  },
+  {
+    "id": "price_elasticity_of_demand",
+    "name": "Price Elasticity of Demand",
+    "format": "Reality Narrative",
+    "anchor": "Turing Pharmaceuticals Daraprim price hike (2015)",
+    "description": "Turing Pharmaceuticals raised the price of the life-saving drug Daraprim by 5,000% from $13.50 to $750 per pill, capitalizing on the near-zero price elasticity of demand for a critical medication with no competitors."
+  },
+  {
+    "id": "opportunity_cost",
+    "name": "Opportunity Cost",
+    "format": "Reality Narrative",
+    "anchor": "Yahoo rejecting Microsoft's acquisition offer (2008)",
+    "description": "Yahoo's board rejected a $44.6 billion buyout offer from Microsoft, believing the company was worth more, but eventually sold its core internet assets to Verizon in 2016 for just $4.8 billion."
+  },
+  {
+    "id": "monopoly",
+    "name": "Monopoly",
+    "format": "Reality Narrative",
+    "anchor": "Standard Oil antitrust breakup (1911)",
+    "description": "The US Supreme Court ordered the dissolution of Standard Oil, which controlled over 90% of US oil refining and pipelines, splitting it into 34 independent companies (including Exxon and Chevron) under the Sherman Antitrust Act."
+  },
+  {
+    "id": "issuer_pays_model",
+    "name": "Issuer-Pays Model",
+    "format": "Reality Narrative",
+    "anchor": "Credit rating agencies' subprime ratings bubble (2008)",
+    "description": "Rating agencies (S&P, Moody's, Fitch) issued AAA ratings to toxic mortgage-backed securities because they were paid by the investment banks issuing them, creating a conflict of interest that contributed to the subprime crisis."
+  },
+  {
+    "id": "credit_rating",
+    "name": "Credit Rating",
+    "format": "Reality Narrative",
+    "anchor": "Standard & Poor's downgrade of United States sovereign debt (2011)",
+    "description": "S&P downgraded the US credit rating from AAA to AA+ for the first time in history, citing political brinkmanship over the debt ceiling and rising debt levels, sparking a major global market selloff."
+  },
+  {
+    "id": "interest_tax_shield",
+    "name": "Interest Tax Shield",
+    "format": "Reality Narrative",
+    "anchor": "U.S. Tax Cuts and Jobs Act interest cap (2017)",
+    "description": "The 2017 tax reform capped interest expense deductibility at 30% of EBITDA, significantly reducing the interest tax shield value for highly leveraged firms and altering corporate capital structures."
+  },
+  {
+    "id": "accretion_dilution_analysis",
+    "name": "Accretion/Dilution Analysis",
+    "format": "Reality Narrative",
+    "anchor": "Facebook acquisition of WhatsApp (2014)",
+    "description": "Facebook paid $19B for WhatsApp, a transaction that was highly dilutive to short-term earnings per share (EPS) due to WhatsApp's negligible revenue, but was strategic for long-term user growth."
+  },
+  {
+    "id": "cash_conversion_cycle",
+    "name": "Cash Conversion Cycle",
+    "format": "Reality Narrative",
+    "anchor": "Tim Cook's supply chain overhaul of Apple (1998 onwards)",
+    "description": "Tim Cook restructured Apple's inventory management, cutting days of inventory outstanding and negotiating extended payment terms with suppliers to achieve a negative cash conversion cycle, generating billions in cash flow."
+  },
+  {
+    "id": "ebitda",
+    "name": "EBITDA",
+    "format": "Reality Narrative",
+    "anchor": "John Malone's growth strategy at Tele-Communications Inc. (1970s-1980s)",
+    "description": "John Malone popularized EBITDA to convince lenders and investors that cash flow was strong enough to support high debt levels for rapid cable expansion, despite reporting net losses under GAAP."
+  },
+  {
+    "id": "dupont_analysis",
+    "name": "DuPont Analysis",
+    "format": "Reality Narrative",
+    "anchor": "Donaldson Brown's restructuring of General Motors (1920s)",
+    "description": "Donaldson Brown used the DuPont formula to help GM restructure and evaluate the efficiency of its operating divisions during a post-WWI liquidity crisis, laying the foundation for modern corporate management."
+  },
+  {
+    "id": "bond_price_interest_rate_relationship",
+    "name": "Bond Price-Interest Rate Relationship",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank collapse (March 2023)",
+    "description": "SVB invested heavily in long-term fixed-rate mortgage bonds; when interest rates rose in 2022-2023, the market value of these bonds plunged, creating $15B+ in unrealized losses that triggered a fatal deposit run."
+  },
+  {
+    "id": "duration",
+    "name": "Duration",
+    "format": "Reality Narrative",
+    "anchor": "U.K. pension fund liability-driven investment crisis (September 2022)",
+    "description": "UK pension funds used derivative strategies to match the duration of their long-term liabilities; when government yields spiked, the duration-matched interest rate swaps triggered massive margin calls, threatening fund insolvency."
+  },
+  {
+    "id": "debt_covenants",
+    "name": "Debt Covenants",
+    "format": "Reality Narrative",
+    "anchor": "Caesars Entertainment restructuring and asset transfer (2015)",
+    "description": "Apollo Global Management exploited loopholes in Caesars Entertainment's debt covenants to transfer valuable casino assets to a new subsidiary, sparking a years-long legal battle with bondholders over covenant breaches."
+  },
+  {
+    "id": "securitization",
+    "name": "Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Lewis Ranieri's mortgage-backed securities at Salomon Brothers (1970s)",
+    "description": "Lewis Ranieri pioneered the securitization of residential home mortgages at Salomon Brothers, bundling thousands of individual home loans into tradable securities and giving birth to the modern MBS market."
+  },
+  {
+    "id": "special_purpose_vehicle",
+    "name": "Special Purpose Vehicle",
+    "format": "Reality Narrative",
+    "anchor": "Enron Raptor and Chewco partnerships (2001)",
+    "description": "Enron used off-balance-sheet Special Purpose Entities (SPEs) like Chewco and Raptors to hide billions of dollars in debt and inflated assets, which eventually led to the company's collapse."
+  },
+  {
+    "id": "tranching",
+    "name": "Tranching",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers collapse and CDO market crash (2008)",
+    "description": "Investment banks tranched subprime mortgage pools into AAA senior and high-yield junior tranches; when defaults spiked, the correlation assumptions broke down, causing AAA-rated tranches to suffer devastating losses."
+  },
+  {
+    "id": "agency_costs",
+    "name": "Agency Costs",
+    "format": "Reality Narrative",
+    "anchor": "RJR Nabisco buyout and corporate jets controversy (1988)",
+    "description": "RJR Nabisco CEO F. Ross Johnson spent lavishly on corporate jets and personal perks, showcasing the agency cost of equity where managers prioritize their own benefits over shareholder value."
+  },
+  {
+    "id": "net_present_value",
+    "name": "Net Present Value",
+    "format": "Reality Narrative",
+    "anchor": "Lockheed L-1011 TriStar passenger jet project (1970s)",
+    "description": "Lockheed embarked on the L-1011 TriStar jet project without properly discounting future cash flows for the opportunity cost of capital, resulting in a deeply negative NPV project that forced a government bailout of the firm."
+  },
+  {
+    "id": "dividend_signaling_theory",
+    "name": "Dividend Signaling Theory",
+    "format": "Reality Narrative",
+    "anchor": "General Electric dividend cut to 1 penny (October 2018)",
+    "description": "GE slashed its quarterly dividend to a symbolic one penny per share, sending a powerful distress signal to the market that its cash flow issues were severe, causing the stock to drop to multi-year lows."
+  },
+  {
+    "id": "share_buyback",
+    "name": "Share Buyback",
+    "format": "Reality Narrative",
+    "anchor": "U.S. airline industry share buybacks and 2020 bailout",
+    "description": "Major airlines spent 96% of their free cash flow on share buybacks over a decade to boost EPS, leaving them with no cash reserves when COVID-19 hit and sparking public outrage when they requested a $25B federal bailout."
+  },
+  {
+    "id": "ex_dividend_date",
+    "name": "Ex-Dividend Date",
+    "format": "Reality Narrative",
+    "anchor": "European Cum-Ex tax arbitrage scandal (2010s)",
+    "description": "Traders used short selling and rapid stock transfers around the ex-dividend date to claim multiple dividend tax refunds on a single block of shares, defrauding European treasuries of over $60 billion."
+  },
+  {
+    "id": "stock_split",
+    "name": "Stock Split",
+    "format": "Reality Narrative",
+    "anchor": "Nvidia 10-for-1 stock split (June 2024)",
+    "description": "Nvidia executed a 10-for-1 stock split after its market cap surpassed $3 trillion, making individual shares cheaper to attract retail investors and prompting a post-announcement rally."
+  },
+  {
+    "id": "synergies",
+    "name": "Synergies",
+    "format": "Reality Narrative",
+    "anchor": "AOL Time Warner merger (2000)",
+    "description": "The promised synergies of combining AOL's internet subscription base with Time Warner's media content failed to materialize, leading to a record $99B goodwill write-down in 2002."
+  },
+  {
+    "id": "pe_arbitrage",
+    "name": "P/E Arbitrage",
+    "format": "Reality Narrative",
+    "anchor": "1960s Conglomerate Boom (e.g., ITT or Gulf and Western)",
+    "description": "Conglomerates traded at high P/E multiples and acquired low P/E businesses in unrelated fields using their own stock, creating an illusion of double-digit earnings-per-share growth."
+  },
+  {
+    "id": "poison_pill",
+    "name": "Poison Pill",
+    "format": "Reality Narrative",
+    "anchor": "Twitter board's shareholder rights plan (April 2022)",
+    "description": "Twitter's board adopted a poison pill to prevent Elon Musk from acquiring more than a 15% stake in the company without board approval, a defensive tactic that forced him into negotiation."
+  },
+  {
+    "id": "hostile_takeover",
+    "name": "Hostile Takeover",
+    "format": "Reality Narrative",
+    "anchor": "KKR's takeover bid for RJR Nabisco (1988)",
+    "description": "KKR launched a hostile bidding war against RJR Nabisco management's buyout proposal, leading to the largest and most contentious corporate takeover of the 20th century."
+  },
+  {
+    "id": "tender_offer",
+    "name": "Tender Offer",
+    "format": "Reality Narrative",
+    "anchor": "Oracle's tender offer for PeopleSoft (2003-2004)",
+    "description": "Oracle launched a hostile tender offer directly to PeopleSoft shareholders, offering cash to purchase shares over the objections of PeopleSoft's board, resulting in an 18-month antitrust and corporate battle."
+  },
+  {
+    "id": "white_knight",
+    "name": "White Knight",
+    "format": "Reality Narrative",
+    "anchor": "JPMorgan Chase acquisition of Bear Stearns (March 2008)",
+    "description": "JPMorgan Chase stepped in as a white knight to buy the failing investment bank Bear Stearns for $2 per share (later raised to $10) with Federal Reserve backing, preventing Bear's immediate liquidation."
+  },
+  {
+    "id": "staggered_board",
+    "name": "Staggered Board",
+    "format": "Reality Narrative",
+    "anchor": "Airgas defense against Air Products hostile takeover (2010)",
+    "description": "Airgas successfully used its staggered board in combination with a poison pill to defend against a $5.9 billion hostile takeover by Air Products, winning a landmark Delaware court ruling."
+  },
+  {
+    "id": "goodwill",
+    "name": "Goodwill",
+    "format": "Reality Narrative",
+    "anchor": "Kraft Heinz goodwill impairment charge (February 2019)",
+    "description": "Kraft Heinz recorded a massive $15.4 billion write-down of its goodwill and brand assets, signaling that the premium paid in the Heinz-Kraft merger could not be justified by the combined firm's cash flows."
+  },
+  {
+    "id": "spinoff",
+    "name": "Spin-off",
+    "format": "Reality Narrative",
+    "anchor": "eBay spin-off of PayPal (2015)",
+    "description": "Under pressure from activist Carl Icahn, eBay spun off PayPal, creating a separate public company that quickly surpassed the market value of its former parent."
+  },
+  {
+    "id": "carveout",
+    "name": "Carve-out",
+    "format": "Reality Narrative",
+    "anchor": "3Com carve-out of Palm Inc. (2000)",
+    "description": "3Com sold a minority stake in its subsidiary Palm in an IPO carve-out, leading to a famous pricing bubble where Palm's market value exceeded that of 3Com, implying 3Com's core business was worth less than zero."
+  },
+  {
+    "id": "joint_venture",
+    "name": "Joint Venture",
+    "format": "Reality Narrative",
+    "anchor": "Launch of Hulu (2007)",
+    "description": "NBCUniversal, Fox, and later Disney formed Hulu as a joint venture to pool their content libraries and build a premium streaming service to compete with YouTube and Netflix."
+  },
+  {
+    "id": "leveraged_buyout",
+    "name": "Leveraged Buyout",
+    "format": "Reality Narrative",
+    "anchor": "KKR's leveraged buyout of RJR Nabisco (1988)",
+    "description": "KKR executed the $25B leveraged buyout of RJR Nabisco, funding the transaction with 90% high-yield debt, which became the definitive LBO deal of the era."
+  },
+  {
+    "id": "moic",
+    "name": "Multiple on Invested Capital",
+    "format": "Reality Narrative",
+    "anchor": "Blackstone's buyout of Hilton Worldwide (2007-2018)",
+    "description": "Blackstone invested $5.6B in the Hilton LBO right before the 2008 crash, but through expansion and debt restructuring, exited the investment in 2018 with a 3x MOIC and $14B in profit."
+  },
+  {
+    "id": "dividend_recapitalization",
+    "name": "Dividend Recapitalization",
+    "format": "Reality Narrative",
+    "anchor": "Hertz dividend recapitalization (2014)",
+    "description": "Private equity sponsors loaded Hertz with new debt to fund a massive dividend to themselves, recouping their investment but leaving the company highly leveraged and vulnerable to operational shocks."
+  },
+  {
+    "id": "pik_debt",
+    "name": "Payment-in-Kind Debt",
+    "format": "Reality Narrative",
+    "anchor": "AMC Entertainment PIK toggle notes issuance (2020-2021)",
+    "description": "To preserve cash during the pandemic, AMC issued PIK toggle notes, allowing it to pay interest with additional debt principal rather than cash, which avoided immediate default but increased its total debt."
+  },
+  {
+    "id": "burn_rate",
+    "name": "Burn Rate",
+    "format": "Reality Narrative",
+    "anchor": "WeWork IPO failure cash burn crisis (2019)",
+    "description": "WeWork burned through $700 million per quarter in 2019; when its IPO failed, the lack of cash runway forced a rescue package from SoftBank that slashed the company's valuation."
+  },
+  {
+    "id": "safe",
+    "name": "Simple Agreement for Future Equity",
+    "format": "Reference Explainer",
+    "anchor": "Y Combinator introduction of the SAFE (2013)",
+    "description": "Y Combinator introduced the SAFE template as a standardized, simple alternative to convertible notes, allowing early-stage startups to raise capital without maturity dates or interest rates."
+  },
+  {
+    "id": "down_round",
+    "name": "Down Round",
+    "format": "Reality Narrative",
+    "anchor": "Klarna valuation down round (July 2022)",
+    "description": "Klarna raised $800M in a funding round that valued the company at $6.7B, an 85% drop from its prior peak valuation of $45.6B, marking the end of the zero-interest-rate tech funding bubble."
+  },
+  {
+    "id": "liquidation_preference",
+    "name": "Liquidation Preference",
+    "format": "Reality Narrative",
+    "anchor": "Gilt Groupe acquisition by Hudson's Bay (2016)",
+    "description": "Gilt Groupe, once valued at $1B, was sold for $250M; due to liquidation preferences, early-stage preferred investors took all the proceeds, leaving common shares held by founders and employees worthless."
+  },
+  {
+    "id": "esop",
+    "name": "Employee Stock Ownership Plan",
+    "format": "Reality Narrative",
+    "anchor": "Publix Super Markets employee ownership expansion",
+    "description": "Publix grew into the largest employee-owned company in the United States, utilizing its ESOP structure to align worker incentives and build a highly successful supermarket chain."
+  },
+  {
+    "id": "j_curve",
+    "name": "J-Curve",
+    "format": "Reality Narrative",
+    "anchor": "Plaza Accord and the U.S. trade deficit (1985)",
+    "description": "Following the Plaza Accord, the U.S. dollar depreciated, but the trade deficit initially worsened (forming the bottom of the J-Curve) as existing import contracts became more expensive before volume adjustments improved the balance."
+  },
+  {
+    "id": "two_and_twenty",
+    "name": "2 and 20 Fee Structure",
+    "format": "Reality Narrative",
+    "anchor": "CalPERS withdrawal from hedge funds (2014)",
+    "description": "The California Public Employees' Retirement System (CalPERS) announced it would exit its entire $4 billion hedge fund portfolio, citing high fees (like the 2 and 20 structure) relative to performance and complexity."
+  },
+  {
+    "id": "carried_interest",
+    "name": "Carried Interest",
+    "format": "Reality Narrative",
+    "anchor": "Inflation Reduction Act carried interest tax debate (2022)",
+    "description": "During negotiations for the Inflation Reduction Act, proposed changes to tax carried interest as ordinary income rather than capital gains were dropped due to lobbying, preserving a tax benefit for PE and hedge fund managers."
+  },
+  {
+    "id": "capitalizing_vs_expensing",
+    "name": "Capitalizing vs. Expensing",
+    "format": "Reality Narrative",
+    "anchor": "WorldCom accounting scandal (2002)",
+    "description": "WorldCom committed a $3.8 billion accounting fraud by capitalizing ordinary operating expenses (line costs) as capital expenditures on the balance sheet, artificially boosting earnings and cash flows."
+  },
+  {
+    "id": "revenue_recognition",
+    "name": "Revenue Recognition Principle",
+    "format": "Reality Narrative",
+    "anchor": "CA Technologies \"35-day month\" accounting scandal (2004)",
+    "description": "CA Technologies executives kept the company's books open after the end of the fiscal quarter to record subsequent software sales, violating revenue recognition principles to meet Wall Street estimates."
+  },
+  {
+    "id": "operating_lease_vs_finance_lease",
+    "name": "Operating Lease vs. Finance Lease",
+    "format": "Reference Explainer",
+    "anchor": "Implementation of ASC 842 / IFRS 16 lease standards (2019)",
+    "description": "The adoption of ASC 842 and IFRS 16 eliminated off-balance-sheet operating leases, forcing retailers and airlines to recognize trillions of dollars in lease liabilities and right-of-use assets on their balance sheets."
+  },
+  {
+    "id": "deferred_tax_asset",
+    "name": "Deferred Tax Asset",
+    "format": "Reality Narrative",
+    "anchor": "Citigroup's Tax Cuts and Jobs Act write-down (Q4 2017)",
+    "description": "Citigroup recorded a massive $22 billion write-down of its deferred tax assets because the 2017 tax reform reduced corporate tax rates from 35% to 21%, lowering the future cash savings value of Citi's net operating losses."
+  },
+  {
+    "id": "deferred_tax_liability",
+    "name": "Deferred Tax Liability",
+    "format": "Reference Explainer",
+    "anchor": "OECD Pillar Two Global Minimum Tax implementation (2023)",
+    "description": "The implementation of the OECD Pillar Two 15% global minimum tax created complex deferred tax adjustments, as multinational corporations had to recalculate DTLs in jurisdictions with low nominal tax rates."
+  },
+  {
+    "id": "quick_ratio",
+    "name": "Quick Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank collapse (March 2023)",
+    "description": "SVB collapsed in 48 hours despite holding $211B in assets, because those assets were long-term Held-to-Maturity bonds that could not be liquidated instantly to meet $42B in daily deposit withdrawals."
+  },
+  {
+    "id": "lifo_fifo",
+    "name": "LIFO vs. FIFO Inventory Accounting",
+    "format": "Reality Narrative",
+    "anchor": "Inflation spike and LIFO tax deferrals (1974)",
+    "description": "During the high inflation of 1974, hundreds of major U.S. corporations (including DuPont) switched their inventory accounting from FIFO to LIFO, allowing them to report lower paper profits and defer hundreds of millions in taxes."
+  },
+  {
+    "id": "provision_for_bad_debts",
+    "name": "Provision for Bad Debts",
+    "format": "Reality Narrative",
+    "anchor": "U.S. bank loan loss reserve build during COVID-19 (Q1-Q2 2020)",
+    "description": "Major banks like JPMorgan Chase set aside tens of billions in provisions for bad debts using the CECL accounting standard to prepare for expected loan defaults during pandemic shutdowns, which were then reversed in 2021."
+  },
+  {
+    "id": "time_value_of_money",
+    "name": "Time Value of Money",
+    "format": "Reality Narrative",
+    "anchor": "Manhattan Island purchase compounding calculation ($24 in 1626)",
+    "description": "Finance professors often illustrate the time value of money by showing that if the $24 paid for Manhattan in 1626 had been invested at 6% interest, it would be worth hundreds of billions of dollars today."
+  },
+  {
+    "id": "preferred_stock",
+    "name": "Preferred Stock",
+    "format": "Reality Narrative",
+    "anchor": "Warren Buffett's Goldman Sachs investment (2008)",
+    "description": "Warren Buffett invested $5B in Goldman Sachs preferred stock, receiving a 10% dividend yield and warrants, which stabilized market confidence in Goldman during the financial crisis."
+  },
+  {
+    "id": "price_to_earnings",
+    "name": "Price-to-Earnings Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Cisco Systems peak P/E valuation (March 2000)",
+    "description": "Cisco reached a peak P/E ratio of over 200x during the Dot-com bubble, briefly making it the world's most valuable company before its stock price collapsed by nearly 90% as valuation multiples normalized."
+  },
+  {
+    "id": "liquidation_valuation",
+    "name": "Liquidation Valuation",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers bankruptcy asset liquidation (2008)",
+    "description": "Lehman Brothers' bankruptcy estate spent years liquidating complex assets under fire-sale conditions, illustrating how liquidation values are significantly lower than going-concern valuations."
+  },
+  {
+    "id": "annual_recurring_revenue",
+    "name": "Annual Recurring Revenue",
+    "format": "Reality Narrative",
+    "anchor": "Adobe Systems Creative Cloud transition (2013)",
+    "description": "Adobe phased out boxed retail software in favor of its Creative Cloud subscription, shifting its valuation and financial metrics from transactional revenue to predictable, high-margin Annual Recurring Revenue."
+  },
+  {
+    "id": "goodwill_impairment",
+    "name": "Goodwill Impairment",
+    "format": "Reality Narrative",
+    "anchor": "AOL Time Warner merger and subsequent $99 billion write-down (2002)",
+    "description": "AOL Time Warner recorded a historic $99 billion goodwill impairment charge in 2002, marking the spectacular collapse of the dot-com era's most hyped merger and forcing a massive write-down of their overvalued assets."
+  },
+  {
+    "id": "private_equity",
+    "name": "Private Equity",
+    "format": "Reality Narrative",
+    "anchor": "KKR's leveraged buyout of RJR Nabisco (1989)",
+    "description": "The $25 billion buyout of RJR Nabisco by KKR became the ultimate symbol of the 1980s leveraged buyout boom, showcasing how private equity firms use massive leverage to acquire public companies."
+  },
+  {
+    "id": "venture_capital",
+    "name": "Venture Capital",
+    "format": "Reality Narrative",
+    "anchor": "Benchmark's early-stage investment in eBay (1997)",
+    "description": "Benchmark's $6.7 million Series A investment in eBay in 1997 yielded a return of over $5 billion post-IPO, becoming one of the most successful venture capital investments in history and defining the high-risk, high-reward VC model."
+  },
+  {
+    "id": "net_asset_value",
+    "name": "Net Asset Value",
+    "format": "Reality Narrative",
+    "anchor": "Reserve Primary Fund \"breaking the buck\" (September 2008)",
+    "description": "During the 2008 financial crisis, the Reserve Primary Fund's Net Asset Value (NAV) fell below $1.00 per share due to losses on Lehman Brothers debt, triggering a massive panic and run on money market funds."
+  },
+  {
+    "id": "net_operating_losses",
+    "name": "Net Operating Losses",
+    "format": "Reality Narrative",
+    "anchor": "General Motors' post-bankruptcy tax shield (2009)",
+    "description": "During its 2009 restructuring, the US Treasury issued special rules allowing \"New GM\" to preserve $45 billion in Net Operating Losses (NOLs) to shield future profits, bypassing tax laws that typically wipe out NOLs after a change in corporate control."
+  },
+  {
+    "id": "control_premium",
+    "name": "Control Premium",
+    "format": "Reality Narrative",
+    "anchor": "Elon Musk's acquisition of Twitter (2022)",
+    "description": "Elon Musk paid $54.20 per share to acquire Twitter, representing a 38% control premium over the stock's closing price before he disclosed his stake, showing how buyers pay a premium to gain full operational control."
+  },
+  {
+    "id": "operating_lease",
+    "name": "Operating Lease",
+    "format": "Reality Structure",
+    "anchor": "Adoption of ASC 842 / IFRS 16 lease accounting standards (2019)",
+    "description": "The implementation of ASC 842 and IFRS 16 ended off-balance-sheet operating leases, forcing retailers and airlines to put trillions of dollars of lease obligations directly onto their balance sheets as right-of-use assets and liabilities."
+  },
+  {
+    "id": "inverted_yield_curve",
+    "name": "Inverted Yield Curve",
+    "format": "Reality Narrative",
+    "anchor": "US Treasury yield curve inversion (2006-2007)",
+    "description": "The US 10-year Treasury yield fell below the 2-year yield in 2006, creating an inverted yield curve that served as a reliable leading indicator of the 2008 Global Financial Crisis."
+  },
+  {
+    "id": "revolving_credit_facility",
+    "name": "Revolving Credit Facility",
+    "format": "Reality Narrative",
+    "anchor": "Corporate \"dash for cash\" revolver drawdowns (March 2020)",
+    "description": "At the onset of the COVID-19 pandemic, major corporations like Boeing and Ford rapidly drew down tens of billions of dollars from their revolving credit facilities to secure cash amidst freezing debt markets."
+  },
+  {
+    "id": "structural_subordination",
+    "name": "Structural Subordination",
+    "format": "Reality Structure",
+    "anchor": "Energy Future Holdings (TXU) bankruptcy (2014)",
+    "description": "Holding company creditors at EFH recovered virtually nothing while operating company creditors were repaid in full, illustrating how structural subordination prevents parent company lenders from accessing subsidiary assets until subsidiary debts are cleared."
+  },
+  {
+    "id": "covenant_lite_loan",
+    "name": "Covenant-Lite Loan",
+    "format": "Reality Narrative",
+    "anchor": "The pre-crisis buyout boom and rise of cov-lite loans (2007)",
+    "description": "The surge of covenant-lite loans during the 2007 leveraged buyout boom left lenders with few protections and no ability to intervene early when borrowers' performance deteriorated."
+  },
+  {
+    "id": "cross_default_provision",
+    "name": "Cross-Default Provision",
+    "format": "Reality Narrative",
+    "anchor": "China Evergrande Group default (December 2021)",
+    "description": "Evergrande's failure to make a minor interest payment triggered cross-default clauses across its entire $19 billion offshore bond portfolio, instantly placing the developer into default on all its debt."
+  },
+  {
+    "id": "high_yield_bond",
+    "name": "High Yield Bond",
+    "format": "Reality Narrative",
+    "anchor": "Michael Milken's creation of the junk bond market (1980s)",
+    "description": "Michael Milken at Drexel Burnham Lambert pioneered using high-yield bonds to finance hostile takeovers and corporate buyouts, fundamentally changing the landscape of corporate finance."
+  },
+  {
+    "id": "fallen_angel",
+    "name": "Fallen Angel",
+    "format": "Reality Narrative",
+    "anchor": "Ford Motor Company's downgrade to junk status (March 2020)",
+    "description": "Ford's downgrade to high-yield (junk) status in March 2020 made it the largest \"fallen angel\" in history, triggering massive forced selling by investment-grade index funds."
+  },
+  {
+    "id": "rising_star",
+    "name": "Rising Star",
+    "format": "Reality Narrative",
+    "anchor": "Netflix's upgrade to investment grade status (2021-2023)",
+    "description": "Netflix transitioned from high-yield status to investment-grade (a \"rising star\") after reaching positive free cash flow, allowing it to borrow capital at significantly lower interest rates."
+  },
+  {
+    "id": "issuer_pays_model",
+    "name": "Issuer-Pays Model",
+    "format": "Reality Structure",
+    "anchor": "Rating agency conflicts in the Subprime Mortgage Crisis (2007-2008)",
+    "description": "Under the issuer-pays model, S&P and Moody's competed for business by awarding AAA ratings to toxic subprime mortgage-backed securities, creating a massive conflict of interest that contributed to the financial crash."
+  },
+  {
+    "id": "leveraged_loan",
+    "name": "Leveraged Loan",
+    "format": "Reality Narrative",
+    "anchor": "The \"hung\" Twitter buyout debt syndication (2022)",
+    "description": "A consortium of banks led by Morgan Stanley was forced to hold $13 billion in debt used to finance Elon Musk's purchase of Twitter, after rising interest rates prevented them from syndicating the loans to institutional investors."
+  },
+  {
+    "id": "make_whole_call_provision",
+    "name": "Make-Whole Call Provision",
+    "format": "Reality Narrative",
+    "anchor": "Energy Future Holdings make-whole litigation (2016)",
+    "description": "Lenders fought for $431 million in make-whole premiums after Energy Future Holdings attempted to redeem its bonds early during bankruptcy without paying the redemption penalty, leading to a landmark court ruling."
+  },
+  {
+    "id": "debtor_in_possession_loan",
+    "name": "Debtor-In-Possession Loan",
+    "format": "Reality Narrative",
+    "anchor": "General Motors' $33 billion government-backed DIP financing (2009)",
+    "description": "The US government provided a massive $33 billion debtor-in-possession (DIP) loan to General Motors during its Chapter 11 bankruptcy, allowing the automaker to keep factories running while restructuring."
+  },
+  {
+    "id": "recovery_rate",
+    "name": "Recovery Rate",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers liquidation recoveries (2008)",
+    "description": "Following Lehman Brothers' historic bankruptcy, unsecured creditors faced recovery rates of under 10 cents on the dollar, illustrating how low down the capital structure recoveries can fall during a liquidation."
+  },
+  {
+    "id": "unitranche_debt",
+    "name": "Unitranche Debt",
+    "format": "Reality Structure",
+    "anchor": "Zendesk's $4.5 billion private credit unitranche facility (2022)",
+    "description": "Zendesk bypassed public debt markets to secure a record-setting $4.5 billion unitranche loan from a syndicate of private lenders, illustrating the scale and flexibility of modern private credit."
+  },
+  {
+    "id": "pik_toggle_note",
+    "name": "PIK Toggle Note",
+    "format": "Reality Narrative",
+    "anchor": "J.Crew's Payment-in-Kind (PIK) toggle notes (2013)",
+    "description": "J.Crew issued $500 million of PIK toggle notes in 2013, allowing the retailer to pay interest in additional debt rather than cash when liquidity dried up, highlighting the high-risk nature of leveraged buyout financing."
+  },
+  {
+    "id": "busted_convertible_bond",
+    "name": "Busted Convertible Bond",
+    "format": "Reality Narrative",
+    "anchor": "Peloton Interactive's 0% convertible bond collapse (2021-2022)",
+    "description": "Peloton issued $1 billion in 0% convertible bonds at the peak of the pandemic stock boom with a conversion price of $239; when its stock plummeted below $10, the bonds became \"busted convertibles\" trading purely on their debt value."
+  },
+  {
+    "id": "securitization",
+    "name": "Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Lewis Ranieri and the creation of MBS at Salomon Brothers (1970s)",
+    "description": "Lewis Ranieri pioneered the pooling and packaging of individual home mortgages into tradeable securities at Salomon Brothers, launching the multi-trillion-dollar modern securitization market."
+  },
+  {
+    "id": "special_purpose_vehicle",
+    "name": "Special Purpose Vehicle",
+    "format": "Reality Narrative",
+    "anchor": "Enron's off-balance-sheet Special Purpose Entities (2001)",
+    "description": "Enron used off-balance-sheet SPVs, such as Chewco and LJM, to hide billions of dollars in liabilities and inflate earnings, which ultimately led to the company's sudden collapse."
+  },
+  {
+    "id": "tranching",
+    "name": "Tranching",
+    "format": "Reality Structure",
+    "anchor": "Tranching of mortgage-backed securities in the subprime crisis (2007-2008)",
+    "description": "Tranching split cash flows from risky subprime mortgage pools into senior, mezzanine, and equity tiers, creating AAA-rated tranches out of low-grade loans that eventually defaulted."
+  },
+  {
+    "id": "subprime_mortgage",
+    "name": "Subprime Mortgage",
+    "format": "Reality Narrative",
+    "anchor": "Collapse of New Century Financial (April 2007)",
+    "description": "New Century Financial, one of the largest US subprime lenders, filed for bankruptcy in 2007 as borrowers defaulted at historic rates, signaling the start of the subprime mortgage crisis."
+  },
+  {
+    "id": "collateralized_debt_obligation",
+    "name": "Collateralized Debt Obligation",
+    "format": "Reality Narrative",
+    "anchor": "Merrill Lynch's $8.4 billion CDO write-downs (October 2007)",
+    "description": "Merrill Lynch was forced to write down $8.4 billion in assets, leading to the ouster of its CEO, after holding massive amounts of super-senior CDO tranches that became completely illiquid and worthless."
+  },
+  {
+    "id": "synthetic_cdo",
+    "name": "Synthetic CDO",
+    "format": "Reality Narrative",
+    "anchor": "Goldman Sachs' Abacus 2007-AC1 deal (2007)",
+    "description": "Goldman Sachs structured and marketed Abacus 2007-AC1, a synthetic CDO referencing subprime mortgage bonds, without disclosing that hedge fund Paulson & Co. helped select the portfolio and was betting against it."
+  },
+  {
+    "id": "credit_default_swap",
+    "name": "Credit Default Swap",
+    "format": "Reality Narrative",
+    "anchor": "AIG's credit default swap liquidity crisis (September 2008)",
+    "description": "AIG's Financial Products division sold billions of dollars in credit default swaps insuring CDOs, triggering a catastrophic liquidity crisis and a $182 billion federal bailout when credit downgrades forced the firm to post collateral."
+  },
+  {
+    "id": "securitization_originator",
+    "name": "Originator (Securitization)",
+    "format": "Reality Narrative",
+    "anchor": "Countrywide Financial's subprime lending boom (2000s)",
+    "description": "Countrywide Financial acted as a massive originator of risky mortgage loans, prioritizing loan volume over credit quality to feed Wall Street's insatiable demand for securitized assets."
+  },
+  {
+    "id": "securitization_servicer",
+    "name": "Servicer (Securitization)",
+    "format": "Reality Narrative",
+    "anchor": "The mortgage \"robo-signing\" scandal (2010)",
+    "description": "Major mortgage servicers like GMAC and Bank of America halted foreclosures after it was revealed they signed off on thousands of foreclosure documents daily without verifying accuracy or ownership."
+  },
+  {
+    "id": "true_sale",
+    "name": "True Sale",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers' Repo 105 accounting gimmick (2008)",
+    "description": "Lehman Brothers used Repo 105 transactions to temporarily sell toxic assets to European banks at quarter-end, claiming a \"true sale\" to hide $50 billion in leverage from investors before immediately buying the assets back."
+  },
+  {
+    "id": "minimum_retention_requirement",
+    "name": "Minimum Retention Requirement",
+    "format": "Reality Structure",
+    "anchor": "Dodd-Frank \"Skin in the Game\" risk retention rules (2014)",
+    "description": "The Dodd-Frank Act implemented risk retention rules requiring securitization sponsors to retain at least 5% of the credit risk of the assets they securitize, preventing them from selling off all risk."
+  },
+  {
+    "id": "cdo_squared",
+    "name": "CDO-Squared",
+    "format": "Reality Structure",
+    "anchor": "The collapse of CDO-squared instruments (2008)",
+    "description": "CDO-squareds, which pooled the lower-rated tranches of other CDOs, suffered near-total write-downs during the housing market crash due to extreme default correlation across the underlying mortgage pools."
+  },
+  {
+    "id": "monoline_insurance",
+    "name": "Monoline Insurance",
+    "format": "Reality Narrative",
+    "anchor": "Ambac and MBIA credit rating downgrades (2008)",
+    "description": "Monoline insurers like Ambac and MBIA, which guaranteed billions of dollars in structured finance debt, lost their vital AAA ratings during the housing crash, triggering billions in write-downs for the banks they insured."
+  },
+  {
+    "id": "mark_to_market",
+    "name": "Mark-to-Market",
+    "format": "Reality Narrative",
+    "anchor": "Enron's abuse of mark-to-market accounting (1990s-2001)",
+    "description": "Enron obtained SEC permission to use mark-to-market accounting for its energy trading business, allowing it to book estimated future profits as current revenue on the day a deal was signed."
+  },
+  {
+    "id": "contango",
+    "name": "Contango",
+    "format": "Reality Narrative",
+    "anchor": "Negative WTI oil prices and super-contango (April 2020)",
+    "description": "In April 2020, WTI crude futures plummeted to -$37.63 per barrel as an extreme contango market forced traders to pay buyers to take physical delivery due to a complete lack of storage capacity."
+  },
+  {
+    "id": "interest_rate_swap",
+    "name": "Interest Rate Swap",
+    "format": "Reality Narrative",
+    "anchor": "Jefferson County, Alabama bankruptcy (2011)",
+    "description": "Jefferson County entered into complex interest rate swap agreements to finance a sewer system upgrade; when interest rates collapsed during the 2008 crisis, the swaps backfired, leading to a $4 billion municipal bankruptcy."
+  },
+  {
+    "id": "black_scholes_model",
+    "name": "Black-Scholes Model",
+    "format": "Reality Narrative",
+    "anchor": "Collapse of Long-Term Capital Management (1998)",
+    "description": "LTCM, co-founded by Nobel laureates Myron Scholes and Robert Merton, used derivative pricing models to take on massive leverage, only to collapse in 1998 when Russia's debt default triggered market moves that their models deemed statistically impossible."
+  },
+  {
+    "id": "currency_swap",
+    "name": "Currency Swap",
+    "format": "Reality Structure",
+    "anchor": "Federal Reserve bilateral currency swap lines (2008 / 2020)",
+    "description": "The Federal Reserve established emergency currency swap lines with major global central banks to provide US dollar liquidity to foreign financial systems during times of extreme market stress."
+  },
+  {
+    "id": "total_return_swap",
+    "name": "Total Return Swap",
+    "format": "Reality Narrative",
+    "anchor": "Archegos Capital Management collapse (March 2021)",
+    "description": "Archegos used total return swaps with multiple global investment banks to build quietly leveraged, multi-billion dollar stakes in individual stocks without triggering public SEC disclosure requirements, leading to a sudden $20 billion liquidation."
+  },
+  {
+    "id": "clearinghouse",
+    "name": "Clearinghouse",
+    "format": "Reality Narrative",
+    "anchor": "DTCC margin hikes during the GameStop short squeeze (January 2021)",
+    "description": "During the GameStop trading frenzy, the DTCC clearinghouse demanded billions in additional collateral from brokerages like Robinhood to cover settlement risk, forcing Robinhood to restrict buying of popular stocks."
+  },
+  {
+    "id": "stagflation",
+    "name": "Stagflation",
+    "format": "Reality Narrative",
+    "anchor": "The 1970s OPEC oil embargo and stagflation (1973-1979)",
+    "description": "The 1973 OPEC oil embargo triggered a massive supply shock that caused oil prices to quadruple, leading to a decade of simultaneous high unemployment and high inflation (stagflation) in the Western world."
+  },
+  {
+    "id": "deflation",
+    "name": "Deflation",
+    "format": "Reality Narrative",
+    "anchor": "Japan's asset price bubble collapse and deflation (1990s)",
+    "description": "Following the collapse of its real estate and stock market bubbles in 1990, Japan entered a multi-decade period of near-zero growth and persistent deflation despite aggressive monetary stimulus."
+  },
+  {
+    "id": "deflationary_spiral",
+    "name": "Deflationary Spiral",
+    "format": "Reality Narrative",
+    "anchor": "The Great Depression deflationary spiral (1929-1933)",
+    "description": "During the Great Depression, falling demand led to falling prices, which forced businesses to cut wages and lay off workers, further reducing demand and driving prices even lower in a self-reinforcing downward spiral."
+  },
+  {
+    "id": "fiscal_policy",
+    "name": "Fiscal Policy",
+    "format": "Reality Narrative",
+    "anchor": "The CARES Act stimulus package (March 2020)",
+    "description": "The $2.2 trillion CARES Act represented the largest economic stimulus package in US history, deploying direct stimulus checks, enhanced unemployment benefits, and business loans to combat the economic fallout of the COVID-19 pandemic."
+  },
+  {
+    "id": "quantitative_easing",
+    "name": "Quantitative Easing",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve launch of Quantitative Easing (November 2008)",
+    "description": "In response to the 2008 financial crisis, the Federal Reserve initiated its first-ever large-scale asset purchase program (QE1), buying trillions of dollars in government bonds and mortgage-backed securities to lower long-term interest rates."
+  },
+  {
+    "id": "quantitative_tightening",
+    "name": "Quantitative Tightening",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve quantitative tightening and the 2019 repo market spike (September 2019)",
+    "description": "The Federal Reserve's reduction of its balance sheet drained reserves from the banking system, contributing to a sudden spike in overnight repo lending rates that forced the Fed to inject emergency liquidity."
+  },
+  {
+    "id": "dual_mandate",
+    "name": "Dual Mandate",
+    "format": "Reality Structure",
+    "anchor": "The Humphrey-Hawkins Act (1978)",
+    "description": "The Humphrey-Hawkins Act legally mandated that the Federal Reserve pursue the dual goals of maximum employment and stable prices (price stability), framing the modern execution of US monetary policy."
+  },
+  {
+    "id": "economic_moat",
+    "name": "Economic Moat",
+    "format": "Reality Narrative",
+    "anchor": "Warren Buffett's investment in Coca-Cola (1988)",
+    "description": "Warren Buffett invested $1 billion in Coca-Cola in 1988, highlighting how a powerful brand and global distribution system create an \"economic moat\" that protects long-term profits from competitors."
+  },
+  {
+    "id": "network_effect",
+    "name": "Network Effect",
+    "format": "Reality Narrative",
+    "anchor": "Meta's (Facebook) acquisition of Instagram (2012)",
+    "description": "Facebook acquired Instagram for $1 billion in 2012 to neutralize a rising competitor and leverage its existing social graph, demonstrating how network effects make digital platforms exponentially more valuable as their user bases grow."
+  },
+  {
+    "id": "monopoly",
+    "name": "Monopoly",
+    "format": "Reality Narrative",
+    "anchor": "Breakup of Standard Oil (1911)",
+    "description": "Standard Oil's control of over 90% of US oil refining led to a landmark Supreme Court decision under the Sherman Antitrust Act, breaking the company into 34 independent entities."
+  },
+  {
+    "id": "economies_of_scale",
+    "name": "Economies of Scale",
+    "format": "Reality Narrative",
+    "anchor": "Henry Ford's Model T assembly line (1913)",
+    "description": "Henry Ford introduced the moving assembly line in 1913, dramatically reducing the production time of a Model T and demonstrating how economies of scale lower per-unit costs as output volume increases."
+  },
+  {
+    "id": "sunk_cost_fallacy",
+    "name": "Sunk Cost Fallacy",
+    "format": "Reality Narrative",
+    "anchor": "The British-French Concorde supersonic jet project (1960s-1970s)",
+    "description": "The British and French governments continued to pour massive funding into the Concorde supersonic passenger jet long after it was clear the project was economically unviable, simply because they had already invested so much capital."
+  },
+  {
+    "id": "phillips_curve",
+    "name": "Phillips Curve",
+    "format": "Reality Narrative",
+    "anchor": "Breakdown of the Phillips Curve in the 1970s",
+    "description": "The emergence of stagflation in the 1970s disproved the traditional Phillips Curve theory of a stable trade-off between inflation and unemployment, as both metrics spiked simultaneously."
+  },
+  {
+    "id": "annual_recurring_revenue",
+    "name": "Annual Recurring Revenue",
+    "format": "Reality Narrative",
+    "anchor": "Adobe's transition to Creative Cloud (2013)",
+    "description": "Adobe shifted from selling perpetual licenses for boxed software to a cloud-based monthly subscription model, establishing Annual Recurring Revenue (ARR) as its primary growth metric and driving a major valuation recovery."
+  },
+  {
+    "id": "net_dollar_retention",
+    "name": "Net Dollar Retention",
+    "format": "Reality Structure",
+    "anchor": "Snowflake IPO S-1 filing (September 2020)",
+    "description": "Snowflake disclosed a record-breaking Net Dollar Retention (NDR) rate of 158%, demonstrating how a SaaS company could grow its revenue by 58% year-over-year purely from its existing customer base."
+  },
+  {
+    "id": "customer_lifetime_value",
+    "name": "Customer Lifetime Value",
+    "format": "Reality Narrative",
+    "anchor": "Blue Apron's post-IPO collapse (2017)",
+    "description": "Blue Apron's high customer churn and falling Customer Lifetime Value (CLV) failed to justify its steep customer acquisition costs, leading to a precipitous decline in its stock price post-IPO."
+  },
+  {
+    "id": "customer_acquisition_cost",
+    "name": "Customer Acquisition Cost",
+    "format": "Reality Narrative",
+    "anchor": "Casper Sleep IPO filing (2020)",
+    "description": "Casper Sleep's S-1 prospectus revealed that it was spending massive amounts on marketing and free-trial return shipping relative to its revenue, showing that its Customer Acquisition Cost (CAC) was unsustainable."
+  },
+  {
+    "id": "ltv_to_cac_ratio",
+    "name": "LTV/CAC Ratio",
+    "format": "Reality Structure",
+    "anchor": "Blue Apron's S-1 filing (2017)",
+    "description": "Blue Apron's prospectus highlighted a deteriorating LTV/CAC ratio, warning investors that high advertising spend was not yielding profitable long-term subscribers due to steep early customer churn."
+  },
+  {
+    "id": "price_to_book_ratio",
+    "name": "Price-to-Book Ratio",
+    "format": "Reality Structure",
+    "anchor": "Citigroup trading at distressed valuations (2009)",
+    "description": "During the depths of the financial crisis, Citigroup traded at a Price-to-Book (P/B) ratio of under 0.5x, reflecting severe investor skepticism that the book value of its toxic loan assets was accurate."
+  },
+  {
+    "id": "cet1_ratio",
+    "name": "CET1 Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Credit Suisse collapse (March 2023)",
+    "description": "Credit Suisse maintained a CET1 ratio of 14.1%—well above the regulatory minimum—right up to its collapse, proving that strong capital adequacy ratios cannot protect a bank from a sudden, catastrophic liquidity run."
+  },
+  {
+    "id": "provision_for_credit_losses",
+    "name": "Provision for Credit Losses",
+    "format": "Reality Structure",
+    "anchor": "JPMorgan Chase's Q2 2020 financial results",
+    "description": "JPMorgan recorded a massive $10.5 billion provision for credit losses in a single quarter due to the COVID-19 pandemic under the newly implemented CECL accounting standard, which requires banks to estimate lifetime expected losses upfront."
+  },
+  {
+    "id": "loan_to_deposit_ratio",
+    "name": "Loan-to-Deposit Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Northern Rock bank run (September 2007)",
+    "description": "Northern Rock operated with a Loan-to-Deposit ratio of over 140%, leaving it heavily reliant on short-term wholesale funding markets that froze during the credit crunch, leading to the UK's first major bank run in over a century."
+  },
+  {
+    "id": "operating_leverage",
+    "name": "Operating Leverage",
+    "format": "Reality Structure",
+    "anchor": "Nvidia's Q2 FY2024 earnings report",
+    "description": "Nvidia's revenue soared by 101% year-over-year to $13.51 billion, but its operating income surged by 487% to $6.8 billion, demonstrating how high operating leverage amplification works when fixed costs are spread over massive sales growth."
+  },
+  {
+    "id": "capital_intensity",
+    "name": "Capital Intensity",
+    "format": "Reality Narrative",
+    "anchor": "TSMC's $30B+ Capex Guidance (2021)",
+    "description": "TSMC announced a record $30 billion capital expenditure plan to build advanced node fabrication facilities, illustrating the massive capital intensity required to remain competitive in the leading-edge semiconductor industry."
+  },
+  {
+    "id": "same_store_sales_growth",
+    "name": "Same-Store Sales Growth",
+    "format": "Reality Narrative",
+    "anchor": "Chipotle E. coli outbreak (2015)",
+    "description": "Following reports of foodborne illnesses, Chipotle's same-store sales growth plummeted by 14.6% in Q4 2015, highlighting how consumer trust crises immediately hit retail and restaurant operational metrics."
+  },
+  {
+    "id": "insurance_float",
+    "name": "Insurance Float",
+    "format": "Reality Narrative",
+    "anchor": "Berkshire Hathaway's acquisition of GEICO (1996)",
+    "description": "Warren Buffett acquired the remaining shares of GEICO to gain full control of its low-cost insurance float, which grew from under $3 billion to over $160 billion, serving as the primary capital engine for Berkshire's investments."
+  },
+  {
+    "id": "combined_ratio",
+    "name": "Combined Ratio",
+    "format": "Reality Narrative",
+    "anchor": "State Farm's California exit (May 2023)",
+    "description": "State Farm stopped writing new home insurance policies in California after wildfire risks and rising construction costs drove its combined ratio above 100%, indicating that premiums collected were no longer covering claims and expenses."
+  },
+  {
+    "id": "capitalization_rate",
+    "name": "Capitalization Rate",
+    "format": "Reality Structure",
+    "anchor": "GM Building sale in Manhattan (2008)",
+    "description": "The GM Building was sold for a record-breaking $2.8 billion at an extremely low Cap Rate of ~4%, marking the absolute peak of the pre-crisis commercial real estate bubble."
+  },
+  {
+    "id": "upstream_oil_and_gas",
+    "name": "Upstream Oil & Gas",
+    "format": "Reality Narrative",
+    "anchor": "Negative WTI Crude prices (April 2020)",
+    "description": "Due to a collapse in demand and storage limits, WTI crude futures fell to negative $37 per barrel, forcing upstream oil producers to pay buyers to take physical delivery of their oil."
+  },
+  {
+    "id": "midstream_oil_and_gas",
+    "name": "Midstream Oil & Gas",
+    "format": "Reality Narrative",
+    "anchor": "Colonial Pipeline cyberattack (May 2021)",
+    "description": "A ransomware attack forced the shutdown of the Colonial Pipeline, the largest midstream fuel pipeline in the US, highlighting the critical dependence of the East Coast fuel supply on midstream infrastructure."
+  },
+  {
+    "id": "downstream_oil_and_gas",
+    "name": "Downstream Oil & Gas",
+    "format": "Reality Structure",
+    "anchor": "Marathon Petroleum's record refining margins (Summer 2022)",
+    "description": "Marathon Petroleum reported record profits as the '3-2-1 crack spread' (refining margin) spiked due to post-pandemic demand and global refining capacity closures, highlighting how downstream players profit when refining supply is tight."
+  },
+  {
+    "id": "rating_trigger",
+    "name": "Rating Trigger",
+    "format": "Reality Narrative",
+    "anchor": "Enron's bankruptcy filing (December 2001)",
+    "description": "Enron's credit rating was downgraded to junk by S&P and Moody's, triggering covenant clauses that required immediate repayment of $3.9 billion in debt, which Enron could not pay, forcing its bankruptcy within days."
+  },
+  {
+    "id": "credit_rating",
+    "name": "Credit Rating",
+    "format": "Reality Narrative",
+    "anchor": "Standard & Poor's downgrade of the United States (August 2011)",
+    "description": "S&P stripped the United States of its AAA credit rating for the first time in history, downgrading it to AA+ due to political brinkmanship over the debt ceiling."
+  },
+  {
+    "id": "sovereign_ceiling",
+    "name": "Sovereign Ceiling",
+    "format": "Reality Structure",
+    "anchor": "Moody's downgrade of Russian corporates (March 2022)",
+    "description": "Following Russia's invasion of Ukraine, Moody's downgraded the sovereign rating of Russia to Ca, and immediately capped and downgraded top-tier Russian companies like Gazprom and Rosneft due to the sovereign ceiling rule."
+  },
+  {
+    "id": "unsolicited_rating",
+    "name": "Unsolicited Rating",
+    "format": "Reality Narrative",
+    "anchor": "Moody's downgrade of Hanover Re (2003)",
+    "description": "Moody's issued an unsolicited rating of reinsurer Hanover Re and subsequently downgraded them to junk after the company refused to pay for rating services, sparking allegations of credit rating 'blackmail.'"
+  },
+  {
+    "id": "credit_watch",
+    "name": "Credit Watch",
+    "format": "Reality Narrative",
+    "anchor": "Standard & Poor's US Debt Warning (April 2011)",
+    "description": "S&P placed the United States AAA rating on 'CreditWatch negative' during debt limit debates, signaling a 1-in-3 chance of downgrade and triggering global stock market selloffs months before the actual downgrade."
+  },
+  {
+    "id": "private_credit",
+    "name": "Private Credit",
+    "format": "Reality Narrative",
+    "anchor": "Zendesk acquisition debt package (August 2022)",
+    "description": "In a landmark shift, a consortium of private credit lenders bypassed traditional Wall Street banks to fund the $10.2 billion acquisition of Zendesk with a record $4.5 billion direct loan package."
+  },
+  {
+    "id": "significant_risk_transfer",
+    "name": "Significant Risk Transfer",
+    "format": "Reality Structure",
+    "anchor": "Barclays' Colonnade synthetic securitizations (2016-2018)",
+    "description": "Barclays executed synthetic securitizations (Significant Risk Transfer) on massive corporate loan books to transfer credit risk to private investors, allowing the bank to reduce its risk-weighted assets (RWA) and boost capital ratios without selling the loans."
+  },
+  {
+    "id": "nav_financing",
+    "name": "NAV Financing",
+    "format": "Reality Narrative",
+    "anchor": "SoftBank's NAV borrowing against Vision Fund (2023)",
+    "description": "SoftBank negotiated billions in loans using the Net Asset Value (NAV) of its private tech portfolio in the Vision Fund as collateral, bypassing tight public debt markets to secure liquidity."
+  },
+  {
+    "id": "borrowing_base",
+    "name": "Borrowing Base",
+    "format": "Reality Narrative",
+    "anchor": "Hin Leong Trading collapse (2020)",
+    "description": "Singaporean oil trader Hin Leong fabricated inventory and shipping documents to inflate its borrowing base, securing $3.8 billion in credit from banks against collateral that did not exist."
+  },
+  {
+    "id": "headline_inflation",
+    "name": "Headline Inflation",
+    "format": "Reality Narrative",
+    "anchor": "US CPI hitting 9.1% (June 2022)",
+    "description": "Driven by surging energy and food prices following the outbreak of the war in Ukraine, US headline inflation reached a 40-year high of 9.1%, forcing aggressive interest rate hikes."
+  },
+  {
+    "id": "core_inflation",
+    "name": "Core Inflation",
+    "format": "Reference Explainer",
+    "anchor": "Federal Reserve's 'transitory' policy pivot (Late 2021)",
+    "description": "The Fed abandoned its stance that inflation was 'transitory' when core CPI (which strips out volatile food and energy costs) climbed to 4.9% in November 2021, showing broad-based, sticky price pressures."
+  },
+  {
+    "id": "repo_rate",
+    "name": "Repo Rate",
+    "format": "Reality Narrative",
+    "anchor": "US Repo Market Spike (September 2019)",
+    "description": "The overnight repo rate surged to nearly 10% from its target of ~2% due to a sudden cash shortage in the banking system, forcing the Fed to inject billions of liquidity into the repo market for the first time since the Great Financial Crisis."
+  },
+  {
+    "id": "reverse_repo_rate",
+    "name": "Reverse Repo Rate",
+    "format": "Reality Structure",
+    "anchor": "Fed's Overnight Reverse Repo facility spike (Late 2022)",
+    "description": "The Federal Reserve's Overnight Reverse Repo (ON RRP) facility surged to over $2.5 trillion as banks and money market funds flooded the Fed with cash to earn interest in a system overflowing with excess reserve liquidity."
+  },
+  {
+    "id": "unit_economics",
+    "name": "Unit Economics",
+    "format": "Reality Structure",
+    "anchor": "WeWork IPO S-1 filing (2019)",
+    "description": "WeWork's prospectus exposed deeply flawed unit economics, where its definition of 'Community Adjusted EBITDA' ignored lease, construction, and design expenses, masking the reality that the business lost money on every desk it leased."
+  },
+  {
+    "id": "cash_burn",
+    "name": "Cash Burn",
+    "format": "Reality Narrative",
+    "anchor": "Uber's pre-IPO cash burn (2018)",
+    "description": "Uber reported a cash burn of $1.8 billion in 2018 alone, demonstrating its strategy of using venture capital subsidies to underprice rides, build market share, and drive competitors out of business."
+  },
+  {
+    "id": "non_performing_assets",
+    "name": "Non-Performing Assets",
+    "format": "Reality Narrative",
+    "anchor": "Indian Banking Asset Quality Review (2015)",
+    "description": "The Reserve Bank of India initiated a comprehensive Asset Quality Review (AQR) that forced public sector banks to recognize hidden bad loans, causing the system's Non-Performing Assets (NPA) ratio to surge to over 10%."
+  },
+  {
+    "id": "take_rate",
+    "name": "Take Rate",
+    "format": "Reality Narrative",
+    "anchor": "Epic Games v. Apple lawsuit (2020)",
+    "description": "Epic Games sued Apple over its 30% App Store take rate, bringing global regulatory and legal scrutiny to the economics and monopolistic power of digital platforms."
+  },
+  {
+    "id": "initial_public_offering",
+    "name": "Initial Public Offering",
+    "format": "Reality Narrative",
+    "anchor": "Saudi Aramco IPO (December 2019)",
+    "description": "Saudi Aramco completed the largest IPO in history, raising $29.4 billion by listing a 1.5% stake on the Tadawul exchange, valuing the state oil giant at $1.7 trillion."
+  },
+  {
+    "id": "mergers_and_acquisitions",
+    "name": "Mergers & Acquisitions",
+    "format": "Reality Narrative",
+    "anchor": "AOL-Time Warner merger (2000)",
+    "description": "In the largest and most disastrous merger in history, AOL acquired Time Warner for $165 billion at the peak of the dot-com bubble, leading to a massive $99 billion write-down just two years later."
+  },
+  {
+    "id": "joint_venture",
+    "name": "Joint Venture",
+    "format": "Reality Narrative",
+    "anchor": "Sony Ericsson joint venture (2001)",
+    "description": "Sony and Ericsson combined their struggling mobile phone divisions into a 50-50 joint venture, successfully merging Sony's consumer branding with Ericsson's telecommunications infrastructure expertise."
+  },
+  {
+    "id": "demerger",
+    "name": "Demerger",
+    "format": "Reality Narrative",
+    "anchor": "eBay-PayPal split (2015)",
+    "description": "Activating a spin-off demanded by activist investors, eBay demerged PayPal, unlocking significant value as PayPal's market capitalization quickly eclipsed that of its former parent company."
+  },
+  {
+    "id": "short_selling",
+    "name": "Short Selling",
+    "format": "Reality Narrative",
+    "anchor": "GameStop short squeeze (January 2021)",
+    "description": "Retail investors on Reddit coordinated a massive buying wave of GameStop stock, triggering a short squeeze that forced hedge funds like Melvin Capital to close their short positions at multi-billion dollar losses."
+  },
+  {
+    "id": "futures_and_options",
+    "name": "Futures & Options",
+    "format": "Reality Narrative",
+    "anchor": "Barings Bank collapse (1995)",
+    "description": "Rogue trader Nick Leeson hid unauthorized losses on Nikkei 225 futures and options contracts, accumulating $1.4 billion in debt that completely bankrupted the 233-year-old Barings Bank."
+  },
+  {
+    "id": "options_contract",
+    "name": "Options Contract",
+    "format": "Reality Narrative",
+    "anchor": "Long-Term Capital Management collapse (1998)",
+    "description": "LTCM leveraged its capital using over-the-counter options and swap contracts to control a portfolio of $1.25 trillion, which collapsed when Russia defaulted, requiring a $3.6 billion Wall Street bailout."
+  },
+  {
+    "id": "zero_dte_options",
+    "name": "Zero Days to Expiry Options",
+    "format": "Reality Structure",
+    "anchor": "S&P 500 intraday trading boom (2022-2023)",
+    "description": "Options expiring on the same day (0DTE) grew to represent over 40% of all S&P 500 option volume, raising concerns among institutional desks about flash crashes and heightened intraday stock market volatility."
+  },
+  {
+    "id": "foreign_exchange_rate",
+    "name": "Foreign Exchange Rate",
+    "format": "Reality Narrative",
+    "anchor": "George Soros shorting the British Pound (1992)",
+    "description": "On 'Black Wednesday,' George Soros's Quantum Fund shorted the British Pound, forcing the UK government to withdraw the currency from the European Exchange Rate Mechanism (ERM) and netting Soros a $1 billion profit."
+  },
+  {
+    "id": "cpi_inflation",
+    "name": "Consumer Price Index Inflation",
+    "format": "Reality Narrative",
+    "anchor": "Volcker's 'Saturday Night Special' (October 1979)",
+    "description": "Fed Chairman Paul Volcker implemented a dramatic shift in monetary policy to focus on curbing money supply growth, driving interest rates to 20% to break double-digit US CPI inflation."
+  },
+  {
+    "id": "gdp_growth_rate",
+    "name": "GDP Growth Rate",
+    "format": "Reality Structure",
+    "anchor": "Q2 2020 US GDP contraction",
+    "description": "Under COVID-19 lockdowns, US GDP plummeted at a historic annualized rate of 31.4% in the second quarter of 2020, followed by a sharp 33.1% rebound in Q3."
+  },
+  {
+    "id": "current_account_deficit",
+    "name": "Current Account Deficit",
+    "format": "Reality Narrative",
+    "anchor": "India's Balance of Payments crisis (1991)",
+    "description": "Facing a severe current account deficit and foreign currency reserves that could cover only three weeks of imports, India was forced to airlift 47 tons of gold to London to secure an emergency IMF loan."
+  },
+  {
+    "id": "bond_market_rate_relationship",
+    "name": "Bond Price-Yield Inverse Relationship",
+    "format": "Reality Structure",
+    "anchor": "Silicon Valley Bank portfolio write-downs (2022-2023)",
+    "description": "As the Federal Reserve aggressively raised interest rates, the yield on US Treasuries spiked, causing the market value of SVB's long-duration fixed-rate bond portfolio to plummet and create a $15+ billion hole in its balance sheet."
+  },
+  {
+    "id": "hawkish_monetary_policy",
+    "name": "Hawkish Monetary Policy",
+    "format": "Reality Narrative",
+    "anchor": "Paul Volcker's record interest rate hikes (1981)",
+    "description": "To combat double-digit inflation, Federal Reserve Chair Paul Volcker maintained a highly hawkish monetary stance, raising the Federal Funds Rate to an all-time high of 20.0%, deliberately triggering a recession."
+  },
+  {
+    "id": "levered_free_cash_flow",
+    "name": "Levered Free Cash Flow",
+    "format": "Reality Structure",
+    "anchor": "Leveraged buyout of Manchester United (2005)",
+    "description": "The Glazer family loaded Manchester United with £525 million of debt, meaning the club's robust operating cash flows were consumed by high interest payments, leaving minimal Levered Free Cash Flow (LFCF) for squad investment."
+  },
+  {
+    "id": "payment_in_kind",
+    "name": "Payment-in-Kind",
+    "format": "Reality Narrative",
+    "anchor": "RJR Nabisco leveraged buyout (1988)",
+    "description": "KKR's historic $25 billion buyout of RJR Nabisco relied heavily on Payment-in-Kind (PIK) securities, which allowed them to pay interest using additional debt instead of cash during the initial restructuring years."
+  },
+  {
+    "id": "liquidity",
+    "name": "Liquidity",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers bankruptcy filing (September 2008)",
+    "description": "Lehman Brothers held substantial long-term assets but collapsed due to a severe short-term liquidity freeze when counterparties refused to accept its mortgage securities as collateral in the repo market."
+  },
+  {
+    "id": "solvency",
+    "name": "Solvency",
+    "format": "Reality Narrative",
+    "anchor": "AIG government bailout (September 2008)",
+    "description": "AIG faced insolvency because it could not meet billions of dollars in collateral calls on credit default swaps it had sold, prompting a $182 billion emergency rescue from the US government."
+  },
+  {
+    "id": "insolvency_and_bankruptcy",
+    "name": "Insolvency & Bankruptcy Framework",
+    "format": "Reality Narrative",
+    "anchor": "Bhushan Steel resolution under India's IBC (2018)",
+    "description": "Tata Steel's acquisition of Bhushan Steel for ₹35,200 crore marked the first major successful resolution under India's newly enacted Insolvency and Bankruptcy Code (IBC), resolving a massive bad loan account."
+  },
+  {
+    "id": "nbfc",
+    "name": "Non-Banking Financial Company",
+    "format": "Reality Narrative",
+    "anchor": "IL&FS default and collapse (September 2018)",
+    "description": "Infrastructure Leasing & Financial Services (IL&FS) defaulted on its debt obligations, triggering a systemic liquidity squeeze and panic across India's shadow banking (NBFC) sector."
+  },
+  {
+    "id": "fiscal_deficit",
+    "name": "Fiscal Deficit",
+    "format": "Reality Narrative",
+    "anchor": "Greek sovereign debt crisis (2009-2010)",
+    "description": "The newly elected Greek government admitted that its fiscal deficit was 12.7% of GDP—more than double the previously reported figure—triggering a sovereign debt crisis that threatened the Eurozone."
+  },
+  {
+    "id": "capital_expenditure",
+    "name": "Capital Expenditure",
+    "format": "Reality Structure",
+    "anchor": "Meta's AI CapEx surge (2024)",
+    "description": "Meta raised its capital expenditure forecast to $35-$40 billion to build data centers and purchase Nvidia GPUs for AI training, showcasing how technology giants divert operating profits into massive CapEx."
+  },
+  {
+    "id": "disinvestment",
+    "name": "Disinvestment",
+    "format": "Reality Narrative",
+    "anchor": "Air India privatization (2022)",
+    "description": "The Indian government completed its most prominent disinvestment by selling 100% of the state-owned, loss-making carrier Air India to the Tata Group for ₹18,000 crore."
+  },
+  {
+    "id": "global_scale_vs_national_scale_rating",
+    "name": "Global Scale vs National Scale Credit Rating",
+    "format": "Reference Explainer",
+    "anchor": "Moody's ratings of Turkish banks (2018)",
+    "description": "Moody's rated several Turkish banks highly on its national scale (Aa1.tr) to reflect local creditworthiness, but capped their global scale rating at Ba3 due to the Turkish sovereign ceiling."
+  },
+  {
+    "id": "sovereign_cds_spread",
+    "name": "Sovereign CDS Spread",
+    "format": "Reality Structure",
+    "anchor": "Russian sovereign CDS surge (March 2022)",
+    "description": "Following Western sanctions and asset freezes, the spread on Russian credit default swaps (CDS) spiked to over 1,000 basis points, reflecting an implied probability of default of over 90%."
+  },
+  {
+    "id": "credit_default_swap",
+    "name": "Credit Default Swap",
+    "format": "Reality Narrative",
+    "anchor": "AIG Financial Products CDS losses (2007-2008)",
+    "description": "AIG's financial products division wrote over $440 billion in CDS protection on mortgage-backed securities, suffering catastrophic losses when those securities defaulted and counterparties demanded collateral."
+  },
+  {
+    "id": "dcf_model",
+    "name": "Discounted Cash Flow Model",
+    "format": "Reality Structure",
+    "anchor": "Dell buyout appraisal lawsuit (2013)",
+    "description": "When Michael Dell took the company private, dissenting shareholders sued for appraisal rights, and the Delaware Court of Chancery relied on a Discounted Cash Flow (DCF) model to rule that the buyout price was undervalued by 28%."
+  },
+  {
+    "id": "trading_comps",
+    "name": "Trading Comparables",
+    "format": "Reality Structure",
+    "anchor": "Uber and Lyft IPO valuations (2019)",
+    "description": "After Lyft's post-IPO stock price plummeted, underwriters for Uber adjusted their trading comparables analysis, lowering Uber's targeted IPO valuation from $120 billion to $82 billion."
+  },
+  {
+    "id": "inverted_yield_curve",
+    "name": "Inverted Yield Curve",
+    "format": "Reality Structure",
+    "anchor": "US Treasury 2-10 inversion (2022)",
+    "description": "The US 2-year and 10-year Treasury yield curve inverted to its deepest level in four decades, signaling a recession warning as the Federal Reserve rapidly hiked short-term rates."
+  },
+  {
+    "id": "high_yield_bond",
+    "name": "High-Yield Corporate Bond",
+    "format": "Reality Narrative",
+    "anchor": "Michael Milken's Drexel Burnham Lambert operations (1980s)",
+    "description": "Drexel Burnham Lambert popularized the issuance of high-yield 'junk' bonds to finance corporate takeovers and leveraged buyouts, revolutionizing corporate finance before the firm's collapse."
+  },
+  {
+    "id": "collateralized_loan_obligation",
+    "name": "Collateralized Loan Obligation",
+    "format": "Reality Narrative",
+    "anchor": "Norinchukin Bank's CLO buying spree (2018-2019)",
+    "description": "Japan's Norinchukin Bank built a $70 billion portfolio of high-grade US and European CLO tranches to escape negative domestic yields, making it the world's largest single buyer of CLOs."
+  },
+  {
+    "id": "distressed_debt",
+    "name": "Distressed Debt",
+    "format": "Reality Narrative",
+    "anchor": "Elliott Management's Argentine bond battle (2001-2016)",
+    "description": "Elliott Management purchased defaulted Argentine sovereign debt at a massive discount and spent 15 years litigating, eventually securing a $2.4 billion payout that represented a return of over 1,000%."
+  },
+  {
+    "id": "recovery_rate",
+    "name": "Recovery Rate",
+    "format": "Reference Explainer",
+    "anchor": "Lehman Brothers liquidation payouts (2012-present)",
+    "description": "The recovery rate for Lehman Brothers' senior unsecured creditors ended up at approximately 30-40%, significantly higher than the low single-digit recovery rates initially predicted."
+  },
+  {
+    "id": "sovereign_risk_premium",
+    "name": "Sovereign Risk Premium",
+    "format": "Reality Structure",
+    "anchor": "European sovereign debt crisis bond spreads (2011-2012)",
+    "description": "Yield spreads on Italian and Spanish government bonds over German Bunds reached historic highs, reflecting the high sovereign risk premium demanded by investors to hold peripheral Eurozone debt."
+  },
+  {
+    "id": "imf",
+    "name": "International Monetary Fund",
+    "format": "Reality Narrative",
+    "anchor": "South Korea's $58 billion bailout (1997)",
+    "description": "During the Asian Financial Crisis, the IMF provided a record $58 billion bailout package to South Korea, requiring massive restructuring of its corporate conglomerates (chaebols) and financial sector."
+  },
+  {
+    "id": "bis",
+    "name": "Bank for International Settlements",
+    "format": "Reality Narrative",
+    "anchor": "Basel I Accord agreement (1988)",
+    "description": "The central bank governors of the G10 met at the Bank for International Settlements (BIS) in Basel to establish Basel I, setting the first international minimum capital standard of 8% for banks."
+  },
+  {
+    "id": "fsb",
+    "name": "Financial Stability Board",
+    "format": "Reference Explainer",
+    "anchor": "Post-crisis G-SIB designation list",
+    "description": "The Financial Stability Board (FSB) was established in 2009 by G20 leaders to coordinate global financial regulations and compile the annual list of Global Systemically Important Banks."
+  },
+  {
+    "id": "basel_iii",
+    "name": "Basel III",
+    "format": "Reality Structure",
+    "anchor": "Post-2008 international bank regulations",
+    "description": "Basel III introduced the Liquidity Coverage Ratio (LCR) and Net Stable Funding Ratio (NSFR) to force global banks to hold high-quality liquid assets, directly addressing the funding liquidity crisis of 2007-2008."
+  },
+  {
+    "id": "fii",
+    "name": "Foreign Institutional Investor",
+    "format": "Reality Narrative",
+    "anchor": "Indian markets Taper Tantrum (Summer 2013)",
+    "description": "Fed Chairman Ben Bernanke's hint at tapering QE prompted foreign institutional investors to pull billions from Indian equity and debt markets, causing the Rupee to slide to record lows against the USD."
+  },
+  {
+    "id": "working_capital",
+    "name": "Working Capital",
+    "format": "Reality Structure",
+    "anchor": "Apple Inc.'s negative working capital model",
+    "description": "Apple operates with negative working capital by leveraging its immense supplier power, collecting cash from customers for products before it pays its suppliers for parts."
+  },
+  {
+    "id": "credit_rating_agency",
+    "name": "Credit Rating Agency",
+    "format": "Reality Narrative",
+    "anchor": "S&P and Moody's subprime rating failures (2007-2008)",
+    "description": "Credit rating agencies faced intense regulatory crackdowns and multi-billion dollar settlements after they awarded AAA ratings to toxic mortgage-backed securities that quickly defaulted."
+  },
+  {
+    "id": "macroeconomic_liquidity",
+    "name": "Macroeconomic Liquidity",
+    "format": "Reality Structure",
+    "anchor": "Federal Reserve's COVID-19 QE program (March 2020)",
+    "description": "The Fed launched an open-ended quantitative easing program, purchasing trillions in Treasury and mortgage bonds to inject massive macroeconomic liquidity into a freezing financial system."
+  },
+  {
+    "id": "public_sector_undertaking",
+    "name": "Public Sector Undertaking",
+    "format": "Reality Narrative",
+    "anchor": "Life Insurance Corporation of India (LIC) IPO (2022)",
+    "description": "The Indian government divested a 3.5% stake in state-owned insurer LIC, raising ₹20,557 crore in the largest public share sale in India's history."
+  },
+  {
+    "id": "regulatory_arbitrage",
+    "name": "Regulatory Arbitrage",
+    "format": "Reality Structure",
+    "anchor": "Pre-crisis Special Purpose Vehicles (SPVs) and SIVs",
+    "description": "Prior to the 2008 crisis, banks engaged in regulatory arbitrage by transferring mortgages to off-balance-sheet structured investment vehicles, avoiding regulatory capital requirements while retaining risk."
+  },
+  {
+    "id": "corporate_tax_rate",
+    "name": "Corporate Tax Rate",
+    "format": "Reality Narrative",
+    "anchor": "US Tax Cuts and Jobs Act (2017)",
+    "description": "The TCJA slashed the US federal corporate tax rate from 35% to 21%, leading to a repatriation wave where US multinational companies brought back over $1 trillion in offshore cash."
+  },
+  {
+    "id": "compound_interest",
+    "name": "Compound Interest",
+    "format": "Reference Explainer",
+    "anchor": "Warren Buffett's wealth compounding timeline",
+    "description": "Over 90% of Warren Buffett's net worth was generated after his 50th birthday, highlighting the exponential power of compounding interest and reinvested returns over a seven-decade investing career."
+  },
+  {
+    "id": "committee_of_creditors",
+    "name": "Committee of Creditors",
+    "format": "Reality Narrative",
+    "anchor": "Essar Steel IBC insolvency resolution (2019)",
+    "description": "The Supreme Court of India upheld the supremacy of the Essar Steel Committee of Creditors (CoC) in distributing resolution funds, setting a key legal precedent under the Insolvency and Bankruptcy Code."
+  },
+  {
+    "id": "resolution_professional",
+    "name": "Resolution Professional",
+    "format": "Reality Narrative",
+    "anchor": "Jet Airways bankruptcy process (2019-2021)",
+    "description": "Following the grounding of Jet Airways, a court-appointed Resolution Professional took custody of the airline's assets and ran the insolvency resolution process under the IBC."
+  },
+  {
+    "id": "payment_waterfall",
+    "name": "Payment Waterfall",
+    "format": "Reality Structure",
+    "anchor": "Lehman Brothers liquidation payout structure (2008)",
+    "description": "Following Lehman's bankruptcy, the payment waterfall dictated that administrative and secured claims were paid in full before senior unsecured creditors received a partial recovery."
+  },
+  {
+    "id": "asset_liability_mismatch",
+    "name": "Asset-Liability Mismatch",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank run (March 2023)",
+    "description": "SVB experienced a fatal run when its asset-liability mismatch was exposed: it had invested short-term deposits in long-duration held-to-maturity bonds that lost value when rates rose."
+  },
+  {
+    "id": "sovereign_gold_bond",
+    "name": "Sovereign Gold Bond",
+    "format": "Reality Narrative",
+    "anchor": "Government of India's SGB launch (2015)",
+    "description": "The Indian government launched Sovereign Gold Bonds to channel retail savings from physical gold imports into a sovereign-backed interest-paying paper asset."
+  },
+  {
+    "id": "monetary_policy_committee",
+    "name": "Monetary Policy Committee",
+    "format": "Reference Explainer",
+    "anchor": "Reserve Bank of India MPC formation (2016)",
+    "description": "India established a six-member Monetary Policy Committee to decide interest rates by majority vote and target a statutory CPI inflation rate of 4%."
+  },
+  {
+    "id": "cash_reserve_ratio",
+    "name": "Cash Reserve Ratio",
+    "format": "Reality Structure",
+    "anchor": "RBI's COVID liquidity injection (March 2020)",
+    "description": "The Reserve Bank of India slashed the Cash Reserve Ratio (CRR) by 100 basis points to 3.0%, releasing ₹1.37 lakh crore in cash reserves directly into the banking system to prevent a pandemic-related credit squeeze."
+  },
+  {
+    "id": "statutory_liquidity_ratio",
+    "name": "Statutory Liquidity Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Pre-1991 Indian financial repression",
+    "description": "Prior to economic liberalization in 1991, India's statutory liquidity ratio (SLR) peaked at 38.5%, forcing commercial banks to invest a massive share of deposits in low-yielding government bonds."
+  },
+  {
+    "id": "open_market_operations",
+    "name": "Open Market Operations",
+    "format": "Reality Structure",
+    "anchor": "Federal Reserve's 'Operation Twist' (2011)",
+    "description": "The Federal Reserve executed open market operations by purchasing $400 billion of long-term Treasury bonds while selling an equal amount of short-term bills to depress long-term interest rates."
+  },
+  {
+    "id": "prompt_corrective_action",
+    "name": "Prompt Corrective Action",
+    "format": "Reality Narrative",
+    "anchor": "RBI's public sector bank restrictions (2017-2018)",
+    "description": "The RBI placed 11 state-owned banks under the Prompt Corrective Action (PCA) framework due to high bad loans and capital erosion, restricting their lending, hiring, and branch expansion."
+  },
+  {
+    "id": "non_performing_asset",
+    "name": "Non-Performing Asset",
+    "format": "Reality Narrative",
+    "anchor": "Indian Banking Asset Quality Review (2015)",
+    "description": "The RBI initiated a comprehensive Asset Quality Review (AQR) that forced public sector banks to recognize hidden bad loans, causing the system's Non-Performing Assets (NPA) ratio to surge to over 10%."
+  },
+  {
+    "id": "bad_bank",
+    "name": "Bad Bank",
+    "format": "Reality Narrative",
+    "anchor": "NARCL establishment in India (2021)",
+    "description": "India established the National Asset Reconstruction Company Limited (NARCL) as a government-backed 'bad bank' to buy and aggregate ₹2 lakh crore in toxic non-performing loans from commercial banks."
+  },
+  {
+    "id": "marginal_cost_of_funds_based_lending_rate",
+    "name": "Marginal Cost of Funds based Lending Rate",
+    "format": "Reference Explainer",
+    "anchor": "RBI's MCLR implementation (April 2016)",
+    "description": "The RBI introduced the MCLR framework to force banks to calculate lending rates based on their actual marginal cost of new funds, aiming to improve interest rate transmission."
+  },
+  {
+    "id": "external_benchmark_lending_rate",
+    "name": "External Benchmark Lending Rate",
+    "format": "Reality Structure",
+    "anchor": "RBI retail loan pricing mandate (October 2019)",
+    "description": "The RBI mandated that banks link retail loans to external benchmarks like the Repo Rate or Treasury Bill yields, bypassing internal bank calculations and ensuring instant rate transmission."
+  },
+  {
+    "id": "alternative_investment_fund",
+    "name": "Alternative Investment Fund",
+    "format": "Reference Explainer",
+    "anchor": "SEBI AIF Regulations (2012)",
+    "description": "SEBI established the AIF framework, dividing private pools of capital into three categories to regulate alternative asset classes under a unified regime."
+  },
+  {
+    "id": "foreign_portfolio_investor",
+    "name": "Foreign Portfolio Investor",
+    "format": "Reality Narrative",
+    "anchor": "Adani Group offshore FPI controversy (2023)",
+    "description": "A research report accused the Adani Group of using offshore shell companies registered as Foreign Portfolio Investors (FPIs) in Mauritius to bypass Indian public shareholding limits."
+  },
+  {
+    "id": "infrastructure_investment_trust",
+    "name": "Infrastructure Investment Trust",
+    "format": "Reality Narrative",
+    "anchor": "IndiGrid Trust listing (2017)",
+    "description": "IndiGrid listed on the Indian stock exchanges as the first power transmission InvIT, allowing institutional and retail investors to invest in yielding infrastructure assets."
+  },
+  {
+    "id": "real_estate_investment_trust",
+    "name": "Real Estate Investment Trust",
+    "format": "Reality Narrative",
+    "anchor": "Embassy Office Parks REIT IPO (2019)",
+    "description": "Embassy Office Parks completed India's first REIT IPO, raising ₹4,750 crore and opening the commercial office real estate asset class to retail stock market investors."
+  },
+  {
+    "id": "settlement_cycle",
+    "name": "Settlement Cycle",
+    "format": "Reality Narrative",
+    "anchor": "India's transition to T+1 settlement (January 2023)",
+    "description": "India became the first major global economy to complete a phased transition to a T+1 stock settlement cycle, reducing settlement risk and releasing margin capital faster."
+  },
+  {
+    "id": "true_sale",
+    "name": "True Sale",
+    "format": "Reality Narrative",
+    "anchor": "Enron's off-balance-sheet SPV transactions (2001)",
+    "description": "Enron simulated 'true sales' of underperforming assets to off-balance-sheet Special Purpose Entities (SPEs) like LJM, which actually had repurchase guarantees from Enron."
+  },
+  {
+    "id": "bankruptcy_remoteness",
+    "name": "Bankruptcy Remoteness",
+    "format": "Reality Structure",
+    "anchor": "Lehman Brothers Lehman-sponsored securitization SPVs (2008)",
+    "description": "Even as Lehman Brothers filed for bankruptcy, its securitization SPVs remained operational and remote from the parent's bankruptcy proceedings, protecting investors."
+  },
+  {
+    "id": "special_purpose_vehicle",
+    "name": "Special Purpose Vehicle",
+    "format": "Reality Narrative",
+    "anchor": "Enron's LJM and Chewco entities (2001)",
+    "description": "Enron used Special Purpose Vehicles (SPVs) to hide massive debts and artificially inflate earnings, which ultimately triggered its sudden collapse."
+  },
+  {
+    "id": "originator",
+    "name": "Originator",
+    "format": "Reality Narrative",
+    "anchor": "Countrywide Financial's subprime lending volume (2005-2007)",
+    "description": "Countrywide Financial acted as the primary originator of subprime mortgages in the US, feeding trillions of dollars in high-risk loans to Wall Street investment banks."
+  },
+  {
+    "id": "servicer",
+    "name": "Servicer",
+    "format": "Reality Narrative",
+    "anchor": "Ocwen Financial foreclosure processing probe (2014)",
+    "description": "Major mortgage servicer Ocwen was investigated by regulators for 'robo-signing' foreclosure documents and abusing distressed homeowners, exposing conflicts of interest."
+  },
+  {
+    "id": "credit_enhancement",
+    "name": "Credit Enhancement",
+    "format": "Reality Structure",
+    "anchor": "Monoline insurer downgrades (2007-2008)",
+    "description": "Monoline insurers like MBIA and Ambac provided credit enhancement to subprime mortgage bonds; when the bonds defaulted, the insurers were downgraded, stripping the bonds of their AAA ratings."
+  },
+  {
+    "id": "overcollateralization",
+    "name": "Overcollateralization",
+    "format": "Reference Explainer",
+    "anchor": "Subprime mortgage securitization structuring (2006)",
+    "description": "Securitizations of subprime mortgage loans used overcollateralization—putting extra collateral to back bonds—to absorb initial default losses and secure AAA ratings."
+  },
+  {
+    "id": "subordination",
+    "name": "Subordination",
+    "format": "Reality Structure",
+    "anchor": "CDO cash flow waterfall structures (2008)",
+    "description": "Subordination divided CDOs into senior, mezzanine, and junior tranches, ensuring the junior equity tranche absorbed the first losses from mortgage defaults."
+  },
+  {
+    "id": "excess_spread",
+    "name": "Excess Spread",
+    "format": "Reality Structure",
+    "anchor": "Credit card securitization early amortization (2008)",
+    "description": "During the credit crisis, rising default rates on credit card receivables wiped out the excess spread in securitization trusts, threatening to trigger early amortization."
+  },
+  {
+    "id": "surety_bond",
+    "name": "Surety Bond",
+    "format": "Reality Narrative",
+    "anchor": "Greensill Capital insolvency (2021)",
+    "description": "Greensill Capital collapsed after insurer Tokio Marine refused to renew surety bonds and credit insurance policies covering $4.6 billion of Greensill's supply chain finance loans."
+  },
+  {
+    "id": "letter_of_credit",
+    "name": "Letter of Credit",
+    "format": "Reality Narrative",
+    "anchor": "Punjab National Bank fraud (2018)",
+    "description": "Jeweler Nirav Modi conspired with bank officials to issue unauthorized Letters of Undertaking (a type of Letter of Credit) worth $2 billion, which were used to obtain overseas credit."
+  },
+  {
+    "id": "asset_backed_security",
+    "name": "Asset-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "David Bowie's 'Bowie Bonds' issuance (1997)",
+    "description": "David Bowie pioneer-securitized his future music publishing royalties, raising $55 million through 'Bowie Bonds' backed by the future revenues of 25 albums."
+  },
+  {
+    "id": "mortgage_backed_security",
+    "name": "Mortgage-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "Bear Stearns subprime hedge fund failures (June 2007)",
+    "description": "Two Bear Stearns asset management funds collapsed due to leverage and exposure to subprime mortgage-backed securities, signaling the start of the global credit crisis."
+  },
+  {
+    "id": "residential_mortgage_backed_security",
+    "name": "Residential Mortgage-Backed Security",
+    "format": "Reality Structure",
+    "anchor": "Countrywide Financial subprime RMBS pools (2006)",
+    "description": "Countrywide pooled thousands of high-risk residential mortgages into RMBS trusts, selling them to international investors who suffered devastating losses."
+  },
+  {
+    "id": "commercial_mortgage_backed_security",
+    "name": "Commercial Mortgage-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "245 Park Avenue CMBS default (2021)",
+    "description": "A major CMBS trust defaulted on a loan backed by 245 Park Avenue in Manhattan when major tenant departures and work-from-home trends impaired the property's cash flows."
+  },
+  {
+    "id": "collateralized_debt_obligation",
+    "name": "Collateralized Debt Obligation",
+    "format": "Reality Narrative",
+    "anchor": "Goldman Sachs' Abacus 2007-AC1 CDO (2007)",
+    "description": "Goldman Sachs structured Abacus 2007-AC1, a synthetic CDO that allowed hedge fund Paulson & Co. to bet against subprime mortgages while other investors bought the long tranches."
+  },
+  {
+    "id": "pass_through_structure",
+    "name": "Pass-Through Structure",
+    "format": "Reality Narrative",
+    "anchor": "Ginnie Mae's first mortgage pass-through security (1970)",
+    "description": "Ginnie Mae issued the first mortgage-backed pass-through security, allowing investors to receive directly proportional shares of monthly payments from homeowners."
+  },
+  {
+    "id": "pay_through_structure",
+    "name": "Pay-Through Structure",
+    "format": "Reference Explainer",
+    "anchor": "Freddie Mac's first Collateralized Mortgage Obligation (1983)",
+    "description": "Freddie Mac and First Boston structured the first CMO, using a pay-through model to redirect cash flows from underlying mortgages into sequential tranches."
+  },
+  {
+    "id": "prepayment_risk",
+    "name": "Prepayment Risk",
+    "format": "Reality Structure",
+    "anchor": "US mortgage refinancing surge (2020-2021)",
+    "description": "As the Fed cut interest rates to near-zero, a massive wave of homeowners refinanced their mortgages, exposing MBS investors to high prepayment risk."
+  },
+  {
+    "id": "extension_risk",
+    "name": "Extension Risk",
+    "format": "Reality Structure",
+    "anchor": "US mortgage market refinancing freeze (2022-2023)",
+    "description": "When mortgage rates doubled to over 7%, refinancing activity dried up completely, exposing MBS investors to extension risk as the average life of their bonds lengthened."
+  },
+  {
+    "id": "conditional_prepayment_rate",
+    "name": "Conditional Prepayment Rate",
+    "format": "Reference Explainer",
+    "anchor": "2003 US refinancing wave",
+    "description": "The Conditional Prepayment Rate (CPR) for US mortgage pools spiked to historic levels as 30-year fixed mortgage rates dropped to a then-unprecedented 5.2%."
+  },
+  {
+    "id": "duration",
+    "name": "Duration",
+    "format": "Reality Structure",
+    "anchor": "Silicon Valley Bank asset write-downs (2023)",
+    "description": "SVB's long-term held-to-maturity bond portfolio had an average duration of over 5 years; when interest rates rose, the portfolio's value dropped by over $15 billion."
+  },
+  {
+    "id": "negative_convexity",
+    "name": "Negative Convexity",
+    "format": "Reference Explainer",
+    "anchor": "Askin Capital Management mortgage fund collapse (1994)",
+    "description": "Askin Capital collapsed when rising interest rates extended the duration of its interest-only mortgage derivatives, exhibiting negative convexity that rapidly multiplied losses."
+  },
+  {
+    "id": "tranche",
+    "name": "Tranche",
+    "format": "Reality Structure",
+    "anchor": "Subprime CDO AAA rating downgrades (2007-2008)",
+    "description": "Rating agencies downgraded thousands of CDO tranches from AAA to junk overnight, exposing the flaws of structuring credit risk into artificial risk layers."
+  },
+  {
+    "id": "equity_tranche",
+    "name": "Equity Tranche",
+    "format": "Reality Narrative",
+    "anchor": "The Magnetar Trade (2006-2007)",
+    "description": "Hedge fund Magnetar Capital sponsored CDO issuances and purchased their equity tranches to yield high interest, while simultaneously buying massive CDS protection to short the senior tranches."
+  },
+  {
+    "id": "mezzanine_tranche",
+    "name": "Mezzanine Tranche",
+    "format": "Reality Structure",
+    "anchor": "Repackaging of BBB-rated RMBS into CDOs",
+    "description": "Wall Street banks pooled BBB-rated mezzanine tranches of RMBS into new CDOs and used diversification models to get AAA ratings on 80% of the new structures."
+  },
+  {
+    "id": "senior_tranche",
+    "name": "Senior Tranche",
+    "format": "Reality Narrative",
+    "anchor": "Merrill Lynch CDO write-downs (Late 2007)",
+    "description": "Merrill Lynch was forced to write down $8.4 billion when it was stuck holding billions of dollars of unsold 'super-senior' CDO tranches that it could not liquidate."
+  },
+  {
+    "id": "early_amortization_event",
+    "name": "Early Amortization Event",
+    "format": "Reality Narrative",
+    "anchor": "NextCard credit card trust early amortization (2002)",
+    "description": "NextCard, an online credit card issuer, went bankrupt; as credit losses rose, its credit card securitization trust hit a trigger that caused an early amortization event."
+  },
+  {
+    "id": "default_rate",
+    "name": "Default Rate",
+    "format": "Reality Structure",
+    "anchor": "US subprime mortgage default rate peak (2008)",
+    "description": "The default rate on US subprime mortgages surged past 20%, breaching all historical stress-testing models and causing the collapse of RMBS and CDO markets."
+  },
+  {
+    "id": "loan_to_value_ratio",
+    "name": "Loan-to-Value Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Northern Rock's 125% LTV mortgage product (2007)",
+    "description": "Northern Rock offered a 'Together' mortgage that allowed home buyers to borrow up to 125% of their property's value, leaving them deeply underwater when housing prices declined."
+  },
+  {
+    "id": "debt_service_coverage_ratio",
+    "name": "Debt Service Coverage Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Stuyvesant Town-Peter Cooper Village default (2010)",
+    "description": "A partnership led by Tishman Speyer defaulted on $4.4 billion in debt after its DSCR fell below 1.0x, as rent control laws prevented them from raising rents enough to service the debt."
+  },
+  {
+    "id": "conduit_securitization",
+    "name": "Conduit Securitization",
+    "format": "Reality Structure",
+    "anchor": "ABCP market freeze (August 2007)",
+    "description": "Asset-Backed Commercial Paper (ABCP) conduits, which bought long-term assets using short-term commercial paper, could no longer roll over their debt when subprime fears rose."
+  },
+  {
+    "id": "synthetic_securitization",
+    "name": "Synthetic Securitization",
+    "format": "Reality Structure",
+    "anchor": "Goldman Sachs' Abacus and other synthetic CDOs",
+    "description": "Synthetic securitizations allowed investment banks to compile portfolios of credit default swaps rather than physical loans, allowing trillions in bets on the housing market."
+  },
+  {
+    "id": "single_tranche_cdo",
+    "name": "Single-Tranche CDO",
+    "format": "Reality Narrative",
+    "anchor": "IKB Deutsche Industriebank collapse (2007)",
+    "description": "German lender IKB collapsed and required a €10 billion bailout after investing heavily in customized single-tranche CDOs that lost all value when US housing defaults spiked."
+  },
+  {
+    "id": "arbitrage_cdo",
+    "name": "Arbitrage CDO",
+    "format": "Reality Structure",
+    "anchor": "Correlation trading desk losses (2005-2007)",
+    "description": "Wall Street correlation desks structured arbitrage CDOs to profit from the spread between the yield of debt assets and the cost of buying CDS protection, which collapsed when correlation models failed."
+  },
+  {
+    "id": "balance_sheet_cdo",
+    "name": "Balance Sheet CDO",
+    "format": "Reality Structure",
+    "anchor": "Citigroup off-balance-sheet SIVs (2007)",
+    "description": "Citigroup structured balance sheet CDOs to move corporate loans off its balance sheet; when the subprime crisis hit, Citigroup was forced to bring $49 billion of these assets back onto its books."
+  },
+  {
+    "id": "market_value_cdo",
+    "name": "Market Value CDO",
+    "format": "Reality Structure",
+    "anchor": "LTCM crisis liquidations (1998)",
+    "description": "In the wake of the Russian default and LTCM crisis, several market value CDOs experienced sudden net asset value drops, triggering automatic liquidation clauses."
+  },
+  {
+    "id": "servicer_advance",
+    "name": "Servicer Advance",
+    "format": "Reality Structure",
+    "anchor": "COVID-19 mortgage forbearance liquidity squeeze (2020)",
+    "description": "The CARES Act allowed US homeowners to skip mortgage payments, but mortgage servicers were still legally required to advance those payments to MBS investors, creating a massive short-term liquidity squeeze."
+  },
+  {
+    "id": "master_servicer",
+    "name": "Master Servicer",
+    "format": "Reality Narrative",
+    "anchor": "Wells Fargo RMBS master servicer lawsuits",
+    "description": "Wells Fargo, acting as the master servicer for thousands of pre-2008 RMBS trusts, faced major lawsuits from institutional investors alleging it failed to monitor delinquent loan sub-servicers."
+  },
+  {
+    "id": "special_servicer",
+    "name": "Special Servicer",
+    "format": "Reality Narrative",
+    "anchor": "Mall of America debt restructuring (2020)",
+    "description": "The Mall of America's $1.4 billion CMBS loan was sent to special servicer CWCapital after the pandemic forced closures, resulting in a complex modification."
+  },
+  {
+    "id": "b_piece_buyer",
+    "name": "B-Piece Buyer",
+    "format": "Reality Structure",
+    "anchor": "LNR Partners CMBS auditing role",
+    "description": "As a dominant B-piece buyer, LNR Partners audited CMBS loan pools before securitization, kicking out high-risk commercial loans from the pool to protect the junior tranches they were purchasing."
+  },
+  {
+    "id": "yield_maintenance",
+    "name": "Yield Maintenance",
+    "format": "Reality Narrative",
+    "anchor": "GM Building loan refinancing (2013)",
+    "description": "The owners of the GM Building paid a record $224 million yield maintenance prepayment penalty when refinancing their $1.6 billion CMBS loan early, as interest rates had fallen significantly."
+  },
+  {
+    "id": "defeasance",
+    "name": "Defeasance",
+    "format": "Reality Narrative",
+    "anchor": "Sale of 10 Hudson Yards (2016)",
+    "description": "The owners of 10 Hudson Yards completed the sale of the building by defeasing their existing CMBS loan, purchasing a portfolio of US government securities to substitute as collateral."
+  },
+  {
+    "id": "agency_mbs",
+    "name": "Agency MBS",
+    "format": "Reality Narrative",
+    "anchor": "Federal conservatorship of Fannie Mae and Freddie Mac (2008)",
+    "description": "The US government took control of Fannie Mae and Freddie Mac to guarantee their agency mortgage-backed securities, preventing a total collapse of the housing finance system."
+  },
+  {
+    "id": "non_agency_mbs",
+    "name": "Non-Agency MBS",
+    "format": "Reality Narrative",
+    "anchor": "Bear Stearns subprime fund collapses (2007)",
+    "description": "Bear Stearns' High-Grade Structured Credit Funds failed after investing heavily in non-agency subprime MBS, which lacked government backing and suffered severe credit downgrades."
+  },
+  {
+    "id": "government_national_mortgage_association",
+    "name": "Government National Mortgage Association",
+    "format": "Reality Narrative",
+    "anchor": "Ginnie Mae's post-2008 market share expansion",
+    "description": "Ginnie Mae remained the only MBS issuer backed by the full faith and credit of the US government, leading to a surge in its market share as Fannie Mae and Freddie Mac went into conservatorship."
+  },
+  {
+    "id": "federal_national_mortgage_association",
+    "name": "Federal National Mortgage Association",
+    "format": "Reality Narrative",
+    "anchor": "Fannie Mae conservatorship (September 2008)",
+    "description": "Fannie Mae was placed under government conservatorship after accumulating massive losses on its Alt-A and subprime mortgage-backed security portfolios."
+  },
+  {
+    "id": "to_be_announced_market",
+    "name": "To-Be-Announced Market",
+    "format": "Reality Structure",
+    "anchor": "Fed's Quantitative Easing purchases (2008-2022)",
+    "description": "The Federal Reserve purchased trillions of dollars of agency MBS through the To-Be-Announced (TBA) forward market to drive down US borrowing costs."
+  },
+  {
+    "id": "auto_loan_securitization",
+    "name": "Auto Loan Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Honor Finance subprime auto loan collapse (2018)",
+    "description": "Subprime auto lender Honor Finance collapsed after its securitized auto loan portfolios suffered massive defaults, highlighting the risk of loose underwriting in auto ABS."
+  },
+  {
+    "id": "credit_card_securitization",
+    "name": "Credit Card Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Citibank's Master Trust structures (late 1980s)",
+    "description": "Citibank pioneered the master trust structure to securitize credit card receivables, allowing them to continuously issue new debt from a single pool of revolving card balances and revolutionize consumer credit finance."
+  },
+  {
+    "id": "student_loan_asset_backed_security",
+    "name": "Student Loan Asset-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "Nelnet's SLABS portfolio and the auction-rate securities freeze (2008)",
+    "description": "Nelnet and Sallie Mae issued billions in student loan asset-backed securities (SLABS). In 2008, the auction-rate securities market failed, freezing the liquidity of these student loans and requiring emergency federal intervention."
+  },
+  {
+    "id": "whole_business_securitization",
+    "name": "Whole Business Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Domino's Pizza $1.85 billion recapitalization (2007)",
+    "description": "Domino's Pizza securitized its entire business—franchise agreements, royalties, and IP—to raise $1.85 billion to pay a massive dividend, establishing a template for asset-light franchise companies."
+  },
+  {
+    "id": "risk_retention_rule",
+    "name": "Risk Retention Rule",
+    "format": "Reality Narrative",
+    "anchor": "LSTA v. SEC federal ruling (2018)",
+    "description": "The Loan Syndication and Trading Association successfully sued the SEC, winning a DC Circuit ruling that exempted open-market CLO managers from the Dodd-Frank 'skin-in-the-game' risk retention requirements."
+  },
+  {
+    "id": "covered_bond",
+    "name": "Covered Bond",
+    "format": "Reality Narrative",
+    "anchor": "The Danish Mortgage System's resilience (2008)",
+    "description": "Denmark's covered bond (realkreditobligationer) market remained fully functional during the 2008 financial crisis without a single default, thanks to strict balance principles and direct matching of borrowers and investors."
+  },
+  {
+    "id": "optimal_capital_structure",
+    "name": "Optimal Capital Structure",
+    "format": "Reality Narrative",
+    "anchor": "Apple's $17 billion bond issuance (2013)",
+    "description": "Under pressure from activist investor Carl Icahn, Apple issued $17 billion in debt—its first bond sale since 1996—to fund share buybacks, optimizing its capital structure and avoiding the tax hit of hedging overseas cash."
+  },
+  {
+    "id": "capital_lease",
+    "name": "Capital Lease",
+    "format": "Reality Narrative",
+    "anchor": "Walgreens Boots Alliance ASC 842 transition (2019)",
+    "description": "The transition to ASC 842 forced Walgreens to record $23 billion of lease liabilities on its balance sheet, converting former operating leases into right-of-use assets and reshaping its leverage metrics overnight."
+  },
+  {
+    "id": "convertible_bond",
+    "name": "Convertible Bond",
+    "format": "Reality Narrative",
+    "anchor": "Tesla's $920 million convertible bond maturity (March 2019)",
+    "description": "Tesla faced a cash squeeze when its stock hovered below the $359.87 conversion price, forcing the company to repay $920 million in cash rather than equity, nearly draining its liquidity before its subsequent valuation run."
+  },
+  {
+    "id": "operating_lease",
+    "name": "Operating Lease",
+    "format": "Reality Narrative",
+    "anchor": "Enron's off-balance sheet lease vehicles (2001)",
+    "description": "Enron used off-balance sheet operating leases via special purpose entities to keep billions of dollars of debt and energy assets off its public balance sheet, hiding its true leverage until its collapse."
+  },
+  {
+    "id": "synergy",
+    "name": "Synergy",
+    "format": "Reality Narrative",
+    "anchor": "AOL Time Warner merger (2000)",
+    "description": "Promised as the ultimate synergy play between new-media internet and old-media publishing, the merger instead collapsed due to cultural clashes and the dot-com bust, resulting in a record $99 billion write-down in 2002."
+  },
+  {
+    "id": "goodwill",
+    "name": "Goodwill",
+    "format": "Reality Narrative",
+    "anchor": "Kraft Heinz $15.4 billion write-down (2019)",
+    "description": "Kraft Heinz shocked markets by writing down $15.4 billion in goodwill and intangible assets for its iconic brands, admitting that changing consumer tastes had permanently eroded their premium value."
+  },
+  {
+    "id": "leveraged_buyout",
+    "name": "Leveraged Buyout",
+    "format": "Reality Narrative",
+    "anchor": "The RJR Nabisco buyout (1989)",
+    "description": "KKR's hostile $25 billion acquisition of RJR Nabisco, funded with over 90% debt, became the definitive LBO battleground of the 1980s, highlighting the power and risk of high-yield junk bonds."
+  },
+  {
+    "id": "economic_value_added",
+    "name": "Economic Value Added",
+    "format": "Reality Narrative",
+    "anchor": "Coca-Cola's capital allocation turnaround (1980s-1990s)",
+    "description": "CEO Roberto Goizueta tied executive compensation to Economic Value Added (EVA), forcing managers to focus on returns above the cost of capital, which helped drive a 3,500% increase in stock price during his tenure."
+  },
+  {
+    "id": "futures_contract",
+    "name": "Futures Contract",
+    "format": "Reality Narrative",
+    "anchor": "Amaranth Advisors' natural gas collapse (2006)",
+    "description": "Hedge fund Amaranth lost $6 billion in a few weeks due to massive, highly leveraged natural gas futures positions on the NYMEX when the spread between summer and winter contracts collapsed."
+  },
+  {
+    "id": "mark_to_market",
+    "name": "Mark-to-Market",
+    "format": "Reality Narrative",
+    "anchor": "Enron's natural gas and energy contract booking (1990s)",
+    "description": "Enron aggressively used SEC-approved mark-to-market accounting to project future cash flows from long-term energy deals and book them as immediate profit, hiding the fact that many ventures were unprofitable."
+  },
+  {
+    "id": "contango",
+    "name": "Contango",
+    "format": "Reality Narrative",
+    "anchor": "WTI crude oil crash to negative $37.63 (April 2020)",
+    "description": "In April 2020, the WTI crude oil futures contract fell into extreme super-contango, with near-month contracts crashing to -$37.63/barrel because physical storage space at Cushing, Oklahoma had completely run out."
+  },
+  {
+    "id": "backwardation",
+    "name": "Backwardation",
+    "format": "Reality Narrative",
+    "anchor": "The London Metal Exchange nickel squeeze (March 2022)",
+    "description": "A massive short squeeze forced the LME nickel contract into unprecedented backwardation, with spot prices surging above futures as buyers paid massive premiums to secure immediate physical delivery."
+  },
+  {
+    "id": "barrier_option",
+    "name": "Barrier Option",
+    "format": "Reality Narrative",
+    "anchor": "South Korea's KIKO currency option losses (2008)",
+    "description": "South Korean exporters purchased Knock-In Knock-Out (KIKO) barrier options to hedge against currency drops, but when the Won crashed in 2008, it triggered the 'knock-in' barrier, forcing them to sell dollars at severe losses and causing widespread bankruptcies."
+  },
+  {
+    "id": "delta_neutral_hedging",
+    "name": "Delta-Neutral Hedging",
+    "format": "Reality Narrative",
+    "anchor": "Black Monday crash portfolio insurance failure (1987)",
+    "description": "The 1987 crash was severely worsened by institutional portfolio insurance strategies, which relied on automated delta-neutral hedging by selling S&P 500 futures as the stock market dropped, creating a catastrophic feedback loop."
+  },
+  {
+    "id": "volatility_smile",
+    "name": "Volatility Smile",
+    "format": "Reality Narrative",
+    "anchor": "Black Monday crash (1987) option pricing shift",
+    "description": "Prior to 1987, the volatility smile did not exist in equity options; after the crash, options pricing permanently shifted to reflect the higher perceived risk of tail events, creating the characteristic skew or smile."
+  },
+  {
+    "id": "straddle",
+    "name": "Straddle",
+    "format": "Reality Narrative",
+    "anchor": "Nick Leeson's collapse of Barings Bank (1995)",
+    "description": "Nick Leeson shorted tens of thousands of Nikkei 225 straddles, betting the market would remain stable; the Kobe earthquake struck days later, causing the Nikkei to crash and producing losses that destroyed the 233-year-old bank."
+  },
+  {
+    "id": "collar_strategy",
+    "name": "Collar Strategy",
+    "format": "Reality Narrative",
+    "anchor": "Mark Cuban's Broadcast.com equity hedge (1999)",
+    "description": "After selling Broadcast.com to Yahoo for $5.7 billion in stock, Mark Cuban entered into a massive collar option strategy to lock in his wealth, protecting his billions from the subsequent dot-com crash while keeping his stock."
+  },
+  {
+    "id": "black_scholes_model",
+    "name": "Black-Scholes Model",
+    "format": "Reality Narrative",
+    "anchor": "Long-Term Capital Management (LTCM) collapse (1998)",
+    "description": "LTCM's arbitrage models, designed by Black-Scholes creators Myron Scholes and Robert Merton, collapsed when the Russian debt default triggered a flight to quality, violating the model's assumption of continuous liquidity."
+  },
+  {
+    "id": "black_scholes_assumptions",
+    "name": "Assumptions of Black-Scholes",
+    "format": "Reality Narrative",
+    "anchor": "Black Monday crash (1987)",
+    "description": "The October 1987 crash exposed critical flaws in Black-Scholes assumptions, particularly constant volatility and log-normal distributions of asset returns, leading markets to permanently price in a volatility skew."
+  },
+  {
+    "id": "interest_rate_swap",
+    "name": "Interest Rate Swap",
+    "format": "Reality Narrative",
+    "anchor": "Orange County bankruptcy (1994)",
+    "description": "Orange County Treasurer Robert Citron used interest rate swaps to build a highly leveraged $20 billion portfolio bet on falling rates, leading to a $1.7 billion loss and the largest municipal bankruptcy at the time when rates rose."
+  },
+  {
+    "id": "currency_swap",
+    "name": "Currency Swap",
+    "format": "Reality Narrative",
+    "anchor": "Greece's sovereign debt masking by Goldman Sachs (2001)",
+    "description": "Goldman Sachs structured a cross-currency swap for Greece using off-market exchange rates to borrow $2.8 billion, which allowed Greece to hide the debt from eurozone regulators and meet government deficit criteria."
+  },
+  {
+    "id": "credit_default_swap",
+    "name": "Credit Default Swap",
+    "format": "Reality Narrative",
+    "anchor": "American International Group (AIG) bailout (September 2008)",
+    "description": "AIG Financial Products wrote over $440 billion in CDS protection on multi-sector CDOs. When the housing market collapsed, rating downgrades forced AIG to post tens of billions in collateral, triggering a $180 billion federal bailout."
+  },
+  {
+    "id": "total_return_swap",
+    "name": "Total Return Swap",
+    "format": "Reality Narrative",
+    "anchor": "Archegos Capital Management collapse (2021)",
+    "description": "Archegos used total return swaps with global banks to build massive, levered long positions in stocks like ViacomCBS without filing disclosure forms, resulting in a $20 billion fire sale and $10 billion in bank losses."
+  },
+  {
+    "id": "swaption",
+    "name": "Swaption",
+    "format": "Reality Narrative",
+    "anchor": "UK Liability-Driven Investment (LDI) pension crisis (2022)",
+    "description": "UK pension funds that used swaptions and interest rate swaps to hedge long-term liabilities faced massive margin calls as gilt yields skyrocketed, forcing a Bank of England intervention to prevent a systemic bond selloff."
+  },
+  {
+    "id": "overnight_indexed_swap",
+    "name": "Overnight Indexed Swap",
+    "format": "Reality Narrative",
+    "anchor": "The Libor-OIS spread spike (2007-2008)",
+    "description": "The spread between Libor and OIS rates spiked from a historical average of 10 basis points to over 350 basis points during the 2008 crisis, serving as the primary market indicator of systemic banking system solvency risk."
+  },
+  {
+    "id": "isda_master_agreement",
+    "name": "ISDA Master Agreement",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers bankruptcy wind-down (September 2008)",
+    "description": "Lehman's collapse triggered the close-out and valuation of over 900,000 derivatives contracts, testing the ISDA Master Agreement's netting and collateral provisions in the largest financial bankruptcy in history."
+  },
+  {
+    "id": "mortgage_backed_security",
+    "name": "Mortgage-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "Salomon Brothers creation of private-label MBS (1980s)",
+    "description": "Salomon Brothers' mortgage department, led by Lewis Ranieri, pioneered the securitization of residential mortgages, transforming illiquid home loans into liquid, tradeable fixed-income securities."
+  },
+  {
+    "id": "collateralized_mortgage_obligation",
+    "name": "Collateralized Mortgage Obligation",
+    "format": "Reality Narrative",
+    "anchor": "First Boston's creation of the first CMO (1983)",
+    "description": "Larry Fink and the structured finance team at First Boston created the first CMO for Freddie Mac, introducing tranches to redistribute prepayment risk and expand the investor base for mortgage securities."
+  },
+  {
+    "id": "collateralized_loan_obligation",
+    "name": "Collateralized Loan Obligation",
+    "format": "Reality Narrative",
+    "anchor": "CLO performance during the Great Financial Crisis (2008)",
+    "description": "While mortgage-backed CDOs collapsed, corporate CLOs survived the 2008 crisis with near-zero defaults on AAA tranches, demonstrating the structural strength of diversely pooled corporate leverage loans."
+  },
+  {
+    "id": "collateralized_debt_obligation",
+    "name": "Collateralized Debt Obligation",
+    "format": "Reality Narrative",
+    "anchor": "Merrill Lynch's $26 billion subprime CDO write-downs (2007-2008)",
+    "description": "Merrill Lynch aggressively accumulated subprime mortgage-backed CDOs on its balance sheet. When the housing market turned, it suffered over $26 billion in write-downs, leading to the CEO's departure and its fire-sale acquisition by Bank of America."
+  },
+  {
+    "id": "cdo_squared",
+    "name": "CDO-Squared",
+    "format": "Reality Narrative",
+    "anchor": "Merrill Lynch's CDO-Squared transactions (2006-2007)",
+    "description": "Merrill Lynch structured complex CDO-squareds (CDOs backed by tranches of other CDOs), compounding subprime mortgage risk and causing catastrophic losses for institutional investors when housing defaulted."
+  },
+  {
+    "id": "synthetic_cdo",
+    "name": "Synthetic CDO",
+    "format": "Reality Narrative",
+    "anchor": "Goldman Sachs' Abacus 2007-AC1 transaction (2007)",
+    "description": "Goldman Sachs structured the Abacus 2007-AC1 synthetic CDO, allowing hedge fund Paulson & Co. to select underlying RMBS and short them, leading to a SEC investigation and a $550 million settlement."
+  },
+  {
+    "id": "commercial_mortgage_backed_security",
+    "name": "Commercial Mortgage-Backed Security",
+    "format": "Reality Narrative",
+    "anchor": "Stuyvesant Town-Peter Cooper Village default (2010)",
+    "description": "Tishman Speyer and BlackRock defaulted on a $3 billion CMBS loan package used to purchase the Stuyvesant Town residential complex in New York, marking the largest commercial mortgage default in US history."
+  },
+  {
+    "id": "credit_linked_note",
+    "name": "Credit Linked Note",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers 'Minibonds' defaults in Asia (2008)",
+    "description": "Lehman Brothers issued retail credit-linked notes (marketed as 'Minibonds') in Hong Kong and Singapore. When Lehman failed, the underlying credit event wiped out the principal, leaving tens of thousands of retail investors with near-total losses."
+  },
+  {
+    "id": "non_performing_loan_securitization",
+    "name": "Non-Performing Loan Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Italy's GACS government guarantee scheme (2016)",
+    "description": "The Italian government introduced the GACS guarantee scheme to help domestic banks securitize and offload over €180 billion in toxic non-performing loans (NPLs) by providing state backing on senior tranches."
+  },
+  {
+    "id": "special_servicer",
+    "name": "Special Servicer",
+    "format": "Reality Narrative",
+    "anchor": "LNR Partners' workout of Stuyvesant Town (2010)",
+    "description": "Special servicer LNR Partners took control of the defaulted $3 billion CMBS loan on Stuyvesant Town, managing the foreclosure and eventual sale while highlighting the immense power and fees earned by CMBS workouts."
+  },
+  {
+    "id": "single_asset_single_borrower_cmbs",
+    "name": "Single Asset Single Borrower CMBS",
+    "format": "Reality Narrative",
+    "anchor": "Blackstone's Cosmopolitan of Las Vegas refinancing (2015)",
+    "description": "Blackstone refinanced the Cosmopolitan of Las Vegas hotel and casino with a $1.4 billion SASB CMBS deal, showcasing how single high-trophy assets can bypass standard conduit pools and access direct public debt markets."
+  },
+  {
+    "id": "negative_convexity",
+    "name": "Negative Convexity",
+    "format": "Reality Narrative",
+    "anchor": "The Bond Market Massacre (1994)",
+    "description": "As the Fed hiked interest rates in 1994, mortgage prepayments dried up, causing the duration of mortgage-backed securities to balloon (negative convexity) and forcing managers to dump Treasuries to hedge, worsening the global bond crash."
+  },
+  {
+    "id": "true_sale",
+    "name": "True Sale",
+    "format": "Reality Narrative",
+    "anchor": "LTV Steel bankruptcy court ruling (2001)",
+    "description": "In the LTV Steel bankruptcy, the court shocked the structured finance industry by questioning whether its asset-backed securitization transfers were 'true sales' or merely secured loans, threatening the bankruptcy-remoteness of SPVs."
+  },
+  {
+    "id": "weighted_average_rating_factor",
+    "name": "Weighted Average Rating Factor",
+    "format": "Reality Narrative",
+    "anchor": "COVID-19 corporate downgrade wave (Spring 2020)",
+    "description": "The sudden economic lockdowns of 2020 triggered massive rating downgrades of leveraged loans, causing CLO Weighted Average Rating Factors (WARF) to spike and forcing managers to trade actively to avoid test breaches."
+  },
+  {
+    "id": "credit_event",
+    "name": "Credit Event",
+    "format": "Reality Narrative",
+    "anchor": "Greek sovereign debt restructuring (2012)",
+    "description": "The ISDA Determination Committee ruled that Greece's implementation of collective action clauses to force losses on bondholders constituted a restructuring credit event, triggering payouts on $3.2 billion of outstanding CDS."
+  },
+  {
+    "id": "cds_settlement",
+    "name": "CDS Settlement",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers auction settlement (October 2008)",
+    "description": "The ISDA Lehman Brothers CDS auction settled in October 2008 at a recovery rate of 8.625%, requiring protection sellers to pay out 91.375% of the $72 billion in net outstanding Lehman-linked CDS."
+  },
+  {
+    "id": "cds_index",
+    "name": "CDS Index",
+    "format": "Reality Narrative",
+    "anchor": "The 'London Whale' trading loss at JPMorgan Chase (2012)",
+    "description": "Trader Bruno Iksil built a massive, illiquid position in the CDX.NA.IG.9 investment-grade credit default swap index, resulting in a $6.2 billion loss for JPMorgan Chase."
+  },
+  {
+    "id": "term_asset_backed_securities_loan_facility",
+    "name": "Term Asset-Backed Securities Loan Facility",
+    "format": "Reality Narrative",
+    "anchor": "Federal Reserve intervention in the consumer credit freeze (2008)",
+    "description": "To revive the frozen securitization markets, the Fed launched TALF, providing up to $200 billion in non-recourse loans to investors purchasing AAA-rated consumer asset-backed securities (auto, credit card, student loans)."
+  },
+  {
+    "id": "non_qualified_mortgage_securitization",
+    "name": "Non-Qualified Mortgage Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Angel Oak's post-crisis Non-QM issuances (2015)",
+    "description": "Angel Oak Capital pioneered the post-Dodd-Frank securitization of Non-Qualified Mortgages (Non-QM), creating a market for borrowers who failed the federal 'Ability-to-Repay' requirements but possessed strong alternative credit metrics."
+  },
+  {
+    "id": "clo_warehouse_facility",
+    "name": "CLO Warehouse Facility",
+    "format": "Reality Narrative",
+    "anchor": "COVID-19 market freeze (March 2020)",
+    "description": "The pandemic selloff crashed leveraged loan prices, leaving CLO managers with 'underwater' warehouse facilities (loans purchased at par now worth 80 cents), forcing financing banks to extend terms or liquidate at massive losses."
+  },
+  {
+    "id": "private_credit_clo",
+    "name": "Private Credit CLO",
+    "format": "Reality Narrative",
+    "anchor": "The rapid growth of the private credit CLO market post-2021",
+    "description": "The post-2021 market environment saw direct lenders like Blackstone, Blue Owl, and Ares aggressively package mid-market non-syndicated loans into private credit CLOs, competing with traditional broadly syndicated structures."
+  },
+  {
+    "id": "tender_option_bond",
+    "name": "Tender Option Bond",
+    "format": "Reality Narrative",
+    "anchor": "Municipal bond market liquidity freeze (2008)",
+    "description": "The downgrade of monoline municipal insurers triggered mandatory tender provisions in Tender Option Bonds, forcing banks to buy back billions in illiquid long-term muni bonds and exacerbating the bank liquidity crisis."
+  },
+  {
+    "id": "regulatory_capital_relief_securitization",
+    "name": "Regulatory Capital Relief Securitization",
+    "format": "Reality Narrative",
+    "anchor": "Basel III Endgame SRT issuance boom (2023-2024)",
+    "description": "Global banks like JPMorgan and Morgan Stanley aggressively issued Significant Risk Transfer (SRT) synthetic securitizations to transfer credit risk of their loan books to private credit funds, lowering their risk-weighted assets."
+  },
+  {
+    "id": "abs_wrap",
+    "name": "ABS Wrap",
+    "format": "Reality Narrative",
+    "anchor": "The collapse of monoline insurers MBIA and Ambac (2007-2008)",
+    "description": "Monoline insurers that wrapped municipal and asset-backed securities with AAA guarantees collapsed after insuring billions of toxic subprime CDOs, stripping the 'wrapped' bonds of their credit enhancement."
+  },
+  {
+    "id": "waterfall_flip",
+    "name": "Waterfall Flip",
+    "format": "Reality Narrative",
+    "anchor": "Belmont Park Investments v. BNY Mellon (2010)",
+    "description": "Following Lehman's collapse, UK and US courts litigated the validity of 'flip clauses' that swap the priority of payments in a securitization waterfall upon a swap counterparty's default, testing the boundaries of US bankruptcy law."
+  },
+  {
+    "id": "clo_print_and_sprint",
+    "name": "Print-and-Sprint",
+    "format": "Reality Narrative",
+    "anchor": "Post-pandemic CLO issuance boom (Late 2020 - 2021)",
+    "description": "CLO managers bypassed the traditional multi-month warehousing phase by immediately pricing deals and buying loans in the secondary market (printing and sprinting) to lock in historically cheap liability spreads."
+  },
+  {
+    "id": "structured_note",
+    "name": "Structured Note",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers principal-protected notes collapse (2008)",
+    "description": "Thousands of retail investors in Europe and Asia purchased 'principal-protected' structured notes issued by Lehman Brothers, only to find the principal guarantee was unsecured debt that became worthless when Lehman failed."
+  },
+  {
+    "id": "special_purpose_vehicle",
+    "name": "Special Purpose Vehicle",
+    "format": "Reality Narrative",
+    "anchor": "Enron's Chewco and LJM transactions (2001)",
+    "description": "Enron used off-balance sheet SPVs (such as Chewco and LJM) run by its own executives to hide debt, inflate earnings, and park poorly performing assets, which ultimately led to the company's collapse."
+  },
+  {
+    "id": "master_trust_structure",
+    "name": "Master Trust Structure",
+    "format": "Reality Narrative",
+    "anchor": "Citibank Credit Card Master Trust (1988)",
+    "description": "Citibank created the first credit card master trust, allowing it to pool card receivables and issue multiple series of asset-backed securities over time, avoiding the cost of setting up new trusts for every deal."
+  },
+  {
+    "id": "early_amortization_event",
+    "name": "Early Amortization Event",
+    "format": "Reality Narrative",
+    "anchor": "NextCard credit card securitization liquidation (2002)",
+    "description": "The failure of internet-only credit card issuer NextCard triggered early amortization on its credit card ABS trust as charge-offs spiked, forcing the trust to stop buying new receivables and pay down investor principal early."
+  },
+  {
+    "id": "interest_only_strip",
+    "name": "Interest-Only Strip",
+    "format": "Reality Narrative",
+    "anchor": "Askin Capital Management collapse (1994)",
+    "description": "David Askin's $600 million hedge funds blew up when the Fed hiked interest rates, causing the values of highly leveraged mortgage-backed IO and PO strips to crash and secondary market liquidity to completely dry up."
+  },
+  {
+    "id": "government_sponsored_enterprise_mbs",
+    "name": "Government Sponsored Enterprise MBS",
+    "format": "Reality Narrative",
+    "anchor": "Fannie Mae and Freddie Mac federal conservatorship (September 2008)",
+    "description": "The US government placed GSEs Fannie Mae and Freddie Mac into conservatorship to rescue them from catastrophic losses on their multi-trillion dollar portfolios of mortgage-backed securities."
+  },
+  {
+    "id": "make_whole_call_provision",
+    "name": "Make-Whole Call Provision",
+    "format": "Reality Narrative",
+    "anchor": "Albertsons acquisition of Safeway (2015)",
+    "description": "Safeway was forced to pay significant make-whole premiums to redeem its high-yield debt early when it merged with Albertsons, illustrating the high cost of this bondholder-protection covenant."
+  },
+  {
+    "id": "covenant_lite_loan",
+    "name": "Covenant-Lite Loan",
+    "format": "Reality Narrative",
+    "anchor": "Energy Future Holdings (TXU) bankruptcy (2014)",
+    "description": "The $45 billion buyout of TXU was heavily funded with covenant-lite loans. The lack of maintenance covenants delayed restructuring for years, allowing the company to burn cash before eventually filing for bankruptcy."
+  },
+  {
+    "id": "libor_vs_sofr",
+    "name": "LIBOR vs SOFR",
+    "format": "Reality Narrative",
+    "anchor": "The Libor rate-rigging scandal (2012)",
+    "description": "Investigations revealed that major banks had routinely manipulated the London Interbank Offered Rate (Libor) to boost derivative profits, leading to billions in fines and the global transition to transaction-based rates like SOFR."
+  },
+  {
+    "id": "investment_company_act_exemption",
+    "name": "1940 Act Exemption",
+    "format": "Reality Narrative",
+    "anchor": "Rule 3a-7 and Section 3(c)(7) exemptions",
+    "description": "The SEC's Rule 3a-7 and Section 3(c)(7) of the 1940 Act allow securitization vehicles and private pools to avoid registering as investment companies, forming the legal backbone of the shadow banking system."
+  },
+  {
+    "id": "repurchase_agreement",
+    "name": "Repurchase Agreement",
+    "format": "Reality Narrative",
+    "anchor": "Lehman Brothers Repo 105 accounting (2008)",
+    "description": "Lehman Brothers used Repo 105 transactions to temporarily move $50 billion of toxic assets off its balance sheet at quarter-end to present a artificially low leverage ratio, returning the assets to the balance sheet days later."
+  },
+  {
+    "id": "regulatory_arbitrage",
+    "name": "Regulatory Arbitrage",
+    "format": "Reality Narrative",
+    "anchor": "Citigroup's off-balance sheet SIVs (2007)",
+    "description": "Citigroup set up Structured Investment Vehicles (SIVs) to hold subprime assets off-balance sheet and reduce regulatory capital requirements under Basel rules, requiring a $25 billion rescue when the vehicles lost funding."
+  },
+  {
+    "id": "gamma_squeeze",
+    "name": "Gamma Squeeze",
+    "format": "Reality Narrative",
+    "anchor": "GameStop short squeeze (January 2021)",
+    "description": "Retail traders buying massive volumes of out-of-the-money call options on GameStop forced market makers to buy underlying stock to maintain delta-neutral hedges, triggering a feedback loop that sent the stock up over 1,500%."
+  },
+  {
+    "id": "autocallable_note",
+    "name": "Autocallable Note",
+    "format": "Reality Narrative",
+    "anchor": "South Korea's ELS retail losses (2024)",
+    "description": "South Korean retail investors lost billions on autocallable Equity-Linked Securities (ELS) tied to the Hang Seng China Enterprises Index (HSCEI) when the index fell below the knock-in barrier, wiping out principal."
+  },
+  {
+    "id": "vix_index",
+    "name": "VIX Index",
+    "format": "Reality Narrative",
+    "anchor": "Volmageddon (February 5, 2018)",
+    "description": "The VIX Index spiked a record 115% in a single day, causing the immediate collapse of inverse-VIX exchange-traded products like XIV, which lost 95% of their value overnight and wiped out $2 billion in capital."
+  },
+  {
+    "id": "vanna",
+    "name": "Vanna",
+    "format": "Reality Narrative",
+    "anchor": "SoftBank's \"Nasdaq Whale\" trades (Late 2020)",
+    "description": "SoftBank purchased billions of dollars in Nasdaq call options, forcing market makers to dynamically hedge their positions. As the tech sector surged and volatility shifted, market makers' delta-hedging requirements changed rapidly due to Vanna (delta's sensitivity to volatility), fueling a buying feedback loop that drove technology stocks to record highs."
+  },
+  {
+    "id": "volatility_risk_premium",
+    "name": "Volatility Risk Premium",
+    "format": "Reality Narrative",
+    "anchor": "Volmageddon (February 5, 2018)",
+    "description": "The collapse of the VelocityShares Daily Inverse VIX Short-Term ETN (XIV) during a sudden 115% spike in the VIX index highlighted the extreme tail risk of harvesting the Volatility Risk Premium via short-volatility strategies."
+  },
+  {
+    "id": "short_volatility_trade",
+    "name": "Short Volatility Trade",
+    "format": "Reality Narrative",
+    "anchor": "Volmageddon (February 5, 2018)",
+    "description": "A sudden 115% spike in the VIX index on February 5, 2018, destroyed over $3 billion in investor capital in short-volatility products like the XIV ETN, showing how a crowded short volatility trade can blow up overnight during a market correction."
+  },
+  {
+    "id": "put_call_parity",
+    "name": "Put-Call Parity",
+    "format": "Reality Narrative",
+    "anchor": "SEC short sale ban on financial stocks (September 2008)",
+    "description": "The temporary SEC ban on short selling financial stocks in September 2008 caused massive violations of Put-Call Parity because market makers and arbitrageurs could not short the underlying stocks to hedge put options, leading to severe mispricings in the options market."
+  },
+  {
+    "id": "convertible_bond_arbitrage",
+    "name": "Convertible Bond Arbitrage",
+    "format": "Reality Narrative",
+    "anchor": "SEC short sale ban on financial stocks (September 2008)",
+    "description": "The SEC's temporary ban on short selling financial stocks broke the convertible bond arbitrage strategy because funds could not short the underlying equity to hedge their long convertible bond positions, leading to a liquidity crisis and massive losses."
+  },
+  {
+    "id": "contango",
+    "name": "Contango",
+    "format": "Reality Narrative",
+    "anchor": "Negative WTI Crude Oil Prices (April 20, 2020)",
+    "description": "Due to the COVID-19 demand shock and filled storage hubs, the WTI crude oil futures contract fell to negative $37.63 per barrel as the market entered an extreme \"super-contango\" state where the cost of physical storage exceeded the value of the oil itself."
+  },
+  {
+    "id": "sovereign_ceiling",
+    "name": "Sovereign Ceiling",
+    "format": "Reality Narrative",
+    "anchor": "Petrobras rating downgrade to junk (February 2015)",
+    "description": "Moody's cut the state-controlled oil giant Petrobras's credit rating to junk because of its close ties to the Brazilian government and the country's sovereign fiscal struggles, demonstrating the \"sovereign ceiling\" effect where corporate credit ratings are capped or dragged down by the host country's sovereign risk profile."
+  },
+  {
+    "id": "pension_liability_adjustment",
+    "name": "Pension Liability Adjustment",
+    "format": "Reality Narrative",
+    "anchor": "General Electric pension deficit restructuring (October 2019)",
+    "description": "As part of its deleveraging efforts, General Electric froze its pension plan for 20,000 workers and offered lump-sum buyouts to cut its massive $22 billion underfunded pension liability by $5 billion to $8 billion, showing how pension liabilities require major balance sheet adjustments."
+  },
+  {
+    "id": "operating_lease_capitalization",
+    "name": "Operating Lease Capitalization",
+    "format": "Reality Narrative",
+    "anchor": "Implementation of IFRS 16 and ASC 842 (January 2019)",
+    "description": "The sweeping regulatory shift in lease accounting rules forced companies to bring off-balance-sheet operating leases onto their balance sheets as liabilities, adding billions in reported debt for retailers and airlines overnight."
+  },
+  {
+    "id": "negative_enterprise_value",
+    "name": "Negative Enterprise Value",
+    "format": "Reality Narrative",
+    "anchor": "Warren Buffett's investment in Sanborn Map Company (1958)",
+    "description": "Warren Buffett accumulated shares in Sanborn Map Company when its investment portfolio alone was worth $65 per share while the stock traded at only $45, showcasing a classic real-world negative enterprise value (or \"net-net\") scenario where the market valued the underlying map business at a negative amount."
+  },
+  {
+    "id": "goodwill_impairment",
+    "name": "Goodwill Impairment",
+    "format": "Reality Narrative",
+    "anchor": "AOL Time Warner goodwill write-down (2002)",
+    "description": "Following the disastrous merger of AOL and Time Warner, the combined entity recorded a historic $99 billion goodwill impairment charge in 2002 to account for the collapse in AOL's business value."
+  },
+  {
+    "id": "cash_conversion_cycle",
+    "name": "Cash Conversion Cycle",
+    "format": "Reality Structure",
+    "anchor": "Amazon's negative cash conversion cycle model",
+    "description": "Amazon operates with a negative cash conversion cycle by selling inventory to customers and collecting cash long before it pays its suppliers, generating billions of dollars in free operating cash flow that acts as interest-free working capital to fund expansion."
+  },
+  {
+    "id": "quick_ratio",
+    "name": "Quick Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank collapse (March 2023)",
+    "description": "SVB collapsed in 48 hours despite holding $211B in assets, because those assets were long-term Held-to-Maturity bonds that could not be liquidated instantly to meet $42B in daily deposit withdrawals, demonstrating the limits of standard liquidity metrics like the Quick Ratio."
+  },
+  {
+    "id": "net_interest_margin",
+    "name": "Net Interest Margin",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank's NIM compression (2022-2023)",
+    "description": "As the Federal Reserve aggressively raised interest rates, SVB was forced to pay higher yields to retain deposits while its interest income remained locked in low-yield, long-term bonds, severely compressing its Net Interest Margin and triggering a liquidity crisis."
+  },
+  {
+    "id": "texas_ratio",
+    "name": "Texas Ratio",
+    "format": "Reality Narrative",
+    "anchor": "IndyMac Bank failure (July 2008)",
+    "description": "In May 2008, analyst Gerard Cassidy flagged that IndyMac’s Texas Ratio had surged to 140% (meaning its non-performing assets far exceeded its tangible capital reserves). Just two months later, the bank collapsed into FDIC receivership, validating the metric's predictive power."
+  },
+  {
+    "id": "liquidity_coverage_ratio",
+    "name": "Liquidity Coverage Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Credit Suisse's digital bank run (March 2023)",
+    "description": "Despite maintaining a Liquidity Coverage Ratio (LCR) of 144% (well above the regulatory 100% minimum), Credit Suisse collapsed when depositors withdrew over $86 billion in a matter of days, proving that standard LCR outflow assumptions were severely outdated for digital-era bank runs."
+  },
+  {
+    "id": "risk_weighted_assets",
+    "name": "Risk-Weighted Assets",
+    "format": "Reality Structure",
+    "anchor": "UBS's subprime mortgage write-downs (2007-2008)",
+    "description": "Under Basel II rules, UBS accumulated over $70 billion in subprime mortgage-backed securities because their AAA ratings meant they carried extremely low \"risk weights,\" requiring virtually no capital backing. When the housing market collapsed, these assets defaulted, forcing a $60 billion Swiss government bailout."
+  },
+  {
+    "id": "casa_ratio",
+    "name": "CASA Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Yes Bank rescue (March 2020)",
+    "description": "Prior to its regulatory rescue in 2020, Yes Bank experienced a severe drop in its CASA ratio as corporate and retail depositors withdrew low-cost savings and current accounts, forcing the bank to rely on expensive certificate deposits and wholesale funding, which crushed its profitability."
+  },
+  {
+    "id": "revenue_synergies_vs_cost_synergies",
+    "name": "Revenue Synergies vs Cost Synergies",
+    "format": "Reality Narrative",
+    "anchor": "Daimler-Benz and Chrysler merger (1998)",
+    "description": "The $36 billion \"merger of equals\" between German automaker Daimler-Benz and American rival Chrysler failed to deliver the projected procurement and platform synergies due to deep cultural clashes and integration failures, leading to a break-up in 2007."
+  },
+  {
+    "id": "earn_out",
+    "name": "Earn-Out",
+    "format": "Reality Narrative",
+    "anchor": "Johnson & Johnson's acquisition of Auris Health (2019)",
+    "description": "Johnson & Johnson acquired robotic surgery startup Auris Health in 2019, structuring $2.35 billion of the purchase price as earn-outs tied to FDA regulatory and sales milestones. This triggered a massive lawsuit and a landmark Delaware Supreme Court ruling in 2026 after J&J allegedly diverted resources to a competing internal product, preventing the milestones from being met."
+  },
+  {
+    "id": "lbo_irr_drivers",
+    "name": "LBO IRR Drivers",
+    "format": "Reality Narrative",
+    "anchor": "Blackstone's leveraged buyout of Hilton Worldwide (2007)",
+    "description": "Blackstone acquired Hilton in a $26 billion LBO just before the 2008 financial crisis, using $20.5 billion in debt. Despite the market crash, Blackstone achieved a $14 billion profit (the most successful LBO ever) by expanding Hilton's international footprint, shifting to a capital-light franchise model, and paying down debt."
+  },
+  {
+    "id": "break_up_fee",
+    "name": "Break-Up Fee",
+    "format": "Reality Narrative",
+    "anchor": "AT&T’s failed acquisition of T-Mobile (2011)",
+    "description": "When antitrust regulators blocked AT&T’s $39 billion acquisition of T-Mobile in 2011, AT&T was forced to pay T-Mobile a record-breaking $4 billion break-up fee (consisting of $3 billion in cash and $1 billion in spectrum assets), which T-Mobile used to fund its massive 5G network rollout."
+  },
+  {
+    "id": "syndicated_loan",
+    "name": "Syndicated Loan",
+    "format": "Reality Narrative",
+    "anchor": "Elon Musk's Twitter (X) acquisition debt syndication (October 2022)",
+    "description": "A syndicate of Wall Street banks led by Morgan Stanley agreed to fund Elon Musk's $44 billion acquisition of Twitter with $13 billion in debt, but the market turned, and the banks were unable to syndicate (sell) the loans to institutional investors, resulting in a historic \"hung debt\" package that remained stuck on their balance sheets."
+  },
+  {
+    "id": "high_yield_bond",
+    "name": "High-Yield Bond",
+    "format": "Reality Narrative",
+    "anchor": "Drexel Burnham Lambert’s junk bond boom (1980s)",
+    "description": "In the 1980s, Michael Milken of investment bank Drexel Burnham Lambert pioneered the use of high-yield (junk) bonds to finance hostile corporate takeovers, fundamentally transforming Wall Street's corporate raid and corporate finance landscapes."
+  },
+  {
+    "id": "payment_in_kind_toggle_note",
+    "name": "Payment-In-Kind Toggle Note",
+    "format": "Reality Narrative",
+    "anchor": "Neiman Marcus LBO (2013)",
+    "description": "To fund its $6 billion leveraged buyout in 2013, Neiman Marcus’s sponsors issued Payment-in-Kind (PIK) toggle notes. This allowed the luxury retailer to defer interest payments by issuing more debt when cash flow was tight, but the compounding interest ballooned its total debt and accelerated its path toward its 2020 bankruptcy."
+  },
+  {
+    "id": "fallen_angel",
+    "name": "Fallen Angel",
+    "format": "Reality Narrative",
+    "anchor": "Ford and GM downgrades to junk (May 2005)",
+    "description": "Standard & Poor’s downgraded the credit ratings of automotive giants General Motors and Ford to high-yield (junk) status, triggering the largest \"fallen angel\" event in corporate history, which forced index-tracking pension funds to dump billions in debt and disrupted credit derivatives markets."
+  },
+  {
+    "id": "dupont_analysis",
+    "name": "DuPont Analysis",
+    "format": "Reality Narrative",
+    "anchor": "DuPont's internal financial control system (1914)",
+    "description": "DuPont employee F. Donaldson Brown created the formula to manage the chemical giant's internal efficiency and analyze its massive stake in General Motors, proving that a company's Return on Equity is driven by a combination of operating efficiency, asset efficiency, and financial leverage."
+  },
+  {
+    "id": "altman_z_score",
+    "name": "Altman Z-Score",
+    "format": "Reality Narrative",
+    "anchor": "GM's financial health deterioration (2008-2009)",
+    "description": "As General Motors neared its eventual 2009 Chapter 11 bankruptcy filing, analysts tracked its Altman Z-Score as it plummeted deep into the \"distress zone\" (under 1.8), providing a clear warning sign of insolvency."
+  },
+  {
+    "id": "beneish_m_score",
+    "name": "Beneish M-Score",
+    "format": "Reality Narrative",
+    "anchor": "Cornell students' Enron analysis using Beneish M-Score (1998)",
+    "description": "A team of Cornell University MBA students applied the Beneish M-Score to Enron’s financial statements in 1998, detecting significant accounting manipulation and predicting Enron's downfall years before its official collapse in 2001."
+  },
+  {
+    "id": "value_at_risk",
+    "name": "Value at Risk",
+    "format": "Reality Narrative",
+    "anchor": "JPMorgan's London Whale trading loss (2012)",
+    "description": "JPMorgan Chase's Chief Investment Office suffered a $6.2 billion loss after traders accumulated massive credit default swap positions while relying on a flawed, newly implemented Value at Risk (VaR) model that artificially halved the reported risk of the portfolio."
+  },
+  {
+    "id": "expected_shortfall",
+    "name": "Expected Shortfall",
+    "format": "Reality Structure",
+    "anchor": "Basel Committee's Fundamental Review of the Trading Book (FRTB) (2016)",
+    "description": "In response to the 2008 financial crisis, the Basel Committee phased out Value at Risk (VaR) in favor of Expected Shortfall (ES) for banking book risk calculations because VaR failed to capture the extreme \"tail risk\" losses of mortgage-backed securities beyond the 99% confidence interval."
+  },
+  {
+    "id": "margin_call",
+    "name": "Margin Call",
+    "format": "Reality Narrative",
+    "anchor": "Archegos Capital Management liquidation (March 2021)",
+    "description": "Family office Archegos Capital Management defaulted on margin calls from prime brokers including Credit Suisse and Nomura after its highly leveraged swap bets on stocks like ViacomCBS reversed, triggering a forced $20 billion fire sale of assets and over $10 billion in banking losses."
+  },
+  {
+    "id": "greenshoe_option",
+    "name": "Greenshoe Option",
+    "format": "Reality Narrative",
+    "anchor": "Facebook (Meta) IPO underwriting (May 2012)",
+    "description": "Lead underwriter Morgan Stanley had to aggressively execute its Greenshoe overallotment option during Facebook's troubled trading debut to purchase shares in the open market and support the stock price as it hovered near its initial public offering price of $38."
+  },
+  {
+    "id": "lock_up_period",
+    "name": "Lock-Up Period",
+    "format": "Reality Narrative",
+    "anchor": "Beyond Meat lock-up expiration (October 2019)",
+    "description": "On the day its post-IPO lock-up period expired, Beyond Meat’s stock plummeted over 20% in a single day as early investors and insiders rushed to sell their shares, demonstrating the heavy downward pressure that a sudden influx of tradable stock supply can exert."
+  },
+  {
+    "id": "ipo_underpricing",
+    "name": "IPO Underpricing",
+    "format": "Reality Narrative",
+    "anchor": "Snowflake IPO pricing and trading debut (September 2020)",
+    "description": "Snowflake priced its IPO at $120 per share, but when trading opened, the stock immediately shot up to $245 (a 104% first-day \"pop\"), leaving billions of dollars on the table due to intentional underpricing by underwriters seeking to generate buzz and guarantee a successful debut."
+  },
+  {
+    "id": "camels_rating_system",
+    "name": "CAMELS Rating System",
+    "format": "Reality Narrative",
+    "anchor": "Washington Mutual's CAMELS rating downgrade (February 2008)",
+    "description": "Before the largest bank failure in U.S. history, the Office of Thrift Supervision downgraded Washington Mutual's confidential CAMELS rating from 2 to 3, signaling serious management and asset quality weaknesses that eventually led to a massive deposit run and the bank's seizure in September 2008."
+  },
+  {
+    "id": "basel_iii",
+    "name": "Basel III",
+    "format": "Reality Narrative",
+    "anchor": "Collapse of Credit Suisse (March 2023)",
+    "description": "Despite meeting Basel III regulatory standards with a CET1 ratio of 14.1% and a Liquidity Coverage Ratio well above 100%, Credit Suisse collapsed due to a rapid loss of market trust and digital-speed deposit withdrawals, highlighting the limitations of Basel III capital and liquidity rules."
+  },
+  {
+    "id": "secured_overnight_financing_rate",
+    "name": "Secured Overnight Financing Rate",
+    "format": "Reality Narrative",
+    "anchor": "LIBOR rigging scandal (2012)",
+    "description": "Following revelations in 2012 that major global banks were manipulating the London Interbank Offered Rate (LIBOR) to boost trading profits, global regulators mandated the transition to more transparent, transaction-backed benchmark rates, leading to the creation and adoption of the Secured Overnight Financing Rate (SOFR)."
+  },
+  {
+    "id": "merton_structural_model",
+    "name": "Merton's Structural Model",
+    "format": "Reality Narrative",
+    "anchor": "Moody's KMV Enron credit default prediction (2001)",
+    "description": "Moody’s KMV model, built on Robert Merton’s structural credit risk model, successfully predicted Enron's impending default months before traditional rating agencies by detecting that Enron’s stock price collapse and high asset volatility had pushed its \"Distance to Default\" to near zero."
+  },
+  {
+    "id": "credit_default_swap",
+    "name": "Credit Default Swap",
+    "format": "Reality Narrative",
+    "anchor": "AIG's credit default swap crisis (September 2008)",
+    "description": "AIG Financial Products wrote tens of billions in credit default swaps on subprime mortgage-linked CDOs without collateral requirements. When the underlying securities were downgraded, AIG was hit with margin calls it could not meet, necessitating a massive $182 billion U.S. government bailout."
+  },
+  {
+    "id": "carry_trade",
+    "name": "Carry Trade",
+    "format": "Reality Narrative",
+    "anchor": "Yen Carry Trade Unwind (August 2024)",
+    "description": "Global markets experienced a sharp sell-off when the Bank of Japan raised interest rates and the U.S. dollar weakened, forcing investors to rapidly unwind their yen carry trades by selling global equities and assets to pay back low-interest Yen loans."
+  },
+  {
+    "id": "impossible_trinity",
+    "name": "Impossible Trinity",
+    "format": "Reality Narrative",
+    "anchor": "Black Wednesday (September 16, 1992)",
+    "description": "George Soros famously \"broke the Bank of England\" by shorting the British pound, forcing the UK government to exit the European Exchange Rate Mechanism (ERM) and devalue the currency, illustrating the Impossible Trinity's rule that a nation cannot simultaneously have free capital flow, a fixed exchange rate, and independent monetary policy."
+  },
+  {
+    "id": "sum_of_the_parts_valuation",
+    "name": "Sum-of-the-Parts Valuation",
+    "format": "Reality Narrative",
+    "anchor": "Yahoo's sum-of-the-parts valuation anomaly (2013-2015)",
+    "description": "In the mid-2010s, Yahoo’s equity stakes in Alibaba and Yahoo Japan were valued by the stock market at more than Yahoo’s entire market capitalization, prompting activist investor Starboard Value to use a Sum-of-the-Parts valuation to force a spin-off and the eventual $4.8 billion sale of Yahoo's core operating business to Verizon."
+  },
+  {
+    "id": "safe_withdrawal_rate",
+    "name": "Safe Withdrawal Rate",
+    "format": "Reality Narrative",
+    "anchor": "The Trinity Study (1998)",
+    "description": "Three finance professors at Trinity University published a landmark study analyzing retirement portfolio success rates over historical periods, establishing the \"4% Rule\" (Safe Withdrawal Rate) as the maximum percentage a retiree can withdraw annually without running out of money."
+  },
+  {
+    "id": "defined_benefit_plan",
+    "name": "Defined Benefit Plan",
+    "format": "Reality Narrative",
+    "anchor": "United Airlines pension default (2005)",
+    "description": "During its bankruptcy restructuring in 2005, United Airlines defaulted on its defined benefit pension plans, dumping $9.8 billion in underfunded retirement liabilities onto the federal Pension Benefit Guaranty Corporation (PBGC), marking the largest pension default in U.S. history and accelerating the corporate shift toward defined contribution plans."
+  },
+  {
+    "id": "defined_contribution_plan",
+    "name": "Defined Contribution Plan",
+    "format": "Reality Narrative",
+    "anchor": "Enron 401(k) retirement plan collapse (2001)",
+    "description": "When Enron collapsed in 2001, thousands of employees lost their life savings because their defined contribution 401(k) plans were heavily concentrated in Enron stock (which fell from $90 to under $1) and locked by administrators during the critical sell-off period."
+  },
+  {
+    "id": "backwardation",
+    "name": "Backwardation",
+    "format": "Reality Narrative",
+    "anchor": "Sumitomo copper affair (1996)",
+    "description": "Chief trader Yasuo Hamanaka cornered the global copper market by hoarding physical supply, forcing the London Metal Exchange copper futures curve into a state of extreme backwardation where spot prices soared far above futures prices as desperate short-sellers scrambled for immediate delivery."
+  },
+  {
+    "id": "weather_derivative",
+    "name": "Weather Derivative",
+    "format": "Reality Narrative",
+    "anchor": "Enron’s pioneering weather derivative transaction (August 1997)",
+    "description": "Enron Capital and Trade Resources structured the first-ever weather derivative contract, linked to Milwaukee winter temperatures, to help an electric utility hedge its volumetric demand risk against unusually warm winter weather, establishing weather as a new asset class."
+  },
+  {
+    "id": "risk_parity",
+    "name": "Risk Parity",
+    "format": "Reality Narrative",
+    "anchor": "Bridgewater Associates' All Weather Fund launch (1996)",
+    "description": "Ray Dalio and his team at Bridgewater Associates launched the All Weather Fund in 1996, pioneering the \"risk parity\" investment strategy by allocating portfolio capital based on the risk volatility contribution of each asset class rather than traditional dollar weighting."
+  },
+  {
+    "id": "endowment_model",
+    "name": "Endowment Model",
+    "format": "Reality Narrative",
+    "anchor": "David Swensen's restructuring of the Yale Endowment (1985)",
+    "description": "Legendary CIO David Swensen restructured the Yale University Endowment in 1985, shifting from domestic stocks and bonds to illiquid alternative assets like private equity, venture capital, and real forestry, creating the \"Endowment Model\" that outperformed traditional portfolios for decades."
+  },
+  {
+    "id": "sharpe_ratio",
+    "name": "Sharpe Ratio",
+    "format": "Reality Narrative",
+    "anchor": "LTCM collapse (1998)",
+    "description": "Prior to its dramatic collapse in 1998, the hedge fund Long-Term Capital Management (LTCM) boasted an exceptionally high historical Sharpe Ratio of 4.35, illustrating how the ratio can mask systemic tail risks and extreme leverage when assets are highly correlated under stress."
+  },
+  {
+    "id": "interest_coverage_ratio",
+    "name": "Interest Coverage Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Toys \"R\" Us leveraged buyout (2005)",
+    "description": "Following its $6.6 billion buyout in 2005 by KKR, Bain Capital, and Vornado, Toys \"R\" Us was loaded with $5 billion in debt, leaving it with annual interest payments of $400 million and a dangerously low interest coverage ratio that prevented it from investing in e-commerce, ultimately forcing its 2017 bankruptcy."
+  },
+  {
+    "id": "conglomerate_discount",
+    "name": "Conglomerate Discount",
+    "format": "Reality Narrative",
+    "anchor": "General Electric's three-way split announcement (November 2021)",
+    "description": "In November 2021, industrial conglomerate General Electric announced a plan to split into three independent, public companies (GE Aerospace, GE Vernova, and GE HealthCare) to eliminate its persistent conglomerate discount and unlock shareholder value."
+  },
+  {
+    "id": "variant_perception",
+    "name": "Variant Perception",
+    "format": "Reality Narrative",
+    "anchor": "Michael Burry's subprime mortgage short (2005-2007)",
+    "description": "Hedge fund manager Michael Burry developed a variant perception that the U.S. subprime housing market was a massive bubble set to collapse, leading him to buy credit default swaps against subprime mortgage bonds and generate billions in profits when the consensus proved wrong."
+  },
+  {
+    "id": "covered_interest_rate_parity",
+    "name": "Covered Interest Rate Parity",
+    "format": "Reality Narrative",
+    "anchor": "USD funding shortage and CIP breakdown (2007-2008)",
+    "description": "During the 2008 financial crisis, Covered Interest Rate Parity broke down as European banks faced a severe shortage of U.S. dollars and could not borrow USD in the interbank market, forcing the Federal Reserve to establish trillions of dollars in temporary liquidity swap lines with foreign central banks."
+  },
+  {
+    "id": "letter_of_credit",
+    "name": "Letter of Credit",
+    "format": "Reality Narrative",
+    "anchor": "Punjab National Bank fraud scandal (2018)",
+    "description": "Diamond merchant Nirav Modi and colluding bank officials used PNB’s Brady House branch in Mumbai to fraudulently issue SWIFT-based Letters of Undertaking (a type of international bank guarantee/letter of credit) to raise $2 billion in uncollateralized credit from overseas branches of other banks, bypassing PNB's core systems."
+  },
+  {
+    "id": "offtake_agreement",
+    "name": "Offtake Agreement",
+    "format": "Reality Narrative",
+    "anchor": "Sabine Pass LNG project financing (2012-2016)",
+    "description": "Cheniere Energy secured over $20 billion in debt and equity to construct the Sabine Pass Liquefaction facility by locking in 20-year, \"take-or-pay\" offtake agreements with global utilities, which guaranteed steady cash flow and satisfied project financiers."
+  },
+  {
+    "id": "contango",
+    "name": "Contango",
+    "format": "Reality Narrative",
+    "anchor": "Negative WTI Crude Oil Prices (April 20, 2020)",
+    "description": "Due to the COVID-19 demand shock and filled storage hubs, the WTI crude oil futures contract fell to negative $37.63 per barrel as the market entered an extreme \"super-contango\" state where the cost of physical storage exceeded the value of the oil itself."
+  },
+  {
+    "id": "quick_ratio",
+    "name": "Quick Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Silicon Valley Bank collapse (March 2023)",
+    "description": "SVB collapsed in 48 hours despite holding $211B in assets, because those assets were long-term Held-to-Maturity bonds that could not be liquidated instantly to meet $42B in daily deposit withdrawals, demonstrating the limits of standard liquidity metrics like the Quick Ratio."
+  },
+  {
+    "id": "casa_ratio",
+    "name": "CASA Ratio",
+    "format": "Reality Narrative",
+    "anchor": "Yes Bank rescue (March 2020)",
+    "description": "Prior to its regulatory rescue in 2020, Yes Bank experienced a severe drop in its CASA ratio as corporate and retail depositors withdrew low-cost savings and current accounts, forcing the bank to rely on expensive certificate deposits and wholesale funding, which crushed its profitability."
+  },
+  {
+    "id": "dupont_analysis",
+    "name": "DuPont Analysis",
+    "format": "Reality Narrative",
+    "anchor": "DuPont's internal financial control system (1914)",
+    "description": "DuPont employee F. Donaldson Brown created the formula to manage the chemical giant's internal efficiency and analyze its massive stake in General Motors, proving that a company's Return on Equity is driven by a combination of operating efficiency, asset efficiency, and financial leverage."
+  },
+  {
+    "id": "altman_z_score",
+    "name": "Altman Z-Score",
+    "format": "Reality Narrative",
+    "anchor": "GM's financial health deterioration (2008-2009)",
+    "description": "As General Motors neared its eventual 2009 Chapter 11 bankruptcy filing, analysts tracked its Altman Z-Score as it plummeted deep into the \"distress zone\" (under 1.8), providing a clear warning sign of insolvency."
+  },
+  {
+    "id": "beneish_m_score",
+    "name": "Beneish M-Score",
+    "format": "Reality Narrative",
+    "anchor": "Cornell students' Enron analysis using Beneish M-Score (1998)",
+    "description": "A team of Cornell University MBA students applied the Beneish M-Score to Enron’s financial statements in 1998, detecting significant accounting manipulation and predicting Enron's downfall years before its official collapse in 2001."
+  },
+  {
+    "id": "green_shoe_option",
+    "name": "Green Shoe Option",
+    "format": "Reality Narrative",
+    "anchor": "Facebook (Meta) IPO underwriting (May 2012)",
+    "description": "Lead underwriter Morgan Stanley had to aggressively execute its Greenshoe overallotment option during Facebook's troubled trading debut to purchase shares in the open market and support the stock price as it hovered near its initial public offering price of $38."
+  },
+  {
+    "id": "camel_rating",
+    "name": "CAMEL Rating",
+    "format": "Reality Narrative",
+    "anchor": "Washington Mutual's CAMELS rating downgrade (February 2008)",
+    "description": "Before the largest bank failure in U.S. history, the Office of Thrift Supervision downgraded Washington Mutual's confidential CAMELS rating from 2 to 3, signaling serious management and asset quality weaknesses that eventually led to a massive deposit run and the bank's seizure in September 2008."
+  }
+]
