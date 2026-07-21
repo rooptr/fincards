@@ -1,0 +1,3022 @@
+{
+  "schemaVersion": "deep-dive-generated-batch.v1",
+  "generatedAt": "2026-07-18T09:48:57.667Z",
+  "batchId": "lessons-standard-02",
+  "status": "generated_for_review",
+  "lessonCount": 8,
+  "lessons": [
+    {
+      "id": "generated_batch_002__common_equity_tier_1_ratio",
+      "topicId": "common_equity_tier_1_ratio",
+      "canonicalName": "Common Equity Tier 1 Ratio",
+      "kind": "standard",
+      "format": "Reference",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Common Equity Tier 1 Ratio reveals the assumption beneath the number.",
+      "dek": "Common Equity Tier 1 Ratio is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_basel_iii_2025": {
+          "id": "rbi_basel_iii_2025",
+          "tier": 1,
+          "title": "RBI Master Circular ,  Basel III Capital Regulations, 2025",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasterCirculars.aspx?Id=12815"
+        },
+        "bis_basel_iii_framework": {
+          "id": "bis_basel_iii_framework",
+          "tier": 1,
+          "title": "Basel III: international regulatory framework for banks",
+          "url": "https://www.bis.org/bcbs/basel3.htm"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_basel_iii_2025",
+          "tier": 1,
+          "title": "RBI Master Circular ,  Basel III Capital Regulations, 2025",
+          "url": "https://www.rbi.org.in/Scripts/BS_ViewMasterCirculars.aspx?Id=12815"
+        },
+        {
+          "id": "bis_basel_iii_framework",
+          "tier": 1,
+          "title": "Basel III: international regulatory framework for banks",
+          "url": "https://www.bis.org/bcbs/basel3.htm"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Common Equity Tier 1 Ratio",
+          "group": "Core definition",
+          "formalDefinition": "Common Equity Tier 1 Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Common Equity Tier 1 Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "CET1 is a regulatory capital construct; the Basel framework and RBI’s master circular govern its definition and calculation.",
+        "decisionEnabled": "Common Equity Tier 1 Ratio exists because the decision maker needs to distinguish How much of a bank’s capital is composed of the highest-quality loss-absorbing equity? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How much of a bank’s capital is composed of the highest-quality loss-absorbing equity? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "common_equity_tier_1_ratio-question": {
+          "text": "How much of a bank’s capital is composed of the highest-quality loss-absorbing equity?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Common Equity Tier 1 Ratio",
+          "lhsLatex": "\\text{Common Equity Tier 1 Ratio}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Common Equity Tier 1 Ratio}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_basel_iii_2025",
+          "glossary": {
+            "definition": {
+              "term": "Common Equity Tier 1 Ratio",
+              "definition": "Common Equity Tier 1 Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Common Equity Tier 1 Ratio is anchored to RBI Master Circular: Basel III Capital Regulations, 2025. The source record supplies the real regulatory, market, or company context in which the concept is used. CET1 numerator: Common Equity Tier 1 capital after the prudential adjustments specified in the Basel III framework. Risk denominator: Risk weighted assets constructed under the applicable prudential treatment. Interpretation: The ratio focuses on the highest quality loss absorbing capital rather than total accounting equity.",
+            "The governing question is How much of a bank’s capital is composed of the highest-quality loss-absorbing equity?"
+          ],
+          "sourceIds": [
+            "rbi_basel_iii_2025",
+            "bis_basel_iii_framework"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How much of a bank’s capital is composed of the highest-quality loss-absorbing equity?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Common Equity Tier 1 Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "CET1 is a regulatory capital construct; the Basel framework and RBI’s master circular govern its definition and calculation.",
+            "Common Equity Tier 1 Ratio isolates the relationship that the governing question makes decision-relevant: Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Common Equity Tier 1 Ratio exists because the decision maker needs to distinguish How much of a bank’s capital is composed of the highest-quality loss-absorbing equity? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Common Equity Tier 1 capital after the prudential adjustments specified in the Basel III framework.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets.",
+            "The source evidence identifies the fields that populate the build. CET1 numerator supplies Common Equity Tier 1 capital after the prudential adjustments specified in the Basel III framework. Risk denominator supplies Risk weighted assets constructed under the applicable prudential treatment. Interpretation supplies The ratio focuses on the highest quality loss absorbing capital rather than total accounting equity.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Common Equity Tier 1 Ratio exists because ordinary financial information hides a distinction that matters: Common Equity Tier 1 Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How much of a bank’s capital is composed of the highest-quality loss-absorbing equity?” CET1 is a regulatory capital construct; the Basel framework and RBI’s master circular govern its definition and calculation. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Common Equity Tier 1 Ratio helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Common Equity Tier 1 Ratio by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "RBI Master Circular: Basel III Capital Regulations, 2025 supplies the factual boundary for Common Equity Tier 1 Ratio. The transferable lesson is the mechanism: Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_basel_iii_2025",
+            "bis_basel_iii_framework"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "RBI Master Circular: Basel III Capital Regulations, 2025",
+            "sourceUrl": "https://www.rbi.org.in/Scripts/BS_ViewMasterCirculars.aspx?Id=12815",
+            "rows": [
+              {
+                "item": "CET1 numerator",
+                "value": "Common Equity Tier 1 capital after the prudential adjustments specified in the Basel III framework.",
+                "source": "rbi_basel_iii_2025"
+              },
+              {
+                "item": "Risk denominator",
+                "value": "Risk weighted assets constructed under the applicable prudential treatment.",
+                "source": "rbi_basel_iii_2025"
+              },
+              {
+                "item": "Interpretation",
+                "value": "The ratio focuses on the highest quality loss absorbing capital rather than total accounting equity.",
+                "source": "bis_basel_iii_framework"
+              }
+            ],
+            "image": "/evidence/batch-002-bank-capital-excerpt.svg",
+            "imageSource": "https://www.rbi.org.in/Scripts/BS_ViewMasterCirculars.aspx?Id=12815"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Common Equity Tier 1 Ratio: decision architecture",
+            "source": "rbi_basel_iii_2025",
+            "inputs": [
+              "Common Equity Tier 1 Ratio",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Divide Common Equity Tier 1 capital, net of regulatory deductions, by risk-weighted assets.",
+            "decision": "Common Equity Tier 1 Ratio exists because the decision maker needs to distinguish How much of a bank’s capital is composed of the highest-quality loss-absorbing equity? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Common Equity Tier 1 Ratio exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Common Equity Tier 1 Ratio isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Common Equity Tier 1 Ratio inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__leverage_ratio",
+      "topicId": "leverage_ratio",
+      "canonicalName": "Leverage Ratio (Basel III)",
+      "kind": "standard",
+      "format": "Reference",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Leverage Ratio (Basel III) reveals the assumption beneath the number.",
+      "dek": "Leverage Ratio (Basel III) is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_financial_markets": {
+          "id": "rbi_financial_markets",
+          "tier": 1,
+          "title": "RBI: Financial markets and regulatory publications",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22042"
+        },
+        "bis_basel_framework": {
+          "id": "bis_basel_framework",
+          "tier": 1,
+          "title": "Basel Committee: Basel Framework",
+          "url": "https://www.bis.org/basel_framework/"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_financial_markets",
+          "tier": 1,
+          "title": "RBI: Financial markets and regulatory publications",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22042"
+        },
+        {
+          "id": "bis_basel_framework",
+          "tier": 1,
+          "title": "Basel Committee: Basel Framework",
+          "url": "https://www.bis.org/basel_framework/"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Leverage Ratio (Basel III)",
+          "group": "Core definition",
+          "formalDefinition": "Leverage Ratio (Basel III) is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Leverage Ratio (Basel III) is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "The topic is explicitly routed to its real applicable domain: bank or deposit-funded financial institution; it is not being applied to an entity type for which the metric or framework is professionally meaningless.",
+        "decisionEnabled": "Leverage Ratio (Basel III) exists because the decision maker needs to distinguish What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "leverage_ratio-question": {
+          "text": "What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Leverage Ratio (Basel III)",
+          "lhsLatex": "\\text{Leverage Ratio Basel III}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Leverage Ratio Basel III}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_financial_markets",
+          "glossary": {
+            "definition": {
+              "term": "Leverage Ratio (Basel III)",
+              "definition": "Leverage Ratio (Basel III) is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Leverage Ratio (Basel III) is anchored to Basel Framework. The source record supplies the real regulatory, market, or company context in which the concept is used. Capital measure: The leverage ratio uses qualifying capital in the numerator under the prudential framework. Exposure measure: The denominator is a broad exposure measure that is not reduced to risk weighted assets alone. Backstop purpose: The measure constrains balance sheet expansion when risk weights fail to capture the full exposure risk.",
+            "The governing question is What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail?"
+          ],
+          "sourceIds": [
+            "rbi_financial_markets",
+            "bis_basel_framework"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Leverage Ratio (Basel III) is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The topic is explicitly routed to its real applicable domain: bank or deposit-funded financial institution; it is not being applied to an entity type for which the metric or framework is professionally meaningless.",
+            "Leverage Ratio (Basel III) isolates the relationship that the governing question makes decision-relevant: Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Leverage Ratio (Basel III) exists because the decision maker needs to distinguish What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. The leverage ratio uses qualifying capital in the numerator under the prudential framework.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "The source evidence identifies the fields that populate the build. Capital measure supplies The leverage ratio uses qualifying capital in the numerator under the prudential framework. Exposure measure supplies The denominator is a broad exposure measure that is not reduced to risk weighted assets alone. Backstop purpose supplies The measure constrains balance sheet expansion when risk weights fail to capture the full exposure risk.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Leverage Ratio (Basel III) exists because ordinary financial information hides a distinction that matters: Leverage Ratio (Basel III) is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail?” The topic is explicitly routed to its real applicable domain: bank or deposit-funded financial institution; it is not being applied to an entity type for which the metric or framework is professionally meaningless. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Leverage Ratio (Basel III) helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Leverage Ratio (Basel III) by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Basel Framework supplies the factual boundary for Leverage Ratio (Basel III). The transferable lesson is the mechanism: Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_financial_markets",
+            "bis_basel_framework"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Basel Framework",
+            "sourceUrl": "https://www.bis.org/basel_framework/",
+            "rows": [
+              {
+                "item": "Capital measure",
+                "value": "The leverage ratio uses qualifying capital in the numerator under the prudential framework.",
+                "source": "bis_basel_framework"
+              },
+              {
+                "item": "Exposure measure",
+                "value": "The denominator is a broad exposure measure that is not reduced to risk weighted assets alone.",
+                "source": "bis_basel_framework"
+              },
+              {
+                "item": "Backstop purpose",
+                "value": "The measure constrains balance sheet expansion when risk weights fail to capture the full exposure risk.",
+                "source": "bis_basel_framework"
+              }
+            ],
+            "image": "/evidence/batch-002-bank-capital-excerpt.svg",
+            "imageSource": "https://www.bis.org/basel_framework/"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Leverage Ratio (Basel III): decision architecture",
+            "source": "rbi_financial_markets",
+            "inputs": [
+              "Leverage Ratio (Basel III)",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Define each input in the standard Leverage Ratio (Basel III) formulation from the relevant bank or deposit-funded financial institution source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "decision": "Leverage Ratio (Basel III) exists because the decision maker needs to distinguish What decision does Leverage Ratio (Basel III) make possible in a bank or deposit-funded financial institution, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Leverage Ratio (Basel III) exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Leverage Ratio (Basel III) isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Leverage Ratio (Basel III) inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__liquidity_coverage_ratio",
+      "topicId": "liquidity_coverage_ratio",
+      "canonicalName": "Liquidity Coverage Ratio",
+      "kind": "standard",
+      "format": "Reference",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Liquidity Coverage Ratio reveals the assumption beneath the number.",
+      "dek": "Liquidity Coverage Ratio is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "bis_bcbs238_lcr": {
+          "id": "bis_bcbs238_lcr",
+          "tier": 1,
+          "title": "Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools",
+          "url": "https://www.bis.org/publ/bcbs238.htm"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "bis_bcbs238_lcr",
+          "tier": 1,
+          "title": "Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools",
+          "url": "https://www.bis.org/publ/bcbs238.htm"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Liquidity Coverage Ratio",
+          "group": "Core definition",
+          "formalDefinition": "Liquidity Coverage Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Liquidity Coverage Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "LCR is a bank-specific regulatory liquidity measure; the Basel Committee standard directly governs its purpose, inputs, and stress horizon.",
+        "decisionEnabled": "Liquidity Coverage Ratio exists because the decision maker needs to distinguish How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "liquidity_coverage_ratio-question": {
+          "text": "How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Liquidity Coverage Ratio",
+          "lhsLatex": "\\text{Liquidity Coverage Ratio}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Liquidity Coverage Ratio}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "bis_bcbs238_lcr",
+          "glossary": {
+            "definition": {
+              "term": "Liquidity Coverage Ratio",
+              "definition": "Liquidity Coverage Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Liquidity Coverage Ratio is anchored to Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools. The source record supplies the real regulatory, market, or company context in which the concept is used. Liquid asset stock: High quality liquid assets form the numerator of the short horizon liquidity test. Stress horizon: The framework tests coverage of modeled net cash outflows over the next 30 calendar days. Decision signal: The ratio addresses short horizon funding survival and is not a substitute for capital or structural funding analysis.",
+            "The governing question is How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario?"
+          ],
+          "sourceIds": [
+            "bis_bcbs238_lcr"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Liquidity Coverage Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "LCR is a bank-specific regulatory liquidity measure; the Basel Committee standard directly governs its purpose, inputs, and stress horizon.",
+            "Liquidity Coverage Ratio isolates the relationship that the governing question makes decision-relevant: LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Liquidity Coverage Ratio exists because the decision maker needs to distinguish How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. High quality liquid assets form the numerator of the short horizon liquidity test.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days.",
+            "The source evidence identifies the fields that populate the build. Liquid asset stock supplies High quality liquid assets form the numerator of the short horizon liquidity test. Stress horizon supplies The framework tests coverage of modeled net cash outflows over the next 30 calendar days. Decision signal supplies The ratio addresses short horizon funding survival and is not a substitute for capital or structural funding analysis.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Liquidity Coverage Ratio exists because ordinary financial information hides a distinction that matters: Liquidity Coverage Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario?” LCR is a bank-specific regulatory liquidity measure; the Basel Committee standard directly governs its purpose, inputs, and stress horizon. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Liquidity Coverage Ratio helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Liquidity Coverage Ratio by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools supplies the factual boundary for Liquidity Coverage Ratio. The transferable lesson is the mechanism: LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "bis_bcbs238_lcr"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Basel III: The Liquidity Coverage Ratio and liquidity risk monitoring tools",
+            "sourceUrl": "https://www.bis.org/publ/bcbs238.htm",
+            "rows": [
+              {
+                "item": "Liquid asset stock",
+                "value": "High quality liquid assets form the numerator of the short horizon liquidity test.",
+                "source": "bis_bcbs238_lcr"
+              },
+              {
+                "item": "Stress horizon",
+                "value": "The framework tests coverage of modeled net cash outflows over the next 30 calendar days.",
+                "source": "bis_bcbs238_lcr"
+              },
+              {
+                "item": "Decision signal",
+                "value": "The ratio addresses short horizon funding survival and is not a substitute for capital or structural funding analysis.",
+                "source": "bis_bcbs238_lcr"
+              }
+            ],
+            "image": "/evidence/batch-002-liquidity-excerpt.svg",
+            "imageSource": "https://www.bis.org/publ/bcbs238.htm"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Liquidity Coverage Ratio: decision architecture",
+            "source": "bis_bcbs238_lcr",
+            "inputs": [
+              "Liquidity Coverage Ratio",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "LCR = Stock of High-Quality Liquid Assets / Total Net Cash Outflows over the next 30 calendar days.",
+            "decision": "Liquidity Coverage Ratio exists because the decision maker needs to distinguish How does a bank demonstrate that its stock of high-quality liquid assets can cover modeled net cash outflows during a 30-day stress scenario? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Liquidity Coverage Ratio exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Liquidity Coverage Ratio isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Liquidity Coverage Ratio inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__net_stable_funding_ratio",
+      "topicId": "net_stable_funding_ratio",
+      "canonicalName": "Net Stable Funding Ratio",
+      "kind": "standard",
+      "format": "Reference",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Net Stable Funding Ratio reveals the assumption beneath the number.",
+      "dek": "Net Stable Funding Ratio is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "bis_nsfr_standard": {
+          "id": "bis_nsfr_standard",
+          "tier": 1,
+          "title": "Basel III ,  The Net Stable Funding Ratio",
+          "url": "https://www.bis.org/bcbs/publ/d396.htm"
+        },
+        "rbi_nsfr_final_guidelines": {
+          "id": "rbi_nsfr_final_guidelines",
+          "tier": 1,
+          "title": "RBI Basel III Framework on Liquidity Standards ,  NSFR Final Guidelines",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/Notification/PDFs/NT843C3E37DBE1724CE9AD2CE1FBDA047D30.PDF"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "bis_nsfr_standard",
+          "tier": 1,
+          "title": "Basel III ,  The Net Stable Funding Ratio",
+          "url": "https://www.bis.org/bcbs/publ/d396.htm"
+        },
+        {
+          "id": "rbi_nsfr_final_guidelines",
+          "tier": 1,
+          "title": "RBI Basel III Framework on Liquidity Standards ,  NSFR Final Guidelines",
+          "url": "https://www.rbi.org.in/commonman/Upload/English/Notification/PDFs/NT843C3E37DBE1724CE9AD2CE1FBDA047D30.PDF"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Net Stable Funding Ratio",
+          "group": "Core definition",
+          "formalDefinition": "Net Stable Funding Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Net Stable Funding Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "NSFR is a bank-specific regulatory liquidity measure governed by Basel III and implemented in India by RBI.",
+        "decisionEnabled": "Net Stable Funding Ratio exists because the decision maker needs to distinguish Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "net_stable_funding_ratio-question": {
+          "text": "Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Net Stable Funding Ratio",
+          "lhsLatex": "\\text{Net Stable Funding Ratio}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Net Stable Funding Ratio}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "bis_nsfr_standard",
+          "glossary": {
+            "definition": {
+              "term": "Net Stable Funding Ratio",
+              "definition": "Net Stable Funding Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Net Stable Funding Ratio is anchored to Basel III: The Net Stable Funding Ratio. The source record supplies the real regulatory, market, or company context in which the concept is used. Available stable funding: Funding sources are classified by their stability over the relevant horizon. Required stable funding: Assets and off balance sheet exposures are classified by the stable funding they require. Decision signal: The ratio tests structural funding over a one year horizon and complements, rather than replaces, LCR analysis.",
+            "The governing question is Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon?"
+          ],
+          "sourceIds": [
+            "bis_nsfr_standard",
+            "rbi_nsfr_final_guidelines"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Net Stable Funding Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "NSFR is a bank-specific regulatory liquidity measure governed by Basel III and implemented in India by RBI.",
+            "Net Stable Funding Ratio isolates the relationship that the governing question makes decision-relevant: Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Net Stable Funding Ratio exists because the decision maker needs to distinguish Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Funding sources are classified by their stability over the relevant horizon.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon.",
+            "The source evidence identifies the fields that populate the build. Available stable funding supplies Funding sources are classified by their stability over the relevant horizon. Required stable funding supplies Assets and off balance sheet exposures are classified by the stable funding they require. Decision signal supplies The ratio tests structural funding over a one year horizon and complements, rather than replaces, LCR analysis.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Net Stable Funding Ratio exists because ordinary financial information hides a distinction that matters: Net Stable Funding Ratio is a regulated or formally defined finance measure used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon?” NSFR is a bank-specific regulatory liquidity measure governed by Basel III and implemented in India by RBI. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Net Stable Funding Ratio helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Net Stable Funding Ratio by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Basel III: The Net Stable Funding Ratio supplies the factual boundary for Net Stable Funding Ratio. The transferable lesson is the mechanism: Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "bis_nsfr_standard",
+            "rbi_nsfr_final_guidelines"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Basel III: The Net Stable Funding Ratio",
+            "sourceUrl": "https://www.bis.org/bcbs/publ/d396.htm",
+            "rows": [
+              {
+                "item": "Available stable funding",
+                "value": "Funding sources are classified by their stability over the relevant horizon.",
+                "source": "bis_nsfr_standard"
+              },
+              {
+                "item": "Required stable funding",
+                "value": "Assets and off balance sheet exposures are classified by the stable funding they require.",
+                "source": "bis_nsfr_standard"
+              },
+              {
+                "item": "Decision signal",
+                "value": "The ratio tests structural funding over a one year horizon and complements, rather than replaces, LCR analysis.",
+                "source": "bis_nsfr_standard"
+              }
+            ],
+            "image": "/evidence/batch-002-liquidity-excerpt.svg",
+            "imageSource": "https://www.bis.org/bcbs/publ/d396.htm"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Net Stable Funding Ratio: decision architecture",
+            "source": "bis_nsfr_standard",
+            "inputs": [
+              "Net Stable Funding Ratio",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Divide available stable funding by required stable funding across asset, liability, and off-balance-sheet categories over the one-year horizon.",
+            "decision": "Net Stable Funding Ratio exists because the decision maker needs to distinguish Is a bank funding its assets and off-balance-sheet exposures with sufficiently stable funding over the one-year horizon? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Net Stable Funding Ratio exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Net Stable Funding Ratio isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Net Stable Funding Ratio inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__beta",
+      "topicId": "beta",
+      "canonicalName": "Beta",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Beta reveals the assumption beneath the number.",
+      "dek": "Beta is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "nifty_50_methodology": {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        "nse_reliance_quote": {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Beta",
+          "group": "Core definition",
+          "formalDefinition": "Beta is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Beta is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Beta is a market-risk measure for traded securities and portfolios; Nifty 50 and NSE price data provide a concept-correct Indian market setting.",
+        "decisionEnabled": "Beta exists because the decision maker needs to distinguish How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "beta-question": {
+          "text": "How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Beta",
+          "lhsLatex": "\\text{Beta}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Beta}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "nifty_50_methodology",
+          "glossary": {
+            "definition": {
+              "term": "Beta",
+              "definition": "Beta is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Beta is anchored to Nifty 50 index methodology and factsheet. The source record supplies the real regulatory, market, or company context in which the concept is used. Market proxy: Nifty 50 is the selected benchmark proxy and its methodology defines how the market series is constructed. Return alignment: Security and benchmark observations must use the same dates, return convention, currency, and frequency. Interpretation: Beta measures systematic co-movement relative to the chosen market proxy; it is not a complete measure of total risk.",
+            "The governing question is How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model?"
+          ],
+          "sourceIds": [
+            "nifty_50_methodology",
+            "nse_reliance_quote"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Beta is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Beta is a market-risk measure for traded securities and portfolios; Nifty 50 and NSE price data provide a concept-correct Indian market setting.",
+            "Beta isolates the relationship that the governing question makes decision-relevant: Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Beta exists because the decision maker needs to distinguish How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Nifty 50 is the selected benchmark proxy and its methodology defines how the market series is constructed.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window.",
+            "The source evidence identifies the fields that populate the build. Market proxy supplies Nifty 50 is the selected benchmark proxy and its methodology defines how the market series is constructed. Return alignment supplies Security and benchmark observations must use the same dates, return convention, currency, and frequency. Interpretation supplies Beta measures systematic co-movement relative to the chosen market proxy; it is not a complete measure of total risk.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Beta exists because ordinary financial information hides a distinction that matters: Beta is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model?” Beta is a market-risk measure for traded securities and portfolios; Nifty 50 and NSE price data provide a concept-correct Indian market setting. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Beta helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Beta by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Nifty 50 index methodology and factsheet supplies the factual boundary for Beta. The transferable lesson is the mechanism: Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "nifty_50_methodology",
+            "nse_reliance_quote"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Nifty 50 index methodology and factsheet",
+            "sourceUrl": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50",
+            "rows": [
+              {
+                "item": "Market proxy",
+                "value": "Nifty 50 is the selected benchmark proxy and its methodology defines how the market series is constructed.",
+                "source": "nifty_50_methodology"
+              },
+              {
+                "item": "Return alignment",
+                "value": "Security and benchmark observations must use the same dates, return convention, currency, and frequency.",
+                "source": "nifty_50_methodology"
+              },
+              {
+                "item": "Interpretation",
+                "value": "Beta measures systematic co-movement relative to the chosen market proxy; it is not a complete measure of total risk.",
+                "source": "nse_reliance_quote"
+              }
+            ],
+            "image": "/evidence/batch-002-market-risk-excerpt.svg",
+            "imageSource": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Beta: decision architecture",
+            "source": "nifty_50_methodology",
+            "inputs": [
+              "Beta",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Select a defensible market proxy and return frequency, align the security and market return series, estimate beta from covariance divided by market variance or a regression slope, and test stability across the observation window.",
+            "decision": "Beta exists because the decision maker needs to distinguish How much systematic exposure does a security contribute relative to the market portfolio used by the investor or valuation model? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Beta exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Beta isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Beta inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__beta_unlevering",
+      "topicId": "beta_unlevering",
+      "canonicalName": "Beta Unlevering",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Beta Unlevering reveals the assumption beneath the number.",
+      "dek": "Beta Unlevering is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "hamada_1972": {
+          "id": "hamada_1972",
+          "tier": 2,
+          "title": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+          "url": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+        },
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        "nse_reliance_quote": {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "hamada_1972",
+          "tier": 2,
+          "title": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+          "url": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+        },
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Beta Unlevering",
+          "group": "Core definition",
+          "formalDefinition": "Beta Unlevering is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Beta Unlevering is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Beta unlevering applies to operating companies when an observed equity beta must be normalized for capital structure; an Indian issuer’s filing supplies the debt-and-equity evidence needed for the process.",
+        "decisionEnabled": "Beta Unlevering exists because the decision maker needs to distinguish How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "beta_unlevering-question": {
+          "text": "How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Beta Unlevering",
+          "lhsLatex": "\\text{Beta Unlevering}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Beta Unlevering}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "hamada_1972",
+          "glossary": {
+            "definition": {
+              "term": "Beta Unlevering",
+              "definition": "Beta Unlevering is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Beta Unlevering is anchored to Hamada (1972), The Effect of Capital Structure on Systematic Risk. The source record supplies the real regulatory, market, or company context in which the concept is used. Observed measure: Levered equity beta contains operating risk and the effect of financial leverage. Adjustment inputs: Debt to equity and the applicable tax assumption determine the conventional unlevering adjustment. Use in valuation: The adjusted beta supports comparison across capital structures only when the business mix and debt assumptions remain comparable.",
+            "The governing question is How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions?"
+          ],
+          "sourceIds": [
+            "hamada_1972",
+            "ril_annual_report_2024_25",
+            "nse_reliance_quote"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Beta Unlevering is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Beta unlevering applies to operating companies when an observed equity beta must be normalized for capital structure; an Indian issuer’s filing supplies the debt-and-equity evidence needed for the process.",
+            "Beta Unlevering isolates the relationship that the governing question makes decision-relevant: Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Beta Unlevering exists because the decision maker needs to distinguish How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Levered equity beta contains operating risk and the effect of financial leverage.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible.",
+            "The source evidence identifies the fields that populate the build. Observed measure supplies Levered equity beta contains operating risk and the effect of financial leverage. Adjustment inputs supplies Debt to equity and the applicable tax assumption determine the conventional unlevering adjustment. Use in valuation supplies The adjusted beta supports comparison across capital structures only when the business mix and debt assumptions remain comparable.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Beta Unlevering exists because ordinary financial information hides a distinction that matters: Beta Unlevering is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions?” Beta unlevering applies to operating companies when an observed equity beta must be normalized for capital structure; an Indian issuer’s filing supplies the debt-and-equity evidence needed for the process. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Beta Unlevering helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Beta Unlevering by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Hamada (1972), The Effect of Capital Structure on Systematic Risk supplies the factual boundary for Beta Unlevering. The transferable lesson is the mechanism: Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "hamada_1972",
+            "ril_annual_report_2024_25",
+            "nse_reliance_quote"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+            "sourceUrl": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x",
+            "rows": [
+              {
+                "item": "Observed measure",
+                "value": "Levered equity beta contains operating risk and the effect of financial leverage.",
+                "source": "hamada_1972"
+              },
+              {
+                "item": "Adjustment inputs",
+                "value": "Debt to equity and the applicable tax assumption determine the conventional unlevering adjustment.",
+                "source": "hamada_1972"
+              },
+              {
+                "item": "Use in valuation",
+                "value": "The adjusted beta supports comparison across capital structures only when the business mix and debt assumptions remain comparable.",
+                "source": "ril_annual_report_2024_25"
+              }
+            ],
+            "image": "/evidence/batch-002-market-risk-excerpt.svg",
+            "imageSource": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Beta Unlevering: decision architecture",
+            "source": "hamada_1972",
+            "inputs": [
+              "Beta Unlevering",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Start with levered equity beta, debt-to-equity ratio, and tax assumption; divide levered beta by one plus the after-tax debt-to-equity adjustment, then assess whether debt risk and business mix make the simplification defensible.",
+            "decision": "Beta Unlevering exists because the decision maker needs to distinguish How can an observed equity beta be adjusted to isolate the systematic risk of the underlying business before changing leverage assumptions? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Beta Unlevering exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Beta Unlevering isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Beta Unlevering inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__capital_asset_pricing_model",
+      "topicId": "capital_asset_pricing_model",
+      "canonicalName": "Capital Asset Pricing Model",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Capital Asset Pricing Model reveals the assumption beneath the number.",
+      "dek": "Capital Asset Pricing Model is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "sharpe_capm_1964": {
+          "id": "sharpe_capm_1964",
+          "tier": 2,
+          "title": "Sharpe (1964), Capital Asset Prices",
+          "url": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+        },
+        "nifty_50_methodology": {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "RBI FAQ: Government securities and Treasury Bill yields",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "nse_reliance_quote": {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "sharpe_capm_1964",
+          "tier": 2,
+          "title": "Sharpe (1964), Capital Asset Prices",
+          "url": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+        },
+        {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "RBI FAQ: Government securities and Treasury Bill yields",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Capital Asset Pricing Model",
+          "group": "Core definition",
+          "formalDefinition": "Capital Asset Pricing Model is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Capital Asset Pricing Model is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "CAPM is a market-pricing framework used to estimate required return on equity. It is a structural finance concept, not a standalone modeling lab or a historical-event narrative.",
+        "decisionEnabled": "Capital Asset Pricing Model exists because the decision maker needs to distinguish What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "capital_asset_pricing_model-question": {
+          "text": "What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Capital Asset Pricing Model",
+          "lhsLatex": "\\text{Capital Asset Pricing Model}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Capital Asset Pricing Model}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "sharpe_capm_1964",
+          "glossary": {
+            "definition": {
+              "term": "Capital Asset Pricing Model",
+              "definition": "Capital Asset Pricing Model is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Capital Asset Pricing Model is anchored to Sharpe (1964), Capital Asset Prices. The source record supplies the real regulatory, market, or company context in which the concept is used. Risk free reference: RBI Government security and Treasury Bill material provides the risk free reference context for an Indian rupee model. Market reference: Nifty 50 methodology provides the selected market proxy and its construction rules. Model output: Required return combines the risk free reference with compensation for systematic exposure to the market risk premium.",
+            "The governing question is What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference?"
+          ],
+          "sourceIds": [
+            "sharpe_capm_1964",
+            "nifty_50_methodology",
+            "rbi_government_securities_faq",
+            "nse_reliance_quote"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Capital Asset Pricing Model is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "CAPM is a market-pricing framework used to estimate required return on equity. It is a structural finance concept, not a standalone modeling lab or a historical-event narrative.",
+            "Capital Asset Pricing Model isolates the relationship that the governing question makes decision-relevant: Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Capital Asset Pricing Model exists because the decision maker needs to distinguish What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. RBI Government security and Treasury Bill material provides the risk free reference context for an Indian rupee model.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions.",
+            "The source evidence identifies the fields that populate the build. Risk free reference supplies RBI Government security and Treasury Bill material provides the risk free reference context for an Indian rupee model. Market reference supplies Nifty 50 methodology provides the selected market proxy and its construction rules. Model output supplies Required return combines the risk free reference with compensation for systematic exposure to the market risk premium.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Capital Asset Pricing Model exists because ordinary financial information hides a distinction that matters: Capital Asset Pricing Model is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference?” CAPM is a market-pricing framework used to estimate required return on equity. It is a structural finance concept, not a standalone modeling lab or a historical-event narrative. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Capital Asset Pricing Model helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Capital Asset Pricing Model by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Sharpe (1964), Capital Asset Prices supplies the factual boundary for Capital Asset Pricing Model. The transferable lesson is the mechanism: Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "sharpe_capm_1964",
+            "nifty_50_methodology",
+            "rbi_government_securities_faq",
+            "nse_reliance_quote"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Sharpe (1964), Capital Asset Prices",
+            "sourceUrl": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x",
+            "rows": [
+              {
+                "item": "Risk free reference",
+                "value": "RBI Government security and Treasury Bill material provides the risk free reference context for an Indian rupee model.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Market reference",
+                "value": "Nifty 50 methodology provides the selected market proxy and its construction rules.",
+                "source": "nifty_50_methodology"
+              },
+              {
+                "item": "Model output",
+                "value": "Required return combines the risk free reference with compensation for systematic exposure to the market risk premium.",
+                "source": "sharpe_capm_1964"
+              }
+            ],
+            "image": "/evidence/batch-002-market-risk-excerpt.svg",
+            "imageSource": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Capital Asset Pricing Model: decision architecture",
+            "source": "sharpe_capm_1964",
+            "inputs": [
+              "Capital Asset Pricing Model",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Set the risk-free rate, market proxy, horizon, and equity-risk premium; estimate beta from aligned security and market returns; then calculate required return as risk-free rate plus beta times the market risk premium and stress the assumptions.",
+            "decision": "Capital Asset Pricing Model exists because the decision maker needs to distinguish What return should equity investors require for bearing the systematic risk of a security, given an explicit market proxy and risk-free reference? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Capital Asset Pricing Model exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Capital Asset Pricing Model isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Capital Asset Pricing Model inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_002__hamada_equation",
+      "topicId": "hamada_equation",
+      "canonicalName": "Hamada Equation",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Hamada Equation reveals the assumption beneath the number.",
+      "dek": "Hamada Equation is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "hamada_1972": {
+          "id": "hamada_1972",
+          "tier": 2,
+          "title": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+          "url": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+        },
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "hamada_1972",
+          "tier": 2,
+          "title": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+          "url": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+        },
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Hamada Equation",
+          "group": "Core definition",
+          "formalDefinition": "Hamada Equation is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Hamada Equation is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "The Hamada equation is a capital-structure adjustment to equity beta; the original research and a real Indian issuer capital structure are directly applicable anchors.",
+        "decisionEnabled": "Hamada Equation exists because the decision maker needs to distinguish How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "hamada_equation-question": {
+          "text": "How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Hamada Equation",
+          "lhsLatex": "\\text{Hamada Equation}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Hamada Equation}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "hamada_1972",
+          "glossary": {
+            "definition": {
+              "term": "Hamada Equation",
+              "definition": "Hamada Equation is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Hamada Equation is anchored to Hamada (1972), The Effect of Capital Structure on Systematic Risk. The source record supplies the real regulatory, market, or company context in which the concept is used. Operating risk: Unlevered beta represents systematic business risk before the equity effect of financial leverage. Leverage transmission: Debt to equity and tax treatment connect capital structure to the systematic risk borne by equity holders. Limitation: The shortcut weakens when debt has material systematic risk or the compared businesses are not economically comparable.",
+            "The governing question is How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant?"
+          ],
+          "sourceIds": [
+            "hamada_1972",
+            "ril_annual_report_2024_25"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Hamada Equation is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The Hamada equation is a capital-structure adjustment to equity beta; the original research and a real Indian issuer capital structure are directly applicable anchors.",
+            "Hamada Equation isolates the relationship that the governing question makes decision-relevant: Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Hamada Equation exists because the decision maker needs to distinguish How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Unlevered beta represents systematic business risk before the equity effect of financial leverage.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut.",
+            "The source evidence identifies the fields that populate the build. Operating risk supplies Unlevered beta represents systematic business risk before the equity effect of financial leverage. Leverage transmission supplies Debt to equity and tax treatment connect capital structure to the systematic risk borne by equity holders. Limitation supplies The shortcut weakens when debt has material systematic risk or the compared businesses are not economically comparable.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Hamada Equation exists because ordinary financial information hides a distinction that matters: Hamada Equation is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant?” The Hamada equation is a capital-structure adjustment to equity beta; the original research and a real Indian issuer capital structure are directly applicable anchors. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Hamada Equation helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Hamada Equation by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Hamada (1972), The Effect of Capital Structure on Systematic Risk supplies the factual boundary for Hamada Equation. The transferable lesson is the mechanism: Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "hamada_1972",
+            "ril_annual_report_2024_25"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Hamada (1972), The Effect of Capital Structure on Systematic Risk",
+            "sourceUrl": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x",
+            "rows": [
+              {
+                "item": "Operating risk",
+                "value": "Unlevered beta represents systematic business risk before the equity effect of financial leverage.",
+                "source": "hamada_1972"
+              },
+              {
+                "item": "Leverage transmission",
+                "value": "Debt to equity and tax treatment connect capital structure to the systematic risk borne by equity holders.",
+                "source": "hamada_1972"
+              },
+              {
+                "item": "Limitation",
+                "value": "The shortcut weakens when debt has material systematic risk or the compared businesses are not economically comparable.",
+                "source": "ril_annual_report_2024_25"
+              }
+            ],
+            "image": "/evidence/batch-002-market-risk-excerpt.svg",
+            "imageSource": "https://doi.org/10.1111/j.1540-6261.1972.tb00971.x"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Hamada Equation: decision architecture",
+            "source": "hamada_1972",
+            "inputs": [
+              "Hamada Equation",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Relate levered beta to unlevered beta through one plus the after-tax debt-to-equity ratio, then identify the conditions under which debt beta, tax treatment, or non-comparable business mix invalidate the shortcut.",
+            "decision": "Hamada Equation exists because the decision maker needs to distinguish How does financial leverage transform the systematic risk borne by equity holders when the operating risk of the assets is held constant? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Hamada Equation exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Hamada Equation isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Hamada Equation inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-02",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    }
+  ],
+  "qualityNote": "This batch contains source-bound prose, field-level evidence exhibits, explanatory diagrams, and question banks. It remains subject to editorial review before publication."
+}

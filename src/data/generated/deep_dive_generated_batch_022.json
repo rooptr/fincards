@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": "deep-dive-generated-batch.v1",
+  "generatedAt": "2026-07-18T11:21:09.407Z",
+  "batchId": "lessons-standard-22",
+  "status": "generated_for_review",
+  "lessonCount": 5,
+  "lessons": [
+    {
+      "id": "generated_batch_022__net_working_capital",
+      "topicId": "net_working_capital",
+      "canonicalName": "Net Working Capital",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "A negative working-capital balance funded the operating cycle.",
+      "dek": "Walmart’s FY2024 filing shows how operating timing can matter more than a headline balance-sheet total.",
+      "sources": {
+        "walmart_2024_annual_report": {
+          "id": "walmart_2024_annual_report",
+          "title": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+          "url": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "walmart_2024_annual_report",
+          "tier": 1,
+          "title": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+          "url": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "currentAssets",
+          "term": "Current assets",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Assets expected to be realized, sold, or consumed in the normal operating cycle or within the applicable short-term horizon.",
+          "whyItMatters": "They are the resource side of a short-term operating-funding comparison, but they do not share the same conversion certainty.",
+          "commonExaminationError": "Treating every current asset as immediately available cash."
+        },
+        {
+          "id": "currentLiabilities",
+          "term": "Current liabilities",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Obligations due for settlement within the applicable short-term horizon or normal operating cycle.",
+          "whyItMatters": "They establish the claims that operating assets, operating cash flow, supplier credit, or external funding must meet.",
+          "commonExaminationError": "Ignoring the maturity and rollover pattern inside the current-liability total."
+        },
+        {
+          "id": "inventory",
+          "term": "Inventory",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Goods held for sale or inputs held for production and service delivery.",
+          "whyItMatters": "It can generate revenue but consumes cash until sold and collected.",
+          "commonExaminationError": "Calling inventory liquid without testing demand, markdown, and conversion time."
+        },
+        {
+          "id": "receivables",
+          "term": "Receivables",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Amounts due from customers or counterparties that the company expects to collect.",
+          "whyItMatters": "They represent a claim on future cash and depend on collection timing, credit quality, and disputes.",
+          "commonExaminationError": "Using revenue instead of receivables when measuring collection timing."
+        },
+        {
+          "id": "payables",
+          "term": "Accounts payable",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Amounts owed to suppliers for goods and services already received.",
+          "whyItMatters": "They provide supplier financing until settlement and reduce the cash required to fund inventory.",
+          "commonExaminationError": "Treating a longer payable period as free value without checking supplier terms and relationship risk."
+        },
+        {
+          "id": "dio",
+          "term": "Days Inventory Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average inventory expressed as the number of days of cost of sales represented by that balance.",
+          "whyItMatters": "It measures how long cash remains invested in inventory before sale.",
+          "commonExaminationError": "Using revenue rather than cost of sales in the denominator."
+        },
+        {
+          "id": "dso",
+          "term": "Days Sales Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average receivables expressed as the number of days of sales represented by that balance.",
+          "whyItMatters": "It measures the collection interval after a sale is recognized.",
+          "commonExaminationError": "Interpreting a lower DSO as better without checking credit terms, mix, and write-offs."
+        },
+        {
+          "id": "dpo",
+          "term": "Days Payables Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average accounts payable expressed as the number of days of cost of sales represented by that balance.",
+          "whyItMatters": "It measures supplier financing and the time between receiving goods and paying for them.",
+          "commonExaminationError": "Assuming a higher DPO is sustainable without reading supplier terms or payment-program disclosures."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "operating balances",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "currentAssets",
+            "currentLiabilities",
+            "inventory"
+          ]
+        },
+        {
+          "subtopic": "cash timing",
+          "section": "Economic Logic",
+          "definitionIds": [
+            "receivables",
+            "payables"
+          ]
+        },
+        {
+          "subtopic": "days and interpretation",
+          "section": "Formula Construction",
+          "definitionIds": [
+            "dio",
+            "dso",
+            "dpo"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Net Working Capital exists because a balance sheet total hides the timing of the operating cycle. Cash leaves when inventory is purchased or suppliers are paid and returns only when customers pay.",
+        "informationIsolated": "The signal is the short-term funding gap between operating resources and near-term operating claims. The measure is useful only when the underlying balances are connected to the company’s operating model.",
+        "decisionEnabled": "The decision is whether the business needs external funding or is receiving supplier and customer financing through its operating model. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+        "validityAssumptions": "The measure assumes comparable periods, consistent accounting classifications, representative average balances, and annual flows that match the balance-sheet scope.",
+        "criticalQuestion": "The sophisticated question is whether the observed timing is structural and repeatable or whether it is temporarily supported by delayed payments, inventory reduction, unusual demand, or a reporting-date effect."
+      },
+      "nodes": {
+        "net_working_capital-question": {
+          "text": "What operating capital is tied up in the business, and when does a negative balance strengthen liquidity rather than signal distress?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Net Working Capital",
+          "lhsLatex": "\\text{Net Working Capital}",
+          "relationLatex": "=",
+          "rhsLatex": "\\text{Net working capital} = \\text{Current assets} - \\text{Current liabilities}",
+          "latex": "\\text{Net working capital} = \\text{Current assets} - \\text{Current liabilities}",
+          "sourceId": "walmart_2024_annual_report",
+          "glossary": {
+            "currentAssets": {
+              "term": "Current assets",
+              "definition": "Assets expected to be realized, sold, or consumed in the normal operating cycle or within the applicable short-term horizon.",
+              "location": "Balance sheet.",
+              "financialInterpretation": "They are the resource side of a short-term operating-funding comparison, but they do not share the same conversion certainty.",
+              "commonExaminationTrap": "Treating every current asset as immediately available cash."
+            },
+            "currentLiabilities": {
+              "term": "Current liabilities",
+              "definition": "Obligations due for settlement within the applicable short-term horizon or normal operating cycle.",
+              "location": "Balance sheet.",
+              "financialInterpretation": "They establish the claims that operating assets, operating cash flow, supplier credit, or external funding must meet.",
+              "commonExaminationTrap": "Ignoring the maturity and rollover pattern inside the current-liability total."
+            },
+            "inventory": {
+              "term": "Inventory",
+              "definition": "Goods held for sale or inputs held for production and service delivery.",
+              "location": "Balance sheet and inventory note.",
+              "financialInterpretation": "It can generate revenue but consumes cash until sold and collected.",
+              "commonExaminationTrap": "Calling inventory liquid without testing demand, markdown, and conversion time."
+            },
+            "receivables": {
+              "term": "Receivables",
+              "definition": "Amounts due from customers or counterparties that the company expects to collect.",
+              "location": "Balance sheet and receivables note.",
+              "financialInterpretation": "They represent a claim on future cash and depend on collection timing, credit quality, and disputes.",
+              "commonExaminationTrap": "Using revenue instead of receivables when measuring collection timing."
+            },
+            "payables": {
+              "term": "Accounts payable",
+              "definition": "Amounts owed to suppliers for goods and services already received.",
+              "location": "Balance sheet and cash-flow statement.",
+              "financialInterpretation": "They provide supplier financing until settlement and reduce the cash required to fund inventory.",
+              "commonExaminationTrap": "Treating a longer payable period as free value without checking supplier terms and relationship risk."
+            },
+            "dio": {
+              "term": "Days Inventory Outstanding",
+              "definition": "Average inventory expressed as the number of days of cost of sales represented by that balance.",
+              "location": "Derived from inventory and cost of sales.",
+              "financialInterpretation": "It measures how long cash remains invested in inventory before sale.",
+              "commonExaminationTrap": "Using revenue rather than cost of sales in the denominator."
+            },
+            "dso": {
+              "term": "Days Sales Outstanding",
+              "definition": "Average receivables expressed as the number of days of sales represented by that balance.",
+              "location": "Derived from receivables and net sales.",
+              "financialInterpretation": "It measures the collection interval after a sale is recognized.",
+              "commonExaminationTrap": "Interpreting a lower DSO as better without checking credit terms, mix, and write-offs."
+            },
+            "dpo": {
+              "term": "Days Payables Outstanding",
+              "definition": "Average accounts payable expressed as the number of days of cost of sales represented by that balance.",
+              "location": "Derived from accounts payable and cost of sales.",
+              "financialInterpretation": "It measures supplier financing and the time between receiving goods and paying for them.",
+              "commonExaminationTrap": "Assuming a higher DPO is sustainable without reading supplier terms or payment-program disclosures."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Walmart reported $76,877 million of current assets, $92,415 million of current liabilities, $54,892 million of inventory, $8,796 million of receivables, and $56,812 million of accounts payable at January 31, 2024.",
+            "Net Working Capital matters because operating growth changes the timing of cash receipts and payments before it changes reported profit."
+          ],
+          "sourceIds": [
+            "walmart_2024_annual_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What operating capital is tied up in the business, and when does a negative balance strengthen liquidity rather than signal distress?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Net Working Capital exists because a balance sheet total hides the timing of the operating cycle. Cash leaves when inventory is purchased or suppliers are paid and returns only when customers pay.",
+            "Net Working Capital under the stated broad convention equals current assets less current liabilities. Walmart reported $76,877 million of current assets and $92,415 million of current liabilities, producing -$15,538 million.",
+            "The signal is the short-term funding gap between operating resources and near-term operating claims. The measure is useful only when the underlying balances are connected to the company’s operating model."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Working capital is a timing system. Inventory and receivables consume cash before collection, while payables defer cash payment and can finance part of the operating cycle.",
+            "A negative working-capital balance can be efficient when customers pay at or near the point of sale and suppliers are paid later. It becomes dangerous when the deficit is funded by overdue obligations, shrinking inventory quality, weak collections, or forced refinancing.",
+            "Walmart’s filing states that the company generally operates with a working-capital deficit because of operating efficiency, access to capital markets, and shareholder returns. That explanation is a hypothesis to test against the cash-flow statement, not a substitute for the numbers."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Using the Walmart fields, the selected measure is calculated from the balance or timing relationship stated here. Net Working Capital under the stated broad convention equals current assets less current liabilities. Walmart reported $76,877 million of current assets and $92,415 million of current liabilities, producing -$15,538 million.",
+            "The balance changed from -$16,543 million in fiscal 2023 to -$15,538 million in fiscal 2024. The calculation is a stock measure at the reporting date; the cash-flow statement explains the movement during the period.",
+            "The denominator must match the economic flow. Inventory and payable days use cost of sales; receivable days use net sales. Mixing denominators creates a number with no coherent timing meaning."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Walmart’s short-term bills were larger than its short-term assets by $15,538 million. That can work when customers pay quickly and suppliers are paid later.",
+            "The balance sheet gives the position on one date. The cash-flow statement and operating-cycle measures show how that position moved and whether the business can repeat it.",
+            "That is why the number must be read with the operating process, not treated as a standalone liquidity verdict."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Working Capital and Net Working Capital are often used as synonyms, but the finance professional must state whether the measure includes all current assets and liabilities or only operating balances.",
+            "No universal working-capital benchmark exists. Compare the company with businesses that share its inventory turn, customer payment model, supplier terms, seasonality, and channel mix.",
+            "The correct comparison is the company’s own trend plus the operating cycle behind the balance. A negative total can be healthy for one retailer and a warning for a manufacturer with slow collections."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Walmart’s Net Working Capital result is -$15,538 million. It indicates the short-term funding gap between operating resources and near-term operating claims.",
+            "The decision is whether the business needs external funding or is receiving supplier and customer financing through its operating model. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+            "The sophisticated question is whether the observed timing is structural and repeatable or whether it is temporarily supported by delayed payments, inventory reduction, unusual demand, or a reporting-date effect."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The measure assumes comparable periods, consistent accounting classifications, representative average balances, and annual flows that match the balance-sheet scope.",
+            "The total is not a cash balance. Its meaning depends on asset quality, liability timing, inventory turnover, receivable collection, and supplier terms.",
+            "Working-capital measures ignore debt maturities, undrawn facilities, restricted cash, supplier concentration, customer defaults, and the funding cost of the operating cycle."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Walmart’s filing supplies the complete teaching chain. The company reported a working-capital deficit of -$15,538 million, while the underlying balances produced 42.7 days of inventory days, 4.9 days of receivable days, and 42.3 days of payable days.",
+            "The durable lesson is that Net Working Capital is a timing lens. Its meaning comes from the operating process that turns inventory into sales, sales into receivables, receivables into cash, and supplier obligations into payments."
+          ],
+          "sourceIds": [
+            "walmart_2024_annual_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+            "sourceUrl": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf",
+            "summary": "Walmart’s FY2024 filing provides the balance-sheet and income-statement fields used to teach working-capital position and operating-cycle timing. Derived measures are labelled as derived.",
+            "rows": [
+              {
+                "item": "Current assets, January 31, 2024",
+                "value": "$76,877 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Current liabilities, January 31, 2024",
+                "value": "$92,415 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Working capital, January 31, 2024",
+                "value": "-$15,538 million, calculated as current assets less current liabilities",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-date balance sheet fields"
+              },
+              {
+                "item": "Inventory, 2024 and 2023",
+                "value": "$54,892 million and $56,576 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Receivables, 2024 and 2023",
+                "value": "$8,796 million and $7,933 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Accounts payable, 2024 and 2023",
+                "value": "$56,812 million and $53,742 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Cost of sales, 2024 and 2023",
+                "value": "$490,142 million and $463,721 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Statements of Income, page 54"
+              },
+              {
+                "item": "Net sales, 2024 and 2023",
+                "value": "$642,637 million and $605,881 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Statements of Income, page 54"
+              },
+              {
+                "item": "Days Inventory Outstanding",
+                "value": "42.7 days, calculated from average inventory / average cost of sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Days Sales Outstanding",
+                "value": "4.9 days, calculated from average receivables / average net sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Days Payables Outstanding",
+                "value": "42.3 days, calculated from average accounts payable / average cost of sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Cash Conversion Cycle",
+                "value": "5.2 days, calculated as DIO + DSO − DPO",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              }
+            ],
+            "image": "/evidence/walmart-working-capital-excerpt.svg",
+            "imageSource": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Net Working Capital: decision architecture",
+            "source": "walmart_2024_annual_report",
+            "inputs": [
+              "Current assets",
+              "Current liabilities",
+              "Inventory"
+            ],
+            "transformation": "Net Working Capital under the stated broad convention equals current assets less current liabilities. Walmart reported $76,877 million of current assets and $92,415 million of current liabilities, producing -$15,538 million.",
+            "decision": "The decision is whether the business needs external funding or is receiving supplier and customer financing through its operating model. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "What does this measure isolate?",
+              "answer": "It isolates the timing or balance-sheet relationship specified by the formula. It does not replace a cash-flow forecast or a maturity analysis."
+            },
+            {
+              "question": "Why is inventory not cash?",
+              "answer": "Inventory requires demand, sale, collection, and often continued operating expenditure. Its reported balance is therefore not equal to immediate payment capacity."
+            },
+            {
+              "question": "Why do receivables use sales while inventory and payables use cost of sales?",
+              "answer": "Receivables arise from sales, while inventory consumption and supplier obligations are linked more closely to cost of sales. Matching each balance to its economic flow preserves timing meaning."
+            },
+            {
+              "question": "Why can negative working capital be efficient?",
+              "answer": "Customer cash can arrive before supplier settlement, allowing the operating cycle to finance itself. The conclusion is valid only when the timing is stable and the claims remain payable."
+            },
+            {
+              "question": "What makes a working-capital deficit dangerous?",
+              "answer": "Slow collections, obsolete inventory, supplier withdrawal, overdue payables, seasonal cash needs, or debt maturities can turn a timing advantage into a liquidity shortfall."
+            },
+            {
+              "question": "What is the difference between a balance measure and a timing measure?",
+              "answer": "Working capital measures a position at a date. Cash Conversion Cycle measures the average timing of inventory, collection, and supplier settlement during a period."
+            },
+            {
+              "question": "Why should average balances be used?",
+              "answer": "A year-end balance can be unusually high or low because of seasonality, purchasing timing, or reporting-date management. Average balances better approximate the resources deployed during the period."
+            },
+            {
+              "question": "What did Walmart’s filing reveal?",
+              "answer": "It reported -$15,538 million of working capital under the broad convention and a cash conversion cycle of about 5.2 days days under the stated flow and average-balance convention."
+            },
+            {
+              "question": "How would you test whether the result is sustainable?",
+              "answer": "Review monthly or quarterly trends, inventory aging, receivables aging, supplier terms, cash conversion, payment-program disclosures, seasonality, and the availability of committed financing."
+            },
+            {
+              "question": "What is the most common examination error?",
+              "answer": "Treating a low or negative balance as automatically bad, or treating a short cycle as automatically safe without examining the quality and timing of the underlying cash flows."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-22",
+        "anchorDescription": "Walmart’s FY2024 annual report provides the real balance-sheet and cash-flow fields used to teach Net Working Capital.",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_022__working_capital",
+      "topicId": "working_capital",
+      "canonicalName": "Working Capital",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Walmart’s current liabilities exceeded its current assets.",
+      "dek": "Walmart’s FY2024 filing shows how operating timing can matter more than a headline balance-sheet total.",
+      "sources": {
+        "walmart_2024_annual_report": {
+          "id": "walmart_2024_annual_report",
+          "title": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+          "url": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "walmart_2024_annual_report",
+          "tier": 1,
+          "title": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+          "url": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "currentAssets",
+          "term": "Current assets",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Assets expected to be realized, sold, or consumed in the normal operating cycle or within the applicable short-term horizon.",
+          "whyItMatters": "They are the resource side of a short-term operating-funding comparison, but they do not share the same conversion certainty.",
+          "commonExaminationError": "Treating every current asset as immediately available cash."
+        },
+        {
+          "id": "currentLiabilities",
+          "term": "Current liabilities",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Obligations due for settlement within the applicable short-term horizon or normal operating cycle.",
+          "whyItMatters": "They establish the claims that operating assets, operating cash flow, supplier credit, or external funding must meet.",
+          "commonExaminationError": "Ignoring the maturity and rollover pattern inside the current-liability total."
+        },
+        {
+          "id": "inventory",
+          "term": "Inventory",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Goods held for sale or inputs held for production and service delivery.",
+          "whyItMatters": "It can generate revenue but consumes cash until sold and collected.",
+          "commonExaminationError": "Calling inventory liquid without testing demand, markdown, and conversion time."
+        },
+        {
+          "id": "receivables",
+          "term": "Receivables",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Amounts due from customers or counterparties that the company expects to collect.",
+          "whyItMatters": "They represent a claim on future cash and depend on collection timing, credit quality, and disputes.",
+          "commonExaminationError": "Using revenue instead of receivables when measuring collection timing."
+        },
+        {
+          "id": "payables",
+          "term": "Accounts payable",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Amounts owed to suppliers for goods and services already received.",
+          "whyItMatters": "They provide supplier financing until settlement and reduce the cash required to fund inventory.",
+          "commonExaminationError": "Treating a longer payable period as free value without checking supplier terms and relationship risk."
+        },
+        {
+          "id": "dio",
+          "term": "Days Inventory Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average inventory expressed as the number of days of cost of sales represented by that balance.",
+          "whyItMatters": "It measures how long cash remains invested in inventory before sale.",
+          "commonExaminationError": "Using revenue rather than cost of sales in the denominator."
+        },
+        {
+          "id": "dso",
+          "term": "Days Sales Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average receivables expressed as the number of days of sales represented by that balance.",
+          "whyItMatters": "It measures the collection interval after a sale is recognized.",
+          "commonExaminationError": "Interpreting a lower DSO as better without checking credit terms, mix, and write-offs."
+        },
+        {
+          "id": "dpo",
+          "term": "Days Payables Outstanding",
+          "group": "Working-capital analysis",
+          "formalDefinition": "Average accounts payable expressed as the number of days of cost of sales represented by that balance.",
+          "whyItMatters": "It measures supplier financing and the time between receiving goods and paying for them.",
+          "commonExaminationError": "Assuming a higher DPO is sustainable without reading supplier terms or payment-program disclosures."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "operating balances",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "currentAssets",
+            "currentLiabilities",
+            "inventory"
+          ]
+        },
+        {
+          "subtopic": "cash timing",
+          "section": "Economic Logic",
+          "definitionIds": [
+            "receivables",
+            "payables"
+          ]
+        },
+        {
+          "subtopic": "days and interpretation",
+          "section": "Formula Construction",
+          "definitionIds": [
+            "dio",
+            "dso",
+            "dpo"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Working Capital exists because a balance sheet total hides the timing of the operating cycle. Cash leaves when inventory is purchased or suppliers are paid and returns only when customers pay.",
+        "informationIsolated": "The signal is the short-term balance-sheet structure supporting the operating cycle. The measure is useful only when the underlying balances are connected to the company’s operating model.",
+        "decisionEnabled": "The decision is whether the deficit reflects efficient supplier and customer timing or a deteriorating ability to meet claims. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+        "validityAssumptions": "The measure assumes comparable periods, consistent accounting classifications, representative average balances, and annual flows that match the balance-sheet scope.",
+        "criticalQuestion": "The sophisticated question is whether the observed timing is structural and repeatable or whether it is temporarily supported by delayed payments, inventory reduction, unusual demand, or a reporting-date effect."
+      },
+      "nodes": {
+        "working_capital-question": {
+          "text": "How does the current-asset and current-liability structure fund day-to-day operations, and what would make the same balance either efficient or dangerous?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Working Capital",
+          "lhsLatex": "\\text{Working Capital}",
+          "relationLatex": "=",
+          "rhsLatex": "\\text{Working capital} = \\text{Current assets} - \\text{Current liabilities}",
+          "latex": "\\text{Working capital} = \\text{Current assets} - \\text{Current liabilities}",
+          "sourceId": "walmart_2024_annual_report",
+          "glossary": {
+            "currentAssets": {
+              "term": "Current assets",
+              "definition": "Assets expected to be realized, sold, or consumed in the normal operating cycle or within the applicable short-term horizon.",
+              "location": "Balance sheet.",
+              "financialInterpretation": "They are the resource side of a short-term operating-funding comparison, but they do not share the same conversion certainty.",
+              "commonExaminationTrap": "Treating every current asset as immediately available cash."
+            },
+            "currentLiabilities": {
+              "term": "Current liabilities",
+              "definition": "Obligations due for settlement within the applicable short-term horizon or normal operating cycle.",
+              "location": "Balance sheet.",
+              "financialInterpretation": "They establish the claims that operating assets, operating cash flow, supplier credit, or external funding must meet.",
+              "commonExaminationTrap": "Ignoring the maturity and rollover pattern inside the current-liability total."
+            },
+            "inventory": {
+              "term": "Inventory",
+              "definition": "Goods held for sale or inputs held for production and service delivery.",
+              "location": "Balance sheet and inventory note.",
+              "financialInterpretation": "It can generate revenue but consumes cash until sold and collected.",
+              "commonExaminationTrap": "Calling inventory liquid without testing demand, markdown, and conversion time."
+            },
+            "receivables": {
+              "term": "Receivables",
+              "definition": "Amounts due from customers or counterparties that the company expects to collect.",
+              "location": "Balance sheet and receivables note.",
+              "financialInterpretation": "They represent a claim on future cash and depend on collection timing, credit quality, and disputes.",
+              "commonExaminationTrap": "Using revenue instead of receivables when measuring collection timing."
+            },
+            "payables": {
+              "term": "Accounts payable",
+              "definition": "Amounts owed to suppliers for goods and services already received.",
+              "location": "Balance sheet and cash-flow statement.",
+              "financialInterpretation": "They provide supplier financing until settlement and reduce the cash required to fund inventory.",
+              "commonExaminationTrap": "Treating a longer payable period as free value without checking supplier terms and relationship risk."
+            },
+            "dio": {
+              "term": "Days Inventory Outstanding",
+              "definition": "Average inventory expressed as the number of days of cost of sales represented by that balance.",
+              "location": "Derived from inventory and cost of sales.",
+              "financialInterpretation": "It measures how long cash remains invested in inventory before sale.",
+              "commonExaminationTrap": "Using revenue rather than cost of sales in the denominator."
+            },
+            "dso": {
+              "term": "Days Sales Outstanding",
+              "definition": "Average receivables expressed as the number of days of sales represented by that balance.",
+              "location": "Derived from receivables and net sales.",
+              "financialInterpretation": "It measures the collection interval after a sale is recognized.",
+              "commonExaminationTrap": "Interpreting a lower DSO as better without checking credit terms, mix, and write-offs."
+            },
+            "dpo": {
+              "term": "Days Payables Outstanding",
+              "definition": "Average accounts payable expressed as the number of days of cost of sales represented by that balance.",
+              "location": "Derived from accounts payable and cost of sales.",
+              "financialInterpretation": "It measures supplier financing and the time between receiving goods and paying for them.",
+              "commonExaminationTrap": "Assuming a higher DPO is sustainable without reading supplier terms or payment-program disclosures."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Walmart reported $76,877 million of current assets, $92,415 million of current liabilities, $54,892 million of inventory, $8,796 million of receivables, and $56,812 million of accounts payable at January 31, 2024.",
+            "Working Capital matters because operating growth changes the timing of cash receipts and payments before it changes reported profit."
+          ],
+          "sourceIds": [
+            "walmart_2024_annual_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How does the current-asset and current-liability structure fund day-to-day operations, and what would make the same balance either efficient or dangerous?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Working Capital exists because a balance sheet total hides the timing of the operating cycle. Cash leaves when inventory is purchased or suppliers are paid and returns only when customers pay.",
+            "Working Capital under the broad balance-sheet convention equals current assets less current liabilities. Walmart reported $76,877 million and $92,415 million, producing -$15,538 million; management describes the retailer as generally operating with a working-capital deficit.",
+            "The signal is the short-term balance-sheet structure supporting the operating cycle. The measure is useful only when the underlying balances are connected to the company’s operating model."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Working capital is a timing system. Inventory and receivables consume cash before collection, while payables defer cash payment and can finance part of the operating cycle.",
+            "A negative working-capital balance can be efficient when customers pay at or near the point of sale and suppliers are paid later. It becomes dangerous when the deficit is funded by overdue obligations, shrinking inventory quality, weak collections, or forced refinancing.",
+            "Walmart’s filing states that the company generally operates with a working-capital deficit because of operating efficiency, access to capital markets, and shareholder returns. That explanation is a hypothesis to test against the cash-flow statement, not a substitute for the numbers."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Using the Walmart fields, the selected measure is calculated from the balance or timing relationship stated here. Working Capital under the broad balance-sheet convention equals current assets less current liabilities. Walmart reported $76,877 million and $92,415 million, producing -$15,538 million; management describes the retailer as generally operating with a working-capital deficit.",
+            "The balance changed from -$16,543 million in fiscal 2023 to -$15,538 million in fiscal 2024. The calculation is a stock measure at the reporting date; the cash-flow statement explains the movement during the period.",
+            "The denominator must match the economic flow. Inventory and payable days use cost of sales; receivable days use net sales. Mixing denominators creates a number with no coherent timing meaning."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Walmart had more short-term bills than short-term assets on the reporting date. The important question is when cash arrives and when each bill must be paid.",
+            "The balance sheet gives the position on one date. The cash-flow statement and operating-cycle measures show how that position moved and whether the business can repeat it.",
+            "That is why the number must be read with the operating process, not treated as a standalone liquidity verdict."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Working Capital and Net Working Capital are often used as synonyms, but the finance professional must state whether the measure includes all current assets and liabilities or only operating balances.",
+            "No universal working-capital benchmark exists. Compare the company with businesses that share its inventory turn, customer payment model, supplier terms, seasonality, and channel mix.",
+            "The correct comparison is the company’s own trend plus the operating cycle behind the balance. A negative total can be healthy for one retailer and a warning for a manufacturer with slow collections."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Walmart’s Working Capital result is -$15,538 million. It indicates the short-term balance-sheet structure supporting the operating cycle.",
+            "The decision is whether the deficit reflects efficient supplier and customer timing or a deteriorating ability to meet claims. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+            "The sophisticated question is whether the observed timing is structural and repeatable or whether it is temporarily supported by delayed payments, inventory reduction, unusual demand, or a reporting-date effect."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The measure assumes comparable periods, consistent accounting classifications, representative average balances, and annual flows that match the balance-sheet scope.",
+            "The total working-capital figure combines cash, receivables, inventory, prepaids, accounts payable, leases, taxes, and other claims with different timing and certainty.",
+            "Working-capital measures ignore debt maturities, undrawn facilities, restricted cash, supplier concentration, customer defaults, and the funding cost of the operating cycle."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Walmart’s filing supplies the complete teaching chain. The company reported a working-capital deficit of -$15,538 million, while the underlying balances produced 42.7 days of inventory days, 4.9 days of receivable days, and 42.3 days of payable days.",
+            "The durable lesson is that Working Capital is a timing lens. Its meaning comes from the operating process that turns inventory into sales, sales into receivables, receivables into cash, and supplier obligations into payments."
+          ],
+          "sourceIds": [
+            "walmart_2024_annual_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Walmart Inc. Annual Report 2024, statements of income, balance sheets, and cash flows",
+            "sourceUrl": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf",
+            "summary": "Walmart’s FY2024 filing provides the balance-sheet and income-statement fields used to teach working-capital position and operating-cycle timing. Derived measures are labelled as derived.",
+            "rows": [
+              {
+                "item": "Current assets, January 31, 2024",
+                "value": "$76,877 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Current liabilities, January 31, 2024",
+                "value": "$92,415 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Working capital, January 31, 2024",
+                "value": "-$15,538 million, calculated as current assets less current liabilities",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-date balance sheet fields"
+              },
+              {
+                "item": "Inventory, 2024 and 2023",
+                "value": "$54,892 million and $56,576 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Receivables, 2024 and 2023",
+                "value": "$8,796 million and $7,933 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Accounts payable, 2024 and 2023",
+                "value": "$56,812 million and $53,742 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Balance Sheets, page 56"
+              },
+              {
+                "item": "Cost of sales, 2024 and 2023",
+                "value": "$490,142 million and $463,721 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Statements of Income, page 54"
+              },
+              {
+                "item": "Net sales, 2024 and 2023",
+                "value": "$642,637 million and $605,881 million",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Consolidated Statements of Income, page 54"
+              },
+              {
+                "item": "Days Inventory Outstanding",
+                "value": "42.7 days, calculated from average inventory / average cost of sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Days Sales Outstanding",
+                "value": "4.9 days, calculated from average receivables / average net sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Days Payables Outstanding",
+                "value": "42.3 days, calculated from average accounts payable / average cost of sales × 365",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              },
+              {
+                "item": "Cash Conversion Cycle",
+                "value": "5.2 days, calculated as DIO + DSO − DPO",
+                "source": "walmart_2024_annual_report",
+                "sourceField": "Derived from same-filing fields"
+              }
+            ],
+            "image": "/evidence/walmart-working-capital-excerpt.svg",
+            "imageSource": "https://stock.walmart.com/_assets/_46796feebc5ddf6d2adbeabac9558ae9/walmart/db/950/9651/annual_report/Walmart_2024-AR-10K_Searchable.pdf"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Working Capital: decision architecture",
+            "source": "walmart_2024_annual_report",
+            "inputs": [
+              "Current assets",
+              "Current liabilities",
+              "Inventory"
+            ],
+            "transformation": "Working Capital under the broad balance-sheet convention equals current assets less current liabilities. Walmart reported $76,877 million and $92,415 million, producing -$15,538 million; management describes the retailer as generally operating with a working-capital deficit.",
+            "decision": "The decision is whether the deficit reflects efficient supplier and customer timing or a deteriorating ability to meet claims. The result must be reconciled to inventory turns, receivables aging, supplier terms, cash flow, seasonality, and financing access.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "What does this measure isolate?",
+              "answer": "It isolates the timing or balance-sheet relationship specified by the formula. It does not replace a cash-flow forecast or a maturity analysis."
+            },
+            {
+              "question": "Why is inventory not cash?",
+              "answer": "Inventory requires demand, sale, collection, and often continued operating expenditure. Its reported balance is therefore not equal to immediate payment capacity."
+            },
+            {
+              "question": "Why do receivables use sales while inventory and payables use cost of sales?",
+              "answer": "Receivables arise from sales, while inventory consumption and supplier obligations are linked more closely to cost of sales. Matching each balance to its economic flow preserves timing meaning."
+            },
+            {
+              "question": "Why can negative working capital be efficient?",
+              "answer": "Customer cash can arrive before supplier settlement, allowing the operating cycle to finance itself. The conclusion is valid only when the timing is stable and the claims remain payable."
+            },
+            {
+              "question": "What makes a working-capital deficit dangerous?",
+              "answer": "Slow collections, obsolete inventory, supplier withdrawal, overdue payables, seasonal cash needs, or debt maturities can turn a timing advantage into a liquidity shortfall."
+            },
+            {
+              "question": "What is the difference between a balance measure and a timing measure?",
+              "answer": "Working capital measures a position at a date. Cash Conversion Cycle measures the average timing of inventory, collection, and supplier settlement during a period."
+            },
+            {
+              "question": "Why should average balances be used?",
+              "answer": "A year-end balance can be unusually high or low because of seasonality, purchasing timing, or reporting-date management. Average balances better approximate the resources deployed during the period."
+            },
+            {
+              "question": "What did Walmart’s filing reveal?",
+              "answer": "It reported -$15,538 million of working capital under the broad convention and a cash conversion cycle of about 5.2 days days under the stated flow and average-balance convention."
+            },
+            {
+              "question": "How would you test whether the result is sustainable?",
+              "answer": "Review monthly or quarterly trends, inventory aging, receivables aging, supplier terms, cash conversion, payment-program disclosures, seasonality, and the availability of committed financing."
+            },
+            {
+              "question": "What is the most common examination error?",
+              "answer": "Treating a low or negative balance as automatically bad, or treating a short cycle as automatically safe without examining the quality and timing of the underlying cash flows."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-22",
+        "anchorDescription": "Walmart’s FY2024 annual report provides the real balance-sheet and cash-flow fields used to teach Working Capital.",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_022__inverted_yield_curve",
+      "topicId": "inverted_yield_curve",
+      "canonicalName": "Inverted Yield Curve",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "The two-year yield rose above the ten-year yield.",
+      "dek": "Two official Treasury observations show how the shape of the curve changes the question finance professionals ask.",
+      "sources": {
+        "treasury_yield_curve_jan_2022": {
+          "id": "treasury_yield_curve_jan_2022",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve",
+          "tier": 1
+        },
+        "treasury_yield_curve_dec_2023": {
+          "id": "treasury_yield_curve_dec_2023",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "treasury_yield_curve_jan_2022",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve"
+        },
+        {
+          "id": "treasury_yield_curve_dec_2023",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "maturity",
+          "term": "Maturity",
+          "group": "Fixed income",
+          "formalDefinition": "The date on which a debt instrument’s principal is contractually repaid.",
+          "whyItMatters": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+          "commonExaminationError": "Treating maturity as the same thing as duration."
+        },
+        {
+          "id": "yield",
+          "term": "Yield",
+          "group": "Fixed income",
+          "formalDefinition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+          "whyItMatters": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+          "commonExaminationError": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+        },
+        {
+          "id": "termStructure",
+          "term": "Term structure of interest rates",
+          "group": "Fixed income",
+          "formalDefinition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+          "whyItMatters": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+          "commonExaminationError": "Assuming the entire curve is explained by expected future short rates alone."
+        },
+        {
+          "id": "slope",
+          "term": "Yield-curve slope",
+          "group": "Fixed income",
+          "formalDefinition": "The difference between yields at two maturities, stated with the order of subtraction.",
+          "whyItMatters": "It summarizes whether the curve rises or falls between the selected points.",
+          "commonExaminationError": "Calling a curve inverted without stating the maturities or the sign convention."
+        },
+        {
+          "id": "termPremium",
+          "term": "Term premium",
+          "group": "Fixed income",
+          "formalDefinition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+          "whyItMatters": "It can steepen or flatten the curve independently of expected future short rates.",
+          "commonExaminationError": "Treating a long-term yield as a direct forecast of the average future policy rate."
+        },
+        {
+          "id": "duration",
+          "term": "Duration",
+          "group": "Fixed income",
+          "formalDefinition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+          "whyItMatters": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+          "commonExaminationError": "Using maturity alone to estimate price sensitivity."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "term structure and slope",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "maturity",
+            "termStructure",
+            "slope"
+          ]
+        },
+        {
+          "subtopic": "market pricing mechanism",
+          "section": "Economic Logic",
+          "definitionIds": [
+            "yield",
+            "termPremium"
+          ]
+        },
+        {
+          "subtopic": "duration and decisions",
+          "section": "Interpretation",
+          "definitionIds": [
+            "duration"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Inverted Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+        "informationIsolated": "The signal is expected future short rates, policy restraint, inflation expectations, term premium, and demand for long-duration safety. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time.",
+        "decisionEnabled": "The decision is how to interpret market expectations without treating inversion as a deterministic recession signal. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+        "validityAssumptions": "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+        "criticalQuestion": "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+      },
+      "nodes": {
+        "inverted_yield_curve-question": {
+          "text": "Why can short-term yields exceed long-term yields, and what does that inversion reveal about expected policy and future conditions?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "10-year minus 2-year slope",
+          "lhsLatex": "\\text{10Y minus 2Y slope}",
+          "relationLatex": "=",
+          "rhsLatex": "y_{10Y} - y_{2Y}",
+          "latex": "\\text{10Y minus 2Y slope} = y_{10Y} - y_{2Y}",
+          "sourceId": "treasury_yield_curve_dec_2023",
+          "glossary": {
+            "maturity": {
+              "term": "Maturity",
+              "definition": "The date on which a debt instrument’s principal is contractually repaid.",
+              "location": "Bond terms and fixed-income market data.",
+              "financialInterpretation": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+              "commonExaminationTrap": "Treating maturity as the same thing as duration."
+            },
+            "yield": {
+              "term": "Yield",
+              "definition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+              "location": "Bond price and yield quotation.",
+              "financialInterpretation": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+              "commonExaminationTrap": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+            },
+            "termStructure": {
+              "term": "Term structure of interest rates",
+              "definition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+              "location": "Yield-curve data and fixed-income valuation.",
+              "financialInterpretation": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+              "commonExaminationTrap": "Assuming the entire curve is explained by expected future short rates alone."
+            },
+            "slope": {
+              "term": "Yield-curve slope",
+              "definition": "The difference between yields at two maturities, stated with the order of subtraction.",
+              "location": "Derived from the yield curve.",
+              "financialInterpretation": "It summarizes whether the curve rises or falls between the selected points.",
+              "commonExaminationTrap": "Calling a curve inverted without stating the maturities or the sign convention."
+            },
+            "termPremium": {
+              "term": "Term premium",
+              "definition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+              "location": "Derived fixed-income interpretation.",
+              "financialInterpretation": "It can steepen or flatten the curve independently of expected future short rates.",
+              "commonExaminationTrap": "Treating a long-term yield as a direct forecast of the average future policy rate."
+            },
+            "duration": {
+              "term": "Duration",
+              "definition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+              "location": "Bond valuation and risk analysis.",
+              "financialInterpretation": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+              "commonExaminationTrap": "Using maturity alone to estimate price sensitivity."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "The U.S. Treasury reported a 2-year yield of 0.78% and a 10-year yield of 1.63% on January 3, 2022. On December 1, 2023, it reported 4.73% for 2 years and 4.22% for 10 years.",
+            "Inverted Yield Curve matters because the rate changes with the maturity horizon. The shape is information about how the market prices time, policy, inflation, growth, and duration risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "Why can short-term yields exceed long-term yields, and what does that inversion reveal about expected policy and future conditions?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Inverted Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+            "An inverted curve places shorter-maturity yields above longer-maturity yields. On December 1, 2023, the 2-year Treasury yield was 4.73% and the 10-year yield was 4.22%, producing a negative 0.51 percentage-point slope.",
+            "The signal is expected future short rates, policy restraint, inflation expectations, term premium, and demand for long-duration safety. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "A longer maturity exposes the investor to more uncertainty about inflation, policy, reinvestment, liquidity, and the future price of risk. The required yield therefore includes more than a simple forecast of the central bank’s next move.",
+            "An inversion can arise when current policy is restrictive and investors expect future short rates to be lower, when long-duration assets attract safety demand, or when the term premium is unusually low. The shape identifies a pricing relationship; it does not identify one cause without decomposition.",
+            "Treasury’s own methodology states that its par yields are interpolated from indicative bid-side quotations and read at fixed maturities. The data is a market measure with a defined construction process, not a direct observation of every borrower’s funding cost."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Using the dated Treasury fields, the selected curve type is identified by comparing the 10-year and 2-year maturities. An inverted curve places shorter-maturity yields above longer-maturity yields. On December 1, 2023, the 2-year Treasury yield was 4.73% and the 10-year yield was 4.22%, producing a negative 0.51 percentage-point slope.",
+            "The slope convention must be stated. This lesson uses the 10-year yield minus the 2-year yield. A positive result means the 10-year yield is higher; a negative result means the 2-year yield is higher.",
+            "The observed slopes are +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023. The subtraction shows the direction of the relationship; the explanation requires expected rates, term premium, inflation, liquidity, supply, and demand."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "On December 1, 2023, investors demanded more yield for lending two years than ten years. That pattern said the market viewed near-term policy as unusually tight relative to the longer horizon.",
+            "The line’s direction is a clue about how investors price time. It is not a complete prediction of the economy.",
+            "That distinction is why the curve is a diagnostic input to a forecast, not the forecast itself."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "A normal curve rises with maturity. A flat curve shows little difference between selected maturities. An inverted curve falls with maturity. These labels describe shape, not a complete macroeconomic diagnosis.",
+            "No universal slope threshold has the same meaning in every rate regime. Compare the same maturity pair across time, inspect the whole curve, and separate nominal yields from real yields and inflation expectations.",
+            "The 2-year versus 10-year slope is useful because it is widely followed, but it is not the whole curve. The front end, belly, and long end can send different signals."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "The Inverted Yield Curve reading is the dated relationship captured by the Treasury data: An inverted curve places shorter-maturity yields above longer-maturity yields. On December 1, 2023, the 2-year Treasury yield was 4.73% and the 10-year yield was 4.22%, producing a negative 0.51 percentage-point slope.",
+            "The decision is how to interpret market expectations without treating inversion as a deterministic recession signal. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+            "An inversion is a market-pricing condition, not a calendar forecast. It can persist, flatten, or reverse before the economy turns.",
+            "The curve does not directly measure corporate credit spreads, bank funding costs, mortgage rates, or the realized path of future rates. Those decisions require adding credit, liquidity, optionality, and instrument-specific risk."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "The Treasury observations resolve the lesson without a manufactured example. On January 3, 2022, the 10-year yield exceeded the 2-year yield by +0.85 percentage points. On December 1, 2023, the 10-year yield was below the 2-year yield by -0.51 percentage points.",
+            "The durable lesson is that Inverted Yield Curve is a relationship across maturities. The shape matters because it changes how a finance professional reads policy expectations, duration exposure, funding cost, and valuation risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022 and December 2023",
+            "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+            "summary": "Official Treasury par-yield tables provide dated 2-year and 10-year rates for an upward-sloping curve and an inverted curve. The lesson derives the slope from same-date fields.",
+            "rows": [
+              {
+                "item": "January 3, 2022 2-year Treasury par yield",
+                "value": "0.78%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year Treasury par yield",
+                "value": "1.63%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year minus 2-year slope",
+                "value": "+0.85 percentage points",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Derived from same-date Treasury fields"
+              },
+              {
+                "item": "December 1, 2023 2-year Treasury par yield",
+                "value": "4.73%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year Treasury par yield",
+                "value": "4.22%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year minus 2-year slope",
+                "value": "-0.51 percentage points",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Derived from same-date Treasury fields"
+              }
+            ],
+            "image": "/evidence/treasury-yield-curve-excerpt.svg",
+            "imageSource": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Inverted Yield Curve: decision architecture",
+            "source": "treasury_yield_curve_jan_2022",
+            "inputs": [
+              "Maturity",
+              "Yield",
+              "Term structure of interest rates"
+            ],
+            "transformation": "An inverted curve places shorter-maturity yields above longer-maturity yields. On December 1, 2023, the 2-year Treasury yield was 4.73% and the 10-year yield was 4.22%, producing a negative 0.51 percentage-point slope.",
+            "decision": "The decision is how to interpret market expectations without treating inversion as a deterministic recession signal. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "What does a yield curve show?",
+              "answer": "It shows the relationship between yields and maturities for comparable fixed-income instruments. The shape summarizes how the market prices time, expected short rates, and maturity risk."
+            },
+            {
+              "question": "What is the difference between a normal and inverted curve?",
+              "answer": "A normal curve has longer-maturity yields above shorter-maturity yields. An inverted curve has shorter-maturity yields above longer-maturity yields. The sign must be tied to the maturities being compared."
+            },
+            {
+              "question": "What does the 10-year minus 2-year slope measure?",
+              "answer": "It measures the yield difference between the 10-year and 2-year maturities. A positive result means the long rate is higher; a negative result means the short rate is higher."
+            },
+            {
+              "question": "Why is an inverted curve not a recession forecast by itself?",
+              "answer": "The curve combines expected future short rates with term premium, liquidity, inflation compensation, supply, demand, and technical positioning. Inversion can be informative without determining timing or causation."
+            },
+            {
+              "question": "What is term premium?",
+              "answer": "Term premium is compensation for holding longer maturity rather than rolling short instruments with the same expected return. It can move the long end independently of expected policy rates."
+            },
+            {
+              "question": "Why does duration matter when reading the curve?",
+              "answer": "Duration measures price sensitivity to yield changes. Two securities with similar maturity can have different duration because their coupon and cash-flow timing differ."
+            },
+            {
+              "question": "What happened in the two Treasury observations used here?",
+              "answer": "The slope moved from +0.85 percentage points on January 3, 2022 to -0.51 percentage points on December 1, 2023. The relationship changed from upward sloping to inverted."
+            },
+            {
+              "question": "What should a finance student inspect after observing inversion?",
+              "answer": "Inspect the entire curve, the expected policy path, inflation compensation, term premium, credit spreads, lending standards, and the cash-flow sensitivity of the specific asset or liability."
+            },
+            {
+              "question": "Why are Treasury par yields not identical to every bond’s yield?",
+              "answer": "Treasury par yields are interpolated curve points from indicative bid-side quotations at fixed maturities. A specific bond’s yield also reflects coupon, exact maturity, liquidity, and other security-specific features."
+            },
+            {
+              "question": "How can a curve affect a company’s financing decision?",
+              "answer": "It changes the relative cost and risk of borrowing at different maturities. The company must weigh current coupon, refinancing risk, duration exposure, liquidity, and the probability that future rates differ from current prices."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-22",
+        "anchorDescription": "Official U.S. Treasury par-yield tables provide dated maturity points for Inverted Yield Curve.",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_022__normal_yield_curve",
+      "topicId": "normal_yield_curve",
+      "canonicalName": "Normal Yield Curve",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "The long end carried the higher yield.",
+      "dek": "Two official Treasury observations show how the shape of the curve changes the question finance professionals ask.",
+      "sources": {
+        "treasury_yield_curve_jan_2022": {
+          "id": "treasury_yield_curve_jan_2022",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve",
+          "tier": 1
+        },
+        "treasury_yield_curve_dec_2023": {
+          "id": "treasury_yield_curve_dec_2023",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "treasury_yield_curve_jan_2022",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve"
+        },
+        {
+          "id": "treasury_yield_curve_dec_2023",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "maturity",
+          "term": "Maturity",
+          "group": "Fixed income",
+          "formalDefinition": "The date on which a debt instrument’s principal is contractually repaid.",
+          "whyItMatters": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+          "commonExaminationError": "Treating maturity as the same thing as duration."
+        },
+        {
+          "id": "yield",
+          "term": "Yield",
+          "group": "Fixed income",
+          "formalDefinition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+          "whyItMatters": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+          "commonExaminationError": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+        },
+        {
+          "id": "termStructure",
+          "term": "Term structure of interest rates",
+          "group": "Fixed income",
+          "formalDefinition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+          "whyItMatters": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+          "commonExaminationError": "Assuming the entire curve is explained by expected future short rates alone."
+        },
+        {
+          "id": "slope",
+          "term": "Yield-curve slope",
+          "group": "Fixed income",
+          "formalDefinition": "The difference between yields at two maturities, stated with the order of subtraction.",
+          "whyItMatters": "It summarizes whether the curve rises or falls between the selected points.",
+          "commonExaminationError": "Calling a curve inverted without stating the maturities or the sign convention."
+        },
+        {
+          "id": "termPremium",
+          "term": "Term premium",
+          "group": "Fixed income",
+          "formalDefinition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+          "whyItMatters": "It can steepen or flatten the curve independently of expected future short rates.",
+          "commonExaminationError": "Treating a long-term yield as a direct forecast of the average future policy rate."
+        },
+        {
+          "id": "duration",
+          "term": "Duration",
+          "group": "Fixed income",
+          "formalDefinition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+          "whyItMatters": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+          "commonExaminationError": "Using maturity alone to estimate price sensitivity."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "term structure and slope",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "maturity",
+            "termStructure",
+            "slope"
+          ]
+        },
+        {
+          "subtopic": "market pricing mechanism",
+          "section": "Economic Logic",
+          "definitionIds": [
+            "yield",
+            "termPremium"
+          ]
+        },
+        {
+          "subtopic": "duration and decisions",
+          "section": "Interpretation",
+          "definitionIds": [
+            "duration"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Normal Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+        "informationIsolated": "The signal is term premium, expected inflation, expected short rates, and compensation for duration risk. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time.",
+        "decisionEnabled": "The decision is how to finance across maturities and how to distinguish a higher long rate from a forecast of stronger growth. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+        "validityAssumptions": "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+        "criticalQuestion": "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+      },
+      "nodes": {
+        "normal_yield_curve-question": {
+          "text": "Why can longer maturity require a higher yield than shorter maturity, and what does that upward slope price?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "10-year minus 2-year slope",
+          "lhsLatex": "\\text{10Y minus 2Y slope}",
+          "relationLatex": "=",
+          "rhsLatex": "y_{10Y} - y_{2Y}",
+          "latex": "\\text{10Y minus 2Y slope} = y_{10Y} - y_{2Y}",
+          "sourceId": "treasury_yield_curve_dec_2023",
+          "glossary": {
+            "maturity": {
+              "term": "Maturity",
+              "definition": "The date on which a debt instrument’s principal is contractually repaid.",
+              "location": "Bond terms and fixed-income market data.",
+              "financialInterpretation": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+              "commonExaminationTrap": "Treating maturity as the same thing as duration."
+            },
+            "yield": {
+              "term": "Yield",
+              "definition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+              "location": "Bond price and yield quotation.",
+              "financialInterpretation": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+              "commonExaminationTrap": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+            },
+            "termStructure": {
+              "term": "Term structure of interest rates",
+              "definition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+              "location": "Yield-curve data and fixed-income valuation.",
+              "financialInterpretation": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+              "commonExaminationTrap": "Assuming the entire curve is explained by expected future short rates alone."
+            },
+            "slope": {
+              "term": "Yield-curve slope",
+              "definition": "The difference between yields at two maturities, stated with the order of subtraction.",
+              "location": "Derived from the yield curve.",
+              "financialInterpretation": "It summarizes whether the curve rises or falls between the selected points.",
+              "commonExaminationTrap": "Calling a curve inverted without stating the maturities or the sign convention."
+            },
+            "termPremium": {
+              "term": "Term premium",
+              "definition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+              "location": "Derived fixed-income interpretation.",
+              "financialInterpretation": "It can steepen or flatten the curve independently of expected future short rates.",
+              "commonExaminationTrap": "Treating a long-term yield as a direct forecast of the average future policy rate."
+            },
+            "duration": {
+              "term": "Duration",
+              "definition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+              "location": "Bond valuation and risk analysis.",
+              "financialInterpretation": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+              "commonExaminationTrap": "Using maturity alone to estimate price sensitivity."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "The U.S. Treasury reported a 2-year yield of 0.78% and a 10-year yield of 1.63% on January 3, 2022. On December 1, 2023, it reported 4.73% for 2 years and 4.22% for 10 years.",
+            "Normal Yield Curve matters because the rate changes with the maturity horizon. The shape is information about how the market prices time, policy, inflation, growth, and duration risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "Why can longer maturity require a higher yield than shorter maturity, and what does that upward slope price?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Normal Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+            "A normal curve places longer-maturity yields above shorter-maturity yields. On January 3, 2022, the 10-year Treasury yield was 1.63% and the 2-year yield was 0.78%, producing a positive 0.85 percentage-point slope.",
+            "The signal is term premium, expected inflation, expected short rates, and compensation for duration risk. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "A longer maturity exposes the investor to more uncertainty about inflation, policy, reinvestment, liquidity, and the future price of risk. The required yield therefore includes more than a simple forecast of the central bank’s next move.",
+            "An upward slope can reflect expected increases in future short rates, positive term premium, inflation uncertainty, or a supply and demand imbalance in long-duration securities. The slope is therefore a bundle of prices, not a single forecast.",
+            "Treasury’s own methodology states that its par yields are interpolated from indicative bid-side quotations and read at fixed maturities. The data is a market measure with a defined construction process, not a direct observation of every borrower’s funding cost."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Using the dated Treasury fields, the selected curve type is identified by comparing the 10-year and 2-year maturities. A normal curve places longer-maturity yields above shorter-maturity yields. On January 3, 2022, the 10-year Treasury yield was 1.63% and the 2-year yield was 0.78%, producing a positive 0.85 percentage-point slope.",
+            "The slope convention must be stated. This lesson uses the 10-year yield minus the 2-year yield. A positive result means the 10-year yield is higher; a negative result means the 2-year yield is higher.",
+            "The observed slopes are +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023. The subtraction shows the direction of the relationship; the explanation requires expected rates, term premium, inflation, liquidity, supply, and demand."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "On January 3, 2022, investors demanded more yield to lend for ten years than for two years. The longer loan carried more time and uncertainty.",
+            "The line’s direction is a clue about how investors price time. It is not a complete prediction of the economy.",
+            "That distinction is why the curve is a diagnostic input to a forecast, not the forecast itself."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "A normal curve rises with maturity. A flat curve shows little difference between selected maturities. An inverted curve falls with maturity. These labels describe shape, not a complete macroeconomic diagnosis.",
+            "No universal slope threshold has the same meaning in every rate regime. Compare the same maturity pair across time, inspect the whole curve, and separate nominal yields from real yields and inflation expectations.",
+            "The 2-year versus 10-year slope is useful because it is widely followed, but it is not the whole curve. The front end, belly, and long end can send different signals."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "The Normal Yield Curve reading is the dated relationship captured by the Treasury data: A normal curve places longer-maturity yields above shorter-maturity yields. On January 3, 2022, the 10-year Treasury yield was 1.63% and the 2-year yield was 0.78%, producing a positive 0.85 percentage-point slope.",
+            "The decision is how to finance across maturities and how to distinguish a higher long rate from a forecast of stronger growth. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+            "An upward slope does not prove that growth will accelerate. It can also reflect inflation risk, term premium, or supply and demand for duration.",
+            "The curve does not directly measure corporate credit spreads, bank funding costs, mortgage rates, or the realized path of future rates. Those decisions require adding credit, liquidity, optionality, and instrument-specific risk."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "The Treasury observations resolve the lesson without a manufactured example. On January 3, 2022, the 10-year yield exceeded the 2-year yield by +0.85 percentage points. On December 1, 2023, the 10-year yield was below the 2-year yield by -0.51 percentage points.",
+            "The durable lesson is that Normal Yield Curve is a relationship across maturities. The shape matters because it changes how a finance professional reads policy expectations, duration exposure, funding cost, and valuation risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022 and December 2023",
+            "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+            "summary": "Official Treasury par-yield tables provide dated 2-year and 10-year rates for an upward-sloping curve and an inverted curve. The lesson derives the slope from same-date fields.",
+            "rows": [
+              {
+                "item": "January 3, 2022 2-year Treasury par yield",
+                "value": "0.78%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year Treasury par yield",
+                "value": "1.63%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year minus 2-year slope",
+                "value": "+0.85 percentage points",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Derived from same-date Treasury fields"
+              },
+              {
+                "item": "December 1, 2023 2-year Treasury par yield",
+                "value": "4.73%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year Treasury par yield",
+                "value": "4.22%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year minus 2-year slope",
+                "value": "-0.51 percentage points",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Derived from same-date Treasury fields"
+              }
+            ],
+            "image": "/evidence/treasury-yield-curve-excerpt.svg",
+            "imageSource": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Normal Yield Curve: decision architecture",
+            "source": "treasury_yield_curve_jan_2022",
+            "inputs": [
+              "Maturity",
+              "Yield",
+              "Term structure of interest rates"
+            ],
+            "transformation": "A normal curve places longer-maturity yields above shorter-maturity yields. On January 3, 2022, the 10-year Treasury yield was 1.63% and the 2-year yield was 0.78%, producing a positive 0.85 percentage-point slope.",
+            "decision": "The decision is how to finance across maturities and how to distinguish a higher long rate from a forecast of stronger growth. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "What does a yield curve show?",
+              "answer": "It shows the relationship between yields and maturities for comparable fixed-income instruments. The shape summarizes how the market prices time, expected short rates, and maturity risk."
+            },
+            {
+              "question": "What is the difference between a normal and inverted curve?",
+              "answer": "A normal curve has longer-maturity yields above shorter-maturity yields. An inverted curve has shorter-maturity yields above longer-maturity yields. The sign must be tied to the maturities being compared."
+            },
+            {
+              "question": "What does the 10-year minus 2-year slope measure?",
+              "answer": "It measures the yield difference between the 10-year and 2-year maturities. A positive result means the long rate is higher; a negative result means the short rate is higher."
+            },
+            {
+              "question": "Why is an inverted curve not a recession forecast by itself?",
+              "answer": "The curve combines expected future short rates with term premium, liquidity, inflation compensation, supply, demand, and technical positioning. Inversion can be informative without determining timing or causation."
+            },
+            {
+              "question": "What is term premium?",
+              "answer": "Term premium is compensation for holding longer maturity rather than rolling short instruments with the same expected return. It can move the long end independently of expected policy rates."
+            },
+            {
+              "question": "Why does duration matter when reading the curve?",
+              "answer": "Duration measures price sensitivity to yield changes. Two securities with similar maturity can have different duration because their coupon and cash-flow timing differ."
+            },
+            {
+              "question": "What happened in the two Treasury observations used here?",
+              "answer": "The slope moved from +0.85 percentage points on January 3, 2022 to -0.51 percentage points on December 1, 2023. The relationship changed from upward sloping to inverted."
+            },
+            {
+              "question": "What should a finance student inspect after observing inversion?",
+              "answer": "Inspect the entire curve, the expected policy path, inflation compensation, term premium, credit spreads, lending standards, and the cash-flow sensitivity of the specific asset or liability."
+            },
+            {
+              "question": "Why are Treasury par yields not identical to every bond’s yield?",
+              "answer": "Treasury par yields are interpolated curve points from indicative bid-side quotations at fixed maturities. A specific bond’s yield also reflects coupon, exact maturity, liquidity, and other security-specific features."
+            },
+            {
+              "question": "How can a curve affect a company’s financing decision?",
+              "answer": "It changes the relative cost and risk of borrowing at different maturities. The company must weigh current coupon, refinancing risk, duration exposure, liquidity, and the probability that future rates differ from current prices."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-22",
+        "anchorDescription": "Official U.S. Treasury par-yield tables provide dated maturity points for Normal Yield Curve.",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_022__yield_curve",
+      "topicId": "yield_curve",
+      "canonicalName": "Yield Curve",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "The curve changed shape because the time horizon changed the question.",
+      "dek": "Two official Treasury observations show how the shape of the curve changes the question finance professionals ask.",
+      "sources": {
+        "treasury_yield_curve_jan_2022": {
+          "id": "treasury_yield_curve_jan_2022",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve",
+          "tier": 1
+        },
+        "treasury_yield_curve_dec_2023": {
+          "id": "treasury_yield_curve_dec_2023",
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "treasury_yield_curve_jan_2022",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202201&type=daily_treasury_yield_curve"
+        },
+        {
+          "id": "treasury_yield_curve_dec_2023",
+          "tier": 1,
+          "title": "U.S. Treasury Daily Treasury Par Yield Curve Rates, December 2023",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "maturity",
+          "term": "Maturity",
+          "group": "Fixed income",
+          "formalDefinition": "The date on which a debt instrument’s principal is contractually repaid.",
+          "whyItMatters": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+          "commonExaminationError": "Treating maturity as the same thing as duration."
+        },
+        {
+          "id": "yield",
+          "term": "Yield",
+          "group": "Fixed income",
+          "formalDefinition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+          "whyItMatters": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+          "commonExaminationError": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+        },
+        {
+          "id": "termStructure",
+          "term": "Term structure of interest rates",
+          "group": "Fixed income",
+          "formalDefinition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+          "whyItMatters": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+          "commonExaminationError": "Assuming the entire curve is explained by expected future short rates alone."
+        },
+        {
+          "id": "slope",
+          "term": "Yield-curve slope",
+          "group": "Fixed income",
+          "formalDefinition": "The difference between yields at two maturities, stated with the order of subtraction.",
+          "whyItMatters": "It summarizes whether the curve rises or falls between the selected points.",
+          "commonExaminationError": "Calling a curve inverted without stating the maturities or the sign convention."
+        },
+        {
+          "id": "termPremium",
+          "term": "Term premium",
+          "group": "Fixed income",
+          "formalDefinition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+          "whyItMatters": "It can steepen or flatten the curve independently of expected future short rates.",
+          "commonExaminationError": "Treating a long-term yield as a direct forecast of the average future policy rate."
+        },
+        {
+          "id": "duration",
+          "term": "Duration",
+          "group": "Fixed income",
+          "formalDefinition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+          "whyItMatters": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+          "commonExaminationError": "Using maturity alone to estimate price sensitivity."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "term structure and slope",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "maturity",
+            "termStructure",
+            "slope"
+          ]
+        },
+        {
+          "subtopic": "market pricing mechanism",
+          "section": "Economic Logic",
+          "definitionIds": [
+            "yield",
+            "termPremium"
+          ]
+        },
+        {
+          "subtopic": "duration and decisions",
+          "section": "Interpretation",
+          "definitionIds": [
+            "duration"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+        "informationIsolated": "The signal is the market’s term structure of interest rates and the expectations and risk premia embedded in each maturity. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time.",
+        "decisionEnabled": "The decision is how to price debt, value fixed-income cash flows, assess duration exposure, and interpret the policy cycle. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+        "validityAssumptions": "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+        "criticalQuestion": "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+      },
+      "nodes": {
+        "yield_curve-question": {
+          "text": "What does the pattern of yields across maturities reveal about the market’s pricing of time, inflation, policy, growth, and duration risk?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "10-year minus 2-year slope",
+          "lhsLatex": "\\text{10Y minus 2Y slope}",
+          "relationLatex": "=",
+          "rhsLatex": "y_{10Y} - y_{2Y}",
+          "latex": "\\text{10Y minus 2Y slope} = y_{10Y} - y_{2Y}",
+          "sourceId": "treasury_yield_curve_dec_2023",
+          "glossary": {
+            "maturity": {
+              "term": "Maturity",
+              "definition": "The date on which a debt instrument’s principal is contractually repaid.",
+              "location": "Bond terms and fixed-income market data.",
+              "financialInterpretation": "It identifies the time horizon over which the investor carries rate, inflation, reinvestment, and credit exposure.",
+              "commonExaminationTrap": "Treating maturity as the same thing as duration."
+            },
+            "yield": {
+              "term": "Yield",
+              "definition": "The annualized return implied by a security’s price, cash flows, and maturity under a stated convention.",
+              "location": "Bond price and yield quotation.",
+              "financialInterpretation": "It is the market price of lending over the instrument’s horizon, not a guaranteed realized return in every holding-period scenario.",
+              "commonExaminationTrap": "Comparing yields without aligning compounding, credit quality, liquidity, and maturity."
+            },
+            "termStructure": {
+              "term": "Term structure of interest rates",
+              "definition": "The relationship between yields and maturities for otherwise comparable fixed-income instruments.",
+              "location": "Yield-curve data and fixed-income valuation.",
+              "financialInterpretation": "It organizes the market’s pricing of time, expected short rates, and maturity risk.",
+              "commonExaminationTrap": "Assuming the entire curve is explained by expected future short rates alone."
+            },
+            "slope": {
+              "term": "Yield-curve slope",
+              "definition": "The difference between yields at two maturities, stated with the order of subtraction.",
+              "location": "Derived from the yield curve.",
+              "financialInterpretation": "It summarizes whether the curve rises or falls between the selected points.",
+              "commonExaminationTrap": "Calling a curve inverted without stating the maturities or the sign convention."
+            },
+            "termPremium": {
+              "term": "Term premium",
+              "definition": "The compensation investors require for holding a longer-maturity bond rather than rolling shorter-maturity investments with equivalent expected returns.",
+              "location": "Derived fixed-income interpretation.",
+              "financialInterpretation": "It can steepen or flatten the curve independently of expected future short rates.",
+              "commonExaminationTrap": "Treating a long-term yield as a direct forecast of the average future policy rate."
+            },
+            "duration": {
+              "term": "Duration",
+              "definition": "A measure of a bond price’s sensitivity to a change in yield, adjusted for the timing of cash flows.",
+              "location": "Bond valuation and risk analysis.",
+              "financialInterpretation": "Longer duration makes a security more sensitive to changes in the relevant yield curve.",
+              "commonExaminationTrap": "Using maturity alone to estimate price sensitivity."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "The U.S. Treasury reported a 2-year yield of 0.78% and a 10-year yield of 1.63% on January 3, 2022. On December 1, 2023, it reported 4.73% for 2 years and 4.22% for 10 years.",
+            "Yield Curve matters because the rate changes with the maturity horizon. The shape is information about how the market prices time, policy, inflation, growth, and duration risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What does the pattern of yields across maturities reveal about the market’s pricing of time, inflation, policy, growth, and duration risk?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Yield Curve exists because one interest rate cannot describe the cost of money across every maturity. The curve places comparable yields on a time axis therefore the relationship between horizons becomes visible.",
+            "A yield curve maps yields across maturities. The 10-year minus 2-year slope was +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023, therefore the same comparison moved from upward sloping to inverted.",
+            "The signal is the market’s term structure of interest rates and the expectations and risk premia embedded in each maturity. The curve therefore provides a market-implied framework for comparing funding cost, reinvestment risk, valuation sensitivity, and expectations across time."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "A longer maturity exposes the investor to more uncertainty about inflation, policy, reinvestment, liquidity, and the future price of risk. The required yield therefore includes more than a simple forecast of the central bank’s next move.",
+            "The curve combines expected future short rates with term premium and market technicals. A change in shape can come from the front end, the long end, or both, and the economic interpretation depends on which segment moved.",
+            "Treasury’s own methodology states that its par yields are interpolated from indicative bid-side quotations and read at fixed maturities. The data is a market measure with a defined construction process, not a direct observation of every borrower’s funding cost."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Using the dated Treasury fields, the selected curve type is identified by comparing the 10-year and 2-year maturities. A yield curve maps yields across maturities. The 10-year minus 2-year slope was +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023, therefore the same comparison moved from upward sloping to inverted.",
+            "The slope convention must be stated. This lesson uses the 10-year yield minus the 2-year yield. A positive result means the 10-year yield is higher; a negative result means the 2-year yield is higher.",
+            "The observed slopes are +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023. The subtraction shows the direction of the relationship; the explanation requires expected rates, term premium, inflation, liquidity, supply, and demand."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "A yield curve is a list of interest rates for different lending periods. Put the rates on a graph and the shape shows how the market prices short and long time horizons.",
+            "The line’s direction is a clue about how investors price time. It is not a complete prediction of the economy.",
+            "That distinction is why the curve is a diagnostic input to a forecast, not the forecast itself."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "A normal curve rises with maturity. A flat curve shows little difference between selected maturities. An inverted curve falls with maturity. These labels describe shape, not a complete macroeconomic diagnosis.",
+            "No universal slope threshold has the same meaning in every rate regime. Compare the same maturity pair across time, inspect the whole curve, and separate nominal yields from real yields and inflation expectations.",
+            "The 2-year versus 10-year slope is useful because it is widely followed, but it is not the whole curve. The front end, belly, and long end can send different signals."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "The Yield Curve reading is the dated relationship captured by the Treasury data: A yield curve maps yields across maturities. The 10-year minus 2-year slope was +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023, therefore the same comparison moved from upward sloping to inverted.",
+            "The decision is how to price debt, value fixed-income cash flows, assess duration exposure, and interpret the policy cycle. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "A sophisticated reading asks whether the move came from expected short rates, term premium, inflation compensation, liquidity, technical demand, or a change in the policy path."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The comparison assumes the two rates are measured on the same date, use the same Treasury par-yield methodology, and represent comparable risk-free nominal instruments.",
+            "The curve is not a pure survey of expected rates. It combines expected future short rates with term premium, liquidity, convexity, supply, demand, and technical positioning.",
+            "The curve does not directly measure corporate credit spreads, bank funding costs, mortgage rates, or the realized path of future rates. Those decisions require adding credit, liquidity, optionality, and instrument-specific risk."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "The Treasury observations resolve the lesson without a manufactured example. On January 3, 2022, the 10-year yield exceeded the 2-year yield by +0.85 percentage points. On December 1, 2023, the 10-year yield was below the 2-year yield by -0.51 percentage points.",
+            "The durable lesson is that Yield Curve is a relationship across maturities. The shape matters because it changes how a finance professional reads policy expectations, duration exposure, funding cost, and valuation risk."
+          ],
+          "sourceIds": [
+            "treasury_yield_curve_jan_2022",
+            "treasury_yield_curve_dec_2023"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "U.S. Treasury Daily Treasury Par Yield Curve Rates, January 2022 and December 2023",
+            "sourceUrl": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve",
+            "summary": "Official Treasury par-yield tables provide dated 2-year and 10-year rates for an upward-sloping curve and an inverted curve. The lesson derives the slope from same-date fields.",
+            "rows": [
+              {
+                "item": "January 3, 2022 2-year Treasury par yield",
+                "value": "0.78%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year Treasury par yield",
+                "value": "1.63%",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 01/03/2022"
+              },
+              {
+                "item": "January 3, 2022 10-year minus 2-year slope",
+                "value": "+0.85 percentage points",
+                "source": "treasury_yield_curve_jan_2022",
+                "sourceField": "Derived from same-date Treasury fields"
+              },
+              {
+                "item": "December 1, 2023 2-year Treasury par yield",
+                "value": "4.73%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year Treasury par yield",
+                "value": "4.22%",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Daily Treasury Par Yield Curve Rates, 12/01/2023"
+              },
+              {
+                "item": "December 1, 2023 10-year minus 2-year slope",
+                "value": "-0.51 percentage points",
+                "source": "treasury_yield_curve_dec_2023",
+                "sourceField": "Derived from same-date Treasury fields"
+              }
+            ],
+            "image": "/evidence/treasury-yield-curve-excerpt.svg",
+            "imageSource": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value=202312&type=daily_treasury_yield_curve"
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Yield Curve: decision architecture",
+            "source": "treasury_yield_curve_jan_2022",
+            "inputs": [
+              "Maturity",
+              "Yield",
+              "Term structure of interest rates"
+            ],
+            "transformation": "A yield curve maps yields across maturities. The 10-year minus 2-year slope was +0.85 percentage points on January 3, 2022 and -0.51 percentage points on December 1, 2023, therefore the same comparison moved from upward sloping to inverted.",
+            "decision": "The decision is how to price debt, value fixed-income cash flows, assess duration exposure, and interpret the policy cycle. The curve should change a financing, valuation, hedging, or macro assumption only after the investor identifies which maturities moved and why.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "What does a yield curve show?",
+              "answer": "It shows the relationship between yields and maturities for comparable fixed-income instruments. The shape summarizes how the market prices time, expected short rates, and maturity risk."
+            },
+            {
+              "question": "What is the difference between a normal and inverted curve?",
+              "answer": "A normal curve has longer-maturity yields above shorter-maturity yields. An inverted curve has shorter-maturity yields above longer-maturity yields. The sign must be tied to the maturities being compared."
+            },
+            {
+              "question": "What does the 10-year minus 2-year slope measure?",
+              "answer": "It measures the yield difference between the 10-year and 2-year maturities. A positive result means the long rate is higher; a negative result means the short rate is higher."
+            },
+            {
+              "question": "Why is an inverted curve not a recession forecast by itself?",
+              "answer": "The curve combines expected future short rates with term premium, liquidity, inflation compensation, supply, demand, and technical positioning. Inversion can be informative without determining timing or causation."
+            },
+            {
+              "question": "What is term premium?",
+              "answer": "Term premium is compensation for holding longer maturity rather than rolling short instruments with the same expected return. It can move the long end independently of expected policy rates."
+            },
+            {
+              "question": "Why does duration matter when reading the curve?",
+              "answer": "Duration measures price sensitivity to yield changes. Two securities with similar maturity can have different duration because their coupon and cash-flow timing differ."
+            },
+            {
+              "question": "What happened in the two Treasury observations used here?",
+              "answer": "The slope moved from +0.85 percentage points on January 3, 2022 to -0.51 percentage points on December 1, 2023. The relationship changed from upward sloping to inverted."
+            },
+            {
+              "question": "What should a finance student inspect after observing inversion?",
+              "answer": "Inspect the entire curve, the expected policy path, inflation compensation, term premium, credit spreads, lending standards, and the cash-flow sensitivity of the specific asset or liability."
+            },
+            {
+              "question": "Why are Treasury par yields not identical to every bond’s yield?",
+              "answer": "Treasury par yields are interpolated curve points from indicative bid-side quotations at fixed maturities. A specific bond’s yield also reflects coupon, exact maturity, liquidity, and other security-specific features."
+            },
+            {
+              "question": "How can a curve affect a company’s financing decision?",
+              "answer": "It changes the relative cost and risk of borrowing at different maturities. The company must weigh current coupon, refinancing risk, duration exposure, liquidity, and the probability that future rates differ from current prices."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-22",
+        "anchorDescription": "Official U.S. Treasury par-yield tables provide dated maturity points for Yield Curve.",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    }
+  ],
+  "qualityNote": "This batch contains source-bound prose, field-level evidence exhibits, explanatory diagrams, and question banks. It remains subject to editorial review before publication."
+}

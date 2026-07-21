@@ -1,0 +1,1163 @@
+{
+  "schemaVersion": "deep-dive-generated-modeling-batch.v1",
+  "batchId": "lessons-modeling_studio-03",
+  "status": "generated_for_review",
+  "lessonCount": 3,
+  "lessons": [
+    {
+      "id": "generated_modeling_unlevered_dcf",
+      "topicId": "unlevered_dcf",
+      "canonicalName": "Unlevered DCF",
+      "kind": "modeling",
+      "format": "Modeling Lab",
+      "experienceType": "modeling_studio",
+      "eyebrow": "MBA Finance Modeling Lab",
+      "title": "Unlevered DCF: build the decision from the evidence",
+      "dek": "A source-disciplined build that connects inputs, dependencies, controls, and a scenario to one decision output.",
+      "sources": {
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        "nse_reliance_quote": {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        },
+        "nifty_50_methodology": {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "RBI FAQ: Government securities and Treasury Bill yields",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "sharpe_capm_1964": {
+          "id": "sharpe_capm_1964",
+          "tier": 2,
+          "title": "Sharpe (1964), Capital Asset Prices",
+          "url": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+        },
+        "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf": {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024, 25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "id": "nse_reliance_quote",
+          "tier": 1,
+          "title": "NSE quote and historical-data entry point for Reliance Industries",
+          "url": "https://www.nseindia.com/get-quote/equity/RELIANCE/reliance-industries-ltd."
+        },
+        {
+          "id": "nifty_50_methodology",
+          "tier": 1,
+          "title": "Nifty 50 index methodology and factsheet",
+          "url": "https://www.niftyindices.com/indices/equity/broad-based-indices/nifty--50"
+        },
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "RBI FAQ: Government securities and Treasury Bill yields",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "sharpe_capm_1964",
+          "tier": 2,
+          "title": "Sharpe (1964), Capital Asset Prices",
+          "url": "https://doi.org/10.1111/j.1540-6261.1964.tb02865.x"
+        },
+        {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1,
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "source-fact",
+          "term": "Historical fact",
+          "group": "Model construction",
+          "formalDefinition": "A reported or observed value whose document, field, period, and unit are identified before it enters the model.",
+          "whyItMatters": "It separates evidence from judgment.",
+          "commonExaminationError": "Treating a forecast or management target as if it were a historical fact."
+        },
+        {
+          "id": "explicit-assumption",
+          "term": "Explicit assumption",
+          "group": "Model construction",
+          "formalDefinition": "A forward-looking judgment entered deliberately into the model and exposed for review or scenario change.",
+          "whyItMatters": "It makes uncertainty visible and testable.",
+          "commonExaminationError": "Hiding an assumption inside a formula or hardcoding it into an output."
+        },
+        {
+          "id": "source-of-truth",
+          "term": "Source of truth",
+          "group": "Model construction",
+          "formalDefinition": "The single defined line item, schedule, or input register from which downstream model references should flow.",
+          "whyItMatters": "It prevents conflicting versions of the same economic quantity.",
+          "commonExaminationError": "Re-entering the same value in several schedules."
+        },
+        {
+          "id": "dependency",
+          "term": "Dependency",
+          "group": "Model construction",
+          "formalDefinition": "A causal or computational relationship in which one model output supplies an input to another calculation.",
+          "whyItMatters": "It explains how a scenario reaches the decision output.",
+          "commonExaminationError": "Showing formulas without identifying the order of transmission."
+        },
+        {
+          "id": "integrity-check",
+          "term": "Model integrity check",
+          "group": "Model construction",
+          "formalDefinition": "A test of an accounting identity, roll-forward, sign convention, or scenario relationship that should hold if the build is linked correctly.",
+          "whyItMatters": "It distinguishes a functioning model from a formatted worksheet.",
+          "commonExaminationError": "Using a balance check as proof that the assumptions are economically valid."
+        },
+        {
+          "id": "scenario-transmission",
+          "term": "Scenario transmission",
+          "group": "Model construction",
+          "formalDefinition": "The traced movement of one changed assumption through every material downstream dependency to the final decision output.",
+          "whyItMatters": "It converts a model from a static answer into an instrument for reasoning.",
+          "commonExaminationError": "Changing several assumptions at once and attributing the result to one driver."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "Source discipline",
+          "section": "Source Inputs",
+          "definitionIds": [
+            "source-fact",
+            "explicit-assumption",
+            "source-of-truth"
+          ]
+        },
+        {
+          "subtopic": "Build mechanics",
+          "section": "Construction Sequence",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Dependency architecture",
+          "section": "Dependency Architecture",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Model controls",
+          "section": "Model Integrity Checks",
+          "definitionIds": [
+            "integrity-check"
+          ]
+        },
+        {
+          "subtopic": "Scenario transmission",
+          "section": "Scenario Transmission",
+          "definitionIds": [
+            "scenario-transmission"
+          ]
+        },
+        {
+          "subtopic": "Decision interpretation",
+          "section": "Decision Interpretation",
+          "definitionIds": [
+            "explicit-assumption"
+          ]
+        },
+        {
+          "subtopic": "Review discipline",
+          "section": "Model Review Questions",
+          "definitionIds": [
+            "source-fact",
+            "integrity-check"
+          ]
+        }
+      ],
+      "nodes": {
+        "unlevered_dcf-scenario": {
+          "text": "Scenario change for Unlevered DCF: change one explicit assumption and trace the result through the dependency architecture.",
+          "citations": [
+            "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+          ]
+        }
+      },
+      "objective": "Build Unlevered DCF as a decision instrument for MBA finance work. The model must show which source inputs drive the output, how the dependencies transmit a change, which checks establish internal integrity, and which assumptions can reverse the decision.",
+      "inputs": [
+        {
+          "name": "FY2024-25 consolidated revenue",
+          "value": "₹10,71,174 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated EBITDA",
+          "value": "₹1,83,422 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated net profit",
+          "value": "₹81,309 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "Gross debt at March 31, 2025",
+          "value": "₹3,47,530 crore",
+          "unit": "INR crore; as of March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Financial Performance and Review, balance-sheet highlights",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "buildOrder": [
+        {
+          "title": "Define the decision and model boundary",
+          "detail": "State the output, horizon, currency, unit, and exclusions for Unlevered DCF before selecting formulas.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Load and classify source inputs",
+          "detail": "Enter historical facts with document fields and dates, distinguish observable market inputs from assumptions, and establish one source of truth for each quantity.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Build the operating or valuation mechanics",
+          "detail": "Apply the mechanics in dependency order: Forecast EBIT, apply operating taxes, add non-cash charges, subtract capital expenditure and investment in working capital, discount unlevered free cash flow at WACC, then subtract net debt and other senior claims to arrive at equity value.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Link the dependency architecture",
+          "detail": "Connect each schedule or calculation to the prior output, expose feedback loops, and keep any circularity treatment explicit.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Run controls and transmit a scenario",
+          "detail": "Run identity, roll-forward, unit, sign, and direction checks, then change one assumption and trace its effect to the decision output.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "graph": [
+        [
+          "Source inputs",
+          "Drivers and schedules"
+        ],
+        [
+          "Drivers and schedules",
+          "Core calculation"
+        ],
+        [
+          "Core calculation",
+          "Decision output"
+        ],
+        [
+          "Scenario assumption",
+          "Downstream outputs"
+        ],
+        [
+          "Integrity checks",
+          "Decision interpretation"
+        ]
+      ],
+      "checks": [
+        {
+          "title": "Source and unit check",
+          "detail": "Every input has a source, as-of date or research task, classification, and unit that matches the calculation using it.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Dependency check",
+          "detail": "Every material output references a named upstream input or schedule rather than a hardcoded result.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Identity or roll-forward check",
+          "detail": "The relevant accounting or mathematical identity and each schedule roll-forward reconcile in every modeled period.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Sign and direction check",
+          "detail": "A favorable and adverse change move each downstream line in the economically expected direction.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Scenario consistency check",
+          "detail": "The scenario changes the stated assumption only and the final output movement can be explained through the dependency graph.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "scenario": {
+        "sentence": "unlevered_dcf-scenario",
+        "trace": "Change one explicit assumption in Unlevered DCF, follow it through the named schedules and calculations, then record the exact decision output that changes and the reason for the change."
+      },
+      "output": "Use the completed Unlevered DCF build to compare the decision alternatives, identify the assumptions with the greatest effect, and state what evidence is still required before relying on the output.",
+      "auditQuestions": [
+        {
+          "question": "What decision does the Unlevered DCF build support?",
+          "answer": "How can operating cash generation be valued independently of the company’s current financing choices and then reconciled to equity value? The model is useful only when the decision, horizon, currency, and output are stated before the first input is entered. A calculation without a named decision can produce a precise number that no committee can use."
+        },
+        {
+          "question": "Which inputs are historical facts and which are assumptions?",
+          "answer": "Historical facts come from the cited filing, contract, regulatory record, or market observation and must retain their as-of date and unit. Assumptions are forward-looking judgments that must remain visible and changeable. Blending them makes an assumption look like evidence and prevents a reviewer from locating the model’s judgment."
+        },
+        {
+          "question": "What is the first dependency that should be checked?",
+          "answer": "Start with the source of truth for the build. For Unlevered DCF, that means confirming the input definitions, scope, period, unit, and classification before constructing downstream outputs. A downstream formula cannot repair a wrong source field."
+        },
+        {
+          "question": "How does the build avoid a hardcoded output?",
+          "answer": "Every material output must trace through the construction sequence described by the mechanics: Forecast EBIT, apply operating taxes, add non-cash charges, subtract capital expenditure and investment in working capital, discount unlevered free cash flow at WACC, then subtract net debt and other senior claims to arrive at equity value. If an output changes without a named input or dependency changing, the model contains a hardcode, broken link, or hidden plug."
+        },
+        {
+          "question": "Which integrity check would catch a broken dependency?",
+          "answer": "Use both an accounting or mathematical identity check and a direction-of-change check. The identity catches incomplete linkage. The direction check catches a model that balances while translating an economic change in the wrong direction."
+        },
+        {
+          "question": "How should a scenario be transmitted through the model?",
+          "answer": "Change one explicitly named assumption, record the before and after value, then trace every material downstream line in dependency order. The final decision output must move for a stated reason. A before-and-after headline without the transmission path is not a model explanation."
+        },
+        {
+          "question": "What would make the output misleading even if the checks pass?",
+          "answer": "A model can reconcile mechanically while using an inapplicable peer set, an inconsistent accounting definition, an unrealistic financing assumption, or an unexamined forecast relationship. Integrity checks prove internal consistency; they do not prove that the economic assumptions are true."
+        },
+        {
+          "question": "What should a reviewer ask before relying on the result?",
+          "answer": "The reviewer should ask which input has the greatest effect, which source field is least reliable, what assumption breaks first under stress, and what evidence would reverse the conclusion. Those questions test whether the builder understands the model rather than merely reproducing its formulas."
+        }
+      ],
+      "sections": [
+        {
+          "id": "decision-objective",
+          "heading": "Decision Objective",
+          "body": [
+            "Build Unlevered DCF to answer a bounded MBA finance decision: How can operating cash generation be valued independently of the company’s current financing choices and then reconciled to equity value?. The output must be decision-relevant, source-traceable, and sensitive to the assumptions that actually drive it."
+          ]
+        },
+        {
+          "id": "source-inputs",
+          "heading": "Source Inputs",
+          "body": [
+            "The input register separates historical facts, observable market inputs, and explicit assumptions. Any live field not present in the cited source remains a visible research task rather than an invented number."
+          ]
+        },
+        {
+          "id": "construction-sequence",
+          "heading": "Construction Sequence",
+          "body": [
+            "The build follows this mechanics stub: Forecast EBIT, apply operating taxes, add non-cash charges, subtract capital expenditure and investment in working capital, discount unlevered free cash flow at WACC, then subtract net debt and other senior claims to arrive at equity value.",
+            "Each step produces a named output that becomes an input to the next dependent step."
+          ]
+        },
+        {
+          "id": "dependency-architecture",
+          "heading": "Dependency Architecture",
+          "body": [
+            "The architecture identifies the source of truth, the forward links, and any feedback loop that can create circularity."
+          ]
+        },
+        {
+          "id": "model-integrity-checks",
+          "heading": "Model Integrity Checks",
+          "body": [
+            "A reviewer tests accounting identities, roll-forwards, source links, units, signs, and scenario direction before interpreting the final output."
+          ]
+        },
+        {
+          "id": "scenario-transmission",
+          "heading": "Scenario Transmission",
+          "body": [
+            "Change one material assumption, trace its effect through the dependency graph, and identify the output that changes the decision."
+          ]
+        },
+        {
+          "id": "decision-interpretation",
+          "heading": "Decision Interpretation",
+          "body": [
+            "The output answers the stated question only within the model boundary. It does not establish facts that were not sourced, nor does it remove the need to challenge the assumptions behind Unlevered DCF."
+          ]
+        },
+        {
+          "id": "model-review-questions",
+          "heading": "Model Review Questions",
+          "body": [
+            "The review drill tests whether the builder understands source discipline, dependency order, integrity checks, scenario movement, and the model’s limits."
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchType": "modeling_studio",
+        "sourceStatus": "source_pack_locked",
+        "sourceInputStatus": "real historical inputs where available; uncaptured live fields exposed as research tasks"
+      }
+    },
+    {
+      "id": "generated_modeling_dupont_analysis",
+      "topicId": "dupont_analysis",
+      "canonicalName": "DuPont Analysis",
+      "kind": "modeling",
+      "format": "Modeling Lab",
+      "experienceType": "modeling_studio",
+      "eyebrow": "MBA Finance Modeling Lab",
+      "title": "DuPont Analysis: build the decision from the evidence",
+      "dek": "A source-disciplined build that connects inputs, dependencies, controls, and a scenario to one decision output.",
+      "sources": {
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf": {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1,
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "source-fact",
+          "term": "Historical fact",
+          "group": "Model construction",
+          "formalDefinition": "A reported or observed value whose document, field, period, and unit are identified before it enters the model.",
+          "whyItMatters": "It separates evidence from judgment.",
+          "commonExaminationError": "Treating a forecast or management target as if it were a historical fact."
+        },
+        {
+          "id": "explicit-assumption",
+          "term": "Explicit assumption",
+          "group": "Model construction",
+          "formalDefinition": "A forward-looking judgment entered deliberately into the model and exposed for review or scenario change.",
+          "whyItMatters": "It makes uncertainty visible and testable.",
+          "commonExaminationError": "Hiding an assumption inside a formula or hardcoding it into an output."
+        },
+        {
+          "id": "source-of-truth",
+          "term": "Source of truth",
+          "group": "Model construction",
+          "formalDefinition": "The single defined line item, schedule, or input register from which downstream model references should flow.",
+          "whyItMatters": "It prevents conflicting versions of the same economic quantity.",
+          "commonExaminationError": "Re-entering the same value in several schedules."
+        },
+        {
+          "id": "dependency",
+          "term": "Dependency",
+          "group": "Model construction",
+          "formalDefinition": "A causal or computational relationship in which one model output supplies an input to another calculation.",
+          "whyItMatters": "It explains how a scenario reaches the decision output.",
+          "commonExaminationError": "Showing formulas without identifying the order of transmission."
+        },
+        {
+          "id": "integrity-check",
+          "term": "Model integrity check",
+          "group": "Model construction",
+          "formalDefinition": "A test of an accounting identity, roll-forward, sign convention, or scenario relationship that should hold if the build is linked correctly.",
+          "whyItMatters": "It distinguishes a functioning model from a formatted worksheet.",
+          "commonExaminationError": "Using a balance check as proof that the assumptions are economically valid."
+        },
+        {
+          "id": "scenario-transmission",
+          "term": "Scenario transmission",
+          "group": "Model construction",
+          "formalDefinition": "The traced movement of one changed assumption through every material downstream dependency to the final decision output.",
+          "whyItMatters": "It converts a model from a static answer into an instrument for reasoning.",
+          "commonExaminationError": "Changing several assumptions at once and attributing the result to one driver."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "Source discipline",
+          "section": "Source Inputs",
+          "definitionIds": [
+            "source-fact",
+            "explicit-assumption",
+            "source-of-truth"
+          ]
+        },
+        {
+          "subtopic": "Build mechanics",
+          "section": "Construction Sequence",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Dependency architecture",
+          "section": "Dependency Architecture",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Model controls",
+          "section": "Model Integrity Checks",
+          "definitionIds": [
+            "integrity-check"
+          ]
+        },
+        {
+          "subtopic": "Scenario transmission",
+          "section": "Scenario Transmission",
+          "definitionIds": [
+            "scenario-transmission"
+          ]
+        },
+        {
+          "subtopic": "Decision interpretation",
+          "section": "Decision Interpretation",
+          "definitionIds": [
+            "explicit-assumption"
+          ]
+        },
+        {
+          "subtopic": "Review discipline",
+          "section": "Model Review Questions",
+          "definitionIds": [
+            "source-fact",
+            "integrity-check"
+          ]
+        }
+      ],
+      "nodes": {
+        "dupont_analysis-scenario": {
+          "text": "Scenario change for DuPont Analysis: change one explicit assumption and trace the result through the dependency architecture.",
+          "citations": [
+            "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+          ]
+        }
+      },
+      "objective": "Build DuPont Analysis as a decision instrument for MBA finance work. The model must show which source inputs drive the output, how the dependencies transmit a change, which checks establish internal integrity, and which assumptions can reverse the decision.",
+      "inputs": [
+        {
+          "name": "FY2024-25 consolidated revenue",
+          "value": "₹10,71,174 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated EBITDA",
+          "value": "₹1,83,422 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated net profit",
+          "value": "₹81,309 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "Gross debt at March 31, 2025",
+          "value": "₹3,47,530 crore",
+          "unit": "INR crore; as of March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Financial Performance and Review, balance-sheet highlights",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "buildOrder": [
+        {
+          "title": "Define the decision and model boundary",
+          "detail": "State the output, horizon, currency, unit, and exclusions for DuPont Analysis before selecting formulas.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Load and classify source inputs",
+          "detail": "Enter historical facts with document fields and dates, distinguish observable market inputs from assumptions, and establish one source of truth for each quantity.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Build the operating or valuation mechanics",
+          "detail": "Apply the mechanics in dependency order: Build ROE from net margin times asset turnover times equity multiplier, reconcile every input to reported statements, and bridge period changes by driver.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Link the dependency architecture",
+          "detail": "Connect each schedule or calculation to the prior output, expose feedback loops, and keep any circularity treatment explicit.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Run controls and transmit a scenario",
+          "detail": "Run identity, roll-forward, unit, sign, and direction checks, then change one assumption and trace its effect to the decision output.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "graph": [
+        [
+          "Source inputs",
+          "Drivers and schedules"
+        ],
+        [
+          "Drivers and schedules",
+          "Core calculation"
+        ],
+        [
+          "Core calculation",
+          "Decision output"
+        ],
+        [
+          "Scenario assumption",
+          "Downstream outputs"
+        ],
+        [
+          "Integrity checks",
+          "Decision interpretation"
+        ]
+      ],
+      "checks": [
+        {
+          "title": "Source and unit check",
+          "detail": "Every input has a source, as-of date or research task, classification, and unit that matches the calculation using it.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Dependency check",
+          "detail": "Every material output references a named upstream input or schedule rather than a hardcoded result.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Identity or roll-forward check",
+          "detail": "The relevant accounting or mathematical identity and each schedule roll-forward reconcile in every modeled period.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Sign and direction check",
+          "detail": "A favorable and adverse change move each downstream line in the economically expected direction.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Scenario consistency check",
+          "detail": "The scenario changes the stated assumption only and the final output movement can be explained through the dependency graph.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "scenario": {
+        "sentence": "dupont_analysis-scenario",
+        "trace": "Change one explicit assumption in DuPont Analysis, follow it through the named schedules and calculations, then record the exact decision output that changes and the reason for the change."
+      },
+      "output": "Use the completed DuPont Analysis build to compare the decision alternatives, identify the assumptions with the greatest effect, and state what evidence is still required before relying on the output.",
+      "auditQuestions": [
+        {
+          "question": "What decision does the DuPont Analysis build support?",
+          "answer": "Which component, margin, asset turnover, or leverage, actually explains a company’s return on equity? The model is useful only when the decision, horizon, currency, and output are stated before the first input is entered. A calculation without a named decision can produce a precise number that no committee can use."
+        },
+        {
+          "question": "Which inputs are historical facts and which are assumptions?",
+          "answer": "Historical facts come from the cited filing, contract, regulatory record, or market observation and must retain their as-of date and unit. Assumptions are forward-looking judgments that must remain visible and changeable. Blending them makes an assumption look like evidence and prevents a reviewer from locating the model’s judgment."
+        },
+        {
+          "question": "What is the first dependency that should be checked?",
+          "answer": "Start with the source of truth for the build. For DuPont Analysis, that means confirming the input definitions, scope, period, unit, and classification before constructing downstream outputs. A downstream formula cannot repair a wrong source field."
+        },
+        {
+          "question": "How does the build avoid a hardcoded output?",
+          "answer": "Every material output must trace through the construction sequence described by the mechanics: Build ROE from net margin times asset turnover times equity multiplier, reconcile every input to reported statements, and bridge period changes by driver. If an output changes without a named input or dependency changing, the model contains a hardcode, broken link, or hidden plug."
+        },
+        {
+          "question": "Which integrity check would catch a broken dependency?",
+          "answer": "Use both an accounting or mathematical identity check and a direction-of-change check. The identity catches incomplete linkage. The direction check catches a model that balances while translating an economic change in the wrong direction."
+        },
+        {
+          "question": "How should a scenario be transmitted through the model?",
+          "answer": "Change one explicitly named assumption, record the before and after value, then trace every material downstream line in dependency order. The final decision output must move for a stated reason. A before-and-after headline without the transmission path is not a model explanation."
+        },
+        {
+          "question": "What would make the output misleading even if the checks pass?",
+          "answer": "A model can reconcile mechanically while using an inapplicable peer set, an inconsistent accounting definition, an unrealistic financing assumption, or an unexamined forecast relationship. Integrity checks prove internal consistency; they do not prove that the economic assumptions are true."
+        },
+        {
+          "question": "What should a reviewer ask before relying on the result?",
+          "answer": "The reviewer should ask which input has the greatest effect, which source field is least reliable, what assumption breaks first under stress, and what evidence would reverse the conclusion. Those questions test whether the builder understands the model rather than merely reproducing its formulas."
+        }
+      ],
+      "sections": [
+        {
+          "id": "decision-objective",
+          "heading": "Decision Objective",
+          "body": [
+            "Build DuPont Analysis to answer a bounded MBA finance decision: Which component, margin, asset turnover, or leverage, actually explains a company’s return on equity?. The output must be decision-relevant, source-traceable, and sensitive to the assumptions that actually drive it."
+          ]
+        },
+        {
+          "id": "source-inputs",
+          "heading": "Source Inputs",
+          "body": [
+            "The input register separates historical facts, observable market inputs, and explicit assumptions. Any live field not present in the cited source remains a visible research task rather than an invented number."
+          ]
+        },
+        {
+          "id": "construction-sequence",
+          "heading": "Construction Sequence",
+          "body": [
+            "The build follows this mechanics stub: Build ROE from net margin times asset turnover times equity multiplier, reconcile every input to reported statements, and bridge period changes by driver.",
+            "Each step produces a named output that becomes an input to the next dependent step."
+          ]
+        },
+        {
+          "id": "dependency-architecture",
+          "heading": "Dependency Architecture",
+          "body": [
+            "The architecture identifies the source of truth, the forward links, and any feedback loop that can create circularity."
+          ]
+        },
+        {
+          "id": "model-integrity-checks",
+          "heading": "Model Integrity Checks",
+          "body": [
+            "A reviewer tests accounting identities, roll-forwards, source links, units, signs, and scenario direction before interpreting the final output."
+          ]
+        },
+        {
+          "id": "scenario-transmission",
+          "heading": "Scenario Transmission",
+          "body": [
+            "Change one material assumption, trace its effect through the dependency graph, and identify the output that changes the decision."
+          ]
+        },
+        {
+          "id": "decision-interpretation",
+          "heading": "Decision Interpretation",
+          "body": [
+            "The output answers the stated question only within the model boundary. It does not establish facts that were not sourced, nor does it remove the need to challenge the assumptions behind DuPont Analysis."
+          ]
+        },
+        {
+          "id": "model-review-questions",
+          "heading": "Model Review Questions",
+          "body": [
+            "The review drill tests whether the builder understands source discipline, dependency order, integrity checks, scenario movement, and the model’s limits."
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchType": "modeling_studio",
+        "sourceStatus": "source_pack_locked",
+        "sourceInputStatus": "real historical inputs where available; uncaptured live fields exposed as research tasks"
+      }
+    },
+    {
+      "id": "generated_modeling_lbo_modeling",
+      "topicId": "lbo_modeling",
+      "canonicalName": "LBO Modeling",
+      "kind": "modeling",
+      "format": "Modeling Lab",
+      "experienceType": "modeling_studio",
+      "eyebrow": "MBA Finance Modeling Lab",
+      "title": "LBO Modeling: build the decision from the evidence",
+      "dek": "A source-disciplined build that connects inputs, dependencies, controls, and a scenario to one decision output.",
+      "sources": {
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        "ril_disney_jv_completion_2024": {
+          "id": "ril_disney_jv_completion_2024",
+          "tier": 1,
+          "title": "Reliance and Disney completion of the JioStar joint-venture transaction",
+          "url": "https://www.ril.com/news-media/press-releases/reliance-and-disney-announce-completion-transaction-form-joint-venture"
+        },
+        "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf": {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "id": "ril_disney_jv_completion_2024",
+          "tier": 1,
+          "title": "Reliance and Disney completion of the JioStar joint-venture transaction",
+          "url": "https://www.ril.com/news-media/press-releases/reliance-and-disney-announce-completion-transaction-form-joint-venture"
+        },
+        {
+          "id": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "tier": 1,
+          "title": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "source-fact",
+          "term": "Historical fact",
+          "group": "Model construction",
+          "formalDefinition": "A reported or observed value whose document, field, period, and unit are identified before it enters the model.",
+          "whyItMatters": "It separates evidence from judgment.",
+          "commonExaminationError": "Treating a forecast or management target as if it were a historical fact."
+        },
+        {
+          "id": "explicit-assumption",
+          "term": "Explicit assumption",
+          "group": "Model construction",
+          "formalDefinition": "A forward-looking judgment entered deliberately into the model and exposed for review or scenario change.",
+          "whyItMatters": "It makes uncertainty visible and testable.",
+          "commonExaminationError": "Hiding an assumption inside a formula or hardcoding it into an output."
+        },
+        {
+          "id": "source-of-truth",
+          "term": "Source of truth",
+          "group": "Model construction",
+          "formalDefinition": "The single defined line item, schedule, or input register from which downstream model references should flow.",
+          "whyItMatters": "It prevents conflicting versions of the same economic quantity.",
+          "commonExaminationError": "Re-entering the same value in several schedules."
+        },
+        {
+          "id": "dependency",
+          "term": "Dependency",
+          "group": "Model construction",
+          "formalDefinition": "A causal or computational relationship in which one model output supplies an input to another calculation.",
+          "whyItMatters": "It explains how a scenario reaches the decision output.",
+          "commonExaminationError": "Showing formulas without identifying the order of transmission."
+        },
+        {
+          "id": "integrity-check",
+          "term": "Model integrity check",
+          "group": "Model construction",
+          "formalDefinition": "A test of an accounting identity, roll-forward, sign convention, or scenario relationship that should hold if the build is linked correctly.",
+          "whyItMatters": "It distinguishes a functioning model from a formatted worksheet.",
+          "commonExaminationError": "Using a balance check as proof that the assumptions are economically valid."
+        },
+        {
+          "id": "scenario-transmission",
+          "term": "Scenario transmission",
+          "group": "Model construction",
+          "formalDefinition": "The traced movement of one changed assumption through every material downstream dependency to the final decision output.",
+          "whyItMatters": "It converts a model from a static answer into an instrument for reasoning.",
+          "commonExaminationError": "Changing several assumptions at once and attributing the result to one driver."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "Source discipline",
+          "section": "Source Inputs",
+          "definitionIds": [
+            "source-fact",
+            "explicit-assumption",
+            "source-of-truth"
+          ]
+        },
+        {
+          "subtopic": "Build mechanics",
+          "section": "Construction Sequence",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Dependency architecture",
+          "section": "Dependency Architecture",
+          "definitionIds": [
+            "dependency"
+          ]
+        },
+        {
+          "subtopic": "Model controls",
+          "section": "Model Integrity Checks",
+          "definitionIds": [
+            "integrity-check"
+          ]
+        },
+        {
+          "subtopic": "Scenario transmission",
+          "section": "Scenario Transmission",
+          "definitionIds": [
+            "scenario-transmission"
+          ]
+        },
+        {
+          "subtopic": "Decision interpretation",
+          "section": "Decision Interpretation",
+          "definitionIds": [
+            "explicit-assumption"
+          ]
+        },
+        {
+          "subtopic": "Review discipline",
+          "section": "Model Review Questions",
+          "definitionIds": [
+            "source-fact",
+            "integrity-check"
+          ]
+        }
+      ],
+      "nodes": {
+        "lbo_modeling-scenario": {
+          "text": "Scenario change for LBO Modeling: change one explicit assumption and trace the result through the dependency architecture.",
+          "citations": [
+            "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+          ]
+        }
+      },
+      "objective": "Build LBO Modeling as a decision instrument for MBA finance work. The model must show which source inputs drive the output, how the dependencies transmit a change, which checks establish internal integrity, and which assumptions can reverse the decision.",
+      "inputs": [
+        {
+          "name": "FY2024-25 consolidated revenue",
+          "value": "₹10,71,174 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated EBITDA",
+          "value": "₹1,83,422 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "FY2024-25 consolidated net profit",
+          "value": "₹81,309 crore",
+          "unit": "INR crore; year ended March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Chairman and Managing Director statement, Strong and Resilient Performance",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "name": "Gross debt at March 31, 2025",
+          "value": "₹3,47,530 crore",
+          "unit": "INR crore; as of March 31, 2025",
+          "classification": "historical_fact",
+          "sourceField": "Financial Performance and Review, balance-sheet highlights",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "buildOrder": [
+        {
+          "title": "Define the decision and model boundary",
+          "detail": "State the output, horizon, currency, unit, and exclusions for LBO Modeling before selecting formulas.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Load and classify source inputs",
+          "detail": "Enter historical facts with document fields and dates, distinguish observable market inputs from assumptions, and establish one source of truth for each quantity.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Build the operating or valuation mechanics",
+          "detail": "Apply the mechanics in dependency order: Build sources and uses, operating forecast, debt schedule, cash sweep, exit valuation, equity proceeds, IRR/MOIC, and downside cases with balance-sheet and cash-flow checks.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Link the dependency architecture",
+          "detail": "Connect each schedule or calculation to the prior output, expose feedback loops, and keep any circularity treatment explicit.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Run controls and transmit a scenario",
+          "detail": "Run identity, roll-forward, unit, sign, and direction checks, then change one assumption and trace its effect to the decision output.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "graph": [
+        [
+          "Source inputs",
+          "Drivers and schedules"
+        ],
+        [
+          "Drivers and schedules",
+          "Core calculation"
+        ],
+        [
+          "Core calculation",
+          "Decision output"
+        ],
+        [
+          "Scenario assumption",
+          "Downstream outputs"
+        ],
+        [
+          "Integrity checks",
+          "Decision interpretation"
+        ]
+      ],
+      "checks": [
+        {
+          "title": "Source and unit check",
+          "detail": "Every input has a source, as-of date or research task, classification, and unit that matches the calculation using it.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Dependency check",
+          "detail": "Every material output references a named upstream input or schedule rather than a hardcoded result.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Identity or roll-forward check",
+          "detail": "The relevant accounting or mathematical identity and each schedule roll-forward reconcile in every modeled period.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Sign and direction check",
+          "detail": "A favorable and adverse change move each downstream line in the economically expected direction.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        },
+        {
+          "title": "Scenario consistency check",
+          "detail": "The scenario changes the stated assumption only and the final output movement can be explained through the dependency graph.",
+          "source": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "scenario": {
+        "sentence": "lbo_modeling-scenario",
+        "trace": "Change one explicit assumption in LBO Modeling, follow it through the named schedules and calculations, then record the exact decision output that changes and the reason for the change."
+      },
+      "output": "Use the completed LBO Modeling build to compare the decision alternatives, identify the assumptions with the greatest effect, and state what evidence is still required before relying on the output.",
+      "auditQuestions": [
+        {
+          "question": "What decision does the LBO Modeling build support?",
+          "answer": "Can an acquisition funded with debt generate an acceptable sponsor return while meeting debt-service constraints? The model is useful only when the decision, horizon, currency, and output are stated before the first input is entered. A calculation without a named decision can produce a precise number that no committee can use."
+        },
+        {
+          "question": "Which inputs are historical facts and which are assumptions?",
+          "answer": "Historical facts come from the cited filing, contract, regulatory record, or market observation and must retain their as-of date and unit. Assumptions are forward-looking judgments that must remain visible and changeable. Blending them makes an assumption look like evidence and prevents a reviewer from locating the model’s judgment."
+        },
+        {
+          "question": "What is the first dependency that should be checked?",
+          "answer": "Start with the source of truth for the build. For LBO Modeling, that means confirming the input definitions, scope, period, unit, and classification before constructing downstream outputs. A downstream formula cannot repair a wrong source field."
+        },
+        {
+          "question": "How does the build avoid a hardcoded output?",
+          "answer": "Every material output must trace through the construction sequence described by the mechanics: Build sources and uses, operating forecast, debt schedule, cash sweep, exit valuation, equity proceeds, IRR/MOIC, and downside cases with balance-sheet and cash-flow checks. If an output changes without a named input or dependency changing, the model contains a hardcode, broken link, or hidden plug."
+        },
+        {
+          "question": "Which integrity check would catch a broken dependency?",
+          "answer": "Use both an accounting or mathematical identity check and a direction-of-change check. The identity catches incomplete linkage. The direction check catches a model that balances while translating an economic change in the wrong direction."
+        },
+        {
+          "question": "How should a scenario be transmitted through the model?",
+          "answer": "Change one explicitly named assumption, record the before and after value, then trace every material downstream line in dependency order. The final decision output must move for a stated reason. A before-and-after headline without the transmission path is not a model explanation."
+        },
+        {
+          "question": "What would make the output misleading even if the checks pass?",
+          "answer": "A model can reconcile mechanically while using an inapplicable peer set, an inconsistent accounting definition, an unrealistic financing assumption, or an unexamined forecast relationship. Integrity checks prove internal consistency; they do not prove that the economic assumptions are true."
+        },
+        {
+          "question": "What should a reviewer ask before relying on the result?",
+          "answer": "The reviewer should ask which input has the greatest effect, which source field is least reliable, what assumption breaks first under stress, and what evidence would reverse the conclusion. Those questions test whether the builder understands the model rather than merely reproducing its formulas."
+        }
+      ],
+      "sections": [
+        {
+          "id": "decision-objective",
+          "heading": "Decision Objective",
+          "body": [
+            "Build LBO Modeling to answer a bounded MBA finance decision: Can an acquisition funded with debt generate an acceptable sponsor return while meeting debt-service constraints?. The output must be decision-relevant, source-traceable, and sensitive to the assumptions that actually drive it."
+          ]
+        },
+        {
+          "id": "source-inputs",
+          "heading": "Source Inputs",
+          "body": [
+            "The input register separates historical facts, observable market inputs, and explicit assumptions. Any live field not present in the cited source remains a visible research task rather than an invented number."
+          ]
+        },
+        {
+          "id": "construction-sequence",
+          "heading": "Construction Sequence",
+          "body": [
+            "The build follows this mechanics stub: Build sources and uses, operating forecast, debt schedule, cash sweep, exit valuation, equity proceeds, IRR/MOIC, and downside cases with balance-sheet and cash-flow checks.",
+            "Each step produces a named output that becomes an input to the next dependent step."
+          ]
+        },
+        {
+          "id": "dependency-architecture",
+          "heading": "Dependency Architecture",
+          "body": [
+            "The architecture identifies the source of truth, the forward links, and any feedback loop that can create circularity."
+          ]
+        },
+        {
+          "id": "model-integrity-checks",
+          "heading": "Model Integrity Checks",
+          "body": [
+            "A reviewer tests accounting identities, roll-forwards, source links, units, signs, and scenario direction before interpreting the final output."
+          ]
+        },
+        {
+          "id": "scenario-transmission",
+          "heading": "Scenario Transmission",
+          "body": [
+            "Change one material assumption, trace its effect through the dependency graph, and identify the output that changes the decision."
+          ]
+        },
+        {
+          "id": "decision-interpretation",
+          "heading": "Decision Interpretation",
+          "body": [
+            "The output answers the stated question only within the model boundary. It does not establish facts that were not sourced, nor does it remove the need to challenge the assumptions behind LBO Modeling."
+          ]
+        },
+        {
+          "id": "model-review-questions",
+          "heading": "Model Review Questions",
+          "body": [
+            "The review drill tests whether the builder understands source discipline, dependency order, integrity checks, scenario movement, and the model’s limits."
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchType": "modeling_studio",
+        "sourceStatus": "source_pack_locked",
+        "sourceInputStatus": "real historical inputs where available; uncaptured live fields exposed as research tasks"
+      }
+    }
+  ]
+}

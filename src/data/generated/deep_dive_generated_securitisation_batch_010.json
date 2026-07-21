@@ -1,0 +1,1302 @@
+{
+  "schemaVersion": "deep-dive-generated-securitisation-batch.v2",
+  "series": {
+    "id": "securitisation-masterclass",
+    "title": "Securitisation: From Receivables to Rated Risk",
+    "subtitle": "A complete structured-credit curriculum for MBA finance students",
+    "register": "graduate finance casebook",
+    "audio": {
+      "unit": "standalone episode",
+      "rule": "Every episode must be understandable without the screen and must name every number, unit, date, and source aloud."
+    },
+    "episodes": [
+      {
+        "number": 1,
+        "id": "architecture",
+        "title": "The financing architecture",
+        "topicIds": [
+          "securitization",
+          "cash_securitization",
+          "term_securitization",
+          "conduit_securitization"
+        ]
+      },
+      {
+        "number": 2,
+        "id": "legal-isolation",
+        "title": "Legal isolation and control",
+        "topicIds": [
+          "securitization_originator",
+          "special_purpose_vehicle",
+          "bankruptcy_remoteness",
+          "securitization_servicer"
+        ]
+      },
+      {
+        "number": 3,
+        "id": "collateral",
+        "title": "Collateral is the business",
+        "topicIds": [
+          "auto_loan_securitization",
+          "credit_card_securitization",
+          "non_performing_loan_securitization",
+          "non_qualified_mortgage_securitization",
+          "whole_business_securitization"
+        ]
+      },
+      {
+        "number": 4,
+        "id": "cash-flow-forms",
+        "title": "How collateral cash becomes security cash",
+        "topicIds": [
+          "pass_through_structure",
+          "pay_through_structure",
+          "payment_waterfall",
+          "securitization_waterfall"
+        ]
+      },
+      {
+        "number": 5,
+        "id": "capital-structure",
+        "title": "Priority, tranching, and loss allocation",
+        "topicIds": [
+          "tranching",
+          "pro_rata_pay"
+        ]
+      },
+      {
+        "number": 6,
+        "id": "advanced-transfer",
+        "title": "When structure becomes risk transfer",
+        "topicIds": [
+          "re_securitization",
+          "regulatory_capital_relief_securitization",
+          "synthetic_securitization",
+          "sts_securitization"
+        ]
+      },
+      {
+        "number": 7,
+        "id": "timing-and-liquidity",
+        "title": "Prepayment, duration, and market liquidity",
+        "topicIds": [
+          "psa_prepayment_model",
+          "term_asset_backed_securities_loan_facility"
+        ]
+      }
+    ]
+  },
+  "batchId": "lessons-securitisation_desk-10",
+  "status": "generated_for_editorial_review",
+  "lessonCount": 2,
+  "lessons": [
+    {
+      "id": "generated_securitisation_special_purpose_vehicle",
+      "topicId": "special_purpose_vehicle",
+      "canonicalName": "Special Purpose Vehicle (SPV)",
+      "kind": "securitisation-desk",
+      "format": "Securitisation Desk",
+      "experienceType": "securitisation_desk",
+      "eyebrow": "Securitisation Masterclass, Episode 2",
+      "date": "September 24, 2021",
+      "title": "The SPV was separate. The cash had to remain separate too.",
+      "dek": "The SPV is the legal hinge of securitisation: it must hold the collateral and issue the securities without becoming an extension of the originator’s insolvency estate. This episode uses RBI Master Direction: Securitisation of Standard Assets to teach the mechanism, the evidence required to test it, and the conclusion that the evidence cannot support.",
+      "dekSourceIds": [
+        "rbi_securitisation_standard_assets_2021",
+        "sec_structured_finance"
+      ],
+      "series": {
+        "id": "securitisation-masterclass",
+        "title": "Securitisation: From Receivables to Rated Risk",
+        "subtitle": "A complete structured-credit curriculum for MBA finance students",
+        "episodeNumber": 2,
+        "episodeId": "legal-isolation",
+        "episodeTitle": "Legal isolation and control",
+        "totalEpisodes": 7,
+        "sequence": 2,
+        "topicCount": 4,
+        "overallSequence": 6,
+        "totalLessons": 25
+      },
+      "audio": {
+        "unit": "standalone episode",
+        "title": "Securitisation: From Receivables to Rated Risk, Episode 2: Special Purpose Vehicle (SPV)",
+        "screenIndependent": true,
+        "register": "graduate finance casebook"
+      },
+      "definitionCatalog": [
+        {
+          "id": "originator",
+          "term": "Originator",
+          "group": "Transaction parties",
+          "formalDefinition": "The lender or financial institution that creates or owns the receivables or loans transferred into a structured finance transaction.",
+          "whyItMatters": "Originator underwriting, servicing, data quality, and risk retention influence pool performance and transaction integrity.",
+          "commonExaminationError": "Assuming the originator disappears from the risk analysis after transferring the assets."
+        },
+        {
+          "id": "asset-pool",
+          "term": "Asset pool",
+          "group": "Collateral",
+          "formalDefinition": "The defined group of loans, receivables, or other financial assets whose cash flows support the issued securities.",
+          "whyItMatters": "Pool composition determines expected defaults, recoveries, prepayments, concentration, and cash flow timing.",
+          "commonExaminationError": "Relying on sector averages when the transaction level pool characteristics are unavailable."
+        },
+        {
+          "id": "special-purpose-vehicle",
+          "term": "Special purpose vehicle",
+          "group": "Legal structure",
+          "formalDefinition": "A legally separated entity established to hold transferred assets and issue claims supported by their cash flows.",
+          "whyItMatters": "Legal separation is intended to protect asset cash flows from the originators insolvency, subject to the transaction documentation and applicable law.",
+          "commonExaminationError": "Treating legal isolation as automatic without testing the transfer, governance, and insolvency opinions."
+        },
+        {
+          "id": "true-sale",
+          "term": "True sale",
+          "group": "Legal structure",
+          "formalDefinition": "A transfer structured to convey ownership and associated rights in the assets rather than creating a secured borrowing that leaves the assets exposed to the originators creditors.",
+          "whyItMatters": "The characterization affects bankruptcy remoteness and the availability of collateral cash flows to investors.",
+          "commonExaminationError": "Assuming every loan transfer is a true sale because the contract uses sale language."
+        },
+        {
+          "id": "servicer",
+          "term": "Servicer",
+          "group": "Transaction parties",
+          "formalDefinition": "The party responsible for billing, collecting, remitting, reporting, and administering the assets in the pool.",
+          "whyItMatters": "Servicer performance affects collections, data quality, cash timing, and operational continuity.",
+          "commonExaminationError": "Analyzing collateral performance without assessing servicer incentives, controls, and replacement provisions."
+        },
+        {
+          "id": "tranche",
+          "term": "Tranche",
+          "group": "Capital structure",
+          "formalDefinition": "A class of securities that has a defined priority, payment profile, and exposure to losses within the transaction capital structure.",
+          "whyItMatters": "Tranching reallocates the timing and severity of cash flow risk among investors with different priorities.",
+          "commonExaminationError": "Treating a tranche rating as a description of the underlying pool rather than the tranche structure."
+        },
+        {
+          "id": "subordination",
+          "term": "Subordination",
+          "group": "Credit enhancement",
+          "formalDefinition": "A priority arrangement in which junior claims absorb losses or defer payment before senior claims are affected.",
+          "whyItMatters": "Subordination provides loss protection to senior notes by allocating initial losses to junior interests.",
+          "commonExaminationError": "Confusing subordination with a guarantee of principal repayment."
+        },
+        {
+          "id": "credit-enhancement",
+          "term": "Credit enhancement",
+          "group": "Credit enhancement",
+          "formalDefinition": "Structural, financial, or contractual protection that reduces the expected loss or cash flow interruption experienced by a specified tranche.",
+          "whyItMatters": "Enhancement determines how much collateral deterioration a tranche can absorb before it incurs loss.",
+          "commonExaminationError": "Counting the same protection twice or ignoring its depletion under stress."
+        },
+        {
+          "id": "waterfall",
+          "term": "Priority of payments waterfall",
+          "group": "Cash flow mechanics",
+          "formalDefinition": "The contractual sequence that allocates collections to fees, reserves, interest, principal, and residual interests.",
+          "whyItMatters": "The waterfall determines which claims receive cash first and how shortfalls or excess cash are distributed.",
+          "commonExaminationError": "Describing tranche risk without tracing the actual contractual payment sequence."
+        },
+        {
+          "id": "performance-trigger",
+          "term": "Performance trigger",
+          "group": "Cash flow mechanics",
+          "formalDefinition": "A contractual condition based on collateral or enhancement performance that changes payment priority, reserve funding, amortization, or control rights.",
+          "whyItMatters": "Triggers redirect cash when performance weakens and can protect senior investors while accelerating pressure on junior interests.",
+          "commonExaminationError": "Treating a trigger as a forecast rather than a contractual state change."
+        },
+        {
+          "id": "recovery-rate",
+          "term": "Recovery rate",
+          "group": "Pool performance",
+          "formalDefinition": "The proportion of a defaulted exposure ultimately recovered after enforcement, collateral realization, costs, and timing effects.",
+          "whyItMatters": "Recovery timing and severity determine tranche loss allocation and the amount of enhancement consumed.",
+          "commonExaminationError": "Using a recovery percentage without modeling timing, costs, collateral, or asset type."
+        },
+        {
+          "id": "prepayment-rate",
+          "term": "Prepayment rate",
+          "group": "Pool performance",
+          "formalDefinition": "The rate at which borrowers repay principal before the contractual maturity date.",
+          "whyItMatters": "Prepayments change the timing of principal distributions, reinvestment risk, and the expected life of securities.",
+          "commonExaminationError": "Assuming faster principal return is always beneficial without assessing reinvestment and spread consequences."
+        },
+        {
+          "id": "cash-flow-right",
+          "term": "Contractual cash-flow right",
+          "group": "Collateral and legal scope",
+          "formalDefinition": "A legally enforceable right to receive specified payments from an identified obligor, contract, or operating cash-flow source.",
+          "whyItMatters": "A securitisation can finance only the cash flows that are identifiable, transferable, enforceable, and sufficiently predictable for the proposed claims.",
+          "commonExaminationError": "Treating total company revenue or an accounting balance as if it were a transferable receivable."
+        },
+        {
+          "id": "revolving-period",
+          "term": "Revolving period",
+          "group": "Collateral mechanics",
+          "formalDefinition": "The period during which collections may be used to purchase or replenish eligible receivables before the transaction enters its amortisation period.",
+          "whyItMatters": "Revolving structures depend on new asset quality and seller performance, not only on the original pool.",
+          "commonExaminationError": "Analyzing a revolving pool as if its collateral were fixed at closing."
+        },
+        {
+          "id": "early-amortisation",
+          "term": "Early amortisation",
+          "group": "Collateral mechanics",
+          "formalDefinition": "A contractual transition that stops replenishment and redirects available collections toward note repayment when specified performance conditions deteriorate.",
+          "whyItMatters": "The mechanism protects investors by shortening the period during which weak new receivables can enter the structure.",
+          "commonExaminationError": "Treating early amortisation as a forecast instead of a defined contractual response."
+        },
+        {
+          "id": "conduit",
+          "term": "Conduit",
+          "group": "Issuance architecture",
+          "formalDefinition": "A multi-seller or multi-pool securitisation platform that aggregates eligible assets under common funding and administration arrangements.",
+          "whyItMatters": "Common funding can improve scale and diversification, but it can also create common-servicer and common-funding concentrations.",
+          "commonExaminationError": "Assuming multiple sellers automatically eliminate concentration risk."
+        },
+        {
+          "id": "pass-through",
+          "term": "Pass-through structure",
+          "group": "Cash-flow architecture",
+          "formalDefinition": "A structure in which collateral collections, after permitted deductions, are distributed to investors with limited reshaping of principal timing.",
+          "whyItMatters": "The investor receives a more direct exposure to collateral timing and prepayment behaviour.",
+          "commonExaminationError": "Assuming direct transmission removes borrower, servicing, or liquidity risk."
+        },
+        {
+          "id": "pay-through",
+          "term": "Pay-through structure",
+          "group": "Cash-flow architecture",
+          "formalDefinition": "A structure in which the issuer retains collateral collections and distributes interest and principal according to a designed note-payment profile.",
+          "whyItMatters": "Payment reshaping can create differentiated maturities and risk positions, but it increases dependence on the waterfall and assumptions.",
+          "commonExaminationError": "Treating a designed payment profile as independent of collateral performance."
+        },
+        {
+          "id": "pro-rata-amortisation",
+          "term": "Pro-rata amortisation",
+          "group": "Capital structure",
+          "formalDefinition": "A principal-allocation method that distributes available principal across eligible classes according to stated proportions or coverage conditions.",
+          "whyItMatters": "Pro-rata payment changes how quickly senior protection and junior exposure amortise.",
+          "commonExaminationError": "Assuming pro-rata payment provides the same protection as sequential amortisation."
+        },
+        {
+          "id": "sequential-amortisation",
+          "term": "Sequential amortisation",
+          "group": "Capital structure",
+          "formalDefinition": "A principal-allocation method that directs principal to one class until it is retired before allocating principal to the next class.",
+          "whyItMatters": "Sequential payment can deleverage senior claims faster and preserve subordination while the structure amortises.",
+          "commonExaminationError": "Ignoring the effect of sequence on expected life and enhancement percentage."
+        },
+        {
+          "id": "attachment-point",
+          "term": "Attachment point",
+          "group": "Loss allocation",
+          "formalDefinition": "The level of cumulative collateral loss at which a tranche begins to absorb principal loss after lower-priority protection has been exhausted.",
+          "whyItMatters": "Attachment identifies the onset of tranche impairment under a specified loss definition.",
+          "commonExaminationError": "Confusing attachment with the tranche’s percentage of the original pool."
+        },
+        {
+          "id": "detachment-point",
+          "term": "Detachment point",
+          "group": "Loss allocation",
+          "formalDefinition": "The cumulative loss level at which a tranche has absorbed its full allocated loss capacity under the transaction structure.",
+          "whyItMatters": "The interval between attachment and detachment describes the tranche’s thickness and loss-absorption range.",
+          "commonExaminationError": "Treating detachment as a guarantee that losses above it cannot affect other claims."
+        },
+        {
+          "id": "risk-retention",
+          "term": "Risk retention",
+          "group": "Regulatory structure",
+          "formalDefinition": "The requirement or transaction practice under which an originator or sponsor retains a defined economic interest in the securitised credit risk.",
+          "whyItMatters": "Retention aligns some originator economics with investor outcomes, although it does not ensure sound underwriting.",
+          "commonExaminationError": "Assuming retained risk eliminates moral hazard or proves collateral quality."
+        },
+        {
+          "id": "synthetic-securitisation",
+          "term": "Synthetic securitisation",
+          "group": "Credit-risk transfer",
+          "formalDefinition": "A credit-risk transfer in which the originator retains the reference assets but transfers specified credit losses through guarantees, derivatives, or credit-linked notes.",
+          "whyItMatters": "Synthetic structures can release or redistribute credit risk without moving the underlying loans.",
+          "commonExaminationError": "Calling synthetic protection a cash sale or ignoring counterparty and basis risk."
+        },
+        {
+          "id": "re-securitisation",
+          "term": "Re-securitisation",
+          "group": "Layered structure",
+          "formalDefinition": "A securitisation backed substantially by tranches or interests in one or more prior securitisations rather than directly by operating loans or receivables.",
+          "whyItMatters": "A second layer can redistribute risk but also compounds correlation, model, disclosure, and liquidity dependence.",
+          "commonExaminationError": "Calling the second layer diversification without examining the underlying exposures."
+        },
+        {
+          "id": "sts-standard",
+          "term": "Simple, transparent, and standardised securitisation",
+          "group": "Regulatory classification",
+          "formalDefinition": "A regulatory classification requiring a transaction to satisfy defined criteria relating to simplicity, transparency, standardisation, disclosure, and structural safeguards.",
+          "whyItMatters": "The label can improve comparability and regulatory treatment while leaving collateral risk intact.",
+          "commonExaminationError": "Treating STS status as a credit guarantee or liquidity promise."
+        },
+        {
+          "id": "whole-business-collateral",
+          "term": "Whole-business collateral",
+          "group": "Operating cash flow",
+          "formalDefinition": "A defined claim on the cash-generating capacity of an operating business, together with covenants and control rights intended to preserve that cash flow for debt service.",
+          "whyItMatters": "The collateral depends on enterprise continuity, maintenance investment, customer behaviour, and regulatory permission.",
+          "commonExaminationError": "Analyzing operating cash flow as if it were a static receivable pool."
+        },
+        {
+          "id": "liquidity-facility",
+          "term": "Liquidity facility",
+          "group": "Market infrastructure",
+          "formalDefinition": "A committed source of financing that meets eligible short-term funding needs subject to stated collateral, haircut, pricing, maturity, and recourse conditions.",
+          "whyItMatters": "Liquidity can restore market functioning without eliminating the credit and valuation risk of the collateral.",
+          "commonExaminationError": "Confusing funding availability with protection against collateral loss."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "Foundational transaction architecture",
+          "section": "Transaction Mandate",
+          "definitionIds": [
+            "originator",
+            "asset-pool",
+            "special-purpose-vehicle",
+            "true-sale",
+            "servicer",
+            "tranche",
+            "subordination",
+            "credit-enhancement"
+          ]
+        },
+        {
+          "subtopic": "Collateral, legal separation, and servicing",
+          "section": "Pool Data Room",
+          "definitionIds": [
+            "waterfall",
+            "performance-trigger",
+            "recovery-rate",
+            "prepayment-rate",
+            "cash-flow-right",
+            "revolving-period",
+            "early-amortisation",
+            "conduit"
+          ]
+        },
+        {
+          "subtopic": "Cash-flow priority and capital structure",
+          "section": "Priority of Payments",
+          "definitionIds": [
+            "pass-through",
+            "pay-through",
+            "pro-rata-amortisation",
+            "sequential-amortisation",
+            "attachment-point",
+            "detachment-point",
+            "risk-retention",
+            "synthetic-securitisation"
+          ]
+        },
+        {
+          "subtopic": "Risk transfer, timing, and market infrastructure",
+          "section": "Stress Transmission",
+          "definitionIds": [
+            "re-securitisation",
+            "sts-standard",
+            "whole-business-collateral",
+            "liquidity-facility"
+          ]
+        }
+      ],
+      "sources": {
+        "rbi_securitisation_standard_assets_2021": {
+          "id": "rbi_securitisation_standard_assets_2021",
+          "tier": 1,
+          "title": "RBI Master Direction: Securitisation of Standard Assets",
+          "publisher": "Reserve Bank of India",
+          "url": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html"
+        },
+        "sec_structured_finance": {
+          "id": "sec_structured_finance",
+          "tier": 1,
+          "title": "SEC Asset Backed Securities and Regulation AB",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/asset-backed-securities"
+        }
+      },
+      "role": "MBA finance student deciding whether the evidence for Special Purpose Vehicle (SPV) supports a defensible transaction conclusion.",
+      "decision": "The investor is deciding whether legal ownership, governance, cash control, and limited-purpose covenants make the collateral available to the securities after an originator failure.",
+      "governingQuestion": "Why is a bankruptcy-remote vehicle used to isolate asset-pool cash flows from an originator, and what risks remain despite separation?",
+      "anchor": {
+        "description": "RBI securitisation directions and SEC asset-backed securities framework.",
+        "mechanism": "The vehicle acquires defined rights, is governed separately, restricts its activities, and channels collections according to the transaction documents rather than the originator’s ordinary treasury decisions.",
+        "sourceIds": [
+          "rbi_securitisation_standard_assets_2021",
+          "sec_structured_finance"
+        ],
+        "dataField": "Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions"
+      },
+      "sections": [
+        {
+          "id": "transaction-mandate",
+          "heading": "Transaction Mandate",
+          "body": [
+            "The SPV is the legal hinge of securitisation: it must hold the collateral and issue the securities without becoming an extension of the originator’s insolvency estate.",
+            "Why is a bankruptcy-remote vehicle used to isolate asset-pool cash flows from an originator, and what risks remain despite separation? The transaction is evaluated as a defined allocation of legal rights, cash-flow timing, credit risk, and control rights among originator, vehicle, servicer, noteholders, and residual interests."
+          ]
+        },
+        {
+          "id": "pool-data-room",
+          "heading": "Pool Data Room",
+          "body": [
+            "The evidence boundary for Special Purpose Vehicle (SPV) begins with the asset or reference portfolio. The decision-maker must identify eligibility, seasoning, obligor concentration, delinquency, default, recovery, prepayment, servicing, reporting date, and the field that determines cash availability.",
+            "The cited primary artifact establishes Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions. It does not establish a transaction-level expected loss or tranche outcome unless the relevant pool tape and transaction documents disclose those fields. Missing evidence is recorded as a diligence requirement rather than replaced with a sector average."
+          ]
+        },
+        {
+          "id": "structure-design",
+          "heading": "Structure Design",
+          "body": [
+            "The vehicle acquires defined rights, is governed separately, restricts its activities, and channels collections according to the transaction documents rather than the originator’s ordinary treasury decisions.",
+            "The design is defensible only when each legal feature has an economic function. Transfer provisions define the investor claim, the vehicle defines the asset boundary, servicing provisions protect collection continuity, and retention or recourse provisions determine which risks remain economically connected to the sponsor."
+          ]
+        },
+        {
+          "id": "priority-of-payments",
+          "heading": "Priority of Payments",
+          "body": [
+            "Collections become investor cash only after the transaction applies its contractual priority. Fees, reserve movements, interest, principal, losses, and residual distributions must be read in sequence because a shortfall at one step changes the amount available at every later step.",
+            "For Special Purpose Vehicle (SPV), the decisive question is not whether the pool produces cash in aggregate. It is which claim receives each unit of cash under ordinary performance, trigger breach, delayed recovery, and accelerated prepayment."
+          ]
+        },
+        {
+          "id": "credit-enhancement-triggers",
+          "heading": "Credit Enhancement and Triggers",
+          "body": [
+            "Enhancement determines the amount and timing of collateral deterioration that a tranche can withstand before impairment. Subordination, reserves, excess spread, guarantees, and liquidity support have different legal mechanics and must not be aggregated as interchangeable protection.",
+            "Triggers are contractual responses to measured performance. They can terminate replenishment, redirect excess spread, increase reserve funding, accelerate senior amortisation, or alter control rights. An SPV label proves nothing by itself; weak separateness, commingling, defective transfer, or inadequate governance can break the intended isolation."
+          ]
+        },
+        {
+          "id": "stress-transmission",
+          "heading": "Stress Transmission",
+          "body": [
+            "A valid stress begins with a sourced change in Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions and ends with a stated tranche or transaction consequence. Default, recovery, prepayment, servicing, funding, and legal assumptions must be changed separately when their economic effects differ.",
+            "The public source pack does not disclose the transaction-specific field required for a numeric stress in this lesson. The professional output is therefore a reproducible diligence design: obtain the field, state the convention, run the waterfall, measure enhancement consumption, and identify the claim whose payment changes first."
+          ]
+        },
+        {
+          "id": "investment-committee-memo",
+          "heading": "Investment Committee Memo",
+          "body": [
+            "The decision for Special Purpose Vehicle (SPV) is bounded: proceed to transaction-level diligence only if the cited evidence supports the structure’s legal, collateral, servicing, enhancement, and cash-flow assumptions. No tranche-level conclusion is authorized from framework documents alone.",
+            "The recommendation would be reversed by evidence of weaker collateral, defective transfer, inadequate servicing continuity, unmodeled concentration, earlier enhancement depletion, or a payment priority different from the one used in the analysis."
+          ]
+        },
+        {
+          "id": "desk-drill",
+          "heading": "Applied Questions",
+          "body": [
+            "The questions below test the transferable finance logic of the structure. Each answer must identify the source evidence, economic mechanism, contractual consequence, and boundary of the conclusion."
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "name": "Originator",
+          "responsibility": "Creates or owns the receivables or reference exposures and remains relevant through underwriting, representations, servicing, retention, or residual exposure."
+        },
+        {
+          "name": "Special purpose vehicle",
+          "responsibility": "Holds transferred rights or issues protection and distributes cash according to the transaction documents."
+        },
+        {
+          "name": "Servicer",
+          "responsibility": "Collects, reconciles, reports, remits, and administers the collateral or reference portfolio."
+        },
+        {
+          "name": "Trustee or administrator",
+          "responsibility": "Maintains records, applies contractual controls, calculates compliance, and distributes cash where the documents assign those duties."
+        },
+        {
+          "name": "Investors",
+          "responsibility": "Hold claims with defined payment priority, expected timing, loss attachment, and control rights."
+        }
+      ],
+      "inputs": [
+        {
+          "name": "Primary governing artifact",
+          "value": "RBI Master Direction: Securitisation of Standard Assets",
+          "unit": "source document",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html",
+          "sourceId": "rbi_securitisation_standard_assets_2021",
+          "sourceField": "Official document title"
+        },
+        {
+          "name": "Applicable transaction domain",
+          "value": "RBI securitisation directions and SEC asset-backed securities framework.",
+          "unit": "source context",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html",
+          "sourceId": "rbi_securitisation_standard_assets_2021",
+          "sourceField": "Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions"
+        },
+        {
+          "name": "Governing question",
+          "value": "Why is a bankruptcy-remote vehicle used to isolate asset-pool cash flows from an originator, and what risks remain despite separation?",
+          "unit": "decision question",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html",
+          "sourceId": "rbi_securitisation_standard_assets_2021",
+          "sourceField": "Research record governing question"
+        },
+        {
+          "name": "Special Purpose Vehicle (SPV) transaction field",
+          "value": "Not disclosed in the cited public source pack. Obtain the transaction-level field before issuing a numeric conclusion.",
+          "unit": "research task; field, unit, and as-of date required",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "market_input",
+          "source": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html",
+          "sourceId": "rbi_securitisation_standard_assets_2021",
+          "sourceField": "Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions"
+        }
+      ],
+      "tranches": [
+        {
+          "name": "Senior notes",
+          "priority": "Receive payment before subordinated claims after permitted fees and required reserves.",
+          "dataRequirement": "Obtain payment priority, enhancement, trigger, and expected-loss coverage from the transaction documents."
+        },
+        {
+          "name": "Mezzanine notes",
+          "priority": "Stand behind senior claims and ahead of residual interests under the stated waterfall.",
+          "dataRequirement": "Obtain attachment, detachment, subordination, amortisation, and trigger terms."
+        },
+        {
+          "name": "Residual interest",
+          "priority": "Receives residual economics and absorbs the first-loss position specified by the structure.",
+          "dataRequirement": "Obtain retained-interest, loss-allocation, excess-spread, and residual-distribution terms."
+        }
+      ],
+      "waterfall": [
+        {
+          "step": 1,
+          "name": "Collateral collections",
+          "consequence": "Identify scheduled payments, recoveries, prepayments, and other permitted receipts by source and reporting period."
+        },
+        {
+          "step": 2,
+          "name": "Transaction expenses",
+          "consequence": "Pay servicing, trustee, administration, hedging, and other permitted expenses under the documents."
+        },
+        {
+          "step": 3,
+          "name": "Reserve and enhancement tests",
+          "consequence": "Fund or replenish required reserves and test whether the transaction remains within its contractual protection thresholds."
+        },
+        {
+          "step": 4,
+          "name": "Interest and principal priority",
+          "consequence": "Allocate interest and principal to note classes according to sequential or pro-rata rules and the current trigger state."
+        },
+        {
+          "step": 5,
+          "name": "Subordinated and residual allocation",
+          "consequence": "Allocate remaining cash or specified losses to junior claims and residual interests after senior obligations are addressed."
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Collateral performance trigger",
+          "threshold": "Obtain the transaction-specific delinquency, default, loss, payment-rate, or coverage threshold.",
+          "consequence": "Test whether replenishment stops, cash is redirected, reserves increase, or senior amortisation accelerates."
+        },
+        {
+          "name": "Structural protection trigger",
+          "threshold": "Obtain the enhancement floor, reserve floor, liquidity test, or coverage condition.",
+          "consequence": "Test whether the transaction changes payment priority, control rights, or the treatment of residual cash."
+        }
+      ],
+      "stress": {
+        "changedInput": "Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions",
+        "value": "Required from the transaction-level source pack before numeric stress testing.",
+        "trace": "Obtain Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions, state the default, recovery, prepayment, servicing, or timing convention, then trace the change through collections, enhancement consumption, trigger state, waterfall priority, tranche balances, and investor cash flow."
+      },
+      "decisionMemo": "The evidence supports only the decision to obtain or withhold further diligence until Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions is sourced. A transaction-level credit conclusion requires the primary documents, dated collateral data, and a reproducible waterfall trace.",
+      "reviewQuestions": [
+        {
+          "question": "What economic problem does Special Purpose Vehicle (SPV) solve?",
+          "answer": "The SPV is the legal hinge of securitisation: it must hold the collateral and issue the securities without becoming an extension of the originator’s insolvency estate. The investor is deciding whether legal ownership, governance, cash control, and limited-purpose covenants make the collateral available to the securities after an originator failure."
+        },
+        {
+          "question": "Which cash flow is legally and economically being transferred?",
+          "answer": "The answer must identify the contractual cash-flow right, its obligor, its payment frequency, its eligibility conditions, and the legal mechanism that makes the right available to the issuing vehicle. A balance-sheet line or revenue total is not sufficient evidence of a transferable cash flow."
+        },
+        {
+          "question": "Why does the originator remain relevant after closing?",
+          "answer": "The originator can retain underwriting exposure, representations, repurchase obligations, servicing duties, risk retention, or a residual interest. Those continuing obligations affect incentives, collection quality, data integrity, and the credibility of the assumed loss distribution. Legal transfer changes the claim structure; it does not erase institutional conduct."
+        },
+        {
+          "question": "What does the SPV contribute to the credit structure?",
+          "answer": "The SPV creates a limited-purpose legal boundary between the transferred assets and the originator. Its value depends on valid transfer, separateness, account control, governance, servicing continuity, and the enforceability of the payment documents. The acronym itself is not evidence of bankruptcy remoteness."
+        },
+        {
+          "question": "How does collateral performance reach a tranche?",
+          "answer": "Borrower collections, prepayments, defaults, recoveries, fees, and servicing adjustments enter the waterfall. The waterfall then applies contractual priority, enhancement, trigger states, and tranche balances. Tranche risk is therefore produced by the interaction of collateral behaviour and payment priority, not by the collateral label alone."
+        },
+        {
+          "question": "Why are default frequency and recovery timing separate variables?",
+          "answer": "Default frequency identifies how often exposures fail, while recovery severity identifies how much value remains after enforcement, costs, and collateral realization. Recovery timing determines when that value reaches the transaction. A pool with modest defaults can still impair a note if recoveries arrive late, incur high costs, or fall below the assumed severity."
+        },
+        {
+          "question": "What changes when a performance trigger is breached?",
+          "answer": "A trigger is a contractual state transition. Once the specified delinquency, loss, enhancement, payment-rate, or coverage condition is breached, the documents may stop replenishment, redirect excess spread, increase reserves, accelerate senior principal, or change control rights. The answer must state both the threshold and its consequence."
+        },
+        {
+          "question": "What evidence would make the conclusion defensible?",
+          "answer": "The minimum evidence is the transaction document, asset eligibility schedule, dated pool stratification, historical performance, servicing report, legal transfer analysis, waterfall, enhancement terms, trigger definitions, and the specific reporting date. Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions remains a defined diligence requirement when it is absent from the cited source pack."
+        },
+        {
+          "question": "What is the most serious category error in securitisation analysis?",
+          "answer": "The serious error is treating Special Purpose Vehicle (SPV) as a synonym for credit quality. An SPV label proves nothing by itself; weak separateness, commingling, defective transfer, or inadequate governance can break the intended isolation. The correct conclusion must separate collateral risk, structural protection, legal enforceability, servicing execution, market liquidity, and model uncertainty."
+        },
+        {
+          "question": "What decision does the governing question make possible?",
+          "answer": "Why is a bankruptcy-remote vehicle used to isolate asset-pool cash flows from an originator, and what risks remain despite separation? The decision must be bounded by the evidence: approve further diligence, approve a defined exposure, reject the structure, or withhold a tranche-level conclusion until missing fields are obtained."
+        },
+        {
+          "question": "What would reverse the recommendation?",
+          "answer": "A reversal would follow from evidence that changes the loss distribution, weakens legal isolation, reduces servicing continuity, consumes enhancement earlier than assumed, changes the waterfall, or makes the relevant collateral cash flow less transferable or less predictable than the transaction requires."
+        },
+        {
+          "question": "How should this concept be distinguished from a related structure?",
+          "answer": "Compare the legal asset transfer, reference portfolio, payment priority, loss attachment, replenishment rules, liquidity support, and investor claim. Labels such as ABS, MBS, conduit, synthetic, term, and pass-through describe different dimensions of a transaction and cannot substitute for reading the documents."
+        }
+      ],
+      "evidenceExhibit": {
+        "status": "source_pack_locked",
+        "documentTitle": "RBI Master Direction: Securitisation of Standard Assets",
+        "sourceUrl": "https://systemhealth.rbi.org.in/Scripts/BS_ViewMasDirections.aspx_id%3D11959%282%29.html",
+        "sourceIds": [
+          "rbi_securitisation_standard_assets_2021",
+          "sec_structured_finance"
+        ],
+        "realAnchor": "RBI securitisation directions and SEC asset-backed securities framework.",
+        "unavailableField": "Entity constitution, asset transfer, account control, separateness covenants, and insolvency opinions"
+      },
+      "generationAudit": {
+        "batchType": "securitisation_desk",
+        "seriesId": "securitisation-masterclass",
+        "episodeId": "legal-isolation",
+        "sourceStatus": "concept_specific_primary_source_pack_locked",
+        "sourceInputStatus": "real source artifacts identified; transaction-specific fields remain explicit diligence requirements where not disclosed"
+      },
+      "batchIndex": 10,
+      "topicIndex": 1
+    },
+    {
+      "id": "generated_securitisation_sts_securitization",
+      "topicId": "sts_securitization",
+      "canonicalName": "STS Securitization",
+      "kind": "securitisation-desk",
+      "format": "Securitisation Desk",
+      "experienceType": "securitisation_desk",
+      "eyebrow": "Securitisation Masterclass, Episode 6",
+      "date": "2019",
+      "title": "The label promised simplicity. The documents had to prove it.",
+      "dek": "STS securitisation makes simplicity, transparency, and standardisation conditions of the regulatory label rather than decorative descriptors. This episode uses European Commission securitisation framework to teach the mechanism, the evidence required to test it, and the conclusion that the evidence cannot support.",
+      "dekSourceIds": [
+        "eu_sts_securitisation",
+        "sec_structured_finance"
+      ],
+      "series": {
+        "id": "securitisation-masterclass",
+        "title": "Securitisation: From Receivables to Rated Risk",
+        "subtitle": "A complete structured-credit curriculum for MBA finance students",
+        "episodeNumber": 6,
+        "episodeId": "advanced-transfer",
+        "episodeTitle": "When structure becomes risk transfer",
+        "totalEpisodes": 7,
+        "sequence": 4,
+        "topicCount": 4,
+        "overallSequence": 23,
+        "totalLessons": 25
+      },
+      "audio": {
+        "unit": "standalone episode",
+        "title": "Securitisation: From Receivables to Rated Risk, Episode 6: STS Securitization",
+        "screenIndependent": true,
+        "register": "graduate finance casebook"
+      },
+      "definitionCatalog": [
+        {
+          "id": "originator",
+          "term": "Originator",
+          "group": "Transaction parties",
+          "formalDefinition": "The lender or financial institution that creates or owns the receivables or loans transferred into a structured finance transaction.",
+          "whyItMatters": "Originator underwriting, servicing, data quality, and risk retention influence pool performance and transaction integrity.",
+          "commonExaminationError": "Assuming the originator disappears from the risk analysis after transferring the assets."
+        },
+        {
+          "id": "asset-pool",
+          "term": "Asset pool",
+          "group": "Collateral",
+          "formalDefinition": "The defined group of loans, receivables, or other financial assets whose cash flows support the issued securities.",
+          "whyItMatters": "Pool composition determines expected defaults, recoveries, prepayments, concentration, and cash flow timing.",
+          "commonExaminationError": "Relying on sector averages when the transaction level pool characteristics are unavailable."
+        },
+        {
+          "id": "special-purpose-vehicle",
+          "term": "Special purpose vehicle",
+          "group": "Legal structure",
+          "formalDefinition": "A legally separated entity established to hold transferred assets and issue claims supported by their cash flows.",
+          "whyItMatters": "Legal separation is intended to protect asset cash flows from the originators insolvency, subject to the transaction documentation and applicable law.",
+          "commonExaminationError": "Treating legal isolation as automatic without testing the transfer, governance, and insolvency opinions."
+        },
+        {
+          "id": "true-sale",
+          "term": "True sale",
+          "group": "Legal structure",
+          "formalDefinition": "A transfer structured to convey ownership and associated rights in the assets rather than creating a secured borrowing that leaves the assets exposed to the originators creditors.",
+          "whyItMatters": "The characterization affects bankruptcy remoteness and the availability of collateral cash flows to investors.",
+          "commonExaminationError": "Assuming every loan transfer is a true sale because the contract uses sale language."
+        },
+        {
+          "id": "servicer",
+          "term": "Servicer",
+          "group": "Transaction parties",
+          "formalDefinition": "The party responsible for billing, collecting, remitting, reporting, and administering the assets in the pool.",
+          "whyItMatters": "Servicer performance affects collections, data quality, cash timing, and operational continuity.",
+          "commonExaminationError": "Analyzing collateral performance without assessing servicer incentives, controls, and replacement provisions."
+        },
+        {
+          "id": "tranche",
+          "term": "Tranche",
+          "group": "Capital structure",
+          "formalDefinition": "A class of securities that has a defined priority, payment profile, and exposure to losses within the transaction capital structure.",
+          "whyItMatters": "Tranching reallocates the timing and severity of cash flow risk among investors with different priorities.",
+          "commonExaminationError": "Treating a tranche rating as a description of the underlying pool rather than the tranche structure."
+        },
+        {
+          "id": "subordination",
+          "term": "Subordination",
+          "group": "Credit enhancement",
+          "formalDefinition": "A priority arrangement in which junior claims absorb losses or defer payment before senior claims are affected.",
+          "whyItMatters": "Subordination provides loss protection to senior notes by allocating initial losses to junior interests.",
+          "commonExaminationError": "Confusing subordination with a guarantee of principal repayment."
+        },
+        {
+          "id": "credit-enhancement",
+          "term": "Credit enhancement",
+          "group": "Credit enhancement",
+          "formalDefinition": "Structural, financial, or contractual protection that reduces the expected loss or cash flow interruption experienced by a specified tranche.",
+          "whyItMatters": "Enhancement determines how much collateral deterioration a tranche can absorb before it incurs loss.",
+          "commonExaminationError": "Counting the same protection twice or ignoring its depletion under stress."
+        },
+        {
+          "id": "waterfall",
+          "term": "Priority of payments waterfall",
+          "group": "Cash flow mechanics",
+          "formalDefinition": "The contractual sequence that allocates collections to fees, reserves, interest, principal, and residual interests.",
+          "whyItMatters": "The waterfall determines which claims receive cash first and how shortfalls or excess cash are distributed.",
+          "commonExaminationError": "Describing tranche risk without tracing the actual contractual payment sequence."
+        },
+        {
+          "id": "performance-trigger",
+          "term": "Performance trigger",
+          "group": "Cash flow mechanics",
+          "formalDefinition": "A contractual condition based on collateral or enhancement performance that changes payment priority, reserve funding, amortization, or control rights.",
+          "whyItMatters": "Triggers redirect cash when performance weakens and can protect senior investors while accelerating pressure on junior interests.",
+          "commonExaminationError": "Treating a trigger as a forecast rather than a contractual state change."
+        },
+        {
+          "id": "recovery-rate",
+          "term": "Recovery rate",
+          "group": "Pool performance",
+          "formalDefinition": "The proportion of a defaulted exposure ultimately recovered after enforcement, collateral realization, costs, and timing effects.",
+          "whyItMatters": "Recovery timing and severity determine tranche loss allocation and the amount of enhancement consumed.",
+          "commonExaminationError": "Using a recovery percentage without modeling timing, costs, collateral, or asset type."
+        },
+        {
+          "id": "prepayment-rate",
+          "term": "Prepayment rate",
+          "group": "Pool performance",
+          "formalDefinition": "The rate at which borrowers repay principal before the contractual maturity date.",
+          "whyItMatters": "Prepayments change the timing of principal distributions, reinvestment risk, and the expected life of securities.",
+          "commonExaminationError": "Assuming faster principal return is always beneficial without assessing reinvestment and spread consequences."
+        },
+        {
+          "id": "cash-flow-right",
+          "term": "Contractual cash-flow right",
+          "group": "Collateral and legal scope",
+          "formalDefinition": "A legally enforceable right to receive specified payments from an identified obligor, contract, or operating cash-flow source.",
+          "whyItMatters": "A securitisation can finance only the cash flows that are identifiable, transferable, enforceable, and sufficiently predictable for the proposed claims.",
+          "commonExaminationError": "Treating total company revenue or an accounting balance as if it were a transferable receivable."
+        },
+        {
+          "id": "revolving-period",
+          "term": "Revolving period",
+          "group": "Collateral mechanics",
+          "formalDefinition": "The period during which collections may be used to purchase or replenish eligible receivables before the transaction enters its amortisation period.",
+          "whyItMatters": "Revolving structures depend on new asset quality and seller performance, not only on the original pool.",
+          "commonExaminationError": "Analyzing a revolving pool as if its collateral were fixed at closing."
+        },
+        {
+          "id": "early-amortisation",
+          "term": "Early amortisation",
+          "group": "Collateral mechanics",
+          "formalDefinition": "A contractual transition that stops replenishment and redirects available collections toward note repayment when specified performance conditions deteriorate.",
+          "whyItMatters": "The mechanism protects investors by shortening the period during which weak new receivables can enter the structure.",
+          "commonExaminationError": "Treating early amortisation as a forecast instead of a defined contractual response."
+        },
+        {
+          "id": "conduit",
+          "term": "Conduit",
+          "group": "Issuance architecture",
+          "formalDefinition": "A multi-seller or multi-pool securitisation platform that aggregates eligible assets under common funding and administration arrangements.",
+          "whyItMatters": "Common funding can improve scale and diversification, but it can also create common-servicer and common-funding concentrations.",
+          "commonExaminationError": "Assuming multiple sellers automatically eliminate concentration risk."
+        },
+        {
+          "id": "pass-through",
+          "term": "Pass-through structure",
+          "group": "Cash-flow architecture",
+          "formalDefinition": "A structure in which collateral collections, after permitted deductions, are distributed to investors with limited reshaping of principal timing.",
+          "whyItMatters": "The investor receives a more direct exposure to collateral timing and prepayment behaviour.",
+          "commonExaminationError": "Assuming direct transmission removes borrower, servicing, or liquidity risk."
+        },
+        {
+          "id": "pay-through",
+          "term": "Pay-through structure",
+          "group": "Cash-flow architecture",
+          "formalDefinition": "A structure in which the issuer retains collateral collections and distributes interest and principal according to a designed note-payment profile.",
+          "whyItMatters": "Payment reshaping can create differentiated maturities and risk positions, but it increases dependence on the waterfall and assumptions.",
+          "commonExaminationError": "Treating a designed payment profile as independent of collateral performance."
+        },
+        {
+          "id": "pro-rata-amortisation",
+          "term": "Pro-rata amortisation",
+          "group": "Capital structure",
+          "formalDefinition": "A principal-allocation method that distributes available principal across eligible classes according to stated proportions or coverage conditions.",
+          "whyItMatters": "Pro-rata payment changes how quickly senior protection and junior exposure amortise.",
+          "commonExaminationError": "Assuming pro-rata payment provides the same protection as sequential amortisation."
+        },
+        {
+          "id": "sequential-amortisation",
+          "term": "Sequential amortisation",
+          "group": "Capital structure",
+          "formalDefinition": "A principal-allocation method that directs principal to one class until it is retired before allocating principal to the next class.",
+          "whyItMatters": "Sequential payment can deleverage senior claims faster and preserve subordination while the structure amortises.",
+          "commonExaminationError": "Ignoring the effect of sequence on expected life and enhancement percentage."
+        },
+        {
+          "id": "attachment-point",
+          "term": "Attachment point",
+          "group": "Loss allocation",
+          "formalDefinition": "The level of cumulative collateral loss at which a tranche begins to absorb principal loss after lower-priority protection has been exhausted.",
+          "whyItMatters": "Attachment identifies the onset of tranche impairment under a specified loss definition.",
+          "commonExaminationError": "Confusing attachment with the tranche’s percentage of the original pool."
+        },
+        {
+          "id": "detachment-point",
+          "term": "Detachment point",
+          "group": "Loss allocation",
+          "formalDefinition": "The cumulative loss level at which a tranche has absorbed its full allocated loss capacity under the transaction structure.",
+          "whyItMatters": "The interval between attachment and detachment describes the tranche’s thickness and loss-absorption range.",
+          "commonExaminationError": "Treating detachment as a guarantee that losses above it cannot affect other claims."
+        },
+        {
+          "id": "risk-retention",
+          "term": "Risk retention",
+          "group": "Regulatory structure",
+          "formalDefinition": "The requirement or transaction practice under which an originator or sponsor retains a defined economic interest in the securitised credit risk.",
+          "whyItMatters": "Retention aligns some originator economics with investor outcomes, although it does not ensure sound underwriting.",
+          "commonExaminationError": "Assuming retained risk eliminates moral hazard or proves collateral quality."
+        },
+        {
+          "id": "synthetic-securitisation",
+          "term": "Synthetic securitisation",
+          "group": "Credit-risk transfer",
+          "formalDefinition": "A credit-risk transfer in which the originator retains the reference assets but transfers specified credit losses through guarantees, derivatives, or credit-linked notes.",
+          "whyItMatters": "Synthetic structures can release or redistribute credit risk without moving the underlying loans.",
+          "commonExaminationError": "Calling synthetic protection a cash sale or ignoring counterparty and basis risk."
+        },
+        {
+          "id": "re-securitisation",
+          "term": "Re-securitisation",
+          "group": "Layered structure",
+          "formalDefinition": "A securitisation backed substantially by tranches or interests in one or more prior securitisations rather than directly by operating loans or receivables.",
+          "whyItMatters": "A second layer can redistribute risk but also compounds correlation, model, disclosure, and liquidity dependence.",
+          "commonExaminationError": "Calling the second layer diversification without examining the underlying exposures."
+        },
+        {
+          "id": "sts-standard",
+          "term": "Simple, transparent, and standardised securitisation",
+          "group": "Regulatory classification",
+          "formalDefinition": "A regulatory classification requiring a transaction to satisfy defined criteria relating to simplicity, transparency, standardisation, disclosure, and structural safeguards.",
+          "whyItMatters": "The label can improve comparability and regulatory treatment while leaving collateral risk intact.",
+          "commonExaminationError": "Treating STS status as a credit guarantee or liquidity promise."
+        },
+        {
+          "id": "whole-business-collateral",
+          "term": "Whole-business collateral",
+          "group": "Operating cash flow",
+          "formalDefinition": "A defined claim on the cash-generating capacity of an operating business, together with covenants and control rights intended to preserve that cash flow for debt service.",
+          "whyItMatters": "The collateral depends on enterprise continuity, maintenance investment, customer behaviour, and regulatory permission.",
+          "commonExaminationError": "Analyzing operating cash flow as if it were a static receivable pool."
+        },
+        {
+          "id": "liquidity-facility",
+          "term": "Liquidity facility",
+          "group": "Market infrastructure",
+          "formalDefinition": "A committed source of financing that meets eligible short-term funding needs subject to stated collateral, haircut, pricing, maturity, and recourse conditions.",
+          "whyItMatters": "Liquidity can restore market functioning without eliminating the credit and valuation risk of the collateral.",
+          "commonExaminationError": "Confusing funding availability with protection against collateral loss."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "Foundational transaction architecture",
+          "section": "Transaction Mandate",
+          "definitionIds": [
+            "originator",
+            "asset-pool",
+            "special-purpose-vehicle",
+            "true-sale",
+            "servicer",
+            "tranche",
+            "subordination",
+            "credit-enhancement"
+          ]
+        },
+        {
+          "subtopic": "Collateral, legal separation, and servicing",
+          "section": "Pool Data Room",
+          "definitionIds": [
+            "waterfall",
+            "performance-trigger",
+            "recovery-rate",
+            "prepayment-rate",
+            "cash-flow-right",
+            "revolving-period",
+            "early-amortisation",
+            "conduit"
+          ]
+        },
+        {
+          "subtopic": "Cash-flow priority and capital structure",
+          "section": "Priority of Payments",
+          "definitionIds": [
+            "pass-through",
+            "pay-through",
+            "pro-rata-amortisation",
+            "sequential-amortisation",
+            "attachment-point",
+            "detachment-point",
+            "risk-retention",
+            "synthetic-securitisation"
+          ]
+        },
+        {
+          "subtopic": "Risk transfer, timing, and market infrastructure",
+          "section": "Stress Transmission",
+          "definitionIds": [
+            "re-securitisation",
+            "sts-standard",
+            "whole-business-collateral",
+            "liquidity-facility"
+          ]
+        }
+      ],
+      "sources": {
+        "eu_sts_securitisation": {
+          "id": "eu_sts_securitisation",
+          "tier": 1,
+          "title": "European Commission securitisation framework",
+          "publisher": "European Commission",
+          "url": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en"
+        },
+        "sec_structured_finance": {
+          "id": "sec_structured_finance",
+          "tier": 1,
+          "title": "SEC Asset Backed Securities and Regulation AB",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/asset-backed-securities"
+        }
+      },
+      "role": "MBA finance student deciding whether the evidence for STS Securitization supports a defensible transaction conclusion.",
+      "decision": "The investor must determine whether the label is supported by the applicable criteria and whether the standardized structure improves analysis without eliminating collateral risk.",
+      "governingQuestion": "What decision does STS Securitization make possible in a structured-finance transaction or governing disclosure regime, which input determines the result, and under what condition would the conclusion fail?",
+      "anchor": {
+        "description": "European Commission securitisation framework and STS regulatory materials.",
+        "mechanism": "The framework tests transaction design, disclosure, asset homogeneity, risk retention, servicing, and investor information against defined criteria.",
+        "sourceIds": [
+          "eu_sts_securitisation",
+          "sec_structured_finance"
+        ],
+        "dataField": "STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting"
+      },
+      "sections": [
+        {
+          "id": "transaction-mandate",
+          "heading": "Transaction Mandate",
+          "body": [
+            "STS securitisation makes simplicity, transparency, and standardisation conditions of the regulatory label rather than decorative descriptors.",
+            "What decision does STS Securitization make possible in a structured-finance transaction or governing disclosure regime, which input determines the result, and under what condition would the conclusion fail? The transaction is evaluated as a defined allocation of legal rights, cash-flow timing, credit risk, and control rights among originator, vehicle, servicer, noteholders, and residual interests."
+          ]
+        },
+        {
+          "id": "pool-data-room",
+          "heading": "Pool Data Room",
+          "body": [
+            "The evidence boundary for STS Securitization begins with the asset or reference portfolio. The decision-maker must identify eligibility, seasoning, obligor concentration, delinquency, default, recovery, prepayment, servicing, reporting date, and the field that determines cash availability.",
+            "The cited primary artifact establishes STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting. It does not establish a transaction-level expected loss or tranche outcome unless the relevant pool tape and transaction documents disclose those fields. Missing evidence is recorded as a diligence requirement rather than replaced with a sector average."
+          ]
+        },
+        {
+          "id": "structure-design",
+          "heading": "Structure Design",
+          "body": [
+            "The framework tests transaction design, disclosure, asset homogeneity, risk retention, servicing, and investor information against defined criteria.",
+            "The design is defensible only when each legal feature has an economic function. Transfer provisions define the investor claim, the vehicle defines the asset boundary, servicing provisions protect collection continuity, and retention or recourse provisions determine which risks remain economically connected to the sponsor."
+          ]
+        },
+        {
+          "id": "priority-of-payments",
+          "heading": "Priority of Payments",
+          "body": [
+            "Collections become investor cash only after the transaction applies its contractual priority. Fees, reserve movements, interest, principal, losses, and residual distributions must be read in sequence because a shortfall at one step changes the amount available at every later step.",
+            "For STS Securitization, the decisive question is not whether the pool produces cash in aggregate. It is which claim receives each unit of cash under ordinary performance, trigger breach, delayed recovery, and accelerated prepayment."
+          ]
+        },
+        {
+          "id": "credit-enhancement-triggers",
+          "heading": "Credit Enhancement and Triggers",
+          "body": [
+            "Enhancement determines the amount and timing of collateral deterioration that a tranche can withstand before impairment. Subordination, reserves, excess spread, guarantees, and liquidity support have different legal mechanics and must not be aggregated as interchangeable protection.",
+            "Triggers are contractual responses to measured performance. They can terminate replenishment, redirect excess spread, increase reserve funding, accelerate senior amortisation, or alter control rights. The label is misread when compliance with a regulatory category is treated as a guarantee of credit quality or liquidity."
+          ]
+        },
+        {
+          "id": "stress-transmission",
+          "heading": "Stress Transmission",
+          "body": [
+            "A valid stress begins with a sourced change in STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting and ends with a stated tranche or transaction consequence. Default, recovery, prepayment, servicing, funding, and legal assumptions must be changed separately when their economic effects differ.",
+            "The public source pack does not disclose the transaction-specific field required for a numeric stress in this lesson. The professional output is therefore a reproducible diligence design: obtain the field, state the convention, run the waterfall, measure enhancement consumption, and identify the claim whose payment changes first."
+          ]
+        },
+        {
+          "id": "investment-committee-memo",
+          "heading": "Investment Committee Memo",
+          "body": [
+            "The decision for STS Securitization is bounded: proceed to transaction-level diligence only if the cited evidence supports the structure’s legal, collateral, servicing, enhancement, and cash-flow assumptions. No tranche-level conclusion is authorized from framework documents alone.",
+            "The recommendation would be reversed by evidence of weaker collateral, defective transfer, inadequate servicing continuity, unmodeled concentration, earlier enhancement depletion, or a payment priority different from the one used in the analysis."
+          ]
+        },
+        {
+          "id": "desk-drill",
+          "heading": "Applied Questions",
+          "body": [
+            "The questions below test the transferable finance logic of the structure. Each answer must identify the source evidence, economic mechanism, contractual consequence, and boundary of the conclusion."
+          ]
+        }
+      ],
+      "parties": [
+        {
+          "name": "Originator",
+          "responsibility": "Creates or owns the receivables or reference exposures and remains relevant through underwriting, representations, servicing, retention, or residual exposure."
+        },
+        {
+          "name": "Special purpose vehicle",
+          "responsibility": "Holds transferred rights or issues protection and distributes cash according to the transaction documents."
+        },
+        {
+          "name": "Servicer",
+          "responsibility": "Collects, reconciles, reports, remits, and administers the collateral or reference portfolio."
+        },
+        {
+          "name": "Trustee or administrator",
+          "responsibility": "Maintains records, applies contractual controls, calculates compliance, and distributes cash where the documents assign those duties."
+        },
+        {
+          "name": "Investors",
+          "responsibility": "Hold claims with defined payment priority, expected timing, loss attachment, and control rights."
+        }
+      ],
+      "inputs": [
+        {
+          "name": "Primary governing artifact",
+          "value": "European Commission securitisation framework",
+          "unit": "source document",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en",
+          "sourceId": "eu_sts_securitisation",
+          "sourceField": "Official document title"
+        },
+        {
+          "name": "Applicable transaction domain",
+          "value": "European Commission securitisation framework and STS regulatory materials.",
+          "unit": "source context",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en",
+          "sourceId": "eu_sts_securitisation",
+          "sourceField": "STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting"
+        },
+        {
+          "name": "Governing question",
+          "value": "What decision does STS Securitization make possible in a structured-finance transaction or governing disclosure regime, which input determines the result, and under what condition would the conclusion fail?",
+          "unit": "decision question",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "historical_fact",
+          "source": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en",
+          "sourceId": "eu_sts_securitisation",
+          "sourceField": "Research record governing question"
+        },
+        {
+          "name": "STS Securitization transaction field",
+          "value": "Not disclosed in the cited public source pack. Obtain the transaction-level field before issuing a numeric conclusion.",
+          "unit": "research task; field, unit, and as-of date required",
+          "asOfDate": "As stated in the cited source document",
+          "classification": "market_input",
+          "source": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en",
+          "sourceId": "eu_sts_securitisation",
+          "sourceField": "STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting"
+        }
+      ],
+      "tranches": [
+        {
+          "name": "Senior notes",
+          "priority": "Receive payment before subordinated claims after permitted fees and required reserves.",
+          "dataRequirement": "Obtain payment priority, enhancement, trigger, and expected-loss coverage from the transaction documents."
+        },
+        {
+          "name": "Mezzanine notes",
+          "priority": "Stand behind senior claims and ahead of residual interests under the stated waterfall.",
+          "dataRequirement": "Obtain attachment, detachment, subordination, amortisation, and trigger terms."
+        },
+        {
+          "name": "Residual interest",
+          "priority": "Receives residual economics and absorbs the first-loss position specified by the structure.",
+          "dataRequirement": "Obtain retained-interest, loss-allocation, excess-spread, and residual-distribution terms."
+        }
+      ],
+      "waterfall": [
+        {
+          "step": 1,
+          "name": "Collateral collections",
+          "consequence": "Identify scheduled payments, recoveries, prepayments, and other permitted receipts by source and reporting period."
+        },
+        {
+          "step": 2,
+          "name": "Transaction expenses",
+          "consequence": "Pay servicing, trustee, administration, hedging, and other permitted expenses under the documents."
+        },
+        {
+          "step": 3,
+          "name": "Reserve and enhancement tests",
+          "consequence": "Fund or replenish required reserves and test whether the transaction remains within its contractual protection thresholds."
+        },
+        {
+          "step": 4,
+          "name": "Interest and principal priority",
+          "consequence": "Allocate interest and principal to note classes according to sequential or pro-rata rules and the current trigger state."
+        },
+        {
+          "step": 5,
+          "name": "Subordinated and residual allocation",
+          "consequence": "Allocate remaining cash or specified losses to junior claims and residual interests after senior obligations are addressed."
+        }
+      ],
+      "triggers": [
+        {
+          "name": "Collateral performance trigger",
+          "threshold": "Obtain the transaction-specific delinquency, default, loss, payment-rate, or coverage threshold.",
+          "consequence": "Test whether replenishment stops, cash is redirected, reserves increase, or senior amortisation accelerates."
+        },
+        {
+          "name": "Structural protection trigger",
+          "threshold": "Obtain the enhancement floor, reserve floor, liquidity test, or coverage condition.",
+          "consequence": "Test whether the transaction changes payment priority, control rights, or the treatment of residual cash."
+        }
+      ],
+      "stress": {
+        "changedInput": "STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting",
+        "value": "Required from the transaction-level source pack before numeric stress testing.",
+        "trace": "Obtain STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting, state the default, recovery, prepayment, servicing, or timing convention, then trace the change through collections, enhancement consumption, trigger state, waterfall priority, tranche balances, and investor cash flow."
+      },
+      "decisionMemo": "The evidence supports only the decision to obtain or withhold further diligence until STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting is sourced. A transaction-level credit conclusion requires the primary documents, dated collateral data, and a reproducible waterfall trace.",
+      "reviewQuestions": [
+        {
+          "question": "What economic problem does STS Securitization solve?",
+          "answer": "STS securitisation makes simplicity, transparency, and standardisation conditions of the regulatory label rather than decorative descriptors. The investor must determine whether the label is supported by the applicable criteria and whether the standardized structure improves analysis without eliminating collateral risk."
+        },
+        {
+          "question": "Which cash flow is legally and economically being transferred?",
+          "answer": "The answer must identify the contractual cash-flow right, its obligor, its payment frequency, its eligibility conditions, and the legal mechanism that makes the right available to the issuing vehicle. A balance-sheet line or revenue total is not sufficient evidence of a transferable cash flow."
+        },
+        {
+          "question": "Why does the originator remain relevant after closing?",
+          "answer": "The originator can retain underwriting exposure, representations, repurchase obligations, servicing duties, risk retention, or a residual interest. Those continuing obligations affect incentives, collection quality, data integrity, and the credibility of the assumed loss distribution. Legal transfer changes the claim structure; it does not erase institutional conduct."
+        },
+        {
+          "question": "What does the SPV contribute to the credit structure?",
+          "answer": "The SPV creates a limited-purpose legal boundary between the transferred assets and the originator. Its value depends on valid transfer, separateness, account control, governance, servicing continuity, and the enforceability of the payment documents. The acronym itself is not evidence of bankruptcy remoteness."
+        },
+        {
+          "question": "How does collateral performance reach a tranche?",
+          "answer": "Borrower collections, prepayments, defaults, recoveries, fees, and servicing adjustments enter the waterfall. The waterfall then applies contractual priority, enhancement, trigger states, and tranche balances. Tranche risk is therefore produced by the interaction of collateral behaviour and payment priority, not by the collateral label alone."
+        },
+        {
+          "question": "Why are default frequency and recovery timing separate variables?",
+          "answer": "Default frequency identifies how often exposures fail, while recovery severity identifies how much value remains after enforcement, costs, and collateral realization. Recovery timing determines when that value reaches the transaction. A pool with modest defaults can still impair a note if recoveries arrive late, incur high costs, or fall below the assumed severity."
+        },
+        {
+          "question": "What changes when a performance trigger is breached?",
+          "answer": "A trigger is a contractual state transition. Once the specified delinquency, loss, enhancement, payment-rate, or coverage condition is breached, the documents may stop replenishment, redirect excess spread, increase reserves, accelerate senior principal, or change control rights. The answer must state both the threshold and its consequence."
+        },
+        {
+          "question": "What evidence would make the conclusion defensible?",
+          "answer": "The minimum evidence is the transaction document, asset eligibility schedule, dated pool stratification, historical performance, servicing report, legal transfer analysis, waterfall, enhancement terms, trigger definitions, and the specific reporting date. STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting remains a defined diligence requirement when it is absent from the cited source pack."
+        },
+        {
+          "question": "What is the most serious category error in securitisation analysis?",
+          "answer": "The serious error is treating STS Securitization as a synonym for credit quality. The label is misread when compliance with a regulatory category is treated as a guarantee of credit quality or liquidity. The correct conclusion must separate collateral risk, structural protection, legal enforceability, servicing execution, market liquidity, and model uncertainty."
+        },
+        {
+          "question": "What decision does the governing question make possible?",
+          "answer": "What decision does STS Securitization make possible in a structured-finance transaction or governing disclosure regime, which input determines the result, and under what condition would the conclusion fail? The decision must be bounded by the evidence: approve further diligence, approve a defined exposure, reject the structure, or withhold a tranche-level conclusion until missing fields are obtained."
+        },
+        {
+          "question": "What would reverse the recommendation?",
+          "answer": "A reversal would follow from evidence that changes the loss distribution, weakens legal isolation, reduces servicing continuity, consumes enhancement earlier than assumed, changes the waterfall, or makes the relevant collateral cash flow less transferable or less predictable than the transaction requires."
+        },
+        {
+          "question": "How should this concept be distinguished from a related structure?",
+          "answer": "Compare the legal asset transfer, reference portfolio, payment priority, loss attachment, replenishment rules, liquidity support, and investor claim. Labels such as ABS, MBS, conduit, synthetic, term, and pass-through describe different dimensions of a transaction and cannot substitute for reading the documents."
+        }
+      ],
+      "evidenceExhibit": {
+        "status": "source_pack_locked",
+        "documentTitle": "European Commission securitisation framework",
+        "sourceUrl": "https://finance.ec.europa.eu/regulation-and-supervision/securitisation_en",
+        "sourceIds": [
+          "eu_sts_securitisation",
+          "sec_structured_finance"
+        ],
+        "realAnchor": "European Commission securitisation framework and STS regulatory materials.",
+        "unavailableField": "STS criteria, asset homogeneity, disclosure, risk retention, servicing, and investor reporting"
+      },
+      "generationAudit": {
+        "batchType": "securitisation_desk",
+        "seriesId": "securitisation-masterclass",
+        "episodeId": "advanced-transfer",
+        "sourceStatus": "concept_specific_primary_source_pack_locked",
+        "sourceInputStatus": "real source artifacts identified; transaction-specific fields remain explicit diligence requirements where not disclosed"
+      },
+      "batchIndex": 10,
+      "topicIndex": 2
+    }
+  ]
+}

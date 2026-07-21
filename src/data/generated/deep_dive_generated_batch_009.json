@@ -1,0 +1,2964 @@
+{
+  "schemaVersion": "deep-dive-generated-batch.v1",
+  "generatedAt": "2026-07-18T09:49:00.503Z",
+  "batchId": "lessons-standard-09",
+  "status": "generated_for_review",
+  "lessonCount": 8,
+  "lessons": [
+    {
+      "id": "generated_batch_009__dividend_payout_ratio",
+      "topicId": "dividend_payout_ratio",
+      "canonicalName": "Dividend Payout Ratio",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Dividend Payout Ratio reveals the assumption beneath the number.",
+      "dek": "Dividend Payout Ratio is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Dividend Payout Ratio",
+          "group": "Core definition",
+          "formalDefinition": "Dividend Payout Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Dividend Payout Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "The topic is explicitly routed to its real applicable domain: non-financial operating company or corporate-finance decision; it is not being applied to an entity type for which the metric or framework is professionally meaningless.",
+        "decisionEnabled": "Dividend Payout Ratio exists because the decision maker needs to distinguish What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "dividend_payout_ratio-question": {
+          "text": "What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Dividend Payout Ratio",
+          "lhsLatex": "\\text{Dividend Payout Ratio}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Dividend Payout Ratio}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "ril_annual_report_2024_25",
+          "glossary": {
+            "definition": {
+              "term": "Dividend Payout Ratio",
+              "definition": "Dividend Payout Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Dividend Payout Ratio is anchored to Reliance Industries Integrated Annual Report 2024-25. The source record supplies the real regulatory, market, or company context in which the concept is used. Policy inputs: The annual report discloses dividends, earnings, and retained earnings, the three accounting quantities needed to interpret a payout ratio. Economic meaning: The payout ratio measures the share of reported earnings distributed to shareholders; the retained portion finances investment, deleveraging, or liquidity. Interpretation boundary: A payout ratio based on accounting earnings does not establish whether the dividend was funded by recurring free cash flow.",
+            "The governing question is What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail?"
+          ],
+          "sourceIds": [
+            "ril_annual_report_2024_25"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Dividend Payout Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The topic is explicitly routed to its real applicable domain: non-financial operating company or corporate-finance decision; it is not being applied to an entity type for which the metric or framework is professionally meaningless.",
+            "Dividend Payout Ratio isolates the relationship that the governing question makes decision-relevant: Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Dividend Payout Ratio exists because the decision maker needs to distinguish What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. The annual report discloses dividends, earnings, and retained earnings, the three accounting quantities needed to interpret a payout ratio.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "The source evidence identifies the fields that populate the build. Policy inputs supplies The annual report discloses dividends, earnings, and retained earnings, the three accounting quantities needed to interpret a payout ratio. Economic meaning supplies The payout ratio measures the share of reported earnings distributed to shareholders; the retained portion finances investment, deleveraging, or liquidity. Interpretation boundary supplies A payout ratio based on accounting earnings does not establish whether the dividend was funded by recurring free cash flow.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Dividend Payout Ratio exists because ordinary financial information hides a distinction that matters: Dividend Payout Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail?” The topic is explicitly routed to its real applicable domain: non-financial operating company or corporate-finance decision; it is not being applied to an entity type for which the metric or framework is professionally meaningless. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Dividend Payout Ratio helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Dividend Payout Ratio by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Reliance Industries Integrated Annual Report 2024-25 supplies the factual boundary for Dividend Payout Ratio. The transferable lesson is the mechanism: Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "ril_annual_report_2024_25"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Reliance Industries Integrated Annual Report 2024-25",
+            "sourceUrl": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+            "rows": [
+              {
+                "item": "Policy inputs",
+                "value": "The annual report discloses dividends, earnings, and retained earnings, the three accounting quantities needed to interpret a payout ratio.",
+                "source": "ril_integrated_annual_report_fy25"
+              },
+              {
+                "item": "Economic meaning",
+                "value": "The payout ratio measures the share of reported earnings distributed to shareholders; the retained portion finances investment, deleveraging, or liquidity.",
+                "source": "ril_integrated_annual_report_fy25"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "A payout ratio based on accounting earnings does not establish whether the dividend was funded by recurring free cash flow.",
+                "source": "ril_integrated_annual_report_fy25"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Dividend Payout Ratio: decision architecture",
+            "source": "ril_annual_report_2024_25",
+            "inputs": [
+              "Dividend Payout Ratio",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Define each input in the standard Dividend Payout Ratio formulation from the relevant non-financial operating company or corporate-finance decision source, calculate the relationship, interpret its decision signal, and test the assumption that would invalidate the conclusion.",
+            "decision": "Dividend Payout Ratio exists because the decision maker needs to distinguish What decision does Dividend Payout Ratio make possible in a non-financial operating company or corporate-finance decision, which input determines the result, and under what condition would the conclusion fail? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Dividend Payout Ratio exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Dividend Payout Ratio isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Dividend Payout Ratio inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__interest_burden_ratio",
+      "topicId": "interest_burden_ratio",
+      "canonicalName": "Interest Burden Ratio",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Interest Burden Ratio reveals the assumption beneath the number.",
+      "dek": "Interest Burden Ratio is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "ril_annual_report_2024_25": {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "ril_annual_report_2024_25",
+          "tier": 1,
+          "title": "Reliance Industries Integrated Annual Report 2024-25",
+          "url": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Interest Burden Ratio",
+          "group": "Core definition",
+          "formalDefinition": "Interest Burden Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Interest Burden Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Interest-burden analysis applies to non-financial companies where EBIT, interest, and pre-tax income are meaningfully separable in the income statement.",
+        "decisionEnabled": "Interest Burden Ratio exists because the decision maker needs to distinguish How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "interest_burden_ratio-question": {
+          "text": "How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Interest Burden Ratio",
+          "lhsLatex": "\\text{Interest Burden Ratio}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Interest Burden Ratio}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "ril_annual_report_2024_25",
+          "glossary": {
+            "definition": {
+              "term": "Interest Burden Ratio",
+              "definition": "Interest Burden Ratio is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Interest Burden Ratio is anchored to Reliance Industries Integrated Annual Report 2024-25. The source record supplies the real regulatory, market, or company context in which the concept is used. Interest source: The annual report discloses finance costs and profit before tax, establishing the statement-of-profit-and-loss inputs for interest-burden analysis. Economic mechanism: Interest burden isolates the portion of operating profit absorbed by financing cost before tax, linking leverage to earnings available for equity holders. Interpretation boundary: The ratio can move because of rates, debt mix, non-operating income, or accounting classification; it is not a standalone solvency test.",
+            "The governing question is How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage?"
+          ],
+          "sourceIds": [
+            "ril_annual_report_2024_25"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Interest Burden Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Interest-burden analysis applies to non-financial companies where EBIT, interest, and pre-tax income are meaningfully separable in the income statement.",
+            "Interest Burden Ratio isolates the relationship that the governing question makes decision-relevant: Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Interest Burden Ratio exists because the decision maker needs to distinguish How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. The annual report discloses finance costs and profit before tax, establishing the statement-of-profit-and-loss inputs for interest-burden analysis.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility.",
+            "The source evidence identifies the fields that populate the build. Interest source supplies The annual report discloses finance costs and profit before tax, establishing the statement-of-profit-and-loss inputs for interest-burden analysis. Economic mechanism supplies Interest burden isolates the portion of operating profit absorbed by financing cost before tax, linking leverage to earnings available for equity holders. Interpretation boundary supplies The ratio can move because of rates, debt mix, non-operating income, or accounting classification; it is not a standalone solvency test.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Interest Burden Ratio exists because ordinary financial information hides a distinction that matters: Interest Burden Ratio is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage?” Interest-burden analysis applies to non-financial companies where EBIT, interest, and pre-tax income are meaningfully separable in the income statement. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Interest Burden Ratio helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Interest Burden Ratio by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Reliance Industries Integrated Annual Report 2024-25 supplies the factual boundary for Interest Burden Ratio. The transferable lesson is the mechanism: Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "ril_annual_report_2024_25"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Reliance Industries Integrated Annual Report 2024-25",
+            "sourceUrl": "https://www.ril.com/reports/RIL-Integrated-Annual-Report-2024-25.pdf",
+            "rows": [
+              {
+                "item": "Interest source",
+                "value": "The annual report discloses finance costs and profit before tax, establishing the statement-of-profit-and-loss inputs for interest-burden analysis.",
+                "source": "ril_integrated_annual_report_fy25"
+              },
+              {
+                "item": "Economic mechanism",
+                "value": "Interest burden isolates the portion of operating profit absorbed by financing cost before tax, linking leverage to earnings available for equity holders.",
+                "source": "ril_integrated_annual_report_fy25"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "The ratio can move because of rates, debt mix, non-operating income, or accounting classification; it is not a standalone solvency test.",
+                "source": "ril_integrated_annual_report_fy25"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Interest Burden Ratio: decision architecture",
+            "source": "ril_annual_report_2024_25",
+            "inputs": [
+              "Interest Burden Ratio",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Divide earnings before tax by EBIT, or use the equivalent reconciled form EBIT less net interest divided by EBIT, and trace movements to debt balances, rates, and operating-profit volatility.",
+            "decision": "Interest Burden Ratio exists because the decision maker needs to distinguish How much of operating profit survives the financing layer before tax, and how does this expose the earnings sensitivity created by leverage? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Interest Burden Ratio exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Interest Burden Ratio isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Interest Burden Ratio inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__convexity",
+      "topicId": "convexity",
+      "canonicalName": "Convexity",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Convexity reveals the assumption beneath the number.",
+      "dek": "Convexity is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "rbi_financial_markets_report": {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Convexity",
+          "group": "Core definition",
+          "formalDefinition": "Convexity is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Convexity applies to fixed-income price-yield relationships and matters most for larger yield changes or longer-duration instruments.",
+        "decisionEnabled": "Convexity exists because the decision maker needs to distinguish Why does duration alone understate or overstate a bond price change as yields move farther from the starting point? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: Why does duration alone understate or overstate a bond price change as yields move farther from the starting point? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "convexity-question": {
+          "text": "Why does duration alone understate or overstate a bond price change as yields move farther from the starting point?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Convexity",
+          "lhsLatex": "\\text{Convexity}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Convexity}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_government_securities_faq",
+          "glossary": {
+            "definition": {
+              "term": "Convexity",
+              "definition": "Convexity is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Convexity is anchored to RBI Financial Markets Report and Government Securities FAQ. The source record supplies the real regulatory, market, or company context in which the concept is used. Pricing context: RBI’s financial-markets material treats government securities as fixed-income instruments whose prices respond to changes in market yields. Second-order effect: Convexity captures the curvature of the price-yield relationship that duration alone omits. Interpretation boundary: Convexity is instrument-specific and interacts with embedded options; a positive-convexity approximation cannot be applied blindly to callable or putable bonds.",
+            "The governing question is Why does duration alone understate or overstate a bond price change as yields move farther from the starting point?"
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "Why does duration alone understate or overstate a bond price change as yields move farther from the starting point?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Convexity applies to fixed-income price-yield relationships and matters most for larger yield changes or longer-duration instruments.",
+            "Convexity isolates the relationship that the governing question makes decision-relevant: Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Convexity exists because the decision maker needs to distinguish Why does duration alone understate or overstate a bond price change as yields move farther from the starting point? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. RBI’s financial-markets material treats government securities as fixed-income instruments whose prices respond to changes in market yields.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change.",
+            "The source evidence identifies the fields that populate the build. Pricing context supplies RBI’s financial-markets material treats government securities as fixed-income instruments whose prices respond to changes in market yields. Second-order effect supplies Convexity captures the curvature of the price-yield relationship that duration alone omits. Interpretation boundary supplies Convexity is instrument-specific and interacts with embedded options; a positive-convexity approximation cannot be applied blindly to callable or putable bonds.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Convexity exists because ordinary financial information hides a distinction that matters: Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “Why does duration alone understate or overstate a bond price change as yields move farther from the starting point?” Convexity applies to fixed-income price-yield relationships and matters most for larger yield changes or longer-duration instruments. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Convexity helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Convexity by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "RBI Financial Markets Report and Government Securities FAQ supplies the factual boundary for Convexity. The transferable lesson is the mechanism: Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "RBI Financial Markets Report and Government Securities FAQ",
+            "sourceUrl": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265",
+            "rows": [
+              {
+                "item": "Pricing context",
+                "value": "RBI’s financial-markets material treats government securities as fixed-income instruments whose prices respond to changes in market yields.",
+                "source": "rbi_financial_markets_report"
+              },
+              {
+                "item": "Second-order effect",
+                "value": "Convexity captures the curvature of the price-yield relationship that duration alone omits.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "Convexity is instrument-specific and interacts with embedded options; a positive-convexity approximation cannot be applied blindly to callable or putable bonds.",
+                "source": "rbi_financial_markets_report"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Convexity: decision architecture",
+            "source": "rbi_government_securities_faq",
+            "inputs": [
+              "Convexity",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Measure the second-order curvature of the price-yield relationship and add the convexity adjustment to the duration approximation for a stated yield change.",
+            "decision": "Convexity exists because the decision maker needs to distinguish Why does duration alone understate or overstate a bond price change as yields move farther from the starting point? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Convexity exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Convexity isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Convexity inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__duration",
+      "topicId": "duration",
+      "canonicalName": "Duration",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Duration reveals the assumption beneath the number.",
+      "dek": "Duration is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "fdic_svb_interest_rate_risk": {
+          "id": "fdic_svb_interest_rate_risk",
+          "tier": 1,
+          "title": "FDIC: Recent Bank Failures and the Path Ahead",
+          "url": "https://www.fdic.gov/news/speeches/2023/spapr1223.html"
+        },
+        "fdic_svb_securities_portfolio_memo": {
+          "id": "fdic_svb_securities_portfolio_memo",
+          "tier": 1,
+          "title": "FDIC memorandum on Silicon Valley Bank securities-portfolio management",
+          "url": "https://www.fdic.gov/news/speeches/2024/memorandum-and-resolution-request-authority-sue-six-former-officers-and-eleven-former"
+        },
+        "bis_irrbb_standard": {
+          "id": "bis_irrbb_standard",
+          "tier": 1,
+          "title": "Basel Committee: Interest Rate Risk in the Banking Book",
+          "url": "https://www.bis.org/bcbs/publ/d368.htm"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "fdic_svb_interest_rate_risk",
+          "tier": 1,
+          "title": "FDIC: Recent Bank Failures and the Path Ahead",
+          "url": "https://www.fdic.gov/news/speeches/2023/spapr1223.html"
+        },
+        {
+          "id": "fdic_svb_securities_portfolio_memo",
+          "tier": 1,
+          "title": "FDIC memorandum on Silicon Valley Bank securities-portfolio management",
+          "url": "https://www.fdic.gov/news/speeches/2024/memorandum-and-resolution-request-authority-sue-six-former-officers-and-eleven-former"
+        },
+        {
+          "id": "bis_irrbb_standard",
+          "tier": 1,
+          "title": "Basel Committee: Interest Rate Risk in the Banking Book",
+          "url": "https://www.bis.org/bcbs/publ/d368.htm"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Duration",
+          "group": "Core definition",
+          "formalDefinition": "Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Duration is a fixed-income price-sensitivity concept and an interest-rate-risk lens for banks; the FDIC’s SVB record documents the real economic failure mode, while Basel provides the governing risk framework.",
+        "decisionEnabled": "Duration exists because the decision maker needs to distinguish How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "duration-question": {
+          "text": "How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Duration",
+          "lhsLatex": "\\text{Duration}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Duration}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "fdic_svb_interest_rate_risk",
+          "glossary": {
+            "definition": {
+              "term": "Duration",
+              "definition": "Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Duration is anchored to FDIC: Recent Bank Failures and the Path Ahead; Basel IRRBB Standard. The source record supplies the real regulatory, market, or company context in which the concept is used. Bank-risk setting: The FDIC’s review of recent bank failures identifies interest-rate-risk management and securities-portfolio losses as material supervisory concerns. Sensitivity measure: Duration approximates the percentage price change of a fixed-income instrument for a change in yield, subject to the instrument’s cash-flow structure. Interpretation boundary: Duration is a first-order approximation; convexity, credit spread changes, liquidity, and deposit behavior can materially change realized outcomes.",
+            "The governing question is How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes?"
+          ],
+          "sourceIds": [
+            "fdic_svb_interest_rate_risk",
+            "fdic_svb_securities_portfolio_memo",
+            "bis_irrbb_standard"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Duration is a fixed-income price-sensitivity concept and an interest-rate-risk lens for banks; the FDIC’s SVB record documents the real economic failure mode, while Basel provides the governing risk framework.",
+            "Duration isolates the relationship that the governing question makes decision-relevant: Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Duration exists because the decision maker needs to distinguish How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. The FDIC’s review of recent bank failures identifies interest-rate-risk management and securities-portfolio losses as material supervisory concerns.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes.",
+            "The source evidence identifies the fields that populate the build. Bank-risk setting supplies The FDIC’s review of recent bank failures identifies interest-rate-risk management and securities-portfolio losses as material supervisory concerns. Sensitivity measure supplies Duration approximates the percentage price change of a fixed-income instrument for a change in yield, subject to the instrument’s cash-flow structure. Interpretation boundary supplies Duration is a first-order approximation; convexity, credit spread changes, liquidity, and deposit behavior can materially change realized outcomes.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Duration exists because ordinary financial information hides a distinction that matters: Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes?” Duration is a fixed-income price-sensitivity concept and an interest-rate-risk lens for banks; the FDIC’s SVB record documents the real economic failure mode, while Basel provides the governing risk framework. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Duration helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Duration by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "FDIC: Recent Bank Failures and the Path Ahead; Basel IRRBB Standard supplies the factual boundary for Duration. The transferable lesson is the mechanism: Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "fdic_svb_interest_rate_risk",
+            "fdic_svb_securities_portfolio_memo",
+            "bis_irrbb_standard"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "FDIC: Recent Bank Failures and the Path Ahead; Basel IRRBB Standard",
+            "sourceUrl": "https://www.fdic.gov/news/speeches/2023/spapr1223.html",
+            "rows": [
+              {
+                "item": "Bank-risk setting",
+                "value": "The FDIC’s review of recent bank failures identifies interest-rate-risk management and securities-portfolio losses as material supervisory concerns.",
+                "source": "fdic_recent_bank_failures_2023"
+              },
+              {
+                "item": "Sensitivity measure",
+                "value": "Duration approximates the percentage price change of a fixed-income instrument for a change in yield, subject to the instrument’s cash-flow structure.",
+                "source": "bis_irrbb_standard"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "Duration is a first-order approximation; convexity, credit spread changes, liquidity, and deposit behavior can materially change realized outcomes.",
+                "source": "bis_irrbb_standard"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Duration: decision architecture",
+            "source": "fdic_svb_interest_rate_risk",
+            "inputs": [
+              "Duration",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Discount each promised cash flow at yield to maturity, weight each payment date by its present-value share, and use the resulting duration to estimate price sensitivity to yield changes.",
+            "decision": "Duration exists because the decision maker needs to distinguish How does the timing and present value of fixed-income cash flows determine a bond or bank portfolio’s sensitivity to interest-rate changes? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Duration exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Duration isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Duration inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__effective_duration",
+      "topicId": "effective_duration",
+      "canonicalName": "Effective Duration",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Effective Duration reveals the assumption beneath the number.",
+      "dek": "Effective Duration is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "rbi_financial_markets_report": {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Effective Duration",
+          "group": "Core definition",
+          "formalDefinition": "Effective Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Effective Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Effective duration applies to instruments with embedded options or changing cash flows; modified duration is not sufficient.",
+        "decisionEnabled": "Effective Duration exists because the decision maker needs to distinguish How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "effective_duration-question": {
+          "text": "How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Effective Duration",
+          "lhsLatex": "\\text{Effective Duration}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Effective Duration}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_government_securities_faq",
+          "glossary": {
+            "definition": {
+              "term": "Effective Duration",
+              "definition": "Effective Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Effective Duration is anchored to RBI Financial Markets Report and Government Securities FAQ. The source record supplies the real regulatory, market, or company context in which the concept is used. Instrument scope: Effective duration is used when the instrument’s cash flows can change as yields move, including securities with embedded options. Sensitivity logic: The measure estimates price sensitivity from revalued cash flows under an upward and downward yield shock rather than treating cash flows as fixed. Interpretation boundary: The result depends on the option-behavior model and the size and shape of the yield shock used in the revaluation.",
+            "The governing question is How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities?"
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Effective Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Effective duration applies to instruments with embedded options or changing cash flows; modified duration is not sufficient.",
+            "Effective Duration isolates the relationship that the governing question makes decision-relevant: Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Effective Duration exists because the decision maker needs to distinguish How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Effective duration is used when the instrument’s cash flows can change as yields move, including securities with embedded options.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change.",
+            "The source evidence identifies the fields that populate the build. Instrument scope supplies Effective duration is used when the instrument’s cash flows can change as yields move, including securities with embedded options. Sensitivity logic supplies The measure estimates price sensitivity from revalued cash flows under an upward and downward yield shock rather than treating cash flows as fixed. Interpretation boundary supplies The result depends on the option-behavior model and the size and shape of the yield shock used in the revaluation.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Effective Duration exists because ordinary financial information hides a distinction that matters: Effective Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities?” Effective duration applies to instruments with embedded options or changing cash flows; modified duration is not sufficient. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Effective Duration helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Effective Duration by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "RBI Financial Markets Report and Government Securities FAQ supplies the factual boundary for Effective Duration. The transferable lesson is the mechanism: Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "RBI Financial Markets Report and Government Securities FAQ",
+            "sourceUrl": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265",
+            "rows": [
+              {
+                "item": "Instrument scope",
+                "value": "Effective duration is used when the instrument’s cash flows can change as yields move, including securities with embedded options.",
+                "source": "rbi_financial_markets_report"
+              },
+              {
+                "item": "Sensitivity logic",
+                "value": "The measure estimates price sensitivity from revalued cash flows under an upward and downward yield shock rather than treating cash flows as fixed.",
+                "source": "rbi_financial_markets_report"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "The result depends on the option-behavior model and the size and shape of the yield shock used in the revaluation.",
+                "source": "rbi_financial_markets_report"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Effective Duration: decision architecture",
+            "source": "rbi_government_securities_faq",
+            "inputs": [
+              "Effective Duration",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Reprice the instrument under an upward and downward yield shock using an option-adjusted valuation, then divide the price difference by twice the initial price and the yield change.",
+            "decision": "Effective Duration exists because the decision maker needs to distinguish How should interest-rate sensitivity be measured when cash flows can change as rates move, as with callable bonds or mortgage-backed securities? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Effective Duration exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Effective Duration isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Effective Duration inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__macaulay_duration",
+      "topicId": "macaulay_duration",
+      "canonicalName": "Macaulay Duration",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Macaulay Duration reveals the assumption beneath the number.",
+      "dek": "Macaulay Duration is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "rbi_financial_markets_report": {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Macaulay Duration",
+          "group": "Core definition",
+          "formalDefinition": "Macaulay Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Macaulay Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Macaulay duration applies to fixed-cash-flow bonds; it is a timing measure, not the direct price-sensitivity estimate.",
+        "decisionEnabled": "Macaulay Duration exists because the decision maker needs to distinguish How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "macaulay_duration-question": {
+          "text": "How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Macaulay Duration",
+          "lhsLatex": "\\text{Macaulay Duration}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Macaulay Duration}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_government_securities_faq",
+          "glossary": {
+            "definition": {
+              "term": "Macaulay Duration",
+              "definition": "Macaulay Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Macaulay Duration is anchored to RBI Government Securities and Financial Markets Material. The source record supplies the real regulatory, market, or company context in which the concept is used. Cash-flow weighting: Macaulay duration is the present-value-weighted average time at which a bond’s promised cash flows are received. Economic use: The measure links a bond’s cash-flow timing to its first-order exposure to yield changes and to the weighted-average-life intuition used in fixed income. Interpretation boundary: Macaulay duration assumes fixed promised cash flows; it does not by itself model call decisions, prepayments, or default.",
+            "The governing question is How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows?"
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Macaulay Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Macaulay duration applies to fixed-cash-flow bonds; it is a timing measure, not the direct price-sensitivity estimate.",
+            "Macaulay Duration isolates the relationship that the governing question makes decision-relevant: Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Macaulay Duration exists because the decision maker needs to distinguish How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Macaulay duration is the present-value-weighted average time at which a bond’s promised cash flows are received.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times.",
+            "The source evidence identifies the fields that populate the build. Cash-flow weighting supplies Macaulay duration is the present-value-weighted average time at which a bond’s promised cash flows are received. Economic use supplies The measure links a bond’s cash-flow timing to its first-order exposure to yield changes and to the weighted-average-life intuition used in fixed income. Interpretation boundary supplies Macaulay duration assumes fixed promised cash flows; it does not by itself model call decisions, prepayments, or default.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Macaulay Duration exists because ordinary financial information hides a distinction that matters: Macaulay Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows?” Macaulay duration applies to fixed-cash-flow bonds; it is a timing measure, not the direct price-sensitivity estimate. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Macaulay Duration helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Macaulay Duration by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "RBI Government Securities and Financial Markets Material supplies the factual boundary for Macaulay Duration. The transferable lesson is the mechanism: Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "RBI Government Securities and Financial Markets Material",
+            "sourceUrl": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711",
+            "rows": [
+              {
+                "item": "Cash-flow weighting",
+                "value": "Macaulay duration is the present-value-weighted average time at which a bond’s promised cash flows are received.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Economic use",
+                "value": "The measure links a bond’s cash-flow timing to its first-order exposure to yield changes and to the weighted-average-life intuition used in fixed income.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "Macaulay duration assumes fixed promised cash flows; it does not by itself model call decisions, prepayments, or default.",
+                "source": "rbi_government_securities_faq"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Macaulay Duration: decision architecture",
+            "source": "rbi_government_securities_faq",
+            "inputs": [
+              "Macaulay Duration",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Calculate the present value of each coupon and principal cash flow, weight each payment time by its present-value share of price, and sum the weighted times.",
+            "decision": "Macaulay Duration exists because the decision maker needs to distinguish How long, in present-value-weighted time, does an investor wait to receive a bond’s cash flows? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Macaulay Duration exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Macaulay Duration isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Macaulay Duration inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__modified_duration",
+      "topicId": "modified_duration",
+      "canonicalName": "Modified Duration",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Modified Duration reveals the assumption beneath the number.",
+      "dek": "Modified Duration is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "rbi_financial_markets_report": {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Modified Duration",
+          "group": "Core definition",
+          "formalDefinition": "Modified Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Modified Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Modified duration applies to option-free fixed-income instruments under small parallel yield changes.",
+        "decisionEnabled": "Modified Duration exists because the decision maker needs to distinguish What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "modified_duration-question": {
+          "text": "What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Modified Duration",
+          "lhsLatex": "\\text{Modified Duration}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Modified Duration}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_government_securities_faq",
+          "glossary": {
+            "definition": {
+              "term": "Modified Duration",
+              "definition": "Modified Duration is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Modified Duration is anchored to RBI Government Securities and Financial Markets Material. The source record supplies the real regulatory, market, or company context in which the concept is used. Price sensitivity: Modified duration converts the timing-weighted cash-flow measure into an approximation of percentage price change for a change in yield. Portfolio use: The measure allows fixed-income holdings to be compared and aggregated for first-order interest-rate exposure when the yield shock is defined consistently. Interpretation boundary: The approximation becomes less accurate for large yield changes or when convexity and changing cash flows are material.",
+            "The governing question is What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large?"
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Modified Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Modified duration applies to option-free fixed-income instruments under small parallel yield changes.",
+            "Modified Duration isolates the relationship that the governing question makes decision-relevant: Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Modified Duration exists because the decision maker needs to distinguish What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Modified duration converts the timing-weighted cash-flow measure into an approximation of percentage price change for a change in yield.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention.",
+            "The source evidence identifies the fields that populate the build. Price sensitivity supplies Modified duration converts the timing-weighted cash-flow measure into an approximation of percentage price change for a change in yield. Portfolio use supplies The measure allows fixed-income holdings to be compared and aggregated for first-order interest-rate exposure when the yield shock is defined consistently. Interpretation boundary supplies The approximation becomes less accurate for large yield changes or when convexity and changing cash flows are material.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Modified Duration exists because ordinary financial information hides a distinction that matters: Modified Duration is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large?” Modified duration applies to option-free fixed-income instruments under small parallel yield changes. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Modified Duration helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Modified Duration by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "RBI Government Securities and Financial Markets Material supplies the factual boundary for Modified Duration. The transferable lesson is the mechanism: Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "RBI Government Securities and Financial Markets Material",
+            "sourceUrl": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711",
+            "rows": [
+              {
+                "item": "Price sensitivity",
+                "value": "Modified duration converts the timing-weighted cash-flow measure into an approximation of percentage price change for a change in yield.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Portfolio use",
+                "value": "The measure allows fixed-income holdings to be compared and aggregated for first-order interest-rate exposure when the yield shock is defined consistently.",
+                "source": "rbi_government_securities_faq"
+              },
+              {
+                "item": "Interpretation boundary",
+                "value": "The approximation becomes less accurate for large yield changes or when convexity and changing cash flows are material.",
+                "source": "rbi_government_securities_faq"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Modified Duration: decision architecture",
+            "source": "rbi_government_securities_faq",
+            "inputs": [
+              "Modified Duration",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Divide Macaulay duration by one plus yield per compounding period, then multiply by the yield change with the inverse sign; state the compounding convention.",
+            "decision": "Modified Duration exists because the decision maker needs to distinguish What approximate percentage price change follows a small yield change, and why does the estimate weaken when the yield move is large? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Modified Duration exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Modified Duration isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Modified Duration inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    },
+    {
+      "id": "generated_batch_009__negative_convexity",
+      "topicId": "negative_convexity",
+      "canonicalName": "Negative Convexity",
+      "kind": "standard",
+      "format": "Structural",
+      "publishStatus": "ready_for_editorial_review",
+      "eyebrow": "MBA Finance Deep Dive",
+      "title": "Negative Convexity reveals the assumption beneath the number.",
+      "dek": "Negative Convexity is useful when it isolates a decision-relevant relationship that ordinary reported figures leave implicit.",
+      "sources": {
+        "rbi_government_securities_faq": {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        "rbi_financial_markets_report": {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      },
+      "sourceHierarchy": [
+        {
+          "id": "rbi_government_securities_faq",
+          "tier": 1,
+          "title": "Reserve Bank of India: Government securities FAQs",
+          "url": "https://m.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=711"
+        },
+        {
+          "id": "rbi_financial_markets_report",
+          "tier": 1,
+          "title": "Reserve Bank of India: Financial Markets Report",
+          "url": "https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=22265"
+        }
+      ],
+      "definitionCatalog": [
+        {
+          "id": "definition",
+          "term": "Negative Convexity",
+          "group": "Core definition",
+          "formalDefinition": "Negative Convexity is the finance concept defined by the governing question and mechanics for this lesson.",
+          "whyItMatters": "It establishes the scope of the calculation or decision.",
+          "commonExaminationError": "Confusing the concept with a related ratio, assumption, or output."
+        },
+        {
+          "id": "primary_input",
+          "term": "Primary input",
+          "group": "Mechanics",
+          "formalDefinition": "The measured quantity that enters the concept and changes its result.",
+          "whyItMatters": "It identifies which economic fact the concept is designed to expose.",
+          "commonExaminationError": "Using a convenient proxy without testing whether it preserves the intended meaning."
+        },
+        {
+          "id": "comparison_input",
+          "term": "Comparison input",
+          "group": "Mechanics",
+          "formalDefinition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+          "whyItMatters": "It gives the output scale and direction.",
+          "commonExaminationError": "Treating the comparison input as neutral when its construction drives the result."
+        },
+        {
+          "id": "decision_signal",
+          "term": "Decision signal",
+          "group": "Interpretation",
+          "formalDefinition": "The decision-relevant information extracted after the mechanics are applied.",
+          "whyItMatters": "It converts a reported number into an action or follow-up question.",
+          "commonExaminationError": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+        },
+        {
+          "id": "validity_condition",
+          "term": "Validity condition",
+          "group": "Limitations",
+          "formalDefinition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+          "whyItMatters": "It defines when the result can be used and when it must be qualified.",
+          "commonExaminationError": "Applying a valid concept outside its economic domain."
+        }
+      ],
+      "subtopicCoverage": [
+        {
+          "subtopic": "core mechanism",
+          "section": "Conceptual Foundation",
+          "definitionIds": [
+            "definition",
+            "primary_input"
+          ]
+        },
+        {
+          "subtopic": "decision implications",
+          "section": "Interpretation",
+          "definitionIds": [
+            "comparison_input",
+            "decision_signal"
+          ]
+        },
+        {
+          "subtopic": "critical boundary",
+          "section": "Assumptions and Limitations",
+          "definitionIds": [
+            "validity_condition"
+          ]
+        }
+      ],
+      "knowledgeMap": {
+        "whyItExists": "Negative Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+        "informationIsolated": "Negative convexity applies to instruments whose holders are short an embedded option, such as callable bonds and many mortgage-backed securities.",
+        "decisionEnabled": "Negative Convexity exists because the decision maker needs to distinguish Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond? from a broader headline number. The construct makes that distinction observable.",
+        "validityAssumptions": "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision.",
+        "criticalQuestion": "Before accepting the output, ask: Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond? Then identify the evidence that would falsify the conclusion."
+      },
+      "nodes": {
+        "negative_convexity-question": {
+          "text": "Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond?",
+          "citations": []
+        }
+      },
+      "formulas": {
+        "primary": {
+          "label": "Negative Convexity",
+          "lhsLatex": "\\text{Negative Convexity}",
+          "relationLatex": "\\longrightarrow",
+          "rhsLatex": "\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "latex": "\\text{Negative Convexity}\\;\\longrightarrow\\;\\text{inputs}\\;\\longrightarrow\\;\\text{decision signal}",
+          "sourceId": "rbi_government_securities_faq",
+          "glossary": {
+            "definition": {
+              "term": "Negative Convexity",
+              "definition": "Negative Convexity is the finance concept defined by the governing question and mechanics for this lesson.",
+              "location": "Core definition analysis.",
+              "financialInterpretation": "It establishes the scope of the calculation or decision.",
+              "commonExaminationTrap": "Confusing the concept with a related ratio, assumption, or output."
+            },
+            "primary_input": {
+              "term": "Primary input",
+              "definition": "The measured quantity that enters the concept and changes its result.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It identifies which economic fact the concept is designed to expose.",
+              "commonExaminationTrap": "Using a convenient proxy without testing whether it preserves the intended meaning."
+            },
+            "comparison_input": {
+              "term": "Comparison input",
+              "definition": "The reference quantity, benchmark, or adjustment against which the primary input is interpreted.",
+              "location": "Mechanics analysis.",
+              "financialInterpretation": "It gives the output scale and direction.",
+              "commonExaminationTrap": "Treating the comparison input as neutral when its construction drives the result."
+            },
+            "decision_signal": {
+              "term": "Decision signal",
+              "definition": "The decision-relevant information extracted after the mechanics are applied.",
+              "location": "Interpretation analysis.",
+              "financialInterpretation": "It converts a reported number into an action or follow-up question.",
+              "commonExaminationTrap": "Reading the output as a conclusion rather than a signal conditioned on assumptions."
+            },
+            "validity_condition": {
+              "term": "Validity condition",
+              "definition": "The factual or methodological condition that must hold for the concept to retain its intended meaning.",
+              "location": "Limitations analysis.",
+              "financialInterpretation": "It defines when the result can be used and when it must be qualified.",
+              "commonExaminationTrap": "Applying a valid concept outside its economic domain."
+            }
+          }
+        }
+      },
+      "cram": [
+        {
+          "label": "Governing Question",
+          "pointer": "governing-question"
+        },
+        {
+          "label": "Definition",
+          "pointer": "conceptual-foundation"
+        },
+        {
+          "label": "Formula",
+          "pointer": "formula-construction"
+        },
+        {
+          "label": "Interpretation",
+          "pointer": "interpretation"
+        },
+        {
+          "label": "Limitation",
+          "pointer": "assumptions-limitations"
+        }
+      ],
+      "sections": [
+        {
+          "id": "case-context",
+          "heading": "Case Context",
+          "body": [
+            "Negative Convexity is anchored to Basel Interest Rate Risk in the Banking Book Standard. The source record supplies the real regulatory, market, or company context in which the concept is used. Cash-flow optionality: Negative convexity arises when borrowers or issuers have incentives to change the timing of contractual cash flows as rates move. Price behavior: The price-yield curve bends in a way that reduces the benefit of falling yields or increases the damage from rising yields relative to a linear duration estimate. Risk boundary: Negative convexity must be analyzed with the option model, prepayment behavior, and rate path; duration alone is insufficient.",
+            "The governing question is Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond?"
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ]
+        },
+        {
+          "id": "governing-question",
+          "heading": "Governing Question",
+          "body": [
+            "Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond?"
+          ]
+        },
+        {
+          "id": "conceptual-foundation",
+          "heading": "Conceptual Foundation",
+          "body": [
+            "Negative Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "Negative convexity applies to instruments whose holders are short an embedded option, such as callable bonds and many mortgage-backed securities.",
+            "Negative Convexity isolates the relationship that the governing question makes decision-relevant: Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios."
+          ]
+        },
+        {
+          "id": "economic-logic",
+          "heading": "Economic Logic",
+          "body": [
+            "Negative Convexity exists because the decision maker needs to distinguish Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond? from a broader headline number. The construct makes that distinction observable.",
+            "The mechanism is economically useful only when each input represents the risk, timing, funding, or accounting quantity that the decision is meant to evaluate. Negative convexity arises when borrowers or issuers have incentives to change the timing of contractual cash flows as rates move.",
+            "The first substantive challenge is therefore classification. A movement in the output is meaningful only when the underlying input changed for an economic reason rather than because of a reporting, benchmark, or scope change."
+          ]
+        },
+        {
+          "id": "formula-construction",
+          "heading": "Formula Construction",
+          "body": [
+            "Begin with the mechanics stated in the research record: Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios.",
+            "The source evidence identifies the fields that populate the build. Cash-flow optionality supplies Negative convexity arises when borrowers or issuers have incentives to change the timing of contractual cash flows as rates move. Price behavior supplies The price-yield curve bends in a way that reduces the benefit of falling yields or increases the damage from rising yields relative to a linear duration estimate. Risk boundary supplies Negative convexity must be analyzed with the option model, prepayment behavior, and rate path; duration alone is insufficient.",
+            "Preserve units, timing, scope, and regulatory definitions before interpreting the result. A mathematically correct calculation with an inapplicable input is still economically wrong.",
+            "Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios."
+          ]
+        },
+        {
+          "id": "eli5",
+          "heading": "ELI5: Core Intuition",
+          "body": [
+            "Start with the question, not the formula. Negative Convexity exists because ordinary financial information hides a distinction that matters: Negative Convexity is a finance construct used to answer a specific decision question. Its meaning comes from the economic relationship in the inputs, not from the name of the output.",
+            "The mechanism is a controlled way to expose that distinction. Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios. Each input has a job, and changing an input changes the output only through the relationship defined by the concept.",
+            "The output is not a magic score. It is evidence about the question, “Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond?” Negative convexity applies to instruments whose holders are short an embedded option, such as callable bonds and many mortgage-backed securities. The reader must trace the result back to the input that moved and the comparison base that gave it meaning.",
+            "The practical use is a better decision. Use the result to compare alternatives, investigate a risk, set a funding or valuation assumption, evaluate recognition, or decide what evidence is needed next. A high or low result matters only because it changes that decision.",
+            "The boundary is part of the lesson. The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed. These conditions must be tested before the output is used in a decision. If the entity, period, accounting definition, market proxy, tax rule, or funding structure changes, the same output may no longer answer the same question.",
+            "In one sentence: Negative Convexity helps you see a hidden financial relationship, follow it through a defined mechanism, and make a better decision without confusing a useful signal with the whole economic truth."
+          ]
+        },
+        {
+          "id": "comparative-framework",
+          "heading": "Comparative Framework",
+          "body": [
+            "Compare the result with the governing standard, the relevant peer set, and the entity's own history when those comparison sets are economically comparable.",
+            "No universal threshold should be invented when the concept is sector, regime, horizon, or portfolio dependent.",
+            "A related measure can be useful only when it answers a different question rather than repeating the same output."
+          ]
+        },
+        {
+          "id": "interpretation",
+          "heading": "Interpretation",
+          "body": [
+            "Interpret Negative Convexity by tracing the result back to the input that moved, the assumption that made the relationship valid, and the decision that would change if the result were different.",
+            "A strong output can coexist with weak economics when the denominator, benchmark, timing, or classification masks the risk the concept was meant to expose.",
+            "The most useful conclusion states what the result supports and what evidence is still required."
+          ]
+        },
+        {
+          "id": "assumptions-limitations",
+          "heading": "Assumptions and Limitations",
+          "body": [
+            "The concept depends on the source definitions, measurement period, comparability of inputs, and economic domain for which it was designed.",
+            "The result loses meaning when those conditions change or when a proxy replaces the underlying economic quantity.",
+            "A limitation is not a disclaimer. It identifies the exact condition under which the decision signal becomes unreliable."
+          ]
+        },
+        {
+          "id": "case-resolution",
+          "heading": "Case Resolution",
+          "body": [
+            "Basel Interest Rate Risk in the Banking Book Standard supplies the factual boundary for Negative Convexity. The transferable lesson is the mechanism: Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios.",
+            "Return to the case by testing whether the cited fields support the input definitions, the comparison set, and the decision implication. The case is evidence for the concept, not a substitute for understanding it."
+          ],
+          "sourceIds": [
+            "rbi_government_securities_faq",
+            "rbi_financial_markets_report"
+          ],
+          "evidence": {
+            "status": "captured_for_editorial_review",
+            "documentTitle": "Basel Interest Rate Risk in the Banking Book Standard",
+            "sourceUrl": "https://www.bis.org/bcbs/publ/d368.htm",
+            "rows": [
+              {
+                "item": "Cash-flow optionality",
+                "value": "Negative convexity arises when borrowers or issuers have incentives to change the timing of contractual cash flows as rates move.",
+                "source": "bis_irrbb_standard"
+              },
+              {
+                "item": "Price behavior",
+                "value": "The price-yield curve bends in a way that reduces the benefit of falling yields or increases the damage from rising yields relative to a linear duration estimate.",
+                "source": "bis_irrbb_standard"
+              },
+              {
+                "item": "Risk boundary",
+                "value": "Negative convexity must be analyzed with the option model, prepayment behavior, and rate path; duration alone is insufficient.",
+                "source": "bis_irrbb_standard"
+              }
+            ]
+          },
+          "diagram": {
+            "status": "generated",
+            "title": "Negative Convexity: decision architecture",
+            "source": "rbi_government_securities_faq",
+            "inputs": [
+              "Negative Convexity",
+              "Primary input",
+              "Comparison input"
+            ],
+            "transformation": "Identify the embedded issuer or borrower option, model the rate-dependent change in expected cash flows, and compare effective duration across rate scenarios.",
+            "decision": "Negative Convexity exists because the decision maker needs to distinguish Why can a mortgage or callable bond gain less when yields fall and lose more when yields rise than an option-free bond? from a broader headline number. The construct makes that distinction observable.",
+            "insight": "The diagram shows the inputs, the transformation, and the decision implication in one reading path."
+          }
+        },
+        {
+          "id": "mastery-questions",
+          "heading": "Questions That Test Mastery",
+          "conclusionQuestions": [
+            {
+              "question": "Why does Negative Convexity exist?",
+              "answer": "It exists because the ordinary reported information combines economic features that have different consequences for value, risk, timing, or funding. The concept separates those features before a finance decision is made."
+            },
+            {
+              "question": "What information does Negative Convexity isolate?",
+              "answer": "It isolates the relationship identified in the governing question. The reader should be able to name the numerator or primary input, the comparison base, the direction of movement, and the economic signal produced."
+            },
+            {
+              "question": "What decision does Negative Convexity inform?",
+              "answer": "The output informs a bounded decision such as comparison, pricing, funding, recognition, valuation, or escalation. It should never be presented as a verdict without naming the decision standard and time horizon."
+            },
+            {
+              "question": "Which input drives the result?",
+              "answer": "Decompose the output into its material inputs and test which one changed. An aggregate movement can conceal offsetting effects, a denominator change, or a classification choice that has more importance than the headline result."
+            },
+            {
+              "question": "What assumption makes the concept valid?",
+              "answer": "The concept requires comparable definitions, an appropriate entity or sector, a consistent measurement horizon, and inputs that represent the intended economic quantities. If one condition fails, the conclusion requires qualification."
+            },
+            {
+              "question": "What is the most common misuse?",
+              "answer": "The common misuse is transporting a valid measure into a different setting and retaining the same interpretation. A ratio, model, or rule carries the assumptions of its construction and cannot be detached from them."
+            },
+            {
+              "question": "How should the result be benchmarked?",
+              "answer": "Use the comparison set that matches the decision: the applicable standard, comparable institutions, a same-industry cohort, a same-vintage group, or the entity's own history. A benchmark is useful only when the underlying economics are comparable."
+            },
+            {
+              "question": "What would a sophisticated MBA finance student question next?",
+              "answer": "The next question is what evidence would reverse the conclusion. Identify the weakest input, the assumption most likely to break under stress, and the downstream decision that would change if that input were restated."
+            }
+          ]
+        }
+      ],
+      "generationAudit": {
+        "batchId": "lessons-standard-09",
+        "sourceStatus": "source_pack_locked",
+        "fieldLevelValueStatus": "source-backed field values captured for editorial review",
+        "imageStatus": "source-backed evidence exhibit captured; verify rendering during editorial review",
+        "editorialPasses": [
+          "draft_pass",
+          "editorial_pass"
+        ]
+      }
+    }
+  ],
+  "qualityNote": "This batch contains source-bound prose, field-level evidence exhibits, explanatory diagrams, and question banks. It remains subject to editorial review before publication."
+}
