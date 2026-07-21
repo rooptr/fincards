@@ -82,11 +82,11 @@ export function MiniPlayer({ playback, onExpand, onTogglePlay, onNext }: MiniPla
       exit={{ y: 80, opacity: 0 }}
       transition={{ type: 'spring', damping: 26, stiffness: 280 }}
       style={{
-        position: 'absolute',
+        position: 'fixed',
         left: 8,
         right: 8,
         bottom: 12,
-        zIndex: 50,
+        zIndex: 95,
         borderRadius: 16,
         overflow: 'hidden',
         boxShadow: '0 4px 24px rgba(0,0,0,0.14), 0 1px 4px rgba(0,0,0,0.08)',

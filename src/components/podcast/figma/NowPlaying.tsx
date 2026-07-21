@@ -175,7 +175,7 @@ export function NowPlaying({ playback, onClose, onTogglePlay, onSeek, onSkipBack
       animate={{ y: 0 }}
       exit={{ y: "100%" }}
       transition={{ type: "spring", stiffness: 320, damping: 34, mass: 0.9 }}
-      className="fixed inset-0 z-[100] overflow-hidden bg-black rounded-t-[10px]"
+      className="fixed inset-0 z-[100] h-[100dvh] overflow-hidden bg-black"
       style={{ fontFamily: SF }}
     >
       <button
