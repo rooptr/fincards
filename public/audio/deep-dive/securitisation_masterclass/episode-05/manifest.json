@@ -1,19 +1,19 @@
 {
   "lessonId": "securitisation-episode-05",
   "episodeNumber": 5,
-  "title": "Priority, tranching, and loss allocation",
+  "title": "How collateral cash becomes security cash",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
     "meera": "en-IN-Meera:DragonHDLatestNeural"
   },
   "audioQuality": "audio-48khz-96kbitrate-mono-mp3",
-  "generatedAt": "2026-07-20T22:06:14.812Z",
+  "generatedAt": "2026-07-22T11:00:10.720Z",
   "scriptHash": "3accfc29b8e790afb38e8024882f528ece165b6ebb849d41719a8eabbfd21768",
   "chapters": [
     {
       "id": "episode-05-multivoice",
-      "label": "Priority, tranching, and loss allocation",
+      "label": "How collateral cash becomes security cash",
       "audio": "/audio/deep-dive/securitisation_masterclass/episode-05-multivoice.mp3",
       "characters": 9553,
       "openingPauseSeconds": 1,

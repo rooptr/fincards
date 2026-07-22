@@ -9,10 +9,25 @@
       "definition": "Identified financial assets or their cash flows are pooled and used to support securities issued to investors.",
       "namedEvidence": "Kogta vehicle-loan receivables reported by ICRA, followed by the U.S. mortgage-market record in the FCIC report.",
       "evidenceLimit": "Public material does not replace the pool tape, transfer documents, servicing agreement, account controls, or executable waterfall.",
-      "complications": ["invalid transfer", "borrower default", "servicer failure", "commingling", "payment-priority shortfall"],
+      "complications": [
+        "invalid transfer",
+        "borrower default",
+        "servicer failure",
+        "commingling",
+        "payment-priority shortfall"
+      ],
       "transferSituation": "A solar installer finances customer instalment contracts.",
       "closingPrinciple": "Securitisation changes who funds loans, receives their cash, and bears failure; it does not improve the loans themselves.",
-      "requiredCoverage": ["economic purpose", "cash path", "originator", "SPV", "servicer", "waterfall", "risk", "source proof"]
+      "requiredCoverage": [
+        "economic purpose",
+        "cash path",
+        "originator",
+        "SPV",
+        "servicer",
+        "waterfall",
+        "risk",
+        "source proof"
+      ]
     },
     "lesson-02": {
       "humanSituation": "A furniture seller has profitable instalment sales but needs cash to buy timber now.",
@@ -22,10 +37,24 @@
       "definition": "Cash securitisation transfers financial assets or enforceable cash-flow rights to support investor securities.",
       "namedEvidence": "RBI securitisation directions and the SEC asset-backed-securities disclosure framework.",
       "evidenceLimit": "Frameworks identify required evidence but cannot prove a specific transfer or tranche outcome.",
-      "complications": ["dilution", "commingling", "servicer failure", "prepayment", "default"],
+      "complications": [
+        "dilution",
+        "commingling",
+        "servicer failure",
+        "prepayment",
+        "default"
+      ],
       "transferSituation": "A diagnostic-equipment company finances hospital lease rentals.",
       "closingPrinciple": "Cash must be identifiable, enforceable, controlled, and sufficient after expense and loss.",
-      "requiredCoverage": ["cash transfer", "asset pool", "eligibility", "dilution", "true sale", "secured borrowing", "collection control"]
+      "requiredCoverage": [
+        "cash transfer",
+        "asset pool",
+        "eligibility",
+        "dilution",
+        "true sale",
+        "secured borrowing",
+        "collection control"
+      ]
     },
     "lesson-03": {
       "humanSituation": "A dairy cooperative finances one closed pool of equipment loans.",
@@ -35,10 +64,24 @@
       "definition": "A defined pool supports securities that amortise over a specified term without open-ended replenishment.",
       "namedEvidence": "RBI requirements for securitisation of standard assets.",
       "evidenceLimit": "Rules cannot determine expected life without pool data, prepayment assumptions, and payment terms.",
-      "complications": ["prepayment", "extension", "default", "limited substitution", "triggered amortisation"],
+      "complications": [
+        "prepayment",
+        "extension",
+        "default",
+        "limited substitution",
+        "triggered amortisation"
+      ],
       "transferSituation": "A January pool of rooftop-solar loans closes before later originations.",
       "closingPrinciple": "A term pool has a fixed entrance but a changing path to its legal end.",
-      "requiredCoverage": ["static pool", "scheduled principal", "prepayment", "extension", "weighted average life", "clean-up call", "final maturity"]
+      "requiredCoverage": [
+        "static pool",
+        "scheduled principal",
+        "prepayment",
+        "extension",
+        "weighted average life",
+        "clean-up call",
+        "final maturity"
+      ]
     },
     "lesson-04": {
       "humanSituation": "Several small manufacturers share a purchasing desk for eligible invoices.",
@@ -48,10 +91,24 @@
       "definition": "A conduit acquires or finances eligible assets under common program funding and administration.",
       "namedEvidence": "The FCIC record of asset-backed-commercial-paper funding stress and applicable RBI and SEC frameworks.",
       "evidenceLimit": "Historical market closure does not establish the asset, support, or legal outcome of another conduit.",
-      "complications": ["rollover failure", "maturity mismatch", "seller weakness", "dilution", "common servicer concentration"],
+      "complications": [
+        "rollover failure",
+        "maturity mismatch",
+        "seller weakness",
+        "dilution",
+        "common servicer concentration"
+      ],
       "transferSituation": "Rooftop-solar installers sell rentals into a shared program.",
       "closingPrinciple": "Common funding creates scale and common dependencies at the same time.",
-      "requiredCoverage": ["multi-seller conduit", "commercial paper", "rollover", "liquidity facility", "eligibility", "administrator", "concentration"]
+      "requiredCoverage": [
+        "multi-seller conduit",
+        "commercial paper",
+        "rollover",
+        "liquidity facility",
+        "eligibility",
+        "administrator",
+        "concentration"
+      ]
     },
     "lesson-05": {
       "humanSituation": "An appliance dealer decides who receives instalment credit before investors ever see the loans.",
@@ -61,10 +118,24 @@
       "definition": "The originator creates or acquires assets through underwriting and documentation.",
       "namedEvidence": "FCIC findings on originate-to-distribute incentives and RBI retention and transfer requirements.",
       "evidenceLimit": "Historical incentive failure does not determine another originator's current standards.",
-      "complications": ["adverse selection", "first-payment default", "data error", "repurchase incapacity", "weak retention"],
+      "complications": [
+        "adverse selection",
+        "first-payment default",
+        "data error",
+        "repurchase incapacity",
+        "weak retention"
+      ],
       "transferSituation": "An education-loan platform sells receivables based on future-income underwriting.",
       "closingPrinciple": "Every later payment carries the quality of the judgment that created the loan.",
-      "requiredCoverage": ["underwriting", "representations", "repurchase", "risk retention", "adverse selection", "vintage analysis", "servicing dependence"]
+      "requiredCoverage": [
+        "underwriting",
+        "representations",
+        "repurchase",
+        "risk retention",
+        "adverse selection",
+        "vintage analysis",
+        "servicing dependence"
+      ]
     },
     "lesson-06": {
       "humanSituation": "Wedding deposits need a legal holder beyond a caterer's ordinary account.",
@@ -74,10 +145,24 @@
       "definition": "A limited-purpose legal vehicle holds defined rights, issues claims, controls accounts, and follows transaction documents.",
       "namedEvidence": "RBI securitisation directions and SEC asset-backed-securities disclosures.",
       "evidenceLimit": "Public rules cannot prove daily separateness or execution for one vehicle.",
-      "complications": ["alter-ego conduct", "uncontrolled cash", "conflicted governance", "unrelated liabilities", "borrower default"],
+      "complications": [
+        "alter-ego conduct",
+        "uncontrolled cash",
+        "conflicted governance",
+        "unrelated liabilities",
+        "borrower default"
+      ],
       "transferSituation": "An artist transfers defined royalty rights into a dedicated vehicle.",
       "closingPrinciple": "The SPV isolates rights and rules; it does not improve the assets producing cash.",
-      "requiredCoverage": ["limited purpose", "separateness", "limited recourse", "non-petition", "independent governance", "account control", "issues securities"]
+      "requiredCoverage": [
+        "limited purpose",
+        "separateness",
+        "limited recourse",
+        "non-petition",
+        "independent governance",
+        "account control",
+        "issues securities"
+      ]
     },
     "lesson-07": {
       "humanSituation": "Building rent must remain available when the wider developer fails.",
@@ -87,10 +172,24 @@
       "definition": "Legal and operational protections reduce the chance that financed assets become entangled in another party's bankruptcy.",
       "namedEvidence": "Applicable RBI transfer and securitisation rules supported by transaction-specific legal opinions.",
       "evidenceLimit": "A rule or opinion cannot replace execution, perfection, account control, and actual separateness.",
-      "complications": ["recharacterisation", "substantive consolidation", "commingling", "servicing interruption", "court delay"],
+      "complications": [
+        "recharacterisation",
+        "substantive consolidation",
+        "commingling",
+        "servicing interruption",
+        "court delay"
+      ],
       "transferSituation": "Film-distribution receivables must survive a producer's unrelated failure.",
       "closingPrinciple": "Remoteness sorts one party's insolvency away from cash meant to stand apart.",
-      "requiredCoverage": ["true sale", "separateness", "non-petition", "limited recourse", "commingling", "servicing continuity", "legal versus credit risk"]
+      "requiredCoverage": [
+        "true sale",
+        "separateness",
+        "non-petition",
+        "limited recourse",
+        "commingling",
+        "servicing continuity",
+        "legal versus credit risk"
+      ]
     },
     "lesson-08": {
       "humanSituation": "A timely vehicle payment misses distribution because it sits in a suspense account.",
@@ -100,10 +199,25 @@
       "definition": "The servicer collects, records, reconciles, reports, enforces, modifies, and remits collateral cash.",
       "namedEvidence": "SEC Regulation AB servicing disclosure and RBI servicing requirements.",
       "evidenceLimit": "Frameworks identify duties but do not establish actual operational performance.",
-      "complications": ["posting error", "advance exhaustion", "conflicted modification", "data failure", "replacement delay"],
+      "complications": [
+        "posting error",
+        "advance exhaustion",
+        "conflicted modification",
+        "data failure",
+        "replacement delay"
+      ],
       "transferSituation": "Business-software subscription receivables require billing and dilution servicing.",
       "closingPrinciple": "Servicing is the operational part of the credit path.",
-      "requiredCoverage": ["collection", "reconciliation", "advances", "modifications", "reporting", "commingling", "successor servicing", "fees"]
+      "requiredCoverage": [
+        "collection",
+        "reconciliation",
+        "advances",
+        "modifications",
+        "reporting",
+        "commingling",
+        "successor servicing",
+        "fees"
+      ]
     },
     "lesson-09": {
       "humanSituation": "A taxi driver's loan can pay, prepay, or enter repossession and recovery.",
@@ -113,10 +227,25 @@
       "definition": "Amortising vehicle receivables support securities through instalments, prepayments, defaults, and recoveries.",
       "namedEvidence": "RBI securitisation directions and transaction-specific public rating material.",
       "evidenceLimit": "Public snapshots do not replace the loan tape, recovery history, and waterfall.",
-      "complications": ["dealer fraud", "geographic concentration", "depreciation", "recovery delay", "prepayment"],
+      "complications": [
+        "dealer fraud",
+        "geographic concentration",
+        "depreciation",
+        "recovery delay",
+        "prepayment"
+      ],
       "transferSituation": "Agricultural-equipment loans add seasonal borrower and resale behaviour.",
       "closingPrinciple": "Borrower cash pays first; collateral recovery is the second route.",
-      "requiredCoverage": ["amortisation", "seasoning", "loan-to-value", "first-payment default", "roll rates", "repossession", "net recovery", "prepayment"]
+      "requiredCoverage": [
+        "amortisation",
+        "seasoning",
+        "loan-to-value",
+        "first-payment default",
+        "roll rates",
+        "repossession",
+        "net recovery",
+        "prepayment"
+      ]
     },
     "lesson-10": {
       "humanSituation": "A shopkeeper pays a card balance and spends again, making the pool revolve.",
@@ -126,10 +255,25 @@
       "definition": "Revolving receivables are replenished under rules until amortisation begins.",
       "namedEvidence": "The SEC disclosure framework for revolving asset-backed securities.",
       "evidenceLimit": "Framework disclosure cannot supply current trust performance or future seller behaviour.",
-      "complications": ["falling payment rate", "charge-offs", "dilution", "yield compression", "seller failure"],
+      "complications": [
+        "falling payment rate",
+        "charge-offs",
+        "dilution",
+        "yield compression",
+        "seller failure"
+      ],
       "transferSituation": "A digital wallet offers merchants revolving credit repaid from sales.",
       "closingPrinciple": "A revolving pool is governed by what enters, leaves, and stops replenishment.",
-      "requiredCoverage": ["revolving period", "payment rate", "portfolio yield", "charge-offs", "dilution", "seller dependence", "early amortisation", "excess spread"]
+      "requiredCoverage": [
+        "revolving period",
+        "payment rate",
+        "portfolio yield",
+        "charge-offs",
+        "dilution",
+        "seller dependence",
+        "early amortisation",
+        "excess spread"
+      ]
     },
     "lesson-11": {
       "humanSituation": "A defaulted factory loan is valuable only through uncertain recovery.",
@@ -139,10 +283,24 @@
       "definition": "NPL securitisation finances uncertain recoveries from distressed exposures.",
       "namedEvidence": "The RBI Committee Report on Asset Reconstruction Companies.",
       "evidenceLimit": "Sector evidence cannot value a pool without account files, security, costs, and timing.",
-      "complications": ["legal delay", "valuation haircut", "servicing conflict", "cost leakage", "concentration"],
+      "complications": [
+        "legal delay",
+        "valuation haircut",
+        "servicing conflict",
+        "cost leakage",
+        "concentration"
+      ],
       "transferSituation": "Overdue hospital bills separate enforceable amount from expected net recovery.",
       "closingPrinciple": "NPL value comes from priced recovery, not contractual face value.",
-      "requiredCoverage": ["purchase price", "gross and net recovery", "discounting", "special servicing", "collateral realisation", "legal status", "reperforming loans"]
+      "requiredCoverage": [
+        "purchase price",
+        "gross and net recovery",
+        "discounting",
+        "special servicing",
+        "collateral realisation",
+        "legal status",
+        "reperforming loans"
+      ]
     },
     "lesson-12": {
       "humanSituation": "A self-employed restaurant owner qualifies through different evidence than a salaried borrower.",
@@ -152,10 +310,25 @@
       "definition": "A U.S. mortgage pool outside the applicable qualified-mortgage category requires method-specific underwriting analysis.",
       "namedEvidence": "FCIC mortgage-origination findings and SEC asset-backed-securities disclosure.",
       "evidenceLimit": "Historical failure and category labels do not determine current loan quality.",
-      "complications": ["income verification", "layered risk", "broker concentration", "interest-only payment", "regional housing decline"],
+      "complications": [
+        "income verification",
+        "layered risk",
+        "broker concentration",
+        "interest-only payment",
+        "regional housing decline"
+      ],
       "transferSituation": "Small-business equipment loans use bank-turnover evidence.",
       "closingPrinciple": "A non-qualified mortgage is a category boundary; credit begins after opening the label.",
-      "requiredCoverage": ["ability to repay", "bank statements", "debt-service coverage", "loan-to-value", "occupancy", "prepayment", "servicing", "enhancement"]
+      "requiredCoverage": [
+        "ability to repay",
+        "bank statements",
+        "debt-service coverage",
+        "loan-to-value",
+        "occupancy",
+        "prepayment",
+        "servicing",
+        "enhancement"
+      ]
     },
     "lesson-13": {
       "humanSituation": "Franchise royalties exist only while restaurants and the brand keep operating.",
@@ -165,10 +338,24 @@
       "definition": "Whole-business securitisation finances defined cash flows and rights tied to a continuing enterprise.",
       "namedEvidence": "SEC asset-backed-securities concepts and transaction-specific operating evidence.",
       "evidenceLimit": "Public company information cannot replace financing documents and downside operating plans.",
-      "complications": ["brand shock", "maintenance underinvestment", "franchisee concentration", "manager replacement", "covenant pressure"],
+      "complications": [
+        "brand shock",
+        "maintenance underinvestment",
+        "franchisee concentration",
+        "manager replacement",
+        "covenant pressure"
+      ],
       "transferSituation": "A fibre network finances contracted access fees dependent on maintenance and technology.",
       "closingPrinciple": "Cash control cannot separate operating revenue from the business that creates it.",
-      "requiredCoverage": ["operating cash flow", "maintenance expenditure", "cash control", "coverage trigger", "intellectual property", "manager replacement", "enterprise risk"]
+      "requiredCoverage": [
+        "operating cash flow",
+        "maintenance expenditure",
+        "cash control",
+        "coverage trigger",
+        "intellectual property",
+        "manager replacement",
+        "enterprise risk"
+      ]
     },
     "lesson-14": {
       "humanSituation": "Apartment owners receive proportionate net rent collected by one manager.",
@@ -178,10 +365,24 @@
       "definition": "A pass-through distributes net collateral collections with limited reshaping of principal timing.",
       "namedEvidence": "RBI pass-through-certificate requirements and SIFMA prepayment conventions.",
       "evidenceLimit": "The category cannot reveal a deal's exact deductions, support, or distribution terms.",
-      "complications": ["prepayment", "extension", "servicing advances", "default recovery", "selection after refinancing"],
+      "complications": [
+        "prepayment",
+        "extension",
+        "servicing advances",
+        "default recovery",
+        "selection after refinancing"
+      ],
       "transferSituation": "Equipment-lease rentals pass through after termination and maintenance adjustments.",
       "closingPrinciple": "Pass-through investors live close to the collateral clock.",
-      "requiredCoverage": ["net collections", "scheduled principal", "prepayment", "negative convexity", "pass-through rate", "advances", "weighted average life"]
+      "requiredCoverage": [
+        "net collections",
+        "scheduled principal",
+        "prepayment",
+        "negative convexity",
+        "pass-through rate",
+        "advances",
+        "weighted average life"
+      ]
     },
     "lesson-15": {
       "humanSituation": "A reservoir reshapes irregular river flow through controlled gates.",
@@ -191,10 +392,24 @@
       "definition": "A pay-through issuer reshapes collections into contractual note payments through a waterfall.",
       "namedEvidence": "SEC and RBI transaction-payment disclosure and prudential frameworks.",
       "evidenceLimit": "Frameworks cannot establish a payment profile without the actual notes and waterfall.",
-      "complications": ["liquidity mismatch", "reinvestment", "prepayment", "extension", "triggered amortisation"],
+      "complications": [
+        "liquidity mismatch",
+        "reinvestment",
+        "prepayment",
+        "extension",
+        "triggered amortisation"
+      ],
       "transferSituation": "Uneven film-distribution receivables support designed note priorities.",
       "closingPrinciple": "Pay-through is engineered timing, not guaranteed timing.",
-      "requiredCoverage": ["interest and principal separation", "reserves", "liquidity", "reinvestment", "expected and final maturity", "triggers", "note schedule"]
+      "requiredCoverage": [
+        "interest and principal separation",
+        "reserves",
+        "liquidity",
+        "reinvestment",
+        "expected and final maturity",
+        "triggers",
+        "note schedule"
+      ]
     },
     "lesson-16": {
       "humanSituation": "One household salary must pay essential and discretionary claims in order.",
@@ -204,10 +419,26 @@
       "definition": "The payment waterfall is the contractual order for applying available transaction cash.",
       "namedEvidence": "RBI securitisation directions and transaction disclosure requirements.",
       "evidenceLimit": "Only executed documents establish a specific deal's enforceable priority.",
-      "complications": ["fee leakage", "interest deferral", "principal diversion", "trigger switch", "enforcement priority"],
+      "complications": [
+        "fee leakage",
+        "interest deferral",
+        "principal diversion",
+        "trigger switch",
+        "enforcement priority"
+      ],
       "transferSituation": "An apartment association prioritises essential maintenance when collections are short.",
       "closingPrinciple": "The waterfall decides who encounters insufficient cash first.",
-      "requiredCoverage": ["available cash", "expenses", "reserve replenishment", "interest", "principal", "residual", "loss allocation", "triggers", "hedges"]
+      "requiredCoverage": [
+        "available cash",
+        "expenses",
+        "reserve replenishment",
+        "interest",
+        "principal",
+        "residual",
+        "loss allocation",
+        "triggers",
+        "hedges"
+      ]
     },
     "lesson-17": {
       "humanSituation": "A recipe fails when quantities and timing are applied incorrectly.",
@@ -217,10 +448,26 @@
       "definition": "A securitisation waterfall model executes collateral and contractual rules period by period.",
       "namedEvidence": "RBI and SEC frameworks combined with transaction-specific executable documents.",
       "evidenceLimit": "Missing priority, trigger, hedge, or pool data must remain a gap rather than an invented convention.",
-      "complications": ["double-counted reserve", "wrong trigger date", "interest-shortfall ledger", "recovery delay", "rate mismatch"],
+      "complications": [
+        "double-counted reserve",
+        "wrong trigger date",
+        "interest-shortfall ledger",
+        "recovery delay",
+        "rate mismatch"
+      ],
       "transferSituation": "A solar-loan model translates borrower payments rather than environmental claims.",
       "closingPrinciple": "A trusted model accounts for every unit of value and every state change.",
-      "requiredCoverage": ["opening state", "collateral cash", "roll-forward", "reserve ledger", "loss allocation", "attachment", "trigger state", "base downside severe", "model governance"]
+      "requiredCoverage": [
+        "opening state",
+        "collateral cash",
+        "roll-forward",
+        "reserve ledger",
+        "loss allocation",
+        "attachment",
+        "trigger state",
+        "base downside severe",
+        "model governance"
+      ]
     },
     "lesson-18": {
       "humanSituation": "Three walls absorb falling stones in sequence.",
@@ -230,10 +477,26 @@
       "definition": "Tranching divides one pool into claims with different payment and loss positions.",
       "namedEvidence": "FCIC evidence on mortgage and structured-credit stress, with RBI and SEC transaction frameworks.",
       "evidenceLimit": "Crisis history cannot determine another tranche without its pool and waterfall.",
-      "complications": ["correlation", "enhancement depletion", "amortisation", "trigger failure", "liquidity"],
+      "complications": [
+        "correlation",
+        "enhancement depletion",
+        "amortisation",
+        "trigger failure",
+        "liquidity"
+      ],
       "transferSituation": "Flood barriers reveal the loss path without claiming the water disappeared.",
       "closingPrinciple": "Tranching rearranges the fall and exposes another claim sooner.",
-      "requiredCoverage": ["senior", "mezzanine", "residual", "subordination", "attachment", "detachment", "thickness", "expected loss", "enhancement"]
+      "requiredCoverage": [
+        "senior",
+        "mezzanine",
+        "residual",
+        "subordination",
+        "attachment",
+        "detachment",
+        "thickness",
+        "expected loss",
+        "enhancement"
+      ]
     },
     "lesson-19": {
       "humanSituation": "Two lenders either amortise together or senior first.",
@@ -243,10 +506,24 @@
       "definition": "Pro rata pay shares principal among eligible classes under stated formulas and tests.",
       "namedEvidence": "SEC transaction-document disclosure and applicable RBI requirements.",
       "evidenceLimit": "Public descriptions cannot establish the denominator, trigger, or cure of one deal.",
-      "complications": ["late deterioration", "stale trigger data", "fast prepayment", "coverage erosion", "extension"],
+      "complications": [
+        "late deterioration",
+        "stale trigger data",
+        "fast prepayment",
+        "coverage erosion",
+        "extension"
+      ],
       "transferSituation": "Sandbag layers are removed together until a switch rule stops release.",
       "closingPrinciple": "Pro rata safety depends on stopping protection release before loss arrives.",
-      "requiredCoverage": ["pro rata formula", "sequential pay", "subordination build", "switch trigger", "cure", "overcollateralisation test", "prepayment"]
+      "requiredCoverage": [
+        "pro rata formula",
+        "sequential pay",
+        "subordination build",
+        "switch trigger",
+        "cure",
+        "overcollateralisation test",
+        "prepayment"
+      ]
     },
     "lesson-20": {
       "humanSituation": "Sealed boxes are packaged again without inspecting the parts inside.",
@@ -256,10 +533,24 @@
       "definition": "Re-securitisation uses existing securitisation exposures as collateral for a new securitisation.",
       "namedEvidence": "FCIC findings on structured-credit complexity and SEC disclosure.",
       "evidenceLimit": "Historical complexity does not establish the composition or outcome of every re-securitisation.",
-      "complications": ["look-through failure", "correlation", "model dependence", "common counterparties", "illiquidity"],
+      "complications": [
+        "look-through failure",
+        "correlation",
+        "model dependence",
+        "common counterparties",
+        "illiquidity"
+      ],
       "transferSituation": "Funds holding other funds can own the same companies through different wrappers.",
       "closingPrinciple": "A second waterfall adds value only when it does not hide the first collateral.",
-      "requiredCoverage": ["underlying tranches", "two waterfalls", "correlation", "look-through", "valuation", "liquidity", "common dependency"]
+      "requiredCoverage": [
+        "underlying tranches",
+        "two waterfalls",
+        "correlation",
+        "look-through",
+        "valuation",
+        "liquidity",
+        "common dependency"
+      ]
     },
     "lesson-21": {
       "humanSituation": "A bank seeks lending capacity by moving a defined layer of corporate-loan loss.",
@@ -269,10 +560,24 @@
       "definition": "Capital-relief securitisation seeks prudential recognition of meaningful credit-risk transfer.",
       "namedEvidence": "Basel securitisation frameworks and current applicable RBI rules.",
       "evidenceLimit": "Exact recognition is jurisdiction- and date-specific and requires transaction analysis.",
-      "complications": ["retained tail", "maturity mismatch", "counterparty failure", "basis risk", "capital arbitrage"],
+      "complications": [
+        "retained tail",
+        "maturity mismatch",
+        "counterparty failure",
+        "basis risk",
+        "capital arbitrage"
+      ],
       "transferSituation": "Reinsurance transfers a defined insurance-loss layer while the original policies remain.",
       "closingPrinciple": "Capital relief is credible when legal form, loss-bearing, and prudential recognition align.",
-      "requiredCoverage": ["risk-weighted assets", "significant risk transfer", "retained exposure", "protection cost", "maturity", "counterparty", "capital bridge"]
+      "requiredCoverage": [
+        "risk-weighted assets",
+        "significant risk transfer",
+        "retained exposure",
+        "protection cost",
+        "maturity",
+        "counterparty",
+        "capital bridge"
+      ]
     },
     "lesson-22": {
       "humanSituation": "A bank keeps customer loans and purchases protection against defined defaults.",
@@ -282,10 +587,25 @@
       "definition": "Synthetic securitisation transfers reference-portfolio credit risk through guarantees, derivatives, or credit-linked notes.",
       "namedEvidence": "Basel synthetic-securitisation concepts and applicable RBI regulation.",
       "evidenceLimit": "Frameworks cannot establish reference eligibility, settlement, or recognition for a specific deal.",
-      "complications": ["basis risk", "wrong-way risk", "counterparty default", "portfolio substitution", "settlement dispute"],
+      "complications": [
+        "basis risk",
+        "wrong-way risk",
+        "counterparty default",
+        "portfolio substitution",
+        "settlement dispute"
+      ],
       "transferSituation": "Crop insurance leaves the field with the farmer but transfers defined weather loss.",
       "closingPrinciple": "Synthetic protection works only when exposure, trigger, settlement, and provider remain aligned.",
-      "requiredCoverage": ["reference portfolio", "attachment", "detachment", "credit event", "funded and unfunded protection", "collateral", "basis risk", "settlement"]
+      "requiredCoverage": [
+        "reference portfolio",
+        "attachment",
+        "detachment",
+        "credit event",
+        "funded and unfunded protection",
+        "collateral",
+        "basis risk",
+        "settlement"
+      ]
     },
     "lesson-23": {
       "humanSituation": "A certification mark verifies process without deciding taste, price, or all risk.",
@@ -295,10 +615,25 @@
       "definition": "STS identifies eligible EU securitisations meeting applicable simplicity, transparency, and standardisation criteria.",
       "namedEvidence": "The applicable European Union securitisation regulation and guidance.",
       "evidenceLimit": "Legal eligibility is date- and jurisdiction-specific and does not replace credit analysis.",
-      "complications": ["designation loss", "collateral default", "mispricing", "retention weakness", "false homogeneity"],
+      "complications": [
+        "designation loss",
+        "collateral default",
+        "mispricing",
+        "retention weakness",
+        "false homogeneity"
+      ],
       "transferSituation": "Building-code compliance improves a baseline without deciding investment quality.",
       "closingPrinciple": "Better visibility helps investors see risk; it does not remove risk.",
-      "requiredCoverage": ["simplicity", "transparency", "standardisation", "notification", "due diligence", "retention", "homogeneity", "prudential treatment"]
+      "requiredCoverage": [
+        "simplicity",
+        "transparency",
+        "standardisation",
+        "notification",
+        "due diligence",
+        "retention",
+        "homogeneity",
+        "prudential treatment"
+      ]
     },
     "lesson-24": {
       "humanSituation": "A homeowner repays a long mortgage after four years without defaulting.",
@@ -308,10 +643,25 @@
       "definition": "PSA is a standard benchmark curve for expressing assumed mortgage prepayment speed.",
       "namedEvidence": "SIFMA Uniform Practices and the Public Securities Association standard prepayment model.",
       "evidenceLimit": "The U.S. convention does not supply a forecast for an Indian or transaction-specific pool.",
-      "complications": ["refinancing incentive", "burnout", "contraction", "extension", "premium amortisation"],
+      "complications": [
+        "refinancing incentive",
+        "burnout",
+        "contraction",
+        "extension",
+        "premium amortisation"
+      ],
       "transferSituation": "Indian home-loan data calibrates timing without inventing a local PSA rate.",
       "closingPrinciple": "PSA is a ruler for timing, not a prophecy about people.",
-      "requiredCoverage": ["scheduled and unscheduled principal", "CPR", "SMM", "PSA ramp", "seasoning", "weighted average life", "contraction", "extension"]
+      "requiredCoverage": [
+        "scheduled and unscheduled principal",
+        "CPR",
+        "SMM",
+        "PSA ramp",
+        "seasoning",
+        "weighted average life",
+        "contraction",
+        "extension"
+      ]
     },
     "lesson-25": {
       "humanSituation": "Sound goods cannot reach buyers because financing for transport disappears.",
@@ -321,10 +671,24 @@
       "definition": "TALF supplied term non-recourse funding against qualifying U.S. asset-backed securities under program terms.",
       "namedEvidence": "The Federal Reserve's November 2008 TALF announcement.",
       "evidenceLimit": "The historical U.S. facility is not an Indian rule or a guarantee for every security.",
-      "complications": ["haircut exhaustion", "collateral default", "valuation uncertainty", "duration mismatch", "market freeze"],
+      "complications": [
+        "haircut exhaustion",
+        "collateral default",
+        "valuation uncertainty",
+        "duration mismatch",
+        "market freeze"
+      ],
       "transferSituation": "A private warehouse facility funds Indian solar-loan securities without guaranteeing households.",
       "closingPrinciple": "Liquidity can reopen the road; collateral performance determines what arrives.",
-      "requiredCoverage": ["eligible collateral", "term funding", "non-recourse", "haircut", "liquidity versus credit", "market functioning", "facility maturity"]
+      "requiredCoverage": [
+        "eligible collateral",
+        "term funding",
+        "non-recourse",
+        "haircut",
+        "liquidity versus credit",
+        "market functioning",
+        "facility maturity"
+      ]
     },
     "episode-01": {
       "humanSituation": "A family mortgage payment travels from borrower to investor.",
@@ -334,10 +698,25 @@
       "definition": "Securitisation converts identified asset cash into investable claims through transfer, servicing, control, and priority.",
       "namedEvidence": "The U.S. mortgage market and FCIC findings on originate-to-distribute incentives.",
       "evidenceLimit": "Historical mechanism cannot determine another transaction without its pool and documents.",
-      "complications": ["weak underwriting", "information loss", "servicing dependence", "prepayment", "funding closure"],
+      "complications": [
+        "weak underwriting",
+        "information loss",
+        "servicing dependence",
+        "prepayment",
+        "funding closure"
+      ],
       "transferSituation": "An Indian vehicle-loan pool across Mumbai and Pune.",
       "closingPrinciple": "A structured claim is understood when rights, cash, control, timing, and first loss can all be traced.",
-      "requiredCoverage": ["cash", "term", "conduit", "originator", "transfer", "servicing", "timing", "Indian vehicle"]
+      "requiredCoverage": [
+        "cash",
+        "term",
+        "conduit",
+        "originator",
+        "transfer",
+        "servicing",
+        "timing",
+        "Indian vehicle"
+      ]
     },
     "episode-02": {
       "humanSituation": "A Chennai mortgage payment arrives after the originator enters insolvency.",
@@ -347,10 +726,24 @@
       "definition": "Legal isolation and operational control preserve a transferred cash path after a critical party fails.",
       "namedEvidence": "Lehman Brothers' collapse viewed through the FCIC record and SEC servicing framework.",
       "evidenceLimit": "Crisis evidence does not establish the legal outcome of each Lehman-associated vehicle.",
-      "complications": ["commingling", "suspense posting", "data transfer", "servicer replacement", "account freeze"],
+      "complications": [
+        "commingling",
+        "suspense posting",
+        "data transfer",
+        "servicer replacement",
+        "account freeze"
+      ],
       "transferSituation": "A Pune vehicle-loan pool uses the same failure-day test.",
       "closingPrinciple": "Isolation works when payment remains identifiable, enforceable, controlled, and operational after sponsor failure.",
-      "requiredCoverage": ["originator", "SPV", "true sale", "bankruptcy remoteness", "servicer", "account control", "replacement"]
+      "requiredCoverage": [
+        "originator",
+        "SPV",
+        "true sale",
+        "bankruptcy remoteness",
+        "servicer",
+        "account control",
+        "replacement"
+      ]
     },
     "episode-03": {
       "humanSituation": "Five payments arrive from auto, card, NPL, mortgage, and franchise collateral.",
@@ -360,10 +753,25 @@
       "definition": "Collateral analysis identifies the economic process that creates and restores cash for each asset type.",
       "namedEvidence": "FCIC, SEC, RBI securitisation, and RBI ARC sources used within their domains.",
       "evidenceLimit": "Frameworks cannot supply transaction-specific performance or legal facts.",
-      "complications": ["correlation", "servicing variation", "different recovery routes", "replenishment", "enterprise dependence"],
+      "complications": [
+        "correlation",
+        "servicing variation",
+        "different recovery routes",
+        "replenishment",
+        "enterprise dependence"
+      ],
       "transferSituation": "Electric-vehicle leases combine rentals, residual values, and service obligations.",
       "closingPrinciple": "Before trusting the collateral noun, identify the verb that produces its cash.",
-      "requiredCoverage": ["auto", "credit card", "NPL", "non-qualified mortgage", "whole business", "timing", "servicing", "correlation"]
+      "requiredCoverage": [
+        "auto",
+        "credit card",
+        "NPL",
+        "non-qualified mortgage",
+        "whole business",
+        "timing",
+        "servicing",
+        "correlation"
+      ]
     },
     "episode-04": {
       "humanSituation": "One hundred crore rupees is allocated on a single distribution day.",
@@ -373,10 +781,24 @@
       "definition": "Collateral cash becomes security cash through transmission choice, note design, contractual priority, and period execution.",
       "namedEvidence": "RBI, SEC, and SIFMA materials applied only to their respective mechanics.",
       "evidenceLimit": "Executed deal documents govern when summaries omit triggers, cures, hedges, or enforcement priority.",
-      "complications": ["trigger breach", "reserve draw", "swap failure", "wrong denominator", "recovery timing"],
+      "complications": [
+        "trigger breach",
+        "reserve draw",
+        "swap failure",
+        "wrong denominator",
+        "recovery timing"
+      ],
       "transferSituation": "Vehicle, card, and NPL cash each enter different transaction states.",
       "closingPrinciple": "Cash, contract, and model must tell the same story down to the last rupee.",
-      "requiredCoverage": ["pass-through", "pay-through", "priority", "triggers", "ledgers", "interest and principal", "model governance"]
+      "requiredCoverage": [
+        "pass-through",
+        "pay-through",
+        "priority",
+        "triggers",
+        "ledgers",
+        "interest and principal",
+        "model governance"
+      ]
     },
     "episode-05": {
       "humanSituation": "One rupee of collateral loss climbs a three-layer capital stack.",
@@ -386,10 +808,25 @@
       "definition": "Priority and subordination allocate payment, timing, and loss across claims on one pool.",
       "namedEvidence": "FCIC evidence on mortgage and re-securitisation stress.",
       "evidenceLimit": "Historical stress cannot locate a new tranche without current balances and waterfall terms.",
-      "complications": ["correlation", "protection release", "trigger lag", "recovery timing", "servicer failure"],
+      "complications": [
+        "correlation",
+        "protection release",
+        "trigger lag",
+        "recovery timing",
+        "servicer failure"
+      ],
       "transferSituation": "Flood barriers show why removing outer protection changes a later storm.",
       "closingPrinciple": "Every tranche story must reconcile to the same underlying loss path.",
-      "requiredCoverage": ["attachment", "detachment", "thickness", "enhancement", "pro rata", "sequential", "re-securitisation", "rating boundary"]
+      "requiredCoverage": [
+        "attachment",
+        "detachment",
+        "thickness",
+        "enhancement",
+        "pro rata",
+        "sequential",
+        "re-securitisation",
+        "rating boundary"
+      ]
     },
     "episode-06": {
       "humanSituation": "A bank chooses among cash sale, synthetic protection, re-securitisation, and STS qualification.",
@@ -399,10 +836,24 @@
       "definition": "Risk-transfer analysis identifies which asset, cash, loss band, capital treatment, and dependency changed.",
       "namedEvidence": "Basel, RBI, EU STS, SEC, and FCIC sources used with jurisdiction and date discipline.",
       "evidenceLimit": "No framework proves specific portfolio transfer or regulatory recognition without the transaction file.",
-      "complications": ["retained tail", "basis risk", "counterparty failure", "look-through opacity", "designation misunderstanding"],
+      "complications": [
+        "retained tail",
+        "basis risk",
+        "counterparty failure",
+        "look-through opacity",
+        "designation misunderstanding"
+      ],
       "transferSituation": "An insurer compares asset sale, reinsurance, financing, and regulatory classification.",
       "closingPrinciple": "Risk transfer is real when another capable balance sheet remains exposed when loss arrives.",
-      "requiredCoverage": ["cash versus synthetic", "capital relief", "significant risk transfer", "re-securitisation", "STS", "funding bridge", "capital bridge"]
+      "requiredCoverage": [
+        "cash versus synthetic",
+        "capital relief",
+        "significant risk transfer",
+        "re-securitisation",
+        "STS",
+        "funding bridge",
+        "capital bridge"
+      ]
     },
     "episode-07": {
       "humanSituation": "Two perfect borrowers repay at very different speeds while financing markets change.",
@@ -412,10 +863,955 @@
       "definition": "Timing analysis maps borrower principal speed into security life, reinvestment, extension, and financing needs.",
       "namedEvidence": "SIFMA's PSA convention and the Federal Reserve's November 2008 TALF announcement.",
       "evidenceLimit": "Both are U.S. references and neither supplies an Indian prepayment forecast or credit guarantee.",
-      "complications": ["burnout", "contraction", "extension", "haircut", "facility maturity", "collateral loss"],
+      "complications": [
+        "burnout",
+        "contraction",
+        "extension",
+        "haircut",
+        "facility maturity",
+        "collateral loss"
+      ],
       "transferSituation": "Education-loan principal carries separate timing, credit, and market-liquidity outcomes.",
       "closingPrinciple": "Credit asks whether cash arrives, duration asks when, and liquidity asks whether the claim can be carried while waiting.",
-      "requiredCoverage": ["PSA", "CPR", "SMM", "expected life", "TALF", "haircuts", "non-recourse", "liquidity versus credit"]
+      "requiredCoverage": [
+        "PSA",
+        "CPR",
+        "SMM",
+        "expected life",
+        "TALF",
+        "haircuts",
+        "non-recourse",
+        "liquidity versus credit"
+      ]
+    },
+    "lesson-26": {
+      "humanSituation": "A lender has mortgages, auto loans, card balances, and lease payments but investors ask what exactly supports the notes.",
+      "openingPuzzle": "The words asset-backed security sound precise while hiding several different cash engines.",
+      "controllingObject": "One one-crore-rupee receivable moving from obligor to collection account to investor.",
+      "misconception": "ABS is a guarantee that the collateral will perform or a synonym for every structured security.",
+      "definition": "An asset-backed security is a security primarily serviced by cash flows from identified financial assets or contractual payment rights.",
+      "namedEvidence": "SEC Regulation AB and the SEC ABS issuance framework, read with RBI securitisation directions.",
+      "evidenceLimit": "A framework defines disclosure and structure but cannot prove the quality, transfer, or cash performance of a particular pool.",
+      "complications": [
+        "eligibility",
+        "dilution",
+        "commingling",
+        "servicing",
+        "enhancement",
+        "waterfall",
+        "liquidity"
+      ],
+      "transferSituation": "Compare an auto-loan ABS with a mortgage-backed security and a whole-business transaction.",
+      "closingPrinciple": "ABS is the family name; the collateral and the cash path tell you what the investment actually is.",
+      "requiredCoverage": [
+        "umbrella",
+        "taxonomy",
+        "asset pool",
+        "cash-flow right",
+        "special purpose vehicle",
+        "servicer",
+        "disclosure",
+        "credit versus liquidity"
+      ]
+    },
+    "lesson-27": {
+      "humanSituation": "A family mortgage payment is pooled with thousands of others, but the investor must understand what changes when the payment is packaged.",
+      "openingPuzzle": "Mortgage-backed securities can pass borrower timing through or reshape it into several note claims.",
+      "controllingObject": "One monthly mortgage instalment split between interest, scheduled principal, prepayment, and recovery.",
+      "misconception": "MBS is one uniform product whose label explains credit, duration, and prepayment risk.",
+      "definition": "A mortgage-backed security is supported primarily by cash flows from residential or commercial mortgage loans and related rights.",
+      "namedEvidence": "SEC mortgage-backed-security disclosure materials, SIFMA prepayment conventions, and the FCIC mortgage-market record.",
+      "evidenceLimit": "Market-level evidence cannot establish the waterfall, servicing, enhancement, or borrower mix of one issuance.",
+      "complications": [
+        "prepayment",
+        "extension",
+        "foreclosure",
+        "property value",
+        "servicer advances",
+        "agency support"
+      ],
+      "transferSituation": "Follow the same principal payment into a residential pass-through and a commercial mortgage deal.",
+      "closingPrinciple": "Mortgage-backed means the cash begins with property-linked loans; it does not tell you who bears the next shortfall.",
+      "requiredCoverage": [
+        "MBS family",
+        "residential versus commercial",
+        "pass-through",
+        "pay-through",
+        "prepayment",
+        "loss",
+        "duration"
+      ]
+    },
+    "lesson-28": {
+      "humanSituation": "A homeowner refinances when rates fall, while another borrower loses income and enters foreclosure.",
+      "openingPuzzle": "The same residential mortgage pool faces both voluntary early repayment and involuntary loss.",
+      "controllingObject": "One residential loan's scheduled payment, refinance decision, delinquency, foreclosure, and recovery.",
+      "misconception": "RMBS risk is only default risk or can be summarized by a single average LTV.",
+      "definition": "Residential mortgage-backed securities are securities whose cash flows are primarily supported by residential mortgage loans.",
+      "namedEvidence": "SEC RMBS asset-level disclosure materials and the FCIC record on residential mortgage origination and distribution.",
+      "evidenceLimit": "Historical crisis evidence teaches failure mechanisms but cannot substitute for current loan-level stratification and documents.",
+      "complications": [
+        "income verification",
+        "LTV",
+        "prepayment",
+        "modification",
+        "foreclosure timing",
+        "geographic correlation",
+        "servicing"
+      ],
+      "transferSituation": "Compare a seasoned Indian housing-loan pool with a U.S. non-agency RMBS pool while keeping jurisdiction explicit.",
+      "closingPrinciple": "RMBS is a household cash-flow system: borrower capacity, property value, servicing, and interest-rate options meet in one security.",
+      "requiredCoverage": [
+        "borrower underwriting",
+        "loan to value",
+        "prepayment",
+        "delinquency",
+        "loss severity",
+        "foreclosure",
+        "agency versus non-agency"
+      ]
+    },
+    "lesson-29": {
+      "humanSituation": "A commercial building is occupied today, but its largest tenant may leave before the loan reaches its balloon maturity.",
+      "openingPuzzle": "A CMBS loan can be current while the property's refinancing value is deteriorating underneath it.",
+      "controllingObject": "One commercial property's rent roll, net operating income, debt service, value, and balloon repayment.",
+      "misconception": "CMBS is RMBS applied to larger buildings or a property-value loan with no operating business risk.",
+      "definition": "Commercial mortgage-backed securities are supported primarily by loans secured by income-producing commercial real estate.",
+      "namedEvidence": "Federal Reserve CMBS reporting materials, SEC CMBS disclosure rules, and commercial-property transaction documents.",
+      "evidenceLimit": "A reported DSCR or appraisal does not prove future occupancy, refinancing capacity, cap rates, or special-servicing outcomes.",
+      "complications": [
+        "tenant concentration",
+        "vacancy",
+        "DSCR",
+        "debt yield",
+        "cap rate",
+        "balloon maturity",
+        "special servicing"
+      ],
+      "transferSituation": "Stress an Indian office property when leases roll during a refinancing window and compare it with a residential pool.",
+      "closingPrinciple": "CMBS credit is a property operating story and a refinancing story before it becomes a default story.",
+      "requiredCoverage": [
+        "rent roll",
+        "NOI",
+        "DSCR",
+        "debt yield",
+        "loan to value",
+        "lease rollover",
+        "balloon",
+        "special servicing"
+      ]
+    },
+    "lesson-30": {
+      "humanSituation": "One mortgage security carries a government-linked guarantee while another relies on private credit enhancement and subordinated notes.",
+      "openingPuzzle": "Two securities can contain similar mortgages but expose investors to very different guarantor, credit, and liquidity risks.",
+      "controllingObject": "One borrower payment after separating agency guarantee, collateral loss, issuer support, and market price.",
+      "misconception": "Agency means risk-free and non-agency means simply lower quality.",
+      "definition": "Agency and non-agency mortgage securities differ in the source of payment support, legal claims, credit enhancement, and retained risk.",
+      "namedEvidence": "SEC RMBS disclosure materials, Federal Reserve mortgage-pool data, and the applicable agency or transaction documents.",
+      "evidenceLimit": "A guarantee or label must be read with its terms, exclusions, timing, counterparty, and the collateral cash path.",
+      "complications": [
+        "guarantee scope",
+        "counterparty",
+        "prepayment",
+        "private enhancement",
+        "servicing",
+        "liquidity",
+        "basis risk"
+      ],
+      "transferSituation": "Compare a government-supported mortgage pool with a privately issued Indian mortgage securitisation without importing U.S. guarantees.",
+      "closingPrinciple": "Agency support changes the claim against a guarantor; it does not make every mortgage cash flow or every market price identical.",
+      "requiredCoverage": [
+        "agency",
+        "non-agency",
+        "guarantee",
+        "credit enhancement",
+        "counterparty",
+        "collateral risk",
+        "liquidity"
+      ]
+    },
+    "episode-08": {
+      "humanSituation": "A mortgage payment can become several different capital-markets claims. The labels sound nested, but the borrower, property, guarantee, timing, and failure path change underneath.",
+      "openingPuzzle": "Similar labels in abs, mbs, rmbs, and cmbs conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "ABS, MBS, RMBS, and CMBS compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode separates the ABS umbrella, mortgage family, residential household engine, commercial-property engine, and agency support without treating them as interchangeable. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "lesson-31": {
+      "humanSituation": "A graduate signs a loan before a salary exists. Years later, the pool is supposed to turn thousands of delayed repayments into investor cash.",
+      "openingPuzzle": "The label Student-Loan ABS sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from student-loan receivables.",
+      "misconception": "Student-Loan ABS removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Student-Loan ABS describes a structured claim whose payments depend on student-loan receivables under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Student-Loan ABS with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Student-loan ABS is a claim on repayment behaviour shaped by education, employment, policy, and servicing; the label never replaces the borrower timeline.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-32": {
+      "humanSituation": "A delivery company rents a van rather than buying it. The monthly payment arrives, but the security also depends on who owns the vehicle, who maintains it, and what it is worth at return.",
+      "openingPuzzle": "The label Equipment and Auto-Lease ABS sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from lease rentals and residual values.",
+      "misconception": "Equipment and Auto-Lease ABS removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Equipment and Auto-Lease ABS describes a structured claim whose payments depend on lease rentals and residual values under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Equipment and Auto-Lease ABS with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Lease ABS turns an asset-use contract into security cash, but the last payment may be a vehicle sale rather than a borrower instalment.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-33": {
+      "humanSituation": "A component supplier has delivered goods and is waiting sixty days for payment. Cash is earned on paper, but the invoice can still be disputed, diluted, offset, or paid late.",
+      "openingPuzzle": "The label Trade and Accounts-Receivable Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from invoice receivables.",
+      "misconception": "Trade and Accounts-Receivable Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Trade and Accounts-Receivable Securitisation describes a structured claim whose payments depend on invoice receivables under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Trade and Accounts-Receivable Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Receivables securitisation is a test of whether revenue has become collectible cash, not a shortcut from invoice growth to investor protection.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-34": {
+      "humanSituation": "An invoice pays in sixty days, but the paper funding it matures in thirty. Nothing is wrong with the customer yet; the stress begins when the market refuses to roll the funding.",
+      "openingPuzzle": "The label Asset-Backed Commercial Paper sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from short-dated funding against receivables.",
+      "misconception": "Asset-Backed Commercial Paper removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Asset-Backed Commercial Paper describes a structured claim whose payments depend on short-dated funding against receivables under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Asset-Backed Commercial Paper with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "ABCP turns receivable timing into a funding decision; market access is part of the collateral story even when borrowers remain current.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-35": {
+      "humanSituation": "Five small manufacturers cannot each issue a term security. A multi-seller conduit gives them one funding channel, but it also gives investors common administrators, banks, documents, and concentration risk.",
+      "openingPuzzle": "The label Multi-Seller Conduits and Liquidity sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from many sellers sharing one funding channel.",
+      "misconception": "Multi-Seller Conduits and Liquidity removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Multi-Seller Conduits and Liquidity describes a structured claim whose payments depend on many sellers sharing one funding channel under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Multi-Seller Conduits and Liquidity with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A conduit earns diversification only when common infrastructure is stronger than the concentration it creates.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-36": {
+      "humanSituation": "A manager buys loans from dozens of companies. Investors do not receive the loans directly; they receive claims whose cash and losses are filtered through eligibility, tests, reinvestment, and a waterfall.",
+      "openingPuzzle": "The label CLO Foundation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from leveraged-loan portfolios.",
+      "misconception": "CLO Foundation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "CLO Foundation describes a structured claim whose payments depend on leveraged-loan portfolios under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare CLO Foundation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A CLO is a managed loan portfolio wearing a capital structure; the tests decide who is paid when the portfolio stops behaving as planned.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-37": {
+      "humanSituation": "A loan desk can sell a broadly syndicated loan tomorrow, but the CLO manager must decide whether that liquidity is real during a market shock and whether the loan still meets every test.",
+      "openingPuzzle": "The label Broadly Syndicated Loan CLO sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from liquid syndicated corporate loans.",
+      "misconception": "Broadly Syndicated Loan CLO removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Broadly Syndicated Loan CLO describes a structured claim whose payments depend on liquid syndicated corporate loans under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Broadly Syndicated Loan CLO with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A broadly syndicated loan CLO converts a liquid loan market into a managed test of par, price, cash interest, and manager judgement.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-38": {
+      "humanSituation": "Two companies may owe the same coupon, but one has a public loan price and the other has a private lender, negotiated covenants, and no daily exit.",
+      "openingPuzzle": "The label Middle-Market and Private-Credit CLO sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from less-liquid middle-market and private-credit loans.",
+      "misconception": "Middle-Market and Private-Credit CLO removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Middle-Market and Private-Credit CLO describes a structured claim whose payments depend on less-liquid middle-market and private-credit loans under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Middle-Market and Private-Credit CLO with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Private-credit CLO risk lives in the distance between reported par, available cash, and the price at which a troubled business can actually be resolved.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-39": {
+      "humanSituation": "The manager receives principal from a loan that repaid early. The choice is to buy a new loan, hold cash, repay debt, or preserve a test cushion; equity upside and senior protection point in different directions.",
+      "openingPuzzle": "The label CLO Manager, Reinvestment, Tests, and Equity sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from manager decisions inside a changing CLO.",
+      "misconception": "CLO Manager, Reinvestment, Tests, and Equity removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "CLO Manager, Reinvestment, Tests, and Equity describes a structured claim whose payments depend on manager decisions inside a changing CLO under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare CLO Manager, Reinvestment, Tests, and Equity with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "CLO equity is paid for accepting the uncertainty that the tests are designed to protect senior investors from.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-40": {
+      "humanSituation": "A portfolio of debt pays interest on different dates and defaults at different speeds. The CDO promises a new set of claims, so the investor must understand the second waterfall rather than merely the first borrowers.",
+      "openingPuzzle": "The label Cash-Flow CDO sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from debt instruments whose borrower cash flows are pooled.",
+      "misconception": "Cash-Flow CDO removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Cash-Flow CDO describes a structured claim whose payments depend on debt instruments whose borrower cash flows are pooled under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Cash-Flow CDO with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A cash-flow CDO creates new claims on old debt cash, so every layer of the structure must be tested against the first borrower payment.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-41": {
+      "humanSituation": "No loan moves into the vehicle. Instead, one party pays a premium for protection on a reference portfolio, and another party promises to absorb defined credit events.",
+      "openingPuzzle": "The label Synthetic CDO sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from reference credit exposures and protection contracts.",
+      "misconception": "Synthetic CDO removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Synthetic CDO describes a structured claim whose payments depend on reference credit exposures and protection contracts under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Synthetic CDO with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A synthetic CDO is a contract on credit loss, not a pool of loans, and the contract is only as reliable as its event, collateral, and counterparty terms.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-42": {
+      "humanSituation": "A portfolio can still pay interest while its market value collapses. A market-value structure therefore asks whether the collateral can be sold or financed, not only whether borrowers are currently paying.",
+      "openingPuzzle": "The label Market-Value and Single-Tranche CDO sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from collateral value and bespoke tranche exposure.",
+      "misconception": "Market-Value and Single-Tranche CDO removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Market-Value and Single-Tranche CDO describes a structured claim whose payments depend on collateral value and bespoke tranche exposure under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Market-Value and Single-Tranche CDO with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Market-value credit is a discipline of selling under pressure; the protection works only if the valuation and remedy are executable when everyone wants liquidity.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-43": {
+      "humanSituation": "An investor buys a slice of many securitisations and receives a new note. The second structure looks diversified, but each underlying slice may already contain the same mortgages, loans, or corporate risks.",
+      "openingPuzzle": "The label CDO-Squared and Re-Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from tranches of earlier securitisations.",
+      "misconception": "CDO-Squared and Re-Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "CDO-Squared and Re-Securitisation describes a structured claim whose payments depend on tranches of earlier securitisations under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare CDO-Squared and Re-Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A nested structure does not erase the first pool; it multiplies the places where a first-pool mistake can become a second-pool loss.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-44": {
+      "humanSituation": "A remittance company expects customers to send money next month. The cash has not yet been earned, so investors are lending against a future flow that depends on the business continuing to function.",
+      "openingPuzzle": "The label Future-Flow Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from expected future payments from an operating stream.",
+      "misconception": "Future-Flow Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Future-Flow Securitisation describes a structured claim whose payments depend on expected future payments from an operating stream under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Future-Flow Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Future-flow securitisation borrows against a business’s next payments; the most important collateral question is whether tomorrow’s cash can still be created and captured.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-45": {
+      "humanSituation": "A restaurant chain has profitable stores, but its debt is paid from the same tills that must fund staff, repairs, rent, and new locations. The security depends on the business operating every morning.",
+      "openingPuzzle": "The label Whole-Business and Operating-Revenue Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from operating revenue and enterprise cash.",
+      "misconception": "Whole-Business and Operating-Revenue Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Whole-Business and Operating-Revenue Securitisation describes a structured claim whose payments depend on operating revenue and enterprise cash under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Whole-Business and Operating-Revenue Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Whole-business securitisation can control revenue, but it cannot securitise away the work required to earn it.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-46": {
+      "humanSituation": "A song earns money from streams, radio, licensing, and territories. The payment is contractual, but its amount depends on audience, platform rules, catalogue rights, and the continued validity of the licence.",
+      "openingPuzzle": "The label Royalty, Music, Media, and IP Cash Flows sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from licensed intellectual-property royalties.",
+      "misconception": "Royalty, Music, Media, and IP Cash Flows removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Royalty, Music, Media, and IP Cash Flows describes a structured claim whose payments depend on licensed intellectual-property royalties under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Royalty, Music, Media, and IP Cash Flows with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Royalty securitisation turns intangible rights into claims on future payments, but the catalogue’s legal life and cultural life may end at different speeds.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-47": {
+      "humanSituation": "A solar project produces electricity every day, an aircraft earns lease rent, and a utility collects from customers. Each cash flow sounds infrastructure-like, but each depends on contracts, assets, regulation, and maintenance in a different way.",
+      "openingPuzzle": "The label Solar, Infrastructure, Aircraft, and Utility Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from long-lived project and contracted infrastructure cash flows.",
+      "misconception": "Solar, Infrastructure, Aircraft, and Utility Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Solar, Infrastructure, Aircraft, and Utility Securitisation describes a structured claim whose payments depend on long-lived project and contracted infrastructure cash flows under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Solar, Infrastructure, Aircraft, and Utility Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "Infrastructure cash can look durable until the contract, machine, operator, or regulator that makes it payable changes.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-48": {
+      "humanSituation": "Two investors look at mortgage collateral. One has a claim on notes backed by a transferred pool; the other has a claim on the bank with a cover pool and dual recourse. The collateral noun is the same, but the legal promise is not.",
+      "openingPuzzle": "The label Covered Bonds versus Securitisation sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from a collateral pool supporting issuer debt.",
+      "misconception": "Covered Bonds versus Securitisation removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Covered Bonds versus Securitisation describes a structured claim whose payments depend on a collateral pool supporting issuer debt under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Covered Bonds versus Securitisation with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "The collateral pool matters, but the first question is always: which balance sheet and which pool can the investor legally claim?",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-49": {
+      "humanSituation": "A senior note has a guarantee. The borrower still owes the original instalment, but the investor now depends on a second promise and the institution standing behind it.",
+      "openingPuzzle": "The label ABS Trustees, Wraps, Monolines, and Guarantees sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from third-party protection around structured claims.",
+      "misconception": "ABS Trustees, Wraps, Monolines, and Guarantees removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "ABS Trustees, Wraps, Monolines, and Guarantees describes a structured claim whose payments depend on third-party protection around structured claims under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare ABS Trustees, Wraps, Monolines, and Guarantees with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A guarantee changes who may pay after failure; it does not change what failed first.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-50": {
+      "humanSituation": "A lender funds loans in a warehouse before selling them into a term deal. The loans are earning, but the warehouse bank, servicer, representations, and repurchase promises already determine who carries the early risk.",
+      "openingPuzzle": "The label Warehouse, Servicing Advances, and Repurchase Risk sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from assets before and after term securitisation.",
+      "misconception": "Warehouse, Servicing Advances, and Repurchase Risk removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Warehouse, Servicing Advances, and Repurchase Risk describes a structured claim whose payments depend on assets before and after term securitisation under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Warehouse, Servicing Advances, and Repurchase Risk with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A term security is the visible end of a pipeline whose first risks are created in the warehouse and servicing process.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "lesson-51": {
+      "humanSituation": "One pool stops buying new assets at closing. Another keeps replenishing while performance tests pass. The same note label can therefore hide either a fixed population or a changing portfolio.",
+      "openingPuzzle": "The label Static and Managed Pools, Triggers, and Replenishment sounds like a conclusion while hiding a particular cash engine.",
+      "controllingObject": "One payment from the rules governing what enters and leaves a collateral pool.",
+      "misconception": "Static and Managed Pools, Triggers, and Replenishment removes the underlying borrower, asset, operating, legal, or liquidity risk.",
+      "definition": "Static and Managed Pools, Triggers, and Replenishment describes a structured claim whose payments depend on the rules governing what enters and leaves a collateral pool under documented priority and control rules.",
+      "namedEvidence": "Primary regulatory, market, transaction, trustee, or public-record evidence identified in the product-family source map.",
+      "evidenceLimit": "Public evidence teaches the mechanism but cannot replace the pool tape, contracts, servicing records, support terms, or executable waterfall for a new deal.",
+      "complications": [
+        "cash timing",
+        "servicing or management dependence",
+        "concentration",
+        "counterparty risk",
+        "legal enforceability"
+      ],
+      "transferSituation": "Compare Static and Managed Pools, Triggers, and Replenishment with an adjacent securitisation family and identify which cash engine changes.",
+      "closingPrinciple": "A trigger is not a warning light; it is a contractual switch that changes what the pool may buy and who receives the next rupee.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "servicing or management",
+        "failure mode",
+        "protection",
+        "timing",
+        "investor decision"
+      ]
+    },
+    "episode-8": {
+      "humanSituation": "A mortgage payment can become several different capital-markets claims. The labels sound nested, but the borrower, property, guarantee, timing, and failure path change underneath.",
+      "openingPuzzle": "Similar labels in abs, mbs, rmbs, and cmbs conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "ABS, MBS, RMBS, and CMBS compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure path",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-9": {
+      "humanSituation": "A student loan, a leased excavator, an unpaid invoice, and a short-term paper note all promise cash. They do not create it in the same way or on the same clock.",
+      "openingPuzzle": "Similar labels in consumer and receivables abs conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "Consumer and Receivables ABS compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure path",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-10": {
+      "humanSituation": "A manager receives principal from a corporate loan and must decide whether to reinvest it, repay debt, hold cash, or protect a test. That decision is part of the security.",
+      "openingPuzzle": "Similar labels in clos conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "CLOs compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode distinguishes loan collateral, market liquidity, private-credit valuation, manager discretion, equity economics, and dynamic tests. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-11": {
+      "humanSituation": "A claim can sit above loans, swaps, or other structured claims. Every extra layer adds another waterfall and another place for correlation or counterparty risk to hide.",
+      "openingPuzzle": "Similar labels in cdos and layered credit conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "CDOs and Layered Credit compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode compares cash-flow, synthetic, market-value, single-tranche, and nested re-securitisation structures. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-12": {
+      "humanSituation": "A royalty, a solar project, an aircraft lease, and a restaurant’s sales can all produce contractually captured cash. The operating system behind each payment is different.",
+      "openingPuzzle": "Similar labels in esoteric and future-flow securitisation conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "Esoteric and Future-Flow Securitisation compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode asks what makes each cash flow transferable, what keeps it operating, and what legal control can survive disruption. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-13": {
+      "humanSituation": "The investor’s outcome may turn on a trustee notice, a warehouse margin call, a servicing advance, or a trigger definition before a borrower’s default appears in the headline.",
+      "openingPuzzle": "Similar labels in adjacent structures and transaction infrastructure conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "Adjacent Structures and Transaction Infrastructure compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode closes the curriculum by comparing legal structures, support providers, pre-issuance infrastructure, and the switches that govern changing pools. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
+    },
+    "episode-09": {
+      "humanSituation": "A student loan, a leased excavator, an unpaid invoice, and a short-term paper note all promise cash. They do not create it in the same way or on the same clock.",
+      "openingPuzzle": "Similar labels in consumer and receivables abs conceal different cash paths and failure bearers.",
+      "controllingObject": "One hundred units of collateral and the next payment through its controls.",
+      "misconception": "A product label, rating, guarantee, or liquidity line answers the entire investment question.",
+      "definition": "Consumer and Receivables ABS compares the legal, operational, timing, and credit mechanisms across its mapped structures.",
+      "namedEvidence": "The episode uses primary frameworks, market records, transaction documents, trustee reporting, and public evidence where each is relevant.",
+      "evidenceLimit": "The evidence establishes mechanisms and diligence fields, not the performance or enforceability of an unspecified new transaction.",
+      "complications": [
+        "correlation",
+        "timing mismatch",
+        "servicing or management",
+        "counterparty",
+        "trigger state",
+        "liquidity"
+      ],
+      "transferSituation": "Classify a new transaction by cash engine, legal claim, control, first failure bearer, and investor remedy.",
+      "closingPrinciple": "The episode follows borrower administration, asset use, invoice acceptance, rollover funding, and shared liquidity infrastructure. Name the family, then trace the payment to the person or protection that absorbs its absence.",
+      "requiredCoverage": [
+        "cash engine",
+        "legal claim",
+        "failure",
+        "protection",
+        "timing",
+        "investor consequence"
+      ]
     }
   }
 }

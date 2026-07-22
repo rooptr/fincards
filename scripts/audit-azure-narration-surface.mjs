@@ -2,9 +2,8 @@ import fs from 'node:fs';
 import { findNarrationRisks, prepareNarrationText } from './lib/narration-surface.js';
 
 const files = [
-  'scratch/securitisation_lesson_01_zero_to_one_v3.txt',
-  'scratch/securitisation_masterclass_audio_scripts_v6.json',
-  'scratch/securitisation_masterclass_multivoice_episode_scripts_v3.json',
+  'scratch/securitisation_masterclass_audio_scripts_v7.json',
+  'scratch/securitisation_masterclass_multivoice_episode_scripts_v4.json',
 ];
 const errors = [];
 const compilerRepairs = [];

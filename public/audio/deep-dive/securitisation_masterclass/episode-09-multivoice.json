@@ -1,0 +1,16 @@
+{
+  "episode": 9,
+  "title": "CDOs and layered credit",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "3e8badd81408eb87a4ac20c985abaa1013dbc6747f5ba7008bd8640a3d5e43fb",
+  "speakerTurns": 48,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:07:25.623Z"
+}

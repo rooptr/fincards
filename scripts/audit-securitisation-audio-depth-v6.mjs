@@ -5,8 +5,8 @@ import {
   auditDocumentaryLesson,
 } from './lib/documentary-discovery-audit.js';
 
-const lessonFile = process.argv[2] || 'scratch/securitisation_masterclass_audio_scripts_v6.json';
-const episodeFile = process.argv[3] || 'scratch/securitisation_masterclass_multivoice_episode_scripts_v3.json';
+const lessonFile = process.argv[2] || 'scratch/securitisation_masterclass_audio_scripts_v7.json';
+const episodeFile = process.argv[3] || 'scratch/securitisation_masterclass_multivoice_episode_scripts_v4.json';
 const catalog = JSON.parse(fs.readFileSync('scripts/content/securitisation/documentary-catalog.json', 'utf8'));
 const briefs = JSON.parse(fs.readFileSync('scripts/content/securitisation/documentary-briefs.json', 'utf8')).briefs;
 const errors = [];
@@ -62,10 +62,10 @@ const lessons = readJson(lessonFile);
 const episodes = readJson(episodeFile);
 
 if (lessons) {
-  if (lessons.schemaVersion !== 'securitisation-masterclass-audio-scripts.v6') {
+  if (lessons.schemaVersion !== 'securitisation-masterclass-audio-scripts.v7') {
     errors.push(`Unexpected lesson schema: ${lessons.schemaVersion}`);
   }
-  if (lessons.lessons?.length !== 25) errors.push(`Expected 25 lessons, found ${lessons.lessons?.length ?? 0}.`);
+  if (lessons.lessons?.length !== catalog.lessons.length) errors.push(`Expected ${catalog.lessons.length} lessons, found ${lessons.lessons?.length ?? 0}.`);
   for (const lesson of lessons.lessons ?? []) {
     const coverage = lesson.depthCoverage ?? {};
     const missing = ['formalDefinition', 'economicPurpose', 'mechanism', 'realEvidence', 'assumption', 'failureMode', 'applicationTask']
@@ -95,10 +95,10 @@ if (lessons) {
 }
 
 if (episodes) {
-  if (episodes.schemaVersion !== 'securitisation-masterclass-multivoice-dialogue-scripts.v3') {
+  if (episodes.schemaVersion !== 'securitisation-masterclass-multivoice-dialogue-scripts.v4') {
     errors.push(`Unexpected episode schema: ${episodes.schemaVersion}`);
   }
-  if (episodes.episodes?.length !== 7) errors.push(`Expected 7 episodes, found ${episodes.episodes?.length ?? 0}.`);
+  if (episodes.episodes?.length !== catalog.episodes.length) errors.push(`Expected ${catalog.episodes.length} episodes, found ${episodes.episodes?.length ?? 0}.`);
   for (const episode of episodes.episodes ?? []) {
     const coverage = episode.depthCoverage ?? {};
     const missing = ['standaloneOpening', 'realEventSpine', 'mappedLessons', 'mechanismWalkthrough', 'decisionChallenge', 'adversarialCorrection']

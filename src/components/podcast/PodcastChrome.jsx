@@ -25,6 +25,7 @@ function toCourse(courseId, kind = 'lessons') {
 
 export default function PodcastChrome() {
   const player = usePodcastPlayer();
+  const { nowPlayingOpen } = player;
   const [screen, setScreen] = useState('library');
   const [courseId, setCourseId] = useState('securitisation');
   const [showQueue, setShowQueue] = useState(false);
@@ -32,7 +33,8 @@ export default function PodcastChrome() {
   const [readingLessonId, setReadingLessonId] = useState(null);
   const courses = useMemo(() => getFigmaCourses().map((course) => toCourse(course.id)), []);
   const course = toCourse(courseId, player.queueKind);
-  const currentCourse = player.track ? toCourse(player.track.courseId, player.queueKind) : null;
+  const activeQueueKind = player.track?.kind === 'episode' ? 'episodes' : player.queueKind;
+  const currentCourse = player.track ? toCourse(player.track.courseId, activeQueueKind) : null;
   const currentLesson = currentCourse?.lessons.find((lesson) => lesson.id === player.track?.id) || null;
   const playback = {
     isPlaying: player.isPlaying,
@@ -42,7 +44,7 @@ export default function PodcastChrome() {
     duration: player.duration,
     speed: player.speed,
   };
-  const playLesson = (lesson, kind = player.queueKind) => player.loadTrack(lesson.sourceTrack, kind, { autoplay: true, open: true });
+  const playLesson = (lesson, kind = (lesson.sourceTrack.kind === 'episode' ? 'episodes' : 'lessons')) => player.loadTrack(lesson.sourceTrack, kind, { autoplay: true, open: true });
   const selectCourse = (nextCourse) => { setCourseId(nextCourse.id); setScreen('course'); };
   const playAll = (kind) => { const lesson = getFigmaLessons(courseId, kind)[0]; if (lesson) playLesson(lesson, kind); };
   const shuffle = (kind) => { const lessons = getFigmaLessons(courseId, kind); const lesson = lessons[Math.floor(Math.random() * lessons.length)]; if (lesson) playLesson(lesson, kind); };
@@ -61,6 +63,16 @@ export default function PodcastChrome() {
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [player.track, player.togglePlayback]);
+
+  useEffect(() => {
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (!themeColor) return undefined;
+    const previousColor = themeColor.getAttribute('content');
+    themeColor.setAttribute('content', nowPlayingOpen ? '#000000' : '#f5f5f7');
+    return () => {
+      if (previousColor) themeColor.setAttribute('content', previousColor);
+    };
+  }, [nowPlayingOpen]);
 
   return <>
     <AnimatePresence>

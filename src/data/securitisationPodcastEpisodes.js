@@ -1,0 +1,15 @@
+export const SECURITISATION_PODCAST_EPISODES = Object.freeze([
+  { number: 1, id: 'financing-architecture', title: 'The financing architecture' },
+  { number: 2, id: 'legal-isolation-and-control', title: 'Legal isolation and control' },
+  { number: 3, id: 'abs-and-consumer-receivables', title: 'ABS and consumer receivables' },
+  { number: 4, id: 'mortgage-and-collateral-families', title: 'Mortgage and collateral families' },
+  { number: 5, id: 'cash-flow-forms', title: 'How collateral cash becomes security cash' },
+  { number: 6, id: 'waterfalls-and-payment-priority', title: 'Waterfalls and payment priority' },
+  { number: 7, id: 'tranching-and-loss-allocation', title: 'Tranching and loss allocation' },
+  { number: 8, id: 'loan-collateral-clos', title: 'CLOs: loan collateral, managers, and equity' },
+  { number: 9, id: 'cdos-and-layered-credit', title: 'CDOs and layered credit' },
+  { number: 10, id: 'advanced-risk-transfer', title: 'Re-securitisation and advanced risk transfer' },
+  { number: 11, id: 'prepayment-duration-market-liquidity', title: 'Prepayment, duration, and market liquidity' },
+  { number: 12, id: 'esoteric-and-future-flow', title: 'Esoteric and future-flow securitisation' },
+  { number: 13, id: 'adjacent-structures-and-infrastructure', title: 'Adjacent structures and transaction infrastructure' },
+]);

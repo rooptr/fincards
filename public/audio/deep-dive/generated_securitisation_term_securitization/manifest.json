@@ -6,7 +6,7 @@
   "modelId": "DragonHDLatestNeural",
   "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
   "audioQuality": "Azure native 48kHz 96kbps MP3 with preserved paragraph boundaries and native punctuation flow",
-  "generatedAt": "2026-07-20T21:22:44.483Z",
+  "generatedAt": "2026-07-22T09:20:04.156Z",
   "scriptHash": "b6b65e8d8025ca944df67c1000ed444dfa38536246647b846967e4c5bdd1943f",
   "chapters": [
     {

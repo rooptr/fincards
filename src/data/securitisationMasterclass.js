@@ -44,6 +44,11 @@ export const SECURITISATION_HEADLINES = {
   sts_securitization: { title: 'The label promised simplicity. The documents had to prove it.', date: '2019' },
   psa_prepayment_model: { title: 'The benchmark was 100 PSA. It was never a borrower forecast.', date: 'SIFMA Uniform Practices' },
   term_asset_backed_securities_loan_facility: { title: 'The Federal Reserve funded the market without buying the loans.', date: 'November 25, 2008' },
+  asset_backed_security: { title: 'The label said asset-backed. The cash path had to prove it.', date: 'September 24, 2014' },
+  mortgage_backed_security: { title: 'One mortgage payment, two clocks, several investor claims.', date: 'SIFMA Uniform Practices' },
+  residential_mortgage_backed_security: { title: 'The homeowner could refinance before the note expected cash.', date: 'September 26, 2025' },
+  commercial_mortgage_backed_security: { title: 'The building paid today. The balloon waited for tomorrow.', date: 'January 9, 2026' },
+  agency_non_agency_mortgage_security: { title: 'A guarantee changed the claim, not every risk in the mortgage pool.', date: 'September 26, 2025' },
 };
 
 export const SECURITISATION_EPISODE_BY_TOPIC = Object.fromEntries(

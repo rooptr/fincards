@@ -8,8 +8,8 @@ if (!fs.existsSync(catalogPath)) throw new Error('Documentary catalog is missing
 const catalog = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 const briefsPath = path.join(root, 'scripts', 'content', 'securitisation', 'documentary-briefs.json');
 const briefs = JSON.parse(fs.readFileSync(briefsPath, 'utf8')).briefs ?? {};
-if (catalog.lessons?.length !== 25) throw new Error(`Expected 25 catalog lessons, received ${catalog.lessons?.length ?? 0}.`);
-if (catalog.episodes?.length !== 7) throw new Error(`Expected 7 catalog episodes, received ${catalog.episodes?.length ?? 0}.`);
+if (catalog.lessons?.length !== 51) throw new Error(`Expected 51 catalog lessons, received ${catalog.lessons?.length ?? 0}.`);
+if (catalog.episodes?.length !== 13) throw new Error(`Expected 13 catalog episodes, received ${catalog.episodes?.length ?? 0}.`);
 
 function assertOrderedUnique(records, label) {
   const numbers = records.map((record) => record.number);
@@ -23,6 +23,12 @@ function assertOrderedUnique(records, label) {
 
 assertOrderedUnique(catalog.lessons, 'Lesson');
 assertOrderedUnique(catalog.episodes, 'Episode');
+
+const mappedLessonIds = catalog.episodes.flatMap((episode) => episode.lessonIds ?? catalog.lessons.filter((lesson) => lesson.episodeNumber === episode.number).map((lesson) => lesson.id));
+if (new Set(mappedLessonIds).size !== 51) throw new Error(`Expected 51 mapped lesson memberships, received ${new Set(mappedLessonIds).size}.`);
+for (const lessonId of mappedLessonIds) {
+  if (!catalog.lessons.some((lesson) => lesson.id === lessonId)) throw new Error(`Episode references unknown lesson: ${lessonId}`);
+}
 
 for (const record of [...catalog.lessons, ...catalog.episodes]) {
   const brief = briefs[record.briefId];
@@ -38,8 +44,8 @@ for (const record of [...catalog.lessons, ...catalog.episodes]) {
   if (!source) throw new Error(`Authored source is empty: ${record.sourceFile}`);
 }
 
-const lessonPackPath = path.join(root, 'scratch', 'securitisation_masterclass_audio_scripts_v6.json');
-const episodePackPath = path.join(root, 'scratch', 'securitisation_masterclass_multivoice_episode_scripts_v3.json');
+const lessonPackPath = path.join(root, 'scratch', 'securitisation_masterclass_audio_scripts_v7.json');
+const episodePackPath = path.join(root, 'scratch', 'securitisation_masterclass_multivoice_episode_scripts_v4.json');
 if (!fs.existsSync(lessonPackPath) || !fs.existsSync(episodePackPath)) throw new Error('Prepared documentary packs are missing.');
 
 const lessonPack = JSON.parse(fs.readFileSync(lessonPackPath, 'utf8'));

@@ -7,6 +7,8 @@ const accounting = PODCAST_COURSES.find((course) => course.id === 'accounting');
 assert.ok(securitisation, 'Podcast library must include Securitisation');
 assert.equal(securitisation.artwork, 'art.jpg');
 assert.ok(getPodcastQueue('lessons', 'securitisation').length > 0, 'Securitisation must retain its playable lesson queue');
+assert.equal(getPodcastQueue('episodes', 'securitisation').length, 13, 'Securitisation must expose all thirteen episode tracks.');
+assert.equal(getPodcastQueue('episodes', 'securitisation').at(-1).manifestPath, 'audio/deep-dive/securitisation_masterclass/episode-13/manifest.json');
 
 assert.ok(accounting, 'Podcast library must include Accounting');
 assert.equal(accounting.artwork, 'acc.png');

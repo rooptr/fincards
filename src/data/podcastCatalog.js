@@ -1,5 +1,6 @@
 import { deepDiveLessons } from './deepDiveLessons.js';
 import { SECURITISATION_MASTERCLASS } from './securitisationMasterclass.js';
+import { SECURITISATION_PODCAST_EPISODES } from './securitisationPodcastEpisodes.js';
 
 export const PODCAST_ALBUM_ARTWORK = 'art.jpg';
 export const ACCOUNTING_ALBUM_ARTWORK = 'acc.png';
@@ -25,7 +26,7 @@ const lessonTracks = deepDiveLessons
     courseId: 'securitisation',
   }));
 
-const episodeTracks = SECURITISATION_MASTERCLASS.episodes.map((episode) => {
+const episodeTracks = SECURITISATION_PODCAST_EPISODES.map((episode) => {
   const episodeNumber = String(episode.number).padStart(2, '0');
   return {
     id: 'securitisation-episode-' + episodeNumber,
@@ -36,7 +37,7 @@ const episodeTracks = SECURITISATION_MASTERCLASS.episodes.map((episode) => {
     episodeNumber: episode.number,
     episodeId: episode.id,
     episodeTitle: episode.title,
-    topicIds: [...episode.topicIds],
+    topicIds: [...(episode.topicIds ?? [])],
     manifestPath: 'audio/deep-dive/securitisation_masterclass/episode-' + episodeNumber + '/manifest.json',
     artwork: PODCAST_ALBUM_ARTWORK,
     courseId: 'securitisation',

@@ -2,12 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { validateAppliedLearningArtifact, SECURITISATION_DESK_SECTION_SCHEMA } from '../src/utils/deepDiveGenerationContract.js';
 import { SECURITISATION_MASTERCLASS } from '../src/data/securitisationMasterclass.js';
+const documentaryCatalog = JSON.parse(fs.readFileSync('scripts/content/securitisation/documentary-catalog.json', 'utf8'));
 
 const batchFiles = fs.readdirSync('scratch')
   .filter((file) => /^deep_dive_generated_securitisation_batch_\d{3}\.json$/.test(file))
   .sort();
 const lessons = batchFiles.flatMap((file) => JSON.parse(fs.readFileSync(path.join('scratch', file), 'utf8')).lessons ?? []);
 const audio = JSON.parse(fs.readFileSync('scratch/securitisation_masterclass_audio_scripts.json', 'utf8'));
+const documentaryAudio = JSON.parse(fs.readFileSync('scratch/securitisation_masterclass_audio_scripts_v7.json', 'utf8'));
 const expectedHeadings = SECURITISATION_DESK_SECTION_SCHEMA.map((section) => section.heading);
 const errors = [];
 const warnings = [];
@@ -79,6 +81,10 @@ for (const lesson of lessons) {
 }
 
 if (audio.lessons.length !== lessons.length) errors.push(`Audio script count ${audio.lessons.length} does not match lesson count ${lessons.length}.`);
+if (documentaryCatalog.lessons.length !== 51) errors.push(`Documentary catalog lesson count ${documentaryCatalog.lessons.length} does not equal 51.`);
+if (documentaryCatalog.episodes.length !== 13) errors.push(`Documentary catalog episode count ${documentaryCatalog.episodes.length} does not equal 13.`);
+if (documentaryAudio.lessons.length !== documentaryCatalog.lessons.length) errors.push(`Reordered audio script count ${documentaryAudio.lessons.length} does not match documentary catalog count ${documentaryCatalog.lessons.length}.`);
+if (documentaryAudio.episodes.length !== documentaryCatalog.episodes.length) errors.push(`Reordered episode script count ${documentaryAudio.episodes.length} does not match documentary catalog count ${documentaryCatalog.episodes.length}.`);
 for (const script of audio.lessons) {
   if (!script.script.startsWith(audio.series.openingPauseToken)) errors.push(`${script.lessonId}: audio script does not begin with the one-second pause token.`);
   const definitionTeachingCount = (script.script.match(/Take |You will hear |The phrase /g) ?? []).length;
@@ -101,5 +107,14 @@ for (const script of audio.lessons) {
   if (script.script.length < 6000) warnings.push(`${script.lessonId}: audio script may not be sufficiently deep.`);
 }
 
-console.log(JSON.stringify({ valid: errors.length === 0, lessons: lessons.length, episodes: SECURITISATION_MASTERCLASS.episodes.length, audioScripts: audio.lessons.length, errors, warnings }, null, 2));
+console.log(JSON.stringify({
+  valid: errors.length === 0,
+  deepDiveLessons: lessons.length,
+  deepDiveEpisodes: SECURITISATION_MASTERCLASS.episodes.length,
+  documentaryLessons: documentaryCatalog.lessons.length,
+  documentaryEpisodes: documentaryCatalog.episodes.length,
+  documentaryAudioScripts: documentaryAudio.lessons.length,
+  errors,
+  warnings,
+}, null, 2));
 if (errors.length) process.exitCode = 1;

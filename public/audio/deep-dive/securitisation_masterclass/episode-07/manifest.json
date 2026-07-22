@@ -1,19 +1,19 @@
 {
   "lessonId": "securitisation-episode-07",
   "episodeNumber": 7,
-  "title": "Prepayment, duration, and market liquidity",
+  "title": "Tranching and loss allocation",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
     "meera": "en-IN-Meera:DragonHDLatestNeural"
   },
   "audioQuality": "audio-48khz-96kbitrate-mono-mp3",
-  "generatedAt": "2026-07-20T22:07:47.959Z",
+  "generatedAt": "2026-07-22T11:02:00.286Z",
   "scriptHash": "a2579ecaf92503304842be6162fd5b1657afa2ee2b44bfee539cb0c84ec9ff36",
   "chapters": [
     {
       "id": "episode-07-multivoice",
-      "label": "Prepayment, duration, and market liquidity",
+      "label": "Tranching and loss allocation",
       "audio": "/audio/deep-dive/securitisation_masterclass/episode-07-multivoice.mp3",
       "characters": 9403,
       "openingPauseSeconds": 1,

@@ -4,7 +4,7 @@ import { join } from 'node:path';
 import { prepareNarrationText, renderNarrationSsml } from './lib/narration-surface.js';
 
 const episodeNumber = Number(process.env.SECURITISATION_EPISODE || 1);
-const inputFile = process.env.MULTIVOICE_SCRIPT_FILE || 'scratch/securitisation_masterclass_multivoice_episode_scripts_v3.json';
+const inputFile = process.env.MULTIVOICE_SCRIPT_FILE || 'scratch/securitisation_masterclass_multivoice_episode_scripts_v4.json';
 const outputTag = String(process.env.MULTIVOICE_OUTPUT_TAG || '').trim().replace(/[^a-zA-Z0-9_-]/g, '');
 // Keep as many conversational turns as possible in one request.  A request
 // boundary restarts the voice performance, so boundaries belong between ideas,

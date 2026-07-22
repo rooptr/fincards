@@ -1,7 +1,7 @@
 // Find all suspicious/garbled words across all lesson scripts
 import fs from 'node:fs';
 
-const data = JSON.parse(fs.readFileSync('scratch/securitisation_masterclass_audio_scripts.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('scratch/securitisation_masterclass_audio_scripts_v7.json', 'utf8'));
 
 const allText = data.lessons.map(l => l.script).join(' ');
 const words = allText.replace(/\[.*?\]/g, '').split(/[\s,;:!?()"']+/).filter(Boolean);

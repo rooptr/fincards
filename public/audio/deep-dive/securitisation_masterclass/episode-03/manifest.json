@@ -1,19 +1,19 @@
 {
   "lessonId": "securitisation-episode-03",
   "episodeNumber": 3,
-  "title": "Collateral is the business",
+  "title": "ABS and consumer receivables",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
     "meera": "en-IN-Meera:DragonHDLatestNeural"
   },
   "audioQuality": "audio-48khz-96kbitrate-mono-mp3",
-  "generatedAt": "2026-07-20T22:04:45.538Z",
+  "generatedAt": "2026-07-22T10:58:28.465Z",
   "scriptHash": "3483c79800bad6126387e1c022518ac7fdf775f66cf03c46362a233f9688a5d4",
   "chapters": [
     {
       "id": "episode-03-multivoice",
-      "label": "Collateral is the business",
+      "label": "ABS and consumer receivables",
       "audio": "/audio/deep-dive/securitisation_masterclass/episode-03-multivoice.mp3",
       "characters": 12134,
       "openingPauseSeconds": 1,

@@ -1,6 +1,6 @@
 {
   "episode": 7,
-  "title": "Prepayment, duration, and market liquidity",
+  "title": "Tranching and loss allocation",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
@@ -12,5 +12,5 @@
   "speakerTurns": 44,
   "audioPending": false,
   "generatedArtifact": "audio-and-ssml",
-  "generatedAt": "2026-07-20T22:07:47.959Z"
+  "generatedAt": "2026-07-22T11:02:00.286Z"
 }

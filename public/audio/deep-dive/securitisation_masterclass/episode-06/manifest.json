@@ -1,19 +1,19 @@
 {
   "lessonId": "securitisation-episode-06",
   "episodeNumber": 6,
-  "title": "When structure becomes risk transfer",
+  "title": "Waterfalls and payment priority",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
     "meera": "en-IN-Meera:DragonHDLatestNeural"
   },
   "audioQuality": "audio-48khz-96kbitrate-mono-mp3",
-  "generatedAt": "2026-07-20T22:07:02.820Z",
+  "generatedAt": "2026-07-22T11:01:05.696Z",
   "scriptHash": "40ba126223c98e34be8a46c992f3eed89f1e130fde0a5f2a2c6cc434dd979497",
   "chapters": [
     {
       "id": "episode-06-multivoice",
-      "label": "When structure becomes risk transfer",
+      "label": "Waterfalls and payment priority",
       "audio": "/audio/deep-dive/securitisation_masterclass/episode-06-multivoice.mp3",
       "characters": 10043,
       "openingPauseSeconds": 1,

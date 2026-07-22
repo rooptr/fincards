@@ -1,6 +1,6 @@
 {
   "episode": 6,
-  "title": "When structure becomes risk transfer",
+  "title": "Waterfalls and payment priority",
   "provider": "azure-speech",
   "voices": {
     "diya": "en-IN-Diya:DragonHDLatestNeural",
@@ -12,5 +12,5 @@
   "speakerTurns": 43,
   "audioPending": false,
   "generatedArtifact": "audio-and-ssml",
-  "generatedAt": "2026-07-20T22:07:02.820Z"
+  "generatedAt": "2026-07-22T11:01:05.696Z"
 }

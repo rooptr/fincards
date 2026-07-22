@@ -3,8 +3,8 @@ import path from 'node:path';
 import { deepDiveLessons } from '../src/data/deepDiveLessons.js';
 
 const catalogFile = 'scripts/content/securitisation/documentary-catalog.json';
-const outputFile = 'scratch/securitisation_masterclass_audio_scripts_v6.json';
-const textDirectory = 'scratch/securitisation_masterclass_audio_scripts_v6';
+const outputFile = 'scratch/securitisation_masterclass_audio_scripts_v7.json';
+const textDirectory = 'scratch/securitisation_masterclass_audio_scripts_v7';
 const catalog = JSON.parse(fs.readFileSync(catalogFile, 'utf8'));
 const lessonById = new Map(deepDiveLessons.map((lesson) => [lesson.id, lesson]));
 
@@ -17,13 +17,15 @@ function authoredScript(sourceFile) {
 
 const renderedLessons = catalog.lessons.map((record) => {
   const lesson = lessonById.get(record.id);
-  if (!lesson) throw new Error(`Catalog lesson does not exist in Deep Dive data: ${record.id}`);
+  const episode = catalog.episodes.find((candidate) => candidate.number === (lesson?.series?.episodeNumber ?? record.episodeNumber));
+  const episodeNumber = lesson?.series?.episodeNumber ?? record.episodeNumber ?? 1;
+  const episodeId = lesson?.series?.episodeId ?? episode?.id ?? `episode-${String(episodeNumber).padStart(2, '0')}`;
   return {
-    lessonId: lesson.id,
-    canonicalName: lesson.canonicalName,
-    episodeNumber: lesson.series.episodeNumber,
-    episodeId: lesson.series.episodeId,
-    audioTitle: lesson.audio?.title ?? lesson.title,
+    lessonId: record.id,
+    canonicalName: lesson?.canonicalName ?? record.canonicalName,
+    episodeNumber,
+    episodeId,
+    audioTitle: lesson?.audio?.title ?? lesson?.title ?? record.canonicalName,
     teachingOrder: ['human-scale-example', 'named-real-event', 'formal-mechanism', 'application'],
     depthCoverage: {
       formalDefinition: true,
@@ -40,8 +42,15 @@ const renderedLessons = catalog.lessons.map((record) => {
   };
 });
 
+const outputEpisodes = catalog.episodes.map((record) => ({
+  number: record.number,
+  id: record.id,
+  title: catalog.episodes.find((candidate) => candidate.number === record.number)?.title ?? catalog.episodes.find((candidate) => candidate.number === record.number)?.id ?? `Episode ${record.number}`,
+  lessonIds: record.lessonIds ?? renderedLessons.filter((candidate) => candidate.episodeNumber === record.number).map((candidate) => candidate.lessonId),
+}));
+
 const output = {
-  schemaVersion: 'securitisation-masterclass-audio-scripts.v6',
+  schemaVersion: 'securitisation-masterclass-audio-scripts.v7',
   series: {
     id: 'securitisation-masterclass',
     title: 'Securitisation: From Receivables to Rated Risk',
@@ -51,12 +60,7 @@ const output = {
     modelId: 'azure-diya-dragon-hd',
     sourceMode: 'tracked-documentary-prose',
   },
-  episodes: [...new Map(renderedLessons.map((lesson) => [lesson.episodeNumber, {
-    number: lesson.episodeNumber,
-    id: lesson.episodeId,
-    title: lessonById.get(lesson.lessonId).series.episodeTitle,
-    lessonIds: renderedLessons.filter((candidate) => candidate.episodeNumber === lesson.episodeNumber).map((candidate) => candidate.lessonId),
-  }])).values()],
+  episodes: outputEpisodes,
   lessons: renderedLessons,
 };
 

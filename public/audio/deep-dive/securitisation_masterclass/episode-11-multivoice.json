@@ -1,0 +1,16 @@
+{
+  "episode": 11,
+  "title": "Prepayment, duration, and market liquidity",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "0c3950b32a593ba99f7d71ce4576fc0c32cfc19fa97c556bce73e47581a7c54f",
+  "speakerTurns": 41,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:20:47.958Z"
+}

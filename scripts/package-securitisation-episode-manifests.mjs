@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { PODCAST_TRACKS } from '../src/data/securitisationPodcastCatalog.js';
+import { SECURITISATION_PODCAST_EPISODES } from '../src/data/securitisationPodcastEpisodes.js';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const scriptRoot = path.join(projectRoot, 'scratch', 'securitisation_masterclass_multivoice_episode_audio_text_v3');
+const scriptRoot = path.join(projectRoot, 'scratch', 'securitisation_masterclass_multivoice_episode_audio_text_v4');
 const audioRoot = path.join(projectRoot, 'public', 'audio', 'deep-dive', 'securitisation_masterclass');
 const dryRun = process.argv.includes('--dry-run');
 
@@ -12,7 +12,7 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-const planned = PODCAST_TRACKS.episodes.map((track) => {
+const planned = SECURITISATION_PODCAST_EPISODES.map((track) => {
   const number = String(track.number).padStart(2, '0');
   const scriptFile = path.join(scriptRoot, `episode-${number}.txt`);
   const metadataFile = path.join(audioRoot, `episode-${number}-multivoice.json`);
