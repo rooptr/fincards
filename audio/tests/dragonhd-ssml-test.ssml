@@ -1,0 +1,18 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-IN">
+  <voice name="en-US-Phoebe:DragonHDOmniLatestNeural">
+    <lang xml:lang="en-IN">
+    <break time="700ms"/>
+    <mstts:express-as style="calm" styledegree="0.85">
+      <prosody rate="-12%" pitch="-2st" volume="soft">
+        When liquidity looks comfortable, <break time="450ms"/> pause and ask whether the cash is truly available.
+      </prosody>
+    </mstts:express-as>
+    <break time="650ms"/>
+    <mstts:express-as style="whispering" styledegree="1.25">
+      <prosody rate="-8%" pitch="-1st" volume="soft">The balance sheet can look calm while the cash position is fragile.</prosody>
+    </mstts:express-as>
+    <break time="500ms"/>
+    <emphasis level="strong">Test the assumption.</emphasis>
+    </lang>
+  </voice>
+</speak>

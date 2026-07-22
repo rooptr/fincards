@@ -1,0 +1,16 @@
+{
+  "episode": 1,
+  "title": "The financing architecture",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "726bc7fd737f6d76f6d05d3df3ab5838f82003ef02f2240e43ca7e7fd0980465",
+  "speakerTurns": 48,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T10:56:11.824Z"
+}

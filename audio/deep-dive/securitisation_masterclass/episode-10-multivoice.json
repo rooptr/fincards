@@ -1,0 +1,16 @@
+{
+  "episode": 10,
+  "title": "Re-securitisation and advanced risk transfer",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "0196c457627c21601e74f17b2740173865de15ebb432fe49e07240f865d32de0",
+  "speakerTurns": 41,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:19:35.310Z"
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">Realty Income SEC FFO reconciliation and Embassy REIT NSE NAV filing</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="186" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Realty Income, year ended December 31, 2024</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Normalized FFO available to common stockholders</text>
+  <text x="700" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">$3,563.951m</text>
+  <text x="78" y="263" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">AFFO available to common stockholders</text>
+  <text x="700" y="263" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">$3,621.437m</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Distributions paid</text>
+  <text x="700" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">$2,691.719m</text>
+  <line x1="78" y1="337" x2="1122" y2="337" stroke="#d8dbe2"/>
+  <text x="78" y="381" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Embassy REIT, six months ended September 30, 2025</text>
+  <text x="78" y="421" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Fair-value net assets attributable to unitholders</text>
+  <text x="700" y="421" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Rs 422,671 lakh</text>
+  <text x="78" y="458" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Fair-value NAV per unit</text>
+  <text x="700" y="458" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Rs 445.86</text>
+  <text x="78" y="495" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">NAV = net assets attributable to unitholders divided by units.</text>
+  <line x1="78" y1="532" x2="1122" y2="532" stroke="#d8dbe2"/>
+  <text x="78" y="576" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Reading rule</text>
+  <text x="78" y="615" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">FFO is non-GAAP. NAV is valuation-date and fair-value dependent.</text>
+  <text x="78" y="652" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">Neither metric is a substitute for cash flow, market price, or full asset valuation review.</text>
+</svg>

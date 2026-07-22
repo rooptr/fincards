@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">SEBI Information Ratio circular and NSE Indices Nifty 50 Whitepaper 2024</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="186" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">NSE Indices: Nifty 50 Total Return profile</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Annualized return since June 30, 1999</text>
+  <text x="650" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">14.10%</text>
+  <text x="78" y="263" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Annualized volatility since June 30, 1999</text>
+  <text x="650" y="263" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">22.25%</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Three-year return to risk ratio</text>
+  <text x="650" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">1.19</text>
+  <text x="78" y="337" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Total-return convention</text>
+  <text x="650" y="337" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Dividends reinvested</text>
+  <line x1="78" y1="370" x2="1122" y2="370" stroke="#d8dbe2"/>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">SEBI Information Ratio methodology</text>
+  <text x="78" y="454" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">IR = (Portfolio Return - Benchmark Return)</text>
+  <text x="78" y="491" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">     / Standard Deviation of Excess Return</text>
+  <text x="78" y="528" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Daily return values; Tier 1 benchmark; daily disclosure for equity schemes</text>
+  <line x1="78" y1="558" x2="1122" y2="558" stroke="#d8dbe2"/>
+  <text x="78" y="602" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Editorial control</text>
+  <text x="78" y="639" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">Risk-free rate, beta, target return, and maximum drawdown stay explicit inputs.</text>
+  <text x="78" y="676" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">No computed output is inserted without a corresponding primary source field.</text>
+</svg>

@@ -1,0 +1,10 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-IN">
+  <voice name="en-IN-Diya:DragonHDLatestNeural" parameters="temperature=0.7;enhancePronunciation=true">
+    <break time="800ms"/>
+    <p>First, this sentence tests a natural pause before the explanation.</p>
+    <break time="700ms"/>
+    <p>This sentence tests pronunciation control: <sub alias="special purpose vehicle">S P V</sub>, <sub alias="securitisation">securitization</sub>, and <say-as interpret-as="cardinal">2021</say-as>.</p>
+    <break time="700ms"/>
+    <p>Now listen for the deliberate sentence boundary, followed by a calm, natural delivery without unsupported expression tags.</p>
+  </voice>
+</speak>

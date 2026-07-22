@@ -1,0 +1,16 @@
+{
+  "episode": 13,
+  "title": "Adjacent structures and transaction infrastructure",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "bd71b5d6eb4164efb0499b7ed39c7d529f4460f4460c8f4a8b36a79436e4d94b",
+  "speakerTurns": 41,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:23:22.146Z"
+}

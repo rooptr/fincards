@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="644" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">U.S. Securities and Exchange Commission • Regulation AB and Section 3(c)(5)(C)</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="184" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Regulation AB</text>
+  <text x="78" y="224" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Regulation range</text>
+  <text x="650" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">17 CFR 229.1100 to 229.1125</text>
+  <text x="78" y="262" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Applicable asset-level disclosure</text>
+  <text x="650" y="262" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">Tagged XML data</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Distribution report</text>
+  <text x="650" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Form 10-D</text>
+  <line x1="78" y1="334" x2="1122" y2="334" stroke="#d8dbe2"/>
+  <text x="78" y="374" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Section 3(c)(5)(C) asset composition test</text>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Qualifying interests</text>
+  <text x="650" y="414" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">At least 55%</text>
+  <text x="78" y="452" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Qualifying plus real-estate-type interests</text>
+  <text x="650" y="452" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">At least 80%</text>
+  <text x="78" y="490" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Miscellaneous assets</text>
+  <text x="650" y="490" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">No more than 20%</text>
+  <text x="78" y="550" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#202124">The document defines the boundary. It does not excuse a broad label from a field-level asset classification test.</text>
+  <text x="78" y="606" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">Sources: SEC final rule, SEC Corporation Finance Interpretations, and SEC Redwood Trust response</text>
+</svg>

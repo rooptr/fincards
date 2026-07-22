@@ -1,0 +1,16 @@
+{
+  "episode": 12,
+  "title": "Esoteric and future-flow securitisation",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "c9a08c3055719876a400a4847dbbd452a63dfc96c96b621ccae7db5e8982e1f7",
+  "speakerTurns": 41,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:22:08.260Z"
+}

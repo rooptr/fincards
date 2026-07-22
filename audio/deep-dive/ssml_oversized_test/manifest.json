@@ -1,0 +1,19 @@
+{
+  "lessonId": "ssml_oversized_test",
+  "provider": "azure-speech",
+  "voice": "en-IN-Diya:DragonHDLatestNeural",
+  "modelId": "DragonHDLatestNeural",
+  "audioQuality": "Azure native 48kHz 192kbps MP3 with preserved paragraph boundaries and native punctuation flow",
+  "generatedAt": "2026-07-20T18:54:55.472Z",
+  "scriptHash": "dc8a391223bdc096510e46d560d2dbcc9a46550e694a96252cdf15a0060797ed",
+  "chapters": [
+    {
+      "id": "oversized",
+      "label": "Full lesson narration",
+      "audio": null,
+      "characters": 284,
+      "openingPauseSeconds": 1,
+      "script": "This source paragraph is intentionally too long for its tiny transport limit. It contains several complete sentences, but the renderer must reject it instead of converting those sentences into independently paced paragraphs. The author must decide where the thought genuinely changes."
+    }
+  ]
+}

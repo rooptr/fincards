@@ -1,0 +1,16 @@
+{
+  "episode": 5,
+  "title": "How collateral cash becomes security cash",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 2,
+  "scriptHash": "3accfc29b8e790afb38e8024882f528ece165b6ebb849d41719a8eabbfd21768",
+  "speakerTurns": 42,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:00:10.720Z"
+}

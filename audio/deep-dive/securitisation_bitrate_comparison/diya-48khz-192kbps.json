@@ -1,0 +1,21 @@
+{
+  "lessonId": "securitisation_bitrate_comparison",
+  "provider": "azure-speech",
+  "voice": "en-IN-Diya:DragonHDLatestNeural",
+  "region": "centralindia",
+  "modelId": "DragonHDLatestNeural",
+  "outputFormat": "audio-48khz-192kbitrate-mono-mp3",
+  "audioQuality": "Azure native 48kHz 192kbps MP3 with preserved paragraph boundaries and native punctuation flow",
+  "generatedAt": "2026-07-20T19:38:13.131Z",
+  "scriptHash": "e9e926c6010f75d7b6dde5e704c028a366a4b8254cb7b57f7b0910c468b6137a",
+  "chapters": [
+    {
+      "id": "diya-48khz-192kbps",
+      "label": "Full lesson narration",
+      "audio": "/audio/deep-dive/securitisation_bitrate_comparison/diya-48khz-192kbps.mp3",
+      "characters": 1085,
+      "openingPauseSeconds": 1,
+      "script": "Hello Deepti. I hope you are preparing well and staying hydrated.\n\nA vehicle lender can have thousands of customers paying every month, report a healthy loan book, and still face a simple problem: most of its money is arriving slowly. The loans may be profitable over four years, while the lender needs cash this month to make the next set of loans.\n\nShrink that problem to one scooter shop. The shop sells one hundred scooters on instalments. Customers promise to pay over three years. The sales are real and the payment contracts have value, but the shop cannot use three years of future instalments to restock the showroom today.\n\nIf you owned the shop, would you wait, borrow against the whole business, or accept slightly less money today in exchange for a defined right to those future instalments?\n\nThat choice reveals the economic purpose of securitisation. A lender identifies a pool of payment rights and obtains funding from investors whose repayment is supported by the cash those rights are expected to produce. Future borrower payments become the basis for funding today."
+    }
+  ]
+}

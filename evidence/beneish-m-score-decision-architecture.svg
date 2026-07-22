@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Beneish M Score decision architecture</title>
+  <desc id="desc">An original diagram showing how financial statement patterns become an investigation decision.</desc>
+  <rect width="1280" height="640" fill="#ffffff"/>
+  <text x="72" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#16181d">From statement pattern to investigation</text>
+  <text x="72" y="116" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#68707d">The M Score prioritises where to investigate. It does not establish intent.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="72" y="190" width="270" height="210" rx="18" fill="#f6f8fb" stroke="#d9dce3"/>
+    <text x="104" y="236" font-size="15" font-weight="700" fill="#2563eb">INPUTS</text>
+    <text x="104" y="274" font-size="18" fill="#252932">Receivables</text>
+    <text x="104" y="306" font-size="18" fill="#252932">Margins</text>
+    <text x="104" y="338" font-size="18" fill="#252932">Asset quality</text>
+    <text x="104" y="370" font-size="18" fill="#252932">Accrual intensity</text>
+    <rect x="500" y="190" width="280" height="210" rx="18" fill="#f6f8fb" stroke="#d9dce3"/>
+    <text x="532" y="236" font-size="15" font-weight="700" fill="#2563eb">TRANSFORMATION</text>
+    <text x="532" y="282" font-size="20" fill="#252932">Eight indexed signals</text>
+    <text x="532" y="318" font-size="17" fill="#4b5563">weighted and combined</text>
+    <text x="532" y="354" font-size="17" fill="#4b5563">into one screening score</text>
+    <rect x="938" y="190" width="270" height="210" rx="18" fill="#eef5ff" stroke="#a9c8f7"/>
+    <text x="970" y="236" font-size="15" font-weight="700" fill="#2563eb">DECISION</text>
+    <text x="970" y="282" font-size="20" fill="#252932">Escalate testing</text>
+    <text x="970" y="318" font-size="17" fill="#4b5563">trace the account,</text>
+    <text x="970" y="350" font-size="17" fill="#4b5563">cash, contracts,</text>
+    <text x="970" y="382" font-size="17" fill="#4b5563">and confirmations</text>
+    <path d="M342 295 H492" stroke="#2563eb" stroke-width="3"/><path d="M482 285 L502 295 L482 305" fill="#2563eb"/>
+    <path d="M780 295 H930" stroke="#2563eb" stroke-width="3"/><path d="M920 285 L940 295 L920 305" fill="#2563eb"/>
+  </g>
+  <text x="72" y="500" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#252932">Reading rule: a high score changes the order of questions; independent evidence determines the conclusion.</text>
+  <text x="72" y="556" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#68707d">Original explanatory diagram. Evidence source: SEBI order in the matter of Satyam Computer Services Ltd.</text>
+</svg>

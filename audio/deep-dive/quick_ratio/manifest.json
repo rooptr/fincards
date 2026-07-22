@@ -1,0 +1,19 @@
+{
+  "lessonId": "quick_ratio",
+  "provider": "azure-speech",
+  "voice": "en-IN-Meera:DragonHDLatestNeural",
+  "region": "centralindia",
+  "modelId": "DragonHDLatestNeural",
+  "audioQuality": "Azure native 24kHz MP3 with natural paragraph pacing",
+  "generatedAt": "2026-07-17T20:41:46.342Z",
+  "scriptHash": "6c78784e2cc62f5627c375e97e45559e134aafb28d34cb16b34c39e35be551be",
+  "chapters": [
+    {
+      "id": "lesson",
+      "label": "Full lesson narration",
+      "audio": "/audio/deep-dive/quick_ratio/lesson.mp3",
+      "characters": 3197,
+      "script": "In April 2023, Bed Bath and Beyond filed for Chapter Eleven. Five months earlier, it had nearly 1.9 billion dollars of current assets. That sounds reassuring, until you notice that roughly 1.4 billion dollars was inventory and current liabilities were about 2.6 billion dollars.\n\nSo how can a company look asset-rich and still run out of room? Because an asset is not always cash. Inventory has value, but it still needs a buyer, a price, and collection. The Quick Ratio is built for that distinction.\n\nFor this one, you should know what the Quick Ratio measures, the formula, why inventory is excluded, how to interpret the result, and the interview trap: a low ratio signals dependence on execution. It does not, by itself, predict bankruptcy.\n\nThe Quick Ratio asks a narrow question. If sales stopped for a moment, could the company meet its near-term obligations with assets that are already cash, easily saleable, or already owed by customers?\n\nThe formula is cash plus marketable securities plus accounts receivable, divided by current liabilities. Cash counts only when it is unrestricted. Securities count only when they can be sold without material loss. Receivables count only when collection is realistic. Old invoices, disputed balances, weak customers, and concentrated exposure all weaken that assumption.\n\nInventory is excluded because it is one step earlier in the cash cycle. The company must still sell it. A current asset is an accounting category. A quick asset is a liquidity judgment.\n\nHere is the simple version. Pause the business. Cash can pay. Saleable securities can pay. Collectible invoices can pay. Stock on a shelf cannot pay until someone buys it.\n\nThe Current Ratio includes all current assets. The Quick Ratio removes the assets that need another operating step. The Cash Ratio goes further and removes receivables as well. The gap between the Current Ratio and the Quick Ratio tells you how much apparent liquidity still depends on inventory conversion.\n\nThere is no magic pass mark. A ratio above one means quick assets exceed current liabilities in aggregate. It does not guarantee that every bill is due after the cash arrives. A ratio below one means the business needs future collections, sales, or financing. That can be manageable for a stable company with reliable cash flow. It is more serious when losses deepen, suppliers tighten terms, or credit availability falls.\n\nThe ratio is also not a forecast. Restricted cash may be unusable. Receivables may not collect. A credit line may be conditional. Seasonality can distort a quarter-end snapshot. And for banks, this is usually the wrong tool; their liquidity depends on funding, deposit behavior, asset duration, and regulation.\n\nBack to Bed Bath and Beyond. Its cash covered only about six cents of every dollar of current liabilities. That does not prove the ratio caused the bankruptcy. It reveals the vulnerability: the company needed operating execution or outside funding before most of its short-term claims could be paid.\n\nThat is the interview answer. The Quick Ratio measures liquidity that does not rely on selling inventory. Use it to ask how much room the business has if execution slips."
+    }
+  ]
+}

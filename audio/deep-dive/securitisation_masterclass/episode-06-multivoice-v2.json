@@ -1,0 +1,16 @@
+{
+  "episode": 6,
+  "title": "When structure becomes risk transfer",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-192kbitrate-mono-mp3",
+  "chunks": 3,
+  "scriptHash": "e5a11b5ab10887698fe335eca945cc84b29d9c46ea41bb517eb940e50301a4ea",
+  "speakerTurns": 45,
+  "audioPending": true,
+  "generatedArtifact": "ssml-only",
+  "generatedAt": "2026-07-20T11:10:27.011Z"
+}

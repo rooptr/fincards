@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">NSE NIFTY option chain, equity-derivatives contracts, and India VIX methodology</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="186" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">NIFTY option contract fields</text>
+  <text x="78" y="226" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Underlying</text>
+  <text x="650" y="226" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">NIFTY 50</text>
+  <text x="78" y="263" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Option type</text>
+  <text x="650" y="263" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#202124">CE or PE</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Price and market fields</text>
+  <text x="650" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">LTP, bid, ask, IV, volume, open interest</text>
+  <line x1="78" y1="337" x2="1122" y2="337" stroke="#d8dbe2"/>
+  <text x="78" y="381" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">NSE methodology notes</text>
+  <text x="78" y="421" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Displayed IV</text>
+  <text x="650" y="421" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Dynamic and for reference only</text>
+  <text x="78" y="458" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">IV inputs</text>
+  <text x="650" y="458" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">LTP, underlying value, and other parameters</text>
+  <text x="78" y="495" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Interest convention</text>
+  <text x="650" y="495" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">10% used on the displayed chain</text>
+  <line x1="78" y1="532" x2="1122" y2="532" stroke="#d8dbe2"/>
+  <text x="78" y="576" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">India VIX</text>
+  <text x="78" y="615" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">Expected annualized volatility over the next 30 calendar days from NIFTY option quotes.</text>
+  <text x="78" y="654" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#5f6368">Dynamic market values remain date-specific inputs and are not invented here.</text>
+</svg>

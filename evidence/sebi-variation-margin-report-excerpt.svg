@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">SEBI mark to market settlement report fields</title>
+  <desc id="desc">A field extract rebuilt from SEBI's June 20 2000 circular. It shows the previous and end of day closing prices, total mark to market liability, total amount collected before the next trading session, and shortages.</desc>
+  <rect width="1200" height="720" fill="#fbfbfd"/>
+  <text x="72" y="78" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#111827">SEBI daily settlement report</text>
+  <text x="72" y="116" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#6b7280">Field extract: Initial Margin &amp; Mark to Market Settlement Collection Report</text>
+  <text x="72" y="153" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#9ca3af">Circular dated June 20, 2000</text>
+  <rect x="72" y="196" width="1056" height="424" rx="18" fill="#ffffff" stroke="#d9dde5"/>
+  <rect x="72" y="196" width="1056" height="62" rx="18" fill="#f0f5ff"/>
+  <rect x="72" y="240" width="1056" height="18" fill="#f0f5ff"/>
+  <text x="98" y="235" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Reported field</text>
+  <text x="560" y="235" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Why it matters for variation margin</text>
+  <line x1="72" y1="258" x2="1128" y2="258" stroke="#e5e7eb"/>
+  <text x="98" y="303" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Closing price of previous day</text>
+  <text x="560" y="303" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Starting mark for the daily change</text>
+  <line x1="98" y1="328" x2="1102" y2="328" stroke="#eef0f4"/>
+  <text x="98" y="373" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Closing price at end of day</text>
+  <text x="560" y="373" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Ending mark for the daily change</text>
+  <line x1="98" y1="398" x2="1102" y2="398" stroke="#eef0f4"/>
+  <text x="98" y="443" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Total MTM liability for the day</text>
+  <text x="560" y="443" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Loss amount due under the daily mark</text>
+  <line x1="98" y1="468" x2="1102" y2="468" stroke="#eef0f4"/>
+  <text x="98" y="513" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Total MTM collected before trading</text>
+  <text x="560" y="513" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Cash or collateral response before next session</text>
+  <line x1="98" y1="538" x2="1102" y2="538" stroke="#eef0f4"/>
+  <text x="98" y="583" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Shortages, if any</text>
+  <text x="560" y="583" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#374151">Uncollected exposure that needs escalation</text>
+  <text x="72" y="674" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9ca3af">Source: Securities and Exchange Board of India, Daily reports for trading and settlement of derivative trades, June 20, 2000.</text>
+</svg>

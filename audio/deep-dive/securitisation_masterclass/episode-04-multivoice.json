@@ -1,0 +1,16 @@
+{
+  "episode": 4,
+  "title": "Mortgage and collateral families",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 2,
+  "scriptHash": "a4946087b7dc9e45364d730bc3bffa6d1086a2ce04bdc20f313c4ee06495e595",
+  "speakerTurns": 44,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T10:59:20.017Z"
+}

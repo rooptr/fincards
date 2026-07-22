@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#fff"/>
+  <rect x="42" y="38" width="1116" height="684" rx="18" fill="#fafafa" stroke="#d8dbe2"/>
+  <text x="78" y="86" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#202124">PRIMARY SOURCE EXCERPT</text>
+  <text x="78" y="120" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5f6368">Hilton and Blackstone SEC filings • 2007 acquisition • 2013 financing and IPO</text>
+  <line x1="78" y1="144" x2="1122" y2="144" stroke="#d8dbe2"/>
+  <text x="78" y="184" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Acquisition record</text>
+  <text x="78" y="224" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Acquisition consideration</text>
+  <text x="650" y="224" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">$47.50 per share</text>
+  <text x="78" y="262" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Transaction value</text>
+  <text x="650" y="262" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">Approximately $26 billion</text>
+  <text x="78" y="300" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Premium to prior close</text>
+  <text x="650" y="300" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">40%</text>
+  <line x1="78" y1="334" x2="1122" y2="334" stroke="#d8dbe2"/>
+  <text x="78" y="374" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#202124">Financing and public re-entry</text>
+  <text x="78" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Initial term loan</text>
+  <text x="650" y="414" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">$7.6 billion</text>
+  <text x="78" y="452" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Revolving credit facility</text>
+  <text x="650" y="452" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">$1.0 billion</text>
+  <text x="78" y="490" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">IPO price</text>
+  <text x="650" y="490" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">$20.00 per share</text>
+  <text x="78" y="528" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">New shares issued</text>
+  <text x="650" y="528" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#202124">64,102,564</text>
+  <text x="78" y="566" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#202124">Sponsor ownership after IPO</text>
+  <text x="650" y="566" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#2563eb">Approximately 76.4%</text>
+  <line x1="78" y1="600" x2="1122" y2="600" stroke="#d8dbe2"/>
+  <text x="78" y="640" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#5f6368">Missing sponsor equity and distribution records remain explicit research fields for a complete MOIC.</text>
+</svg>

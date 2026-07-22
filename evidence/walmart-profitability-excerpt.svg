@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Walmart profitability evidence extract</title>
+  <desc id="desc">A field extract rebuilt from Walmart’s 2024 annual report showing revenue, margins, return measures, assets, equity and invested capital.</desc>
+  <rect width="1200" height="820" fill="#fbfbfd"/>
+  <text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111827">Walmart FY2024 profitability fields</text>
+  <text x="72" y="106" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#6b7280">Amounts in millions. Reported fields and clearly labelled derived measures.</text>
+  <rect x="72" y="140" width="1056" height="580" rx="18" fill="#ffffff" stroke="#d9dde5"/>
+  <rect x="72" y="140" width="1056" height="58" rx="18" fill="#f0f5ff"/>
+  <rect x="72" y="180" width="1056" height="18" fill="#f0f5ff"/>
+  <text x="98" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Reported field</text>
+  <text x="520" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">FY2024 value</text>
+  <text x="850" y="176" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#2563eb">Teaching use</text>
+  <line x1="72" y1="198" x2="1128" y2="198" stroke="#e5e7eb"/>
+  <text x="98" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Net sales</text><text x="520" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$642,637m</text><text x="850" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Margin denominator</text>
+  <line x1="98" y1="256" x2="1102" y2="256" stroke="#eef0f4"/>
+  <text x="98" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Gross profit rate</text><text x="520" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">23.7%</text><text x="850" y="294" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Gross margin</text>
+  <line x1="98" y1="312" x2="1102" y2="312" stroke="#eef0f4"/>
+  <text x="98" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Operating income</text><text x="520" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$27,012m</text><text x="850" y="350" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Operating margin</text>
+  <line x1="98" y1="368" x2="1102" y2="368" stroke="#eef0f4"/>
+  <text x="98" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Operating income / net sales</text><text x="520" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">4.2%</text><text x="850" y="406" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Operating margin</text>
+  <line x1="98" y1="424" x2="1102" y2="424" stroke="#eef0f4"/>
+  <text x="98" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average total assets</text><text x="520" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$247,798m</text><text x="850" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">ROA denominator</text>
+  <line x1="98" y1="480" x2="1102" y2="480" stroke="#eef0f4"/>
+  <text x="98" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Return on assets</text><text x="520" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">6.6%</text><text x="850" y="518" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Reported GAAP return</text>
+  <line x1="98" y1="536" x2="1102" y2="536" stroke="#eef0f4"/>
+  <text x="98" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Average invested capital</text><text x="520" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">$277,522m</text><text x="850" y="574" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">ROI / ROIC denominator</text>
+  <line x1="98" y1="592" x2="1102" y2="592" stroke="#eef0f4"/>
+  <text x="98" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Walmart reported ROI</text><text x="520" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">15.0%</text><text x="850" y="630" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Company-defined non-GAAP return</text>
+  <text x="72" y="774" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9ca3af">Source: Walmart Inc. Annual Report 2024, company performance metrics and return reconciliation, pages 38–39.</text>
+</svg>

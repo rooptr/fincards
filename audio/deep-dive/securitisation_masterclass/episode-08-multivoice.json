@@ -1,0 +1,16 @@
+{
+  "episode": 8,
+  "title": "CLOs: loan collateral, managers, and equity",
+  "provider": "azure-speech",
+  "voices": {
+    "diya": "en-IN-Diya:DragonHDLatestNeural",
+    "meera": "en-IN-Meera:DragonHDLatestNeural"
+  },
+  "outputFormat": "audio-48khz-96kbitrate-mono-mp3",
+  "chunks": 5,
+  "scriptHash": "9eb3fd163f222a456f0e80873f3ec360550d75b9de661de46b9e51743d398649",
+  "speakerTurns": 73,
+  "audioPending": false,
+  "generatedArtifact": "audio-and-ssml",
+  "generatedAt": "2026-07-22T11:06:02.293Z"
+}
