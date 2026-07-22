@@ -1,11 +1,12 @@
 import { deepDiveLessons } from './deepDiveLessons.js';
 import { SECURITISATION_MASTERCLASS } from './securitisationMasterclass.js';
 import { SECURITISATION_PODCAST_EPISODES } from './securitisationPodcastEpisodes.js';
+import { SECURITISATION_ADDITIONAL_LESSONS } from './securitisationAdditionalLessonCatalog.js';
 
 export const PODCAST_ALBUM_ARTWORK = 'art.jpg';
 export const ACCOUNTING_ALBUM_ARTWORK = 'acc.png';
 
-const lessonTracks = deepDiveLessons
+const authoredLessonTracks = deepDiveLessons
   .filter((lesson) => (
     lesson.kind === 'securitisation-desk'
     && lesson.series?.id === SECURITISATION_MASTERCLASS.id
@@ -25,6 +26,23 @@ const lessonTracks = deepDiveLessons
     artwork: PODCAST_ALBUM_ARTWORK,
     courseId: 'securitisation',
   }));
+
+const additionalLessonTracks = SECURITISATION_ADDITIONAL_LESSONS.map((lesson) => ({
+  id: lesson.id,
+  kind: 'lesson',
+  number: lesson.number,
+  title: lesson.title,
+  subtitle: 'Securitisation masterclass',
+  episodeNumber: lesson.episodeNumber,
+  episodeId: SECURITISATION_PODCAST_EPISODES[lesson.episodeNumber - 1]?.id,
+  episodeTitle: SECURITISATION_PODCAST_EPISODES[lesson.episodeNumber - 1]?.title,
+  manifestPath: 'audio/deep-dive/' + lesson.id + '/manifest.json',
+  artwork: PODCAST_ALBUM_ARTWORK,
+  courseId: 'securitisation',
+}));
+
+const lessonTracks = [...authoredLessonTracks, ...additionalLessonTracks]
+  .sort((left, right) => left.number - right.number);
 
 const episodeTracks = SECURITISATION_PODCAST_EPISODES.map((episode) => {
   const episodeNumber = String(episode.number).padStart(2, '0');
