@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, useRef } from 'react';
+import { lazy, Suspense, useState, useEffect, useMemo, useRef } from 'react';
 import FlashCard from './components/FlashCard';
 import CramCard from './components/CramCard';
 import ShortcutView from './components/ShortcutView';
@@ -6,7 +6,6 @@ import SecuritizationView from './components/SecuritizationView';
 import KnowledgeGraphView from './components/KnowledgeGraphView';
 import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
 import LearningMapView from './components/LearningMapView';
-import DeepDiveReader from './components/DeepDiveReader.jsx';
 import PodcastLauncher from './components/podcast/PodcastLauncher.jsx';
 import cardsData from './data/cards.json';
 import { accountingCoreCards } from './data/accountingCoreCards';
@@ -15,6 +14,8 @@ import { accountingAdvancedCards } from './data/accountingAdvancedCards';
 import conceptsData from './data/concepts.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
+
+const DeepDiveReader = lazy(() => import('./components/DeepDiveReader.jsx'));
 
 const conceptsById = new Map(conceptsData.map((concept) => [concept.id, concept]));
 const normalizeTopicText = (value = '') => value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
@@ -568,7 +569,7 @@ export default function App() {
       {!activeCategory && (
         globalMode === 'lesson' ? (
           <div className="deep-dive-shell">
-            <DeepDiveReader />
+            <Suspense fallback={<div className="min-h-[50vh]" aria-label="Loading lesson reader" />}><DeepDiveReader /></Suspense>
           </div>
         ) : globalMode === 'graph' ? (
           <LearningMapView 

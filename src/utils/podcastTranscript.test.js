@@ -3,7 +3,7 @@ import {
   PODCAST_COLLECTIONS,
   PODCAST_TRACKS,
   getPodcastQueue,
-} from '../data/securitisationPodcastCatalog.js';
+} from '../data/podcastCatalog.js';
 import {
   buildTranscriptCues,
   findActiveCueIndex,
@@ -12,23 +12,23 @@ import {
 } from './podcastTranscript.js';
 
 assert.equal(PODCAST_COLLECTIONS.defaultKind, 'lessons');
-assert.equal(PODCAST_TRACKS.lessons.length, 25);
-assert.equal(PODCAST_TRACKS.episodes.length, 7);
+assert.equal(PODCAST_TRACKS.lessons.length, 51);
+assert.equal(PODCAST_TRACKS.episodes.length, 13);
 assert.deepEqual(
   getPodcastQueue('lessons').map((track) => track.number),
-  Array.from({ length: 25 }, (_, index) => index + 1),
+  Array.from({ length: 51 }, (_, index) => index + 1),
 );
 assert.deepEqual(
   getPodcastQueue('episodes').map((track) => track.number),
-  Array.from({ length: 7 }, (_, index) => index + 1),
+  Array.from({ length: 13 }, (_, index) => index + 1),
 );
 assert.equal(
   PODCAST_TRACKS.lessons[0].manifestPath,
   'audio/deep-dive/generated_securitisation_securitization/manifest.json',
 );
 assert.equal(
-  PODCAST_TRACKS.episodes[6].manifestPath,
-  'audio/deep-dive/securitisation_masterclass/episode-07/manifest.json',
+  PODCAST_TRACKS.episodes[12].manifestPath,
+  'audio/deep-dive/securitisation_masterclass/episode-13/manifest.json',
 );
 
 const lessonSegments = parseTranscript('First complete thought.\n\nSecond complete thought.', 'lesson');

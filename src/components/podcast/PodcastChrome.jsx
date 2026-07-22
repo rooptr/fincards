@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { LibraryScreen } from './figma/LibraryScreen.tsx';
 import { CoursePage } from './figma/CoursePage.tsx';
@@ -6,10 +6,11 @@ import { MiniPlayer } from './figma/MiniPlayer.tsx';
 import { NowPlaying } from './figma/NowPlaying.tsx';
 import { QueueSheet } from './figma/QueueSheet.tsx';
 import { VocabularySheet } from './figma/VocabularySheet.tsx';
-import DeepDiveReader from '../DeepDiveReader.jsx';
 import { getFigmaCourse, getFigmaCourses, getFigmaLessons, getRecentFigmaItems, getVocabularyForTrack } from './figma/podcastFigmaData.js';
 import { usePodcastPlayer } from './PodcastPlayerContext.jsx';
 import './figma/podcast-fonts.css';
+
+const DeepDiveReader = lazy(() => import('../DeepDiveReader.jsx'));
 
 function toCourse(courseId, kind = 'lessons') {
   const course = getFigmaCourse(courseId);
@@ -86,6 +87,6 @@ export default function PodcastChrome() {
     <AnimatePresence>{player.nowPlayingOpen && <NowPlaying playback={playback} onClose={player.closeNowPlaying} onTogglePlay={player.togglePlayback} onSeek={player.seek} onSkipBack15={() => player.seek(Math.max(0, player.currentTime - 15))} onSkipForward30={() => player.seek(Math.min(player.duration, player.currentTime + 30))} onSpeedChange={player.setSpeed} onOpenVocabulary={() => setShowVocabulary(true)} onOpenQueue={() => setShowQueue(true)} onNextLesson={player.playNext} onPrevLesson={player.playPrevious} />}</AnimatePresence>
     <VocabularySheet visible={showVocabulary} words={getVocabularyForTrack(player.track, player.manifest)} onClose={() => setShowVocabulary(false)} onSeek={player.seek} />
     <QueueSheet visible={showQueue} playback={playback} onClose={() => setShowQueue(false)} onSelectLesson={(lesson) => playLesson(lesson)} />
-    <AnimatePresence>{readingLessonId && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[140] overflow-y-auto bg-[#f5f5f7]"><DeepDiveReader initialLessonId={readingLessonId} onClose={() => { setReadingLessonId(null); setScreen('course'); }} /></motion.div>}</AnimatePresence>
+    <AnimatePresence>{readingLessonId && <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-[140] overflow-y-auto bg-[#f5f5f7]"><Suspense fallback={<div className="min-h-screen" aria-label="Loading lesson reader" />}><DeepDiveReader initialLessonId={readingLessonId} onClose={() => { setReadingLessonId(null); setScreen('course'); }} /></Suspense></motion.div>}</AnimatePresence>
   </>;
 }

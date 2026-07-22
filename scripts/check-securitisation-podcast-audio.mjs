@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { PODCAST_TRACKS } from '../src/data/securitisationPodcastCatalog.js';
+import { PODCAST_TRACKS } from '../src/data/podcastCatalog.js';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const publicRoot = path.join(projectRoot, 'public');
