@@ -7,10 +7,12 @@ import KnowledgeGraphView from './components/KnowledgeGraphView';
 import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
 import LearningMapView from './components/LearningMapView';
 import PodcastLauncher from './components/podcast/PodcastLauncher.jsx';
+import InterviewReadyView from './components/InterviewReadyView.jsx';
 import cardsData from './data/cards.json';
 import { accountingCoreCards } from './data/accountingCoreCards';
 import { accountingAptitudeCards } from './data/accountingAptitudeCards';
 import { accountingAdvancedCards } from './data/accountingAdvancedCards';
+import { interviewReadyCards } from './data/interviewReadyCards';
 import conceptsData from './data/concepts.json';
 import { getAllProgress, saveCardProgress } from './db/progressDB';
 import { calculateNextReview } from './utils/srsAlgorithm';
@@ -132,7 +134,7 @@ export default function App() {
   // Load progress and cards on mount
   useEffect(() => {
     const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyerLC0EU-OiK_nncqf9IHWGJk0yaU47XlTO9_nuZ_5qRFqiyxrrvpqPx4ay8Clhilc/exec?t=" + Date.now();
-    const localDeck = [...cardsData, ...accountingCoreCards, ...accountingAptitudeCards, ...accountingAdvancedCards];
+    const localDeck = [...cardsData, ...accountingCoreCards, ...accountingAptitudeCards, ...accountingAdvancedCards, ...interviewReadyCards];
 
     const fetchCards = fetch(WEBHOOK_URL)
       .then(res => {
@@ -236,7 +238,8 @@ export default function App() {
     const categories = Object.keys(stats).map(name => ({
       name,
       count: stats[name]
-    })).sort((a, b) => a.name.localeCompare(b.name));
+    })).filter(cat => cat.name !== 'Interview Ready')
+       .sort((a, b) => a.name.localeCompare(b.name));
 
     if (starredCount > 0) {
       categories.unshift({ name: 'Starred', count: starredCount, isSpecial: true, subtitle: 'Favorites' });
@@ -675,21 +678,35 @@ export default function App() {
             </div>
           </div>
           
-          <div className="flex gap-3 md:gap-4 mt-2">
+          <div className="flex flex-col gap-3 md:gap-4 mt-2">
             <button
-              onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
-              className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
+              onClick={() => openCategory("Interview Ready")}
+              className="w-full flex items-center justify-between px-5 py-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-gradient-to-r from-gray-900 to-black dark:from-white dark:to-gray-200 text-white dark:text-black font-semibold text-[14px] md:text-[15px] apple-shadow apple-shadow-hover transition-all group"
             >
-              <svg className="w-5 h-5 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-              Deep Dive
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-white/20 dark:bg-black/10 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white dark:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                Interview Ready
+              </div>
+              <svg className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </button>
-            <button
-              onClick={() => window.location.assign(`${import.meta.env.BASE_URL}explorer`)}
-              className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
-            >
-              <svg className="w-5 h-5 text-[#34c759]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              Explore Topics
-            </button>
+            <div className="flex gap-3 md:gap-4">
+              <button
+                onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
+                className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
+              >
+                <svg className="w-5 h-5 text-[#0066cc]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                Deep Dive
+              </button>
+              <button
+                onClick={() => window.location.assign(`${import.meta.env.BASE_URL}explorer`)}
+                className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
+              >
+                <svg className="w-5 h-5 text-[#34c759]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                Explore Topics
+              </button>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
@@ -728,9 +745,15 @@ export default function App() {
       {/* STUDY / SUBCATEGORY MODES */}
       {activeCategory && (
         <>
-          {/* Aptitude Subcategory Picker */}
-          {/* Securitization Notes View */}
-          {isSecuritizationCategory(activeCategory) && showSecuritizationNotes ? (
+          {/* Interview Ready View */}
+          {activeCategory === 'Interview Ready' ? (
+            <InterviewReadyView
+              cards={interviewReadyCards}
+              onBack={goBack}
+              globalMode={globalMode}
+              onToggleMode={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
+            />
+          ) : isSecuritizationCategory(activeCategory) && showSecuritizationNotes ? (
             <SecuritizationView
               globalMode={globalMode}
               onToggleMode={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
