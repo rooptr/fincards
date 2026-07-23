@@ -8,6 +8,8 @@ import MobileKnowledgeGraph from './components/MobileKnowledgeGraph';
 import LearningMapView from './components/LearningMapView';
 import PodcastLauncher from './components/podcast/PodcastLauncher.jsx';
 import InterviewReadyView from './components/InterviewReadyView.jsx';
+import ExcelMasteryView from './components/ExcelMasteryView.jsx';
+import FormulaeView from './components/FormulaeView.jsx';
 import cardsData from './data/cards.json';
 import { accountingCoreCards } from './data/accountingCoreCards';
 import { accountingAptitudeCards } from './data/accountingAptitudeCards';
@@ -693,6 +695,26 @@ export default function App() {
             </button>
             <div className="flex gap-3 md:gap-4">
               <button
+                onClick={() => openCategory("Excel Mastery")}
+                className="flex-1 flex items-center justify-between px-4 py-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-[#107c41] text-white font-semibold text-[14px] md:text-[15px] apple-shadow apple-shadow-hover transition-all group"
+              >
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                  Excel Mastery
+                </div>
+              </button>
+              <button
+                onClick={() => openCategory("Formulae")}
+                className="flex-1 flex items-center justify-between px-4 py-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-[#007AFF] text-white font-semibold text-[14px] md:text-[15px] apple-shadow apple-shadow-hover transition-all group"
+              >
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                  Formulae
+                </div>
+              </button>
+            </div>
+            <div className="flex gap-3 md:gap-4">
+              <button
                 onClick={() => setGlobalMode(prev => prev === 'lesson' ? 'focus' : 'lesson')}
                 className="flex-1 flex flex-col md:flex-row items-center justify-center gap-1.5 md:gap-2.5 p-3 md:py-4 rounded-[16px] md:rounded-[20px] bg-white dark:bg-[#1c1c1e] text-[#1d1d1f] dark:text-[#f5f5f7] font-semibold text-[13px] md:text-[15px] border border-black/5 dark:border-white/5 apple-shadow apple-shadow-hover transition-all"
               >
@@ -753,6 +775,10 @@ export default function App() {
               globalMode={globalMode}
               onToggleMode={() => setGlobalMode(prev => prev === 'focus' ? 'list' : 'focus')}
             />
+          ) : activeCategory === 'Excel Mastery' ? (
+            <ExcelMasteryView onBack={goBack} />
+          ) : activeCategory === 'Formulae' ? (
+            <FormulaeView onBack={goBack} />
           ) : isSecuritizationCategory(activeCategory) && showSecuritizationNotes ? (
             <SecuritizationView
               globalMode={globalMode}
